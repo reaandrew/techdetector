@@ -1,0 +1,2852 @@
+[
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Ads",
+        "language": "cs",
+        "reference": "Google.Ads.AdManager.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Ads",
+        "language": "cs",
+        "reference": "Google.Ads.MarketingPlatform.Admin.V1Alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Analytics",
+        "language": "cs",
+        "reference": "Google.Analytics.Admin.V1Alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Analytics",
+        "language": "cs",
+        "reference": "Google.Analytics.Admin.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Analytics",
+        "language": "cs",
+        "reference": "Google.Analytics.Data.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Card.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Chat.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Events.Subscriptions.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Meet.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Meet.V2Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Script.Type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Script.Type.Calendar"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Script.Type.Docs"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Script.Type.Drive"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Script.Type.Gmail"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Script.Type.Sheets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "cs",
+        "reference": "Google.Apps.Script.Type.Slides"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Area120",
+        "language": "cs",
+        "reference": "Google.Area120.Tables.V1Alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Cloud",
+        "language": "cs",
+        "reference": "Google.Cloud"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AccessApproval",
+        "language": "cs",
+        "reference": "Google.Cloud.AccessApproval.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AdvisoryNotifications",
+        "language": "cs",
+        "reference": "Google.Cloud.AdvisoryNotifications.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1Beta1.Schema"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1Beta1.Schema.Predict.Instance"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1Beta1.Schema.Predict.Params"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1Beta1.Schema.Predict.Prediction"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1Beta1.Schema.TrainingJob.Definition"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1.Schema.Predict.Instance"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1.Schema.Predict.Params"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1.Schema.Predict.Prediction"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1.Schema.TrainingJob.Definition"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "cs",
+        "reference": "Google.Cloud.AIPlatform.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "cs",
+        "reference": "Google.Cloud.AlloyDb.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "cs",
+        "reference": "Google.Cloud.AlloyDb.V1Alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "cs",
+        "reference": "Google.Cloud.AlloyDb.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiGateway",
+        "language": "cs",
+        "reference": "Google.Cloud.ApiGateway.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApigeeConnect",
+        "language": "cs",
+        "reference": "Google.Cloud.ApigeeConnect.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApigeeRegistry",
+        "language": "cs",
+        "reference": "Google.Cloud.ApigeeRegistry.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiHub",
+        "language": "cs",
+        "reference": "Google.Cloud.ApiHub.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiKeys",
+        "language": "cs",
+        "reference": "Google.Cloud.ApiKeys.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppEngine",
+        "language": "cs",
+        "reference": "Google.Cloud.AppEngine.Logging.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppEngine",
+        "language": "cs",
+        "reference": "Google.Cloud.AppEngine.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppHub",
+        "language": "cs",
+        "reference": "Google.Cloud.AppHub.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ArtifactRegistry",
+        "language": "cs",
+        "reference": "Google.Cloud.ArtifactRegistry.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ArtifactRegistry",
+        "language": "cs",
+        "reference": "Google.Cloud.ArtifactRegistry.V1Beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Asset",
+        "language": "cs",
+        "reference": "Google.Cloud.Asset.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AssuredWorkloads",
+        "language": "cs",
+        "reference": "Google.Cloud.AssuredWorkloads.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AssuredWorkloads",
+        "language": "cs",
+        "reference": "Google.Cloud.AssuredWorkloads.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Audit",
+        "language": "cs",
+        "reference": "Google.Cloud.Audit"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AutoML",
+        "language": "cs",
+        "reference": "Google.Cloud.AutoML.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BackupDR",
+        "language": "cs",
+        "reference": "Google.Cloud.BackupDR.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BareMetalSolution",
+        "language": "cs",
+        "reference": "Google.Cloud.BareMetalSolution.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Batch",
+        "language": "cs",
+        "reference": "Google.Cloud.Batch.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Batch",
+        "language": "cs",
+        "reference": "Google.Cloud.Batch.V1Alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "cs",
+        "reference": "Google.Cloud.BeyondCorp.AppConnections.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "cs",
+        "reference": "Google.Cloud.BeyondCorp.AppConnectors.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "cs",
+        "reference": "Google.Cloud.BeyondCorp.AppGateways.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "cs",
+        "reference": "Google.Cloud.BeyondCorp.ClientGateways.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.AnalyticsHub.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.Connection.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.DataExchange.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.DataPolicies.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.DataPolicies.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.DataTransfer.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.DataTransfer.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.Logging.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.Migration.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.Reservation.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.Storage.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.V2.Benchmarks"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.V2.CleanTestData"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.V2.GenerateOverloads"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.V2.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.V2.PerformanceTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.V2.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "cs",
+        "reference": "Google.Cloud.BigQuery.V2.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.Admin.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.Admin.V2.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.Admin.V2.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.Common.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.V2.GenerateClient"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.V2.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.V2.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.V2.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "cs",
+        "reference": "Google.Cloud.Bigtable.V2.Tests.Conformance"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "cs",
+        "reference": "Google.Cloud.Billing.Budgets.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "cs",
+        "reference": "Google.Cloud.Billing.Budgets.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "cs",
+        "reference": "Google.Cloud.Billing.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BinaryAuthorization",
+        "language": "cs",
+        "reference": "Google.Cloud.BinaryAuthorization.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BinaryAuthorization",
+        "language": "cs",
+        "reference": "Google.Cloud.BinaryAuthorization.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CertificateManager",
+        "language": "cs",
+        "reference": "Google.Cloud.CertificateManager.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Channel",
+        "language": "cs",
+        "reference": "Google.Cloud.Channel.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ClientTesting",
+        "language": "cs",
+        "reference": "Google.Cloud.ClientTesting"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudBuild",
+        "language": "cs",
+        "reference": "Google.Cloud.CloudBuild.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudBuild",
+        "language": "cs",
+        "reference": "Google.Cloud.CloudBuild.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudControlsPartner",
+        "language": "cs",
+        "reference": "Google.Cloud.CloudControlsPartner.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudControlsPartner",
+        "language": "cs",
+        "reference": "Google.Cloud.CloudControlsPartner.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudDms",
+        "language": "cs",
+        "reference": "Google.Cloud.CloudDms.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudQuotas",
+        "language": "cs",
+        "reference": "Google.Cloud.CloudQuotas.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Commerce",
+        "language": "cs",
+        "reference": "Google.Cloud.Commerce.Consumer.Procurement.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "cs",
+        "reference": "Google.Cloud.Common"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "cs",
+        "reference": "Google.Cloud.Compute.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "cs",
+        "reference": "Google.Cloud.Compute.V1.EnumConstantGenerator"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "cs",
+        "reference": "Google.Cloud.Compute.V1.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "cs",
+        "reference": "Google.Cloud.Compute.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "cs",
+        "reference": "Google.Cloud.Compute.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ConfidentialComputing",
+        "language": "cs",
+        "reference": "Google.Cloud.ConfidentialComputing.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ConfidentialComputing",
+        "language": "cs",
+        "reference": "Google.Cloud.ConfidentialComputing.V1Alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Config",
+        "language": "cs",
+        "reference": "Google.Cloud.Config.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Connectors",
+        "language": "cs",
+        "reference": "Google.Cloud.Connectors.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ContactCenterInsights",
+        "language": "cs",
+        "reference": "Google.Cloud.ContactCenterInsights.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Container",
+        "language": "cs",
+        "reference": "Google.Cloud.Container.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Container",
+        "language": "cs",
+        "reference": "Google.Cloud.Container.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataCatalog",
+        "language": "cs",
+        "reference": "Google.Cloud.DataCatalog.Lineage.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataCatalog",
+        "language": "cs",
+        "reference": "Google.Cloud.DataCatalog.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataflow",
+        "language": "cs",
+        "reference": "Google.Cloud.Dataflow.V1Beta3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataform",
+        "language": "cs",
+        "reference": "Google.Cloud.Dataform.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataFusion",
+        "language": "cs",
+        "reference": "Google.Cloud.DataFusion.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataplex",
+        "language": "cs",
+        "reference": "Google.Cloud.Dataplex.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataproc",
+        "language": "cs",
+        "reference": "Google.Cloud.Dataproc.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastore",
+        "language": "cs",
+        "reference": "Google.Cloud.Datastore.Admin.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastore",
+        "language": "cs",
+        "reference": "Google.Cloud.Datastore.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastore",
+        "language": "cs",
+        "reference": "Google.Cloud.Datastore.V1.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastore",
+        "language": "cs",
+        "reference": "Google.Cloud.Datastore.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastore",
+        "language": "cs",
+        "reference": "Google.Cloud.Datastore.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastream",
+        "language": "cs",
+        "reference": "Google.Cloud.Datastream.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastream",
+        "language": "cs",
+        "reference": "Google.Cloud.Datastream.V1Alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Deploy",
+        "language": "cs",
+        "reference": "Google.Cloud.Deploy.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DeveloperConnect",
+        "language": "cs",
+        "reference": "Google.Cloud.DeveloperConnect.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DevTools",
+        "language": "cs",
+        "reference": "Google.Cloud.DevTools.Common.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DevTools",
+        "language": "cs",
+        "reference": "Google.Cloud.DevTools.ContainerAnalysis.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DevTools",
+        "language": "cs",
+        "reference": "Google.Cloud.DevTools.Source.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.AspNetCore3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.AspNetCore3.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.AspNetCore3.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.AspNetCore3.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.Common"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.Common."
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.Common.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.Common.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.Common.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.Common.Tests.Logging"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "cs",
+        "reference": "Google.Cloud.Diagnostics.Common.Tests.Trace"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "cs",
+        "reference": "Google.Cloud.Dialogflow.Cx.V3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "cs",
+        "reference": "Google.Cloud.Dialogflow.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "cs",
+        "reference": "Google.Cloud.Dialogflow.V2Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "cs",
+        "reference": "Google.Cloud.Dialogflow.V2.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DiscoveryEngine",
+        "language": "cs",
+        "reference": "Google.Cloud.DiscoveryEngine.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DiscoveryEngine",
+        "language": "cs",
+        "reference": "Google.Cloud.DiscoveryEngine.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dlp",
+        "language": "cs",
+        "reference": "Google.Cloud.Dlp.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dlp",
+        "language": "cs",
+        "reference": "Google.Cloud.Dlp.V2.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Docs",
+        "language": "cs",
+        "reference": "Google.Cloud.Docs.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "cs",
+        "reference": "Google.Cloud.DocumentAI.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "cs",
+        "reference": "Google.Cloud.DocumentAI.V1Beta3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "cs",
+        "reference": "Google.Cloud.DocumentAI.V1Beta3.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "cs",
+        "reference": "Google.Cloud.DocumentAI.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Domains",
+        "language": "cs",
+        "reference": "Google.Cloud.Domains.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Domains",
+        "language": "cs",
+        "reference": "Google.Cloud.Domains.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EdgeNetwork",
+        "language": "cs",
+        "reference": "Google.Cloud.EdgeNetwork.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EnterpriseKnowledgeGraph",
+        "language": "cs",
+        "reference": "Google.Cloud.EnterpriseKnowledgeGraph.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ErrorReporting",
+        "language": "cs",
+        "reference": "Google.Cloud.ErrorReporting.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ErrorReporting",
+        "language": "cs",
+        "reference": "Google.Cloud.ErrorReporting.V1Beta1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EssentialContacts",
+        "language": "cs",
+        "reference": "Google.Cloud.EssentialContacts.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Eventarc",
+        "language": "cs",
+        "reference": "Google.Cloud.Eventarc.Publishing.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Eventarc",
+        "language": "cs",
+        "reference": "Google.Cloud.Eventarc.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Filestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Filestore.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.Admin.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.Benchmark"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.Benchmarks"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.CleanTestData"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.Converters"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.IntegrationTests.Models"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.Tests.Converters"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.Tests.Proto"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "cs",
+        "reference": "Google.Cloud.Firestore.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Functions",
+        "language": "cs",
+        "reference": "Google.Cloud.Functions.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Functions",
+        "language": "cs",
+        "reference": "Google.Cloud.Functions.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Functions",
+        "language": "cs",
+        "reference": "Google.Cloud.Functions.V2Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GdcHardwareManagement",
+        "language": "cs",
+        "reference": "Google.Cloud.GdcHardwareManagement.V1Alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeBackup",
+        "language": "cs",
+        "reference": "Google.Cloud.GkeBackup.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeConnect",
+        "language": "cs",
+        "reference": "Google.Cloud.GkeConnect.Gateway.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "cs",
+        "reference": "Google.Cloud.GkeHub.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "cs",
+        "reference": "Google.Cloud.GkeHub.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "cs",
+        "reference": "Google.Cloud.GkeHub.V1.ConfigManagement"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "cs",
+        "reference": "Google.Cloud.GkeHub.V1.MultiClusterIngress"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeMultiCloud",
+        "language": "cs",
+        "reference": "Google.Cloud.GkeMultiCloud.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeMultiCloud",
+        "language": "cs",
+        "reference": "Google.Cloud.GkeMultiCloud.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GSuiteAddOns",
+        "language": "cs",
+        "reference": "Google.Cloud.GSuiteAddOns.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "cs",
+        "reference": "Google.Cloud.Iam.Admin.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "cs",
+        "reference": "Google.Cloud.Iam.Credentials.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "cs",
+        "reference": "Google.Cloud.Iam.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "cs",
+        "reference": "Google.Cloud.Iam.V1.Logging"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "cs",
+        "reference": "Google.Cloud.Iam.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "cs",
+        "reference": "Google.Cloud.Iam.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iap",
+        "language": "cs",
+        "reference": "Google.Cloud.Iap.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Ids",
+        "language": "cs",
+        "reference": "Google.Cloud.Ids.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Kms",
+        "language": "cs",
+        "reference": "Google.Cloud.Kms.Inventory.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Kms",
+        "language": "cs",
+        "reference": "Google.Cloud.Kms.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Kms",
+        "language": "cs",
+        "reference": "Google.Cloud.Kms.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "cs",
+        "reference": "Google.Cloud.Language.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "cs",
+        "reference": "Google.Cloud.Language.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "cs",
+        "reference": "Google.Cloud.Language.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "cs",
+        "reference": "Google.Cloud.Language.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "LifeSciences",
+        "language": "cs",
+        "reference": "Google.Cloud.LifeSciences.V2Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Location",
+        "language": "cs",
+        "reference": "Google.Cloud.Location"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.Console"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.Console.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.Log4Net"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.Log4Net.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.Log4Net.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.Log4Net.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.NLog"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.NLog.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.NLog.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.NLog.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.Type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "cs",
+        "reference": "Google.Cloud.Logging.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ManagedIdentities",
+        "language": "cs",
+        "reference": "Google.Cloud.ManagedIdentities.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ManagedKafka",
+        "language": "cs",
+        "reference": "Google.Cloud.ManagedKafka.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "MediaTranslation",
+        "language": "cs",
+        "reference": "Google.Cloud.MediaTranslation.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Memcache",
+        "language": "cs",
+        "reference": "Google.Cloud.Memcache.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Memcache",
+        "language": "cs",
+        "reference": "Google.Cloud.Memcache.V1Beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Metastore",
+        "language": "cs",
+        "reference": "Google.Cloud.Metastore.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Metastore",
+        "language": "cs",
+        "reference": "Google.Cloud.Metastore.V1Alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Metastore",
+        "language": "cs",
+        "reference": "Google.Cloud.Metastore.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "MigrationCenter",
+        "language": "cs",
+        "reference": "Google.Cloud.MigrationCenter.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Monitoring",
+        "language": "cs",
+        "reference": "Google.Cloud.Monitoring.V3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetApp",
+        "language": "cs",
+        "reference": "Google.Cloud.NetApp.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkConnectivity",
+        "language": "cs",
+        "reference": "Google.Cloud.NetworkConnectivity.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkConnectivity",
+        "language": "cs",
+        "reference": "Google.Cloud.NetworkConnectivity.V1Alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkManagement",
+        "language": "cs",
+        "reference": "Google.Cloud.NetworkManagement.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkSecurity",
+        "language": "cs",
+        "reference": "Google.Cloud.NetworkSecurity.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkServices",
+        "language": "cs",
+        "reference": "Google.Cloud.NetworkServices.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Notebooks",
+        "language": "cs",
+        "reference": "Google.Cloud.Notebooks.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Notebooks",
+        "language": "cs",
+        "reference": "Google.Cloud.Notebooks.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Notebooks",
+        "language": "cs",
+        "reference": "Google.Cloud.Notebooks.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Optimization",
+        "language": "cs",
+        "reference": "Google.Cloud.Optimization.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OracleDatabase",
+        "language": "cs",
+        "reference": "Google.Cloud.OracleDatabase.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Orchestration",
+        "language": "cs",
+        "reference": "Google.Cloud.Orchestration.Airflow.Service.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OrgPolicy",
+        "language": "cs",
+        "reference": "Google.Cloud.OrgPolicy.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OrgPolicy",
+        "language": "cs",
+        "reference": "Google.Cloud.OrgPolicy.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsConfig",
+        "language": "cs",
+        "reference": "Google.Cloud.OsConfig.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsConfig",
+        "language": "cs",
+        "reference": "Google.Cloud.OsConfig.V1Alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsLogin",
+        "language": "cs",
+        "reference": "Google.Cloud.OsLogin.Common"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsLogin",
+        "language": "cs",
+        "reference": "Google.Cloud.OsLogin.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsLogin",
+        "language": "cs",
+        "reference": "Google.Cloud.OsLogin.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Parallelstore",
+        "language": "cs",
+        "reference": "Google.Cloud.Parallelstore.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Parallelstore",
+        "language": "cs",
+        "reference": "Google.Cloud.Parallelstore.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PhishingProtection",
+        "language": "cs",
+        "reference": "Google.Cloud.PhishingProtection.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicySimulator",
+        "language": "cs",
+        "reference": "Google.Cloud.PolicySimulator.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicyTroubleshooter",
+        "language": "cs",
+        "reference": "Google.Cloud.PolicyTroubleshooter.Iam.V3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicyTroubleshooter",
+        "language": "cs",
+        "reference": "Google.Cloud.PolicyTroubleshooter.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PrivateCatalog",
+        "language": "cs",
+        "reference": "Google.Cloud.PrivateCatalog.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PrivilegedAccessManager",
+        "language": "cs",
+        "reference": "Google.Cloud.PrivilegedAccessManager.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Profiler",
+        "language": "cs",
+        "reference": "Google.Cloud.Profiler.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "cs",
+        "reference": "Google.Cloud.PubSub.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "cs",
+        "reference": "Google.Cloud.PubSub.V1.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "cs",
+        "reference": "Google.Cloud.PubSub.V1.OrderingKeyTester"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "cs",
+        "reference": "Google.Cloud.PubSub.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "cs",
+        "reference": "Google.Cloud.PubSub.V1.Tasks"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "cs",
+        "reference": "Google.Cloud.PubSub.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "cs",
+        "reference": "Google.Cloud.PubSub.V1.Tests.Tasks"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RapidMigrationAssessment",
+        "language": "cs",
+        "reference": "Google.Cloud.RapidMigrationAssessment.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RecaptchaEnterprise",
+        "language": "cs",
+        "reference": "Google.Cloud.RecaptchaEnterprise.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RecaptchaEnterprise",
+        "language": "cs",
+        "reference": "Google.Cloud.RecaptchaEnterprise.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RecommendationEngine",
+        "language": "cs",
+        "reference": "Google.Cloud.RecommendationEngine.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Recommender",
+        "language": "cs",
+        "reference": "Google.Cloud.Recommender.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "cs",
+        "reference": "Google.Cloud.Redis.Cluster.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "cs",
+        "reference": "Google.Cloud.Redis.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "cs",
+        "reference": "Google.Cloud.Redis.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "cs",
+        "reference": "Google.Cloud.Redis.V1Beta1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "cs",
+        "reference": "Google.Cloud.Redis.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ResourceManager",
+        "language": "cs",
+        "reference": "Google.Cloud.ResourceManager.V3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ResourceSettings",
+        "language": "cs",
+        "reference": "Google.Cloud.ResourceSettings.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Retail",
+        "language": "cs",
+        "reference": "Google.Cloud.Retail.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Run",
+        "language": "cs",
+        "reference": "Google.Cloud.Run.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Scheduler",
+        "language": "cs",
+        "reference": "Google.Cloud.Scheduler.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Scheduler",
+        "language": "cs",
+        "reference": "Google.Cloud.Scheduler.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecretManager",
+        "language": "cs",
+        "reference": "Google.Cloud.SecretManager.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecretManager",
+        "language": "cs",
+        "reference": "Google.Cloud.SecretManager.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecretManager",
+        "language": "cs",
+        "reference": "Google.Cloud.SecretManager.V1Beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecureSourceManager",
+        "language": "cs",
+        "reference": "Google.Cloud.SecureSourceManager.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenterManagement",
+        "language": "cs",
+        "reference": "Google.Cloud.SecurityCenterManagement.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "cs",
+        "reference": "Google.Cloud.SecurityCenter.Settings.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "cs",
+        "reference": "Google.Cloud.SecurityCenter.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "cs",
+        "reference": "Google.Cloud.SecurityCenter.V1P1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "cs",
+        "reference": "Google.Cloud.SecurityCenter.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "cs",
+        "reference": "Google.Cloud.Security.PrivateCA.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "cs",
+        "reference": "Google.Cloud.Security.PublicCA.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "cs",
+        "reference": "Google.Cloud.Security.PublicCA.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceControl",
+        "language": "cs",
+        "reference": "Google.Cloud.ServiceControl.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceDirectory",
+        "language": "cs",
+        "reference": "Google.Cloud.ServiceDirectory.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceDirectory",
+        "language": "cs",
+        "reference": "Google.Cloud.ServiceDirectory.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceHealth",
+        "language": "cs",
+        "reference": "Google.Cloud.ServiceHealth.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceManagement",
+        "language": "cs",
+        "reference": "Google.Cloud.ServiceManagement.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceUsage",
+        "language": "cs",
+        "reference": "Google.Cloud.ServiceUsage.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shell",
+        "language": "cs",
+        "reference": "Google.Cloud.Shell.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Css.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Accounts.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Conversions.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.DataSources.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Inventories.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Lfp.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Notifications.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Products.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Promotions.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Quota.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Reports.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Storage.V2.CleanTestData"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Admin.Database.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Admin.Database.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Admin.Instance.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Admin.Instance.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Common.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Data"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Data.CleanTestData"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Data.CommonTesting"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Data.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Data.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Data.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.Data.Ycsb"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.V1.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.V1.Internal"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.V1.Internal.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.V1.Internal.Logging"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.V1.Internal.Logging.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.V1.Internal.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "cs",
+        "reference": "Google.Cloud.Spanner.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "cs",
+        "reference": "Google.Cloud.Speech.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "cs",
+        "reference": "Google.Cloud.Speech.V1.LanguageCodeGenerator"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "cs",
+        "reference": "Google.Cloud.Speech.V1P1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "cs",
+        "reference": "Google.Cloud.Speech.V1P1Beta1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "cs",
+        "reference": "Google.Cloud.Speech.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "cs",
+        "reference": "Google.Cloud.Speech.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "cs",
+        "reference": "Google.Cloud.Speech.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "cs",
+        "reference": "Google.Cloud.Speech.V2.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.Control.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "StorageInsights",
+        "language": "cs",
+        "reference": "Google.Cloud.StorageInsights.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "StorageTransfer",
+        "language": "cs",
+        "reference": "Google.Cloud.StorageTransfer.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1.BenchmarkingTool"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1.CreateCommonTestBucket"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1.RetryConformanceTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1.Tests.Conformance"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V1.ThroughputTool"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Cloud.Storage.V2.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Support",
+        "language": "cs",
+        "reference": "Google.Cloud.Support.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Talent",
+        "language": "cs",
+        "reference": "Google.Cloud.Talent.V4"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Talent",
+        "language": "cs",
+        "reference": "Google.Cloud.Talent.V4Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Talent",
+        "language": "cs",
+        "reference": "Google.Cloud.Talent.V4Beta1.CleanTestData"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Talent",
+        "language": "cs",
+        "reference": "Google.Cloud.Talent.V4Beta1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tasks",
+        "language": "cs",
+        "reference": "Google.Cloud.Tasks.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tasks",
+        "language": "cs",
+        "reference": "Google.Cloud.Tasks.V2Beta3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TelcoAutomation",
+        "language": "cs",
+        "reference": "Google.Cloud.TelcoAutomation.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TextToSpeech",
+        "language": "cs",
+        "reference": "Google.Cloud.TextToSpeech.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TextToSpeech",
+        "language": "cs",
+        "reference": "Google.Cloud.TextToSpeech.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TextToSpeech",
+        "language": "cs",
+        "reference": "Google.Cloud.TextToSpeech.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.ApiIndex.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.Common"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.CompareVersions"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.DocfxMetadata"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.DocUploader"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.GenerateDocfxSources"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.GenerateSnippetMarkdown"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.PostProcessDevSite"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.ProcessBuildTimingLog"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.RegenerateToc"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.ReleaseManager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.ReleaseManager.BatchRelease"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.ReleaseManager.History"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.ReleaseManager.History.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.ReleaseManager.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.ReleaseProgressReporter"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.SbomGenerator"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.SbomGenerator.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.CecilUtils"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Detectors"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.Class"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.ClassConstant"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.ClassMethod"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.ClassProperty"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.ClassStructCtor"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.Enum"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.Interface"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.Obsolete"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.Struct"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.StructConstant"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.StructMethod"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.StructProperty"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Tests.TopLevel"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tools",
+        "language": "cs",
+        "reference": "Google.Cloud.Tools.VersionCompat.Utils"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tpu",
+        "language": "cs",
+        "reference": "Google.Cloud.Tpu.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Trace",
+        "language": "cs",
+        "reference": "Google.Cloud.Trace.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Trace",
+        "language": "cs",
+        "reference": "Google.Cloud.Trace.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Trace",
+        "language": "cs",
+        "reference": "Google.Cloud.Trace.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translate",
+        "language": "cs",
+        "reference": "Google.Cloud.Translate.V3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translate",
+        "language": "cs",
+        "reference": "Google.Cloud.Translate.V3.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translation",
+        "language": "cs",
+        "reference": "Google.Cloud.Translation.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translation",
+        "language": "cs",
+        "reference": "Google.Cloud.Translation.V2.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translation",
+        "language": "cs",
+        "reference": "Google.Cloud.Translation.V2.LanguageCodeGenerator"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translation",
+        "language": "cs",
+        "reference": "Google.Cloud.Translation.V2.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translation",
+        "language": "cs",
+        "reference": "Google.Cloud.Translation.V2.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "cs",
+        "reference": "Google.Cloud.VideoIntelligence.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "cs",
+        "reference": "Google.Cloud.VideoIntelligence.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "cs",
+        "reference": "Google.Cloud.VideoIntelligence.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "cs",
+        "reference": "Google.Cloud.Video.LiveStream.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "cs",
+        "reference": "Google.Cloud.Video.Stitcher.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "cs",
+        "reference": "Google.Cloud.Video.Transcoder.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VisionAI",
+        "language": "cs",
+        "reference": "Google.Cloud.VisionAI.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "cs",
+        "reference": "Google.Cloud.Vision.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "cs",
+        "reference": "Google.Cloud.Vision.V1.IntegrationTests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "cs",
+        "reference": "Google.Cloud.Vision.V1.PopulateProductSearchTestSet"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "cs",
+        "reference": "Google.Cloud.Vision.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "cs",
+        "reference": "Google.Cloud.Vision.V1.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VMMigration",
+        "language": "cs",
+        "reference": "Google.Cloud.VMMigration.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VmwareEngine",
+        "language": "cs",
+        "reference": "Google.Cloud.VmwareEngine.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VpcAccess",
+        "language": "cs",
+        "reference": "Google.Cloud.VpcAccess.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebRisk",
+        "language": "cs",
+        "reference": "Google.Cloud.WebRisk.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebRisk",
+        "language": "cs",
+        "reference": "Google.Cloud.WebRisk.V1Beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebRisk",
+        "language": "cs",
+        "reference": "Google.Cloud.WebRisk.V1Beta1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebSecurityScanner",
+        "language": "cs",
+        "reference": "Google.Cloud.WebSecurityScanner.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "cs",
+        "reference": "Google.Cloud.Workflows.Common.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "cs",
+        "reference": "Google.Cloud.Workflows.Common.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "cs",
+        "reference": "Google.Cloud.Workflows.Executions.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "cs",
+        "reference": "Google.Cloud.Workflows.Executions.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "cs",
+        "reference": "Google.Cloud.Workflows.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "cs",
+        "reference": "Google.Cloud.Workflows.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workstations",
+        "language": "cs",
+        "reference": "Google.Cloud.Workstations.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GoogleCSharpSnippets",
+        "language": "cs",
+        "reference": "GoogleCSharpSnippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Geo",
+        "language": "cs",
+        "reference": "Google.Geo.Type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Identity",
+        "language": "cs",
+        "reference": "Google.Identity.AccessContextManager.Type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Identity",
+        "language": "cs",
+        "reference": "Google.Identity.AccessContextManager.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "LongRunning",
+        "language": "cs",
+        "reference": "Google.LongRunning"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "LongRunning",
+        "language": "cs",
+        "reference": "Google.LongRunning.Tests"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.AddressValidation.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.AreaInsights.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.FleetEngine.Delivery.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.FleetEngine.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.MapsPlatformDatasets.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.Places.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.Places.V1.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.RouteOptimization.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.Routing.V2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "cs",
+        "reference": "Google.Maps.Routing.V2.Snippets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Css.V1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Accounts.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Conversions.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.DataSources.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Inventories.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Lfp.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Notifications.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Products.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Promotions.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Quota.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Merchant.Reports.V1Beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "cs",
+        "reference": "Google.Shopping.Type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "cs",
+        "reference": "Google.Storage.V2.CleanTestData"
+    }
+]

@@ -1,0 +1,1154 @@
+[
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AccessApproval",
+        "language": "go",
+        "reference": "cloud.google.com/go/accessapproval"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Container",
+        "language": "go",
+        "reference": "cloud.google.com/go/containeranalysis"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsConfig",
+        "language": "go",
+        "reference": "cloud.google.com/go/osconfig"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Retail",
+        "language": "go",
+        "reference": "cloud.google.com/go/retail"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RecommendationEngine",
+        "language": "go",
+        "reference": "cloud.google.com/go/recommendationengine"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkManagement",
+        "language": "go",
+        "reference": "cloud.google.com/go/networkmanagement"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PhishingProtection",
+        "language": "go",
+        "reference": "cloud.google.com/go/phishingprotection"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "go",
+        "reference": "cloud.google.com/go/pubsub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Talent",
+        "language": "go",
+        "reference": "cloud.google.com/go/talent"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ResourceSettings",
+        "language": "go",
+        "reference": "cloud.google.com/go/resourcesettings"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "go",
+        "reference": "cloud.google.com/go/security"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataCatalog",
+        "language": "go",
+        "reference": "cloud.google.com/go/datacatalog"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AdvisoryNotifications",
+        "language": "go",
+        "reference": "cloud.google.com/go/advisorynotifications"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceUsage",
+        "language": "go",
+        "reference": "cloud.google.com/go/serviceusage"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TextToSpeech",
+        "language": "go",
+        "reference": "cloud.google.com/go/texttospeech"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Config",
+        "language": "go",
+        "reference": "cloud.google.com/go/config"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Trace",
+        "language": "go",
+        "reference": "cloud.google.com/go/trace"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebRisk",
+        "language": "go",
+        "reference": "cloud.google.com/go/webrisk"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BackupDR",
+        "language": "go",
+        "reference": "cloud.google.com/go/backupdr"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Analytics",
+        "language": "go",
+        "reference": "cloud.google.com/go/analytics"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Deploy",
+        "language": "go",
+        "reference": "cloud.google.com/go/deploy"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "LifeSciences",
+        "language": "go",
+        "reference": "cloud.google.com/go/lifesciences"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/protoveneer"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/godocfx"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/generated"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/postprocessor"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/aliasfix"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/gapicgen"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/aliasgen"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/actions"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/carver"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/examples/fake"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/examples/mock"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EdgeNetwork",
+        "language": "go",
+        "reference": "cloud.google.com/go/edgenetwork"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Identity",
+        "language": "go",
+        "reference": "cloud.google.com/go/identitytoolkit"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkConnectivity",
+        "language": "go",
+        "reference": "cloud.google.com/go/networkconnectivity"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "MediaTranslation",
+        "language": "go",
+        "reference": "cloud.google.com/go/mediatranslation"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "go",
+        "reference": "cloud.google.com/go/bigtable"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceDirectory",
+        "language": "go",
+        "reference": "cloud.google.com/go/servicedirectory"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Ids",
+        "language": "go",
+        "reference": "cloud.google.com/go/ids"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicyTroubleshooter",
+        "language": "go",
+        "reference": "cloud.google.com/go/policytroubleshooter"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "go",
+        "reference": "cloud.google.com/go/vertexai"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ContactCenterInsights",
+        "language": "go",
+        "reference": "cloud.google.com/go/contactcenterinsights"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "StorageTransfer",
+        "language": "go",
+        "reference": "cloud.google.com/go/storagetransfer"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "go",
+        "reference": "cloud.google.com/go/securityposture"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EssentialContacts",
+        "language": "go",
+        "reference": "cloud.google.com/go/essentialcontacts"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "go",
+        "reference": "cloud.google.com/go/ai"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "go",
+        "reference": "cloud.google.com/go/documentai"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GSuiteAddOns",
+        "language": "go",
+        "reference": "cloud.google.com/go/gsuiteaddons"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "go",
+        "reference": "cloud.google.com/go/firestore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "go",
+        "reference": "cloud.google.com/go/bigquery"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "go",
+        "reference": "cloud.google.com/go/shopping"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "StorageInsights",
+        "language": "go",
+        "reference": "cloud.google.com/go/storageinsights"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Commerce",
+        "language": "go",
+        "reference": "cloud.google.com/go/commerce"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iot",
+        "language": "go",
+        "reference": "cloud.google.com/go/iot"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "go",
+        "reference": "cloud.google.com/go/logging"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "go",
+        "reference": "cloud.google.com/go/videointelligence"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "go",
+        "reference": "cloud.google.com/go/storage"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AccessApproval",
+        "language": "go",
+        "reference": "cloud.google.com/go/accessapproval"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Run",
+        "language": "go",
+        "reference": "cloud.google.com/go/run"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "go",
+        "reference": "cloud.google.com/go/maps"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiHub",
+        "language": "go",
+        "reference": "cloud.google.com/go/apihub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tpu",
+        "language": "go",
+        "reference": "cloud.google.com/go/tpu"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Profiler",
+        "language": "go",
+        "reference": "cloud.google.com/go/profiler"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataLabeling",
+        "language": "go",
+        "reference": "cloud.google.com/go/datalabeling"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastore",
+        "language": "go",
+        "reference": "cloud.google.com/go/datastore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/grafeas"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "MigrationCenter",
+        "language": "go",
+        "reference": "cloud.google.com/go/migrationcenter"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudControlsPartner",
+        "language": "go",
+        "reference": "cloud.google.com/go/cloudcontrolspartner"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicySimulator",
+        "language": "go",
+        "reference": "cloud.google.com/go/policysimulator"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workstations",
+        "language": "go",
+        "reference": "cloud.google.com/go/workstations"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RapidMigrationAssessment",
+        "language": "go",
+        "reference": "cloud.google.com/go/rapidmigrationassessment"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "go",
+        "reference": "cloud.google.com/go/dialogflow"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EdgeContainer",
+        "language": "go",
+        "reference": "cloud.google.com/go/edgecontainer"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApigeeConnect",
+        "language": "go",
+        "reference": "cloud.google.com/go/apigeeconnect"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Asset",
+        "language": "go",
+        "reference": "cloud.google.com/go/asset"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "go",
+        "reference": "cloud.google.com/go/iam"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Optimization",
+        "language": "go",
+        "reference": "cloud.google.com/go/optimization"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Scheduler",
+        "language": "go",
+        "reference": "cloud.google.com/go/scheduler"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "go",
+        "reference": "cloud.google.com/go/spanner"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "go",
+        "reference": "cloud.google.com/go/spanner/test"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Support",
+        "language": "go",
+        "reference": "cloud.google.com/go/support"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "go",
+        "reference": "cloud.google.com/go/compute"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "go",
+        "reference": "cloud.google.com/go/compute/metadata"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VpcAccess",
+        "language": "go",
+        "reference": "cloud.google.com/go/vpcaccess"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "go",
+        "reference": "cloud.google.com/go/alloydb"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Orchestration",
+        "language": "go",
+        "reference": "cloud.google.com/go/orchestration"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastream",
+        "language": "go",
+        "reference": "cloud.google.com/go/datastream"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiKeys",
+        "language": "go",
+        "reference": "cloud.google.com/go/apikeys"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "go",
+        "reference": "cloud.google.com/go/workflows"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "go",
+        "reference": "cloud.google.com/go/aiplatform"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "go",
+        "reference": "cloud.google.com/go/chat"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VmwareEngine",
+        "language": "go",
+        "reference": "cloud.google.com/go/vmwareengine"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudBuild",
+        "language": "go",
+        "reference": "cloud.google.com/go/cloudbuild"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Cloud",
+        "language": "go",
+        "reference": "cloud.google.com/go"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Memcache",
+        "language": "go",
+        "reference": "cloud.google.com/go/memcache"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PrivilegedAccessManager",
+        "language": "go",
+        "reference": "cloud.google.com/go/privilegedaccessmanager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppHub",
+        "language": "go",
+        "reference": "cloud.google.com/go/apphub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Monitoring",
+        "language": "go",
+        "reference": "cloud.google.com/go/monitoring"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkServices",
+        "language": "go",
+        "reference": "cloud.google.com/go/networkservices"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Batch",
+        "language": "go",
+        "reference": "cloud.google.com/go/batch"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Recommender",
+        "language": "go",
+        "reference": "cloud.google.com/go/recommender"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApigeeRegistry",
+        "language": "go",
+        "reference": "cloud.google.com/go/apigeeregistry"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Notebooks",
+        "language": "go",
+        "reference": "cloud.google.com/go/notebooks"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PrivateCatalog",
+        "language": "go",
+        "reference": "cloud.google.com/go/privatecatalog"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AutoML",
+        "language": "go",
+        "reference": "cloud.google.com/go/automl"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudQuotas",
+        "language": "go",
+        "reference": "cloud.google.com/go/cloudquotas"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translate",
+        "language": "go",
+        "reference": "cloud.google.com/go/translate"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Metastore",
+        "language": "go",
+        "reference": "cloud.google.com/go/metastore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PubSub",
+        "language": "go",
+        "reference": "cloud.google.com/go/pubsub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Spanner",
+        "language": "go",
+        "reference": "cloud.google.com/go/spanner"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Cloud",
+        "language": "go",
+        "reference": "cloud.google.com/go"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Bigtable",
+        "language": "go",
+        "reference": "cloud.google.com/go/bigtable"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "go",
+        "reference": "cloud.google.com/go/bigquery"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "go",
+        "reference": "cloud.google.com/go/storage"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Pubsublite",
+        "language": "go",
+        "reference": "cloud.google.com/go/pubsublite"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Firestore",
+        "language": "go",
+        "reference": "cloud.google.com/go/firestore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Logging",
+        "language": "go",
+        "reference": "cloud.google.com/go/logging"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/gapicgen"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/godocfx"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/examples/fake"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/internal/examples/mock"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastore",
+        "language": "go",
+        "reference": "cloud.google.com/go/datastore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppEngine",
+        "language": "go",
+        "reference": "cloud.google.com/go/appengine"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Profiler",
+        "language": "go",
+        "reference": "cloud.google.com/go/cloudprofiler"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ConfidentialComputing",
+        "language": "go",
+        "reference": "cloud.google.com/go/confidentialcomputing"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "go",
+        "reference": "cloud.google.com/go/streetview"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataflow",
+        "language": "go",
+        "reference": "cloud.google.com/go/dataflow"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "go",
+        "reference": "cloud.google.com/go/dataqna"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OrgPolicy",
+        "language": "go",
+        "reference": "cloud.google.com/go/orgpolicy"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceManagement",
+        "language": "go",
+        "reference": "cloud.google.com/go/servicemanagement"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BareMetalSolution",
+        "language": "go",
+        "reference": "cloud.google.com/go/baremetalsolution"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceHealth",
+        "language": "go",
+        "reference": "cloud.google.com/go/servicehealth"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkSecurity",
+        "language": "go",
+        "reference": "cloud.google.com/go/networksecurity"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecretManager",
+        "language": "go",
+        "reference": "cloud.google.com/go/secretmanager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ArtifactRegistry",
+        "language": "go",
+        "reference": "cloud.google.com/go/artifactregistry"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebSecurityScanner",
+        "language": "go",
+        "reference": "cloud.google.com/go/websecurityscanner"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shell",
+        "language": "go",
+        "reference": "cloud.google.com/go/shell"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Area120",
+        "language": "go",
+        "reference": "cloud.google.com/go/area120"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AccessContextManager",
+        "language": "go",
+        "reference": "cloud.google.com/go/accesscontextmanager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Domains",
+        "language": "go",
+        "reference": "cloud.google.com/go/domains"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "go",
+        "reference": "cloud.google.com/go/vision/v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Channel",
+        "language": "go",
+        "reference": "cloud.google.com/go/channel"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "go",
+        "reference": "cloud.google.com/go/video"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "go",
+        "reference": "cloud.google.com/go/auth"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "go",
+        "reference": "cloud.google.com/go/auth/oauth2adapt"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeBackup",
+        "language": "go",
+        "reference": "cloud.google.com/go/gkebackup"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BinaryAuthorization",
+        "language": "go",
+        "reference": "cloud.google.com/go/binaryauthorization"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VisionAI",
+        "language": "go",
+        "reference": "cloud.google.com/go/visionai"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecureSourceManager",
+        "language": "go",
+        "reference": "cloud.google.com/go/securesourcemanager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ErrorReporting",
+        "language": "go",
+        "reference": "cloud.google.com/go/errorreporting"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeConnect",
+        "language": "go",
+        "reference": "cloud.google.com/go/gkeconnect"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iap",
+        "language": "go",
+        "reference": "cloud.google.com/go/iap"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OracleDatabase",
+        "language": "go",
+        "reference": "cloud.google.com/go/oracledatabase"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TelcoAutomation",
+        "language": "go",
+        "reference": "cloud.google.com/go/telcoautomation"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "go",
+        "reference": "cloud.google.com/go/apps"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenterManagement",
+        "language": "go",
+        "reference": "cloud.google.com/go/securitycentermanagement"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Pubsublite",
+        "language": "go",
+        "reference": "cloud.google.com/go/pubsublite"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "LongRunning",
+        "language": "go",
+        "reference": "cloud.google.com/go/longrunning"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataproc",
+        "language": "go",
+        "reference": "cloud.google.com/go/dataproc/v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "go",
+        "reference": "cloud.google.com/go/securitycenter"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Filestore",
+        "language": "go",
+        "reference": "cloud.google.com/go/filestore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataFusion",
+        "language": "go",
+        "reference": "cloud.google.com/go/datafusion"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Functions",
+        "language": "go",
+        "reference": "cloud.google.com/go/functions"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "go",
+        "reference": "cloud.google.com/go/beyondcorp"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "go",
+        "reference": "cloud.google.com/go/speech"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetApp",
+        "language": "go",
+        "reference": "cloud.google.com/go/netapp"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CertificateManager",
+        "language": "go",
+        "reference": "cloud.google.com/go/certificatemanager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "go",
+        "reference": "cloud.google.com/go/billing"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VMMigration",
+        "language": "go",
+        "reference": "cloud.google.com/go/vmmigration"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeMultiV1",
+        "language": "go",
+        "reference": "cloud.google.com/go/gkemulticloud"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Kms",
+        "language": "go",
+        "reference": "cloud.google.com/go/kms"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "go",
+        "reference": "cloud.google.com/go/language"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DeveloperConnect",
+        "language": "go",
+        "reference": "cloud.google.com/go/developerconnect"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Parallelstore",
+        "language": "go",
+        "reference": "cloud.google.com/go/parallelstore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ManagedIdentities",
+        "language": "go",
+        "reference": "cloud.google.com/go/managedidentities"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ResourceManager",
+        "language": "go",
+        "reference": "cloud.google.com/go/resourcemanager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ManagedKafka",
+        "language": "go",
+        "reference": "cloud.google.com/go/managedkafka"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiGateway",
+        "language": "go",
+        "reference": "cloud.google.com/go/apigateway"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataform",
+        "language": "go",
+        "reference": "cloud.google.com/go/dataform"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DiscoveryEngine",
+        "language": "go",
+        "reference": "cloud.google.com/go/discoveryengine"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceControl",
+        "language": "go",
+        "reference": "cloud.google.com/go/servicecontrol"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Eventarc",
+        "language": "go",
+        "reference": "cloud.google.com/go/eventarc"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RecaptchaEnterprise",
+        "language": "go",
+        "reference": "cloud.google.com/go/recaptchaenterprise/v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tasks",
+        "language": "go",
+        "reference": "cloud.google.com/go/cloudtasks"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "go",
+        "reference": "cloud.google.com/go/gkehub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudDms",
+        "language": "go",
+        "reference": "cloud.google.com/go/clouddms"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "go",
+        "reference": "cloud.google.com/go/redis"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsLogin",
+        "language": "go",
+        "reference": "cloud.google.com/go/oslogin"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataplex",
+        "language": "go",
+        "reference": "cloud.google.com/go/dataplex"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AssuredWorkloads",
+        "language": "go",
+        "reference": "cloud.google.com/go/assuredworkloads"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Container",
+        "language": "go",
+        "reference": "cloud.google.com/go/container"
+    }
+]

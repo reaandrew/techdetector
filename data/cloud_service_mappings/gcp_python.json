@@ -1,0 +1,1820 @@
+[
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "python",
+        "reference": "from google.cloud import compute_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "MediaTranslation",
+        "language": "python",
+        "reference": "from google.cloud import mediatranslation_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Retail",
+        "language": "python",
+        "reference": "from google.cloud import retail_v2beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Retail",
+        "language": "python",
+        "reference": "from google.cloud import retail_v2alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Retail",
+        "language": "python",
+        "reference": "from google.cloud import retail_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "python",
+        "reference": "from google.cloud import gkehub_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "python",
+        "reference": "from google.cloud.gkehub import configmanagement_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "python",
+        "reference": "from google.cloud.gkehub import multiclusteringress_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "python",
+        "reference": "from google.cloud import gkehub_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Commerce",
+        "language": "python",
+        "reference": "from google.cloud import commerce_consumer_procurement_v1alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Commerce",
+        "language": "python",
+        "reference": "from google.cloud import commerce_consumer_procurement_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Asset",
+        "language": "python",
+        "reference": "from google.cloud import asset_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Asset",
+        "language": "python",
+        "reference": "from google.cloud import asset_v1p2beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Asset",
+        "language": "python",
+        "reference": "from google.cloud import asset_v1p4beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Asset",
+        "language": "python",
+        "reference": "from google.cloud import asset_v1p5beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Asset",
+        "language": "python",
+        "reference": "from google.cloud import asset_v1p1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DevTools",
+        "language": "python",
+        "reference": "from google.cloud.devtools import containeranalysis_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GdcHardwareManagement",
+        "language": "python",
+        "reference": "from google.cloud import gdchardwaremanagement_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OracleDatabase",
+        "language": "python",
+        "reference": "from google.cloud import oracledatabase_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataflow",
+        "language": "python",
+        "reference": "from google.cloud import dataflow_v1beta3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_datasources_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_connection_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Cloud",
+        "language": "python",
+        "reference": "from google.cloud import source_context_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceControl",
+        "language": "python",
+        "reference": "from google.cloud import servicecontrol_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceControl",
+        "language": "python",
+        "reference": "from google.cloud import servicecontrol_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PrivateCatalog",
+        "language": "python",
+        "reference": "from google.cloud import privatecatalog_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsConfig",
+        "language": "python",
+        "reference": "from google.cloud import osconfig_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsConfig",
+        "language": "python",
+        "reference": "from google.cloud import osconfig_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "python",
+        "reference": "from google.cloud import beyondcorp_appconnections_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import fleetengine_delivery_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudBuild",
+        "language": "python",
+        "reference": "from google.cloud.devtools import cloudbuild_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudBuild",
+        "language": "python",
+        "reference": "from google.cloud.devtools import cloudbuild_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicyTroubleshooter",
+        "language": "python",
+        "reference": "from google.cloud import policytroubleshooter_iam_v3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Monitoring",
+        "language": "python",
+        "reference": "from google.cloud import monitoring_dashboard_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "python",
+        "reference": "from google.cloud import securitycenter_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "python",
+        "reference": "from google.cloud import securitycenter_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "python",
+        "reference": "from google.cloud import securitycenter_v1p1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "python",
+        "reference": "from google.cloud import securitycenter_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "python",
+        "reference": "from google.cloud import beyondcorp_clientconnectorservices_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "python",
+        "reference": "from google.cloud import dialogflow_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "python",
+        "reference": "from google.cloud import dialogflow_v2beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ContactCenterInsights",
+        "language": "python",
+        "reference": "from google.cloud import contact_center_insights_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import routing_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "StorageInsights",
+        "language": "python",
+        "reference": "from google.cloud import storageinsights_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import areainsights_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Parallelstore",
+        "language": "python",
+        "reference": "from google.cloud import parallelstore_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Parallelstore",
+        "language": "python",
+        "reference": "from google.cloud import parallelstore_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BinaryAuthorization",
+        "language": "python",
+        "reference": "from google.cloud import binaryauthorization_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BinaryAuthorization",
+        "language": "python",
+        "reference": "from google.cloud import binaryauthorization_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Orchestration",
+        "language": "python",
+        "reference": "from google.cloud.orchestration.airflow import service_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Orchestration",
+        "language": "python",
+        "reference": "from google.cloud.orchestration.airflow import service_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AutoML",
+        "language": "python",
+        "reference": "from google.cloud import automl_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AutoML",
+        "language": "python",
+        "reference": "from google.cloud import automl_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataplex",
+        "language": "python",
+        "reference": "from google.cloud import dataplex_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiKeys",
+        "language": "python",
+        "reference": "from google.cloud import api_keys_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_accounts_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Functions",
+        "language": "python",
+        "reference": "from google.cloud import functions_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Functions",
+        "language": "python",
+        "reference": "from google.cloud import functions_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "python",
+        "reference": "from google.cloud import storage_control_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_analyticshub_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EdgeNetwork",
+        "language": "python",
+        "reference": "from google.cloud import edgecontainer_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkManagement",
+        "language": "python",
+        "reference": "from google.cloud import network_management_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TextToSpeech",
+        "language": "python",
+        "reference": "from google.cloud import texttospeech_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TextToSpeech",
+        "language": "python",
+        "reference": "from google.cloud import texttospeech_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_reports_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApigeeConnect",
+        "language": "python",
+        "reference": "from google.cloud import apigeeconnect_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataCatalog",
+        "language": "python",
+        "reference": "from google.cloud import datacatalog_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataCatalog",
+        "language": "python",
+        "reference": "from google.cloud import datacatalog_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Eventarc",
+        "language": "python",
+        "reference": "from google.cloud import eventarc_publishing_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ManagedIdentities",
+        "language": "python",
+        "reference": "from google.cloud import managedidentities_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GSuiteAddOns",
+        "language": "python",
+        "reference": "from google.cloud import gsuiteaddons_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import css_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_datatransfer_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataform",
+        "language": "python",
+        "reference": "from google.cloud import dataform_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import places_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Config",
+        "language": "python",
+        "reference": "from google.cloud import config_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudControlsPartner",
+        "language": "python",
+        "reference": "from google.cloud import cloudcontrolspartner_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudControlsPartner",
+        "language": "python",
+        "reference": "from google.cloud import cloudcontrolspartner_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceHealth",
+        "language": "python",
+        "reference": "from google.cloud import servicehealth_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import mapsplatformdatasets_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DevTools",
+        "language": "python",
+        "reference": "import grafeas.grafeas_v1 as grafeas_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Channel",
+        "language": "python",
+        "reference": "from google.cloud import channel_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DeveloperConnect",
+        "language": "python",
+        "reference": "from google.cloud import developerconnect_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudQuotas",
+        "language": "python",
+        "reference": "from google.cloud import cloudquotas_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Notebooks",
+        "language": "python",
+        "reference": "from google.cloud import notebooks_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Notebooks",
+        "language": "python",
+        "reference": "from google.cloud import notebooks_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Notebooks",
+        "language": "python",
+        "reference": "from google.cloud import notebooks_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "python",
+        "reference": "from google.cloud.alloydb import connectors_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Run",
+        "language": "python",
+        "reference": "from google.cloud import run_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "python",
+        "reference": "from google.cloud import language_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "python",
+        "reference": "from google.cloud import language_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "python",
+        "reference": "from google.cloud import language_v1beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ResourceManager",
+        "language": "python",
+        "reference": "from google.cloud import resourcemanager_v3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "python",
+        "reference": "from google.cloud.video import transcoder_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps import meet_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps import meet_v2beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Memcache",
+        "language": "python",
+        "reference": "from google.cloud import memcache_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Memcache",
+        "language": "python",
+        "reference": "from google.cloud import memcache_v1beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Geo",
+        "language": "python",
+        "reference": "from google.geo import type as geo_type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Ads",
+        "language": "python",
+        "reference": "from google.ads import admanager_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebRisk",
+        "language": "python",
+        "reference": "from google.cloud import webrisk_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebRisk",
+        "language": "python",
+        "reference": "from google.cloud import webrisk_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Metastore",
+        "language": "python",
+        "reference": "from google.cloud import metastore_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Metastore",
+        "language": "python",
+        "reference": "from google.cloud import metastore_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Metastore",
+        "language": "python",
+        "reference": "from google.cloud import metastore_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Recommender",
+        "language": "python",
+        "reference": "from google.cloud import recommender_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Recommender",
+        "language": "python",
+        "reference": "from google.cloud import recommender_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkServices",
+        "language": "python",
+        "reference": "from google.cloud import network_services_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkSecurity",
+        "language": "python",
+        "reference": "from google.cloud import network_security_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkSecurity",
+        "language": "python",
+        "reference": "from google.cloud import network_security_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ConfidentialComputing",
+        "language": "python",
+        "reference": "from google.cloud import confidentialcomputing_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PhishingProtection",
+        "language": "python",
+        "reference": "from google.cloud import phishingprotection_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Deploy",
+        "language": "python",
+        "reference": "from google.cloud import deploy_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "python",
+        "reference": "from google.cloud import workflows_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "python",
+        "reference": "from google.cloud import workflows_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "python",
+        "reference": "from google.cloud.workflows import executions_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "python",
+        "reference": "from google.cloud.workflows import executions_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastream",
+        "language": "python",
+        "reference": "from google.cloud import datastream_v1alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastream",
+        "language": "python",
+        "reference": "from google.cloud import datastream_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workstations",
+        "language": "python",
+        "reference": "from google.cloud import workstations_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workstations",
+        "language": "python",
+        "reference": "from google.cloud import workstations_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DiscoveryEngine",
+        "language": "python",
+        "reference": "from google.cloud import discoveryengine_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DiscoveryEngine",
+        "language": "python",
+        "reference": "from google.cloud import discoveryengine_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DiscoveryEngine",
+        "language": "python",
+        "reference": "from google.cloud import discoveryengine_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "python",
+        "reference": "from google.cloud.billing import budgets_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "python",
+        "reference": "from google.cloud.billing import budgets_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_promotions_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BackupDR",
+        "language": "python",
+        "reference": "from google.cloud import backupdr_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_products_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "python",
+        "reference": "from google.cloud import speech_v1p1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "python",
+        "reference": "from google.cloud import speech_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "python",
+        "reference": "from google.cloud import speech_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "python",
+        "reference": "from google.cloud.video import stitcher_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Area120",
+        "language": "python",
+        "reference": "from google.area120 import tables_v1alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Monitoring",
+        "language": "python",
+        "reference": "from google.cloud import monitoring_metrics_scope_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicyTroubleshooter",
+        "language": "python",
+        "reference": "from google.cloud import policytroubleshooter_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VMMigration",
+        "language": "python",
+        "reference": "from google.cloud import vmmigration_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "python",
+        "reference": "from google.cloud import dialogflowcx_v3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "python",
+        "reference": "from google.cloud import dialogflowcx_v3beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "python",
+        "reference": "from google.cloud import beyondcorp_appconnectors_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Common",
+        "language": "python",
+        "reference": "from google.cloud import common"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RapidMigrationAssessment",
+        "language": "python",
+        "reference": "from google.cloud import rapidmigrationassessment_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shell",
+        "language": "python",
+        "reference": "from google.cloud import shell_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EdgeNetwork",
+        "language": "python",
+        "reference": "from google.cloud import edgenetwork_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_biglake_v1alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_biglake_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps import card_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceDirectory",
+        "language": "python",
+        "reference": "from google.cloud import servicedirectory_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceDirectory",
+        "language": "python",
+        "reference": "from google.cloud import servicedirectory_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_notifications_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Kms",
+        "language": "python",
+        "reference": "from google.cloud import kms_inventory_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceUsage",
+        "language": "python",
+        "reference": "from google.cloud import service_usage_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiHub",
+        "language": "python",
+        "reference": "from google.cloud import apihub_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Analytics",
+        "language": "python",
+        "reference": "from google.analytics import data_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Analytics",
+        "language": "python",
+        "reference": "from google.analytics import data_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tpu",
+        "language": "python",
+        "reference": "from google.cloud import tpu_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tpu",
+        "language": "python",
+        "reference": "from google.cloud import tpu_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tpu",
+        "language": "python",
+        "reference": "from google.cloud import tpu_v2alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "python",
+        "reference": "from google.cloud import redis_cluster_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "python",
+        "reference": "from google.cloud import redis_cluster_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_lfp_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeConnect",
+        "language": "python",
+        "reference": "from google.cloud.gkeconnect import gateway_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeConnect",
+        "language": "python",
+        "reference": "from google.cloud.gkeconnect import gateway_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Kms",
+        "language": "python",
+        "reference": "from google.cloud import kms_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Ids",
+        "language": "python",
+        "reference": "from google.cloud import ids_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VisionAI",
+        "language": "python",
+        "reference": "from google.cloud import visionai_v1alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VisionAI",
+        "language": "python",
+        "reference": "from google.cloud import visionai_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataproc",
+        "language": "python",
+        "reference": "from google.cloud import dataproc_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "python",
+        "reference": "from google.cloud import vision_v1p2beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "python",
+        "reference": "from google.cloud import vision_v1p1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "python",
+        "reference": "from google.cloud import vision_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "python",
+        "reference": "from google.cloud import vision_v1p3beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "python",
+        "reference": "from google.cloud import vision_v1p4beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dlp",
+        "language": "python",
+        "reference": "from google.cloud import dlp_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiGateway",
+        "language": "python",
+        "reference": "from google.cloud import apigateway_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataLabeling",
+        "language": "python",
+        "reference": "from google.cloud import datalabeling_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_quota_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecureSourceManager",
+        "language": "python",
+        "reference": "from google.cloud import securesourcemanager_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import fleetengine_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Cloud",
+        "language": "python",
+        "reference": "from google.cloud import contentwarehouse_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AccessApproval",
+        "language": "python",
+        "reference": "from google.cloud import accessapproval_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EssentialContacts",
+        "language": "python",
+        "reference": "from google.cloud import essential_contacts_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "python",
+        "reference": "from google.cloud import iam_admin_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "python",
+        "reference": "from google.cloud import iam_v2beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "python",
+        "reference": "from google.cloud import iam_credentials_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "python",
+        "reference": "from google.cloud import iam_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_reservation_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApigeeRegistry",
+        "language": "python",
+        "reference": "from google.cloud import apigee_registry_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "python",
+        "reference": "from google.cloud import beyondcorp_clientgateways_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iap",
+        "language": "python",
+        "reference": "from google.cloud import iap_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ResourceSettings",
+        "language": "python",
+        "reference": "from google.cloud import resourcesettings_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebSecurityScanner",
+        "language": "python",
+        "reference": "from google.cloud import websecurityscanner_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebSecurityScanner",
+        "language": "python",
+        "reference": "from google.cloud import websecurityscanner_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebSecurityScanner",
+        "language": "python",
+        "reference": "from google.cloud import websecurityscanner_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Filestore",
+        "language": "python",
+        "reference": "from google.cloud import filestore_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VmwareEngine",
+        "language": "python",
+        "reference": "from google.cloud import vmwareengine_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translate",
+        "language": "python",
+        "reference": "from google.cloud import translate_v3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translate",
+        "language": "python",
+        "reference": "from google.cloud import translate_v3beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "python",
+        "reference": "from google.cloud import beyondcorp_appgateways_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Domains",
+        "language": "python",
+        "reference": "from google.cloud import domains_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Domains",
+        "language": "python",
+        "reference": "from google.cloud import domains_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_data_exchange_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TelcoAutomation",
+        "language": "python",
+        "reference": "from google.cloud import telcoautomation_v1alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TelcoAutomation",
+        "language": "python",
+        "reference": "from google.cloud import telcoautomation_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppEngine",
+        "language": "python",
+        "reference": "from google.cloud import appengine_admin_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import type as shopping_type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_migration_v2alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_migration_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Support",
+        "language": "python",
+        "reference": "from google.cloud import support_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RecaptchaEnterprise",
+        "language": "python",
+        "reference": "from google.cloud import recaptchaenterprise_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Eventarc",
+        "language": "python",
+        "reference": "from google.cloud import eventarc_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Trace",
+        "language": "python",
+        "reference": "from google.cloud import trace_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Trace",
+        "language": "python",
+        "reference": "from google.cloud import trace_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "python",
+        "reference": "from google.cloud import documentai_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "python",
+        "reference": "from google.cloud import documentai_v1beta3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "StorageTransfer",
+        "language": "python",
+        "reference": "from google.cloud import storage_transfer_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AssuredWorkloads",
+        "language": "python",
+        "reference": "from google.cloud import assuredworkloads_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AssuredWorkloads",
+        "language": "python",
+        "reference": "from google.cloud import assuredworkloads_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "python",
+        "reference": "from google.cloud import billing_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import solar_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Monitoring",
+        "language": "python",
+        "reference": "from google.cloud import monitoring_v3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "python",
+        "reference": "from google.cloud import videointelligence_v1beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "python",
+        "reference": "from google.cloud import videointelligence_v1p1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "python",
+        "reference": "from google.cloud import videointelligence_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "python",
+        "reference": "from google.cloud import videointelligence_v1p2beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "python",
+        "reference": "from google.cloud import videointelligence_v1p3beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "python",
+        "reference": "from google.cloud.video import live_stream_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EnterpriseKnowledgeGraph",
+        "language": "python",
+        "reference": "from google.cloud import enterpriseknowledgegraph_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsLogin",
+        "language": "python",
+        "reference": "from google.cloud import oslogin_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsLogin",
+        "language": "python",
+        "reference": "from google.cloud.oslogin import common as oslogin_common"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataFusion",
+        "language": "python",
+        "reference": "from google.cloud import data_fusion_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Batch",
+        "language": "python",
+        "reference": "from google.cloud import batch_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Batch",
+        "language": "python",
+        "reference": "from google.cloud import batch_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "python",
+        "reference": "from google.cloud.security import publicca_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "python",
+        "reference": "from google.cloud.security import publicca_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Talent",
+        "language": "python",
+        "reference": "from google.cloud import talent_v4"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Talent",
+        "language": "python",
+        "reference": "from google.cloud import talent_v4beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceManagement",
+        "language": "python",
+        "reference": "from google.cloud import servicemanagement_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "python",
+        "reference": "from google.cloud.security import privateca_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "python",
+        "reference": "from google.cloud.security import privateca_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PrivilegedAccessManager",
+        "language": "python",
+        "reference": "from google.cloud import privilegedaccessmanager_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenterManagement",
+        "language": "python",
+        "reference": "from google.cloud import securitycentermanagement_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeBackup",
+        "language": "python",
+        "reference": "from google.cloud import gke_backup_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ArtifactRegistry",
+        "language": "python",
+        "reference": "from google.cloud import artifactregistry_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ArtifactRegistry",
+        "language": "python",
+        "reference": "from google.cloud import artifactregistry_v1beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "python",
+        "reference": "from google.cloud import alloydb_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "python",
+        "reference": "from google.cloud import alloydb_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "python",
+        "reference": "from google.cloud import alloydb_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import addressvalidation_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_datapolicies_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud import bigquery_datapolicies_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Ads",
+        "language": "python",
+        "reference": "from google.ads.marketingplatform import admin_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkConnectivity",
+        "language": "python",
+        "reference": "from google.cloud import networkconnectivity_v1alpha1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkConnectivity",
+        "language": "python",
+        "reference": "from google.cloud import networkconnectivity_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicySimulator",
+        "language": "python",
+        "reference": "from google.cloud import policysimulator_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudDms",
+        "language": "python",
+        "reference": "from google.cloud import clouddms_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "python",
+        "reference": "from google.cloud.bigquery import logging_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppHub",
+        "language": "python",
+        "reference": "from google.cloud import apphub_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "python",
+        "reference": "from google.cloud import redis_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "python",
+        "reference": "from google.cloud import redis_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Scheduler",
+        "language": "python",
+        "reference": "from google.cloud import scheduler_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Scheduler",
+        "language": "python",
+        "reference": "from google.cloud import scheduler_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "MigrationCenter",
+        "language": "python",
+        "reference": "from google.cloud import migrationcenter_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataCatalog",
+        "language": "python",
+        "reference": "from google.cloud import datacatalog_lineage_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps import events_subscriptions_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps.script import type as script_type"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps.script.type import gmail"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps.script.type import slides"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps.script.type import drive"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps.script.type import calendar"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps.script.type import docs"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps.script.type import sheets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeMultiCloud",
+        "language": "python",
+        "reference": "from google.cloud import gke_multicloud_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "LifeSciences",
+        "language": "python",
+        "reference": "from google.cloud import lifesciences_v2beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "python",
+        "reference": "from google.cloud import iam_logging_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VpcAccess",
+        "language": "python",
+        "reference": "from google.cloud import vpcaccess_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Analytics",
+        "language": "python",
+        "reference": "from google.analytics import admin_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Analytics",
+        "language": "python",
+        "reference": "from google.analytics import admin_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Cloud",
+        "language": "python",
+        "reference": "from google.cloud import dataqna_v1alpha"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_conversions_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecretManager",
+        "language": "python",
+        "reference": "from google.cloud import secretmanager_v1beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecretManager",
+        "language": "python",
+        "reference": "from google.cloud import secretmanager_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecretManager",
+        "language": "python",
+        "reference": "from google.cloud import secretmanager_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Container",
+        "language": "python",
+        "reference": "from google.cloud import container_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Container",
+        "language": "python",
+        "reference": "from google.cloud import container_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BareMetalSolution",
+        "language": "python",
+        "reference": "from google.cloud import bare_metal_solution_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Maps",
+        "language": "python",
+        "reference": "from google.maps import routeoptimization_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppEngine",
+        "language": "python",
+        "reference": "from google.cloud import appengine_logging_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ManagedKafka",
+        "language": "python",
+        "reference": "from google.cloud import managedkafka_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Optimization",
+        "language": "python",
+        "reference": "from google.cloud import optimization_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shopping",
+        "language": "python",
+        "reference": "from google.shopping import merchant_inventories_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AdvisoryNotifications",
+        "language": "python",
+        "reference": "from google.cloud import advisorynotifications_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RecommendationEngine",
+        "language": "python",
+        "reference": "from google.cloud import recommendationengine_v1beta1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "python",
+        "reference": "from google.apps import chat_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CertificateManager",
+        "language": "python",
+        "reference": "from google.cloud import certificate_manager_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetApp",
+        "language": "python",
+        "reference": "from google.cloud import netapp_v1"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tasks",
+        "language": "python",
+        "reference": "from google.cloud import tasks_v2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tasks",
+        "language": "python",
+        "reference": "from google.cloud import tasks_v2beta3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tasks",
+        "language": "python",
+        "reference": "from google.cloud import tasks_v2beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "python",
+        "reference": "from google.ai import generativelanguage_v1beta3"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "python",
+        "reference": "from google.ai import generativelanguage_v1beta"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "python",
+        "reference": "from google.ai import generativelanguage_v1beta2"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "python",
+        "reference": "from google.ai import generativelanguage_v1"
+    }
+]

@@ -1,0 +1,309 @@
+package main
+
+import (
+	"context"
+	"embed"
+	"encoding/json"
+	"fmt"
+	"github.com/go-git/go-git/v5"
+	"io/fs"
+	"log"
+	"os"
+	"path/filepath"
+	"regexp"
+	"strings"
+
+	"github.com/google/go-github/v50/github" // go-github package
+	"golang.org/x/oauth2"                    // OAuth2 for authentication
+)
+
+//go:embed data/cloud_service_mappings/*.json
+var servicesFS embed.FS
+
+// Service represents the structure of each service
+type Service struct {
+	CloudVendor  string `json:"cloud_vendor"`
+	CloudService string `json:"cloud_service"`
+	Language     string `json:"language"`
+	Reference    string `json:"reference"`
+}
+
+type Finding struct {
+	Service    Service `json:"service"`
+	Repository string  `json:"repository"`
+	Filepath   string  `json:"filepath"`
+}
+
+type ServiceRegex struct {
+	Service Service
+	Regex   *regexp.Regexp
+}
+
+func getSupportedFileExtensions(services []Service) []string {
+	supportedExtensions := []string{}
+	for _, service := range services {
+		supportedExtensions = append(supportedExtensions, service.Language)
+	}
+	return supportedExtensions
+}
+
+func main() {
+	// Step 1: Load all cloud services from embedded JSON files.
+	allServices := loadAllCloudServices()
+	allSupportedFileExtensions := getSupportedFileExtensions(allServices)
+	if len(allServices) == 0 {
+		log.Fatal("No services found. Exiting.")
+	}
+
+	// Step 2: Compile regex patterns from Reference fields.
+	serviceRegexes := compileRegexes(allServices)
+	if len(serviceRegexes) == 0 {
+		log.Fatal("No valid regex patterns compiled. Exiting.")
+	}
+
+	// Step 3: Initialize GitHub client.
+	client := initializeGitHubClient()
+
+	// Step 4: Fetch all repository names from the GitHub organization.
+	repositories, err := listRepositories(client, "department-for-transport") // Replace with your GitHub org
+	if err != nil {
+		log.Fatalf("Error listing repositories: %v", err)
+	}
+	if len(repositories) == 0 {
+		log.Fatalf("No repositories found in organization '%s'. Exiting.", "YOUR_GITHUB_ORG")
+	}
+
+	// Step 5: Ensure the clone base directory exists.
+	cloneBaseDir := "/tmp" // Adjust as needed
+	err = os.MkdirAll(cloneBaseDir, os.ModePerm)
+	if err != nil {
+		log.Fatalf("Failed to create clone base directory '%s': %v", cloneBaseDir, err)
+	}
+
+	// Step 6: Iterate over each repository, clone it, and search for matches.
+	var allFindings []Finding
+	for _, repo := range repositories {
+		fmt.Printf("Cloning repository: %s\n", repo.GetName())
+
+		// Clone the repository.
+		repoPath := filepath.Join(cloneBaseDir, repo.GetName())
+		err := cloneRepository(repo.GetCloneURL(), repoPath)
+		if err != nil {
+			log.Printf("Failed to clone repository '%s': %v", repo.GetName(), err)
+			continue
+		}
+
+		// Execute traverseAndSearch on the cloned repository.
+		findings, err := traverseAndSearch(repoPath, serviceRegexes, repo.GetName(), allSupportedFileExtensions)
+		if err != nil {
+			log.Printf("Error searching repository '%s': %v", repo.GetName(), err)
+			continue
+		}
+
+		allFindings = append(allFindings, findings...)
+	}
+
+	// Step 7: Marshal all findings to JSON and print.
+	findingsJSON, err := json.MarshalIndent(allFindings, "", "    ")
+	if err != nil {
+		log.Fatalf("Failed to marshal findings to JSON: %v", err)
+	}
+
+	fmt.Println(string(findingsJSON))
+}
+
+func compileRegexes(allServices []Service) []ServiceRegex {
+	serviceRegexes := []ServiceRegex{}
+	for _, service := range allServices {
+		pattern := service.Reference
+		// If Reference is a literal string, escape it
+		// pattern = regexp.QuoteMeta(pattern)
+		re, err := regexp.Compile(pattern)
+		if err != nil {
+			log.Printf("Failed to compile regex pattern '%s' from service '%s': %v", pattern, service.CloudService, err)
+			continue
+		}
+		serviceRegexes = append(serviceRegexes, ServiceRegex{
+			Service: service,
+			Regex:   re,
+		})
+	}
+	return serviceRegexes
+}
+
+func loadAllCloudServices() []Service {
+	var allServices []Service
+
+	// Read all JSON files in the 'data' directory
+	entries, err := fs.ReadDir(servicesFS, "data/cloud_service_mappings")
+	if err != nil {
+		log.Fatalf("Failed to read embedded directory: %v", err)
+	}
+
+	for _, entry := range entries {
+		if entry.IsDir() {
+			// Skip directories
+			continue
+		}
+
+		if !strings.HasSuffix(entry.Name(), ".json") {
+			// Skip non-JSON files
+			continue
+		}
+
+		// Read the content of the JSON file
+		content, err := servicesFS.ReadFile(fmt.Sprintf("data/cloud_service_mappings/%s", entry.Name()))
+		if err != nil {
+			log.Printf("Failed to read file %s: %v", entry.Name(), err)
+			continue
+		}
+
+		// Unmarshal JSON content into Service struct
+		var service []Service
+		err = json.Unmarshal(content, &service)
+		if err != nil {
+			log.Printf("Failed to unmarshal JSON from file %s: %v", entry.Name(), err)
+			continue
+		}
+
+		// Append to the slice of all services
+		allServices = append(allServices, service...)
+	}
+	return allServices
+}
+
+func traverseAndSearch(targetDir string, serviceRegexes []ServiceRegex, repoName string, supportedFileExtensions []string) ([]Finding, error) {
+	var findings []Finding
+
+	info, err := os.Stat(targetDir)
+	if os.IsNotExist(err) {
+		return nil, fmt.Errorf("target directory '%s' does not exist", targetDir)
+	}
+	if !info.IsDir() {
+		return nil, fmt.Errorf("'%s' is not a directory", targetDir)
+	}
+
+	// Walk through the directory recursively.
+	err = filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			log.Printf("Error accessing path '%s': %v", path, err)
+			return nil // Continue walking.
+		}
+
+		if d.IsDir() {
+			// Skip directories.
+			return nil
+		}
+
+		// Retrieve the file extension.
+		ext := strings.TrimLeft(filepath.Ext(path), ".")
+
+		shouldProcess := false
+		for _, supportedExtension := range supportedFileExtensions {
+			if supportedExtension == ext {
+				shouldProcess = true
+				break
+			}
+		}
+		if !shouldProcess {
+			return nil
+		}
+
+		// Read the content of the file.
+		content, err := os.ReadFile(path)
+		if err != nil {
+			log.Printf("Failed to read file '%s': %v", path, err)
+			return nil // Continue with other files.
+		}
+
+		text := string(content)
+
+		// Search for each regex pattern in the file content.
+		for _, sre := range serviceRegexes {
+			if sre.Service.Language != "" && sre.Service.Language != ext {
+				// Skip if the Language field is set and does not match the file extension.
+				continue
+			}
+
+			matches := sre.Regex.FindAllString(text, -1)
+			if len(matches) > 0 {
+				for _, _ = range matches {
+					findings = append(findings, Finding{
+						Service:    sre.Service,
+						Repository: repoName,
+						Filepath:   path,
+					})
+				}
+			}
+		}
+
+		return nil
+	})
+
+	if err != nil {
+		return nil, fmt.Errorf("error walking the path '%s': %w", targetDir, err)
+	}
+
+	return findings, nil
+}
+func initializeGitHubClient() *github.Client {
+	ctx := context.Background()
+	var client *github.Client
+
+	// Check if GITHUB_TOKEN is set for authentication.
+	token := os.Getenv("GITHUB_TOKEN")
+	if token != "" {
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: token},
+		)
+		tc := oauth2.NewClient(ctx, ts)
+		client = github.NewClient(tc)
+	} else {
+		// Unauthenticated client (limited rate)
+		client = github.NewClient(nil)
+	}
+
+	return client
+}
+
+func listRepositories(client *github.Client, org string) ([]*github.Repository, error) {
+	var allRepos []*github.Repository
+	opt := &github.RepositoryListByOrgOptions{
+		ListOptions: github.ListOptions{PerPage: 100},
+	}
+
+	for {
+		repos, resp, err := client.Repositories.ListByOrg(context.Background(), org, opt)
+		if err != nil {
+			return nil, fmt.Errorf("failed to list repositories: %w", err)
+		}
+
+		allRepos = append(allRepos, repos...)
+
+		if resp.NextPage == 0 {
+			break
+		}
+		opt.Page = resp.NextPage
+	}
+
+	return allRepos, nil
+}
+
+func cloneRepository(cloneURL, destination string) error {
+	// Check if the destination already exists to avoid re-cloning.
+	if _, err := os.Stat(destination); err == nil {
+		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
+		return nil
+	}
+
+	// Clone the repository using go-git.
+	_, err := git.PlainClone(destination, false, &git.CloneOptions{
+		URL:      cloneURL,
+		Progress: os.Stdout,
+	})
+	if err != nil {
+		return fmt.Errorf("git clone failed: %w", err)
+	}
+
+	return nil
+}

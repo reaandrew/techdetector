@@ -1,0 +1,2330 @@
+[
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Access Analyzer",
+        "language": "cs",
+        "reference": "Amazon.AccessAnalyzer"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Account",
+        "language": "cs",
+        "reference": "Amazon.Account"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ACM PCA",
+        "language": "cs",
+        "reference": "Amazon.ACMPCA"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Amplify",
+        "language": "cs",
+        "reference": "Amazon.Amplify"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Amplify Backend",
+        "language": "cs",
+        "reference": "Amazon.AmplifyBackend"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Amplify UI Builder",
+        "language": "cs",
+        "reference": "Amazon.AmplifyUIBuilder"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon API Gateway",
+        "language": "cs",
+        "reference": "Amazon.APIGateway"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon API Gateway Management API",
+        "language": "cs",
+        "reference": "Amazon.ApiGatewayManagementApi"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon API Gateway V2",
+        "language": "cs",
+        "reference": "Amazon.ApiGatewayV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppConfig",
+        "language": "cs",
+        "reference": "Amazon.AppConfig"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppConfig Data",
+        "language": "cs",
+        "reference": "Amazon.AppConfigData"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppFabric",
+        "language": "cs",
+        "reference": "Amazon.AppFabric"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppFlow",
+        "language": "cs",
+        "reference": "Amazon.AppFlow"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppIntegrations Service",
+        "language": "cs",
+        "reference": "Amazon.AppIntegrationsService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Application Auto Scaling",
+        "language": "cs",
+        "reference": "Amazon.ApplicationAutoScaling"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Application Cost Profiler",
+        "language": "cs",
+        "reference": "Amazon.ApplicationCostProfiler"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Application Discovery Service",
+        "language": "cs",
+        "reference": "Amazon.ApplicationDiscoveryService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Application Insights",
+        "language": "cs",
+        "reference": "Amazon.ApplicationInsights"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Application Signals",
+        "language": "cs",
+        "reference": "Amazon.ApplicationSignals"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppMesh",
+        "language": "cs",
+        "reference": "Amazon.AppMesh"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppRegistry",
+        "language": "cs",
+        "reference": "Amazon.AppRegistry"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppRunner",
+        "language": "cs",
+        "reference": "Amazon.AppRunner"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppStream",
+        "language": "cs",
+        "reference": "Amazon.AppStream"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppSync",
+        "language": "cs",
+        "reference": "Amazon.AppSync"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon AppTest",
+        "language": "cs",
+        "reference": "Amazon.AppTest"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ARC Zonal Shift",
+        "language": "cs",
+        "reference": "Amazon.ARCZonalShift"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Artifact",
+        "language": "cs",
+        "reference": "Amazon.Artifact"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Athena",
+        "language": "cs",
+        "reference": "Amazon.Athena"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Audit Manager",
+        "language": "cs",
+        "reference": "Amazon.AuditManager"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Augmented AI Runtime",
+        "language": "cs",
+        "reference": "Amazon.AugmentedAIRuntime"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Auto Scaling",
+        "language": "cs",
+        "reference": "Amazon.AutoScaling"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Auto Scaling Plans",
+        "language": "cs",
+        "reference": "Amazon.AutoScalingPlans"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "AWS Health",
+        "language": "cs",
+        "reference": "Amazon.AWSHealth"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "AWS Marketplace Commerce Analytics",
+        "language": "cs",
+        "reference": "Amazon.AWSMarketplaceCommerceAnalytics"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "AWS Marketplace Metering",
+        "language": "cs",
+        "reference": "Amazon.AWSMarketplaceMetering"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "AWS Support",
+        "language": "cs",
+        "reference": "Amazon.AWSSupport"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon B2bi",
+        "language": "cs",
+        "reference": "Amazon.B2bi"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Backup",
+        "language": "cs",
+        "reference": "Amazon.Backup"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Backup Gateway",
+        "language": "cs",
+        "reference": "Amazon.BackupGateway"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Batch",
+        "language": "cs",
+        "reference": "Amazon.Batch"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon BCM Data Exports",
+        "language": "cs",
+        "reference": "Amazon.BCMDataExports"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Bedrock",
+        "language": "cs",
+        "reference": "Amazon.Bedrock"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Bedrock Agent",
+        "language": "cs",
+        "reference": "Amazon.BedrockAgent"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Bedrock Agent Runtime",
+        "language": "cs",
+        "reference": "Amazon.BedrockAgentRuntime"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Bedrock Runtime",
+        "language": "cs",
+        "reference": "Amazon.BedrockRuntime"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Billing Conductor",
+        "language": "cs",
+        "reference": "Amazon.BillingConductor"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Braket",
+        "language": "cs",
+        "reference": "Amazon.Braket"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Budgets",
+        "language": "cs",
+        "reference": "Amazon.Budgets"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Certificate Manager",
+        "language": "cs",
+        "reference": "Amazon.CertificateManager"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Chatbot",
+        "language": "cs",
+        "reference": "Amazon.Chatbot"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Chime",
+        "language": "cs",
+        "reference": "Amazon.Chime"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Chime SDK Identity",
+        "language": "cs",
+        "reference": "Amazon.ChimeSDKIdentity"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Chime SDK Media Pipelines",
+        "language": "cs",
+        "reference": "Amazon.ChimeSDKMediaPipelines"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Chime SDK Meetings",
+        "language": "cs",
+        "reference": "Amazon.ChimeSDKMeetings"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Chime SDK Messaging",
+        "language": "cs",
+        "reference": "Amazon.ChimeSDKMessaging"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Chime SDK Voice",
+        "language": "cs",
+        "reference": "Amazon.ChimeSDKVoice"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CleanRooms",
+        "language": "cs",
+        "reference": "Amazon.CleanRooms"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CleanRooms ML",
+        "language": "cs",
+        "reference": "Amazon.CleanRoomsML"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Cloud9",
+        "language": "cs",
+        "reference": "Amazon.Cloud9"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudControlApi",
+        "language": "cs",
+        "reference": "Amazon.CloudControlApi"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudDirectory",
+        "language": "cs",
+        "reference": "Amazon.CloudDirectory"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudFormation",
+        "language": "cs",
+        "reference": "Amazon.CloudFormation"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudFront",
+        "language": "cs",
+        "reference": "Amazon.CloudFront"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudFront KeyValue Store",
+        "language": "cs",
+        "reference": "Amazon.CloudFrontKeyValueStore"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudHSM",
+        "language": "cs",
+        "reference": "Amazon.CloudHSM"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudHSM V2",
+        "language": "cs",
+        "reference": "Amazon.CloudHSMV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudSearch",
+        "language": "cs",
+        "reference": "Amazon.CloudSearch"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudSearchDomain",
+        "language": "cs",
+        "reference": "Amazon.CloudSearchDomain"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudTrail",
+        "language": "cs",
+        "reference": "Amazon.CloudTrail"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudTrail Data",
+        "language": "cs",
+        "reference": "Amazon.CloudTrailData"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudWatch",
+        "language": "cs",
+        "reference": "Amazon.CloudWatch"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudWatch Events",
+        "language": "cs",
+        "reference": "Amazon.CloudWatchEvents"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudWatch Evidently",
+        "language": "cs",
+        "reference": "Amazon.CloudWatchEvidently"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudWatch Logs",
+        "language": "cs",
+        "reference": "Amazon.CloudWatchLogs"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CloudWatch RUM",
+        "language": "cs",
+        "reference": "Amazon.CloudWatchRUM"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeAnalysis",
+        "language": "cs",
+        "reference": "Amazon.CodeAnalysis"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeArtifact",
+        "language": "cs",
+        "reference": "Amazon.CodeArtifact"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeBuild",
+        "language": "cs",
+        "reference": "Amazon.CodeBuild"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeCatalyst",
+        "language": "cs",
+        "reference": "Amazon.CodeCatalyst"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeCommit",
+        "language": "cs",
+        "reference": "Amazon.CodeCommit"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeConnections",
+        "language": "cs",
+        "reference": "Amazon.CodeConnections"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeDeploy",
+        "language": "cs",
+        "reference": "Amazon.CodeDeploy"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeGuru Profiler",
+        "language": "cs",
+        "reference": "Amazon.CodeGuruProfiler"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeGuru Reviewer",
+        "language": "cs",
+        "reference": "Amazon.CodeGuruReviewer"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeGuru Security",
+        "language": "cs",
+        "reference": "Amazon.CodeGuruSecurity"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodePipeline",
+        "language": "cs",
+        "reference": "Amazon.CodePipeline"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeStarconnections",
+        "language": "cs",
+        "reference": "Amazon.CodeStarconnections"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CodeStarNotifications",
+        "language": "cs",
+        "reference": "Amazon.CodeStarNotifications"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CognitoIdentity",
+        "language": "cs",
+        "reference": "Amazon.CognitoIdentity"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CognitoIdentityProvider",
+        "language": "cs",
+        "reference": "Amazon.CognitoIdentityProvider"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CognitoSync",
+        "language": "cs",
+        "reference": "Amazon.CognitoSync"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Comprehend",
+        "language": "cs",
+        "reference": "Amazon.Comprehend"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Comprehend Medical",
+        "language": "cs",
+        "reference": "Amazon.ComprehendMedical"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Compute Optimizer",
+        "language": "cs",
+        "reference": "Amazon.ComputeOptimizer"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ConfigService",
+        "language": "cs",
+        "reference": "Amazon.ConfigService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Connect",
+        "language": "cs",
+        "reference": "Amazon.Connect"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Connect Campaign Service",
+        "language": "cs",
+        "reference": "Amazon.ConnectCampaignService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Connect Cases",
+        "language": "cs",
+        "reference": "Amazon.ConnectCases"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Connect Contact Lens",
+        "language": "cs",
+        "reference": "Amazon.ConnectContactLens"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Connect Participant",
+        "language": "cs",
+        "reference": "Amazon.ConnectParticipant"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Connect Wisdom Service",
+        "language": "cs",
+        "reference": "Amazon.ConnectWisdomService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Control Catalog",
+        "language": "cs",
+        "reference": "Amazon.ControlCatalog"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Control Tower",
+        "language": "cs",
+        "reference": "Amazon.ControlTower"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Cost and Usage Report",
+        "language": "cs",
+        "reference": "Amazon.CostAndUsageReport"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon CostExplorer",
+        "language": "cs",
+        "reference": "Amazon.CostExplorer"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Cost Optimization Hub",
+        "language": "cs",
+        "reference": "Amazon.CostOptimizationHub"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Customer Profiles",
+        "language": "cs",
+        "reference": "Amazon.CustomerProfiles"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Database Migration Service",
+        "language": "cs",
+        "reference": "Amazon.DatabaseMigrationService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DataExchange",
+        "language": "cs",
+        "reference": "Amazon.DataExchange"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DataPipeline",
+        "language": "cs",
+        "reference": "Amazon.DataPipeline"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DataSync",
+        "language": "cs",
+        "reference": "Amazon.DataSync"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DataZone",
+        "language": "cs",
+        "reference": "Amazon.DataZone"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DAX",
+        "language": "cs",
+        "reference": "Amazon.DAX"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Deadline",
+        "language": "cs",
+        "reference": "Amazon.Deadline"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Detective",
+        "language": "cs",
+        "reference": "Amazon.Detective"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DeviceFarm",
+        "language": "cs",
+        "reference": "Amazon.DeviceFarm"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DevOps Guru",
+        "language": "cs",
+        "reference": "Amazon.DevOpsGuru"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DirectConnect",
+        "language": "cs",
+        "reference": "Amazon.DirectConnect"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DirectoryService",
+        "language": "cs",
+        "reference": "Amazon.DirectoryService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DirectoryServiceData",
+        "language": "cs",
+        "reference": "Amazon.DirectoryServiceData"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DLM",
+        "language": "cs",
+        "reference": "Amazon.DLM"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DocDB",
+        "language": "cs",
+        "reference": "Amazon.DocDB"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DocDB Elastic",
+        "language": "cs",
+        "reference": "Amazon.DocDBElastic"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DRS",
+        "language": "cs",
+        "reference": "Amazon.Drs"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon DynamoDBv2",
+        "language": "cs",
+        "reference": "Amazon.DynamoDBv2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon EBS",
+        "language": "cs",
+        "reference": "Amazon.EBS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon EC2",
+        "language": "cs",
+        "reference": "Amazon.EC2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon EC2 Instance Connect",
+        "language": "cs",
+        "reference": "Amazon.EC2InstanceConnect"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ECR",
+        "language": "cs",
+        "reference": "Amazon.ECR"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ECR Public",
+        "language": "cs",
+        "reference": "Amazon.ECRPublic"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ECS",
+        "language": "cs",
+        "reference": "Amazon.ECS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon EKS",
+        "language": "cs",
+        "reference": "Amazon.EKS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon EKS Auth",
+        "language": "cs",
+        "reference": "Amazon.EKSAuth"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ElastiCache",
+        "language": "cs",
+        "reference": "Amazon.ElastiCache"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ElasticBeanstalk",
+        "language": "cs",
+        "reference": "Amazon.ElasticBeanstalk"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ElasticFileSystem",
+        "language": "cs",
+        "reference": "Amazon.ElasticFileSystem"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ElasticInference",
+        "language": "cs",
+        "reference": "Amazon.ElasticInference"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ElasticLoadBalancing",
+        "language": "cs",
+        "reference": "Amazon.ElasticLoadBalancing"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ElasticLoadBalancingV2",
+        "language": "cs",
+        "reference": "Amazon.ElasticLoadBalancingV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ElasticMapReduce",
+        "language": "cs",
+        "reference": "Amazon.ElasticMapReduce"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Elasticsearch",
+        "language": "cs",
+        "reference": "Amazon.Elasticsearch"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ElasticTranscoder",
+        "language": "cs",
+        "reference": "Amazon.ElasticTranscoder"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon EMRContainers",
+        "language": "cs",
+        "reference": "Amazon.EMRContainers"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon EMRServerless",
+        "language": "cs",
+        "reference": "Amazon.EMRServerless"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Entity Resolution",
+        "language": "cs",
+        "reference": "Amazon.EntityResolution"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon EventBridge",
+        "language": "cs",
+        "reference": "Amazon.EventBridge"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Finspace",
+        "language": "cs",
+        "reference": "Amazon.Finspace"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon FinSpace Data",
+        "language": "cs",
+        "reference": "Amazon.FinSpaceData"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon FIS",
+        "language": "cs",
+        "reference": "Amazon.FIS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon FMS",
+        "language": "cs",
+        "reference": "Amazon.FMS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ForecastQueryService",
+        "language": "cs",
+        "reference": "Amazon.ForecastQueryService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ForecastService",
+        "language": "cs",
+        "reference": "Amazon.ForecastService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Fraud Detector",
+        "language": "cs",
+        "reference": "Amazon.FraudDetector"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon FreeTier",
+        "language": "cs",
+        "reference": "Amazon.FreeTier"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon FSx",
+        "language": "cs",
+        "reference": "Amazon.FSx"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon GameLift",
+        "language": "cs",
+        "reference": "Amazon.GameLift"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Glacier",
+        "language": "cs",
+        "reference": "Amazon.Glacier"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon GlobalAccelerator",
+        "language": "cs",
+        "reference": "Amazon.GlobalAccelerator"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Glue",
+        "language": "cs",
+        "reference": "Amazon.Glue"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Glue DataBrew",
+        "language": "cs",
+        "reference": "Amazon.GlueDataBrew"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Greengrass",
+        "language": "cs",
+        "reference": "Amazon.Greengrass"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Greengrass V2",
+        "language": "cs",
+        "reference": "Amazon.GreengrassV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon GroundStation",
+        "language": "cs",
+        "reference": "Amazon.GroundStation"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon GuardDuty",
+        "language": "cs",
+        "reference": "Amazon.GuardDuty"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon HealthLake",
+        "language": "cs",
+        "reference": "Amazon.HealthLake"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IAMRolesAnywhere",
+        "language": "cs",
+        "reference": "Amazon.IAMRolesAnywhere"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Identity Management",
+        "language": "cs",
+        "reference": "Amazon.IdentityManagement"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IdentityStore",
+        "language": "cs",
+        "reference": "Amazon.IdentityStore"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Imagebuilder",
+        "language": "cs",
+        "reference": "Amazon.Imagebuilder"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ImportExport",
+        "language": "cs",
+        "reference": "Amazon.ImportExport"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Inspector",
+        "language": "cs",
+        "reference": "Amazon.Inspector"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Inspector2",
+        "language": "cs",
+        "reference": "Amazon.Inspector2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon InspectorScan",
+        "language": "cs",
+        "reference": "Amazon.InspectorScan"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon InternetMonitor",
+        "language": "cs",
+        "reference": "Amazon.InternetMonitor"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoT",
+        "language": "cs",
+        "reference": "Amazon.IoT"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoT1ClickDevicesService",
+        "language": "cs",
+        "reference": "Amazon.IoT1ClickDevicesService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoT1ClickProjects",
+        "language": "cs",
+        "reference": "Amazon.IoT1ClickProjects"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTAnalytics",
+        "language": "cs",
+        "reference": "Amazon.IoTAnalytics"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IotData",
+        "language": "cs",
+        "reference": "Amazon.IotData"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTDeviceAdvisor",
+        "language": "cs",
+        "reference": "Amazon.IoTDeviceAdvisor"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTEvents",
+        "language": "cs",
+        "reference": "Amazon.IoTEvents"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTEventsData",
+        "language": "cs",
+        "reference": "Amazon.IoTEventsData"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTFleetHub",
+        "language": "cs",
+        "reference": "Amazon.IoTFleetHub"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTFleetWise",
+        "language": "cs",
+        "reference": "Amazon.IoTFleetWise"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTJobsDataPlane",
+        "language": "cs",
+        "reference": "Amazon.IoTJobsDataPlane"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTSecureTunneling",
+        "language": "cs",
+        "reference": "Amazon.IoTSecureTunneling"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTSiteWise",
+        "language": "cs",
+        "reference": "Amazon.IoTSiteWise"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTThingsGraph",
+        "language": "cs",
+        "reference": "Amazon.IoTThingsGraph"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTTwinMaker",
+        "language": "cs",
+        "reference": "Amazon.IoTTwinMaker"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IoTWireless",
+        "language": "cs",
+        "reference": "Amazon.IoTWireless"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IVS",
+        "language": "cs",
+        "reference": "Amazon.IVS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Ivschat",
+        "language": "cs",
+        "reference": "Amazon.Ivschat"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon IVSRealTime",
+        "language": "cs",
+        "reference": "Amazon.IVSRealTime"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Kafka",
+        "language": "cs",
+        "reference": "Amazon.Kafka"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KafkaConnect",
+        "language": "cs",
+        "reference": "Amazon.KafkaConnect"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Kendra",
+        "language": "cs",
+        "reference": "Amazon.Kendra"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KendraRanking",
+        "language": "cs",
+        "reference": "Amazon.KendraRanking"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KeyManagementService",
+        "language": "cs",
+        "reference": "Amazon.KeyManagementService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Keyspaces",
+        "language": "cs",
+        "reference": "Amazon.Keyspaces"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Kinesis",
+        "language": "cs",
+        "reference": "Amazon.Kinesis"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KinesisAnalytics",
+        "language": "cs",
+        "reference": "Amazon.KinesisAnalytics"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KinesisAnalyticsV2",
+        "language": "cs",
+        "reference": "Amazon.KinesisAnalyticsV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KinesisFirehose",
+        "language": "cs",
+        "reference": "Amazon.KinesisFirehose"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KinesisVideo",
+        "language": "cs",
+        "reference": "Amazon.KinesisVideo"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KinesisVideoArchivedMedia",
+        "language": "cs",
+        "reference": "Amazon.KinesisVideoArchivedMedia"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KinesisVideoMedia",
+        "language": "cs",
+        "reference": "Amazon.KinesisVideoMedia"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KinesisVideoSignalingChannels",
+        "language": "cs",
+        "reference": "Amazon.KinesisVideoSignalingChannels"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon KinesisVideoWebRTCStorage",
+        "language": "cs",
+        "reference": "Amazon.KinesisVideoWebRTCStorage"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LakeFormation",
+        "language": "cs",
+        "reference": "Amazon.LakeFormation"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Lambda",
+        "language": "cs",
+        "reference": "Amazon.Lambda"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LaunchWizard",
+        "language": "cs",
+        "reference": "Amazon.LaunchWizard"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Lex",
+        "language": "cs",
+        "reference": "Amazon.Lex"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Lex ModelBuildingService",
+        "language": "cs",
+        "reference": "Amazon.LexModelBuildingService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LexModelsV2",
+        "language": "cs",
+        "reference": "Amazon.LexModelsV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LexRuntimeV2",
+        "language": "cs",
+        "reference": "Amazon.LexRuntimeV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LicenseManager",
+        "language": "cs",
+        "reference": "Amazon.LicenseManager"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LicenseManagerLinuxSubscriptions",
+        "language": "cs",
+        "reference": "Amazon.LicenseManagerLinuxSubscriptions"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LicenseManagerUserSubscriptions",
+        "language": "cs",
+        "reference": "Amazon.LicenseManagerUserSubscriptions"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Lightsail",
+        "language": "cs",
+        "reference": "Amazon.Lightsail"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LocationService",
+        "language": "cs",
+        "reference": "Amazon.LocationService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LookoutEquipment",
+        "language": "cs",
+        "reference": "Amazon.LookoutEquipment"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LookoutforVision",
+        "language": "cs",
+        "reference": "Amazon.LookoutforVision"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon LookoutMetrics",
+        "language": "cs",
+        "reference": "Amazon.LookoutMetrics"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MachineLearning",
+        "language": "cs",
+        "reference": "Amazon.MachineLearning"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Macie2",
+        "language": "cs",
+        "reference": "Amazon.Macie2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MailManager",
+        "language": "cs",
+        "reference": "Amazon.MailManager"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MainframeModernization",
+        "language": "cs",
+        "reference": "Amazon.MainframeModernization"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ManagedBlockchain",
+        "language": "cs",
+        "reference": "Amazon.ManagedBlockchain"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ManagedBlockchainQuery",
+        "language": "cs",
+        "reference": "Amazon.ManagedBlockchainQuery"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ManagedGrafana",
+        "language": "cs",
+        "reference": "Amazon.ManagedGrafana"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MarketplaceAgreement",
+        "language": "cs",
+        "reference": "Amazon.MarketplaceAgreement"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MarketplaceCatalog",
+        "language": "cs",
+        "reference": "Amazon.MarketplaceCatalog"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MarketplaceDeployment",
+        "language": "cs",
+        "reference": "Amazon.MarketplaceDeployment"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MarketplaceEntitlementService",
+        "language": "cs",
+        "reference": "Amazon.MarketplaceEntitlementService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MarketplaceReporting",
+        "language": "cs",
+        "reference": "Amazon.MarketplaceReporting"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaConnect",
+        "language": "cs",
+        "reference": "Amazon.MediaConnect"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaConvert",
+        "language": "cs",
+        "reference": "Amazon.MediaConvert"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaLive",
+        "language": "cs",
+        "reference": "Amazon.MediaLive"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaPackage",
+        "language": "cs",
+        "reference": "Amazon.MediaPackage"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaPackageV2",
+        "language": "cs",
+        "reference": "Amazon.MediaPackageV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaPackageVod",
+        "language": "cs",
+        "reference": "Amazon.MediaPackageVod"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaStore",
+        "language": "cs",
+        "reference": "Amazon.MediaStore"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaStoreData",
+        "language": "cs",
+        "reference": "Amazon.MediaStoreData"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MediaTailor",
+        "language": "cs",
+        "reference": "Amazon.MediaTailor"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MedicalImaging",
+        "language": "cs",
+        "reference": "Amazon.MedicalImaging"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MemoryDB",
+        "language": "cs",
+        "reference": "Amazon.MemoryDB"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Mgn",
+        "language": "cs",
+        "reference": "Amazon.Mgn"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MigrationHub",
+        "language": "cs",
+        "reference": "Amazon.MigrationHub"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MigrationHubConfig",
+        "language": "cs",
+        "reference": "Amazon.MigrationHubConfig"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MigrationHubOrchestrator",
+        "language": "cs",
+        "reference": "Amazon.MigrationHubOrchestrator"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MigrationHubRefactorSpaces",
+        "language": "cs",
+        "reference": "Amazon.MigrationHubRefactorSpaces"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MigrationHubStrategyRecommendations",
+        "language": "cs",
+        "reference": "Amazon.MigrationHubStrategyRecommendations"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MobileAnalytics",
+        "language": "cs",
+        "reference": "Amazon.MobileAnalytics"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MQ",
+        "language": "cs",
+        "reference": "Amazon.MQ"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MTurk",
+        "language": "cs",
+        "reference": "Amazon.MTurk"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon MWAA",
+        "language": "cs",
+        "reference": "Amazon.MWAA"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Neptune",
+        "language": "cs",
+        "reference": "Amazon.Neptune"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Neptunedata",
+        "language": "cs",
+        "reference": "Amazon.Neptunedata"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon NeptuneGraph",
+        "language": "cs",
+        "reference": "Amazon.NeptuneGraph"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon NetworkFirewall",
+        "language": "cs",
+        "reference": "Amazon.NetworkFirewall"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon NetworkManager",
+        "language": "cs",
+        "reference": "Amazon.NetworkManager"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon NetworkMonitor",
+        "language": "cs",
+        "reference": "Amazon.NetworkMonitor"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon OAM",
+        "language": "cs",
+        "reference": "Amazon.OAM"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Omics",
+        "language": "cs",
+        "reference": "Amazon.Omics"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon OpenSearchServerless",
+        "language": "cs",
+        "reference": "Amazon.OpenSearchServerless"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon OpenSearchService",
+        "language": "cs",
+        "reference": "Amazon.OpenSearchService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon OpsWorks",
+        "language": "cs",
+        "reference": "Amazon.OpsWorks"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon OpsWorksCM",
+        "language": "cs",
+        "reference": "Amazon.OpsWorksCM"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Organizations",
+        "language": "cs",
+        "reference": "Amazon.Organizations"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon OSIS",
+        "language": "cs",
+        "reference": "Amazon.OSIS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Outposts",
+        "language": "cs",
+        "reference": "Amazon.Outposts"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Panorama",
+        "language": "cs",
+        "reference": "Amazon.Panorama"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PaymentCryptography",
+        "language": "cs",
+        "reference": "Amazon.PaymentCryptography"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PaymentCryptographyData",
+        "language": "cs",
+        "reference": "Amazon.PaymentCryptographyData"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PcaConnectorAd",
+        "language": "cs",
+        "reference": "Amazon.PcaConnectorAd"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PcaConnectorScep",
+        "language": "cs",
+        "reference": "Amazon.PcaConnectorScep"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PCS",
+        "language": "cs",
+        "reference": "Amazon.PCS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Personalize",
+        "language": "cs",
+        "reference": "Amazon.Personalize"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PersonalizeEvents",
+        "language": "cs",
+        "reference": "Amazon.PersonalizeEvents"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PersonalizeRuntime",
+        "language": "cs",
+        "reference": "Amazon.PersonalizeRuntime"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PI",
+        "language": "cs",
+        "reference": "Amazon.PI"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Pinpoint",
+        "language": "cs",
+        "reference": "Amazon.Pinpoint"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PinpointEmail",
+        "language": "cs",
+        "reference": "Amazon.PinpointEmail"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PinpointSMSVoice",
+        "language": "cs",
+        "reference": "Amazon.PinpointSMSVoice"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PinpointSMSVoiceV2",
+        "language": "cs",
+        "reference": "Amazon.PinpointSMSVoiceV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Pipes",
+        "language": "cs",
+        "reference": "Amazon.Pipes"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Polly",
+        "language": "cs",
+        "reference": "Amazon.Polly"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Pricing",
+        "language": "cs",
+        "reference": "Amazon.Pricing"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Private5G",
+        "language": "cs",
+        "reference": "Amazon.Private5G"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon PrometheusService",
+        "language": "cs",
+        "reference": "Amazon.PrometheusService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Proton",
+        "language": "cs",
+        "reference": "Amazon.Proton"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon QApps",
+        "language": "cs",
+        "reference": "Amazon.QApps"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon QBusiness",
+        "language": "cs",
+        "reference": "Amazon.QBusiness"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon QConnect",
+        "language": "cs",
+        "reference": "Amazon.QConnect"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon QLDB",
+        "language": "cs",
+        "reference": "Amazon.QLDB"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon QLDBSession",
+        "language": "cs",
+        "reference": "Amazon.QLDBSession"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon QuickSight",
+        "language": "cs",
+        "reference": "Amazon.QuickSight"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon RAM",
+        "language": "cs",
+        "reference": "Amazon.RAM"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon RDS",
+        "language": "cs",
+        "reference": "Amazon.RDS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon RDSDataService",
+        "language": "cs",
+        "reference": "Amazon.RDSDataService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon RecycleBin",
+        "language": "cs",
+        "reference": "Amazon.RecycleBin"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Redshift",
+        "language": "cs",
+        "reference": "Amazon.Redshift"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon RedshiftDataAPIService",
+        "language": "cs",
+        "reference": "Amazon.RedshiftDataAPIService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon RedshiftServerless",
+        "language": "cs",
+        "reference": "Amazon.RedshiftServerless"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Rekognition",
+        "language": "cs",
+        "reference": "Amazon.Rekognition"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Repostspace",
+        "language": "cs",
+        "reference": "Amazon.Repostspace"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ResilienceHub",
+        "language": "cs",
+        "reference": "Amazon.ResilienceHub"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ResourceExplorer2",
+        "language": "cs",
+        "reference": "Amazon.ResourceExplorer2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ResourceGroups",
+        "language": "cs",
+        "reference": "Amazon.ResourceGroups"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ResourceGroupsTaggingAPI",
+        "language": "cs",
+        "reference": "Amazon.ResourceGroupsTaggingAPI"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon RoboMaker",
+        "language": "cs",
+        "reference": "Amazon.RoboMaker"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Route53",
+        "language": "cs",
+        "reference": "Amazon.Route53"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Route53Domains",
+        "language": "cs",
+        "reference": "Amazon.Route53Domains"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Route53Profiles",
+        "language": "cs",
+        "reference": "Amazon.Route53Profiles"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Route53RecoveryCluster",
+        "language": "cs",
+        "reference": "Amazon.Route53RecoveryCluster"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Route53RecoveryControlConfig",
+        "language": "cs",
+        "reference": "Amazon.Route53RecoveryControlConfig"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Route53RecoveryReadiness",
+        "language": "cs",
+        "reference": "Amazon.Route53RecoveryReadiness"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Route53Resolver",
+        "language": "cs",
+        "reference": "Amazon.Route53Resolver"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon S3",
+        "language": "cs",
+        "reference": "Amazon.S3"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon S3Control",
+        "language": "cs",
+        "reference": "Amazon.S3Control"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon S3Outposts",
+        "language": "cs",
+        "reference": "Amazon.S3Outposts"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SageMaker",
+        "language": "cs",
+        "reference": "Amazon.SageMaker"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SagemakerEdgeManager",
+        "language": "cs",
+        "reference": "Amazon.SagemakerEdgeManager"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SageMakerFeatureStoreRuntime",
+        "language": "cs",
+        "reference": "Amazon.SageMakerFeatureStoreRuntime"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SageMakerGeospatial",
+        "language": "cs",
+        "reference": "Amazon.SageMakerGeospatial"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SageMakerMetrics",
+        "language": "cs",
+        "reference": "Amazon.SageMakerMetrics"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SageMakerRuntime",
+        "language": "cs",
+        "reference": "Amazon.SageMakerRuntime"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SavingsPlans",
+        "language": "cs",
+        "reference": "Amazon.SavingsPlans"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Scheduler",
+        "language": "cs",
+        "reference": "Amazon.Scheduler"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Schemas",
+        "language": "cs",
+        "reference": "Amazon.Schemas"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SecretsManager",
+        "language": "cs",
+        "reference": "Amazon.SecretsManager"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SecurityHub",
+        "language": "cs",
+        "reference": "Amazon.SecurityHub"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SecurityLake",
+        "language": "cs",
+        "reference": "Amazon.SecurityLake"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SecurityToken",
+        "language": "cs",
+        "reference": "Amazon.SecurityToken"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ServerlessApplicationRepository",
+        "language": "cs",
+        "reference": "Amazon.ServerlessApplicationRepository"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ServerMigrationService",
+        "language": "cs",
+        "reference": "Amazon.ServerMigrationService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ServiceCatalog",
+        "language": "cs",
+        "reference": "Amazon.ServiceCatalog"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ServiceDiscovery",
+        "language": "cs",
+        "reference": "Amazon.ServiceDiscovery"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon ServiceQuotas",
+        "language": "cs",
+        "reference": "Amazon.ServiceQuotas"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Shield",
+        "language": "cs",
+        "reference": "Amazon.Shield"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Signer",
+        "language": "cs",
+        "reference": "Amazon.Signer"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SimpleDB",
+        "language": "cs",
+        "reference": "Amazon.SimpleDB"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SimpleEmail",
+        "language": "cs",
+        "reference": "Amazon.SimpleEmail"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SimpleEmailV2",
+        "language": "cs",
+        "reference": "Amazon.SimpleEmailV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SimpleNotificationService",
+        "language": "cs",
+        "reference": "Amazon.SimpleNotificationService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SimpleSystemsManagement",
+        "language": "cs",
+        "reference": "Amazon.SimpleSystemsManagement"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SimpleWorkflow",
+        "language": "cs",
+        "reference": "Amazon.SimpleWorkflow"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SimSpaceWeaver",
+        "language": "cs",
+        "reference": "Amazon.SimSpaceWeaver"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Snowball",
+        "language": "cs",
+        "reference": "Amazon.Snowball"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SnowDeviceManagement",
+        "language": "cs",
+        "reference": "Amazon.SnowDeviceManagement"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SocialMessaging",
+        "language": "cs",
+        "reference": "Amazon.SocialMessaging"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SQS",
+        "language": "cs",
+        "reference": "Amazon.SQS"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SSMContacts",
+        "language": "cs",
+        "reference": "Amazon.SSMContacts"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SSMIncidents",
+        "language": "cs",
+        "reference": "Amazon.SSMIncidents"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SSMQuickSetup",
+        "language": "cs",
+        "reference": "Amazon.SSMQuickSetup"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SsmSap",
+        "language": "cs",
+        "reference": "Amazon.SsmSap"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SSO",
+        "language": "cs",
+        "reference": "Amazon.SSO"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SSOAdmin",
+        "language": "cs",
+        "reference": "Amazon.SSOAdmin"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SSOOIDC",
+        "language": "cs",
+        "reference": "Amazon.SSOOIDC"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon StepFunctions",
+        "language": "cs",
+        "reference": "Amazon.StepFunctions"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon StorageGateway",
+        "language": "cs",
+        "reference": "Amazon.StorageGateway"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SupplyChain",
+        "language": "cs",
+        "reference": "Amazon.SupplyChain"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon SupportApp",
+        "language": "cs",
+        "reference": "Amazon.SupportApp"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Synthetics",
+        "language": "cs",
+        "reference": "Amazon.Synthetics"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon TaxSettings",
+        "language": "cs",
+        "reference": "Amazon.TaxSettings"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Textract",
+        "language": "cs",
+        "reference": "Amazon.Textract"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon TimestreamInfluxDB",
+        "language": "cs",
+        "reference": "Amazon.TimestreamInfluxDB"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon TimestreamQuery",
+        "language": "cs",
+        "reference": "Amazon.TimestreamQuery"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon TimestreamWrite",
+        "language": "cs",
+        "reference": "Amazon.TimestreamWrite"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Tnb",
+        "language": "cs",
+        "reference": "Amazon.Tnb"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon TranscribeService",
+        "language": "cs",
+        "reference": "Amazon.TranscribeService"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Transfer",
+        "language": "cs",
+        "reference": "Amazon.Transfer"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon Translate",
+        "language": "cs",
+        "reference": "Amazon.Translate"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon TrustedAdvisor",
+        "language": "cs",
+        "reference": "Amazon.TrustedAdvisor"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon VerifiedPermissions",
+        "language": "cs",
+        "reference": "Amazon.VerifiedPermissions"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon VoiceID",
+        "language": "cs",
+        "reference": "Amazon.VoiceID"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon VPCLattice",
+        "language": "cs",
+        "reference": "Amazon.VPCLattice"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WAF",
+        "language": "cs",
+        "reference": "Amazon.WAF"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WAFRegional",
+        "language": "cs",
+        "reference": "Amazon.WAFRegional"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WAFV2",
+        "language": "cs",
+        "reference": "Amazon.WAFV2"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WellArchitected",
+        "language": "cs",
+        "reference": "Amazon.WellArchitected"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WorkDocs",
+        "language": "cs",
+        "reference": "Amazon.WorkDocs"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WorkMail",
+        "language": "cs",
+        "reference": "Amazon.WorkMail"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WorkMailMessageFlow",
+        "language": "cs",
+        "reference": "Amazon.WorkMailMessageFlow"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WorkSpaces",
+        "language": "cs",
+        "reference": "Amazon.WorkSpaces"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WorkSpacesThinClient",
+        "language": "cs",
+        "reference": "Amazon.WorkSpacesThinClient"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon WorkSpacesWeb",
+        "language": "cs",
+        "reference": "Amazon.WorkSpacesWeb"
+    },
+    {
+        "cloud_vendor": "AWS",
+        "cloud_service": "Amazon XRay",
+        "language": "cs",
+        "reference": "Amazon.XRay"
+    }
+]
