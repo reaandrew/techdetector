@@ -1,0 +1,40 @@
+Web
+ORM
+Testing
+Security
+Logging
+Dependency Injection
+Task Queue
+Data Processing
+Messaging
+Async Web
+API
+Documentation
+Monitoring
+Microservices
+Graphical UI
+Event Streaming
+Serverless
+Configuration Management
+Caching
+Workflow Automation
+ETL
+Serialization
+Templating
+Scheduler
+Reactive
+Container Orchestration
+Game Development
+Graph Processing
+Reporting
+Blockchain
+Data Visualization
+File Processing
+Machine Learning
+Static Site Generation
+Dependency Management
+Build Automation
+Service Mesh
+Internationalization (i18n)
+Payment Integration
+Document Management

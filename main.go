@@ -12,11 +12,11 @@ import (
 	"regexp"
 	"strings"
 	"sync"
-	"syscall"
 
 	"github.com/go-git/go-git/v5"
 	"github.com/google/go-github/v50/github"
 	"github.com/spf13/cobra"
+	"github.com/xuri/excelize/v2"
 	"golang.org/x/oauth2"
 )
 
@@ -42,7 +42,7 @@ type ServiceRegex struct {
 }
 
 const (
-	MaxWorkers     = 5
+	MaxWorkers     = 10
 	MaxFileWorkers = 10
 )
 
@@ -59,6 +59,8 @@ type RepoResult struct {
 }
 
 func main() {
+	var reportFormat string
+
 	rootCmd := &cobra.Command{
 		Use:   "techdetector",
 		Short: "TechDetector is a tool to scan repositories for technologies.",
@@ -69,13 +71,16 @@ func main() {
 		Short: "Scan repositories or organizations for technologies.",
 	}
 
+	// Add the --report flag to the scan command
+	scanCmd.PersistentFlags().StringVar(&reportFormat, "report", "", "Report format (supported: xlsx)")
+
 	scanRepoCmd := &cobra.Command{
 		Use:   "repo <REPO_URL>",
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			repoURL := args[0]
-			runScanRepo(repoURL)
+			runScanRepo(repoURL, reportFormat)
 		},
 	}
 
@@ -85,7 +90,7 @@ func main() {
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			orgName := args[0]
-			runScanOrg(orgName)
+			runScanOrg(orgName, reportFormat)
 		},
 	}
 
@@ -109,7 +114,7 @@ func getSupportedFileExtensions(services []Service) []string {
 	return supportedExtensions
 }
 
-func runScanRepo(repoURL string) {
+func runScanRepo(repoURL string, reportFormat string) {
 	allServices := loadAllCloudServices()
 	allSupportedFileExtensions := getSupportedFileExtensions(allServices)
 	if len(allServices) == 0 {
@@ -144,15 +149,24 @@ func runScanRepo(repoURL string) {
 		log.Fatalf("Error searching repository '%s': %v", repoName, err)
 	}
 
-	findingsJSON, err := json.MarshalIndent(findings, "", "    ")
-	if err != nil {
-		log.Fatalf("Failed to marshal findings to JSON: %v", err)
-	}
+	fmt.Printf("Number of findings: %d\n", len(findings)) // Debug statement
 
-	fmt.Println(string(findingsJSON))
+	if reportFormat == "xlsx" {
+		err = reportXlsx(findings)
+		if err != nil {
+			log.Fatalf("Error generating XLSX report: %v", err)
+		}
+	} else {
+		findingsJSON, err := json.MarshalIndent(findings, "", "    ")
+		if err != nil {
+			log.Fatalf("Failed to marshal findings to JSON: %v", err)
+		}
+
+		fmt.Println(string(findingsJSON))
+	}
 }
 
-func runScanOrg(orgName string) {
+func runScanOrg(orgName string, reportFormat string) {
 	allServices := loadAllCloudServices()
 	allSupportedFileExtensions := getSupportedFileExtensions(allServices)
 	if len(allServices) == 0 {
@@ -208,12 +222,21 @@ func runScanOrg(orgName string) {
 		allFindings = append(allFindings, res.Findings...)
 	}
 
-	findingsJSON, err := json.MarshalIndent(allFindings, "", "    ")
-	if err != nil {
-		log.Fatalf("Failed to marshal findings to JSON: %v", err)
-	}
+	fmt.Printf("Total findings: %d\n", len(allFindings)) // Debug statement
 
-	fmt.Println(string(findingsJSON))
+	if reportFormat == "xlsx" {
+		err = reportXlsx(allFindings)
+		if err != nil {
+			log.Fatalf("Error generating XLSX report: %v", err)
+		}
+	} else {
+		findingsJSON, err := json.MarshalIndent(allFindings, "", "    ")
+		if err != nil {
+			log.Fatalf("Failed to marshal findings to JSON: %v", err)
+		}
+
+		fmt.Println(string(findingsJSON))
+	}
 }
 
 func sanitizeRepoName(fullName string) string {
@@ -419,8 +442,8 @@ func listRepositories(client *github.Client, org string) ([]*github.Repository, 
 		opt.Page = resp.NextPage
 	}
 
-	fmt.Printf("Number of repos %v \n", len(allRepos))
-	syscall.Exit(1)
+	fmt.Printf("Number of repos: %v\n", len(allRepos))
+	// syscall.Exit(1) // Removed the premature exit
 	return allRepos, nil
 }
 
@@ -475,4 +498,65 @@ func worker(id int, jobs <-chan RepoJob, results chan<- RepoResult, cloneBaseDir
 			RepoName: repoName,
 		}
 	}
+}
+
+// reportXlsx generates an XLSX report from the findings.
+// It creates a worksheet named "cloud-services" with the following columns:
+// A: Cloud Vendor, B: Cloud Service, C: Language, D: Repository, E: Filepath
+func reportXlsx(findings []Finding) error {
+	fmt.Println("Generating xlsx file")
+
+	// Create a new Excel file
+	f := excelize.NewFile()
+
+	// Create a new sheet named "cloud-services"
+	sheetName := "cloud-services"
+	index, _ := f.NewSheet(sheetName)
+
+	// Delete the default sheet created by excelize
+	defaultSheet := f.GetSheetName(0)
+	if defaultSheet != sheetName {
+		f.DeleteSheet(defaultSheet)
+	}
+
+	// Set headers
+	headers := []string{"Cloud Vendor", "Cloud Service", "Language", "Repository", "Filepath"}
+	if err := f.SetSheetRow(sheetName, "A1", &headers); err != nil {
+		return fmt.Errorf("failed to set headers: %w", err)
+	}
+
+	// Populate data rows
+	for i, finding := range findings {
+		rowNumber := i + 2 // Starting from row 2 (row 1 is for headers)
+		cellAddress, err := excelize.CoordinatesToCellName(1, rowNumber)
+		if err != nil {
+			return fmt.Errorf("failed to get cell address for row %d: %w", rowNumber, err)
+		}
+
+		// Create a slice with row data
+		rowData := []interface{}{
+			finding.Service.CloudVendor,
+			finding.Service.CloudService,
+			finding.Service.Language,
+			finding.Repository,
+			finding.Filepath,
+		}
+
+		// Set the row data starting from column A
+		if err := f.SetSheetRow(sheetName, cellAddress, &rowData); err != nil {
+			return fmt.Errorf("failed to set data for row %d: %w", rowNumber, err)
+		}
+	}
+
+	// Set the active sheet to "cloud-services"
+	f.SetActiveSheet(index)
+
+	// Save the Excel file
+	outputFile := "cloud_services_report.xlsx"
+	if err := f.SaveAs(outputFile); err != nil {
+		return fmt.Errorf("failed to save xlsx file: %w", err)
+	}
+
+	fmt.Printf("XLSX report generated successfully: %s\n", outputFile)
+	return nil
 }
