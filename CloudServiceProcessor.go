@@ -1,56 +1,15 @@
 package main
 
 import (
-	"embed"
-	"encoding/json"
-	"fmt"
 	"log"
 	"path/filepath"
 	"regexp"
 	"strings"
 )
 
-//go:embed data/cloud_service_mappings/*.json
-var servicesFS embed.FS
-
 // CloudServiceProcessor processes files for CloudService findings.
 type CloudServiceProcessor struct {
 	serviceRegexes []CloudServiceRegex
-}
-
-func loadAllCloudServices() []CloudService {
-	var allServices []CloudService
-
-	entries, err := servicesFS.ReadDir("data/cloud_service_mappings")
-	if err != nil {
-		log.Fatalf("Failed to read embedded directory: %v", err)
-	}
-
-	for _, entry := range entries {
-		if entry.IsDir() {
-			continue
-		}
-
-		if !strings.HasSuffix(entry.Name(), ".json") {
-			continue
-		}
-
-		content, err := servicesFS.ReadFile(fmt.Sprintf("data/cloud_service_mappings/%s", entry.Name()))
-		if err != nil {
-			log.Printf("Failed to read file %s: %v", entry.Name(), err)
-			continue
-		}
-
-		var services []CloudService
-		err = json.Unmarshal(content, &services)
-		if err != nil {
-			log.Printf("Failed to unmarshal JSON from file %s: %v", entry.Name(), err)
-			continue
-		}
-
-		allServices = append(allServices, services...)
-	}
-	return allServices
 }
 
 func compileServicesRegexes(allServices []CloudService) []CloudServiceRegex {
@@ -71,8 +30,8 @@ func compileServicesRegexes(allServices []CloudService) []CloudServiceRegex {
 }
 
 // NewServiceProcessor creates a new CloudServiceProcessor.
-func NewServiceProcessor() *CloudServiceProcessor {
-	services := loadAllCloudServices()
+func NewServiceProcessor(loader CloudServicesLoader) *CloudServiceProcessor {
+	services := loader.LoadAllCloudServices()
 	serviceRegexes := compileServicesRegexes(services)
 	return &CloudServiceProcessor{serviceRegexes: serviceRegexes}
 }
