@@ -1,0 +1,980 @@
+[
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AccessApproval",
+        "language": "js",
+        "reference": "@google-cloud/access-approval"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "js",
+        "reference": "@google-cloud/access-context-manager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AdvisoryNotifications",
+        "language": "js",
+        "reference": "@google-cloud/advisorynotifications"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AIPlatform",
+        "language": "js",
+        "reference": "@google-cloud/aiplatform"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AlloyDb",
+        "language": "js",
+        "reference": "@google-cloud/alloydb"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiGateway",
+        "language": "js",
+        "reference": "@google-cloud/api-gateway"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApigeeConnect",
+        "language": "js",
+        "reference": "@google-cloud/apigee-connect"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApigeeRegistry",
+        "language": "js",
+        "reference": "@google-cloud/apigee-registry"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiHub",
+        "language": "js",
+        "reference": "@google-cloud/apihub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ApiKeys",
+        "language": "js",
+        "reference": "@google-cloud/apikeys"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "js",
+        "reference": "@google-cloud/appconnections"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "js",
+        "reference": "@google-cloud/appconnectors"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppEngine",
+        "language": "js",
+        "reference": "@google-cloud/appengine-admin"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Apps",
+        "language": "js",
+        "reference": "@google-cloud/appgateways"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AppHub",
+        "language": "js",
+        "reference": "@google-cloud/apphub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ArtifactRegistry",
+        "language": "js",
+        "reference": "@google-cloud/artifact-registry"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Asset",
+        "language": "js",
+        "reference": "@google-cloud/asset"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AssuredWorkloads",
+        "language": "js",
+        "reference": "@google-cloud/assured-workloads"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "AutoML",
+        "language": "js",
+        "reference": "@google-cloud/automl"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BackupDR",
+        "language": "js",
+        "reference": "@google-cloud/backupdr"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BareMetalSolution",
+        "language": "js",
+        "reference": "@google-cloud/bare-metal-solution"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Batch",
+        "language": "js",
+        "reference": "@google-cloud/batch"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "js",
+        "reference": "@google-cloud/bigquery-analyticshub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "js",
+        "reference": "@google-cloud/bigquery-connection"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "js",
+        "reference": "@google-cloud/bigquery-data-exchange"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "js",
+        "reference": "@google-cloud/bigquery-datapolicies"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "js",
+        "reference": "@google-cloud/bigquery-data-transfer"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "js",
+        "reference": "@google-cloud/bigquery-migration"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BigQuery",
+        "language": "js",
+        "reference": "@google-cloud/bigquery-reservation"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "js",
+        "reference": "@google-cloud/billing"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Billing",
+        "language": "js",
+        "reference": "@google-cloud/billing-budgets"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BinaryAuthorization",
+        "language": "js",
+        "reference": "@google-cloud/binary-authorization"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CertificateManager",
+        "language": "js",
+        "reference": "@google-cloud/certificate-manager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Channel",
+        "language": "js",
+        "reference": "@google-cloud/channel"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Connectors",
+        "language": "js",
+        "reference": "@google-cloud/clientconnectorservices"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "BeyondCorp",
+        "language": "js",
+        "reference": "@google-cloud/clientgateways"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudBuild",
+        "language": "js",
+        "reference": "@google-cloud/cloudbuild"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudControlsPartner",
+        "language": "js",
+        "reference": "@google-cloud/cloudcontrolspartner"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Diagnostics",
+        "language": "js",
+        "reference": "@google-cloud/cloudprofiler"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudQuotas",
+        "language": "js",
+        "reference": "@google-cloud/cloudquotas"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Compute",
+        "language": "js",
+        "reference": "@google-cloud/compute"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ConfidentialComputing",
+        "language": "js",
+        "reference": "@google-cloud/confidentialcomputing"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Config",
+        "language": "js",
+        "reference": "@google-cloud/config"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Connectors",
+        "language": "js",
+        "reference": "@google-cloud/connectors"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ContactCenterInsights",
+        "language": "js",
+        "reference": "@google-cloud/contact-center-insights"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Container",
+        "language": "js",
+        "reference": "@google-cloud/container"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Container",
+        "language": "js",
+        "reference": "@google-cloud/containeranalysis"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "js",
+        "reference": "@google-cloud/contentwarehouse"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataCatalog",
+        "language": "js",
+        "reference": "@google-cloud/datacatalog"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataflow",
+        "language": "js",
+        "reference": "@google-cloud/dataflow"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataform",
+        "language": "js",
+        "reference": "@google-cloud/dataform"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DataFusion",
+        "language": "js",
+        "reference": "@google-cloud/data-fusion"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dlp",
+        "language": "js",
+        "reference": "@google-cloud/datalabeling"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataplex",
+        "language": "js",
+        "reference": "@google-cloud/dataplex"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataproc",
+        "language": "js",
+        "reference": "@google-cloud/dataproc"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Metastore",
+        "language": "js",
+        "reference": "@google-cloud/dataproc-metastore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DiscoveryEngine",
+        "language": "js",
+        "reference": "@google-cloud/data-qna"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Datastream",
+        "language": "js",
+        "reference": "@google-cloud/datastream"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Deploy",
+        "language": "js",
+        "reference": "@google-cloud/deploy"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DeveloperConnect",
+        "language": "js",
+        "reference": "@google-cloud/developerconnect"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "js",
+        "reference": "@google-cloud/dialogflow"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dialogflow",
+        "language": "js",
+        "reference": "@google-cloud/dialogflow-cx"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DiscoveryEngine",
+        "language": "js",
+        "reference": "@google-cloud/discoveryengine"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dlp",
+        "language": "js",
+        "reference": "@google-cloud/dlp"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "CloudDms",
+        "language": "js",
+        "reference": "@google-cloud/dms"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dns",
+        "language": "js",
+        "reference": "@google-cloud/dns"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "DocumentAI",
+        "language": "js",
+        "reference": "@google-cloud/documentai"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Domains",
+        "language": "js",
+        "reference": "@google-cloud/domains"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EdgeNetwork",
+        "language": "js",
+        "reference": "@google-cloud/edgecontainer"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EdgeNetwork",
+        "language": "js",
+        "reference": "@google-cloud/edgenetwork"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "EssentialContacts",
+        "language": "js",
+        "reference": "@google-cloud/essential-contacts"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Eventarc",
+        "language": "js",
+        "reference": "@google-cloud/eventarc"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Eventarc",
+        "language": "js",
+        "reference": "@google-cloud/eventarc-publishing"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Filestore",
+        "language": "js",
+        "reference": "@google-cloud/filestore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Functions",
+        "language": "js",
+        "reference": "@google-cloud/functions"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GdcHardwareManagement",
+        "language": "js",
+        "reference": "@google-cloud/gdchardwaremanagement"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeBackup",
+        "language": "js",
+        "reference": "@google-cloud/gke-backup"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeConnect",
+        "language": "js",
+        "reference": "@google-cloud/gke-connect-gateway"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeHub",
+        "language": "js",
+        "reference": "@google-cloud/gke-hub"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GkeMultiV1",
+        "language": "js",
+        "reference": "@google-cloud/gkemulticloud"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "js",
+        "reference": "@google-cloud/grafeas"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "GSuiteAddOns",
+        "language": "js",
+        "reference": "@google-cloud/gsuiteaddons"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "js",
+        "reference": "@google-cloud/iam"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iam",
+        "language": "js",
+        "reference": "@google-cloud/iam-credentials"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iap",
+        "language": "js",
+        "reference": "@google-cloud/iap"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Ids",
+        "language": "js",
+        "reference": "@google-cloud/ids"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Iot",
+        "language": "js",
+        "reference": "@google-cloud/iot"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Kms",
+        "language": "js",
+        "reference": "@google-cloud/kms"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Kms",
+        "language": "js",
+        "reference": "@google-cloud/kms-inventory"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Language",
+        "language": "js",
+        "reference": "@google-cloud/language"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "LifeSciences",
+        "language": "js",
+        "reference": "@google-cloud/life-sciences"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Dataplex",
+        "language": "js",
+        "reference": "@google-cloud/lineage"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "js",
+        "reference": "@google-cloud/livestream"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ManagedIdentities",
+        "language": "js",
+        "reference": "@google-cloud/managed-identities"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ManagedKafka",
+        "language": "js",
+        "reference": "@google-cloud/managedkafka"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "MediaTranslation",
+        "language": "js",
+        "reference": "@google-cloud/media-translation"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Memcache",
+        "language": "js",
+        "reference": "@google-cloud/memcache"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "MigrationCenter",
+        "language": "js",
+        "reference": "@google-cloud/migrationcenter"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Monitoring",
+        "language": "js",
+        "reference": "@google-cloud/monitoring"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Monitoring",
+        "language": "js",
+        "reference": "@google-cloud/monitoring-dashboards"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetApp",
+        "language": "js",
+        "reference": "@google-cloud/netapp"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkConnectivity",
+        "language": "js",
+        "reference": "@google-cloud/network-connectivity"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkManagement",
+        "language": "js",
+        "reference": "@google-cloud/network-management"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkSecurity",
+        "language": "js",
+        "reference": "@google-cloud/network-security"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "NetworkServices",
+        "language": "js",
+        "reference": "@google-cloud/networkservices"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Notebooks",
+        "language": "js",
+        "reference": "@google-cloud/notebooks"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Optimization",
+        "language": "js",
+        "reference": "@google-cloud/optimization"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OracleDatabase",
+        "language": "js",
+        "reference": "@google-cloud/oracledatabase"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Orchestration",
+        "language": "js",
+        "reference": "@google-cloud/orchestration-airflow"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OrgPolicy",
+        "language": "js",
+        "reference": "@google-cloud/org-policy"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsConfig",
+        "language": "js",
+        "reference": "@google-cloud/os-config"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "OsLogin",
+        "language": "js",
+        "reference": "@google-cloud/os-login"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Parallelstore",
+        "language": "js",
+        "reference": "@google-cloud/parallelstore"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PhishingProtection",
+        "language": "js",
+        "reference": "@google-cloud/phishing-protection"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicySimulator",
+        "language": "js",
+        "reference": "@google-cloud/policysimulator"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicyTroubleshooter",
+        "language": "js",
+        "reference": "@google-cloud/policy-troubleshooter"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PolicyTroubleshooter",
+        "language": "js",
+        "reference": "@google-cloud/policy-troubleshooter-iam"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PrivateCatalog",
+        "language": "js",
+        "reference": "@google-cloud/private-catalog"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "PrivilegedAccessManager",
+        "language": "js",
+        "reference": "@google-cloud/privilegedaccessmanager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Commerce",
+        "language": "js",
+        "reference": "@google-cloud/procurement"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "js",
+        "reference": "@google-cloud/publicca"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RapidMigrationAssessment",
+        "language": "js",
+        "reference": "@google-cloud/rapidmigrationassessment"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "RecaptchaEnterprise",
+        "language": "js",
+        "reference": "@google-cloud/recaptcha-enterprise"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Recommender",
+        "language": "js",
+        "reference": "@google-cloud/recommender"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "js",
+        "reference": "@google-cloud/redis"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Redis",
+        "language": "js",
+        "reference": "@google-cloud/redis-cluster"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ResourceManager",
+        "language": "js",
+        "reference": "@google-cloud/resource-manager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Retail",
+        "language": "js",
+        "reference": "@google-cloud/retail"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Run",
+        "language": "js",
+        "reference": "@google-cloud/run"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Scheduler",
+        "language": "js",
+        "reference": "@google-cloud/scheduler"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecretManager",
+        "language": "js",
+        "reference": "@google-cloud/secret-manager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecureSourceManager",
+        "language": "js",
+        "reference": "@google-cloud/securesourcemanager"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenter",
+        "language": "js",
+        "reference": "@google-cloud/security-center"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "SecurityCenterManagement",
+        "language": "js",
+        "reference": "@google-cloud/securitycentermanagement"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Security",
+        "language": "js",
+        "reference": "@google-cloud/security-private-ca"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceControl",
+        "language": "js",
+        "reference": "@google-cloud/service-control"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceDirectory",
+        "language": "js",
+        "reference": "@google-cloud/service-directory"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceHealth",
+        "language": "js",
+        "reference": "@google-cloud/servicehealth"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceManagement",
+        "language": "js",
+        "reference": "@google-cloud/service-management"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "ServiceUsage",
+        "language": "js",
+        "reference": "@google-cloud/service-usage"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Shell",
+        "language": "js",
+        "reference": "@google-cloud/shell"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Speech",
+        "language": "js",
+        "reference": "@google-cloud/speech"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Storage",
+        "language": "js",
+        "reference": "@google-cloud/storage-control"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "StorageInsights",
+        "language": "js",
+        "reference": "@google-cloud/storageinsights"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "StorageTransfer",
+        "language": "js",
+        "reference": "@google-cloud/storage-transfer"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Support",
+        "language": "js",
+        "reference": "@google-cloud/support"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Talent",
+        "language": "js",
+        "reference": "@google-cloud/talent"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tasks",
+        "language": "js",
+        "reference": "@google-cloud/tasks"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TelcoAutomation",
+        "language": "js",
+        "reference": "@google-cloud/telcoautomation"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "TextToSpeech",
+        "language": "js",
+        "reference": "@google-cloud/text-to-speech"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Tpu",
+        "language": "js",
+        "reference": "@google-cloud/tpu"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Translate",
+        "language": "js",
+        "reference": "@google-cloud/translate"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VideoIntelligence",
+        "language": "js",
+        "reference": "@google-cloud/video-intelligence"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "js",
+        "reference": "@google-cloud/video-stitcher"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Video",
+        "language": "js",
+        "reference": "@google-cloud/video-transcoder"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Vision",
+        "language": "js",
+        "reference": "@google-cloud/vision"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VMMigration",
+        "language": "js",
+        "reference": "@google-cloud/vmmigration"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VmwareEngine",
+        "language": "js",
+        "reference": "@google-cloud/vmwareengine"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "VpcAccess",
+        "language": "js",
+        "reference": "@google-cloud/vpc-access"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebRisk",
+        "language": "js",
+        "reference": "@google-cloud/web-risk"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "WebSecurityScanner",
+        "language": "js",
+        "reference": "@google-cloud/web-security-scanner"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workflows",
+        "language": "js",
+        "reference": "@google-cloud/workflows"
+    },
+    {
+        "cloud_vendor": "GCP",
+        "cloud_service": "Workstations",
+        "language": "js",
+        "reference": "@google-cloud/workstations"
+    }
+]

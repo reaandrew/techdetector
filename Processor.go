@@ -12,6 +12,9 @@ type Finding struct {
 //go:embed data/cloud_service_mappings/*.json
 var servicesFS embed.FS
 
+//go:embed data/frameworks/*.json
+var frameworksFS embed.FS
+
 // Processor is an interface that defines a generic processor.
 type Processor interface {
 	Supports(filePath string) bool
@@ -28,7 +31,7 @@ func InitializeProcessors() []Processor {
 	processors = append(processors, serviceProcessor)
 
 	// Initialize FrameworkProcessor
-	frameworkProcessor := NewFrameworkProcessor()
+	frameworkProcessor := NewFrameworkProcessor(NewFileFrameworkLoader(frameworksFS))
 	processors = append(processors, frameworkProcessor)
 
 	return processors

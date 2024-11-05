@@ -2,1003 +2,1003 @@
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Core",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-core"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure AI Language Question Answering",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-ai-language-questionanswering"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure AI Language Conversations",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-ai-language-conversations"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Maintenance",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-maintenance"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management HDInsight",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-hdinsight"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management HDInsight Containers",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-hdinsightcontainers"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure AgriFood Farming",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-agrifood-farming"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management AgriFood",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-agrifood"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Security",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-security"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Hybrid Kubernetes",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-hybridkubernetes"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Chaos",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-chaos"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Orbital",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-orbital"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Datadog",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-datadog"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Billing Benefits",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-billingbenefits"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Event Grid",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-eventgrid"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Event Grid",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-eventgrid"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Network Analytics",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-networkanalytics"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Communication Services",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-communication-identity"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Traffic Manager",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-trafficmanager"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Bare Metal Infrastructure",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-baremetalinfrastructure"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Sphere",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-sphere"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Service Networking",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-servicenetworking"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Text Analytics",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-ai-textanalytics"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Storage Pool",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-storagepool"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Identity",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-identity"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Document Intelligence",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-ai-documentintelligence"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Managed Services",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-managedservices"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Kubernetes Configuration",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-kubernetesconfiguration"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Extended Locations",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-extendedlocation"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Subscription",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-subscription"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure AI Inference",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-ai-inference"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Fluid Relay",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-fluidrelay"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Automation",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-automation"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Lab Services",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-labservices"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure IoT Models Repository",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-iot-deviceprovisioning"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Quantum",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-quantum"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Quantum Jobs",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-quantum-jobs"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Provider Hub",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-providerhub"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Mongo Cluster",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-mongocluster"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Anomaly Detector",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-ai-anomalydetector"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Relay",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-relay"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Mobile Network",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-mobilenetwork"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Digital Twins Core",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-digitaltwins-core"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Digital Twins",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-digitaltwins"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Security Insights",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-securityinsight"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Storage Sync",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-storagesync"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Data Lake Store",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-datalake-store"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Edge Order",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-edgeorder"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Storage Blobs Change Feed",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-storage-blob-changefeed"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Storage Files Shares",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-storage-file-share"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Storage Queues",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-storage-queue"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Storage Data Lake",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-storage-file-datalake"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Storage Blobs",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-storage-blob"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Storage Blobs Batch",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-storage-blob-batch"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Maps Timezone",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-maps-timezone"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Maps Weather",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-maps-weather"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Maps Geolocation",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-maps-geolocation"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Maps Render",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-maps-render"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Maps Route",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-maps-route"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Maps Search",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-maps-search"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Recovery Services",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-recoveryservices"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Recovery Services Site Recovery",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-recoveryservicessiterecovery"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Recovery Services Data Replication",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-recoveryservicesdatareplication"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Cosmos DB",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-cosmosdb"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Cosmos DB",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-cosmos"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Compute",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-compute"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management SQL",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-sql"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Redis",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-redis"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Service Bus",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-servicebus"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Service Bus",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-servicebus"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Network",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-network"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Resources",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-resource"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Monitor",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-monitor"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Log Analytics",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-loganalytics"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Policy Insights",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-policyinsights"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Kusto",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-kusto"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Redis Enterprise",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-redisenterprise"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management SQL Virtual Machine",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-sqlvirtualmachine"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Application Insights",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-applicationinsights"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Storage Import Export",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-storageimportexport"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Data Migration",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-datamigration"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Data Factory",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-datafactory"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Synapse",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-synapse"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Synapse Artifacts",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-synapse-artifacts"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Synapse Spark",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-synapse-spark"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Synapse Monitoring",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-synapse-monitoring"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management DevTest Labs",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-devtestlabs"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management DevOps Infrastructure",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-devopsinfrastructure"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Service Fabric Managed Clusters",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-servicefabricmanagedclusters"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Healthcare APIs",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-healthcareapis"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Data Tables",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-data-tables"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Elastic San",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-elasticsan"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Container Instance",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-containerinstance"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Graph Services",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-graphservices"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management NetApp",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-netapp"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Workloads",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-workloads"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Health Insights Cancer Profiling",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-healthinsights-cancerprofiling"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Health Insights Radiology Insights",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-healthinsights-radiologyinsights"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Health Insights Clinical Matching",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-healthinsights-clinicalmatching"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Dynatrace",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-dynatrace"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Billing",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-billing"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure IoT Device Update",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-iot-deviceupdate"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Authorization",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-authorization"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure AI Translation Text",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-ai-translation-text"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure AI Translation Document",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-ai-translation-document"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Network Cloud",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-networkcloud"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Alerts Management",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-alertsmanagement"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Messaging Web PubSub Service",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-messaging-webpubsubservice"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Messaging Web PubSub Client",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-messaging-webpubsubclient"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Web PubSub",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-webpubsub"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Notification Hubs",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-notificationhubs"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Operations Management",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-operationsmanagement"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Education",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-education"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management App Configuration",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-appconfiguration"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Desktop Virtualization",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-desktopvirtualization"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Large Instance",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-largeinstance"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Attestation",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-attestation"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Security Attestation",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-security-attestation"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Cost Management",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-costmanagement"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Databricks",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-databricks"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Storage Actions",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-storageactions"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Astro",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-astro"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Resource Connector",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-resourceconnector"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management App Platform",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-appplatform"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management New Relic Observability",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-newrelicobservability"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Informatica Data Management",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-informaticadatamanagement"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Defender EASM",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-defendereasm"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Red Hat OpenShift",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-redhatopenshift"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Logic",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-logic"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Health Deidentification",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-health-deidentification"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Health Data AI Services",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-healthdataaiservices"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Private DNS",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-privatedns"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Support",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-support"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Power BI Dedicated",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-powerbidedicated"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Guest Configuration",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-guestconfig"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management NGINX",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-nginx"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management SQL Virtual Machine",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-sqlvirtualmachine"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Iot Central",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-iotcentral"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Storage Cache",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-storagecache"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Cognitive Services",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-cognitiveservices-formrecognizer"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Cognitive Services",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-cognitiveservices"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Key Vault",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-keyvault"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Security Key Vault Certificates",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-keyvault-certificates"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Security Key Vault Administration",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-keyvault-administration"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Security Key Vault Secrets",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-keyvault-secrets"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Security Key Vault Keys",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-keyvault-keys"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure OpenAI",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-openai"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Compute Fleet",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-computefleet"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management PostgreSQL Flexible Servers",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-postgresqlflexibleservers"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Data Box Edge",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-databoxedge"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Advisor",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-advisor"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management API Center",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-apicenter"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Qumulo",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-qumulo"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Migration Discovery SAP",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-migrationdiscoverysap"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Health Bot",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-healthbot"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Data Protection Backup",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-dataprotection"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Marketplace Ordering",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-marketplaceordering"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Data Box",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-databox"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Compute Schedule",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-computeschedule"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Oracle Database",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-oracledatabase"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Network Function",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-networkfunction"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Azure Arc Data",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-azurearcdata"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Defender EASM",
-        "language": "python",
+        "language": "py",
         "reference": "import easm"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Hybrid Connectivity",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-hybridconnectivity"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Image Builder",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-imagebuilder"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Service Fabric Managed Clusters",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-servicefabricmanagedclusters"
     },
     {
         "cloud_vendor": "AZURE",
         "cloud_service": "Azure Management Healthcare APIs",
-        "language": "python",
+        "language": "py",
         "reference": "import azure-mgmt-healthcareapis"
     }
 ]

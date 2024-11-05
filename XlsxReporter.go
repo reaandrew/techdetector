@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/xuri/excelize/v2"
-	"strings"
 )
 
 const (
@@ -131,11 +130,11 @@ func (xlsxReporter XlsxReporter) Report(findings []Finding) error {
 
 	// Determine the output file name
 	outputFile := DefaultReport
-	if len(findings) > 0 {
-		if findings[0].Service != nil || findings[0].Framework != nil {
-			outputFile = fmt.Sprintf("report_%s.xlsx", strings.ReplaceAll(findings[0].Repository, "/", "_"))
-		}
-	}
+	//if len(findings) > 0 {
+	//	if findings[0].Service != nil || findings[0].Framework != nil {
+	//		outputFile = fmt.Sprintf("report_%s.xlsx", strings.ReplaceAll(findings[0].Repository, "/", "_"))
+	//	}
+	//}
 
 	// Save the Excel file
 	if err := f.SaveAs(outputFile); err != nil {
