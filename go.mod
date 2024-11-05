@@ -1,4 +1,4 @@
-module github.com/reaandrew/techdetector.git
+module github.com/reaandrew/techdetector
 
 go 1.20
 
