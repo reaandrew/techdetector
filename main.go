@@ -24,7 +24,7 @@ import (
 var servicesFS embed.FS
 
 //go:embed data/frameworks/*.json
-var frameworkssFS embed.FS
+var frameworksFS embed.FS
 
 type Service struct {
 	CloudVendor  string `json:"cloud_vendor"`
@@ -41,9 +41,10 @@ type Framework struct {
 }
 
 type Finding struct {
-	Service    Service `json:"service"`
-	Repository string  `json:"repository"`
-	Filepath   string  `json:"filepath"`
+	Service    *Service   `json:"service,omitempty"`
+	Framework  *Framework `json:"framework,omitempty"`
+	Repository string     `json:"repository"`
+	Filepath   string     `json:"filepath"`
 }
 
 type ServiceRegex struct {
@@ -57,8 +58,12 @@ type FrameworkRegex struct {
 }
 
 const (
-	MaxWorkers     = 10
-	MaxFileWorkers = 10
+	MaxWorkers      = 10
+	MaxFileWorkers  = 10
+	CloneBaseDir    = "/tmp/techdetector" // You can make this configurable if needed
+	DefaultReport   = "cloud_services_report.xlsx"
+	ServicesSheet   = "Services"
+	FrameworksSheet = "Frameworks"
 )
 
 // RepoJob represents a job for processing a repository
@@ -73,12 +78,13 @@ type RepoResult struct {
 	RepoName string
 }
 
+// Global variables
 var (
 	services                []Service
 	frameworks              []Framework
 	serviceRegexes          []ServiceRegex
-	supportedFileExtensions []string
 	frameworkRegexes        []FrameworkRegex
+	supportedFileExtensions []string
 )
 
 func main() {
@@ -89,14 +95,15 @@ func main() {
 		Short: "TechDetector is a tool to scan repositories for technologies.",
 	}
 
-	scanCmd := createScanCommand(reportFormat)
+	scanCmd := createScanCommand(&reportFormat)
 
 	rootCmd.AddCommand(scanCmd)
 
+	// Load services and frameworks
 	services = loadAllCloudServices()
 	supportedFileExtensions = getSupportedFileExtensions(services)
 	serviceRegexes = compileServicesRegexes(services)
-	frameworks = loadAllFrameworks()
+	frameworks = loadAllFrameworks() // Ensure this uses frameworksFS
 	frameworkRegexes = compileFrameworkRegexes(frameworks)
 
 	if err := rootCmd.Execute(); err != nil {
@@ -104,7 +111,7 @@ func main() {
 	}
 }
 
-func createScanCommand(reportFormat string) *cobra.Command {
+func createScanCommand(reportFormat *string) *cobra.Command {
 
 	scanCmd := &cobra.Command{
 		Use:   "scan",
@@ -112,7 +119,7 @@ func createScanCommand(reportFormat string) *cobra.Command {
 	}
 
 	// Add the --report flag to the scan command
-	scanCmd.PersistentFlags().StringVar(&reportFormat, "report", "", "Report format (supported: xlsx)")
+	scanCmd.PersistentFlags().StringVar(reportFormat, "report", "", "Report format (supported: xlsx)")
 
 	scanRepoCmd := &cobra.Command{
 		Use:   "repo <REPO_URL>",
@@ -120,7 +127,7 @@ func createScanCommand(reportFormat string) *cobra.Command {
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			repoURL := args[0]
-			runScanRepo(repoURL, reportFormat)
+			runScanRepo(repoURL, *reportFormat)
 		},
 	}
 
@@ -130,7 +137,7 @@ func createScanCommand(reportFormat string) *cobra.Command {
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			orgName := args[0]
-			runScanOrg(orgName, reportFormat)
+			runScanOrg(orgName, *reportFormat)
 		},
 	}
 
@@ -140,11 +147,15 @@ func createScanCommand(reportFormat string) *cobra.Command {
 }
 
 func getSupportedFileExtensions(services []Service) []string {
-	var supportedExtensions []string
+	extMap := make(map[string]struct{})
 	for _, service := range services {
 		if service.Language != "" {
-			supportedExtensions = append(supportedExtensions, service.Language)
+			extMap[service.Language] = struct{}{}
 		}
+	}
+	var supportedExtensions []string
+	for ext := range extMap {
+		supportedExtensions = append(supportedExtensions, ext)
 	}
 	return supportedExtensions
 }
@@ -158,10 +169,14 @@ func runScanRepo(repoURL string, reportFormat string) {
 		log.Fatal("No valid regex patterns compiled. Exiting.")
 	}
 
-	cloneBaseDir := "/tmp/techdetector" // You can make this configurable if needed
-	err := os.MkdirAll(cloneBaseDir, os.ModePerm)
+	if len(frameworkRegexes) == 0 {
+		log.Fatal("No valid framework regex patterns compiled. Exiting.")
+	}
+
+	// Ensure clone base directory exists
+	err := os.MkdirAll(CloneBaseDir, os.ModePerm)
 	if err != nil {
-		log.Fatalf("Failed to create clone base directory '%s': %v", cloneBaseDir, err)
+		log.Fatalf("Failed to create clone base directory '%s': %v", CloneBaseDir, err)
 	}
 
 	repoName, err := extractRepoName(repoURL)
@@ -169,32 +184,28 @@ func runScanRepo(repoURL string, reportFormat string) {
 		log.Fatalf("Invalid repository URL '%s': %v", repoURL, err)
 	}
 
-	repoPath := filepath.Join(cloneBaseDir, sanitizeRepoName(repoName))
+	repoPath := filepath.Join(CloneBaseDir, sanitizeRepoName(repoName))
 	fmt.Printf("Cloning repository: %s\n", repoName)
 	err = cloneRepository(repoURL, repoPath)
 	if err != nil {
 		log.Fatalf("Failed to clone repository '%s': %v", repoName, err)
 	}
 
-	findings, err := traverseAndSearch(repoPath, serviceRegexes, repoName, supportedFileExtensions)
+	// Initialize processors
+	processors := initializeProcessors()
+
+	// Traverse and search with processors
+	findings, err := traverseAndSearch(repoPath, repoName, processors)
 	if err != nil {
 		log.Fatalf("Error searching repository '%s': %v", repoName, err)
 	}
 
 	fmt.Printf("Number of findings: %d\n", len(findings)) // Debug statement
 
-	if reportFormat == "xlsx" {
-		err = reportXlsx(findings)
-		if err != nil {
-			log.Fatalf("Error generating XLSX report: %v", err)
-		}
-	} else {
-		findingsJSON, err := json.MarshalIndent(findings, "", "    ")
-		if err != nil {
-			log.Fatalf("Failed to marshal findings to JSON: %v", err)
-		}
-
-		fmt.Println(string(findingsJSON))
+	// Generate report
+	err = generateReport(findings, reportFormat)
+	if err != nil {
+		log.Fatalf("Error generating report: %v", err)
 	}
 }
 
@@ -207,12 +218,16 @@ func runScanOrg(orgName string, reportFormat string) {
 		log.Fatal("No valid regex patterns compiled. Exiting.")
 	}
 
+	if len(frameworkRegexes) == 0 {
+		log.Fatal("No valid framework regex patterns compiled. Exiting.")
+	}
+
 	client := initializeGitHubClient()
 
-	cloneBaseDir := "/tmp/techdetector" // You can make this configurable if needed
-	err := os.MkdirAll(cloneBaseDir, os.ModePerm)
+	// Ensure clone base directory exists
+	err := os.MkdirAll(CloneBaseDir, os.ModePerm)
 	if err != nil {
-		log.Fatalf("Failed to create clone base directory '%s': %v", cloneBaseDir, err)
+		log.Fatalf("Failed to create clone base directory '%s': %v", CloneBaseDir, err)
 	}
 
 	fmt.Printf("Fetching repositories for organization: %s\n", orgName)
@@ -231,7 +246,7 @@ func runScanOrg(orgName string, reportFormat string) {
 	var wg sync.WaitGroup
 	for w := 1; w <= MaxWorkers; w++ {
 		wg.Add(1)
-		go worker(w, jobs, results, cloneBaseDir, serviceRegexes, supportedFileExtensions, &wg)
+		go worker(w, jobs, results, &wg)
 	}
 
 	for _, repo := range repositories {
@@ -253,18 +268,10 @@ func runScanOrg(orgName string, reportFormat string) {
 
 	fmt.Printf("Total findings: %d\n", len(allFindings)) // Debug statement
 
-	if reportFormat == "xlsx" {
-		err = reportXlsx(allFindings)
-		if err != nil {
-			log.Fatalf("Error generating XLSX report: %v", err)
-		}
-	} else {
-		findingsJSON, err := json.MarshalIndent(allFindings, "", "    ")
-		if err != nil {
-			log.Fatalf("Failed to marshal findings to JSON: %v", err)
-		}
-
-		fmt.Println(string(findingsJSON))
+	// Generate report
+	err = generateReport(allFindings, reportFormat)
+	if err != nil {
+		log.Fatalf("Error generating report: %v", err)
 	}
 }
 
@@ -315,7 +322,7 @@ func compileFrameworkRegexes(allFrameworks []Framework) []FrameworkRegex {
 		pattern := framework.Pattern
 		re, err := regexp.Compile(pattern)
 		if err != nil {
-			log.Printf("Failed to compile regex pattern '%s' from service '%s': %v", pattern, framework.Name, err)
+			log.Printf("Failed to compile regex pattern '%s' from framework '%s': %v", pattern, framework.Name, err)
 			continue
 		}
 		frameworkRegexes = append(frameworkRegexes, FrameworkRegex{
@@ -364,7 +371,7 @@ func loadAllCloudServices() []Service {
 func loadAllFrameworks() []Framework {
 	var allFrameworks []Framework
 
-	entries, err := servicesFS.ReadDir("data/frameworks")
+	entries, err := frameworksFS.ReadDir("data/frameworks") // Corrected from servicesFS to frameworksFS
 	if err != nil {
 		log.Fatalf("Failed to read embedded directory: %v", err)
 	}
@@ -378,7 +385,7 @@ func loadAllFrameworks() []Framework {
 			continue
 		}
 
-		content, err := servicesFS.ReadFile(fmt.Sprintf("data/cloud_service_mappings/%s", entry.Name()))
+		content, err := frameworksFS.ReadFile(fmt.Sprintf("data/frameworks/%s", entry.Name())) // Corrected path
 		if err != nil {
 			log.Printf("Failed to read file %s: %v", entry.Name(), err)
 			continue
@@ -396,7 +403,23 @@ func loadAllFrameworks() []Framework {
 	return allFrameworks
 }
 
-func traverseAndSearch(targetDir string, repoName string) ([]Finding, error) {
+// initializeProcessors creates and returns a slice of Processor implementations.
+func initializeProcessors() []Processor {
+	var processors []Processor
+
+	// Initialize CloudServiceProcessor
+	serviceProcessor := NewServiceProcessor(serviceRegexes)
+	processors = append(processors, serviceProcessor)
+
+	// Initialize FrameworkProcessor
+	frameworkProcessor := NewFrameworkProcessor(frameworkRegexes)
+	processors = append(processors, frameworkProcessor)
+
+	return processors
+}
+
+// traverseAndSearch traverses the target directory and applies all processors to each file.
+func traverseAndSearch(targetDir string, repoName string, processors []Processor) ([]Finding, error) {
 	var findings []Finding
 
 	info, err := os.Stat(targetDir)
@@ -407,9 +430,24 @@ func traverseAndSearch(targetDir string, repoName string) ([]Finding, error) {
 		return nil, fmt.Errorf("'%s' is not a directory", targetDir)
 	}
 
+	// Collect supported file extensions and specific file names from all processors
 	supportedExtMap := make(map[string]struct{})
-	for _, ext := range supportedFileExtensions {
-		supportedExtMap[ext] = struct{}{}
+	supportedFileNames := make(map[string]struct{})
+	for _, processor := range processors {
+		switch p := processor.(type) {
+		case *CloudServiceProcessor:
+			for _, sre := range p.serviceRegexes {
+				if sre.Service.Language != "" {
+					supportedExtMap[sre.Service.Language] = struct{}{}
+				}
+			}
+		case *FrameworkProcessor:
+			for _, fre := range p.frameworkRegexes {
+				if fre.Framework.PackageFileName != "" {
+					supportedFileNames[fre.Framework.PackageFileName] = struct{}{}
+				}
+			}
+		}
 	}
 
 	files := make(chan string, 100)
@@ -417,14 +455,20 @@ func traverseAndSearch(targetDir string, repoName string) ([]Finding, error) {
 
 	var wg sync.WaitGroup
 
+	// Start file workers
 	for i := 0; i < MaxFileWorkers; i++ {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
 			for path := range files {
 				ext := strings.TrimLeft(filepath.Ext(path), ".")
+				base := filepath.Base(path)
+
+				// Check if the file extension or name is supported
 				if _, ok := supportedExtMap[ext]; !ok {
-					continue
+					if _, nameOk := supportedFileNames[base]; !nameOk {
+						continue
+					}
 				}
 
 				content, err := os.ReadFile(path)
@@ -435,28 +479,20 @@ func traverseAndSearch(targetDir string, repoName string) ([]Finding, error) {
 
 				text := string(content)
 
-				for _, sre := range serviceRegexes {
-					if sre.Service.Language != "" && sre.Service.Language != ext {
-						continue
-					}
-
-					matches := sre.Regex.FindAllString(text, -1)
-					if len(matches) > 0 {
-						for range matches {
-							fileFindings <- Finding{
-								Service:    sre.Service,
-								Repository: repoName,
-								Filepath:   path,
-							}
-						}
+				// Apply all processors
+				for _, processor := range processors {
+					results := processor.Process(path, repoName, text)
+					for _, finding := range results {
+						fileFindings <- finding
 					}
 				}
 			}
 		}()
 	}
 
+	// Walk the directory and send file paths to the workers
 	go func() {
-		filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
+		err := filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
 			if err != nil {
 				log.Printf("Error accessing path '%s': %v", path, err)
 				return nil // Continue walking.
@@ -469,6 +505,9 @@ func traverseAndSearch(targetDir string, repoName string) ([]Finding, error) {
 			files <- path
 			return nil
 		})
+		if err != nil {
+			log.Printf("Error walking the directory: %v", err)
+		}
 		close(files)
 	}()
 
@@ -485,6 +524,7 @@ func traverseAndSearch(targetDir string, repoName string) ([]Finding, error) {
 	return findings, nil
 }
 
+// initializeGitHubClient initializes and returns a GitHub client.
 func initializeGitHubClient() *github.Client {
 	ctx := context.Background()
 	var client *github.Client
@@ -503,6 +543,7 @@ func initializeGitHubClient() *github.Client {
 	return client
 }
 
+// listRepositories lists all repositories within a GitHub organization.
 func listRepositories(client *github.Client, org string) ([]*github.Repository, error) {
 	var allRepos []*github.Repository
 	opt := &github.RepositoryListByOrgOptions{
@@ -524,10 +565,10 @@ func listRepositories(client *github.Client, org string) ([]*github.Repository, 
 	}
 
 	fmt.Printf("Number of repos: %v\n", len(allRepos))
-	// syscall.Exit(1) // Removed the premature exit
 	return allRepos, nil
 }
 
+// cloneRepository clones a Git repository to the specified destination.
 func cloneRepository(cloneURL, destination string) error {
 	if _, err := os.Stat(destination); err == nil {
 		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
@@ -545,14 +586,15 @@ func cloneRepository(cloneURL, destination string) error {
 	return nil
 }
 
-func worker(id int, jobs <-chan RepoJob, results chan<- RepoResult, cloneBaseDir string, serviceRegexes []ServiceRegex, supportedFileExtensions []string, wg *sync.WaitGroup) {
+// worker processes repositories from the jobs channel and sends results to the results channel.
+func worker(id int, jobs <-chan RepoJob, results chan<- RepoResult, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for job := range jobs {
 		repo := job.Repo
 		repoName := repo.GetFullName()
-		fmt.Printf("Worker %d: Cloning repository %s\n", id, repoName)
+		fmt.Printf("Worker: Cloning repository %s\n", repoName)
 
-		repoPath := filepath.Join(cloneBaseDir, sanitizeRepoName(repoName))
+		repoPath := filepath.Join(CloneBaseDir, sanitizeRepoName(repoName))
 		err := cloneRepository(repo.GetCloneURL(), repoPath)
 		if err != nil {
 			results <- RepoResult{
@@ -563,7 +605,10 @@ func worker(id int, jobs <-chan RepoJob, results chan<- RepoResult, cloneBaseDir
 			continue
 		}
 
-		findings, err := traverseAndSearch(repoPath, serviceRegexes, repoName, supportedFileExtensions)
+		// Initialize processors
+		processors := initializeProcessors()
+
+		findings, err := traverseAndSearch(repoPath, repoName, processors)
 		if err != nil {
 			results <- RepoResult{
 				Findings: nil,
@@ -582,62 +627,147 @@ func worker(id int, jobs <-chan RepoJob, results chan<- RepoResult, cloneBaseDir
 }
 
 // reportXlsx generates an XLSX report from the findings.
-// It creates a worksheet named "cloud-services" with the following columns:
-// A: Cloud Vendor, B: Cloud Service, C: Language, D: Repository, E: Filepath
+// It creates two worksheets: "Services" and "Frameworks".
 func reportXlsx(findings []Finding) error {
-	fmt.Println("Generating xlsx file")
+	fmt.Println("Generating XLSX file")
 
 	// Create a new Excel file
 	f := excelize.NewFile()
 
-	// Create a new sheet named "cloud-services"
-	sheetName := "cloud-services"
-	index, _ := f.NewSheet(sheetName)
-
-	// Delete the default sheet created by excelize
+	// Rename the default sheet to "Services"
 	defaultSheet := f.GetSheetName(0)
-	if defaultSheet != sheetName {
-		f.DeleteSheet(defaultSheet)
+	if defaultSheet != ServicesSheet {
+		if err := f.SetSheetName(defaultSheet, ServicesSheet); err != nil {
+			return fmt.Errorf("failed to rename sheet '%s' to '%s': %w", defaultSheet, ServicesSheet, err)
+		}
+		fmt.Printf("Renamed default sheet '%s' to '%s'\n", defaultSheet, ServicesSheet)
 	}
 
-	// Set headers
-	headers := []string{"Cloud Vendor", "Cloud Service", "Language", "Repository", "Filepath"}
-	if err := f.SetSheetRow(sheetName, "A1", &headers); err != nil {
-		return fmt.Errorf("failed to set headers: %w", err)
+	// Create the "Frameworks" sheet
+	frameworksIndex, err := f.NewSheet(FrameworksSheet)
+	if err != nil {
+		return fmt.Errorf("failed to create sheet '%s': %w", FrameworksSheet, err)
+	}
+	fmt.Printf("Created sheet '%s' with index %d\n", FrameworksSheet, frameworksIndex)
+
+	// Set headers for Services sheet
+	servicesHeaders := []string{
+		"Cloud Vendor",
+		"Cloud Service",
+		"Language",
+		"Reference",
+		"Repository",
+		"Filepath",
+	}
+	if err := f.SetSheetRow(ServicesSheet, "A1", &servicesHeaders); err != nil {
+		return fmt.Errorf("failed to set headers for sheet '%s': %w", ServicesSheet, err)
+	}
+	fmt.Printf("Set headers for sheet '%s'\n", ServicesSheet)
+
+	// Set headers for Frameworks sheet
+	frameworksHeaders := []string{
+		"Name",
+		"Category",
+		"Package File Name",
+		"Pattern",
+		"Repository",
+		"Filepath",
+	}
+	if err := f.SetSheetRow(FrameworksSheet, "A1", &frameworksHeaders); err != nil {
+		return fmt.Errorf("failed to set headers for sheet '%s': %w", FrameworksSheet, err)
+	}
+	fmt.Printf("Set headers for sheet '%s'\n", FrameworksSheet)
+
+	// Initialize row counters for each sheet
+	servicesRow := 2   // Starting from row 2 (row 1 is for headers)
+	frameworksRow := 2 // Starting from row 2 (row 1 is for headers)
+
+	// Iterate over findings and populate respective sheets
+	for _, finding := range findings {
+		if finding.Service != nil {
+			// Prepare data for Services sheet
+			rowData := []interface{}{
+				finding.Service.CloudVendor,
+				finding.Service.CloudService,
+				finding.Service.Language,
+				finding.Service.Reference,
+				finding.Repository,
+				finding.Filepath,
+			}
+
+			// Convert row number to cell address (e.g., A2)
+			cellAddress, err := excelize.CoordinatesToCellName(1, servicesRow)
+			if err != nil {
+				return fmt.Errorf("failed to get cell address for row %d in sheet '%s': %w", servicesRow, ServicesSheet, err)
+			}
+
+			// Set the row data starting from column A
+			if err := f.SetSheetRow(ServicesSheet, cellAddress, &rowData); err != nil {
+				return fmt.Errorf("failed to set data for row %d in sheet '%s': %w", servicesRow, ServicesSheet, err)
+			}
+
+			servicesRow++ // Move to the next row for Services
+		}
+
+		if finding.Framework != nil {
+			// Prepare data for Frameworks sheet
+			rowData := []interface{}{
+				finding.Framework.Name,
+				finding.Framework.Category,
+				finding.Framework.PackageFileName,
+				finding.Framework.Pattern,
+				finding.Repository,
+				finding.Filepath,
+			}
+
+			// Convert row number to cell address (e.g., A2)
+			cellAddress, err := excelize.CoordinatesToCellName(1, frameworksRow)
+			if err != nil {
+				return fmt.Errorf("failed to get cell address for row %d in sheet '%s': %w", frameworksRow, FrameworksSheet, err)
+			}
+
+			// Set the row data starting from column A
+			if err := f.SetSheetRow(FrameworksSheet, cellAddress, &rowData); err != nil {
+				return fmt.Errorf("failed to set data for row %d in sheet '%s': %w", frameworksRow, FrameworksSheet, err)
+			}
+
+			frameworksRow++ // Move to the next row for Frameworks
+		}
 	}
 
-	// Populate data rows
-	for i, finding := range findings {
-		rowNumber := i + 2 // Starting from row 2 (row 1 is for headers)
-		cellAddress, err := excelize.CoordinatesToCellName(1, rowNumber)
-		if err != nil {
-			return fmt.Errorf("failed to get cell address for row %d: %w", rowNumber, err)
-		}
-
-		// Create a slice with row data
-		rowData := []interface{}{
-			finding.Service.CloudVendor,
-			finding.Service.CloudService,
-			finding.Service.Language,
-			finding.Repository,
-			finding.Filepath,
-		}
-
-		// Set the row data starting from column A
-		if err := f.SetSheetRow(sheetName, cellAddress, &rowData); err != nil {
-			return fmt.Errorf("failed to set data for row %d: %w", rowNumber, err)
-		}
-	}
-
-	// Set the active sheet to "cloud-services"
+	index, _ := f.GetSheetIndex(ServicesSheet)
+	// Optionally, set the active sheet to Services
 	f.SetActiveSheet(index)
 
+	// Determine the output file name
+	outputFile := DefaultReport
+	if len(findings) > 0 {
+		if findings[0].Service != nil || findings[0].Framework != nil {
+			outputFile = fmt.Sprintf("report_%s.xlsx", strings.ReplaceAll(findings[0].Repository, "/", "_"))
+		}
+	}
+
 	// Save the Excel file
-	outputFile := "cloud_services_report.xlsx"
 	if err := f.SaveAs(outputFile); err != nil {
-		return fmt.Errorf("failed to save xlsx file: %w", err)
+		return fmt.Errorf("failed to save XLSX file '%s': %w", outputFile, err)
 	}
 
 	fmt.Printf("XLSX report generated successfully: %s\n", outputFile)
+	return nil
+}
+
+// generateReport decides which report to generate based on the report format.
+func generateReport(findings []Finding, reportFormat string) error {
+	if reportFormat == "xlsx" {
+		return reportXlsx(findings)
+	}
+
+	// Default to JSON output
+	findingsJSON, err := json.MarshalIndent(findings, "", "    ")
+	if err != nil {
+		return fmt.Errorf("failed to marshal findings to JSON: %w", err)
+	}
+
+	fmt.Println(string(findingsJSON))
 	return nil
 }
