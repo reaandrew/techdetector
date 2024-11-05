@@ -9,6 +9,8 @@ type Finding struct {
 
 // Processor is an interface that defines a generic processor.
 type Processor interface {
+	Supports(filePath string) bool
+
 	Process(path string, repoName string, content string) []Finding
 }
 

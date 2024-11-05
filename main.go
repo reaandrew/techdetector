@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"strings"
 	"sync"
 )
 
@@ -23,7 +22,6 @@ func main() {
 	}
 }
 
-// traverseAndSearch traverses the target directory and applies all processors to each file.
 func traverseAndSearch(targetDir string, repoName string, processors []Processor) ([]Finding, error) {
 	var findings []Finding
 
@@ -35,26 +33,6 @@ func traverseAndSearch(targetDir string, repoName string, processors []Processor
 		return nil, fmt.Errorf("'%s' is not a directory", targetDir)
 	}
 
-	// Collect supported file extensions and specific file names from all processors
-	supportedExtMap := make(map[string]struct{})
-	supportedFileNames := make(map[string]struct{})
-	for _, processor := range processors {
-		switch p := processor.(type) {
-		case *CloudServiceProcessor:
-			for _, sre := range p.serviceRegexes {
-				if sre.Service.Language != "" {
-					supportedExtMap[sre.Service.Language] = struct{}{}
-				}
-			}
-		case *FrameworkProcessor:
-			for _, fre := range p.frameworkRegexes {
-				if fre.Framework.PackageFileName != "" {
-					supportedFileNames[fre.Framework.PackageFileName] = struct{}{}
-				}
-			}
-		}
-	}
-
 	files := make(chan string, 100)
 	fileFindings := make(chan Finding, 100)
 
@@ -63,17 +41,20 @@ func traverseAndSearch(targetDir string, repoName string, processors []Processor
 	// Start file workers
 	for i := 0; i < MaxFileWorkers; i++ {
 		wg.Add(1)
-		go func() {
+		go func(workerID int) {
 			defer wg.Done()
 			for path := range files {
-				ext := strings.TrimLeft(filepath.Ext(path), ".")
-				base := filepath.Base(path)
-
-				// Check if the file extension or name is supported
-				if _, ok := supportedExtMap[ext]; !ok {
-					if _, nameOk := supportedFileNames[base]; !nameOk {
-						continue
+				// Check if any processor supports this file
+				supported := false
+				for _, processor := range processors {
+					if processor.Supports(path) {
+						supported = true
+						break
 					}
+				}
+
+				if !supported {
+					continue // Skip files not supported by any processor
 				}
 
 				content, err := os.ReadFile(path)
@@ -84,15 +65,17 @@ func traverseAndSearch(targetDir string, repoName string, processors []Processor
 
 				text := string(content)
 
-				// Apply all processors
+				// Apply all processors that support this file
 				for _, processor := range processors {
-					results := processor.Process(path, repoName, text)
-					for _, finding := range results {
-						fileFindings <- finding
+					if processor.Supports(path) {
+						results := processor.Process(path, repoName, text)
+						for _, finding := range results {
+							fileFindings <- finding
+						}
 					}
 				}
 			}
-		}()
+		}(i)
 	}
 
 	// Walk the directory and send file paths to the workers

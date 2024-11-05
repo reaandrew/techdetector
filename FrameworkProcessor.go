@@ -77,6 +77,16 @@ func NewFrameworkProcessor() *FrameworkProcessor {
 	return &FrameworkProcessor{frameworkRegexes: frameworkRegexes}
 }
 
+func (fp *FrameworkProcessor) Supports(filePath string) bool {
+	base := filepath.Base(filePath)
+	for _, fre := range fp.frameworkRegexes {
+		if fre.Framework.PackageFileName != "" && fre.Framework.PackageFileName == base {
+			return true
+		}
+	}
+	return false
+}
+
 // Process applies framework regexes to the file content and returns findings.
 func (fp *FrameworkProcessor) Process(path string, repoName string, content string) []Finding {
 	var findings []Finding

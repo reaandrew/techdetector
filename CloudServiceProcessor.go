@@ -77,12 +77,22 @@ func NewServiceProcessor() *CloudServiceProcessor {
 	return &CloudServiceProcessor{serviceRegexes: serviceRegexes}
 }
 
+func (csp *CloudServiceProcessor) Supports(filePath string) bool {
+	ext := strings.TrimLeft(filepath.Ext(filePath), ".")
+	for _, sre := range csp.serviceRegexes {
+		if sre.Service.Language != "" && sre.Service.Language == ext {
+			return true
+		}
+	}
+	return false
+}
+
 // Process applies service regexes to the file content and returns findings.
-func (sp *CloudServiceProcessor) Process(path string, repoName string, content string) []Finding {
+func (csp *CloudServiceProcessor) Process(path string, repoName string, content string) []Finding {
 	var findings []Finding
 	ext := strings.TrimLeft(filepath.Ext(path), ".")
 
-	for _, sre := range sp.serviceRegexes {
+	for _, sre := range csp.serviceRegexes {
 		// Match based on language (file extension) if specified
 		if sre.Service.Language != "" && sre.Service.Language != ext {
 			continue
