@@ -16,7 +16,7 @@ var servicesFS embed.FS
 type Processor interface {
 	Supports(filePath string) bool
 
-	Process(path string, repoName string, content string) []Finding
+	Process(path string, repoName string, content string) ([]Finding, error)
 }
 
 // InitializeProcessors creates and returns a slice of Processor implementations.

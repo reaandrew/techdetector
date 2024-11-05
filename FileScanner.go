@@ -59,7 +59,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 				// Apply all processors that support this file
 				for _, processor := range fileScanner.processors {
 					if processor.Supports(path) {
-						results := processor.Process(path, repoName, text)
+						results, _ := processor.Process(path, repoName, text)
 						for _, finding := range results {
 							fileFindings <- finding
 						}

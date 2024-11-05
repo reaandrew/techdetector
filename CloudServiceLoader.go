@@ -1,5 +1,5 @@
 package main
 
 type CloudServicesLoader interface {
-	LoadAllCloudServices() []CloudService
+	LoadAllCloudServices() ([]CloudService, error)
 }

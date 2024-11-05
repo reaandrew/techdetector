@@ -38,7 +38,7 @@ func TestFileCloudServicesLoader_LoadAllCloudServices(t *testing.T) {
 	}
 
 	loader := NewFileCloudServicesLoader(mockFS)
-	services := loader.LoadAllCloudServices()
+	services, _ := loader.LoadAllCloudServices()
 
 	expectedCount := 3
 	if len(services) != expectedCount {
@@ -93,7 +93,7 @@ func TestFileCloudServicesLoader_LoadAllCloudServices_WithMalformedJSON(t *testi
 	log.SetOutput(io.Discard)
 
 	loader := NewFileCloudServicesLoader(mockFS)
-	services := loader.LoadAllCloudServices()
+	services, _ := loader.LoadAllCloudServices()
 
 	expectedCount := 0
 	if len(services) != expectedCount {
@@ -124,7 +124,7 @@ func TestFileCloudServicesLoader_LoadAllCloudServices_WithExtraFiles(t *testing.
 	log.SetOutput(io.Discard)
 
 	loader := NewFileCloudServicesLoader(mockFS)
-	services := loader.LoadAllCloudServices()
+	services, _ := loader.LoadAllCloudServices()
 
 	expectedCount := 1 // Only aws_test.json is valid
 	if len(services) != expectedCount {

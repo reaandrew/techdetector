@@ -16,7 +16,7 @@ func NewFileCloudServicesLoader(fs fs.FS) *FileCloudServicesLoader {
 	return &FileCloudServicesLoader{fs: fs}
 }
 
-func (f FileCloudServicesLoader) LoadAllCloudServices() []CloudService {
+func (f FileCloudServicesLoader) LoadAllCloudServices() ([]CloudService, error) {
 	var allServices []CloudService
 
 	entries, err := fs.ReadDir(f.fs, "data/cloud_service_mappings")
@@ -48,5 +48,5 @@ func (f FileCloudServicesLoader) LoadAllCloudServices() []CloudService {
 
 		allServices = append(allServices, services...)
 	}
-	return allServices
+	return allServices, nil
 }

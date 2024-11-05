@@ -31,7 +31,7 @@ func compileServicesRegexes(allServices []CloudService) []CloudServiceRegex {
 
 // NewServiceProcessor creates a new CloudServiceProcessor.
 func NewServiceProcessor(loader CloudServicesLoader) *CloudServiceProcessor {
-	services := loader.LoadAllCloudServices()
+	services, _ := loader.LoadAllCloudServices()
 	serviceRegexes := compileServicesRegexes(services)
 	return &CloudServiceProcessor{serviceRegexes: serviceRegexes}
 }
@@ -47,7 +47,7 @@ func (csp *CloudServiceProcessor) Supports(filePath string) bool {
 }
 
 // Process applies service regexes to the file content and returns findings.
-func (csp *CloudServiceProcessor) Process(path string, repoName string, content string) []Finding {
+func (csp *CloudServiceProcessor) Process(path string, repoName string, content string) ([]Finding, error) {
 	var findings []Finding
 	ext := strings.TrimLeft(filepath.Ext(path), ".")
 
@@ -71,7 +71,7 @@ func (csp *CloudServiceProcessor) Process(path string, repoName string, content 
 			}
 		}
 	}
-	return findings
+	return findings, nil
 }
 
 type CloudService struct {

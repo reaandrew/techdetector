@@ -88,7 +88,7 @@ func (fp *FrameworkProcessor) Supports(filePath string) bool {
 }
 
 // Process applies framework regexes to the file content and returns findings.
-func (fp *FrameworkProcessor) Process(path string, repoName string, content string) []Finding {
+func (fp *FrameworkProcessor) Process(path string, repoName string, content string) ([]Finding, error) {
 	var findings []Finding
 	base := filepath.Base(path)
 
@@ -112,7 +112,7 @@ func (fp *FrameworkProcessor) Process(path string, repoName string, content stri
 			}
 		}
 	}
-	return findings
+	return findings, nil
 }
 
 type Framework struct {
