@@ -8,8 +8,15 @@ import (
 )
 
 type RepoScanner struct {
-	reporter   Reporter
-	processors []Processor
+	reporter    Reporter
+	fileScanner FileScanner
+}
+
+func NewRepoScanner(reporter Reporter, processors []Processor) *RepoScanner {
+	return &RepoScanner{
+		reporter:    Reporter{},
+		fileScanner: FileScanner{processors: processors},
+	}
 }
 
 func (repoScanner RepoScanner) scan(repoURL string, reportFormat string) {
@@ -32,7 +39,7 @@ func (repoScanner RepoScanner) scan(repoURL string, reportFormat string) {
 	}
 
 	// Traverse and search with processors
-	findings, err := traverseAndSearch(repoPath, repoName, repoScanner.processors)
+	findings, err := repoScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
 	if err != nil {
 		log.Fatalf("Error searching repository '%s': %v", repoName, err)
 	}

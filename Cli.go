@@ -37,10 +37,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			scanner := RepoScanner{
-				reporter:   Reporter{},
-				processors: InitializeProcessors(),
-			}
+			scanner := NewRepoScanner(Reporter{}, InitializeProcessors())
 			repoURL := args[0]
 			scanner.scan(repoURL, cli.reportFormat)
 		},
@@ -51,10 +48,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			scanner := GithubOrgScanner{
-				reporter:   Reporter{},
-				processors: InitializeProcessors(),
-			}
+			scanner := NewGithubOrgScanner(Reporter{}, InitializeProcessors())
 			orgName := args[0]
 			scanner.scan(orgName, cli.reportFormat)
 		},

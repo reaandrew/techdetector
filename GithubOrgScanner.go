@@ -22,8 +22,15 @@ type RepoResult struct {
 }
 
 type GithubOrgScanner struct {
-	reporter   Reporter
-	processors []Processor
+	reporter    Reporter
+	fileScanner FileScanner
+}
+
+func NewGithubOrgScanner(reporter Reporter, processors []Processor) *GithubOrgScanner {
+	return &GithubOrgScanner{
+		reporter:    Reporter{},
+		fileScanner: FileScanner{processors: processors},
+	}
 }
 
 func (githubOrgScanner GithubOrgScanner) scan(orgName string, reportFormat string) {
@@ -99,10 +106,7 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 			continue
 		}
 
-		// Initialize processors
-		processors := InitializeProcessors()
-
-		findings, err := traverseAndSearch(repoPath, repoName, processors)
+		findings, err := githubOrgScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
 		if err != nil {
 			results <- RepoResult{
 				Findings: nil,
