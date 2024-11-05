@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/gobwas/glob"
 	"io/fs"
 	"log"
 	"path/filepath"
@@ -68,8 +69,9 @@ func compileFrameworkRegexes(allFrameworks []Framework) []FrameworkRegex {
 			continue
 		}
 		frameworkRegexes = append(frameworkRegexes, FrameworkRegex{
-			Framework: framework,
-			Regex:     re,
+			Framework:           framework,
+			Regex:               re,
+			PackageFilenameGlob: glob.MustCompile(framework.PackageFileName),
 		})
 	}
 	return frameworkRegexes
@@ -82,10 +84,16 @@ func NewFrameworkProcessor(loader FrameworksLoader) *FrameworkProcessor {
 	return &FrameworkProcessor{frameworkRegexes: frameworkRegexes}
 }
 
+func hasWildcards(pattern string) bool {
+	return strings.ContainsAny(pattern, "*?[]")
+}
+
 func (fp *FrameworkProcessor) Supports(filePath string) bool {
 	base := filepath.Base(filePath)
 	for _, fre := range fp.frameworkRegexes {
-		if fre.Framework.PackageFileName != "" && fre.Framework.PackageFileName == base {
+		if fre.Framework.PackageFileName != "" &&
+			(fre.Framework.PackageFileName == base ||
+				(hasWildcards(fre.Framework.PackageFileName) && fre.PackageFilenameGlob.Match(base))) {
 			return true
 		}
 	}
@@ -96,13 +104,12 @@ func (fp *FrameworkProcessor) Supports(filePath string) bool {
 func (fp *FrameworkProcessor) Process(path string, repoName string, content string) ([]Finding, error) {
 	var findings []Finding
 	base := filepath.Base(path)
-
 	for _, fre := range fp.frameworkRegexes {
-		// If PackageFileName is specified, match the exact file name
-		if fre.Framework.PackageFileName != "" && fre.Framework.PackageFileName != base {
+		if fre.Framework.PackageFileName != "" &&
+			!(fre.Framework.PackageFileName == base ||
+				(hasWildcards(fre.Framework.PackageFileName) && fre.PackageFilenameGlob.Match(base))) {
 			continue
 		}
-
 		matches := fre.Regex.FindAllString(content, -1)
 		if len(matches) > 0 {
 			for range matches {
@@ -128,6 +135,7 @@ type Framework struct {
 }
 
 type FrameworkRegex struct {
-	Framework Framework
-	Regex     *regexp.Regexp
+	Framework           Framework
+	Regex               *regexp.Regexp
+	PackageFilenameGlob glob.Glob
 }
