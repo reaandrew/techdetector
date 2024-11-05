@@ -1,0 +1,698 @@
+[
+  {
+    "name": "ASP.NET Core",
+    "category": "Web",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.AspNetCore.App\""
+  },
+  {
+    "name": "ServiceStack",
+    "category": "Web",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"ServiceStack\""
+  },
+  {
+    "name": "NancyFX",
+    "category": "Web",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Nancy\""
+  },
+  {
+    "name": "Entity Framework Core",
+    "category": "ORM",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.EntityFrameworkCore\""
+  },
+  {
+    "name": "Dapper",
+    "category": "ORM",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Dapper\""
+  },
+  {
+    "name": "NHibernate",
+    "category": "ORM",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NHibernate\""
+  },
+  {
+    "name": "xUnit",
+    "category": "Testing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"xunit\""
+  },
+  {
+    "name": "NUnit",
+    "category": "Testing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NUnit\""
+  },
+  {
+    "name": "MSTest",
+    "category": "Testing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.NET.Test.Sdk\""
+  },
+  {
+    "name": "IdentityServer",
+    "category": "Security",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"IdentityServer4\""
+  },
+  {
+    "name": "ASP.NET Core Identity",
+    "category": "Security",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.AspNetCore.Identity\""
+  },
+  {
+    "name": "OAuthLib",
+    "category": "Security",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"OAuth\""
+  },
+  {
+    "name": "Serilog",
+    "category": "Logging",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Serilog\""
+  },
+  {
+    "name": "NLog",
+    "category": "Logging",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NLog\""
+  },
+  {
+    "name": "log4net",
+    "category": "Logging",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"log4net\""
+  },
+  {
+    "name": "Autofac",
+    "category": "Dependency Injection",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Autofac\""
+  },
+  {
+    "name": "Microsoft.Extensions.DependencyInjection",
+    "category": "Dependency Injection",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.Extensions.DependencyInjection\""
+  },
+  {
+    "name": "Ninject",
+    "category": "Dependency Injection",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Ninject\""
+  },
+  {
+    "name": "Hangfire",
+    "category": "Task Queue",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Hangfire\""
+  },
+  {
+    "name": "Quartz.NET",
+    "category": "Task Queue",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Quartz\""
+  },
+  {
+    "name": "ML.NET",
+    "category": "Data Processing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.ML\""
+  },
+  {
+    "name": "System.Threading.Tasks.Dataflow",
+    "category": "Data Processing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"System.Threading.Tasks.Dataflow\""
+  },
+  {
+    "name": "MassTransit",
+    "category": "Messaging",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"MassTransit\""
+  },
+  {
+    "name": "NServiceBus",
+    "category": "Messaging",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NServiceBus\""
+  },
+  {
+    "name": "Rebus",
+    "category": "Messaging",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Rebus\""
+  },
+  {
+    "name": "SignalR",
+    "category": "Async Web",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.AspNetCore.SignalR\""
+  },
+  {
+    "name": "ASP.NET Core Kestrel",
+    "category": "Async Web",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.AspNetCore.Server.Kestrel\""
+  },
+  {
+    "name": "Swashbuckle",
+    "category": "API",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Swashbuckle.AspNetCore\""
+  },
+  {
+    "name": "NSwag",
+    "category": "API",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NSwag.AspNetCore\""
+  },
+  {
+    "name": "Refit",
+    "category": "API",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Refit\""
+  },
+  {
+    "name": "NSwag",
+    "category": "Documentation",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NSwag.AspNetCore\""
+  },
+  {
+    "name": "Swashbuckle",
+    "category": "Documentation",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Swashbuckle.AspNetCore\""
+  },
+  {
+    "name": "DocFX",
+    "category": "Documentation",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"DocFX\""
+  },
+  {
+    "name": "Application Insights",
+    "category": "Monitoring",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.ApplicationInsights.AspNetCore\""
+  },
+  {
+    "name": "New Relic",
+    "category": "Monitoring",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NewRelic.Agent\""
+  },
+  {
+    "name": "Prometheus.Net",
+    "category": "Monitoring",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Prometheus\""
+  },
+  {
+    "name": "Dapr",
+    "category": "Microservices",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Dapr.Client\""
+  },
+  {
+    "name": "Steeltoe",
+    "category": "Microservices",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Steeltoe\""
+  },
+  {
+    "name": "Ocelot",
+    "category": "Microservices",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Ocelot\""
+  },
+  {
+    "name": "WinForms",
+    "category": "Graphical UI",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"System.Windows.Forms\""
+  },
+  {
+    "name": "WPF",
+    "category": "Graphical UI",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.NET.Sdk.WindowsDesktop\""
+  },
+  {
+    "name": "Avalonia",
+    "category": "Graphical UI",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Avalonia\""
+  },
+  {
+    "name": "Confluent.Kafka",
+    "category": "Event Streaming",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Confluent.Kafka\""
+  },
+  {
+    "name": "EventStore.Client",
+    "category": "Event Streaming",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"EventStore.Client\""
+  },
+  {
+    "name": "Azure.Messaging.EventHubs",
+    "category": "Event Streaming",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Azure.Messaging.EventHubs\""
+  },
+  {
+    "name": "AWS Lambda",
+    "category": "Serverless",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Amazon.Lambda.Core\""
+  },
+  {
+    "name": "Azure Functions",
+    "category": "Serverless",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.NET.Sdk.Functions\""
+  },
+  {
+    "name": "Consul.NET",
+    "category": "Configuration Management",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Consul\""
+  },
+  {
+    "name": "Microsoft.Extensions.Configuration",
+    "category": "Configuration Management",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.Extensions.Configuration\""
+  },
+  {
+    "name": "StackExchange.Redis",
+    "category": "Caching",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"StackExchange.Redis\""
+  },
+  {
+    "name": "Microsoft.Extensions.Caching.Memory",
+    "category": "Caching",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.Extensions.Caching.Memory\""
+  },
+  {
+    "name": "CacheManager",
+    "category": "Caching",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"CacheManager.Core\""
+  },
+  {
+    "name": "Elsa",
+    "category": "Workflow Automation",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Elsa\""
+  },
+  {
+    "name": "Workflow Core",
+    "category": "Workflow Automation",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"WorkflowCore\""
+  },
+  {
+    "name": "NReco",
+    "category": "ETL",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NReco.Data\""
+  },
+  {
+    "name": "Easy ETL",
+    "category": "ETL",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"EasyETL\""
+  },
+  {
+    "name": "Newtonsoft.Json",
+    "category": "Serialization",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Newtonsoft.Json\""
+  },
+  {
+    "name": "System.Text.Json",
+    "category": "Serialization",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"System.Text.Json\""
+  },
+  {
+    "name": "Protobuf-net",
+    "category": "Serialization",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"protobuf-net\""
+  },
+  {
+    "name": "Razor",
+    "category": "Templating",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.AspNetCore.Razor\""
+  },
+  {
+    "name": "Scriban",
+    "category": "Templating",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Scriban\""
+  },
+  {
+    "name": "Mustache.NET",
+    "category": "Templating",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Nustache\""
+  },
+  {
+    "name": "Quartz.NET",
+    "category": "Scheduler",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Quartz\""
+  },
+  {
+    "name": "Hangfire",
+    "category": "Scheduler",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Hangfire\""
+  },
+  {
+    "name": "Reactive Extensions (Rx.NET)",
+    "category": "Reactive",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"System.Reactive\""
+  },
+  {
+    "name": "Akka.NET",
+    "category": "Reactive",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Akka\""
+  },
+  {
+    "name": "KubernetesClient",
+    "category": "Container Orchestration",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"KubernetesClient\""
+  },
+  {
+    "name": "Docker.DotNet",
+    "category": "Container Orchestration",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Docker.DotNet\""
+  },
+  {
+    "name": "Unity",
+    "category": "Game Development",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"UnityEngine\""
+  },
+  {
+    "name": "MonoGame",
+    "category": "Game Development",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"MonoGame.Framework\""
+  },
+  {
+    "name": "Godot",
+    "category": "Game Development",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Godot.NET\""
+  },
+  {
+    "name": "Neo4jClient",
+    "category": "Graph Processing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Neo4jClient\""
+  },
+  {
+    "name": "Gremlin.NET",
+    "category": "Graph Processing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Gremlin.Net\""
+  },
+  {
+    "name": "Crystal Reports",
+    "category": "Reporting",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"CrystalDecisions.CrystalReports.Engine\""
+  },
+  {
+    "name": "Telerik Reporting",
+    "category": "Reporting",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Telerik.Reporting\""
+  },
+  {
+    "name": "DevExpress Reporting",
+    "category": "Reporting",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"DevExpress.XtraReports\""
+  },
+  {
+    "name": "Nethereum",
+    "category": "Blockchain",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Nethereum\""
+  },
+  {
+    "name": "Stratis",
+    "category": "Blockchain",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Stratis.Bitcoin\""
+  },
+  {
+    "name": "Hyperledger Fabric .NET SDK",
+    "category": "Blockchain",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Hyperledger.Fabric.SDK\""
+  },
+  {
+    "name": "OxyPlot",
+    "category": "Data Visualization",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"OxyPlot.Core\""
+  },
+  {
+    "name": "LiveCharts",
+    "category": "Data Visualization",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"LiveCharts\""
+  },
+  {
+    "name": "Microsoft Chart Controls",
+    "category": "Data Visualization",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"System.Windows.Forms.DataVisualization\""
+  },
+  {
+    "name": "Spire.Doc",
+    "category": "File Processing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Spire.Doc\""
+  },
+  {
+    "name": "EPPlus",
+    "category": "File Processing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"EPPlus\""
+  },
+  {
+    "name": "PDFSharp",
+    "category": "File Processing",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"PDFSharp\""
+  },
+  {
+    "name": "ML.NET",
+    "category": "Machine Learning",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.ML\""
+  },
+  {
+    "name": "Accord.NET",
+    "category": "Machine Learning",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Accord.MachineLearning\""
+  },
+  {
+    "name": "TensorFlow.NET",
+    "category": "Machine Learning",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"TensorFlow.NET\""
+  },
+  {
+    "name": "Statiq",
+    "category": "Static Site Generation",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Statiq\""
+  },
+  {
+    "name": "Wyam",
+    "category": "Static Site Generation",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Wyam\""
+  },
+  {
+    "name": "NuGet",
+    "category": "Dependency Management",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NuGet.CommandLine\""
+  },
+  {
+    "name": "Paket",
+    "category": "Dependency Management",
+    "package_file_name": "paket.dependencies",
+    "pattern": "<Package id=\""
+  },
+  {
+    "name": "MSBuild",
+    "category": "Build Automation",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.Build\""
+  },
+  {
+    "name": "Cake",
+    "category": "Build Automation",
+    "package_file_name": "build.cake",
+    "pattern": "//#addin nuget:?package=Cake.Common"
+  },
+  {
+    "name": "FAKE",
+    "category": "Build Automation",
+    "package_file_name": "build.fsx",
+    "pattern": "#r \"paket: groupref Fake //\""
+  },
+  {
+    "name": "YARP (Yet Another Reverse Proxy)",
+    "category": "Service Mesh",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Yarp.ReverseProxy\""
+  },
+  {
+    "name": "Envoy with .NET Integration",
+    "category": "Service Mesh",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Envoy\""
+  },
+  {
+    "name": "NGettext",
+    "category": "Internationalization (i18n)",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"NGettext\""
+  },
+  {
+    "name": "Microsoft.Extensions.Localization",
+    "category": "Internationalization (i18n)",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.Extensions.Localization\""
+  },
+  {
+    "name": "gettext.net",
+    "category": "Internationalization (i18n)",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"gettext.net\""
+  },
+  {
+    "name": "Stripe.NET",
+    "category": "Payment Integration",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Stripe.net\""
+  },
+  {
+    "name": "PayPal .NET SDK",
+    "category": "Payment Integration",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"PayPal\""
+  },
+  {
+    "name": "Braintree .NET SDK",
+    "category": "Payment Integration",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Braintree\""
+  },
+  {
+    "name": "Alfresco.NET",
+    "category": "Document Management",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Alfresco.Client\""
+  },
+  {
+    "name": "SharePoint SDK",
+    "category": "Document Management",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.SharePoint\""
+  },
+  {
+    "name": "DocuSign .NET SDK",
+    "category": "Document Management",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"DocuSign.eSign\""
+  },
+  {
+    "name": "MongoDB.Driver",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"MongoDB.Driver\""
+  },
+  {
+    "name": "Npgsql",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Npgsql\""
+  },
+  {
+    "name": "MySqlConnector",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"MySqlConnector\""
+  },
+  {
+    "name": "Oracle.ManagedDataAccess",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Oracle.ManagedDataAccess\""
+  },
+  {
+    "name": "CassandraCSharpDriver",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"CassandraCSharpDriver\""
+  },
+  {
+    "name": "CouchbaseNetClient",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"CouchbaseNetClient\""
+  },
+  {
+    "name": "RavenDB.Client",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"RavenDB.Client\""
+  },
+  {
+    "name": "SQLitePCL.raw",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"SQLitePCL.raw\""
+  },
+  {
+    "name": "Microsoft.Data.SqlClient",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"Microsoft.Data.SqlClient\""
+  },
+  {
+    "name": "System.Data.SqlClient",
+    "category": "Database Clients",
+    "package_file_name": "project.csproj",
+    "pattern": "<PackageReference Include=\"System.Data.SqlClient\""
+  }
+]

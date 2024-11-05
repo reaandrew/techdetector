@@ -23,11 +23,21 @@ import (
 //go:embed data/cloud_service_mappings/*.json
 var servicesFS embed.FS
 
+//go:embed data/frameworks/*.json
+var frameworkssFS embed.FS
+
 type Service struct {
 	CloudVendor  string `json:"cloud_vendor"`
 	CloudService string `json:"cloud_service"`
 	Language     string `json:"language"`
 	Reference    string `json:"reference"`
+}
+
+type Framework struct {
+	Name            string `json:"name,omitempty"`
+	Category        string `json:"category,omitempty"`
+	PackageFileName string `json:"package_file_name"`
+	Pattern         string `json:"pattern"`
 }
 
 type Finding struct {
@@ -39,6 +49,11 @@ type Finding struct {
 type ServiceRegex struct {
 	Service Service
 	Regex   *regexp.Regexp
+}
+
+type FrameworkRegex struct {
+	Framework Framework
+	Regex     *regexp.Regexp
 }
 
 const (
@@ -58,6 +73,14 @@ type RepoResult struct {
 	RepoName string
 }
 
+var (
+	services                []Service
+	frameworks              []Framework
+	serviceRegexes          []ServiceRegex
+	supportedFileExtensions []string
+	frameworkRegexes        []FrameworkRegex
+)
+
 func main() {
 	var reportFormat string
 
@@ -65,6 +88,23 @@ func main() {
 		Use:   "techdetector",
 		Short: "TechDetector is a tool to scan repositories for technologies.",
 	}
+
+	scanCmd := createScanCommand(reportFormat)
+
+	rootCmd.AddCommand(scanCmd)
+
+	services = loadAllCloudServices()
+	supportedFileExtensions = getSupportedFileExtensions(services)
+	serviceRegexes = compileServicesRegexes(services)
+	frameworks = loadAllFrameworks()
+	frameworkRegexes = compileFrameworkRegexes(frameworks)
+
+	if err := rootCmd.Execute(); err != nil {
+		log.Fatalf("Error executing command: %v", err)
+	}
+}
+
+func createScanCommand(reportFormat string) *cobra.Command {
 
 	scanCmd := &cobra.Command{
 		Use:   "scan",
@@ -96,12 +136,7 @@ func main() {
 
 	scanCmd.AddCommand(scanRepoCmd)
 	scanCmd.AddCommand(scanOrgCmd)
-
-	rootCmd.AddCommand(scanCmd)
-
-	if err := rootCmd.Execute(); err != nil {
-		log.Fatalf("Error executing command: %v", err)
-	}
+	return scanCmd
 }
 
 func getSupportedFileExtensions(services []Service) []string {
@@ -115,13 +150,10 @@ func getSupportedFileExtensions(services []Service) []string {
 }
 
 func runScanRepo(repoURL string, reportFormat string) {
-	allServices := loadAllCloudServices()
-	allSupportedFileExtensions := getSupportedFileExtensions(allServices)
-	if len(allServices) == 0 {
+	if len(services) == 0 {
 		log.Fatal("No services found. Exiting.")
 	}
 
-	serviceRegexes := compileRegexes(allServices)
 	if len(serviceRegexes) == 0 {
 		log.Fatal("No valid regex patterns compiled. Exiting.")
 	}
@@ -144,7 +176,7 @@ func runScanRepo(repoURL string, reportFormat string) {
 		log.Fatalf("Failed to clone repository '%s': %v", repoName, err)
 	}
 
-	findings, err := traverseAndSearch(repoPath, serviceRegexes, repoName, allSupportedFileExtensions)
+	findings, err := traverseAndSearch(repoPath, serviceRegexes, repoName, supportedFileExtensions)
 	if err != nil {
 		log.Fatalf("Error searching repository '%s': %v", repoName, err)
 	}
@@ -167,13 +199,10 @@ func runScanRepo(repoURL string, reportFormat string) {
 }
 
 func runScanOrg(orgName string, reportFormat string) {
-	allServices := loadAllCloudServices()
-	allSupportedFileExtensions := getSupportedFileExtensions(allServices)
-	if len(allServices) == 0 {
+	if len(services) == 0 {
 		log.Fatal("No services found. Exiting.")
 	}
 
-	serviceRegexes := compileRegexes(allServices)
 	if len(serviceRegexes) == 0 {
 		log.Fatal("No valid regex patterns compiled. Exiting.")
 	}
@@ -202,7 +231,7 @@ func runScanOrg(orgName string, reportFormat string) {
 	var wg sync.WaitGroup
 	for w := 1; w <= MaxWorkers; w++ {
 		wg.Add(1)
-		go worker(w, jobs, results, cloneBaseDir, serviceRegexes, allSupportedFileExtensions, &wg)
+		go worker(w, jobs, results, cloneBaseDir, serviceRegexes, supportedFileExtensions, &wg)
 	}
 
 	for _, repo := range repositories {
@@ -263,8 +292,8 @@ func extractRepoName(repoURL string) (string, error) {
 	return repoName, nil
 }
 
-func compileRegexes(allServices []Service) []ServiceRegex {
-	serviceRegexes := []ServiceRegex{}
+func compileServicesRegexes(allServices []Service) []ServiceRegex {
+	var serviceRegexes []ServiceRegex
 	for _, service := range allServices {
 		pattern := service.Reference
 		re, err := regexp.Compile(pattern)
@@ -278,6 +307,23 @@ func compileRegexes(allServices []Service) []ServiceRegex {
 		})
 	}
 	return serviceRegexes
+}
+
+func compileFrameworkRegexes(allFrameworks []Framework) []FrameworkRegex {
+	var frameworkRegexes []FrameworkRegex
+	for _, framework := range allFrameworks {
+		pattern := framework.Pattern
+		re, err := regexp.Compile(pattern)
+		if err != nil {
+			log.Printf("Failed to compile regex pattern '%s' from service '%s': %v", pattern, framework.Name, err)
+			continue
+		}
+		frameworkRegexes = append(frameworkRegexes, FrameworkRegex{
+			Framework: framework,
+			Regex:     re,
+		})
+	}
+	return frameworkRegexes
 }
 
 func loadAllCloudServices() []Service {
@@ -315,7 +361,42 @@ func loadAllCloudServices() []Service {
 	return allServices
 }
 
-func traverseAndSearch(targetDir string, serviceRegexes []ServiceRegex, repoName string, supportedFileExtensions []string) ([]Finding, error) {
+func loadAllFrameworks() []Framework {
+	var allFrameworks []Framework
+
+	entries, err := servicesFS.ReadDir("data/frameworks")
+	if err != nil {
+		log.Fatalf("Failed to read embedded directory: %v", err)
+	}
+
+	for _, entry := range entries {
+		if entry.IsDir() {
+			continue
+		}
+
+		if !strings.HasSuffix(entry.Name(), ".json") {
+			continue
+		}
+
+		content, err := servicesFS.ReadFile(fmt.Sprintf("data/cloud_service_mappings/%s", entry.Name()))
+		if err != nil {
+			log.Printf("Failed to read file %s: %v", entry.Name(), err)
+			continue
+		}
+
+		var frameworks []Framework
+		err = json.Unmarshal(content, &frameworks)
+		if err != nil {
+			log.Printf("Failed to unmarshal JSON from file %s: %v", entry.Name(), err)
+			continue
+		}
+
+		allFrameworks = append(allFrameworks, frameworks...)
+	}
+	return allFrameworks
+}
+
+func traverseAndSearch(targetDir string, repoName string) ([]Finding, error) {
 	var findings []Finding
 
 	info, err := os.Stat(targetDir)

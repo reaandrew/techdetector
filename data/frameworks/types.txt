@@ -29,6 +29,7 @@ Graph Processing
 Reporting
 Blockchain
 Data Visualization
+Database Clients
 File Processing
 Machine Learning
 Static Site Generation
