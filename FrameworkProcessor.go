@@ -1,6 +1,7 @@
 package main
 
 import (
+	"embed"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -8,6 +9,9 @@ import (
 	"regexp"
 	"strings"
 )
+
+//go:embed data/frameworks/*.json
+var frameworksFS embed.FS
 
 // FrameworkProcessor processes files for Framework findings.
 type FrameworkProcessor struct {
@@ -99,4 +103,16 @@ func (fp *FrameworkProcessor) Process(path string, repoName string, content stri
 		}
 	}
 	return findings
+}
+
+type Framework struct {
+	Name            string `json:"name,omitempty"`
+	Category        string `json:"category,omitempty"`
+	PackageFileName string `json:"package_file_name"`
+	Pattern         string `json:"pattern"`
+}
+
+type FrameworkRegex struct {
+	Framework Framework
+	Regex     *regexp.Regexp
 }

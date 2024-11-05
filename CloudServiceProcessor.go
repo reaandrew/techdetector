@@ -1,6 +1,7 @@
 package main
 
 import (
+	"embed"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -9,13 +10,16 @@ import (
 	"strings"
 )
 
-// CloudServiceProcessor processes files for Service findings.
+//go:embed data/cloud_service_mappings/*.json
+var servicesFS embed.FS
+
+// CloudServiceProcessor processes files for CloudService findings.
 type CloudServiceProcessor struct {
-	serviceRegexes []ServiceRegex
+	serviceRegexes []CloudServiceRegex
 }
 
-func loadAllCloudServices() []Service {
-	var allServices []Service
+func loadAllCloudServices() []CloudService {
+	var allServices []CloudService
 
 	entries, err := servicesFS.ReadDir("data/cloud_service_mappings")
 	if err != nil {
@@ -37,7 +41,7 @@ func loadAllCloudServices() []Service {
 			continue
 		}
 
-		var services []Service
+		var services []CloudService
 		err = json.Unmarshal(content, &services)
 		if err != nil {
 			log.Printf("Failed to unmarshal JSON from file %s: %v", entry.Name(), err)
@@ -49,8 +53,8 @@ func loadAllCloudServices() []Service {
 	return allServices
 }
 
-func compileServicesRegexes(allServices []Service) []ServiceRegex {
-	var serviceRegexes []ServiceRegex
+func compileServicesRegexes(allServices []CloudService) []CloudServiceRegex {
+	var serviceRegexes []CloudServiceRegex
 	for _, service := range allServices {
 		pattern := service.Reference
 		re, err := regexp.Compile(pattern)
@@ -58,7 +62,7 @@ func compileServicesRegexes(allServices []Service) []ServiceRegex {
 			log.Printf("Failed to compile regex pattern '%s' from service '%s': %v", pattern, service.CloudService, err)
 			continue
 		}
-		serviceRegexes = append(serviceRegexes, ServiceRegex{
+		serviceRegexes = append(serviceRegexes, CloudServiceRegex{
 			Service: service,
 			Regex:   re,
 		})
@@ -87,7 +91,7 @@ func (sp *CloudServiceProcessor) Process(path string, repoName string, content s
 		matches := sre.Regex.FindAllString(content, -1)
 		if len(matches) > 0 {
 			for range matches {
-				// Create a unique copy of the Service for each finding
+				// Create a unique copy of the CloudService for each finding
 				serviceCopy := sre.Service
 				finding := Finding{
 					Service:    &serviceCopy,
@@ -99,4 +103,16 @@ func (sp *CloudServiceProcessor) Process(path string, repoName string, content s
 		}
 	}
 	return findings
+}
+
+type CloudService struct {
+	CloudVendor  string `json:"cloud_vendor"`
+	CloudService string `json:"cloud_service"`
+	Language     string `json:"language"`
+	Reference    string `json:"reference"`
+}
+
+type CloudServiceRegex struct {
+	Service CloudService
+	Regex   *regexp.Regexp
 }
