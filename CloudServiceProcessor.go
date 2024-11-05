@@ -1,7 +1,11 @@
 package main
 
 import (
+	"encoding/json"
+	"fmt"
+	"log"
 	"path/filepath"
+	"regexp"
 	"strings"
 )
 
@@ -10,8 +14,62 @@ type CloudServiceProcessor struct {
 	serviceRegexes []ServiceRegex
 }
 
+func loadAllCloudServices() []Service {
+	var allServices []Service
+
+	entries, err := servicesFS.ReadDir("data/cloud_service_mappings")
+	if err != nil {
+		log.Fatalf("Failed to read embedded directory: %v", err)
+	}
+
+	for _, entry := range entries {
+		if entry.IsDir() {
+			continue
+		}
+
+		if !strings.HasSuffix(entry.Name(), ".json") {
+			continue
+		}
+
+		content, err := servicesFS.ReadFile(fmt.Sprintf("data/cloud_service_mappings/%s", entry.Name()))
+		if err != nil {
+			log.Printf("Failed to read file %s: %v", entry.Name(), err)
+			continue
+		}
+
+		var services []Service
+		err = json.Unmarshal(content, &services)
+		if err != nil {
+			log.Printf("Failed to unmarshal JSON from file %s: %v", entry.Name(), err)
+			continue
+		}
+
+		allServices = append(allServices, services...)
+	}
+	return allServices
+}
+
+func compileServicesRegexes(allServices []Service) []ServiceRegex {
+	var serviceRegexes []ServiceRegex
+	for _, service := range allServices {
+		pattern := service.Reference
+		re, err := regexp.Compile(pattern)
+		if err != nil {
+			log.Printf("Failed to compile regex pattern '%s' from service '%s': %v", pattern, service.CloudService, err)
+			continue
+		}
+		serviceRegexes = append(serviceRegexes, ServiceRegex{
+			Service: service,
+			Regex:   re,
+		})
+	}
+	return serviceRegexes
+}
+
 // NewServiceProcessor creates a new CloudServiceProcessor.
-func NewServiceProcessor(serviceRegexes []ServiceRegex) *CloudServiceProcessor {
+func NewServiceProcessor() *CloudServiceProcessor {
+	services := loadAllCloudServices()
+	serviceRegexes := compileServicesRegexes(services)
 	return &CloudServiceProcessor{serviceRegexes: serviceRegexes}
 }
 

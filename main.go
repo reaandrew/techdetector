@@ -78,15 +78,6 @@ type RepoResult struct {
 	RepoName string
 }
 
-// Global variables
-var (
-	services                []Service
-	frameworks              []Framework
-	serviceRegexes          []ServiceRegex
-	frameworkRegexes        []FrameworkRegex
-	supportedFileExtensions []string
-)
-
 func main() {
 	var reportFormat string
 
@@ -99,20 +90,12 @@ func main() {
 
 	rootCmd.AddCommand(scanCmd)
 
-	// Load services and frameworks
-	services = loadAllCloudServices()
-	supportedFileExtensions = getSupportedFileExtensions(services)
-	serviceRegexes = compileServicesRegexes(services)
-	frameworks = loadAllFrameworks() // Ensure this uses frameworksFS
-	frameworkRegexes = compileFrameworkRegexes(frameworks)
-
 	if err := rootCmd.Execute(); err != nil {
 		log.Fatalf("Error executing command: %v", err)
 	}
 }
 
 func createScanCommand(reportFormat *string) *cobra.Command {
-
 	scanCmd := &cobra.Command{
 		Use:   "scan",
 		Short: "Scan repositories or organizations for technologies.",
@@ -146,33 +129,7 @@ func createScanCommand(reportFormat *string) *cobra.Command {
 	return scanCmd
 }
 
-func getSupportedFileExtensions(services []Service) []string {
-	extMap := make(map[string]struct{})
-	for _, service := range services {
-		if service.Language != "" {
-			extMap[service.Language] = struct{}{}
-		}
-	}
-	var supportedExtensions []string
-	for ext := range extMap {
-		supportedExtensions = append(supportedExtensions, ext)
-	}
-	return supportedExtensions
-}
-
 func runScanRepo(repoURL string, reportFormat string) {
-	if len(services) == 0 {
-		log.Fatal("No services found. Exiting.")
-	}
-
-	if len(serviceRegexes) == 0 {
-		log.Fatal("No valid regex patterns compiled. Exiting.")
-	}
-
-	if len(frameworkRegexes) == 0 {
-		log.Fatal("No valid framework regex patterns compiled. Exiting.")
-	}
-
 	// Ensure clone base directory exists
 	err := os.MkdirAll(CloneBaseDir, os.ModePerm)
 	if err != nil {
@@ -210,18 +167,6 @@ func runScanRepo(repoURL string, reportFormat string) {
 }
 
 func runScanOrg(orgName string, reportFormat string) {
-	if len(services) == 0 {
-		log.Fatal("No services found. Exiting.")
-	}
-
-	if len(serviceRegexes) == 0 {
-		log.Fatal("No valid regex patterns compiled. Exiting.")
-	}
-
-	if len(frameworkRegexes) == 0 {
-		log.Fatal("No valid framework regex patterns compiled. Exiting.")
-	}
-
 	client := initializeGitHubClient()
 
 	// Ensure clone base directory exists
@@ -299,120 +244,16 @@ func extractRepoName(repoURL string) (string, error) {
 	return repoName, nil
 }
 
-func compileServicesRegexes(allServices []Service) []ServiceRegex {
-	var serviceRegexes []ServiceRegex
-	for _, service := range allServices {
-		pattern := service.Reference
-		re, err := regexp.Compile(pattern)
-		if err != nil {
-			log.Printf("Failed to compile regex pattern '%s' from service '%s': %v", pattern, service.CloudService, err)
-			continue
-		}
-		serviceRegexes = append(serviceRegexes, ServiceRegex{
-			Service: service,
-			Regex:   re,
-		})
-	}
-	return serviceRegexes
-}
-
-func compileFrameworkRegexes(allFrameworks []Framework) []FrameworkRegex {
-	var frameworkRegexes []FrameworkRegex
-	for _, framework := range allFrameworks {
-		pattern := framework.Pattern
-		re, err := regexp.Compile(pattern)
-		if err != nil {
-			log.Printf("Failed to compile regex pattern '%s' from framework '%s': %v", pattern, framework.Name, err)
-			continue
-		}
-		frameworkRegexes = append(frameworkRegexes, FrameworkRegex{
-			Framework: framework,
-			Regex:     re,
-		})
-	}
-	return frameworkRegexes
-}
-
-func loadAllCloudServices() []Service {
-	var allServices []Service
-
-	entries, err := servicesFS.ReadDir("data/cloud_service_mappings")
-	if err != nil {
-		log.Fatalf("Failed to read embedded directory: %v", err)
-	}
-
-	for _, entry := range entries {
-		if entry.IsDir() {
-			continue
-		}
-
-		if !strings.HasSuffix(entry.Name(), ".json") {
-			continue
-		}
-
-		content, err := servicesFS.ReadFile(fmt.Sprintf("data/cloud_service_mappings/%s", entry.Name()))
-		if err != nil {
-			log.Printf("Failed to read file %s: %v", entry.Name(), err)
-			continue
-		}
-
-		var services []Service
-		err = json.Unmarshal(content, &services)
-		if err != nil {
-			log.Printf("Failed to unmarshal JSON from file %s: %v", entry.Name(), err)
-			continue
-		}
-
-		allServices = append(allServices, services...)
-	}
-	return allServices
-}
-
-func loadAllFrameworks() []Framework {
-	var allFrameworks []Framework
-
-	entries, err := frameworksFS.ReadDir("data/frameworks") // Corrected from servicesFS to frameworksFS
-	if err != nil {
-		log.Fatalf("Failed to read embedded directory: %v", err)
-	}
-
-	for _, entry := range entries {
-		if entry.IsDir() {
-			continue
-		}
-
-		if !strings.HasSuffix(entry.Name(), ".json") {
-			continue
-		}
-
-		content, err := frameworksFS.ReadFile(fmt.Sprintf("data/frameworks/%s", entry.Name())) // Corrected path
-		if err != nil {
-			log.Printf("Failed to read file %s: %v", entry.Name(), err)
-			continue
-		}
-
-		var frameworks []Framework
-		err = json.Unmarshal(content, &frameworks)
-		if err != nil {
-			log.Printf("Failed to unmarshal JSON from file %s: %v", entry.Name(), err)
-			continue
-		}
-
-		allFrameworks = append(allFrameworks, frameworks...)
-	}
-	return allFrameworks
-}
-
 // initializeProcessors creates and returns a slice of Processor implementations.
 func initializeProcessors() []Processor {
 	var processors []Processor
 
 	// Initialize CloudServiceProcessor
-	serviceProcessor := NewServiceProcessor(serviceRegexes)
+	serviceProcessor := NewServiceProcessor()
 	processors = append(processors, serviceProcessor)
 
 	// Initialize FrameworkProcessor
-	frameworkProcessor := NewFrameworkProcessor(frameworkRegexes)
+	frameworkProcessor := NewFrameworkProcessor()
 	processors = append(processors, frameworkProcessor)
 
 	return processors
