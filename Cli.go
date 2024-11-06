@@ -25,8 +25,9 @@ func (cli *Cli) Execute() error {
 func (cli *Cli) createScanCommand() *cobra.Command {
 
 	scanCmd := &cobra.Command{
-		Use:   "scan",
-		Short: "Scan repositories or organizations for technologies.",
+		Use:     "scan",
+		Short:   "Scan repositories or organizations for technologies.",
+		Version: Version,
 	}
 
 	// Add the --report flag to the scan command

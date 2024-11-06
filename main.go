@@ -10,6 +10,8 @@ const (
 	CloneBaseDir   = "/tmp/techdetector" // You can make this configurable if needed
 )
 
+var Version string
+
 func main() {
 	cli := &Cli{}
 	if err := cli.Execute(); err != nil {
