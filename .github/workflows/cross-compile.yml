@@ -55,59 +55,6 @@ jobs:
           name: compiled-binaries
           path: build.tar.gz
 
-  update-latest-release:
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Create build directory
-        run: mkdir -p ./build
-
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: compiled-binaries
-          path: ./downloaded
-
-      - name: Untar build directory
-        run: tar -xzvf ./downloaded/build.tar.gz -C ./build
-
-      - name: Install GitHub CLI
-        run: sudo apt install gh
-
-      - name: Check if release exists
-        id: check_release
-        continue-on-error: true
-        run: |
-          RELEASE_URL=$(gh release view latest --json url -q '.url') || true
-          if [[ -n "$RELEASE_URL" ]]; then
-            echo "RELEASE_EXISTS=true" >> $GITHUB_ENV
-            echo "RELEASE_URL=$RELEASE_URL" >> $GITHUB_ENV
-          else
-            echo "RELEASE_EXISTS=false" >> $GITHUB_ENV
-          fi
-
-      - name: Remove existing assets
-        if: env.RELEASE_EXISTS == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          ASSET_IDS=$(gh api -X GET $RELEASE_URL/assets -q '.[].id' ||:)
-          for id in $ASSET_IDS; do
-            gh api -X DELETE /repos/:owner/:repo/releases/assets/$id
-          done
-
-      - name: Upload new assets to latest release
-        if: env.RELEASE_EXISTS_FOR_UPLOAD == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release upload latest ./build/* --clobber
-
-
-
-
-
   update_dev_release:
     runs-on: ubuntu-latest
     needs: build
@@ -149,8 +96,6 @@ jobs:
           gh release create development ./build/* \
           --title "Development Release: ${{ env.GIT_DESCRIBE_VERSION }}" \
           --notes "Auto-generated development release"
-  
-  
   
 
   release:
