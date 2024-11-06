@@ -1,0 +1,386 @@
+[
+  {
+    "name": "Gin",
+    "category": "Web",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/gin-gonic/gin"
+  },
+  {
+    "name": "Echo",
+    "category": "Web",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/labstack/echo/v4"
+  },
+  {
+    "name": "Beego",
+    "category": "Web",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/beego/beego/v2"
+  },
+  {
+    "name": "Fiber",
+    "category": "Web",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/gofiber/fiber/v2"
+  },
+  {
+    "name": "Revel",
+    "category": "Web",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/revel/revel"
+  },
+  {
+    "name": "GORM",
+    "category": "ORM",
+    "package_file_name": "go.mod",
+    "pattern": "gorm.io/gorm"
+  },
+  {
+    "name": "sqlx",
+    "category": "ORM",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/jmoiron/sqlx"
+  },
+  {
+    "name": "Ent",
+    "category": "ORM",
+    "package_file_name": "go.mod",
+    "pattern": "entgo.io/ent"
+  },
+  {
+    "name": "Bun",
+    "category": "ORM",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/uptrace/bun"
+  },
+  {
+    "name": "Testify",
+    "category": "Testing",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/stretchr/testify"
+  },
+  {
+    "name": "Ginkgo",
+    "category": "Testing",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/onsi/ginkgo"
+  },
+  {
+    "name": "Gomega",
+    "category": "Testing",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/onsi/gomega"
+  },
+  {
+    "name": "GoMock",
+    "category": "Testing",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/golang/mock"
+  },
+  {
+    "name": "Casbin",
+    "category": "Security",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/casbin/casbin"
+  },
+  {
+    "name": "jwt-go",
+    "category": "Security",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/dgrijalva/jwt-go"
+  },
+  {
+    "name": "Logrus",
+    "category": "Logging",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/sirupsen/logrus"
+  },
+  {
+    "name": "Zap",
+    "category": "Logging",
+    "package_file_name": "go.mod",
+    "pattern": "go.uber.org/zap"
+  },
+  {
+    "name": "Zerolog",
+    "category": "Logging",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/rs/zerolog"
+  },
+  {
+    "name": "Lumberjack",
+    "category": "Logging",
+    "package_file_name": "go.mod",
+    "pattern": "gopkg.in/natefinch/lumberjack.v2"
+  },
+  {
+    "name": "Wire",
+    "category": "Dependency Injection",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/google/wire"
+  },
+  {
+    "name": "Fx",
+    "category": "Dependency Injection",
+    "package_file_name": "go.mod",
+    "pattern": "go.uber.org/fx"
+  },
+  {
+    "name": "Dig",
+    "category": "Dependency Injection",
+    "package_file_name": "go.mod",
+    "pattern": "go.uber.org/dig"
+  },
+  {
+    "name": "Asynq",
+    "category": "Task Queue",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/hibiken/asynq"
+  },
+  {
+    "name": "Go-Workers",
+    "category": "Task Queue",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/jrallison/go-workers"
+  },
+  {
+    "name": "NATS",
+    "category": "Messaging",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/nats-io/nats.go"
+  },
+  {
+    "name": "Sarama",
+    "category": "Messaging",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/Shopify/sarama"
+  },
+  {
+    "name": "Streadway/amqp",
+    "category": "Messaging",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/streadway/amqp"
+  },
+  {
+    "name": "go-swagger",
+    "category": "API",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/go-swagger/go-swagger"
+  },
+  {
+    "name": "Goa",
+    "category": "API",
+    "package_file_name": "go.mod",
+    "pattern": "goa.design/goa/v3"
+  },
+  {
+    "name": "Swagger UI",
+    "category": "Documentation",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/swaggo/files"
+  },
+  {
+    "name": "GoDoc",
+    "category": "Documentation",
+    "package_file_name": "go.mod",
+    "pattern": "golang.org/x/tools/cmd/godoc"
+  },
+  {
+    "name": "Prometheus Client",
+    "category": "Monitoring",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/prometheus/client_golang"
+  },
+  {
+    "name": "OpenTelemetry",
+    "category": "Monitoring",
+    "package_file_name": "go.mod",
+    "pattern": "go.opentelemetry.io/otel"
+  },
+  {
+    "name": "Go-Kit",
+    "category": "Microservices",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/go-kit/kit"
+  },
+  {
+    "name": "Micro",
+    "category": "Microservices",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/micro/micro/v3"
+  },
+  {
+    "name": "Gio",
+    "category": "Graphical UI",
+    "package_file_name": "go.mod",
+    "pattern": "gioui.org/ui"
+  },
+  {
+    "name": "Fyne",
+    "category": "Graphical UI",
+    "package_file_name": "go.mod",
+    "pattern": "fyne.io/fyne/v2"
+  },
+  {
+    "name": "Ebiten",
+    "category": "Game Development",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/hajimehoshi/ebiten/v2"
+  },
+  {
+    "name": "G3N",
+    "category": "Game Development",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/g3n/engine/v2"
+  },
+  {
+    "name": "Pixel",
+    "category": "Game Development",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/faiface/pixel"
+  },
+  {
+    "name": "Gomega",
+    "category": "Reactive",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/onsi/gomega"
+  },
+  {
+    "name": "RxGo",
+    "category": "Reactive",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/ReactiveX/RxGo/v2"
+  },
+  {
+    "name": "Go-ethereum",
+    "category": "Blockchain",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/ethereum/go-ethereum"
+  },
+  {
+    "name": "Hyperledger Fabric SDK for Go",
+    "category": "Blockchain",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/hyperledger/fabric-sdk-go"
+  },
+  {
+    "name": "Stripe Go SDK",
+    "category": "Payment Integration",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/stripe/stripe-go"
+  },
+  {
+    "name": "PayPal Go SDK",
+    "category": "Payment Integration",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/plutov/paypal"
+  },
+  {
+    "name": "Braintree Go SDK",
+    "category": "Payment Integration",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/braintree-go/braintree-go"
+  },
+  {
+    "name": "Hugo",
+    "category": "Static Site Generation",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/gohugoio/hugo"
+  },
+  {
+    "name": "Caddy",
+    "category": "Static Site Generation",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/caddyserver/caddy/v2"
+  },
+  {
+    "name": "Mage",
+    "category": "Build Automation",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/magefile/mage"
+  },
+  {
+    "name": "Task",
+    "category": "Build Automation",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/go-task/task/v3"
+  },
+  {
+    "name": "GoDoc",
+    "category": "Documentation",
+    "package_file_name": "go.mod",
+    "pattern": "golang.org/x/tools/cmd/godoc"
+  },
+  {
+    "name": "Istio Go Client",
+    "category": "Service Mesh",
+    "package_file_name": "go.mod",
+    "pattern": "istio.io/client-go"
+  },
+  {
+    "name": "Linkerd Go Client",
+    "category": "Service Mesh",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/linkerd/linkerd2"
+  },
+  {
+    "name": "go-i18n",
+    "category": "Internationalization (i18n)",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/nicksnyder/go-i18n/v2/i18n"
+  },
+  {
+    "name": "ResourceBundle",
+    "category": "Internationalization (i18n)",
+    "package_file_name": "go.mod",
+    "pattern": "golang.org/x/text"
+  },
+  {
+    "name": "MongoDB Go Driver",
+    "category": "Database Clients",
+    "package_file_name": "go.mod",
+    "pattern": "go.mongodb.org/mongo-driver/mongo"
+  },
+  {
+    "name": "PostgreSQL Driver (pgx)",
+    "category": "Database Clients",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/jackc/pgx/v4"
+  },
+  {
+    "name": "MySQL Driver (go-sql-driver)",
+    "category": "Database Clients",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/go-sql-driver/mysql"
+  },
+  {
+    "name": "Oracle Driver (godror)",
+    "category": "Database Clients",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/godror/godror"
+  },
+  {
+    "name": "Cassandra Driver (gocql)",
+    "category": "Database Clients",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/gocql/gocql"
+  },
+  {
+    "name": "Couchbase Go SDK",
+    "category": "Database Clients",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/couchbase/gocb/v2"
+  },
+  {
+    "name": "RavenDB Go Client",
+    "category": "Database Clients",
+    "package_file_name": "go.mod",
+    "pattern": "github.com/ravendb/ravendb-go-client"
+  },
+  {
+    "name": "SQLite Driver (modernc.org/sqlite)",
+    "category": "Database Clients",
+    "package_file_name": "go.mod",
+    "pattern": "modernc.org/sqlite"
+  }
+]

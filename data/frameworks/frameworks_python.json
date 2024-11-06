@@ -1,0 +1,818 @@
+[
+    {
+        "name": "Django",
+        "category": "Web",
+        "package_file_name": "requirements.txt",
+        "pattern": "django=="
+    },
+    {
+        "name": "Django",
+        "category": "Web",
+        "package_file_name": "pyproject.toml",
+        "pattern": "django"
+    },
+    {
+        "name": "Flask",
+        "category": "Web",
+        "package_file_name": "requirements.txt",
+        "pattern": "Flask=="
+    },
+    {
+        "name": "Flask",
+        "category": "Web",
+        "package_file_name": "pyproject.toml",
+        "pattern": "Flask"
+    },
+    {
+        "name": "FastAPI",
+        "category": "Web",
+        "package_file_name": "requirements.txt",
+        "pattern": "fastapi=="
+    },
+    {
+        "name": "FastAPI",
+        "category": "Web",
+        "package_file_name": "pyproject.toml",
+        "pattern": "fastapi"
+    },
+    {
+        "name": "Pyramid",
+        "category": "Web",
+        "package_file_name": "requirements.txt",
+        "pattern": "Pyramid=="
+    },
+    {
+        "name": "Pyramid",
+        "category": "Web",
+        "package_file_name": "pyproject.toml",
+        "pattern": "Pyramid"
+    },
+    {
+        "name": "Bottle",
+        "category": "Web",
+        "package_file_name": "requirements.txt",
+        "pattern": "Bottle=="
+    },
+    {
+        "name": "Bottle",
+        "category": "Web",
+        "package_file_name": "pyproject.toml",
+        "pattern": "Bottle"
+    },
+    {
+        "name": "Tornado",
+        "category": "Web",
+        "package_file_name": "requirements.txt",
+        "pattern": "tornado=="
+    },
+    {
+        "name": "Tornado",
+        "category": "Web",
+        "package_file_name": "pyproject.toml",
+        "pattern": "tornado"
+    },
+    {
+        "name": "CherryPy",
+        "category": "Web",
+        "package_file_name": "requirements.txt",
+        "pattern": "CherryPy=="
+    },
+    {
+        "name": "CherryPy",
+        "category": "Web",
+        "package_file_name": "pyproject.toml",
+        "pattern": "CherryPy"
+    },
+    {
+        "name": "Sanic",
+        "category": "Web",
+        "package_file_name": "requirements.txt",
+        "pattern": "sanic=="
+    },
+    {
+        "name": "Sanic",
+        "category": "Web",
+        "package_file_name": "pyproject.toml",
+        "pattern": "sanic"
+    },
+    {
+        "name": "SQLAlchemy",
+        "category": "ORM",
+        "package_file_name": "requirements.txt",
+        "pattern": "SQLAlchemy=="
+    },
+    {
+        "name": "SQLAlchemy",
+        "category": "ORM",
+        "package_file_name": "pyproject.toml",
+        "pattern": "SQLAlchemy"
+    },
+    {
+        "name": "Django ORM",
+        "category": "ORM",
+        "package_file_name": "requirements.txt",
+        "pattern": "django=="
+    },
+    {
+        "name": "Django ORM",
+        "category": "ORM",
+        "package_file_name": "pyproject.toml",
+        "pattern": "django"
+    },
+    {
+        "name": "Peewee",
+        "category": "ORM",
+        "package_file_name": "requirements.txt",
+        "pattern": "peewee=="
+    },
+    {
+        "name": "Peewee",
+        "category": "ORM",
+        "package_file_name": "pyproject.toml",
+        "pattern": "peewee"
+    },
+    {
+        "name": "Pony ORM",
+        "category": "ORM",
+        "package_file_name": "requirements.txt",
+        "pattern": "pony=="
+    },
+    {
+        "name": "Pony ORM",
+        "category": "ORM",
+        "package_file_name": "pyproject.toml",
+        "pattern": "pony"
+    },
+    {
+        "name": "Tortoise ORM",
+        "category": "ORM",
+        "package_file_name": "requirements.txt",
+        "pattern": "tortoise-orm=="
+    },
+    {
+        "name": "Tortoise ORM",
+        "category": "ORM",
+        "package_file_name": "pyproject.toml",
+        "pattern": "tortoise-orm"
+    },
+    {
+        "name": "pytest",
+        "category": "Testing",
+        "package_file_name": "requirements.txt",
+        "pattern": "pytest=="
+    },
+    {
+        "name": "pytest",
+        "category": "Testing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "pytest"
+    },
+    {
+        "name": "unittest",
+        "category": "Testing",
+        "package_file_name": "requirements.txt",
+        "pattern": "unittest"
+    },
+    {
+        "name": "unittest",
+        "category": "Testing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "unittest"
+    },
+    {
+        "name": "nose2",
+        "category": "Testing",
+        "package_file_name": "requirements.txt",
+        "pattern": "nose2=="
+    },
+    {
+        "name": "nose2",
+        "category": "Testing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "nose2"
+    },
+    {
+        "name": "Hypothesis",
+        "category": "Testing",
+        "package_file_name": "requirements.txt",
+        "pattern": "hypothesis=="
+    },
+    {
+        "name": "Hypothesis",
+        "category": "Testing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "hypothesis"
+    },
+    {
+        "name": "Mock",
+        "category": "Testing",
+        "package_file_name": "requirements.txt",
+        "pattern": "mock=="
+    },
+    {
+        "name": "Mock",
+        "category": "Testing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "mock"
+    },
+    {
+        "name": "coverage.py",
+        "category": "Testing",
+        "package_file_name": "requirements.txt",
+        "pattern": "coverage=="
+    },
+    {
+        "name": "coverage.py",
+        "category": "Testing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "coverage"
+    },
+    {
+        "name": "Django Security",
+        "category": "Security",
+        "package_file_name": "requirements.txt",
+        "pattern": "django=="
+    },
+    {
+        "name": "Django Security",
+        "category": "Security",
+        "package_file_name": "pyproject.toml",
+        "pattern": "django"
+    },
+    {
+        "name": "Flask-Login",
+        "category": "Security",
+        "package_file_name": "requirements.txt",
+        "pattern": "Flask-Login=="
+    },
+    {
+        "name": "Flask-Login",
+        "category": "Security",
+        "package_file_name": "pyproject.toml",
+        "pattern": "Flask-Login"
+    },
+    {
+        "name": "Flask-Security",
+        "category": "Security",
+        "package_file_name": "requirements.txt",
+        "pattern": "Flask-Security=="
+    },
+    {
+        "name": "Flask-Security",
+        "category": "Security",
+        "package_file_name": "pyproject.toml",
+        "pattern": "Flask-Security"
+    },
+    {
+        "name": "passlib",
+        "category": "Security",
+        "package_file_name": "requirements.txt",
+        "pattern": "passlib=="
+    },
+    {
+        "name": "passlib",
+        "category": "Security",
+        "package_file_name": "pyproject.toml",
+        "pattern": "passlib"
+    },
+    {
+        "name": "Loguru",
+        "category": "Logging",
+        "package_file_name": "requirements.txt",
+        "pattern": "loguru=="
+    },
+    {
+        "name": "Loguru",
+        "category": "Logging",
+        "package_file_name": "pyproject.toml",
+        "pattern": "loguru"
+    },
+    {
+        "name": "structlog",
+        "category": "Logging",
+        "package_file_name": "requirements.txt",
+        "pattern": "structlog=="
+    },
+    {
+        "name": "structlog",
+        "category": "Logging",
+        "package_file_name": "pyproject.toml",
+        "pattern": "structlog"
+    },
+    {
+        "name": "Zap",
+        "category": "Logging",
+        "package_file_name": "requirements.txt",
+        "pattern": "zap=="
+    },
+    {
+        "name": "Zap",
+        "category": "Logging",
+        "package_file_name": "pyproject.toml",
+        "pattern": "zap"
+    },
+    {
+        "name": "Lumberjack",
+        "category": "Logging",
+        "package_file_name": "requirements.txt",
+        "pattern": "lumberjack=="
+    },
+    {
+        "name": "Lumberjack",
+        "category": "Logging",
+        "package_file_name": "pyproject.toml",
+        "pattern": "lumberjack"
+    },
+    {
+        "name": "logging",
+        "category": "Logging",
+        "package_file_name": "requirements.txt",
+        "pattern": "logging"
+    },
+    {
+        "name": "logging",
+        "category": "Logging",
+        "package_file_name": "pyproject.toml",
+        "pattern": "logging"
+    },
+    {
+        "name": "dependency-injector",
+        "category": "Dependency Injection",
+        "package_file_name": "requirements.txt",
+        "pattern": "dependency-injector=="
+    },
+    {
+        "name": "dependency-injector",
+        "category": "Dependency Injection",
+        "package_file_name": "pyproject.toml",
+        "pattern": "dependency-injector"
+    },
+    {
+        "name": "Celery",
+        "category": "Task Queue",
+        "package_file_name": "requirements.txt",
+        "pattern": "celery=="
+    },
+    {
+        "name": "Celery",
+        "category": "Task Queue",
+        "package_file_name": "pyproject.toml",
+        "pattern": "celery"
+    },
+    {
+        "name": "RQ (Redis Queue)",
+        "category": "Task Queue",
+        "package_file_name": "requirements.txt",
+        "pattern": "rq=="
+    },
+    {
+        "name": "RQ (Redis Queue)",
+        "category": "Task Queue",
+        "package_file_name": "pyproject.toml",
+        "pattern": "rq"
+    },
+    {
+        "name": "Huey",
+        "category": "Task Queue",
+        "package_file_name": "requirements.txt",
+        "pattern": "huey=="
+    },
+    {
+        "name": "Huey",
+        "category": "Task Queue",
+        "package_file_name": "pyproject.toml",
+        "pattern": "huey"
+    },
+    {
+        "name": "NATS",
+        "category": "Messaging",
+        "package_file_name": "requirements.txt",
+        "pattern": "nats-py=="
+    },
+    {
+        "name": "NATS",
+        "category": "Messaging",
+        "package_file_name": "pyproject.toml",
+        "pattern": "nats-py"
+    },
+    {
+        "name": "Kombu",
+        "category": "Messaging",
+        "package_file_name": "requirements.txt",
+        "pattern": "kombu=="
+    },
+    {
+        "name": "Kombu",
+        "category": "Messaging",
+        "package_file_name": "pyproject.toml",
+        "pattern": "kombu"
+    },
+    {
+        "name": "Pika",
+        "category": "Messaging",
+        "package_file_name": "requirements.txt",
+        "pattern": "pika=="
+    },
+    {
+        "name": "Pika",
+        "category": "Messaging",
+        "package_file_name": "pyproject.toml",
+        "pattern": "pika"
+    },
+    {
+        "name": "Go-Workers",
+        "category": "Task Queue",
+        "package_file_name": "requirements.txt",
+        "pattern": "go-workers"
+    },
+    {
+        "name": "Celery",
+        "category": "Messaging",
+        "package_file_name": "requirements.txt",
+        "pattern": "celery=="
+    },
+    {
+        "name": "go-swagger",
+        "category": "API",
+        "package_file_name": "requirements.txt",
+        "pattern": "swagger=="
+    },
+    {
+        "name": "go-swagger",
+        "category": "API",
+        "package_file_name": "pyproject.toml",
+        "pattern": "swagger"
+    },
+    {
+        "name": "Flask-RESTful",
+        "category": "API",
+        "package_file_name": "requirements.txt",
+        "pattern": "flask-restful=="
+    },
+    {
+        "name": "Flask-RESTful",
+        "category": "API",
+        "package_file_name": "pyproject.toml",
+        "pattern": "flask-restful"
+    },
+    {
+        "name": "Django REST Framework",
+        "category": "API",
+        "package_file_name": "requirements.txt",
+        "pattern": "djangorestframework=="
+    },
+    {
+        "name": "Django REST Framework",
+        "category": "API",
+        "package_file_name": "pyproject.toml",
+        "pattern": "djangorestframework"
+    },
+    {
+        "name": "Sphinx",
+        "category": "Documentation",
+        "package_file_name": "requirements.txt",
+        "pattern": "sphinx=="
+    },
+    {
+        "name": "Sphinx",
+        "category": "Documentation",
+        "package_file_name": "pyproject.toml",
+        "pattern": "sphinx"
+    },
+    {
+        "name": "MkDocs",
+        "category": "Documentation",
+        "package_file_name": "requirements.txt",
+        "pattern": "mkdocs=="
+    },
+    {
+        "name": "MkDocs",
+        "category": "Documentation",
+        "package_file_name": "pyproject.toml",
+        "pattern": "mkdocs"
+    },
+    {
+        "name": "Bokeh",
+        "category": "Data Visualization",
+        "package_file_name": "requirements.txt",
+        "pattern": "bokeh=="
+    },
+    {
+        "name": "Bokeh",
+        "category": "Data Visualization",
+        "package_file_name": "pyproject.toml",
+        "pattern": "bokeh"
+    },
+    {
+        "name": "Matplotlib",
+        "category": "Data Visualization",
+        "package_file_name": "requirements.txt",
+        "pattern": "matplotlib=="
+    },
+    {
+        "name": "Matplotlib",
+        "category": "Data Visualization",
+        "package_file_name": "pyproject.toml",
+        "pattern": "matplotlib"
+    },
+    {
+        "name": "Seaborn",
+        "category": "Data Visualization",
+        "package_file_name": "requirements.txt",
+        "pattern": "seaborn=="
+    },
+    {
+        "name": "Seaborn",
+        "category": "Data Visualization",
+        "package_file_name": "pyproject.toml",
+        "pattern": "seaborn"
+    },
+    {
+        "name": "Plotly",
+        "category": "Data Visualization",
+        "package_file_name": "requirements.txt",
+        "pattern": "plotly=="
+    },
+    {
+        "name": "Plotly",
+        "category": "Data Visualization",
+        "package_file_name": "pyproject.toml",
+        "pattern": "plotly"
+    },
+    {
+        "name": "ggplot",
+        "category": "Data Visualization",
+        "package_file_name": "requirements.txt",
+        "pattern": "ggplot=="
+    },
+    {
+        "name": "ggplot",
+        "category": "Data Visualization",
+        "package_file_name": "pyproject.toml",
+        "pattern": "ggplot"
+    },
+    {
+        "name": "PyPDF2",
+        "category": "File Processing",
+        "package_file_name": "requirements.txt",
+        "pattern": "PyPDF2=="
+    },
+    {
+        "name": "PyPDF2",
+        "category": "File Processing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "PyPDF2"
+    },
+    {
+        "name": "pandas",
+        "category": "File Processing",
+        "package_file_name": "requirements.txt",
+        "pattern": "pandas=="
+    },
+    {
+        "name": "pandas",
+        "category": "File Processing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "pandas"
+    },
+    {
+        "name": "openpyxl",
+        "category": "File Processing",
+        "package_file_name": "requirements.txt",
+        "pattern": "openpyxl=="
+    },
+    {
+        "name": "openpyxl",
+        "category": "File Processing",
+        "package_file_name": "pyproject.toml",
+        "pattern": "openpyxl"
+    },
+    {
+        "name": "reportlab",
+        "category": "Reporting",
+        "package_file_name": "requirements.txt",
+        "pattern": "reportlab=="
+    },
+    {
+        "name": "reportlab",
+        "category": "Reporting",
+        "package_file_name": "pyproject.toml",
+        "pattern": "reportlab"
+    },
+    {
+        "name": "BIRT",
+        "category": "Reporting",
+        "package_file_name": "requirements.txt",
+        "pattern": "birt"
+    },
+    {
+        "name": "BIRT",
+        "category": "Reporting",
+        "package_file_name": "pyproject.toml",
+        "pattern": "birt"
+    },
+    {
+        "name": "JasperReports",
+        "category": "Reporting",
+        "package_file_name": "requirements.txt",
+        "pattern": "jasperreports"
+    },
+    {
+        "name": "JasperReports",
+        "category": "Reporting",
+        "package_file_name": "pyproject.toml",
+        "pattern": "jasperreports"
+    },
+    {
+        "name": "docx",
+        "category": "Document Management",
+        "package_file_name": "requirements.txt",
+        "pattern": "python-docx=="
+    },
+    {
+        "name": "docx",
+        "category": "Document Management",
+        "package_file_name": "pyproject.toml",
+        "pattern": "python-docx"
+    },
+    {
+        "name": "web3.py",
+        "category": "Blockchain",
+        "package_file_name": "requirements.txt",
+        "pattern": "web3.py=="
+    },
+    {
+        "name": "web3.py",
+        "category": "Blockchain",
+        "package_file_name": "pyproject.toml",
+        "pattern": "web3.py"
+    },
+    {
+        "name": "brownie",
+        "category": "Blockchain",
+        "package_file_name": "requirements.txt",
+        "pattern": "brownie=="
+    },
+    {
+        "name": "brownie",
+        "category": "Blockchain",
+        "package_file_name": "pyproject.toml",
+        "pattern": "brownie"
+    },
+    {
+        "name": "web3j",
+        "category": "Blockchain",
+        "package_file_name": "requirements.txt",
+        "pattern": "web3j"
+    },
+    {
+        "name": "web3j",
+        "category": "Blockchain",
+        "package_file_name": "pyproject.toml",
+        "pattern": "web3j"
+    },
+    {
+        "name": "Stripe Python SDK",
+        "category": "Payment Integration",
+        "package_file_name": "requirements.txt",
+        "pattern": "stripe=="
+    },
+    {
+        "name": "Stripe Python SDK",
+        "category": "Payment Integration",
+        "package_file_name": "pyproject.toml",
+        "pattern": "stripe"
+    },
+    {
+        "name": "PayPal SDK",
+        "category": "Payment Integration",
+        "package_file_name": "requirements.txt",
+        "pattern": "paypalrestsdk=="
+    },
+    {
+        "name": "PayPal SDK",
+        "category": "Payment Integration",
+        "package_file_name": "pyproject.toml",
+        "pattern": "paypalrestsdk"
+    },
+    {
+        "name": "Braintree Python SDK",
+        "category": "Payment Integration",
+        "package_file_name": "requirements.txt",
+        "pattern": "braintree=="
+    },
+    {
+        "name": "Braintree Python SDK",
+        "category": "Payment Integration",
+        "package_file_name": "pyproject.toml",
+        "pattern": "braintree"
+    },
+    {
+        "name": "pymongo",
+        "category": "Database Clients",
+        "package_file_name": "requirements.txt",
+        "pattern": "pymongo=="
+    },
+    {
+        "name": "pymongo",
+        "category": "Database Clients",
+        "package_file_name": "pyproject.toml",
+        "pattern": "pymongo"
+    },
+    {
+        "name": "psycopg2",
+        "category": "Database Clients",
+        "package_file_name": "requirements.txt",
+        "pattern": "psycopg2=="
+    },
+    {
+        "name": "psycopg2",
+        "category": "Database Clients",
+        "package_file_name": "pyproject.toml",
+        "pattern": "psycopg2"
+    },
+    {
+        "name": "PyMySQL",
+        "category": "Database Clients",
+        "package_file_name": "requirements.txt",
+        "pattern": "PyMySQL=="
+    },
+    {
+        "name": "PyMySQL",
+        "category": "Database Clients",
+        "package_file_name": "pyproject.toml",
+        "pattern": "PyMySQL"
+    },
+    {
+        "name": "cx_Oracle",
+        "category": "Database Clients",
+        "package_file_name": "requirements.txt",
+        "pattern": "cx_Oracle=="
+    },
+    {
+        "name": "cx_Oracle",
+        "category": "Database Clients",
+        "package_file_name": "pyproject.toml",
+        "pattern": "cx_Oracle"
+    },
+    {
+        "name": "web3j",
+        "category": "Blockchain",
+        "package_file_name": "requirements.txt",
+        "pattern": "web3j"
+    },
+    {
+        "name": "web3j",
+        "category": "Blockchain",
+        "package_file_name": "pyproject.toml",
+        "pattern": "web3j"
+    },
+    {
+        "name": "gocql",
+        "category": "Database Clients",
+        "package_file_name": "requirements.txt",
+        "pattern": "gocql=="
+    },
+    {
+        "name": "gocql",
+        "category": "Database Clients",
+        "package_file_name": "pyproject.toml",
+        "pattern": "gocql"
+    },
+    {
+        "name": "couchbase",
+        "category": "Database Clients",
+        "package_file_name": "requirements.txt",
+        "pattern": "couchbase=="
+    },
+    {
+        "name": "couchbase",
+        "category": "Database Clients",
+        "package_file_name": "pyproject.toml",
+        "pattern": "couchbase"
+    },
+    {
+        "name": "ravendb",
+        "category": "Database Clients",
+        "package_file_name": "requirements.txt",
+        "pattern": "ravendb=="
+    },
+    {
+        "name": "ravendb",
+        "category": "Database Clients",
+        "package_file_name": "pyproject.toml",
+        "pattern": "ravendb"
+    },
+    {
+        "name": "sqlite3",
+        "category": "Database Clients",
+        "package_file_name": "requirements.txt",
+        "pattern": "sqlite3=="
+    },
+    {
+        "name": "sqlite3",
+        "category": "Database Clients",
+        "package_file_name": "pyproject.toml",
+        "pattern": "sqlite3"
+    }
+]
