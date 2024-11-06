@@ -5,6 +5,7 @@ import "embed"
 type Finding struct {
 	Service    *CloudService `json:"service,omitempty"`
 	Framework  *Framework    `json:"framework,omitempty"`
+	Library    *Library      `json:"library,omitempty"`
 	Repository string        `json:"repository"`
 	Filepath   string        `json:"filepath"`
 }
@@ -34,5 +35,6 @@ func InitializeProcessors() []Processor {
 	frameworkProcessor := NewFrameworkProcessor(NewFileFrameworkLoader(frameworksFS))
 	processors = append(processors, frameworkProcessor)
 
+	processors = append(processors, NewLibrariesProcessor())
 	return processors
 }

@@ -10,6 +10,7 @@ const (
 	DefaultReport   = "cloud_services_report.xlsx"
 	ServicesSheet   = "Services"
 	FrameworksSheet = "Frameworks"
+	LibrariesSheet  = "Libraries"
 )
 
 type XlsxReporter struct {
@@ -39,10 +40,17 @@ func (xlsxReporter XlsxReporter) Report(findings []Finding) error {
 	}
 	fmt.Printf("Created sheet '%s' with index %d\n", FrameworksSheet, frameworksIndex)
 
+	// Create the "Libraries" sheet
+	librariesIndex, err := f.NewSheet(LibrariesSheet)
+	if err != nil {
+		return fmt.Errorf("failed to create sheet '%s': %w", LibrariesSheet, err)
+	}
+	fmt.Printf("Created sheet '%s' with index %d\n", LibrariesSheet, librariesIndex)
+
 	// Set headers for Services sheet
 	servicesHeaders := []string{
 		"Cloud Vendor",
-		"Cloud CloudService",
+		"Cloud Service",
 		"Language",
 		"Reference",
 		"Repository",
@@ -67,12 +75,27 @@ func (xlsxReporter XlsxReporter) Report(findings []Finding) error {
 	}
 	fmt.Printf("Set headers for sheet '%s'\n", FrameworksSheet)
 
+	// Set headers for Libraries sheet
+	librariesHeaders := []string{
+		"Library Name",
+		"Language",
+		"Version",
+		"Repository",
+		"Filepath",
+	}
+	if err := f.SetSheetRow(LibrariesSheet, "A1", &librariesHeaders); err != nil {
+		return fmt.Errorf("failed to set headers for sheet '%s': %w", LibrariesSheet, err)
+	}
+	fmt.Printf("Set headers for sheet '%s'\n", LibrariesSheet)
+
 	// Initialize row counters for each sheet
 	servicesRow := 2   // Starting from row 2 (row 1 is for headers)
 	frameworksRow := 2 // Starting from row 2 (row 1 is for headers)
+	librariesRow := 2  // Starting from row 2 (row 1 is for headers)
 
 	// Iterate over findings and populate respective sheets
 	for _, finding := range findings {
+		// Handle Services
 		if finding.Service != nil {
 			// Prepare data for Services sheet
 			rowData := []interface{}{
@@ -98,6 +121,7 @@ func (xlsxReporter XlsxReporter) Report(findings []Finding) error {
 			servicesRow++ // Move to the next row for Services
 		}
 
+		// Handle Frameworks
 		if finding.Framework != nil {
 			// Prepare data for Frameworks sheet
 			rowData := []interface{}{
@@ -122,19 +146,47 @@ func (xlsxReporter XlsxReporter) Report(findings []Finding) error {
 
 			frameworksRow++ // Move to the next row for Frameworks
 		}
+
+		// Handle Libraries
+		if finding.Library != nil {
+			// Prepare data for Libraries sheet
+			rowData := []interface{}{
+				finding.Library.Name,
+				finding.Library.Language,
+				finding.Library.Version,
+				finding.Repository,
+				finding.Filepath,
+			}
+
+			// Convert row number to cell address (e.g., A2)
+			cellAddress, err := excelize.CoordinatesToCellName(1, librariesRow)
+			if err != nil {
+				return fmt.Errorf("failed to get cell address for row %d in sheet '%s': %w", librariesRow, LibrariesSheet, err)
+			}
+
+			// Set the row data starting from column A
+			if err := f.SetSheetRow(LibrariesSheet, cellAddress, &rowData); err != nil {
+				return fmt.Errorf("failed to set data for row %d in sheet '%s': %w", librariesRow, LibrariesSheet, err)
+			}
+
+			librariesRow++ // Move to the next row for Libraries
+		}
 	}
 
-	index, _ := f.GetSheetIndex(ServicesSheet)
 	// Optionally, set the active sheet to Services
+	index, _ := f.GetSheetIndex(ServicesSheet)
 	f.SetActiveSheet(index)
 
 	// Determine the output file name
 	outputFile := DefaultReport
-	//if len(findings) > 0 {
-	//	if findings[0].Service != nil || findings[0].Framework != nil {
-	//		outputFile = fmt.Sprintf("report_%s.xlsx", strings.ReplaceAll(findings[0].Repository, "/", "_"))
-	//	}
-	//}
+	// Uncomment and modify the following lines if you want dynamic naming based on findings
+	/*
+	   if len(findings) > 0 {
+	       if findings[0].Service != nil || findings[0].Framework != nil || findings[0].Library != nil {
+	           outputFile = fmt.Sprintf("report_%s.xlsx", strings.ReplaceAll(findings[0].Repository, "/", "_"))
+	       }
+	   }
+	*/
 
 	// Save the Excel file
 	if err := f.SaveAs(outputFile); err != nil {
