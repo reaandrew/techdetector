@@ -1,0 +1,29 @@
+Identity and Access Management
+Compute
+Storage
+Networking
+Databases
+Analytics and Big Data
+Machine Learning and AI
+Developer Tools
+Integration
+Monitoring and Management
+Security
+Migration and Transfer
+IoT
+Media and Content Delivery
+Blockchain
+Quantum Computing
+Hybrid and Edge Computing
+Enterprise Applications
+Cost Management
+Collaboration and Communication
+Healthcare and Life Sciences
+Game Development
+Developer Frameworks
+Disaster Recovery and Backup
+Governance and Compliance
+Digital Twins and Simulations
+Search and Indexing
+Retail and Personalization
+Cloud Marketplace

@@ -1,164 +1,164 @@
-AccessApproval
-Ads
-AdvisoryNotifications
-AIPlatform
-AlloyDb
-Analytics
-ApiGateway
-ApigeeConnect
-ApigeeRegistry
-ApiHub
-ApiKeys
-AppEngine
-AppHub
-Apps
-Area120
-ArtifactRegistry
-Asset
-AssuredWorkloads
-Audit
-AutoML
-BackupDR
-BareMetalSolution
-Batch
-BeyondCorp
-BigQuery
-Bigtable
-Billing
-BinaryAuthorization
-CertificateManager
-Channel
-ClientTesting
-Cloud
-CloudBuild
-CloudControlsPartner
-CloudDms
-CloudQuotas
-Commerce
-Common
-Compute
-ConfidentialComputing
-Config
-Connectors
-ContactCenterInsights
-Container
-DataCatalog
-Dataflow
-Dataform
-DataFusion
-Dataplex
-Dataproc
-Datastore
-Datastream
-Deploy
-DeveloperConnect
-DevTools
-Diagnostics
-Dialogflow
-DiscoveryEngine
-Dlp
-Docs
-DocumentAI
-Domains
-EdgeNetwork
-EnterpriseKnowledgeGraph
-ErrorReporting
-EssentialContacts
-Eventarc
-Filestore
-Firestore
-Functions
-GdcHardwareManagement
-Geo
-GkeBackup
-GkeConnect
-GkeHub
-GkeMultiV1
-GoogleCSharpSnippets
-GSuiteAddOns
-Iam
-Iap
-Identity
-Ids
-Kms
-Language
-LifeSciences
-Location
-Logging
-LongRunning
-ManagedIdentities
-ManagedKafka
-Maps
-MediaTranslation
-Memcache
-Metastore
-MigrationCenter
-Monitoring
-NetApp
-NetworkConnectivity
-NetworkManagement
-NetworkSecurity
-NetworkServices
-Notebooks
-Optimization
-OracleDatabase
-Orchestration
-OrgPolicy
-OsConfig
-OsLogin
-Parallelstore
-PhishingProtection
-PolicySimulator
-PolicyTroubleshooter
-PrivateCatalog
-PrivilegedAccessManager
-Profiler
-PubSub
-RapidMigrationAssessment
-RecaptchaEnterprise
-RecommendationEngine
-Recommender
-Redis
-ResourceManager
-ResourceSettings
-Retail
-Run
-Scheduler
-SecretManager
-SecureSourceManager
-Security
-SecurityCenter
-SecurityCenterManagement
-ServiceControl
-ServiceDirectory
-ServiceHealth
-ServiceManagement
-ServiceUsage
-Shell
-Shopping
-Spanner
-Speech
-Storage
-StorageInsights
-StorageTransfer
-Support
-Talent
-Tasks
-TelcoAutomation
-TextToSpeech
-Tools
-Tpu
-Trace
-Translate
-Translation
-Video
-VideoIntelligence
-Vision
-VisionAI
-VMMigration
-VmwareEngine
-VpcAccess
-WebRisk
-WebSecurityScanner
-Workflows
-Workstations
+AccessApproval : Governance and Compliance
+Ads : Analytics and Big Data
+AdvisoryNotifications : Monitoring and Management
+AIPlatform : Machine Learning and AI
+AlloyDb : Databases
+Analytics : Analytics and Big Data
+ApiGateway : Integration
+ApigeeConnect : Integration
+ApigeeRegistry : Integration
+ApiHub : Integration
+ApiKeys : Identity and Access Management
+AppEngine : Compute
+AppHub : Developer Tools
+Apps : Enterprise Applications
+Area120 : Developer Tools
+ArtifactRegistry : Developer Tools
+Asset : Monitoring and Management
+AssuredWorkloads : Governance and Compliance
+Audit : Governance and Compliance
+AutoML : Machine Learning and AI
+BackupDR : Disaster Recovery and Backup
+BareMetalSolution : Compute
+Batch : Compute
+BeyondCorp : Security
+BigQuery : Analytics and Big Data
+Bigtable : Databases
+Billing : Cost Management
+BinaryAuthorization : Security
+CertificateManager : Security
+Channel : Enterprise Applications
+ClientTesting : Developer Tools
+Cloud : Developer Frameworks
+CloudBuild : Developer Tools
+CloudControlsPartner : Governance and Compliance
+CloudDms : Migration and Transfer
+CloudQuotas : Cost Management
+Commerce : Enterprise Applications
+Common : Developer Frameworks
+Compute : Compute
+ConfidentialComputing : Security
+Config : Governance and Compliance
+Connectors : Integration
+ContactCenterInsights : Analytics and Big Data
+Container : Compute
+DataCatalog : Analytics and Big Data
+Dataflow : Analytics and Big Data
+Dataform : Developer Tools
+DataFusion : Integration
+Dataplex : Analytics and Big Data
+Dataproc : Analytics and Big Data
+Datastore : Databases
+Datastream : Integration
+Deploy : Developer Tools
+DeveloperConnect : Developer Tools
+DevTools : Developer Tools
+Diagnostics : Monitoring and Management
+Dialogflow : Machine Learning and AI
+DiscoveryEngine : Search and Indexing
+Dlp : Security
+Docs : Collaboration and Communication
+DocumentAI : Machine Learning and AI
+Domains : Enterprise Applications
+EdgeNetwork : Hybrid and Edge Computing
+EnterpriseKnowledgeGraph : Machine Learning and AI
+ErrorReporting : Monitoring and Management
+EssentialContacts : Collaboration and Communication
+Eventarc : Integration
+Filestore : Storage
+Firestore : Databases
+Functions : Compute
+GdcHardwareManagement : Monitoring and Management
+Geo : IoT
+GkeBackup : Disaster Recovery and Backup
+GkeConnect : Integration
+GkeHub : Integration
+GkeMultiV1 : Integration
+GoogleCSharpSnippets : Developer Tools
+GSuiteAddOns : Collaboration and Communication
+Iam : Identity and Access Management
+Iap : Identity and Access Management
+Identity : Identity and Access Management
+Ids : Security
+Kms : Security
+Language : Machine Learning and AI
+LifeSciences : Healthcare and Life Sciences
+Location : IoT
+Logging : Monitoring and Management
+LongRunning : Developer Tools
+ManagedIdentities : Identity and Access Management
+ManagedKafka : Integration
+Maps : IoT
+MediaTranslation : Media and Content Delivery
+Memcache : Databases
+Metastore : Databases
+MigrationCenter : Migration and Transfer
+Monitoring : Monitoring and Management
+NetApp : Storage
+NetworkConnectivity : Networking
+NetworkManagement : Networking
+NetworkSecurity : Security
+NetworkServices : Networking
+Notebooks : Machine Learning and AI
+Optimization : Cost Management
+OracleDatabase : Databases
+Orchestration : Developer Tools
+OrgPolicy : Governance and Compliance
+OsConfig : Monitoring and Management
+OsLogin : Identity and Access Management
+Parallelstore : Storage
+PhishingProtection : Security
+PolicySimulator : Governance and Compliance
+PolicyTroubleshooter : Governance and Compliance
+PrivateCatalog : Cloud Marketplace
+PrivilegedAccessManager : Security
+Profiler : Monitoring and Management
+PubSub : Integration
+RapidMigrationAssessment : Migration and Transfer
+RecaptchaEnterprise : Security
+RecommendationEngine : Retail and Personalization
+Recommender : Cost Management
+Redis : Databases
+ResourceManager : Governance and Compliance
+ResourceSettings : Governance and Compliance
+Retail : Retail and Personalization
+Run : Compute
+Scheduler : Developer Tools
+SecretManager : Security
+SecureSourceManager : Security
+Security : Security
+SecurityCenter : Security
+SecurityCenterManagement : Security
+ServiceControl : Monitoring and Management
+ServiceDirectory : Integration
+ServiceHealth : Monitoring and Management
+ServiceManagement : Integration
+ServiceUsage : Monitoring and Management
+Shell : Developer Tools
+Shopping : Retail and Personalization
+Spanner : Databases
+Speech : Machine Learning and AI
+Storage : Storage
+StorageInsights : Storage
+StorageTransfer : Migration and Transfer
+Support : Collaboration and Communication
+Talent : Enterprise Applications
+Tasks : Collaboration and Communication
+TelcoAutomation : IoT
+TextToSpeech : Machine Learning and AI
+Tools : Developer Tools
+Tpu : Compute
+Trace : Monitoring and Management
+Translate : Machine Learning and AI
+Translation : Machine Learning and AI
+Video : Media and Content Delivery
+VideoIntelligence : Media and Content Delivery
+Vision : Machine Learning and AI
+VisionAI : Machine Learning and AI
+VMMigration : Migration and Transfer
+VmwareEngine : Hybrid and Edge Computing
+VpcAccess : Networking
+WebRisk : Security
+WebSecurityScanner : Security
+Workflows : Developer Tools
+Workstations : Developer Tools
