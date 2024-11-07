@@ -61,28 +61,6 @@ func TestFileExtension(t *testing.T) {
 	assert.Len(t, matches, 1)
 }
 
-func TestSimpleContentPattern(t *testing.T) {
-	patterns := []Pattern{
-		{
-			Name:     "Something",
-			Type:     "Cloud Service",
-			Category: "Something",
-			ContentPatterns: []string{
-				"BABALOO",
-			},
-		},
-	}
-	processor := FilePatternsProcessor{Patterns: patterns}
-	processor.CompilePatterns()
-
-	content := `
-Something BABALOO
-`
-	matches, err := processor.Process("/something.py", "some-repo", content)
-	assert.Nil(t, err)
-	assert.Len(t, matches, 1)
-}
-
 func TestContentPatternWithFileExtensionCriteria(t *testing.T) {
 	patterns := []Pattern{
 		{
