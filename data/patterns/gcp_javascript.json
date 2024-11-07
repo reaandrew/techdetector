@@ -1,0 +1,2284 @@
+[
+  {
+    "type": "Cloud Service",
+    "name": "AccessApproval",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/access-approval"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/access-context-manager"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AdvisoryNotifications",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/advisorynotifications"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/aiplatform"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AlloyDb",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/alloydb"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiGateway",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/api-gateway"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApigeeConnect",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/apigee-connect"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApigeeRegistry",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/apigee-registry"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiHub",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/apihub"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiKeys",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/apikeys"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/appconnections"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/appconnectors"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AppEngine",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/appengine-admin"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/appgateways"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AppHub",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/apphub"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ArtifactRegistry",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/artifact-registry"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Asset",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/asset"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AssuredWorkloads",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/assured-workloads"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AutoML",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/automl"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BackupDR",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/backupdr"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BareMetalSolution",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/bare-metal-solution"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Batch",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/batch"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/bigquery-analyticshub"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/bigquery-connection"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/bigquery-data-exchange"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/bigquery-datapolicies"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/bigquery-data-transfer"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/bigquery-migration"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/bigquery-reservation"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Billing",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/billing"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Billing",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/billing-budgets"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BinaryAuthorization",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/binary-authorization"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CertificateManager",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/certificate-manager"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Channel",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/channel"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Connectors",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/clientconnectorservices"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/clientgateways"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudBuild",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/cloudbuild"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudControlsPartner",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/cloudcontrolspartner"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/cloudprofiler"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudQuotas",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/cloudquotas"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Compute",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/compute"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ConfidentialComputing",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/confidentialcomputing"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Config",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/config"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Connectors",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/connectors"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ContactCenterInsights",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/contact-center-insights"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Container",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/container"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Container",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/containeranalysis"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DocumentAI",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/contentwarehouse"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataCatalog",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/datacatalog"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataflow",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dataflow"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataform",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dataform"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataFusion",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/data-fusion"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dlp",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/datalabeling"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataplex",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dataplex"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataproc",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dataproc"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Metastore",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dataproc-metastore"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DiscoveryEngine",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/data-qna"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastream",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/datastream"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Deploy",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/deploy"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DeveloperConnect",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/developerconnect"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dialogflow"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dialogflow-cx"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DiscoveryEngine",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/discoveryengine"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dlp",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dlp"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudDms",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dms"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dns",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/dns"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DocumentAI",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/documentai"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Domains",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/domains"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EdgeNetwork",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/edgecontainer"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EdgeNetwork",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/edgenetwork"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EssentialContacts",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/essential-contacts"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Eventarc",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/eventarc"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Eventarc",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/eventarc-publishing"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Filestore",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/filestore"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Functions",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/functions"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GdcHardwareManagement",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/gdchardwaremanagement"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeBackup",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/gke-backup"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeConnect",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/gke-connect-gateway"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/gke-hub"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeMultiV1",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/gkemulticloud"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/grafeas"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GSuiteAddOns",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/gsuiteaddons"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/iam"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/iam-credentials"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iap",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/iap"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Ids",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/ids"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iot",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/iot"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Kms",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/kms"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Kms",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/kms-inventory"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Language",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/language"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "LifeSciences",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/life-sciences"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataplex",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/lineage"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/livestream"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ManagedIdentities",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/managed-identities"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ManagedKafka",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/managedkafka"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "MediaTranslation",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/media-translation"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Memcache",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/memcache"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "MigrationCenter",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/migrationcenter"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Monitoring",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/monitoring"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Monitoring",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/monitoring-dashboards"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetApp",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/netapp"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkConnectivity",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/network-connectivity"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkManagement",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/network-management"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkSecurity",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/network-security"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkServices",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/networkservices"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Notebooks",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/notebooks"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Optimization",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/optimization"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OracleDatabase",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/oracledatabase"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Orchestration",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/orchestration-airflow"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OrgPolicy",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/org-policy"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsConfig",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/os-config"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsLogin",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/os-login"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Parallelstore",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/parallelstore"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PhishingProtection",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/phishing-protection"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicySimulator",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/policysimulator"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicyTroubleshooter",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/policy-troubleshooter"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicyTroubleshooter",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/policy-troubleshooter-iam"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PrivateCatalog",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/private-catalog"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PrivilegedAccessManager",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/privilegedaccessmanager"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Commerce",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/procurement"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/publicca"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RapidMigrationAssessment",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/rapidmigrationassessment"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RecaptchaEnterprise",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/recaptcha-enterprise"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Recommender",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/recommender"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/redis"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/redis-cluster"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ResourceManager",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/resource-manager"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Retail",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/retail"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Run",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/run"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Scheduler",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/scheduler"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecretManager",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/secret-manager"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecureSourceManager",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/securesourcemanager"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/security-center"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenterManagement",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/securitycentermanagement"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/security-private-ca"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceControl",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/service-control"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceDirectory",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/service-directory"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceHealth",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/servicehealth"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceManagement",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/service-management"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceUsage",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/service-usage"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shell",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/shell"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/speech"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/storage-control"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "StorageInsights",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/storageinsights"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "StorageTransfer",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/storage-transfer"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Support",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/support"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Talent",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/talent"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tasks",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/tasks"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TelcoAutomation",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/telcoautomation"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TextToSpeech",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/text-to-speech"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tpu",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/tpu"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translate",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/translate"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/video-intelligence"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/video-stitcher"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/video-transcoder"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/vision"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VMMigration",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/vmmigration"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VmwareEngine",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/vmwareengine"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VpcAccess",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/vpc-access"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebRisk",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/web-risk"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebSecurityScanner",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/web-security-scanner"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/workflows"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workstations",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@google-cloud/workstations"
+    ],
+    "properties": {
+      "vendor": "GCP"
+    }
+  }
+]

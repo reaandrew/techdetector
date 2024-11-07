@@ -1,0 +1,3324 @@
+[
+  {
+    "type": "Framework",
+    "name": "Spring Boot",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework.boot</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Boot",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework.boot:spring-boot-starter"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Play Framework",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.typesafe.play</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Play Framework",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.typesafe.play:play"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Struts",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.struts</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Struts",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.struts:struts2-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JavaServer Faces (JSF)",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>javax.faces</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JavaServer Faces (JSF)",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "javax.faces:javax.faces-api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Vaadin",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.vaadin</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Vaadin",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.vaadin:vaadin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spark Java",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.sparkjava</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spark Java",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.sparkjava:spark-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Javalin",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.javalin</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Javalin",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.javalin:javalin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dropwizard",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.dropwizard</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dropwizard",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.dropwizard:dropwizard-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Micronaut",
+    "category": "Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.micronaut</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Micronaut",
+    "category": "Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.micronaut:micronaut-runtime"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hibernate",
+    "category": "ORM",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.hibernate</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hibernate",
+    "category": "ORM",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.hibernate:hibernate-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MyBatis",
+    "category": "ORM",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.mybatis</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MyBatis",
+    "category": "ORM",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.mybatis:mybatis"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EclipseLink",
+    "category": "ORM",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.eclipse.persistence</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EclipseLink",
+    "category": "ORM",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.eclipse.persistence:eclipselink"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Data JPA",
+    "category": "ORM",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework.data</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Data JPA",
+    "category": "ORM",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework.data:spring-data-jpa"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JUnit",
+    "category": "Testing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>junit</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JUnit",
+    "category": "Testing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "junit:junit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TestNG",
+    "category": "Testing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.testng</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TestNG",
+    "category": "Testing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.testng:testng"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mockito",
+    "category": "Testing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.mockito</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mockito",
+    "category": "Testing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.mockito:mockito-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cucumber",
+    "category": "Testing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.cucumber</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cucumber",
+    "category": "Testing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.cucumber:cucumber-java"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spock",
+    "category": "Testing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.spockframework</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spock",
+    "category": "Testing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.spockframework:spock-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Security",
+    "category": "Security",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework.security</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Security",
+    "category": "Security",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework.security:spring-security-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Shiro",
+    "category": "Security",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.shiro</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Shiro",
+    "category": "Security",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.shiro:shiro-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JAAS",
+    "category": "Security",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>javax.security.auth</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JAAS",
+    "category": "Security",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "javax.security.auth:jaas-api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Log4j",
+    "category": "Logging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.logging.log4j</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Log4j",
+    "category": "Logging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.logging.log4j:log4j-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SLF4J",
+    "category": "Logging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.slf4j</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SLF4J",
+    "category": "Logging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.slf4j:slf4j-api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Logback",
+    "category": "Logging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>ch.qos.logback</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Logback",
+    "category": "Logging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "ch.qos.logback:logback-classic"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Java Util Logging",
+    "category": "Logging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>java.util.logging</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Java Util Logging",
+    "category": "Logging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "java.util.logging:jul"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Framework",
+    "category": "Dependency Injection",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Framework",
+    "category": "Dependency Injection",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework:spring-context"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Google Guice",
+    "category": "Dependency Injection",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.google.inject</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Google Guice",
+    "category": "Dependency Injection",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.google.inject:guice"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CDI (Weld)",
+    "category": "Dependency Injection",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jboss.weld</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CDI (Weld)",
+    "category": "Dependency Injection",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jboss.weld:weld-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz",
+    "category": "Task Queue",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.quartz-scheduler</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz",
+    "category": "Task Queue",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.quartz-scheduler:quartz"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Camel",
+    "category": "Task Queue",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.camel</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Camel",
+    "category": "Task Queue",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.camel:camel-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Spark",
+    "category": "Data Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.spark</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Spark",
+    "category": "Data Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.spark:spark-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Flink",
+    "category": "Data Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.flink</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Flink",
+    "category": "Data Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.flink:flink-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Storm",
+    "category": "Data Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.storm</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Storm",
+    "category": "Data Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.storm:storm-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hibernate",
+    "category": "ORM",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.hibernate</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hibernate",
+    "category": "ORM",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.hibernate:hibernate-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Kafka",
+    "category": "Messaging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.kafka</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Kafka",
+    "category": "Messaging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.kafka:kafka-clients"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Java Message Service (JMS)",
+    "category": "Messaging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>javax.jms</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Java Message Service (JMS)",
+    "category": "Messaging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "javax.jms:jms-api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache ActiveMQ",
+    "category": "Messaging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.activemq</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache ActiveMQ",
+    "category": "Messaging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.activemq:activemq-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RabbitMQ Java Client",
+    "category": "Messaging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.rabbitmq</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RabbitMQ Java Client",
+    "category": "Messaging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.rabbitmq:amqp-client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Integration",
+    "category": "Messaging",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework.integration</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Integration",
+    "category": "Messaging",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework.integration:spring-integration-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Vert.x",
+    "category": "Async Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.vertx</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Vert.x",
+    "category": "Async Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.vertx:vertx-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring WebFlux",
+    "category": "Async Web",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework.boot</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring WebFlux",
+    "category": "Async Web",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework.boot:spring-boot-starter-webflux"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Reactor",
+    "category": "Reactive",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.projectreactor</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Reactor",
+    "category": "Reactive",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.projectreactor:reactor-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RxJava",
+    "category": "Reactive",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.reactivex.rxjava2</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RxJava",
+    "category": "Reactive",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.reactivex.rxjava2:rxjava"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jersey",
+    "category": "API",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.glassfish.jersey</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jersey",
+    "category": "API",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.glassfish.jersey.containers:jersey-container-servlet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RESTEasy",
+    "category": "API",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jboss.resteasy</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RESTEasy",
+    "category": "API",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jboss.resteasy:resteasy-jaxrs"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swagger",
+    "category": "API",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.swagger</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swagger",
+    "category": "API",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.swagger:swagger-annotations"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring MVC",
+    "category": "API",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring MVC",
+    "category": "API",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework:spring-webmvc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swagger",
+    "category": "Documentation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.swagger</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swagger",
+    "category": "Documentation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.swagger:swagger-ui"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Asciidoctor",
+    "category": "Documentation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.asciidoctor</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Asciidoctor",
+    "category": "Documentation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.asciidoctor:asciidoctorj"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Javadoc",
+    "category": "Documentation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<plugin>.*maven-javadoc-plugin.*</plugin>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Javadoc",
+    "category": "Documentation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "javadoc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Micrometer",
+    "category": "Monitoring",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.micrometer</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Micrometer",
+    "category": "Monitoring",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.micrometer:micrometer-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Prometheus",
+    "category": "Monitoring",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.prometheus</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Prometheus",
+    "category": "Monitoring",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.prometheus:simpleclient"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dropwizard Metrics",
+    "category": "Monitoring",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.dropwizard.metrics</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dropwizard Metrics",
+    "category": "Monitoring",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.dropwizard.metrics:metrics-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Java Melody",
+    "category": "Monitoring",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>net.bull.javamelody</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Java Melody",
+    "category": "Monitoring",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "net.bull.javamelody:javamelody-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Cloud",
+    "category": "Microservices",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework.cloud</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Cloud",
+    "category": "Microservices",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework.cloud:spring-cloud-starter"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quarkus",
+    "category": "Microservices",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.quarkus</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quarkus",
+    "category": "Microservices",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.quarkus:quarkus-resteasy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Micronaut",
+    "category": "Microservices",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.micronaut</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Micronaut",
+    "category": "Microservices",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.micronaut:micronaut-runtime"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dropwizard",
+    "category": "Microservices",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.dropwizard</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dropwizard",
+    "category": "Microservices",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.dropwizard:dropwizard-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jBPM",
+    "category": "Workflow Automation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jbpm</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jBPM",
+    "category": "Workflow Automation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jbpm:jbpm-flow"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Activiti",
+    "category": "Workflow Automation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.activiti</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Activiti",
+    "category": "Workflow Automation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.activiti:activiti-engine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Camunda BPM",
+    "category": "Workflow Automation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.camunda.bpm</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Camunda BPM",
+    "category": "Workflow Automation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.camunda.bpm:camunda-engine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache NiFi",
+    "category": "ETL",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.nifi</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache NiFi",
+    "category": "ETL",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.nifi:nifi-api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Talend",
+    "category": "ETL",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.talend</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Talend",
+    "category": "ETL",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.talend:talend-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Pentaho Data Integration",
+    "category": "ETL",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.pentaho</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Pentaho Data Integration",
+    "category": "ETL",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.pentaho:pdi-engine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jackson",
+    "category": "Serialization",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.fasterxml.jackson.core</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jackson",
+    "category": "Serialization",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.fasterxml.jackson.core:jackson-databind"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gson",
+    "category": "Serialization",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.google.code.gson</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gson",
+    "category": "Serialization",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.google.code.gson:gson"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kryo",
+    "category": "Serialization",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.esotericsoftware</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kryo",
+    "category": "Serialization",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.esotericsoftware:kryo"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Thymeleaf",
+    "category": "Templating",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.thymeleaf</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Thymeleaf",
+    "category": "Templating",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.thymeleaf:thymeleaf"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FreeMarker",
+    "category": "Templating",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.freemarker</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FreeMarker",
+    "category": "Templating",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.freemarker:freemarker"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Velocity",
+    "category": "Templating",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.velocity</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Velocity",
+    "category": "Templating",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.velocity:velocity-engine-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Thymeleaf",
+    "category": "Templating",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.thymeleaf</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Thymeleaf",
+    "category": "Templating",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.thymeleaf:thymeleaf"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz",
+    "category": "Scheduler",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.quartz-scheduler</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz",
+    "category": "Scheduler",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.quartz-scheduler:quartz"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Scheduler",
+    "category": "Scheduler",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Scheduler",
+    "category": "Scheduler",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework:spring-context-support"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "YARN",
+    "category": "Container Orchestration",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.hadoop</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "YARN",
+    "category": "Container Orchestration",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.hadoop:hadoop-yarn-api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kubernetes Java Client",
+    "category": "Container Orchestration",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.kubernetes</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kubernetes Java Client",
+    "category": "Container Orchestration",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.kubernetes:kubernetes-client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LibGDX",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.badlogicgames.gdx</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LibGDX",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.badlogicgames.gdx:gdx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jMonkeyEngine",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jmonkeyengine</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jMonkeyEngine",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jmonkeyengine:jme3-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LWJGL",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.lwjgl</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LWJGL",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.lwjgl:lwjgl"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache TinkerPop",
+    "category": "Graph Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.tinkerpop</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache TinkerPop",
+    "category": "Graph Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.tinkerpop:tinkergraph-gremlin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Neo4j Java Driver",
+    "category": "Graph Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.neo4j.driver</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Neo4j Java Driver",
+    "category": "Graph Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.neo4j.driver:neo4j-java-driver"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JGraphT",
+    "category": "Graph Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jgrapht</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JGraphT",
+    "category": "Graph Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jgrapht:jgrapht-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JasperReports",
+    "category": "Reporting",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>net.sf.jasperreports</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JasperReports",
+    "category": "Reporting",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "net.sf.jasperreports:jasperreports"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BIRT",
+    "category": "Reporting",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.eclipse.birt</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BIRT",
+    "category": "Reporting",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.eclipse.birt:birt-runtime"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "iReport",
+    "category": "Reporting",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.jaspersoft.ireport</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "iReport",
+    "category": "Reporting",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.jaspersoft.ireport:ireport-runtime"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "web3j",
+    "category": "Blockchain",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.web3j</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "web3j",
+    "category": "Blockchain",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.web3j:core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hyperledger Fabric Java SDK",
+    "category": "Blockchain",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.hyperledger.fabric-sdk-java</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hyperledger Fabric Java SDK",
+    "category": "Blockchain",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.hyperledger.fabric-sdk-java:fabric-sdk-java"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BitcoinJ",
+    "category": "Blockchain",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.bitcoinj</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BitcoinJ",
+    "category": "Blockchain",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.bitcoinj:bitcoinj-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Deeplearning4j",
+    "category": "Machine Learning",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.deeplearning4j</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Deeplearning4j",
+    "category": "Machine Learning",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.deeplearning4j:deeplearning4j-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Weka",
+    "category": "Machine Learning",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>nz.ac.waikato.cms.weka</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Weka",
+    "category": "Machine Learning",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "nz.ac.waikato.cms.weka:weka-stable"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Mahout",
+    "category": "Machine Learning",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.mahout</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Mahout",
+    "category": "Machine Learning",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.mahout:mahout-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TensorFlow Java",
+    "category": "Machine Learning",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.tensorflow</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TensorFlow Java",
+    "category": "Machine Learning",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.tensorflow:tensorflow-core-platform"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LibGDX",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.badlogicgames.gdx</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LibGDX",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.badlogicgames.gdx:gdx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jMonkeyEngine",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jmonkeyengine</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jMonkeyEngine",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jmonkeyengine:jme3-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LWJGL",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.lwjgl</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LWJGL",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.lwjgl:lwjgl"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JFreeChart",
+    "category": "Data Visualization",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jfree</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JFreeChart",
+    "category": "Data Visualization",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jfree:jfreechart"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JavaFX Charts",
+    "category": "Data Visualization",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.openjfx</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JavaFX Charts",
+    "category": "Data Visualization",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.openjfx:javafx-controls"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Processing",
+    "category": "Data Visualization",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.processing</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Processing",
+    "category": "Data Visualization",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.processing:core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JFreeChart",
+    "category": "Data Visualization",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jfree</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JFreeChart",
+    "category": "Data Visualization",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jfree:jfreechart"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache POI",
+    "category": "File Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.poi</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache POI",
+    "category": "File Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.poi:poi-ooxml"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PDFBox",
+    "category": "File Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.pdfbox</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PDFBox",
+    "category": "File Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.pdfbox:pdfbox"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "iText",
+    "category": "File Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.itextpdf</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "iText",
+    "category": "File Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.itextpdf:itext7-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Thymeleaf",
+    "category": "Templating",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.thymeleaf</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Thymeleaf",
+    "category": "Templating",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.thymeleaf:thymeleaf"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Scriban",
+    "category": "Templating",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.scriban</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Scriban",
+    "category": "Templating",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.scriban:scriban"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mustache.java",
+    "category": "Templating",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.github.spullara.mustache.java</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mustache.java",
+    "category": "Templating",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.github.spullara.mustache.java:compiler"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz",
+    "category": "Scheduler",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.quartz-scheduler</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz",
+    "category": "Scheduler",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.quartz-scheduler:quartz"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Scheduler",
+    "category": "Scheduler",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Scheduler",
+    "category": "Scheduler",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework:spring-context-support"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Reactor",
+    "category": "Reactive",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.projectreactor</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Reactor",
+    "category": "Reactive",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.projectreactor:reactor-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RxJava",
+    "category": "Reactive",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.reactivex.rxjava2</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RxJava",
+    "category": "Reactive",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.reactivex.rxjava2:rxjava"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Akka",
+    "category": "Reactive",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.typesafe.akka</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Akka",
+    "category": "Reactive",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.typesafe.akka:akka-actor"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kubernetes Java Client",
+    "category": "Container Orchestration",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.kubernetes</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kubernetes Java Client",
+    "category": "Container Orchestration",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.kubernetes:kubernetes-client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LibGDX",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.badlogicgames.gdx</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LibGDX",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.badlogicgames.gdx:gdx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jMonkeyEngine",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jmonkeyengine</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jMonkeyEngine",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jmonkeyengine:jme3-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LWJGL",
+    "category": "Game Development",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.lwjgl</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LWJGL",
+    "category": "Game Development",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.lwjgl:lwjgl"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache TinkerPop",
+    "category": "Graph Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.tinkerpop</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache TinkerPop",
+    "category": "Graph Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.tinkerpop:tinkergraph-gremlin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Neo4j Java Driver",
+    "category": "Graph Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.neo4j.driver</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Neo4j Java Driver",
+    "category": "Graph Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.neo4j.driver:neo4j-java-driver"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JGraphT",
+    "category": "Graph Processing",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.jgrapht</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JGraphT",
+    "category": "Graph Processing",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.jgrapht:jgrapht-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JasperReports",
+    "category": "Reporting",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>net.sf.jasperreports</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "JasperReports",
+    "category": "Reporting",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "net.sf.jasperreports:jasperreports"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BIRT",
+    "category": "Reporting",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.eclipse.birt</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BIRT",
+    "category": "Reporting",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.eclipse.birt:birt-runtime"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "iReport",
+    "category": "Reporting",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.jaspersoft.ireport</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "iReport",
+    "category": "Reporting",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.jaspersoft.ireport:ireport-runtime"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "web3j",
+    "category": "Blockchain",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.web3j</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "web3j",
+    "category": "Blockchain",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.web3j:core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hyperledger Fabric Java SDK",
+    "category": "Blockchain",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.hyperledger.fabric-sdk-java</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hyperledger Fabric Java SDK",
+    "category": "Blockchain",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.hyperledger.fabric-sdk-java:fabric-sdk-java"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BitcoinJ",
+    "category": "Blockchain",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.bitcoinj</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BitcoinJ",
+    "category": "Blockchain",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.bitcoinj:bitcoinj-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Deeplearning4j",
+    "category": "Machine Learning",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.deeplearning4j</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Deeplearning4j",
+    "category": "Machine Learning",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.deeplearning4j:deeplearning4j-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Weka",
+    "category": "Machine Learning",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>nz.ac.waikato.cms.weka</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Weka",
+    "category": "Machine Learning",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "nz.ac.waikato.cms.weka:weka-stable"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Mahout",
+    "category": "Machine Learning",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.mahout</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Mahout",
+    "category": "Machine Learning",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.mahout:mahout-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TensorFlow Java",
+    "category": "Machine Learning",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.tensorflow</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TensorFlow Java",
+    "category": "Machine Learning",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.tensorflow:tensorflow-core-platform"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Statiq",
+    "category": "Static Site Generation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.statiq</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Statiq",
+    "category": "Static Site Generation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.statiq:statiq-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Wyam",
+    "category": "Static Site Generation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.wyam</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Wyam",
+    "category": "Static Site Generation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.wyam:wyam"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Maven",
+    "category": "Dependency Management",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<artifactId>maven-core</artifactId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gradle",
+    "category": "Dependency Management",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.gradle:gradle-tooling-api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Maven",
+    "category": "Build Automation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<artifactId>maven-plugin-api</artifactId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gradle",
+    "category": "Build Automation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.gradle:gradle-api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Ant",
+    "category": "Build Automation",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.apache.ant</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Ant",
+    "category": "Build Automation",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.apache.ant:ant"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Istio",
+    "category": "Service Mesh",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.istio</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Istio",
+    "category": "Service Mesh",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.istio:istio-java-client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Linkerd",
+    "category": "Service Mesh",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>io.linkerd</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Linkerd",
+    "category": "Service Mesh",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "io.linkerd:linkerd-java-client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Boot",
+    "category": "Service Mesh",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework.cloud</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Boot",
+    "category": "Service Mesh",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework.cloud:spring-cloud-starter"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ICU4J",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.ibm.icu</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ICU4J",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.ibm.icu:icu4j"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ResourceBundle",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>java.util</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ResourceBundle",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "java.util:resourcebundle"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stripe Java SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.stripe</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stripe Java SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.stripe:stripe-java"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PayPal Java SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.paypal.sdk</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PayPal Java SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.paypal.sdk:paypal-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Braintree Java SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.braintreepayments</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Braintree Java SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.braintreepayments:braintree-java"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Alfresco",
+    "category": "Document Management",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.alfresco</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Alfresco",
+    "category": "Document Management",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.alfresco:alfresco-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nuxeo",
+    "category": "Document Management",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.nuxeo</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nuxeo",
+    "category": "Document Management",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.nuxeo:nuxeo-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Content",
+    "category": "Document Management",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.springframework.content</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spring Content",
+    "category": "Document Management",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.springframework.content:spring-content-fs"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MongoDB Java Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.mongodb</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MongoDB Java Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.mongodb:mongodb-driver-sync"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PostgreSQL JDBC Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.postgresql</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PostgreSQL JDBC Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.postgresql:postgresql"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MySQL Connector/J",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>mysql</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MySQL Connector/J",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "mysql:mysql-connector-java"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Oracle JDBC Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.oracle.database.jdbc</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Oracle JDBC Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.oracle.database.jdbc:ojdbc8"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft JDBC Driver for SQL Server",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.microsoft.sqlserver</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft JDBC Driver for SQL Server",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.microsoft.sqlserver:mssql-jdbc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cassandra Java Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.datastax.oss</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cassandra Java Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.datastax.oss:java-driver-core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Couchbase Java Client",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>com.couchbase.client</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Couchbase Java Client",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "com.couchbase.client:couchbase-java-client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RavenDB Java Client",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>net.ravendb</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RavenDB Java Client",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "net.ravendb:raven-java-client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SQLite JDBC",
+    "category": "Database Clients",
+    "file_names": [
+      "pom.xml"
+    ],
+    "content_patterns": [
+      "<groupId>org.xerial</groupId>"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SQLite JDBC",
+    "category": "Database Clients",
+    "file_names": [
+      "build.gradle"
+    ],
+    "content_patterns": [
+      "org.xerial:sqlite-jdbc"
+    ]
+  }
+]

@@ -1,0 +1,1049 @@
+[
+  {
+    "type": "Application",
+    "name": "Apache HTTP Server (httpd)",
+    "category": "Web Servers and Load Balancers",
+    "file_names": [
+      "httpd",
+      "apache2",
+      "apache",
+      "httpd\\.conf",
+      "apache2\\.conf"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Nginx",
+    "category": "Web Servers and Load Balancers",
+    "file_names": [
+      "nginx",
+      "nginx\\.conf"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "HAProxy",
+    "category": "Web Servers and Load Balancers",
+    "file_names": [
+      "haproxy",
+      "haproxy\\.cfg",
+      "haproxy\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Microsoft IIS",
+    "category": "Web Servers and Load Balancers",
+    "file_names": [
+      "iis",
+      "inetmgr",
+      "applicationhost\\.config"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Caddy",
+    "category": "Web Servers and Load Balancers",
+    "file_names": [
+      "caddy",
+      "Caddyfile",
+      "caddy\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "MySQL",
+    "category": "Database Servers",
+    "file_names": [
+      "mysql",
+      "mysqld",
+      "my\\.cnf",
+      "mysql\\.log",
+      "slow_query\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "PostgreSQL",
+    "category": "Database Servers",
+    "file_names": [
+      "postgres",
+      "postgresql",
+      "postgresql\\.conf",
+      "postmaster\\.pid",
+      "postgresql-.*\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Oracle Database",
+    "category": "Database Servers",
+    "file_names": [
+      "oracle",
+      "sqlplus",
+      "init\\.ora",
+      "pfile"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Microsoft SQL Server",
+    "category": "Database Servers",
+    "file_names": [
+      "mssql",
+      "sqlserver",
+      "sqlcmd",
+      "master\\.mdf",
+      "sqllog\\.txt"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "MongoDB",
+    "category": "Database Servers",
+    "file_names": [
+      "mongod",
+      "mongos",
+      "mongod\\.conf",
+      "mongod\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Cassandra",
+    "category": "Database Servers",
+    "file_names": [
+      "cassandra",
+      "cassandra\\.yaml"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Redis",
+    "category": "Database Servers",
+    "file_names": [
+      "redis-server",
+      "redis\\.conf",
+      "redis\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "MariaDB",
+    "category": "Database Servers",
+    "file_names": [
+      "mariadb",
+      "mysqld",
+      "my\\.cnf",
+      "mariadb\\.log",
+      "slow_query\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Elasticsearch",
+    "category": "Database Servers",
+    "file_names": [
+      "elasticsearch",
+      "elasticsearch\\.yml",
+      "elasticsearch\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "CouchDB",
+    "category": "Database Servers",
+    "file_names": [
+      "couchdb",
+      "couchdb\\.conf",
+      "couch\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Apache Tomcat",
+    "category": "Application Servers",
+    "file_names": [
+      "tomcat",
+      "catalina\\.sh",
+      "catalina\\.bat",
+      "server\\.xml"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "JBoss (WildFly)",
+    "category": "Application Servers",
+    "file_names": [
+      "jboss",
+      "wildfly",
+      "standalone\\.xml",
+      "jboss-modules\\.xml"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "GlassFish",
+    "category": "Application Servers",
+    "file_names": [
+      "glassfish",
+      "glassfish\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Jetty",
+    "category": "Application Servers",
+    "file_names": [
+      "jetty",
+      "jetty\\.xml",
+      "jetty\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "WebSphere Application Server",
+    "category": "Application Servers",
+    "file_names": [
+      "websphere"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "WebLogic Server",
+    "category": "Application Servers",
+    "file_names": [
+      "weblogic",
+      "startWebLogic\\.sh",
+      "startWebLogic\\.cmd"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Prometheus",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "prometheus",
+      "prometheus\\.yml",
+      "prometheus\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Grafana",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "grafana",
+      "grafana\\.ini",
+      "grafana\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Nagios",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "nagios",
+      "nagios\\.cfg",
+      "nagios\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Zabbix",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "zabbix_server",
+      "zabbix_agentd",
+      "zabbix\\.conf",
+      "zabbix_server\\.log",
+      "zabbix_agentd\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Splunk",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "splunk",
+      "splunkd\\.conf",
+      "splunkd\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Elastic Stack (ELK)",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "elasticsearch",
+      "logstash",
+      "kibana",
+      "elasticsearch\\.yml",
+      "logstash\\.conf",
+      "kibana\\.yml",
+      "elasticsearch\\.log",
+      "logstash\\.log",
+      "kibana\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Fluentd",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "fluentd",
+      "fluent\\.conf",
+      "fluentd\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Graylog",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "graylog",
+      "graylog\\.conf",
+      "graylog\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Telegraf",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "telegraf",
+      "telegraf\\.conf",
+      "telegraf\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Beats Framework (Filebeat, Metricbeat, etc.)",
+    "category": "Monitoring and Logging",
+    "file_names": [
+      "filebeat",
+      "metricbeat",
+      "packetbeat",
+      "auditbeat",
+      "winlogbeat",
+      "filebeat\\.yml",
+      "metricbeat\\.yml",
+      "packetbeat\\.yml",
+      "auditbeat\\.yml",
+      "winlogbeat\\.yml",
+      "filebeat\\.log",
+      "metricbeat\\.log",
+      "packetbeat\\.log",
+      "auditbeat\\.log",
+      "winlogbeat\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Tenable Nessus",
+    "category": "Security and Compliance",
+    "file_names": [
+      "nessus",
+      "nessus\\.conf",
+      "nessus\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "CrowdStrike Falcon",
+    "category": "Security and Compliance",
+    "file_names": [
+      "falcon",
+      "falcon\\.conf",
+      "falcon\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "McAfee (Trellix) ENS",
+    "category": "Security and Compliance",
+    "file_names": [
+      "mcafee",
+      "trellix",
+      "mclog",
+      "trellix\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Trend Micro",
+    "category": "Security and Compliance",
+    "file_names": [
+      "trendmicro",
+      "tmlog",
+      "trendmicro\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Snort",
+    "category": "Security and Compliance",
+    "file_names": [
+      "snort",
+      "snort\\.conf",
+      "snort\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "AIDE (Advanced Intrusion Detection Environment)",
+    "category": "Security and Compliance",
+    "file_names": [
+      "aide",
+      "aide\\.conf",
+      "aide\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "ClamAV",
+    "category": "Security and Compliance",
+    "file_names": [
+      "clamav",
+      "freshclam",
+      "clamd\\.conf",
+      "clamd\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "OpenVAS",
+    "category": "Security and Compliance",
+    "file_names": [
+      "openvas",
+      "openvas\\.conf",
+      "openvas\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Wazuh",
+    "category": "Security and Compliance",
+    "file_names": [
+      "wazuh",
+      "wazuh\\.conf",
+      "wazuh\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Suricata",
+    "category": "Security and Compliance",
+    "file_names": [
+      "suricata",
+      "suricata\\.yaml",
+      "suricata\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Palo Alto Networks Cortex XDR",
+    "category": "Security and Compliance",
+    "file_names": [
+      "cortexxdr",
+      "cortexxdr\\.conf",
+      "cortexxdr\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Carbon Black",
+    "category": "Security and Compliance",
+    "file_names": [
+      "carbonblack",
+      "carbonblack\\.conf",
+      "carbonblack\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Sophos Intercept X",
+    "category": "Security and Compliance",
+    "file_names": [
+      "sophos",
+      "interceptx",
+      "sophos\\.conf",
+      "interceptx\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Qualys",
+    "category": "Security and Compliance",
+    "file_names": [
+      "qualys",
+      "qualys\\.conf",
+      "qualys\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Jenkins",
+    "category": "DevOps and CI/CD",
+    "file_names": [
+      "jenkins",
+      "jenkins\\.war",
+      "jenkins\\.xml",
+      "jenkins\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "GitLab Runner",
+    "category": "DevOps and CI/CD",
+    "file_names": [
+      "gitlab-runner",
+      "gitlab-runner\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "CircleCI",
+    "category": "DevOps and CI/CD",
+    "file_names": [
+      "circleci",
+      "circleci\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Bamboo",
+    "category": "DevOps and CI/CD",
+    "file_names": [
+      "bamboo",
+      "bamboo\\.cfg",
+      "bamboo\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "ArgoCD",
+    "category": "DevOps and CI/CD",
+    "file_names": [
+      "argocd",
+      "argocd-cm",
+      "argocd-server",
+      "argocd-repo-server",
+      "argocd\\.yaml",
+      "argocd\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Spinnaker",
+    "category": "DevOps and CI/CD",
+    "file_names": [
+      "spinnaker",
+      "spinnaker\\.conf",
+      "spinnaker\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "TeamCity",
+    "category": "DevOps and CI/CD",
+    "file_names": [
+      "teamcity",
+      "teamcity-server",
+      "teamcity-agent",
+      "teamcity\\.xml",
+      "teamcity\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "AWS CodeDeploy",
+    "category": "DevOps and CI/CD",
+    "file_names": [
+      "aws-codedeploy",
+      "appspec\\.yml",
+      "codedeploy\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Docker",
+    "category": "Container Orchestration and Management",
+    "file_names": [
+      "docker",
+      "docker-compose",
+      "dockerfile",
+      "docker-compose\\.yml",
+      "docker\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Kubernetes",
+    "category": "Container Orchestration and Management",
+    "file_names": [
+      "kubectl",
+      "kubelet",
+      "minikube",
+      "kubernetes",
+      "kubectl\\.cfg",
+      "kubelet\\.conf",
+      "minikube\\.log",
+      "kubernetes\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "OpenShift",
+    "category": "Container Orchestration and Management",
+    "file_names": [
+      "openshift",
+      "openshift-cli",
+      "openshift\\.conf",
+      "openshift\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Rancher",
+    "category": "Container Orchestration and Management",
+    "file_names": [
+      "rancher",
+      "rancher\\.conf",
+      "rancher\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "HashiCorp Nomad",
+    "category": "Container Orchestration and Management",
+    "file_names": [
+      "nomad",
+      "nomad\\.hcl",
+      "nomad\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Podman",
+    "category": "Container Orchestration and Management",
+    "file_names": [
+      "podman",
+      "podman\\.conf",
+      "podman\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Ansible",
+    "category": "Configuration Management",
+    "file_names": [
+      "ansible",
+      "ansible\\.cfg",
+      "playbook\\.yml",
+      "ansible\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Chef",
+    "category": "Configuration Management",
+    "file_names": [
+      "chef",
+      "chef-client",
+      "chef-server",
+      "chef\\.rb",
+      "cookbooks",
+      "roles",
+      "chef-client\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Puppet",
+    "category": "Configuration Management",
+    "file_names": [
+      "puppet",
+      "puppet\\.conf",
+      "manifests",
+      "modules",
+      "puppet\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "SaltStack",
+    "category": "Configuration Management",
+    "file_names": [
+      "salt",
+      "salt-master",
+      "salt-minion",
+      "salt\\.conf",
+      "salt\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Terraform",
+    "category": "Configuration Management",
+    "file_names": [
+      "terraform",
+      "terraform\\.tf",
+      "terraform\\.tfvars",
+      "terraform\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Veeam",
+    "category": "Backup and Recovery",
+    "file_names": [
+      "veeam",
+      "veeam\\.conf",
+      "veeam\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Commvault",
+    "category": "Backup and Recovery",
+    "file_names": [
+      "commvault",
+      "commvault\\.conf",
+      "commvault\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "NetBackup",
+    "category": "Backup and Recovery",
+    "file_names": [
+      "netbackup",
+      "netbackup\\.conf",
+      "netbackup\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Cohesity",
+    "category": "Backup and Recovery",
+    "file_names": [
+      "cohesity",
+      "cohesity\\.conf",
+      "cohesity\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Rubrik",
+    "category": "Backup and Recovery",
+    "file_names": [
+      "rubrik",
+      "rubrik\\.conf",
+      "rubrik\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Talend",
+    "category": "Data Integration and ETL",
+    "file_names": [
+      "talend",
+      "talend\\.conf",
+      "talend\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Pentaho",
+    "category": "Data Integration and ETL",
+    "file_names": [
+      "pentaho",
+      "pentaho\\.conf",
+      "pentaho\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Informatica",
+    "category": "Data Integration and ETL",
+    "file_names": [
+      "informatica",
+      "informatica\\.conf",
+      "informatica\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Denodo",
+    "category": "Data Integration and ETL",
+    "file_names": [
+      "denodo",
+      "denodo\\.conf",
+      "denodo\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Alteryx",
+    "category": "Data Integration and ETL",
+    "file_names": [
+      "alteryx",
+      "alteryx\\.conf",
+      "alteryx\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "SAP Data Services",
+    "category": "Data Integration and ETL",
+    "file_names": [
+      "sap",
+      "dataservices",
+      "sap\\.conf",
+      "dataservices\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Okta",
+    "category": "Identity and Access Management",
+    "file_names": [
+      "okta",
+      "okta\\.conf",
+      "okta\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Ping Identity",
+    "category": "Identity and Access Management",
+    "file_names": [
+      "pingidentity",
+      "pingidentity\\.conf",
+      "pingidentity\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "ForgeRock",
+    "category": "Identity and Access Management",
+    "file_names": [
+      "forgerock",
+      "forgerock\\.conf",
+      "forgerock\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Microsoft AD FS",
+    "category": "Identity and Access Management",
+    "file_names": [
+      "adfs",
+      "adfs\\.conf",
+      "adfs\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "OpenID Connect",
+    "category": "Identity and Access Management",
+    "file_names": [
+      "openidconnect",
+      "openidconnect\\.conf",
+      "openidconnect\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "RabbitMQ",
+    "category": "Message Queuing and Streaming",
+    "file_names": [
+      "rabbitmq",
+      "rabbitmq\\.conf",
+      "rabbitmq\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Kafka",
+    "category": "Message Queuing and Streaming",
+    "file_names": [
+      "kafka",
+      "kafka\\.conf",
+      "kafka\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "ActiveMQ",
+    "category": "Message Queuing and Streaming",
+    "file_names": [
+      "activemq",
+      "activemq\\.xml",
+      "activemq\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Redis Streams",
+    "category": "Message Queuing and Streaming",
+    "file_names": [
+      "redis",
+      "redis\\.conf",
+      "redis\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Azure Service Bus",
+    "category": "Message Queuing and Streaming",
+    "file_names": [
+      "servicebus",
+      "servicebus\\.conf",
+      "servicebus\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Snowflake",
+    "category": "Data Warehousing",
+    "file_names": [
+      "snowflake",
+      "snowflake\\.conf",
+      "snowflake\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Amazon Redshift",
+    "category": "Data Warehousing",
+    "file_names": [
+      "redshift",
+      "redshift\\.conf",
+      "redshift\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Google BigQuery",
+    "category": "Data Warehousing",
+    "file_names": [
+      "bigquery",
+      "bigquery\\.conf",
+      "bigquery\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Teradata",
+    "category": "Data Warehousing",
+    "file_names": [
+      "teradata",
+      "teradata\\.conf",
+      "teradata\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Cloudera Data Platform",
+    "category": "Data Warehousing",
+    "file_names": [
+      "cloudera",
+      "cdp",
+      "cloudera\\.conf",
+      "cdp\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Berlin Job Scheduler",
+    "category": "Job Schedulers and Workflow Automation",
+    "file_names": [
+      "berlin",
+      "berlin\\.conf",
+      "berlin\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Apache Airflow",
+    "category": "Job Schedulers and Workflow Automation",
+    "file_names": [
+      "airflow",
+      "airflow\\.cfg",
+      "airflow\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Autosys",
+    "category": "Job Schedulers and Workflow Automation",
+    "file_names": [
+      "autosys",
+      "autosys\\.conf",
+      "autosys\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Cron",
+    "category": "Job Schedulers and Workflow Automation",
+    "file_names": [
+      "cron",
+      "crontab",
+      "cron\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Celery",
+    "category": "Job Schedulers and Workflow Automation",
+    "file_names": [
+      "celery",
+      "celery\\.py",
+      "celery\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Control-M",
+    "category": "Job Schedulers and Workflow Automation",
+    "file_names": [
+      "controlm",
+      "controlm\\.conf",
+      "controlm\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "NetApp ONTAP",
+    "category": "File and Storage Management",
+    "file_names": [
+      "netapp",
+      "ontap",
+      "netapp\\.conf",
+      "ontap\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "GlusterFS",
+    "category": "File and Storage Management",
+    "file_names": [
+      "glusterfs",
+      "glusterfs\\.conf",
+      "glusterfs\\.log"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Ceph",
+    "category": "File and Storage Management",
+    "file_names": [
+      "ceph",
+      "ceph\\.conf",
+      "ceph\\.log"
+    ]
+  }
+]

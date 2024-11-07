@@ -1,0 +1,5986 @@
+[
+  {
+    "type": "Framework",
+    "name": "Accord.NET",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Accord.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Accord.NET",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Accord.MachineLearning"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Accord.NET",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Accord.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ActiveReports",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ActiveReports"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Adyen .NET API Library",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Adyen .NET API Library"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Akka.NET",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Akka"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Akka.NET",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Akka.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Akka.NET",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Akka.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Akka.NET",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Akka.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Akka.Streams",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Akka.Streams"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Alfresco.NET",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Alfresco.Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Alfresco.NET",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Alfresco.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AngleSharp",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"AngleSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Antlr3.Runtime",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Antlr3.Runtime"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Antlr4.StringTemplate",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Antlr4.StringTemplate"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Mesos .NET",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Apache Mesos .NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache Nifi",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Apache Nifi"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache.NMS",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Apache.NMS"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Apache.Pulsar.Client",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Apache.Pulsar.Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AppDynamics",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"AppDynamics"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AppFabric Caching",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"AppFabric Caching"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Application Insights",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Application Insights"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Application Insights",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.ApplicationInsights.AspNetCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AppVeyor",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"AppVeyor"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ArangoDB-NET",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ArangoDB-NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET Core Blazor Server",
+    "category": "Async Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ASP.NET Core Blazor Server"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET Core",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ASP.NET Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET Core",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.AspNetCore.App"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET Core Identity",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.AspNetCore.Identity"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET Core Kestrel",
+    "category": "Async Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ASP.NET Core Kestrel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET Core Kestrel",
+    "category": "Async Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.AspNetCore.Server.Kestrel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET MVC",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ASP.NET MVC"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET Web API",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ASP.NET Web API"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ASP.NET Web Forms",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ASP.NET Web Forms"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Aspose.Total",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Aspose.Total"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Aspose.Words",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Aspose.Words"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Authorize.Net SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Authorize.Net SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Autofac",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Autofac"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Autofac.Integration.Mvc",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Autofac.Integration.Mvc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Autofac.Integration.Mvc.Owin",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Autofac.Integration.Mvc.Owin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Autofac.Integration.Owin",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Autofac.Integration.Owin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Autofac.Integration.WebApi",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Autofac.Integration.WebApi"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Autofac.Integration.WebApi.Owin",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Autofac.Integration.WebApi.Owin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AutoFixture.AutoFakeItEasy",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"AutoFixture.AutoFakeItEasy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AutoFixture",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"AutoFixture"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AutoMapper",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"AutoMapper"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Avalonia",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Avalonia"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AWS Lambda",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Amazon.Lambda.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AWS Lambda .NET Core Support",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"AWS Lambda .NET Core Support"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure App Configuration",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure App Configuration"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure.Core",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure Data Factory",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure Data Factory"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure Functions",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure Functions"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure Functions",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.NET.Sdk.Functions"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure.Identity",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure.Identity"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure.Messaging.EventHubs",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure.Messaging.EventHubs"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure Pipelines",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure Pipelines"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure Service Bus",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure Service Bus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Azure WebJobs",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Azure WebJobs"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BaGet",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"BaGet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BCrypt.Net",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"BCrypt.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BinaryFormatter",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"BinaryFormatter"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BitcoinLib",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"BitcoinLib"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BizTalk Server",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"BizTalk Server"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Blazor",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Blazor"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Blockchain.info API",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Blockchain.info API"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Bogus",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Bogus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Bond",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Bond"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BouncyCastle",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"BouncyCastle"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BouncyCastle.Crypto",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"BouncyCastle.Crypto"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Braintree .NET SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Braintree"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Braintree .NET SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Braintree .NET SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BrightstarDB",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"BrightstarDB"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CacheManager",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CacheManager.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CacheManager.Core",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CacheManager.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cake",
+    "category": "Build Automation",
+    "file_names": [
+      "build.cake"
+    ],
+    "content_patterns": [
+      "//#addin nuget:?package=Cake.Common"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cake",
+    "category": "Build Automation",
+    "file_names": [
+      "build.cake"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Cake"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cake.Site",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Cake.Site"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CAP (DotNetCore.CAP)",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CAP (DotNetCore.CAP)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CassandraCSharpDriver",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CassandraCSharpDriver"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Castle.Core",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Castle.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Castle Windsor",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Castle Windsor"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Certes",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Certes"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Chain SDK",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Chain SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Chart.js for Blazor",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Chart.js for Blazor"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ClosedXML",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ClosedXML"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CNTK",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CNTK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Config.Net",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Config.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Confluent.Kafka",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Confluent.Kafka"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Consul",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Consul"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Consul.NET",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Consul"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Consul.NET",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Consul.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Consul.NET",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Consul.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Coravel",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Coravel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Coravel",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Coravel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CouchbaseNetClient",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CouchbaseNetClient"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CouchbaseNetClient",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CouchbaseNetClient"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Coverlet",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Coverlet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cronos",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Cronos"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CryEngine (C# Support)",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CryEngine (C# Support)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Crystal Reports",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CrystalDecisions.CrystalReports.Engine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Crystal Reports",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Crystal Reports"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CSharp-Blockchain",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CSharp-Blockchain"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CsvHelper",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CsvHelper"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "CuttingEdge.Conditions",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"CuttingEdge.Conditions"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dapper",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Dapper"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dapr",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Dapr"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dapr",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Dapr.Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dapr",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Dapr"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DataContractSerializer",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DataContractSerializer"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Datadog",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Datadog"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Data Transformation Services (DTS)",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Data Transformation Services (DTS)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DbLocalizationProvider",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DbLocalizationProvider"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Deedle",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Deedle"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Deedle",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Deedle"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DevExpress Charts",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DevExpress Charts"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DevExpress Reporting",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DevExpress Reporting"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DevExpress Reporting",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DevExpress.XtraReports"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DocFX",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DocFX"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DocFX",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DocFX"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Docker.DotNet",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Docker.DotNet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DocumentFormat.OpenXml",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DocumentFormat.OpenXml"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DocuSign .NET SDK",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DocuSign.eSign"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DocuSign .NET SDK",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DocuSign .NET SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DocX",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DocX"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "dotenv.net",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"dotenv.net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DotLiquid",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DotLiquid"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DotNetOpenAuth",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DotNetOpenAuth"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "dotnet-outdated",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"dotnet-outdated"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DotNetZip",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DotNetZip"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DotVVM",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DotVVM"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Doxygen",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Doxygen"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "DryIoc",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"DryIoc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Duality",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Duality"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Durable Task Framework",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Durable Task Framework"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dynamic Data",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Dynamic Data"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EasyCaching",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"EasyCaching"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Easy ETL",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Easy ETL"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Easy ETL",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"EasyETL"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EasyNetQ",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"EasyNetQ"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Elmah",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Elmah"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Elmah.Contrib.WebApi",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Elmah.Contrib.WebApi"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Elmah.FallbackErrorLog",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Elmah.FallbackErrorLog"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Elmah.Mvc",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Elmah.Mvc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Elsa",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Elsa"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Entity Framework Core",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Entity Framework Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Entity Framework Core",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.EntityFrameworkCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Envoy",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Envoy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Envoy with .NET Integration",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Envoy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Envoy with .NET Integration",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Envoy with .NET Integration"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EnyimMemcached",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"EnyimMemcached"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EPPlus",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"EPPlus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Eto.Forms",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Eto.Forms"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EventFlow",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"EventFlow"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EventStore.Client",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"EventStore.Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ExcelDataReader",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ExcelDataReader"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ExcelDataReader.DataSet",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ExcelDataReader.DataSet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "eXo Platform SDK",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"eXo Platform SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FAKE",
+    "category": "Build Automation",
+    "file_names": [
+      "build.fsx"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FAKE"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FAKE",
+    "category": "Build Automation",
+    "file_names": [
+      "build.fsx"
+    ],
+    "content_patterns": [
+      "#r \"paket: groupref Fake //"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FakeItEasy",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FakeItEasy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Faker.Net.4.8",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Faker.Net.4.8"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Fare",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Fare"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FastReport.Net",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FastReport.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FlatRedBall",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FlatRedBall"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Fleck",
+    "category": "Async Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Fleck"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FluentAssertions",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FluentAssertions"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FluentScheduler",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FluentScheduler"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FluentScheduler",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FluentScheduler"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FluentValidation",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FluentValidation"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FluentValidation.Mvc",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FluentValidation.Mvc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FluentValidation.ValidatorAttribute",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FluentValidation.ValidatorAttribute"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FluentValidator",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FluentValidator"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Fluid",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Fluid"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Flurl",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Flurl"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Flurl.Http",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Flurl.Http"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Flurl.Http",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Flurl.Http"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Fornax",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Fornax"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FSBlog",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FSBlog"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FsCheck",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FsCheck"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FSharp.Control.Reactive",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FSharp.Control.Reactive"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FSharp.Data.GraphQL",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FSharp.Data.GraphQL"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "FubuMVC",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"FubuMVC"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GemBox.Document",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"GemBox.Document"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "gettext.net",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"gettext.net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GhostDoc",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"GhostDoc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Giraffe",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Giraffe"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GitDepend",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"GitDepend"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Glimpse",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Glimpse"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Godot",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Godot.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Godot.NET",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Godot.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Google.Apis.Auth",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Google.Apis.Auth"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Google.Apis",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Google.Apis"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Google.Apis.Core",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Google.Apis.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Google.Apis.TagManager.v2",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Google.Apis.TagManager.v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Google Cloud Functions for .NET",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Google Cloud Functions for .NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Grafana.NET",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Grafana.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GrapeCity Spread",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"GrapeCity Spread"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GraphQL.NET",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"GraphQL.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GraphX",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"GraphX"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gremlin.NET",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Gremlin.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gremlin.NET",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Gremlin.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GroupDocs",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"GroupDocs"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Grpc.AspNetCore",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Grpc.AspNetCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Grpc.Core",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Grpc.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GtkSharp",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"GtkSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Handlebars.Net",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Handlebars.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hangfire.Autofac",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Hangfire.Autofac"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hangfire",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Hangfire"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hangfire",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Hangfire"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hangfire",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Hangfire"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hangfire.Core",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Hangfire.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hangfire.SqlServer",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Hangfire.SqlServer"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "HtmlAgilityPack",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"HtmlAgilityPack"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "HttpClient",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"HttpClient"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Huddle SDK",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Huddle SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hyperledger Fabric .NET SDK",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Hyperledger Fabric .NET SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hyperledger Fabric .NET SDK",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Hyperledger.Fabric.SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "i18n",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"i18n"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ICSharpCode.SharpZipLib",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ICSharpCode.SharpZipLib"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "IdentityModel",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"IdentityModel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "IdentityModel.Owin.ClaimsTransformation",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"IdentityModel.Owin.ClaimsTransformation"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "IdentityServer3.AccessTokenValidation",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"IdentityServer3.AccessTokenValidation"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "IdentityServer3",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"IdentityServer3"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "IdentityServer4",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"IdentityServer4"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "IdentityServer",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"IdentityServer4"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Infer.NET",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Infer.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "IronFunctions",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"IronFunctions"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Istio",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Istio"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.barcodes",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.barcodes"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.commons",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.commons"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.forms",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.forms"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.html2pdf",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.html2pdf"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.io",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.io"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.kernel",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.kernel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.layout",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.layout"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.pdfa",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.pdfa"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "iTextSharp",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"iTextSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "iTextSharp",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"iTextSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.sign",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.sign"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.styledxmlparser",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.styledxmlparser"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "itext.svg",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"itext.svg"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jenkins",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Jenkins"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jil",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Jil"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jwt.Net",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Jwt.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "KafkaNet",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"KafkaNet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kettle (Pentaho Data Integration)",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Kettle (Pentaho Data Integration)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Klarna.Rest.Net",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Klarna.Rest.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Knative",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Knative"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kubeless",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Kubeless"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "KubernetesClient",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"KubernetesClient"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Lamar",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Lamar"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LightBDD",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"LightBDD"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LightInject",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"LightInject"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Linkerd",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Linkerd"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Linq2DB",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Linq2DB"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LiveCharts",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"LiveCharts"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LLBLGen Pro",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"LLBLGen Pro"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LocalizationProvider",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"LocalizationProvider"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "log4net",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"log4net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "LowercaseDashedRouting",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"LowercaseDashedRouting"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Marathon Client",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Marathon Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Massive",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Massive"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MassTransit",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MassTransit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MassTransit",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MassTransit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MassTransit",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MassTransit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Math.NET Numerics",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Math.NET Numerics"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MAUI",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MAUI"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MediatR",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MediatR"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Memcached.ClientLibrary",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Memcached.ClientLibrary"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MessagePack",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MessagePack"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.AspNetCore.Identity",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.AspNetCore.Identity"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.AspNet.WebApi.Client",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.AspNet.WebApi.Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft Chart Controls",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft Chart Controls"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft Chart Controls",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"System.Windows.Forms.DataVisualization"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft Cognitive Toolkit",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft Cognitive Toolkit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.Data.SqlClient",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.Data.SqlClient"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.Extensions.Caching.Memory",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.Extensions.Caching.Memory"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.Extensions.Configuration",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.Extensions.Configuration"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.Extensions.DependencyInjection",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.Extensions.DependencyInjection"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.Extensions.Localization",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.Extensions.Localization"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.Extensions.Logging",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.Extensions.Logging"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Microsoft.FeatureManagement",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.FeatureManagement"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MiniBlog",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MiniBlog"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MkDocs",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MkDocs"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ML.NET",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.ML"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ML.NET",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ML.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ML.NET",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.ML"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ML.NET",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ML.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mollie.Api",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Mollie.Api"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MongoDB.Driver",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MongoDB.Driver"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MonoGame",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MonoGame"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MonoGame",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MonoGame.Framework"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Moq",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Moq"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Msagl (Microsoft Automatic Graph Layout)",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Msagl (Microsoft Automatic Graph Layout)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MSBuild",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.Build"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MSBuild",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MSBuild"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MSTest",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.NET.Test.Sdk"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MSTest",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MSTest"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Multilingual App Toolkit",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Multilingual App Toolkit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mustache.NET",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Mustache.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mustache.NET",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nustache"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MvcNavigationHelpers",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MvcNavigationHelpers"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MyGet",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MyGet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MySqlConnector",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"MySqlConnector"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NancyFX",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nancy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NancyFx",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NancyFx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nant",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nant"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NATS.Client",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NATS.Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NCache",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NCache"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NCrontab",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NCrontab"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Neo4jClient",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Neo4jClient"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nethereum",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nethereum"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nethermind",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nethermind"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NetMQ",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NetMQ"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "New Relic",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"New Relic"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "New Relic",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NewRelic.Agent"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Newtonsoft.Json.Bson",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Newtonsoft.Json.Bson"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Newtonsoft.Json",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Newtonsoft.Json"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nez",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nez"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NFig",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NFig"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NGettext",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NGettext"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nginx",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nginx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NHibernate",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NHibernate"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Ninject",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Ninject"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NLog",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NLog"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nomad.NET",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nomad.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Npgsql",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Npgsql"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NPOI",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NPOI"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NReco",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NReco"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NReco",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NReco.Data"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NServiceBus",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NServiceBus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NServiceBus",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NServiceBus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NServiceBus",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NServiceBus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NSubstitute",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NSubstitute"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NSwag",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NSwag"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NSwag",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NSwag.AspNetCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NSwag",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NSwag"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NSwag",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NSwag.AspNetCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NuGet",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NuGet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NuGet",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NuGet.CommandLine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NuGet Package Explorer",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NuGet Package Explorer"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NUKE Build",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NUKE Build"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NUnit",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NUnit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "nunit.framework",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"nunit.framework"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "nunit.framework.legacy",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"nunit.framework.legacy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NUnit.Specifications",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NUnit.Specifications"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nuxeo Client",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Nuxeo Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NWebsec",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"NWebsec"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OAuth",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OAuth"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OAuthLib",
+    "category": "Security",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OAuth"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Ocelot",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Ocelot"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Octopus Deploy",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Octopus Deploy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OData",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OData"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Office 365 API Tools",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Office 365 API Tools"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OpenFaaS",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OpenFaaS"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Open Service Mesh",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Open Service Mesh"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OpenShift .NET Client",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OpenShift .NET Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OpenTelemetry",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OpenTelemetry"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OpenXML SDK",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OpenXML SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Oracle.ManagedDataAccess",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Oracle.ManagedDataAccess"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OrchardCore.Localization",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OrchardCore.Localization"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OrientDB-Net.binary",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OrientDB-Net.binary"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Owin",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Owin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OxyPlot",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OxyPlot"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OxyPlot",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"OxyPlot.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Paket",
+    "category": "Dependency Management",
+    "file_names": [
+      "paket.dependencies"
+    ],
+    "content_patterns": [
+      " id="
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Paket",
+    "category": "Dependency Management",
+    "file_names": [
+      "paket.dependencies"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Paket"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PayPal .NET SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"PayPal"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PayPal .NET SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"PayPal .NET SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PayU.Core",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"PayU.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PDFSharp",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"PDFSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PetaPoco",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"PetaPoco"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Plotly.NET",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Plotly.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Polly",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Polly"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Polly",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Polly"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Polly",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Polly"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Polly.Core",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Polly.Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Pretzel",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Pretzel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Prism",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Prism"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ProGet",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ProGet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Prometheus.Net",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Prometheus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Prometheus.Net",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Prometheus.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Protobuf-net",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"protobuf-net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Protobuf-net",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Protobuf-net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "psake",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"psake"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Pulumi",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Pulumi"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "QBitNinja",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"QBitNinja"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz.NET",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Quartz"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz.NET",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Quartz.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz.NET",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Quartz"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Quartz.NET",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Quartz.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "QuickGraph",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"QuickGraph"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RabbitMQ.Client",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RabbitMQ.Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Rancher API .NET Client",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Rancher API .NET Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RavenDB.Client",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RavenDB.Client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RawRabbit",
+    "category": "Task Queue",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RawRabbit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Razor",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.AspNetCore.Razor"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Razor",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Razor"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RazorEngine",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RazorEngine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RazorLight",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RazorLight"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Reactive Extensions (Rx.NET)",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Reactive Extensions (Rx.NET)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Reactive Extensions (Rx.NET)",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"System.Reactive"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ReactiveUI",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ReactiveUI"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ReactiveUI",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ReactiveUI"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Read the Docs",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Read the Docs"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Rebus",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Rebus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RedisCache",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RedisCache"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Refit",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Refit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Refit",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Refit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RepoDb",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RepoDb"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ReportViewer",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ReportViewer"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RestSharp",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RestSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RestSharp",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RestSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ResXResourceManager",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ResXResourceManager"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Rhino ETL",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Rhino ETL"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Rx.NET",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Rx.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RxUI",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"RxUI"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sandcastle Help File Builder",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Sandcastle Help File Builder"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sapphire",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Sapphire"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Scheduled Tasks",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Scheduled Tasks"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SciChart",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SciChart"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SciSharp STACK",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SciSharp STACK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Scriban",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Scriban"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SecretStore",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SecretStore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Selenium.WebDriver",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Selenium.WebDriver"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sentry",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Sentry"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sentry",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Sentry"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Seq",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Seq"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Seq",
+    "category": "Monitoring",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Seq"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Serilog",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Serilog"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Serilog.Settings.Configuration",
+    "category": "Configuration Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Serilog.Settings.Configuration"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Serilog.Sinks.Console",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Serilog.Sinks.Console"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Serilog.Sinks.EventLog",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Serilog.Sinks.EventLog"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Serilog.Sinks.File",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Serilog.Sinks.File"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Serilog.Sinks.MSSqlServer",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Serilog.Sinks.MSSqlServer"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Serilog.Sinks.PeriodicBatching",
+    "category": "Logging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Serilog.Sinks.PeriodicBatching"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Serverless Framework",
+    "category": "Serverless",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Serverless Framework"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Service Fabric SDK",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Service Fabric SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ServiceStack",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ServiceStack"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ServiceStack.OrmLite",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ServiceStack.OrmLite"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SharePoint SDK",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.SharePoint"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SharePoint SDK",
+    "category": "Document Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SharePoint SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SharpDox",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SharpDox"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Shouldly",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Shouldly"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SignalR",
+    "category": "Async Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.AspNetCore.SignalR"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SignalR",
+    "category": "Async Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SignalR"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SignalR",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SignalR"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SimpleInjector",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SimpleInjector"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sleet",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Sleet"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spark View Engine",
+    "category": "Templating",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Spark View Engine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SpecFlow",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SpecFlow"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Spire.Doc",
+    "category": "File Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Spire.Doc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SQLitePCL.raw",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SQLitePCL.raw"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SQL Server Integration Services (SSIS)",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SQL Server Integration Services (SSIS)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SQL Server Reporting Services (SSRS)",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SQL Server Reporting Services (SSRS)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Square .NET SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Square .NET SDK"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "StackExchange.Redis",
+    "category": "Caching",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"StackExchange.Redis"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stact",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Stact"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Statiq",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Statiq"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Steeltoe",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Steeltoe"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Steeltoe Service Discovery",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Steeltoe Service Discovery"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stimulsoft Reports",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Stimulsoft Reports"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stratis",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Stratis"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stratis",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Stratis.Bitcoin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Streamiz.Kafka.Net",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Streamiz.Kafka.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stride (formerly Xenko)",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Stride (formerly Xenko)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stripe.NET",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Stripe.net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stripe.NET",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Stripe.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "StructureMap",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"StructureMap"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Suave",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Suave"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SubSonic",
+    "category": "ORM",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SubSonic"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SuperSocket",
+    "category": "Async Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"SuperSocket"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swashbuckle.AspNetCore",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Swashbuckle.AspNetCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swashbuckle.AspNetCore",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Swashbuckle.AspNetCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swashbuckle",
+    "category": "API",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Swashbuckle.AspNetCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swashbuckle",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Swashbuckle.AspNetCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Synapses",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Synapses"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "System.Data.SqlClient",
+    "category": "Database Clients",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"System.Data.SqlClient"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "System.Reactive",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"System.Reactive"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "System.Text.Json",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"System.Text.Json"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "System.Threading.Tasks.Dataflow",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"System.Threading.Tasks.Dataflow"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Talend",
+    "category": "ETL",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Talend"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TeamCity",
+    "category": "Build Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"TeamCity"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Telerik Reporting",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Telerik Reporting"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Telerik Reporting",
+    "category": "Reporting",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Telerik.Reporting"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Telerik UI for WPF",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Telerik UI for WPF"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TensorFlow.NET",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"TensorFlow.NET"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TinkerGraph",
+    "category": "Graph Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"TinkerGraph"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Topshelf",
+    "category": "Scheduler",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Topshelf"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TorchSharp",
+    "category": "Machine Learning",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"TorchSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Traefik",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Traefik"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Tye",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Tye"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Tye",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Tye"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Tye",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Tye"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "UniRx",
+    "category": "Reactive",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"UniRx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Unity",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Unity"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Unity",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"UnityEngine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Unity Container",
+    "category": "Dependency Injection",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Unity Container"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Upack",
+    "category": "Dependency Management",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Upack"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "UrhoSharp",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"UrhoSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Utf8Json",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Utf8Json"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "UWP",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"UWP"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Visiblox Charts",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Visiblox Charts"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Watson Websocket",
+    "category": "Async Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Watson Websocket"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WaveEngine",
+    "category": "Game Development",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WaveEngine"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WavesCS",
+    "category": "Blockchain",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WavesCS"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WebActivatorEx",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WebActivatorEx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WebGrease",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WebGrease"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WebSocketSharp",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WebSocketSharp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Westwind.Globalization",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Westwind.Globalization"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Wexflow",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Wexflow"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WindowsBase",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WindowsBase"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Windows Workflow Foundation (WF)",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Windows Workflow Foundation (WF)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WinForms",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"System.Windows.Forms"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WinForms",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WinForms"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WireMock.Net",
+    "category": "Web",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WireMock.Net"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Workflow Core",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Workflow Core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Workflow Core",
+    "category": "Workflow Automation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WorkflowCore"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Worldpay.Sdk",
+    "category": "Payment Integration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Worldpay.Sdk"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WPF",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Microsoft.NET.Sdk.WindowsDesktop"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "WPF",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"WPF"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Wyam",
+    "category": "Documentation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Wyam"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Wyam",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Wyam"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Xamarin.Forms",
+    "category": "Graphical UI",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Xamarin.Forms"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "XmlSerializer",
+    "category": "Serialization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"XmlSerializer"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xunit.abstractions",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xunit.abstractions"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xunit.assert",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xunit.assert"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xUnit",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xunit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xUnit",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xUnit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xunit.console",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xunit.console"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xunit.core",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xunit.core"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xunit.execution.desktop",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xunit.execution.desktop"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xunit.runner.reporters.net452",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xunit.runner.reporters.net452"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "xunit.runner.utility.net452",
+    "category": "Testing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"xunit.runner.utility.net452"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "YARP",
+    "category": "Container Orchestration",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"YARP"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "YARP",
+    "category": "Microservices",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"YARP"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "YARP (Yet Another Reverse Proxy)",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Yarp.ReverseProxy"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "YARP (Yet Another Reverse Proxy)",
+    "category": "Service Mesh",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"YARP (Yet Another Reverse Proxy)"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ZedGraph",
+    "category": "Data Visualization",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ZedGraph"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ZeroFractal",
+    "category": "Static Site Generation",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ZeroFractal"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ZeroMQ",
+    "category": "Event Streaming",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ZeroMQ"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ZeroMQ",
+    "category": "Messaging",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"ZeroMQ"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Z.Expressions.Eval",
+    "category": "Data Processing",
+    "file_names": [
+      ".*.csproj"
+    ],
+    "content_patterns": [
+      "Reference Include=\"Z.Expressions.Eval"
+    ]
+  }
+]
