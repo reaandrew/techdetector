@@ -2,7 +2,7 @@
   {
     "type": "Cloud Service",
     "name": "Azure Core",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "java"
     ],
@@ -10,7 +10,8 @@
       "import com.azure.core"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -24,13 +25,14 @@
       "import com.azure.ai.language.questionanswering"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure AI Language Conversations",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -38,7 +40,8 @@
       "import com.azure.ai.language.conversations"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -52,7 +55,8 @@
       "import com.azure.resourcemanager.maintenance"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -66,7 +70,8 @@
       "import com.azure.resourcemanager.hdinsight"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -80,7 +85,8 @@
       "import com.azure.resourcemanager.hdinsight.containers"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -94,7 +100,8 @@
       "import com.azure.verticals.agrifood.farming"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -108,7 +115,8 @@
       "import com.azure.resourcemanager.agrifood"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -122,7 +130,8 @@
       "import com.azure.resourcemanager.security"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -136,7 +145,8 @@
       "import com.azure.resourcemanager.hybridkubernetes"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -150,7 +160,8 @@
       "import com.azure.resourcemanager.chaos"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -164,7 +175,8 @@
       "import com.azure.resourcemanager.orbital"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -178,7 +190,8 @@
       "import com.azure.resourcemanager.datadog"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -192,7 +205,8 @@
       "import com.azure.resourcemanager.billingbenefits"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -206,7 +220,8 @@
       "import com.azure.messaging.eventgrid"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -220,7 +235,8 @@
       "import com.azure.resourcemanager.eventgrid"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -234,7 +250,8 @@
       "import com.azure.resourcemanager.networkanalytics"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -248,7 +265,8 @@
       "import com.azure.communication.identity"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -262,7 +280,8 @@
       "import com.azure.resourcemanager.trafficmanager"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -276,7 +295,8 @@
       "import com.azure.resourcemanager.baremetalinfrastructure"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -290,7 +310,8 @@
       "import com.azure.resourcemanager.sphere"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -304,7 +325,8 @@
       "import com.azure.resourcemanager.servicenetworking"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -318,7 +340,8 @@
       "import com.azure.ai.textanalytics"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -332,13 +355,14 @@
       "import com.azure.resourcemanager.storagepool"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Identity",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -346,7 +370,8 @@
       "import com.azure.identity"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -360,7 +385,8 @@
       "import com.azure.ai.documentintelligence"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -374,7 +400,8 @@
       "import com.azure.resourcemanager.managedservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -388,7 +415,8 @@
       "import com.azure.resourcemanager.kubernetesconfiguration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -402,7 +430,8 @@
       "import com.azure.resourcemanager.extendedlocation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -416,13 +445,14 @@
       "import com.azure.resourcemanager.subscription"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure AI Inference",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -430,7 +460,8 @@
       "import com.azure.ai.inference"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -444,7 +475,8 @@
       "import com.azure.resourcemanager.fluidrelay"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -458,7 +490,8 @@
       "import com.azure.resourcemanager.automation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -472,7 +505,8 @@
       "import com.azure.resourcemanager.labservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -486,7 +520,8 @@
       "import com.azure.iot.modelsrepository"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -500,13 +535,14 @@
       "import com.azure.resourcemanager.quantum"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Quantum Jobs",
-    "category": null,
+    "category": "Quantum Computing",
     "file_extensions": [
       "java"
     ],
@@ -514,7 +550,8 @@
       "import com.azure.quantum.jobs"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -528,7 +565,8 @@
       "import com.azure.resourcemanager.providerhub"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -542,7 +580,8 @@
       "import com.azure.resourcemanager.mongocluster"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -556,7 +595,8 @@
       "import com.azure.ai.anomalydetector"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -570,7 +610,8 @@
       "import com.azure.resourcemanager.relay"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -584,7 +625,8 @@
       "import com.azure.resourcemanager.mobilenetwork"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -598,7 +640,8 @@
       "import com.azure.digitaltwins.core"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -612,7 +655,8 @@
       "import com.azure.resourcemanager.digitaltwins"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -626,7 +670,8 @@
       "import com.azure.resourcemanager.securityinsights"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -640,7 +685,8 @@
       "import com.azure.resourcemanager.storagesync"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -654,7 +700,8 @@
       "import com.azure.resourcemanager.datalakestore"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -668,7 +715,8 @@
       "import com.azure.resourcemanager.edgeorder"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -682,13 +730,14 @@
       "import com.azure.storage.blob.changefeed"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Storage Files Shares",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -696,13 +745,14 @@
       "import com.azure.storage.file.share"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Storage Queues",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -710,7 +760,8 @@
       "import com.azure.storage.queue"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -724,13 +775,14 @@
       "import com.azure.storage.file.datalake"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Storage Blobs",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -738,13 +790,14 @@
       "import com.azure.storage.blob"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Storage Blobs Batch",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -752,7 +805,8 @@
       "import com.azure.storage.blob.batch"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -766,13 +820,14 @@
       "import com.azure.maps.timezone"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Maps Weather",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -780,13 +835,14 @@
       "import com.azure.maps.weather"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Maps Geolocation",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -794,7 +850,8 @@
       "import com.azure.maps.geolocation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -808,7 +865,8 @@
       "import com.azure.maps.render"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -822,13 +880,14 @@
       "import com.azure.maps.route"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Maps Search",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -836,7 +895,8 @@
       "import com.azure.maps.search"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -850,7 +910,8 @@
       "import com.azure.resourcemanager.recoveryservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -864,7 +925,8 @@
       "import com.azure.resourcemanager.recoveryservicessiterecovery"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -878,7 +940,8 @@
       "import com.azure.resourcemanager.recoveryservicesdatareplication"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -892,7 +955,8 @@
       "import com.azure.resourcemanager.cosmosdb"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -906,7 +970,8 @@
       "import com.azure.cosmos"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -920,7 +985,8 @@
       "import com.azure.resourcemanager.compute"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -934,7 +1000,8 @@
       "import com.azure.resourcemanager.sql"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -948,7 +1015,8 @@
       "import com.azure.resourcemanager.redis"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -962,7 +1030,8 @@
       "import com.azure.resourcemanager.servicebus"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -976,7 +1045,8 @@
       "import com.azure.messaging.servicebus"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -990,7 +1060,8 @@
       "import com.azure.resourcemanager.network"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1004,7 +1075,8 @@
       "import com.azure.resourcemanager.resources"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1018,7 +1090,8 @@
       "import com.azure.resourcemanager.monitor"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1032,7 +1105,8 @@
       "import com.azure.resourcemanager.loganalytics"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1046,7 +1120,8 @@
       "import com.azure.resourcemanager.policyinsights"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1060,7 +1135,8 @@
       "import com.azure.resourcemanager.kusto"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1074,7 +1150,8 @@
       "import com.azure.resourcemanager.redisenterprise"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1088,7 +1165,8 @@
       "import com.azure.resourcemanager.sqlvirtualmachine"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1102,7 +1180,8 @@
       "import com.azure.resourcemanager.applicationinsights"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1116,7 +1195,8 @@
       "import com.azure.resourcemanager.storageimportexport"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1130,7 +1210,8 @@
       "import com.azure.resourcemanager.datamigration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1144,7 +1225,8 @@
       "import com.azure.resourcemanager.datafactory"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1158,7 +1240,8 @@
       "import com.azure.resourcemanager.synapse"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1172,7 +1255,8 @@
       "import com.azure.analytics.synapse.artifacts"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1186,7 +1270,8 @@
       "import com.azure.analytics.synapse.spark"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1200,7 +1285,8 @@
       "import com.azure.analytics.synapse.monitoring"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1214,7 +1300,8 @@
       "import com.azure.resourcemanager.devtestlabs"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1228,7 +1315,8 @@
       "import com.azure.resourcemanager.devopsinfrastructure"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1242,7 +1330,8 @@
       "import com.azure.resourcemanager.servicefabricmanagedclusters"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1256,13 +1345,14 @@
       "import com.azure.resourcemanager.healthcareapis"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Data Tables",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -1270,7 +1360,8 @@
       "import com.azure.data.tables"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1284,7 +1375,8 @@
       "import com.azure.resourcemanager.elasticsan"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1298,7 +1390,8 @@
       "import com.azure.resourcemanager.containerinstance"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1312,7 +1405,8 @@
       "import com.azure.resourcemanager.graphservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1326,7 +1420,8 @@
       "import com.azure.resourcemanager.netapp"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1340,7 +1435,8 @@
       "import com.azure.resourcemanager.workloads"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1354,7 +1450,8 @@
       "import com.azure.health.insights.cancerprofiling"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1368,7 +1465,8 @@
       "import com.azure.health.insights.radiologyinsights"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1382,7 +1480,8 @@
       "import com.azure.health.insights.clinicalmatching"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1396,7 +1495,8 @@
       "import com.azure.resourcemanager.dynatrace"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1410,7 +1510,8 @@
       "import com.azure.resourcemanager.billing"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1424,7 +1525,8 @@
       "import com.azure.iot.deviceupdate"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1438,13 +1540,14 @@
       "import com.azure.resourcemanager.authorization"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure AI Translation Text",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -1452,13 +1555,14 @@
       "import com.azure.ai.translation.text"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure AI Translation Document",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -1466,7 +1570,8 @@
       "import com.azure.ai.translation.document"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1480,7 +1585,8 @@
       "import com.azure.resourcemanager.networkcloud"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1494,7 +1600,8 @@
       "import com.azure.resourcemanager.alertsmanagement"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1508,7 +1615,8 @@
       "import com.azure.messaging.webpubsubservice"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1522,7 +1630,8 @@
       "import com.azure.messaging.webpubsub.client"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1536,7 +1645,8 @@
       "import com.azure.resourcemanager.webpubsub"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1550,7 +1660,8 @@
       "import com.azure.resourcemanager.notificationhubs"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1564,7 +1675,8 @@
       "import com.azure.resourcemanager.operationsmanagement"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1578,7 +1690,8 @@
       "import com.azure.resourcemanager.education"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1592,7 +1705,8 @@
       "import com.azure.resourcemanager.appconfiguration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1606,7 +1720,8 @@
       "import com.azure.resourcemanager.desktopvirtualization"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1620,7 +1735,8 @@
       "import com.azure.resourcemanager.largeinstance"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1634,13 +1750,14 @@
       "import com.azure.resourcemanager.attestation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Security Attestation",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -1648,7 +1765,8 @@
       "import com.azure.security.attestation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1662,7 +1780,8 @@
       "import com.azure.resourcemanager.costmanagement"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1676,7 +1795,8 @@
       "import com.azure.resourcemanager.databricks"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1690,7 +1810,8 @@
       "import com.azure.resourcemanager.storageactions"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1704,7 +1825,8 @@
       "import com.azure.resourcemanager.astro"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1718,7 +1840,8 @@
       "import com.azure.resourcemanager.resourceconnector"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1732,7 +1855,8 @@
       "import com.azure.resourcemanager.appplatform"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1746,7 +1870,8 @@
       "import com.azure.resourcemanager.newrelicobservability"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1760,7 +1885,8 @@
       "import com.azure.resourcemanager.informaticadatamanagement"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1774,7 +1900,8 @@
       "import com.azure.resourcemanager.defendereasm"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1788,7 +1915,8 @@
       "import com.azure.resourcemanager.redhatopenshift"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1802,13 +1930,14 @@
       "import com.azure.resourcemanager.logic"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Health Deidentification",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "java"
     ],
@@ -1816,7 +1945,8 @@
       "import com.azure.health.deidentification"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1830,7 +1960,8 @@
       "import com.azure.resourcemanager.healthdataaiservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1844,7 +1975,8 @@
       "import com.azure.resourcemanager.privatedns"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1858,7 +1990,8 @@
       "import com.azure.resourcemanager.support"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1872,7 +2005,8 @@
       "import com.azure.resourcemanager.powerbidedicated"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1886,7 +2020,8 @@
       "import com.azure.resourcemanager.guestconfiguration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1900,7 +2035,8 @@
       "import com.azure.resourcemanager.nginx"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1914,7 +2050,8 @@
       "import com.azure.resourcemanager.sqlvirtualmachine"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1928,7 +2065,8 @@
       "import com.azure.resourcemanager.iotcentral"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1942,7 +2080,8 @@
       "import com.azure.resourcemanager.storagecache"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1956,7 +2095,8 @@
       "import com.azure.cognitiveservices.formrecognizer"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1970,7 +2110,8 @@
       "import com.azure.resourcemanager.cognitiveservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1984,7 +2125,8 @@
       "import com.azure.resourcemanager.keyvault"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -1998,7 +2140,8 @@
       "import com.azure.security.keyvault.certificates"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2012,7 +2155,8 @@
       "import com.azure.security.keyvault.administration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2026,7 +2170,8 @@
       "import com.azure.security.keyvault.secrets"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2040,7 +2185,8 @@
       "import com.azure.security.keyvault.keys"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2054,7 +2200,8 @@
       "import com.azure.ai.openai"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2068,7 +2215,8 @@
       "import com.azure.resourcemanager.computefleet"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2082,7 +2230,8 @@
       "import com.azure.resourcemanager.postgresqlflexibleserver"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2096,7 +2245,8 @@
       "import com.azure.resourcemanager.databoxedge"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2110,7 +2260,8 @@
       "import com.azure.resourcemanager.advisor"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2124,7 +2275,8 @@
       "import com.azure.resourcemanager.apicenter"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2138,7 +2290,8 @@
       "import com.azure.resourcemanager.qumulo"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2152,7 +2305,8 @@
       "import com.azure.resourcemanager.migrationdiscoverysap"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2166,7 +2320,8 @@
       "import com.azure.resourcemanager.healthbot"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2180,7 +2335,8 @@
       "import com.azure.resourcemanager.dataprotection"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2194,7 +2350,8 @@
       "import com.azure.resourcemanager.marketplaceordering"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2208,7 +2365,8 @@
       "import com.azure.resourcemanager.databox"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2222,7 +2380,8 @@
       "import com.azure.resourcemanager.computeschedule"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2236,7 +2395,8 @@
       "import com.azure.resourcemanager.oracledatabase"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2250,7 +2410,8 @@
       "import com.azure.resourcemanager.networkfunction"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2264,7 +2425,8 @@
       "import com.azure.resourcemanager.azurearcdata"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2278,7 +2440,8 @@
       "import com.azure.analytics.defender.easm"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2292,7 +2455,8 @@
       "import com.azure.resourcemanager.hybridconnectivity"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2306,7 +2470,8 @@
       "import com.azure.resourcemanager.imagebuilder"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2320,7 +2485,8 @@
       "import com.azure.resourcemanager.servicefabricmanagedclusters"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   },
   {
@@ -2334,7 +2500,8 @@
       "import com.azure.resourcemanager.healthcareapis"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "javascript"
     }
   }
 ]

@@ -2,7 +2,7 @@
   {
     "type": "Cloud Service",
     "name": "Amazon Access Analyzer",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -10,13 +10,14 @@
       "github.com/aws/aws-sdk-go-v2/service/accessanalyzer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Account",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -24,13 +25,14 @@
       "github.com/aws/aws-sdk-go-v2/service/account"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Certificate Manager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -38,13 +40,14 @@
       "github.com/aws/aws-sdk-go-v2/service/acm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ACM PCA",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -52,7 +55,8 @@
       "github.com/aws/aws-sdk-go-v2/service/acmpca"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -66,13 +70,14 @@
       "github.com/aws/aws-sdk-go-v2/service/amp"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -80,13 +85,14 @@
       "github.com/aws/aws-sdk-go-v2/service/amplify"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify Backend",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -94,13 +100,14 @@
       "github.com/aws/aws-sdk-go-v2/service/amplifybackend"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify UI Builder",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -108,13 +115,14 @@
       "github.com/aws/aws-sdk-go-v2/service/amplifyuibuilder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -122,13 +130,14 @@
       "github.com/aws/aws-sdk-go-v2/service/apigateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway Management API",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -136,13 +145,14 @@
       "github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway V2",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -150,13 +160,14 @@
       "github.com/aws/aws-sdk-go-v2/service/apigatewayv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppConfig",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -164,13 +175,14 @@
       "github.com/aws/aws-sdk-go-v2/service/appconfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppConfig Data",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -178,13 +190,14 @@
       "github.com/aws/aws-sdk-go-v2/service/appconfigdata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppFabric",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -192,13 +205,14 @@
       "github.com/aws/aws-sdk-go-v2/service/appfabric"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppFlow",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -206,13 +220,14 @@
       "github.com/aws/aws-sdk-go-v2/service/appflow"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppIntegrations Service",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -220,13 +235,14 @@
       "github.com/aws/aws-sdk-go-v2/service/appintegrations"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Auto Scaling",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -234,13 +250,14 @@
       "github.com/aws/aws-sdk-go-v2/service/applicationautoscaling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Cost Profiler",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -248,13 +265,14 @@
       "github.com/aws/aws-sdk-go-v2/service/applicationcostprofiler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Discovery Service",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -262,13 +280,14 @@
       "github.com/aws/aws-sdk-go-v2/service/applicationdiscoveryservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Insights",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -276,13 +295,14 @@
       "github.com/aws/aws-sdk-go-v2/service/applicationinsights"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Signals",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -290,13 +310,14 @@
       "github.com/aws/aws-sdk-go-v2/service/applicationsignals"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppMesh",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -304,13 +325,14 @@
       "github.com/aws/aws-sdk-go-v2/service/appmesh"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppRunner",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -318,13 +340,14 @@
       "github.com/aws/aws-sdk-go-v2/service/apprunner"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppStream",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -332,13 +355,14 @@
       "github.com/aws/aws-sdk-go-v2/service/appstream"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppSync",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -346,13 +370,14 @@
       "github.com/aws/aws-sdk-go-v2/service/appsync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppTest",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -360,13 +385,14 @@
       "github.com/aws/aws-sdk-go-v2/service/apptest"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ARC Zonal Shift",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "go"
     ],
@@ -374,13 +400,14 @@
       "github.com/aws/aws-sdk-go-v2/service/arczonalshift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Artifact",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -388,13 +415,14 @@
       "github.com/aws/aws-sdk-go-v2/service/artifact"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Athena",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -402,13 +430,14 @@
       "github.com/aws/aws-sdk-go-v2/service/athena"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Audit Manager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -416,13 +445,14 @@
       "github.com/aws/aws-sdk-go-v2/service/auditmanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Auto Scaling",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -430,13 +460,14 @@
       "github.com/aws/aws-sdk-go-v2/service/autoscaling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Auto Scaling Plans",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -444,13 +475,14 @@
       "github.com/aws/aws-sdk-go-v2/service/autoscalingplans"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon B2bi",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -458,13 +490,14 @@
       "github.com/aws/aws-sdk-go-v2/service/b2bi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Backup",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -472,13 +505,14 @@
       "github.com/aws/aws-sdk-go-v2/service/backup"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Backup Gateway",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -486,13 +520,14 @@
       "github.com/aws/aws-sdk-go-v2/service/backupgateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Batch",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -500,13 +535,14 @@
       "github.com/aws/aws-sdk-go-v2/service/batch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon BCM Data Exports",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -514,13 +550,14 @@
       "github.com/aws/aws-sdk-go-v2/service/bcmdataexports"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -528,13 +565,14 @@
       "github.com/aws/aws-sdk-go-v2/service/bedrock"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock Agent",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -542,13 +580,14 @@
       "github.com/aws/aws-sdk-go-v2/service/bedrockagent"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock Agent Runtime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -556,13 +595,14 @@
       "github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock Runtime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -570,13 +610,14 @@
       "github.com/aws/aws-sdk-go-v2/service/bedrockruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Billing Conductor",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -584,13 +625,14 @@
       "github.com/aws/aws-sdk-go-v2/service/billingconductor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Braket",
-    "category": null,
+    "category": "Quantum Computing",
     "file_extensions": [
       "go"
     ],
@@ -598,13 +640,14 @@
       "github.com/aws/aws-sdk-go-v2/service/braket"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Budgets",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -612,13 +655,14 @@
       "github.com/aws/aws-sdk-go-v2/service/budgets"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chatbot",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -626,13 +670,14 @@
       "github.com/aws/aws-sdk-go-v2/service/chatbot"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -640,13 +685,14 @@
       "github.com/aws/aws-sdk-go-v2/service/chime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Identity",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -654,13 +700,14 @@
       "github.com/aws/aws-sdk-go-v2/service/chimesdkidentity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Media Pipelines",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -668,13 +715,14 @@
       "github.com/aws/aws-sdk-go-v2/service/chimesdkmediapipelines"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Meetings",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -682,13 +730,14 @@
       "github.com/aws/aws-sdk-go-v2/service/chimesdkmeetings"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Messaging",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -696,13 +745,14 @@
       "github.com/aws/aws-sdk-go-v2/service/chimesdkmessaging"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Voice",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -710,13 +760,14 @@
       "github.com/aws/aws-sdk-go-v2/service/chimesdkvoice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CleanRooms",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -724,13 +775,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cleanrooms"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CleanRooms ML",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -738,13 +790,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cleanroomsml"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Cloud9",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -752,13 +805,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloud9"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudControlApi",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -766,13 +820,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudcontrol"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudDirectory",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -780,13 +835,14 @@
       "github.com/aws/aws-sdk-go-v2/service/clouddirectory"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudFormation",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -794,13 +850,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudformation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudFront",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -808,13 +865,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudfront"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudFront KeyValue Store",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -822,13 +880,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudfrontkeyvaluestore"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudHSM",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -836,13 +895,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudhsm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudHSM V2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -850,13 +910,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudhsmv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudSearch",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "go"
     ],
@@ -864,13 +925,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudsearch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudSearchDomain",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "go"
     ],
@@ -878,13 +940,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudsearchdomain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudTrail",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -892,13 +955,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudtrail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudTrail Data",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -906,13 +970,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudtraildata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -920,13 +985,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudwatch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Events",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -934,13 +1000,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudwatchevents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Logs",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -948,13 +1015,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeArtifact",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -962,13 +1030,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codeartifact"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeBuild",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -976,13 +1045,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codebuild"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeCatalyst",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -990,13 +1060,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codecatalyst"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeCommit",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1004,13 +1075,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codecommit"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeConnections",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1018,13 +1090,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codeconnections"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeDeploy",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1032,13 +1105,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codedeploy"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Profiler",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1046,13 +1120,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codeguruprofiler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Reviewer",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1060,13 +1135,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codegurureviewer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Security",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -1074,13 +1150,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codegurusecurity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodePipeline",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1088,13 +1165,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codepipeline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeStarconnections",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1102,13 +1180,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codestarconnections"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeStarNotifications",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1116,13 +1195,14 @@
       "github.com/aws/aws-sdk-go-v2/service/codestarnotifications"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoIdentity",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1130,13 +1210,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cognitoidentity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoIdentityProvider",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1144,13 +1225,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoSync",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1158,13 +1240,14 @@
       "github.com/aws/aws-sdk-go-v2/service/cognitosync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Comprehend",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -1172,13 +1255,14 @@
       "github.com/aws/aws-sdk-go-v2/service/comprehend"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Comprehend Medical",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "go"
     ],
@@ -1186,13 +1270,14 @@
       "github.com/aws/aws-sdk-go-v2/service/comprehendmedical"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Compute Optimizer",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -1200,13 +1285,14 @@
       "github.com/aws/aws-sdk-go-v2/service/computeoptimizer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ConfigService",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -1214,13 +1300,14 @@
       "github.com/aws/aws-sdk-go-v2/service/configservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -1228,13 +1315,14 @@
       "github.com/aws/aws-sdk-go-v2/service/connect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Campaign Service",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -1242,13 +1330,14 @@
       "github.com/aws/aws-sdk-go-v2/service/connectcampaigns"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Cases",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -1256,13 +1345,14 @@
       "github.com/aws/aws-sdk-go-v2/service/connectcases"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Contact Lens",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -1270,13 +1360,14 @@
       "github.com/aws/aws-sdk-go-v2/service/connectcontactlens"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Participant",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -1284,13 +1375,14 @@
       "github.com/aws/aws-sdk-go-v2/service/connectparticipant"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Control Catalog",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -1298,13 +1390,14 @@
       "github.com/aws/aws-sdk-go-v2/service/controlcatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Control Tower",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -1312,13 +1405,14 @@
       "github.com/aws/aws-sdk-go-v2/service/controltower"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Cost and Usage Report",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -1326,13 +1420,14 @@
       "github.com/aws/aws-sdk-go-v2/service/costandusagereportservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CostExplorer",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -1340,13 +1435,14 @@
       "github.com/aws/aws-sdk-go-v2/service/costexplorer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Cost Optimization Hub",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -1354,13 +1450,14 @@
       "github.com/aws/aws-sdk-go-v2/service/costoptimizationhub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Customer Profiles",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1368,13 +1465,14 @@
       "github.com/aws/aws-sdk-go-v2/service/customerprofiles"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Database Migration Service",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -1382,13 +1480,14 @@
       "github.com/aws/aws-sdk-go-v2/service/databasemigrationservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glue DataBrew",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1396,13 +1495,14 @@
       "github.com/aws/aws-sdk-go-v2/service/databrew"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataExchange",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -1410,13 +1510,14 @@
       "github.com/aws/aws-sdk-go-v2/service/dataexchange"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataPipeline",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1424,13 +1525,14 @@
       "github.com/aws/aws-sdk-go-v2/service/datapipeline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataSync",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -1438,13 +1540,14 @@
       "github.com/aws/aws-sdk-go-v2/service/datasync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataZone",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1452,13 +1555,14 @@
       "github.com/aws/aws-sdk-go-v2/service/datazone"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DAX",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1466,13 +1570,14 @@
       "github.com/aws/aws-sdk-go-v2/service/dax"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Deadline",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -1480,13 +1585,14 @@
       "github.com/aws/aws-sdk-go-v2/service/deadline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Detective",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -1494,13 +1600,14 @@
       "github.com/aws/aws-sdk-go-v2/service/detective"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DeviceFarm",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1508,13 +1615,14 @@
       "github.com/aws/aws-sdk-go-v2/service/devicefarm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DevOps Guru",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -1522,13 +1630,14 @@
       "github.com/aws/aws-sdk-go-v2/service/devopsguru"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DirectConnect",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -1536,13 +1645,14 @@
       "github.com/aws/aws-sdk-go-v2/service/directconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DirectoryService",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1550,13 +1660,14 @@
       "github.com/aws/aws-sdk-go-v2/service/directoryservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DirectoryServiceData",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1564,13 +1675,14 @@
       "github.com/aws/aws-sdk-go-v2/service/directoryservicedata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DLM",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -1578,13 +1690,14 @@
       "github.com/aws/aws-sdk-go-v2/service/dlm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DocDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1592,13 +1705,14 @@
       "github.com/aws/aws-sdk-go-v2/service/docdb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DocDB Elastic",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1606,13 +1720,14 @@
       "github.com/aws/aws-sdk-go-v2/service/docdbelastic"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DRS",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -1620,13 +1735,14 @@
       "github.com/aws/aws-sdk-go-v2/service/drs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DynamoDBv2",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1634,7 +1750,8 @@
       "github.com/aws/aws-sdk-go-v2/service/dynamodb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1648,13 +1765,14 @@
       "github.com/aws/aws-sdk-go-v2/service/dynamodbstreams"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EBS",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -1662,13 +1780,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ebs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EC2",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1676,13 +1795,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ec2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EC2 Instance Connect",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1690,13 +1810,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ec2instanceconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECR",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1704,13 +1825,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ecr"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECR Public",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1718,13 +1840,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ecrpublic"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECS",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1732,13 +1855,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ecs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticFileSystem",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -1746,13 +1870,14 @@
       "github.com/aws/aws-sdk-go-v2/service/efs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EKS",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1760,13 +1885,14 @@
       "github.com/aws/aws-sdk-go-v2/service/eks"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EKS Auth",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1774,13 +1900,14 @@
       "github.com/aws/aws-sdk-go-v2/service/eksauth"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElastiCache",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1788,13 +1915,14 @@
       "github.com/aws/aws-sdk-go-v2/service/elasticache"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticBeanstalk",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1802,13 +1930,14 @@
       "github.com/aws/aws-sdk-go-v2/service/elasticbeanstalk"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticInference",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1816,13 +1945,14 @@
       "github.com/aws/aws-sdk-go-v2/service/elasticinference"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticLoadBalancing",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -1830,13 +1960,14 @@
       "github.com/aws/aws-sdk-go-v2/service/elasticloadbalancing"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticLoadBalancingV2",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -1844,13 +1975,14 @@
       "github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Elasticsearch",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "go"
     ],
@@ -1858,13 +1990,14 @@
       "github.com/aws/aws-sdk-go-v2/service/elasticsearchservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticTranscoder",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -1872,13 +2005,14 @@
       "github.com/aws/aws-sdk-go-v2/service/elastictranscoder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticMapReduce",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1886,13 +2020,14 @@
       "github.com/aws/aws-sdk-go-v2/service/emr"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EMRContainers",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1900,13 +2035,14 @@
       "github.com/aws/aws-sdk-go-v2/service/emrcontainers"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EMRServerless",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1914,13 +2050,14 @@
       "github.com/aws/aws-sdk-go-v2/service/emrserverless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Entity Resolution",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1928,13 +2065,14 @@
       "github.com/aws/aws-sdk-go-v2/service/entityresolution"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EventBridge",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -1942,13 +2080,14 @@
       "github.com/aws/aws-sdk-go-v2/service/eventbridge"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Evidently",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -1956,13 +2095,14 @@
       "github.com/aws/aws-sdk-go-v2/service/evidently"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Finspace",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1970,13 +2110,14 @@
       "github.com/aws/aws-sdk-go-v2/service/finspace"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FinSpace Data",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1984,13 +2125,14 @@
       "github.com/aws/aws-sdk-go-v2/service/finspacedata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisFirehose",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1998,13 +2140,14 @@
       "github.com/aws/aws-sdk-go-v2/service/firehose"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FIS",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2012,13 +2155,14 @@
       "github.com/aws/aws-sdk-go-v2/service/fis"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FMS",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2026,13 +2170,14 @@
       "github.com/aws/aws-sdk-go-v2/service/fms"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ForecastService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2040,13 +2185,14 @@
       "github.com/aws/aws-sdk-go-v2/service/forecast"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ForecastQueryService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2054,13 +2200,14 @@
       "github.com/aws/aws-sdk-go-v2/service/forecastquery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Fraud Detector",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2068,13 +2215,14 @@
       "github.com/aws/aws-sdk-go-v2/service/frauddetector"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FreeTier",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -2082,13 +2230,14 @@
       "github.com/aws/aws-sdk-go-v2/service/freetier"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FSx",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -2096,13 +2245,14 @@
       "github.com/aws/aws-sdk-go-v2/service/fsx"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GameLift",
-    "category": null,
+    "category": "Game Development",
     "file_extensions": [
       "go"
     ],
@@ -2110,13 +2260,14 @@
       "github.com/aws/aws-sdk-go-v2/service/gamelift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LocationService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2124,13 +2275,14 @@
       "github.com/aws/aws-sdk-go-v2/service/geomaps"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LocationService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2138,13 +2290,14 @@
       "github.com/aws/aws-sdk-go-v2/service/geoplaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LocationService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2152,13 +2305,14 @@
       "github.com/aws/aws-sdk-go-v2/service/georoutes"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glacier",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -2166,13 +2320,14 @@
       "github.com/aws/aws-sdk-go-v2/service/glacier"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GlobalAccelerator",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -2180,13 +2335,14 @@
       "github.com/aws/aws-sdk-go-v2/service/globalaccelerator"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glue",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -2194,13 +2350,14 @@
       "github.com/aws/aws-sdk-go-v2/service/glue"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedGrafana",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -2208,13 +2365,14 @@
       "github.com/aws/aws-sdk-go-v2/service/grafana"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Greengrass",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2222,13 +2380,14 @@
       "github.com/aws/aws-sdk-go-v2/service/greengrass"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Greengrass V2",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2236,13 +2395,14 @@
       "github.com/aws/aws-sdk-go-v2/service/greengrassv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GroundStation",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "go"
     ],
@@ -2250,13 +2410,14 @@
       "github.com/aws/aws-sdk-go-v2/service/groundstation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GuardDuty",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2264,13 +2425,14 @@
       "github.com/aws/aws-sdk-go-v2/service/guardduty"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AWS Health",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -2278,13 +2440,14 @@
       "github.com/aws/aws-sdk-go-v2/service/health"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon HealthLake",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "go"
     ],
@@ -2292,13 +2455,14 @@
       "github.com/aws/aws-sdk-go-v2/service/healthlake"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Identity Management",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -2306,13 +2470,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iam"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IdentityStore",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -2320,13 +2485,14 @@
       "github.com/aws/aws-sdk-go-v2/service/identitystore"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Imagebuilder",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -2334,13 +2500,14 @@
       "github.com/aws/aws-sdk-go-v2/service/imagebuilder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Inspector",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2348,13 +2515,14 @@
       "github.com/aws/aws-sdk-go-v2/service/inspector"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Inspector2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2362,13 +2530,14 @@
       "github.com/aws/aws-sdk-go-v2/service/inspector2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon InspectorScan",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2376,7 +2545,8 @@
       "github.com/aws/aws-sdk-go-v2/service/inspectorscan"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2390,13 +2560,14 @@
       "github.com/aws/aws-sdk-go-v2/service/internal"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon InternetMonitor",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -2404,13 +2575,14 @@
       "github.com/aws/aws-sdk-go-v2/service/internetmonitor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2418,13 +2590,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iot"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT1ClickDevicesService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2432,13 +2605,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iot1clickdevicesservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT1ClickProjects",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2446,13 +2620,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iot1clickprojects"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTAnalytics",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2460,13 +2635,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotanalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IotData",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2474,13 +2650,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotdataplane"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTDeviceAdvisor",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2488,13 +2665,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotdeviceadvisor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTEvents",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2502,13 +2680,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotevents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTEventsData",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2516,13 +2695,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ioteventsdata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTFleetHub",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2530,13 +2710,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotfleethub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTFleetWise",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2544,13 +2725,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotfleetwise"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTJobsDataPlane",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2558,13 +2740,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotjobsdataplane"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTSecureTunneling",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2572,13 +2755,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotsecuretunneling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTSiteWise",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2586,13 +2770,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotsitewise"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTThingsGraph",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2600,13 +2785,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotthingsgraph"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTTwinMaker",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2614,13 +2800,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iottwinmaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTWireless",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2628,13 +2815,14 @@
       "github.com/aws/aws-sdk-go-v2/service/iotwireless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IVS",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2642,13 +2830,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ivs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Ivschat",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2656,13 +2845,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ivschat"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IVSRealTime",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2670,13 +2860,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ivsrealtime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kafka",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2684,13 +2875,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kafka"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KafkaConnect",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2698,13 +2890,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kafkaconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kendra",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "go"
     ],
@@ -2712,13 +2905,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kendra"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KendraRanking",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "go"
     ],
@@ -2726,13 +2920,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kendraranking"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Keyspaces",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -2740,13 +2935,14 @@
       "github.com/aws/aws-sdk-go-v2/service/keyspaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kinesis",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -2754,13 +2950,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kinesis"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisAnalytics",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -2768,13 +2965,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kinesisanalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisAnalyticsV2",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -2782,13 +2980,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kinesisanalyticsv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideo",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2796,13 +2995,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kinesisvideo"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoArchivedMedia",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2810,13 +3010,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kinesisvideoarchivedmedia"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoMedia",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2824,13 +3025,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kinesisvideomedia"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoSignalingChannels",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2838,13 +3040,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kinesisvideosignaling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoWebRTCStorage",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2852,7 +3055,8 @@
       "github.com/aws/aws-sdk-go-v2/service/kinesisvideowebrtcstorage"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2866,13 +3070,14 @@
       "github.com/aws/aws-sdk-go-v2/service/kms"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LakeFormation",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -2880,13 +3085,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lakeformation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lambda",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -2894,13 +3100,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lambda"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LaunchWizard",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -2908,13 +3115,14 @@
       "github.com/aws/aws-sdk-go-v2/service/launchwizard"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lex ModelBuildingService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2922,13 +3130,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lexmodelbuildingservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LexModelsV2",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2936,7 +3145,8 @@
       "github.com/aws/aws-sdk-go-v2/service/lexmodelsv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2950,13 +3160,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lexruntimeservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LexRuntimeV2",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2964,13 +3175,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lexruntimev2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManager",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -2978,13 +3190,14 @@
       "github.com/aws/aws-sdk-go-v2/service/licensemanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManagerLinuxSubscriptions",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -2992,13 +3205,14 @@
       "github.com/aws/aws-sdk-go-v2/service/licensemanagerlinuxsubscriptions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManagerUserSubscriptions",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -3006,13 +3220,14 @@
       "github.com/aws/aws-sdk-go-v2/service/licensemanagerusersubscriptions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lightsail",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -3020,13 +3235,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lightsail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LocationService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -3034,13 +3250,14 @@
       "github.com/aws/aws-sdk-go-v2/service/location"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutEquipment",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -3048,13 +3265,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lookoutequipment"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutMetrics",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -3062,13 +3280,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lookoutmetrics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutforVision",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -3076,13 +3295,14 @@
       "github.com/aws/aws-sdk-go-v2/service/lookoutvision"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MainframeModernization",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -3090,13 +3310,14 @@
       "github.com/aws/aws-sdk-go-v2/service/m2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MachineLearning",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -3104,13 +3325,14 @@
       "github.com/aws/aws-sdk-go-v2/service/machinelearning"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Macie2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -3118,13 +3340,14 @@
       "github.com/aws/aws-sdk-go-v2/service/macie2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MailManager",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -3132,13 +3355,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mailmanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedBlockchain",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "go"
     ],
@@ -3146,13 +3370,14 @@
       "github.com/aws/aws-sdk-go-v2/service/managedblockchain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedBlockchainQuery",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "go"
     ],
@@ -3160,13 +3385,14 @@
       "github.com/aws/aws-sdk-go-v2/service/managedblockchainquery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceAgreement",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "go"
     ],
@@ -3174,13 +3400,14 @@
       "github.com/aws/aws-sdk-go-v2/service/marketplaceagreement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceCatalog",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "go"
     ],
@@ -3188,7 +3415,8 @@
       "github.com/aws/aws-sdk-go-v2/service/marketplacecatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -3202,13 +3430,14 @@
       "github.com/aws/aws-sdk-go-v2/service/marketplacecommerceanalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceDeployment",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "go"
     ],
@@ -3216,13 +3445,14 @@
       "github.com/aws/aws-sdk-go-v2/service/marketplacedeployment"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceEntitlementService",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "go"
     ],
@@ -3230,7 +3460,8 @@
       "github.com/aws/aws-sdk-go-v2/service/marketplaceentitlementservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -3244,13 +3475,14 @@
       "github.com/aws/aws-sdk-go-v2/service/marketplacemetering"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceReporting",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "go"
     ],
@@ -3258,13 +3490,14 @@
       "github.com/aws/aws-sdk-go-v2/service/marketplacereporting"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaConnect",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3272,13 +3505,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mediaconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaConvert",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3286,13 +3520,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mediaconvert"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaLive",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3300,13 +3535,14 @@
       "github.com/aws/aws-sdk-go-v2/service/medialive"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackage",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3314,13 +3550,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mediapackage"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackageV2",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3328,13 +3565,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mediapackagev2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackageVod",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3342,13 +3580,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mediapackagevod"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaStore",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3356,13 +3595,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mediastore"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaStoreData",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3370,13 +3610,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mediastoredata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaTailor",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -3384,13 +3625,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mediatailor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MedicalImaging",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "go"
     ],
@@ -3398,13 +3640,14 @@
       "github.com/aws/aws-sdk-go-v2/service/medicalimaging"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MemoryDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -3412,13 +3655,14 @@
       "github.com/aws/aws-sdk-go-v2/service/memorydb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Mgn",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -3426,13 +3670,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mgn"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHub",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -3440,13 +3685,14 @@
       "github.com/aws/aws-sdk-go-v2/service/migrationhub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubConfig",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -3454,13 +3700,14 @@
       "github.com/aws/aws-sdk-go-v2/service/migrationhubconfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubOrchestrator",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -3468,13 +3715,14 @@
       "github.com/aws/aws-sdk-go-v2/service/migrationhuborchestrator"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubRefactorSpaces",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -3482,13 +3730,14 @@
       "github.com/aws/aws-sdk-go-v2/service/migrationhubrefactorspaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubStrategyRecommendations",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -3496,13 +3745,14 @@
       "github.com/aws/aws-sdk-go-v2/service/migrationhubstrategy"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MQ",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -3510,13 +3760,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mq"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MTurk",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -3524,13 +3775,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mturk"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MWAA",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -3538,13 +3790,14 @@
       "github.com/aws/aws-sdk-go-v2/service/mwaa"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Neptune",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -3552,13 +3805,14 @@
       "github.com/aws/aws-sdk-go-v2/service/neptune"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Neptunedata",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -3566,13 +3820,14 @@
       "github.com/aws/aws-sdk-go-v2/service/neptunedata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NeptuneGraph",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -3580,13 +3835,14 @@
       "github.com/aws/aws-sdk-go-v2/service/neptunegraph"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkFirewall",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -3594,13 +3850,14 @@
       "github.com/aws/aws-sdk-go-v2/service/networkfirewall"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkManager",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -3608,13 +3865,14 @@
       "github.com/aws/aws-sdk-go-v2/service/networkmanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkMonitor",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -3622,13 +3880,14 @@
       "github.com/aws/aws-sdk-go-v2/service/networkmonitor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OAM",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -3636,13 +3895,14 @@
       "github.com/aws/aws-sdk-go-v2/service/oam"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Omics",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "go"
     ],
@@ -3650,13 +3910,14 @@
       "github.com/aws/aws-sdk-go-v2/service/omics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpenSearchService",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "go"
     ],
@@ -3664,13 +3925,14 @@
       "github.com/aws/aws-sdk-go-v2/service/opensearch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpenSearchServerless",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "go"
     ],
@@ -3678,13 +3940,14 @@
       "github.com/aws/aws-sdk-go-v2/service/opensearchserverless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpsWorks",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -3692,13 +3955,14 @@
       "github.com/aws/aws-sdk-go-v2/service/opsworks"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpsWorksCM",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -3706,13 +3970,14 @@
       "github.com/aws/aws-sdk-go-v2/service/opsworkscm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Organizations",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -3720,13 +3985,14 @@
       "github.com/aws/aws-sdk-go-v2/service/organizations"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OSIS",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -3734,13 +4000,14 @@
       "github.com/aws/aws-sdk-go-v2/service/osis"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Outposts",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "go"
     ],
@@ -3748,13 +4015,14 @@
       "github.com/aws/aws-sdk-go-v2/service/outposts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Panorama",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -3762,13 +4030,14 @@
       "github.com/aws/aws-sdk-go-v2/service/panorama"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PaymentCryptography",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -3776,13 +4045,14 @@
       "github.com/aws/aws-sdk-go-v2/service/paymentcryptography"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PaymentCryptographyData",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -3790,13 +4060,14 @@
       "github.com/aws/aws-sdk-go-v2/service/paymentcryptographydata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PcaConnectorAd",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -3804,13 +4075,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pcaconnectorad"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PcaConnectorScep",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -3818,13 +4090,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pcaconnectorscep"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PCS",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -3832,13 +4105,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pcs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Personalize",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -3846,13 +4120,14 @@
       "github.com/aws/aws-sdk-go-v2/service/personalize"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PersonalizeEvents",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -3860,13 +4135,14 @@
       "github.com/aws/aws-sdk-go-v2/service/personalizeevents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PersonalizeRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -3874,13 +4150,14 @@
       "github.com/aws/aws-sdk-go-v2/service/personalizeruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PI",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -3888,13 +4165,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pinpoint",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -3902,13 +4180,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pinpoint"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointEmail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -3916,13 +4195,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pinpointemail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointSMSVoice",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -3930,13 +4210,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pinpointsmsvoice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointSMSVoiceV2",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -3944,13 +4225,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pinpointsmsvoicev2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pipes",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -3958,13 +4240,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pipes"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Polly",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -3972,13 +4255,14 @@
       "github.com/aws/aws-sdk-go-v2/service/polly"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pricing",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -3986,13 +4270,14 @@
       "github.com/aws/aws-sdk-go-v2/service/pricing"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Private5G",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -4000,13 +4285,14 @@
       "github.com/aws/aws-sdk-go-v2/service/privatenetworks"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Proton",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -4014,13 +4300,14 @@
       "github.com/aws/aws-sdk-go-v2/service/proton"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QApps",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -4028,13 +4315,14 @@
       "github.com/aws/aws-sdk-go-v2/service/qapps"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QBusiness",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -4042,13 +4330,14 @@
       "github.com/aws/aws-sdk-go-v2/service/qbusiness"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QConnect",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -4056,13 +4345,14 @@
       "github.com/aws/aws-sdk-go-v2/service/qconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QLDB",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "go"
     ],
@@ -4070,13 +4360,14 @@
       "github.com/aws/aws-sdk-go-v2/service/qldb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QLDBSession",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "go"
     ],
@@ -4084,13 +4375,14 @@
       "github.com/aws/aws-sdk-go-v2/service/qldbsession"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QuickSight",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -4098,13 +4390,14 @@
       "github.com/aws/aws-sdk-go-v2/service/quicksight"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RAM",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4112,13 +4405,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ram"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RecycleBin",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4126,13 +4420,14 @@
       "github.com/aws/aws-sdk-go-v2/service/rbin"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RDS",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -4140,13 +4435,14 @@
       "github.com/aws/aws-sdk-go-v2/service/rds"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RDSDataService",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -4154,13 +4450,14 @@
       "github.com/aws/aws-sdk-go-v2/service/rdsdata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Redshift",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -4168,13 +4465,14 @@
       "github.com/aws/aws-sdk-go-v2/service/redshift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RedshiftDataAPIService",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -4182,13 +4480,14 @@
       "github.com/aws/aws-sdk-go-v2/service/redshiftdata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RedshiftServerless",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -4196,13 +4495,14 @@
       "github.com/aws/aws-sdk-go-v2/service/redshiftserverless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Rekognition",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -4210,13 +4510,14 @@
       "github.com/aws/aws-sdk-go-v2/service/rekognition"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Repostspace",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -4224,13 +4525,14 @@
       "github.com/aws/aws-sdk-go-v2/service/repostspace"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResilienceHub",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -4238,13 +4540,14 @@
       "github.com/aws/aws-sdk-go-v2/service/resiliencehub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceExplorer2",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4252,13 +4555,14 @@
       "github.com/aws/aws-sdk-go-v2/service/resourceexplorer2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceGroups",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4266,13 +4570,14 @@
       "github.com/aws/aws-sdk-go-v2/service/resourcegroups"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceGroupsTaggingAPI",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4280,13 +4585,14 @@
       "github.com/aws/aws-sdk-go-v2/service/resourcegroupstaggingapi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RoboMaker",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -4294,13 +4600,14 @@
       "github.com/aws/aws-sdk-go-v2/service/robomaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IAMRolesAnywhere",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -4308,13 +4615,14 @@
       "github.com/aws/aws-sdk-go-v2/service/rolesanywhere"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -4322,13 +4630,14 @@
       "github.com/aws/aws-sdk-go-v2/service/route53"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Domains",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -4336,13 +4645,14 @@
       "github.com/aws/aws-sdk-go-v2/service/route53domains"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Profiles",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -4350,13 +4660,14 @@
       "github.com/aws/aws-sdk-go-v2/service/route53profiles"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryCluster",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -4364,13 +4675,14 @@
       "github.com/aws/aws-sdk-go-v2/service/route53recoverycluster"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryControlConfig",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -4378,13 +4690,14 @@
       "github.com/aws/aws-sdk-go-v2/service/route53recoverycontrolconfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryReadiness",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -4392,13 +4705,14 @@
       "github.com/aws/aws-sdk-go-v2/service/route53recoveryreadiness"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Resolver",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -4406,13 +4720,14 @@
       "github.com/aws/aws-sdk-go-v2/service/route53resolver"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch RUM",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -4420,13 +4735,14 @@
       "github.com/aws/aws-sdk-go-v2/service/rum"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -4434,13 +4750,14 @@
       "github.com/aws/aws-sdk-go-v2/service/s3"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3Control",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -4448,13 +4765,14 @@
       "github.com/aws/aws-sdk-go-v2/service/s3control"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3Outposts",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -4462,13 +4780,14 @@
       "github.com/aws/aws-sdk-go-v2/service/s3outposts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMaker",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -4476,7 +4795,8 @@
       "github.com/aws/aws-sdk-go-v2/service/sagemaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4490,7 +4810,8 @@
       "github.com/aws/aws-sdk-go-v2/service/sagemakera2iruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4504,13 +4825,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sagemakeredge"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerFeatureStoreRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -4518,13 +4840,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sagemakerfeaturestoreruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerGeospatial",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -4532,13 +4855,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sagemakergeospatial"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerMetrics",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -4546,13 +4870,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sagemakermetrics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -4560,13 +4885,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sagemakerruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SavingsPlans",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -4574,13 +4900,14 @@
       "github.com/aws/aws-sdk-go-v2/service/savingsplans"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Scheduler",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -4588,13 +4915,14 @@
       "github.com/aws/aws-sdk-go-v2/service/scheduler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Schemas",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -4602,13 +4930,14 @@
       "github.com/aws/aws-sdk-go-v2/service/schemas"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecretsManager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -4616,13 +4945,14 @@
       "github.com/aws/aws-sdk-go-v2/service/secretsmanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityHub",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -4630,13 +4960,14 @@
       "github.com/aws/aws-sdk-go-v2/service/securityhub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityLake",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -4644,13 +4975,14 @@
       "github.com/aws/aws-sdk-go-v2/service/securitylake"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServerlessApplicationRepository",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -4658,13 +4990,14 @@
       "github.com/aws/aws-sdk-go-v2/service/serverlessapplicationrepository"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceCatalog",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4672,7 +5005,8 @@
       "github.com/aws/aws-sdk-go-v2/service/servicecatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4686,13 +5020,14 @@
       "github.com/aws/aws-sdk-go-v2/service/servicecatalogappregistry"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceDiscovery",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -4700,13 +5035,14 @@
       "github.com/aws/aws-sdk-go-v2/service/servicediscovery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceQuotas",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4714,13 +5050,14 @@
       "github.com/aws/aws-sdk-go-v2/service/servicequotas"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleEmail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -4728,13 +5065,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ses"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleEmailV2",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -4742,13 +5080,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sesv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon StepFunctions",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -4756,13 +5095,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sfn"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Shield",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -4770,13 +5110,14 @@
       "github.com/aws/aws-sdk-go-v2/service/shield"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Signer",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -4784,13 +5125,14 @@
       "github.com/aws/aws-sdk-go-v2/service/signer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimSpaceWeaver",
-    "category": null,
+    "category": "Digital Twins and Simulations",
     "file_extensions": [
       "go"
     ],
@@ -4798,13 +5140,14 @@
       "github.com/aws/aws-sdk-go-v2/service/simspaceweaver"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServerMigrationService",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -4812,13 +5155,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sms"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Snowball",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -4826,13 +5170,14 @@
       "github.com/aws/aws-sdk-go-v2/service/snowball"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SnowDeviceManagement",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -4840,13 +5185,14 @@
       "github.com/aws/aws-sdk-go-v2/service/snowdevicemanagement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleNotificationService",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -4854,13 +5200,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sns"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SocialMessaging",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -4868,13 +5215,14 @@
       "github.com/aws/aws-sdk-go-v2/service/socialmessaging"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SQS",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -4882,13 +5230,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sqs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleSystemsManagement",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -4896,13 +5245,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ssm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSMContacts",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4910,13 +5260,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ssmcontacts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSMIncidents",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4924,13 +5275,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ssmincidents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSMQuickSetup",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4938,13 +5290,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ssmquicksetup"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SsmSap",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -4952,13 +5305,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ssmsap"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSO",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -4966,13 +5320,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sso"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSOAdmin",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -4980,13 +5335,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ssoadmin"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSOOIDC",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -4994,13 +5350,14 @@
       "github.com/aws/aws-sdk-go-v2/service/ssooidc"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon StorageGateway",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -5008,13 +5365,14 @@
       "github.com/aws/aws-sdk-go-v2/service/storagegateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityToken",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -5022,13 +5380,14 @@
       "github.com/aws/aws-sdk-go-v2/service/sts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SupplyChain",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -5036,7 +5395,8 @@
       "github.com/aws/aws-sdk-go-v2/service/supplychain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -5050,13 +5410,14 @@
       "github.com/aws/aws-sdk-go-v2/service/support"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SupportApp",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -5064,13 +5425,14 @@
       "github.com/aws/aws-sdk-go-v2/service/supportapp"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleWorkflow",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -5078,13 +5440,14 @@
       "github.com/aws/aws-sdk-go-v2/service/swf"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Synthetics",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -5092,13 +5455,14 @@
       "github.com/aws/aws-sdk-go-v2/service/synthetics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TaxSettings",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -5106,13 +5470,14 @@
       "github.com/aws/aws-sdk-go-v2/service/taxsettings"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Textract",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -5120,13 +5485,14 @@
       "github.com/aws/aws-sdk-go-v2/service/textract"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamInfluxDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -5134,13 +5500,14 @@
       "github.com/aws/aws-sdk-go-v2/service/timestreaminfluxdb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamQuery",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -5148,13 +5515,14 @@
       "github.com/aws/aws-sdk-go-v2/service/timestreamquery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamWrite",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -5162,13 +5530,14 @@
       "github.com/aws/aws-sdk-go-v2/service/timestreamwrite"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Tnb",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -5176,13 +5545,14 @@
       "github.com/aws/aws-sdk-go-v2/service/tnb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TranscribeService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -5190,13 +5560,14 @@
       "github.com/aws/aws-sdk-go-v2/service/transcribe"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TranscribeService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -5204,13 +5575,14 @@
       "github.com/aws/aws-sdk-go-v2/service/transcribestreaming"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Transfer",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -5218,13 +5590,14 @@
       "github.com/aws/aws-sdk-go-v2/service/transfer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Translate",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -5232,13 +5605,14 @@
       "github.com/aws/aws-sdk-go-v2/service/translate"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TrustedAdvisor",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -5246,13 +5620,14 @@
       "github.com/aws/aws-sdk-go-v2/service/trustedadvisor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VerifiedPermissions",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -5260,13 +5635,14 @@
       "github.com/aws/aws-sdk-go-v2/service/verifiedpermissions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VoiceID",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -5274,13 +5650,14 @@
       "github.com/aws/aws-sdk-go-v2/service/voiceid"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VPCLattice",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -5288,13 +5665,14 @@
       "github.com/aws/aws-sdk-go-v2/service/vpclattice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WAF",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -5302,13 +5680,14 @@
       "github.com/aws/aws-sdk-go-v2/service/waf"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WAFRegional",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -5316,13 +5695,14 @@
       "github.com/aws/aws-sdk-go-v2/service/wafregional"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WAFV2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -5330,13 +5710,14 @@
       "github.com/aws/aws-sdk-go-v2/service/wafv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WellArchitected",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -5344,7 +5725,8 @@
       "github.com/aws/aws-sdk-go-v2/service/wellarchitected"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -5358,13 +5740,14 @@
       "github.com/aws/aws-sdk-go-v2/service/wisdom"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkDocs",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -5372,13 +5755,14 @@
       "github.com/aws/aws-sdk-go-v2/service/workdocs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkMail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -5386,13 +5770,14 @@
       "github.com/aws/aws-sdk-go-v2/service/workmail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkMailMessageFlow",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -5400,13 +5785,14 @@
       "github.com/aws/aws-sdk-go-v2/service/workmailmessageflow"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpaces",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -5414,13 +5800,14 @@
       "github.com/aws/aws-sdk-go-v2/service/workspaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpacesThinClient",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -5428,13 +5815,14 @@
       "github.com/aws/aws-sdk-go-v2/service/workspacesthinclient"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpacesWeb",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -5442,13 +5830,14 @@
       "github.com/aws/aws-sdk-go-v2/service/workspacesweb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon XRay",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -5456,7 +5845,8 @@
       "github.com/aws/aws-sdk-go-v2/service/xray"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   }
 ]

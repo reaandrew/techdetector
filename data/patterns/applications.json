@@ -570,11 +570,16 @@
     "name": "Docker",
     "category": "Container Orchestration and Management",
     "file_names": [
-      "docker",
+      "Dockerfile"
+    ]
+  },
+  {
+    "type": "Application",
+    "name": "Docker Compose",
+    "category": "Container Orchestration and Management",
+    "file_names": [
       "docker-compose",
-      "dockerfile",
-      "docker-compose\\.yml",
-      "docker\\.log"
+      "docker-compose\\.yml"
     ]
   },
   {

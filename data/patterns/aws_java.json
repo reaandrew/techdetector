@@ -2,7 +2,7 @@
   {
     "type": "Cloud Service",
     "name": "Amazon Application Auto Scaling",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -10,13 +10,14 @@
       "com.amazonaws.services.applicationautoscaling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Omics",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "java"
     ],
@@ -24,13 +25,14 @@
       "com.amazonaws.services.omics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -38,13 +40,14 @@
       "com.amazonaws.services.sagemakerruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedBlockchain",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "java"
     ],
@@ -52,13 +55,14 @@
       "com.amazonaws.services.managedblockchain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutMetrics",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -66,13 +70,14 @@
       "com.amazonaws.services.lookoutmetrics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudSearchDomain",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "java"
     ],
@@ -80,7 +85,8 @@
       "com.amazonaws.services.cloudsearchdomain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -94,13 +100,14 @@
       "com.amazonaws.services.cloudsearchv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Control Tower",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -108,13 +115,14 @@
       "com.amazonaws.services.controltower"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pipes",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -122,13 +130,14 @@
       "com.amazonaws.services.pipes"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Cases",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "java"
     ],
@@ -136,13 +145,14 @@
       "com.amazonaws.services.connectcases"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerGeospatial",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -150,13 +160,14 @@
       "com.amazonaws.services.sagemakergeospatial"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamWrite",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -164,13 +175,14 @@
       "com.amazonaws.services.timestreamwrite"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DAX",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -178,13 +190,14 @@
       "com.amazonaws.services.dax"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubOrchestrator",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -192,13 +205,14 @@
       "com.amazonaws.services.migrationhuborchestrator"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaStore",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -206,13 +220,14 @@
       "com.amazonaws.services.mediastore"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeStarNotifications",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -220,13 +235,14 @@
       "com.amazonaws.services.codestarnotifications"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudFormation",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -234,13 +250,14 @@
       "com.amazonaws.services.cloudformation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DirectConnect",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -248,7 +265,8 @@
       "com.amazonaws.services.directconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -262,13 +280,14 @@
       "com.amazonaws.services.sagemakeredgemanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Braket",
-    "category": null,
+    "category": "Quantum Computing",
     "file_extensions": [
       "java"
     ],
@@ -276,13 +295,14 @@
       "com.amazonaws.services.braket"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTThingsGraph",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -290,13 +310,14 @@
       "com.amazonaws.services.iotthingsgraph"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Mgn",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -304,13 +325,14 @@
       "com.amazonaws.services.mgn"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticTranscoder",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -318,13 +340,14 @@
       "com.amazonaws.services.elastictranscoder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Repostspace",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -332,13 +355,14 @@
       "com.amazonaws.services.repostspace"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Participant",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "java"
     ],
@@ -346,13 +370,14 @@
       "com.amazonaws.services.connectparticipant"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpacesWeb",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "java"
     ],
@@ -360,13 +385,14 @@
       "com.amazonaws.services.workspacesweb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Private5G",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -374,13 +400,14 @@
       "com.amazonaws.services.private5g"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Backup",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "java"
     ],
@@ -388,13 +415,14 @@
       "com.amazonaws.services.backup"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DevOps Guru",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -402,13 +430,14 @@
       "com.amazonaws.services.devopsguru"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Cloud9",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -416,13 +445,14 @@
       "com.amazonaws.services.cloud9"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpenSearchService",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "java"
     ],
@@ -430,13 +460,14 @@
       "com.amazonaws.services.opensearch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Campaign Service",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "java"
     ],
@@ -444,13 +475,14 @@
       "com.amazonaws.services.connectcampaign"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -458,13 +490,14 @@
       "com.amazonaws.metrics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleWorkflow",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -472,13 +505,14 @@
       "com.amazonaws.services.simpleworkflow"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Polly",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -486,13 +520,14 @@
       "com.amazonaws.services.polly"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Auto Scaling",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -500,13 +535,14 @@
       "com.amazonaws.services.autoscaling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppTest",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -514,13 +550,14 @@
       "com.amazonaws.services.apptest"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceCatalog",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "java"
     ],
@@ -528,13 +565,14 @@
       "com.amazonaws.services.marketplacecatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointEmail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -542,13 +580,14 @@
       "com.amazonaws.services.pinpointemail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppStream",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -556,13 +595,14 @@
       "com.amazonaws.services.appstream"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Tnb",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -570,13 +610,14 @@
       "com.amazonaws.services.tnb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -584,13 +625,14 @@
       "com.amazonaws.services.apigateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointSMSVoice",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -598,13 +640,14 @@
       "com.amazonaws.services.pinpointsmsvoice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RedshiftServerless",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -612,13 +655,14 @@
       "com.amazonaws.services.redshiftserverless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubStrategyRecommendations",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -626,13 +670,14 @@
       "com.amazonaws.services.migrationhubstrategyrecommendations"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VoiceID",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -640,13 +685,14 @@
       "com.amazonaws.services.voiceid"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeCommit",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -654,7 +700,8 @@
       "com.amazonaws.services.codecommit"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -668,13 +715,14 @@
       "com.amazonaws.services.nimblestudio"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Media Pipelines",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -682,13 +730,14 @@
       "com.amazonaws.services.chimesdkmediapipelines"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GameLift",
-    "category": null,
+    "category": "Game Development",
     "file_extensions": [
       "java"
     ],
@@ -696,13 +745,14 @@
       "com.amazonaws.services.gamelift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoWebRTCStorage",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -710,13 +760,14 @@
       "com.amazonaws.services.kinesisvideowebrtcstorage"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Database Migration Service",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -724,13 +775,14 @@
       "com.amazonaws.services.databasemigrationservice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaConvert",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -738,13 +790,14 @@
       "com.amazonaws.services.mediaconvert"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3Outposts",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -752,13 +805,14 @@
       "com.amazonaws.services.s3outposts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTWireless",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -766,13 +820,14 @@
       "com.amazonaws.services.iotwireless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Proton",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -780,13 +835,14 @@
       "com.amazonaws.services.proton"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkManager",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -794,13 +850,14 @@
       "com.amazonaws.services.networkmanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Resolver",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -808,13 +865,14 @@
       "com.amazonaws.services.route53resolver"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LakeFormation",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -822,13 +880,14 @@
       "com.amazonaws.services.lakeformation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Evidently",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -836,13 +895,14 @@
       "com.amazonaws.services.cloudwatchevidently"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaTailor",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -850,13 +910,14 @@
       "com.amazonaws.services.mediatailor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Scheduler",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -864,13 +925,14 @@
       "com.amazonaws.services.scheduler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KeyManagementService",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -878,13 +940,14 @@
       "com.amazonaws.services.kms"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeStarconnections",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -892,13 +955,14 @@
       "com.amazonaws.services.codestarconnections"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FIS",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -906,13 +970,14 @@
       "com.amazonaws.services.fis"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Inspector2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -920,13 +985,14 @@
       "com.amazonaws.services.inspector2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppFabric",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -934,13 +1000,14 @@
       "com.amazonaws.services.appfabric"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Redshift",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -948,13 +1015,14 @@
       "com.amazonaws.services.redshift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityToken",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -962,13 +1030,14 @@
       "com.amazonaws.services.securitytoken"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Detective",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -976,13 +1045,14 @@
       "com.amazonaws.services.detective"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleNotificationService",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -990,13 +1060,14 @@
       "com.amazonaws.services.sns"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleNotificationService",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -1004,13 +1075,14 @@
       "com.amazonaws.services.sns.util"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServerlessApplicationRepository",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -1018,13 +1090,14 @@
       "com.amazonaws.services.serverlessapplicationrepository"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RedshiftDataAPIService",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -1032,13 +1105,14 @@
       "com.amazonaws.services.redshiftdataapi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MainframeModernization",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -1046,13 +1120,14 @@
       "com.amazonaws.services.mainframemodernization"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Finspace",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -1060,13 +1135,14 @@
       "com.amazonaws.services.finspace"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PersonalizeEvents",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -1074,13 +1150,14 @@
       "com.amazonaws.services.personalizeevents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTEventsData",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -1088,13 +1165,14 @@
       "com.amazonaws.services.ioteventsdata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glue",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -1102,13 +1180,14 @@
       "com.amazonaws.services.glue"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaLive",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -1116,13 +1195,14 @@
       "com.amazonaws.services.medialive"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamInfluxDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -1130,13 +1210,14 @@
       "com.amazonaws.services.timestreaminfluxdb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pinpoint",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -1144,13 +1225,14 @@
       "com.amazonaws.services.pinpoint"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GlobalAccelerator",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -1158,13 +1240,14 @@
       "com.amazonaws.services.globalaccelerator"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QApps",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -1172,13 +1255,14 @@
       "com.amazonaws.services.qapps"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkMailMessageFlow",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -1186,13 +1270,14 @@
       "com.amazonaws.services.workmailmessageflow"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudDirectory",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -1200,13 +1285,14 @@
       "com.amazonaws.services.clouddirectory"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Translate",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -1214,13 +1300,14 @@
       "com.amazonaws.services.translate"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DocDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -1228,13 +1315,14 @@
       "com.amazonaws.services.docdb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KendraRanking",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "java"
     ],
@@ -1242,13 +1330,14 @@
       "com.amazonaws.services.kendraranking"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kendra",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "java"
     ],
@@ -1256,13 +1345,14 @@
       "com.amazonaws.services.kendra"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SupplyChain",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -1270,7 +1360,8 @@
       "com.amazonaws.services.supplychain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1284,13 +1375,14 @@
       "com.amazonaws.services.worklink"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -1298,13 +1390,14 @@
       "com.amazonaws.services.s3"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -1312,13 +1405,14 @@
       "com.amazonaws.services.s3.transfer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -1326,13 +1420,14 @@
       "com.amazonaws.services.s3.model"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSOOIDC",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -1340,13 +1435,14 @@
       "com.amazonaws.services.ssooidc"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Neptunedata",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -1354,7 +1450,8 @@
       "com.amazonaws.services.neptunedata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1368,13 +1465,14 @@
       "com.amazonaws.services.lexruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MTurk",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -1382,13 +1480,14 @@
       "com.amazonaws.services.mturk"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManager",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -1396,13 +1495,14 @@
       "com.amazonaws.services.licensemanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT1ClickProjects",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -1410,13 +1510,14 @@
       "com.amazonaws.services.iot1clickprojects"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Control Catalog",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -1424,13 +1525,14 @@
       "com.amazonaws.services.controlcatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon InternetMonitor",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -1438,7 +1540,8 @@
       "com.amazonaws.services.internetmonitor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1452,13 +1555,14 @@
       "com.amazonaws.services.bedrockagent"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppRunner",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -1466,7 +1570,8 @@
       "com.amazonaws.services.apprunner"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1480,13 +1585,14 @@
       "com.amazonaws.services.backupgateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Signer",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -1494,13 +1600,14 @@
       "com.amazonaws.services.signer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -1508,13 +1615,14 @@
       "com.amazonaws.services.iot"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IotData",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -1522,13 +1630,14 @@
       "com.amazonaws.services.iotdata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Shield",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -1536,13 +1645,14 @@
       "com.amazonaws.services.shield"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DirectoryService",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -1550,13 +1660,14 @@
       "com.amazonaws.services.directory"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT1ClickDevicesService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -1564,13 +1675,14 @@
       "com.amazonaws.services.iot1clickdevices"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudTrail",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -1578,13 +1690,14 @@
       "com.amazonaws.services.cloudtrail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Keyspaces",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -1592,13 +1705,14 @@
       "com.amazonaws.services.keyspaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Messaging",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -1606,13 +1720,14 @@
       "com.amazonaws.services.chimesdkmessaging"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Contact Lens",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "java"
     ],
@@ -1620,13 +1735,14 @@
       "com.amazonaws.services.connectcontactlens"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudFront",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -1634,7 +1750,8 @@
       "com.amazonaws.services.cloudfront"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1648,13 +1765,14 @@
       "com.amazonaws.services.cloudwatchrum"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisAnalyticsV2",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -1662,13 +1780,14 @@
       "com.amazonaws.services.kinesisanalyticsv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudHSM V2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -1676,13 +1795,14 @@
       "com.amazonaws.services.cloudhsmv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Security",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -1690,13 +1810,14 @@
       "com.amazonaws.services.codegurusecurity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify Backend",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -1704,13 +1825,14 @@
       "com.amazonaws.services.amplifybackend"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoIdentity",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -1718,13 +1840,14 @@
       "com.amazonaws.services.cognitoidentity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryControlConfig",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "java"
     ],
@@ -1732,13 +1855,14 @@
       "com.amazonaws.services.route53recoverycontrolconfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GuardDuty",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -1746,13 +1870,14 @@
       "com.amazonaws.services.guardduty"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResilienceHub",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "java"
     ],
@@ -1760,13 +1885,14 @@
       "com.amazonaws.services.resiliencehub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTFleetHub",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -1774,13 +1900,14 @@
       "com.amazonaws.services.iotfleethub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppFlow",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -1788,13 +1915,14 @@
       "com.amazonaws.services.appflow"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTEvents",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -1802,13 +1930,14 @@
       "com.amazonaws.services.iotevents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MachineLearning",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -1816,13 +1945,14 @@
       "com.amazonaws.services.machinelearning"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataExchange",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -1830,13 +1960,14 @@
       "com.amazonaws.services.dataexchange"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PI",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -1844,13 +1975,14 @@
       "com.amazonaws.services.pi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudControlApi",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -1858,13 +1990,14 @@
       "com.amazonaws.services.cloudcontrolapi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EMRContainers",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -1872,13 +2005,14 @@
       "com.amazonaws.services.emrcontainers"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glacier",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -1886,13 +2020,14 @@
       "com.amazonaws.services.glacier"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Certificate Manager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -1900,7 +2035,8 @@
       "com.amazonaws.services.certificatemanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1914,7 +2050,8 @@
       "com.amazonaws.annotation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1928,7 +2065,8 @@
       "com.amazonaws.auth.profile"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1942,7 +2080,8 @@
       "com.amazonaws.auth.policy.conditions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1956,7 +2095,8 @@
       "com.amazonaws.auth.policy"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1970,7 +2110,8 @@
       "com.amazonaws.auth.policy.resources"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1984,7 +2125,8 @@
       "com.amazonaws.auth.policy.actions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -1998,13 +2140,14 @@
       "com.amazonaws.http.timers"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -2012,13 +2155,14 @@
       "com.amazonaws.metrics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerFeatureStoreRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -2026,13 +2170,14 @@
       "com.amazonaws.services.sagemakerfeaturestoreruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManagerUserSubscriptions",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2040,13 +2185,14 @@
       "com.amazonaws.services.licensemanagerusersubscriptions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OAM",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -2054,13 +2200,14 @@
       "com.amazonaws.services.oam"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EventBridge",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -2068,13 +2215,14 @@
       "com.amazonaws.services.eventbridge"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QLDBSession",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "java"
     ],
@@ -2082,13 +2230,14 @@
       "com.amazonaws.services.qldbsession"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServerMigrationService",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -2096,13 +2245,14 @@
       "com.amazonaws.services.servermigration"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSOAdmin",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -2110,13 +2260,14 @@
       "com.amazonaws.services.ssoadmin"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTSecureTunneling",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -2124,13 +2275,14 @@
       "com.amazonaws.services.iotsecuretunneling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpaces",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "java"
     ],
@@ -2138,13 +2290,14 @@
       "com.amazonaws.services.workspaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SsmSap",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2152,7 +2305,8 @@
       "com.amazonaws.services.ssmsap"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2166,7 +2320,8 @@
       "com.amazonaws.opensdk.internal.protocol"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2180,13 +2335,14 @@
       "com.amazonaws.opensdk.protect.protocol"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Greengrass",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -2194,13 +2350,14 @@
       "com.amazonaws.services.greengrass"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceExplorer2",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2208,13 +2365,14 @@
       "com.amazonaws.services.resourceexplorer2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VPCLattice",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -2222,13 +2380,14 @@
       "com.amazonaws.services.vpclattice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lambda",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -2236,13 +2395,14 @@
       "com.amazonaws.services.lambda"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lambda",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -2250,13 +2410,14 @@
       "com.amazonaws.services.lambda.invoke"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ConfigService",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2264,13 +2425,14 @@
       "com.amazonaws.services.config"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceGroupsTaggingAPI",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2278,13 +2440,14 @@
       "com.amazonaws.services.resourcegroupstaggingapi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RDSDataService",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -2292,7 +2455,8 @@
       "com.amazonaws.services.rdsdata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2306,13 +2470,14 @@
       "com.amazonaws.services.costoptimizationhub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMaker",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -2320,13 +2485,14 @@
       "com.amazonaws.services.sagemaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkFirewall",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -2334,13 +2500,14 @@
       "com.amazonaws.services.networkfirewall"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppConfig",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -2348,13 +2515,14 @@
       "com.amazonaws.services.appconfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Insights",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -2362,13 +2530,14 @@
       "com.amazonaws.services.applicationinsights"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubRefactorSpaces",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -2376,7 +2545,8 @@
       "com.amazonaws.services.migrationhubrefactorspaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2390,13 +2560,14 @@
       "com.amazonaws.services.codestar"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DeviceFarm",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -2404,13 +2575,14 @@
       "com.amazonaws.services.devicefarm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -2418,13 +2590,14 @@
       "com.amazonaws.services.amplify"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WellArchitected",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2432,13 +2605,14 @@
       "com.amazonaws.services.wellarchitected"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Transfer",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -2446,13 +2620,14 @@
       "com.amazonaws.services.transfer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VerifiedPermissions",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -2460,7 +2635,8 @@
       "com.amazonaws.services.verifiedpermissions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2474,13 +2650,14 @@
       "com.amazonaws.services.cleanroomsml"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TaxSettings",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2488,7 +2665,8 @@
       "com.amazonaws.services.taxsettings"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2502,13 +2680,14 @@
       "com.amazonaws.services.bedrockruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GroundStation",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "java"
     ],
@@ -2516,13 +2695,14 @@
       "com.amazonaws.services.groundstation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway V2",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -2530,13 +2710,14 @@
       "com.amazonaws.services.apigatewayv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Signals",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -2544,13 +2725,14 @@
       "com.amazonaws.services.applicationsignals"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ACM PCA",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -2558,13 +2740,14 @@
       "com.amazonaws.services.acmpca"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleSystemsManagement",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -2572,13 +2755,14 @@
       "com.amazonaws.services.simplesystemsmanagement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WAFV2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -2586,13 +2770,14 @@
       "com.amazonaws.services.wafv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceEntitlementService",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "java"
     ],
@@ -2600,13 +2785,14 @@
       "com.amazonaws.services.marketplaceentitlement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PaymentCryptography",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -2614,13 +2800,14 @@
       "com.amazonaws.services.paymentcryptography"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PcaConnectorScep",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -2628,13 +2815,14 @@
       "com.amazonaws.services.pcaconnectorscep"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Budgets",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "java"
     ],
@@ -2642,13 +2830,14 @@
       "com.amazonaws.services.budgets"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubConfig",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -2656,13 +2845,14 @@
       "com.amazonaws.services.migrationhubconfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackageVod",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -2670,7 +2860,8 @@
       "com.amazonaws.services.mediapackagevod"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2684,13 +2875,14 @@
       "com.amazonaws.services.augmentedairuntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutforVision",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -2698,13 +2890,14 @@
       "com.amazonaws.services.lookoutforvision"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PersonalizeRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -2712,13 +2905,14 @@
       "com.amazonaws.services.personalizeruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeBuild",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -2726,13 +2920,14 @@
       "com.amazonaws.services.codebuild"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Voice",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -2740,13 +2935,14 @@
       "com.amazonaws.services.chimesdkvoice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpenSearchServerless",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "java"
     ],
@@ -2754,13 +2950,14 @@
       "com.amazonaws.services.opensearchserverless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppRegistry",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2768,13 +2965,14 @@
       "com.amazonaws.services.appregistry"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Organizations",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2782,13 +2980,14 @@
       "com.amazonaws.services.organizations"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Events",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -2796,13 +2995,14 @@
       "com.amazonaws.services.cloudwatchevents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTJobsDataPlane",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -2810,13 +3010,14 @@
       "com.amazonaws.services.iotjobsdataplane"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lex ModelBuildingService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -2824,13 +3025,14 @@
       "com.amazonaws.services.lexmodelbuilding"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glue DataBrew",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -2838,13 +3040,14 @@
       "com.amazonaws.services.gluedatabrew"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Identity",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -2852,13 +3055,14 @@
       "com.amazonaws.services.chimesdkidentity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RAM",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2866,13 +3070,14 @@
       "com.amazonaws.services.ram"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutEquipment",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -2880,13 +3085,14 @@
       "com.amazonaws.services.lookoutequipment"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KafkaConnect",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -2894,13 +3100,14 @@
       "com.amazonaws.services.kafkaconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QuickSight",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -2908,7 +3115,8 @@
       "com.amazonaws.services.quicksight"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -2922,13 +3130,14 @@
       "com.amazonaws.services.bedrockagentruntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideo",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -2936,13 +3145,14 @@
       "com.amazonaws.services.kinesisvideo"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pricing",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "java"
     ],
@@ -2950,13 +3160,14 @@
       "com.amazonaws.services.pricing"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceQuotas",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -2964,13 +3175,14 @@
       "com.amazonaws.services.servicequotas"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PaymentCryptographyData",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -2978,13 +3190,14 @@
       "com.amazonaws.services.paymentcryptographydata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QConnect",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -2992,13 +3205,14 @@
       "com.amazonaws.services.qconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Greengrass V2",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -3006,13 +3220,14 @@
       "com.amazonaws.services.greengrassv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Identity Management",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -3020,13 +3235,14 @@
       "com.amazonaws.services.identitymanagement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHub",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -3034,13 +3250,14 @@
       "com.amazonaws.services.migrationhub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataZone",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -3048,13 +3265,14 @@
       "com.amazonaws.services.datazone"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpsWorks",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -3062,13 +3280,14 @@
       "com.amazonaws.services.opsworks"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -3076,13 +3295,14 @@
       "com.amazonaws.services.cloudwatch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WAF",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -3090,13 +3310,14 @@
       "com.amazonaws.services.waf"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Discovery Service",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -3104,13 +3325,14 @@
       "com.amazonaws.services.applicationdiscovery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Cost and Usage Report",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "java"
     ],
@@ -3118,13 +3340,14 @@
       "com.amazonaws.services.costandusagereport"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ForecastQueryService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -3132,13 +3355,14 @@
       "com.amazonaws.services.forecastquery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Profiles",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -3146,13 +3370,14 @@
       "com.amazonaws.services.route53profiles"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTDeviceAdvisor",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -3160,13 +3385,14 @@
       "com.amazonaws.services.iotdeviceadvisor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PcaConnectorAd",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -3174,13 +3400,14 @@
       "com.amazonaws.services.pcaconnectorad"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify UI Builder",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -3188,13 +3415,14 @@
       "com.amazonaws.services.amplifyuibuilder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Personalize",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -3202,13 +3430,14 @@
       "com.amazonaws.services.personalize"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeArtifact",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -3216,13 +3445,14 @@
       "com.amazonaws.services.codeartifact"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Ivschat",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -3230,7 +3460,8 @@
       "com.amazonaws.services.ivschat"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -3244,13 +3475,14 @@
       "com.amazonaws.services.finspacedata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Meetings",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -3258,13 +3490,14 @@
       "com.amazonaws.services.chimesdkmeetings"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon StorageGateway",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -3272,7 +3505,8 @@
       "com.amazonaws.services.storagegateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -3286,13 +3520,14 @@
       "com.amazonaws.services.customerprofiles"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Schemas",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -3300,13 +3535,14 @@
       "com.amazonaws.services.schemas"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IdentityStore",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -3314,13 +3550,14 @@
       "com.amazonaws.services.identitystore"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticBeanstalk",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -3328,13 +3565,14 @@
       "com.amazonaws.services.elasticbeanstalk"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticInference",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -3342,13 +3580,14 @@
       "com.amazonaws.services.elasticinference"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataSync",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -3356,13 +3595,14 @@
       "com.amazonaws.services.datasync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataPipeline",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -3370,13 +3610,14 @@
       "com.amazonaws.services.datapipeline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryCluster",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "java"
     ],
@@ -3384,13 +3625,14 @@
       "com.amazonaws.services.route53recoverycluster"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerMetrics",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -3398,13 +3640,14 @@
       "com.amazonaws.services.sagemakermetrics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RDS",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -3412,13 +3655,14 @@
       "com.amazonaws.services.rds"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IAMRolesAnywhere",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -3426,13 +3670,14 @@
       "com.amazonaws.services.iamrolesanywhere"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EMRServerless",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -3440,13 +3685,14 @@
       "com.amazonaws.services.emrserverless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SavingsPlans",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "java"
     ],
@@ -3454,7 +3700,8 @@
       "com.amazonaws.services.savingsplans"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -3468,13 +3715,14 @@
       "com.amazonaws.services.billingconductor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticMapReduce",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -3482,13 +3730,14 @@
       "com.amazonaws.services.elasticmapreduce"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Domains",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -3496,13 +3745,14 @@
       "com.amazonaws.services.route53domains"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -3510,13 +3760,14 @@
       "com.amazonaws.services.route53"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DLM",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -3524,13 +3775,14 @@
       "com.amazonaws.services.dlm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DRS",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "java"
     ],
@@ -3538,13 +3790,14 @@
       "com.amazonaws.services.drs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Neptune",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -3552,13 +3805,14 @@
       "com.amazonaws.services.neptune"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Imagebuilder",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -3566,7 +3820,8 @@
       "com.amazonaws.services.imagebuilder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -3580,13 +3835,14 @@
       "com.amazonaws.services.entityresolution"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceDiscovery",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -3594,13 +3850,14 @@
       "com.amazonaws.services.servicediscovery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackage",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -3608,13 +3865,14 @@
       "com.amazonaws.services.mediapackage"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityHub",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -3622,13 +3880,14 @@
       "com.amazonaws.services.securityhub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkDocs",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -3636,13 +3895,14 @@
       "com.amazonaws.services.workdocs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTFleetWise",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -3650,13 +3910,14 @@
       "com.amazonaws.services.iotfleetwise"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppIntegrations Service",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -3664,13 +3925,14 @@
       "com.amazonaws.services.appintegrations"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QLDB",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "java"
     ],
@@ -3678,13 +3940,14 @@
       "com.amazonaws.services.qldb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kinesis",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -3692,13 +3955,14 @@
       "com.amazonaws.services.kinesis"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisFirehose",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -3706,13 +3970,14 @@
       "com.amazonaws.services.kinesisfirehose"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisAnalytics",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -3720,13 +3985,14 @@
       "com.amazonaws.services.kinesisanalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamQuery",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -3734,13 +4000,14 @@
       "com.amazonaws.services.timestreamquery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway Management API",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -3748,13 +4015,14 @@
       "com.amazonaws.services.apigatewaymanagementapi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon InspectorScan",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -3762,13 +4030,14 @@
       "com.amazonaws.services.inspectorscan"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoSync",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -3776,13 +4045,14 @@
       "com.amazonaws.services.cognitosync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LexModelsV2",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -3790,13 +4060,14 @@
       "com.amazonaws.services.lexmodelsv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecretsManager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -3804,13 +4075,14 @@
       "com.amazonaws.services.secretsmanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTTwinMaker",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -3818,13 +4090,14 @@
       "com.amazonaws.services.iottwinmaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Artifact",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -3832,13 +4105,14 @@
       "com.amazonaws.services.artifact"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceAgreement",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "java"
     ],
@@ -3846,7 +4120,8 @@
       "com.amazonaws.services.marketplaceagreement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -3860,13 +4135,14 @@
       "com.amazonaws.services.support"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElastiCache",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -3874,7 +4150,8 @@
       "com.amazonaws.services.elasticache"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -3888,13 +4165,14 @@
       "com.amazonaws.services.comprehendmedical"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppMesh",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -3902,13 +4180,14 @@
       "com.amazonaws.services.appmesh"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Profiler",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -3916,13 +4195,14 @@
       "com.amazonaws.services.codeguruprofiler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackageV2",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -3930,13 +4210,14 @@
       "com.amazonaws.services.mediapackagev2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CleanRooms",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -3944,13 +4225,14 @@
       "com.amazonaws.services.cleanrooms"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3Control",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -3958,13 +4240,14 @@
       "com.amazonaws.services.s3control"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkMail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -3972,13 +4255,14 @@
       "com.amazonaws.services.workmail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Deadline",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -3986,13 +4270,14 @@
       "com.amazonaws.services.deadline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Inspector",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -4000,13 +4285,14 @@
       "com.amazonaws.services.inspector"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MailManager",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -4014,13 +4300,14 @@
       "com.amazonaws.services.mailmanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -4028,13 +4315,14 @@
       "com.amazonaws.services.simpledb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -4042,13 +4330,14 @@
       "com.amazonaws.services.simpledb.util"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Account",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -4056,13 +4345,14 @@
       "com.amazonaws.services.account"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeDeploy",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -4070,13 +4360,14 @@
       "com.amazonaws.services.codedeploy"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManagerLinuxSubscriptions",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -4084,7 +4375,8 @@
       "com.amazonaws.services.licensemanagerlinuxsubscriptions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4098,13 +4390,14 @@
       "com.amazonaws.services.marketplacecommerceanalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Synthetics",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -4112,7 +4405,8 @@
       "com.amazonaws.services.synthetics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4126,13 +4420,14 @@
       "com.amazonaws.services.health"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DynamoDBv2",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -4140,13 +4435,14 @@
       "com.amazonaws.services.dynamodbv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DynamoDBv2",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -4154,13 +4450,14 @@
       "com.amazonaws.services.dynamodbv2.datamodeling.unmarshallers"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DynamoDBv2",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -4168,13 +4465,14 @@
       "com.amazonaws.services.dynamodbv2.datamodeling.marshallers"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DynamoDBv2",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -4182,13 +4480,14 @@
       "com.amazonaws.services.dynamodbv2.xspec"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MQ",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -4196,13 +4495,14 @@
       "com.amazonaws.services.mq"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IVS",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -4210,7 +4510,8 @@
       "com.amazonaws.services.ivs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4224,13 +4525,14 @@
       "com.amazonaws.services.connectwisdom"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LexRuntimeV2",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -4238,13 +4540,14 @@
       "com.amazonaws.services.lexruntimev2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IVSRealTime",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -4252,13 +4555,14 @@
       "com.amazonaws.services.ivsrealtime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QBusiness",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -4266,13 +4570,14 @@
       "com.amazonaws.services.qbusiness"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chatbot",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -4280,13 +4585,14 @@
       "com.amazonaws.services.chatbot"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Rekognition",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -4294,13 +4600,14 @@
       "com.amazonaws.services.rekognition"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon XRay",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -4308,13 +4615,14 @@
       "com.amazonaws.services.xray"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EC2 Instance Connect",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -4322,13 +4630,14 @@
       "com.amazonaws.services.ec2instanceconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Elasticsearch",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "java"
     ],
@@ -4336,13 +4645,14 @@
       "com.amazonaws.services.elasticsearch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EBS",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -4350,13 +4660,14 @@
       "com.amazonaws.services.ebs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTSiteWise",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -4364,13 +4675,14 @@
       "com.amazonaws.services.iotsitewise"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticFileSystem",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -4378,13 +4690,14 @@
       "com.amazonaws.services.elasticfilesystem"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MedicalImaging",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "java"
     ],
@@ -4392,13 +4705,14 @@
       "com.amazonaws.services.medicalimaging"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticLoadBalancing",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -4406,13 +4720,14 @@
       "com.amazonaws.services.elasticloadbalancing"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Compute Optimizer",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -4420,13 +4735,14 @@
       "com.amazonaws.services.computeoptimizer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SupportApp",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -4434,13 +4750,14 @@
       "com.amazonaws.services.supportapp"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LocationService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -4448,13 +4765,14 @@
       "com.amazonaws.services.location"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkMonitor",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -4462,13 +4780,14 @@
       "com.amazonaws.services.networkmonitor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -4476,13 +4795,14 @@
       "com.amazonaws.services.bedrock"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedGrafana",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -4490,13 +4810,14 @@
       "com.amazonaws.services.managedgrafana"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaStoreData",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -4504,13 +4825,14 @@
       "com.amazonaws.services.mediastoredata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Access Analyzer",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -4518,7 +4840,8 @@
       "com.amazonaws.services.accessanalyzer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4532,13 +4855,14 @@
       "com.amazonaws.services.frauddetector"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceGroups",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -4546,7 +4870,8 @@
       "com.amazonaws.services.resourcegroups"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4560,13 +4885,14 @@
       "com.amazonaws.services.cloudtraildata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpacesThinClient",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "java"
     ],
@@ -4574,13 +4900,14 @@
       "com.amazonaws.services.workspacesthinclient"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoSignalingChannels",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -4588,13 +4915,14 @@
       "com.amazonaws.services.kinesisvideosignalingchannels"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedBlockchainQuery",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "java"
     ],
@@ -4602,13 +4930,14 @@
       "com.amazonaws.services.managedblockchainquery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LaunchWizard",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -4616,7 +4945,8 @@
       "com.amazonaws.services.launchwizard"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4630,13 +4960,14 @@
       "com.amazonaws.services.auditmanager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Textract",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -4644,13 +4975,14 @@
       "com.amazonaws.services.textract"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FreeTier",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "java"
     ],
@@ -4658,13 +4990,14 @@
       "com.amazonaws.services.freetier"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PrometheusService",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -4672,13 +5005,14 @@
       "com.amazonaws.services.prometheus"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lightsail",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -4686,13 +5020,14 @@
       "com.amazonaws.services.lightsail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceCatalog",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -4700,13 +5035,14 @@
       "com.amazonaws.services.servicecatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FSx",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "java"
     ],
@@ -4714,13 +5050,14 @@
       "com.amazonaws.services.fsx"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon B2bi",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -4728,13 +5065,14 @@
       "com.amazonaws.services.b2bi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Macie2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -4742,13 +5080,14 @@
       "com.amazonaws.services.macie2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECR Public",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -4756,13 +5095,14 @@
       "com.amazonaws.services.ecrpublic"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceDeployment",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "java"
     ],
@@ -4770,13 +5110,14 @@
       "com.amazonaws.services.marketplacedeployment"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSO",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -4784,13 +5125,14 @@
       "com.amazonaws.services.sso"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TranscribeService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -4798,7 +5140,8 @@
       "com.amazonaws.services.transcribe"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -4812,13 +5155,14 @@
       "com.amazonaws.services.marketplacemetering"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTAnalytics",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -4826,13 +5170,14 @@
       "com.amazonaws.services.iotanalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpsWorksCM",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -4840,13 +5185,14 @@
       "com.amazonaws.services.opsworkscm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Auto Scaling Plans",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -4854,13 +5200,14 @@
       "com.amazonaws.services.autoscalingplans"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticLoadBalancingV2",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "java"
     ],
@@ -4868,13 +5215,14 @@
       "com.amazonaws.services.elasticloadbalancingv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FMS",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -4882,13 +5230,14 @@
       "com.amazonaws.services.fms"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECS",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -4896,13 +5245,14 @@
       "com.amazonaws.services.ecs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Snowball",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -4910,13 +5260,14 @@
       "com.amazonaws.services.snowball"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Logs",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "java"
     ],
@@ -4924,13 +5275,14 @@
       "com.amazonaws.services.logs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityLake",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -4938,13 +5290,14 @@
       "com.amazonaws.services.securitylake"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppSync",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -4952,13 +5305,14 @@
       "com.amazonaws.services.appsync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleEmailV2",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -4966,13 +5320,14 @@
       "com.amazonaws.services.simpleemailv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoIdentityProvider",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "java"
     ],
@@ -4980,13 +5335,14 @@
       "com.amazonaws.services.cognitoidp"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Reviewer",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -4994,13 +5350,14 @@
       "com.amazonaws.services.codegurureviewer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ImportExport",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -5008,13 +5365,14 @@
       "com.amazonaws.services.importexport"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointSMSVoiceV2",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -5022,13 +5380,14 @@
       "com.amazonaws.services.pinpointsmsvoicev2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Batch",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -5036,13 +5395,14 @@
       "com.amazonaws.services.batch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kafka",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -5050,13 +5410,14 @@
       "com.amazonaws.services.kafka"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MemoryDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "java"
     ],
@@ -5064,13 +5425,14 @@
       "com.amazonaws.services.memorydb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MWAA",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -5078,13 +5440,14 @@
       "com.amazonaws.services.mwaa"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodePipeline",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -5092,13 +5455,14 @@
       "com.amazonaws.services.codepipeline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon HealthLake",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "java"
     ],
@@ -5106,13 +5470,14 @@
       "com.amazonaws.services.healthlake"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ARC Zonal Shift",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "java"
     ],
@@ -5120,13 +5485,14 @@
       "com.amazonaws.services.arczonalshift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Comprehend",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -5134,13 +5500,14 @@
       "com.amazonaws.services.comprehend"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon StepFunctions",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -5148,13 +5515,14 @@
       "com.amazonaws.services.stepfunctions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleEmail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -5162,7 +5530,8 @@
       "com.amazonaws.services.simpleemail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -5176,7 +5545,8 @@
       "com.amazonaws.services.appconfigdata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -5190,13 +5560,14 @@
       "com.amazonaws.services.docdbelastic"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSMIncidents",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -5204,13 +5575,14 @@
       "com.amazonaws.services.ssmincidents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimSpaceWeaver",
-    "category": null,
+    "category": "Digital Twins and Simulations",
     "file_extensions": [
       "java"
     ],
@@ -5218,13 +5590,14 @@
       "com.amazonaws.services.simspaceweaver"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECR",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -5232,13 +5605,14 @@
       "com.amazonaws.services.ecr"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EKS",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -5246,7 +5620,8 @@
       "com.amazonaws.services.eks"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -5260,13 +5635,14 @@
       "com.amazonaws.services.applicationcostprofiler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaConnect",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "java"
     ],
@@ -5274,13 +5650,14 @@
       "com.amazonaws.services.mediaconnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RecycleBin",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -5288,13 +5665,14 @@
       "com.amazonaws.services.recyclebin"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryReadiness",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "java"
     ],
@@ -5302,13 +5680,14 @@
       "com.amazonaws.services.route53recoveryreadiness"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeConnections",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "java"
     ],
@@ -5316,13 +5695,14 @@
       "com.amazonaws.services.codeconnections"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RoboMaker",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -5330,13 +5710,14 @@
       "com.amazonaws.services.robomaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SnowDeviceManagement",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "java"
     ],
@@ -5344,7 +5725,8 @@
       "com.amazonaws.services.snowdevicemanagement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -5358,13 +5740,14 @@
       "com.amazonaws.services.eksauth"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Panorama",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "java"
     ],
@@ -5372,13 +5755,14 @@
       "com.amazonaws.services.panorama"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSMContacts",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -5386,13 +5770,14 @@
       "com.amazonaws.services.ssmcontacts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EC2",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -5400,13 +5785,14 @@
       "com.amazonaws.services.ec2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EC2",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "java"
     ],
@@ -5414,13 +5800,14 @@
       "com.amazonaws.services.ec2.util"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OSIS",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -5428,13 +5815,14 @@
       "com.amazonaws.services.osis"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudHSM",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "java"
     ],
@@ -5442,13 +5830,14 @@
       "com.amazonaws.services.cloudhsm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CostExplorer",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "java"
     ],
@@ -5456,13 +5845,14 @@
       "com.amazonaws.services.costexplorer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "java"
     ],
@@ -5470,7 +5860,8 @@
       "com.amazonaws.services.chime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
@@ -5484,13 +5875,14 @@
       "com.amazonaws.services.bcmdataexports"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ForecastService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "java"
     ],
@@ -5498,13 +5890,14 @@
       "com.amazonaws.services.forecast"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Outposts",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "java"
     ],
@@ -5512,13 +5905,14 @@
       "com.amazonaws.services.outposts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "java"
     ],
@@ -5526,13 +5920,14 @@
       "com.amazonaws.services.connect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TrustedAdvisor",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "java"
     ],
@@ -5540,13 +5935,14 @@
       "com.amazonaws.services.trustedadvisor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Athena",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "java"
     ],
@@ -5554,13 +5950,14 @@
       "com.amazonaws.services.athena"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SQS",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "java"
     ],
@@ -5568,7 +5965,8 @@
       "com.amazonaws.services.sqs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "javascript"
     }
   }
 ]

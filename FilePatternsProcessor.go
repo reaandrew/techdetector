@@ -35,11 +35,11 @@ type Match struct {
 	RepoName   string                 `json:"repo_name,omitempty"`
 }
 
-type SomethingProcessor struct {
+type FilePatternsProcessor struct {
 	Patterns []Pattern
 }
 
-func (s *SomethingProcessor) CompilePatterns() {
+func (s *FilePatternsProcessor) CompilePatterns() {
 	for i := range s.Patterns {
 		for _, filename := range s.Patterns[i].Filenames {
 			if containsRegexSpecialChars(filename) {
@@ -63,9 +63,9 @@ func containsRegexSpecialChars(s string) bool {
 	return strings.ContainsAny(s, specialChars)
 }
 
-func NewSomethingProcessor(fs fs.FS) *SomethingProcessor {
+func NewFilePatternsProcessor(fs fs.FS) *FilePatternsProcessor {
 	patterns, _ := LoadAllPatterns(fs)
-	processor := &SomethingProcessor{Patterns: patterns}
+	processor := &FilePatternsProcessor{Patterns: patterns}
 	processor.CompilePatterns()
 	return processor
 }
@@ -104,7 +104,7 @@ func LoadAllPatterns(f fs.FS) ([]Pattern, error) {
 	return allPatterns, nil
 }
 
-func (s *SomethingProcessor) Supports(path string) bool {
+func (s *FilePatternsProcessor) Supports(path string) bool {
 	return true
 }
 
@@ -153,7 +153,7 @@ func copyProperties(properties map[string]interface{}) map[string]interface{} {
 	return newProperties
 }
 
-func (s *SomethingProcessor) Process(path string, repoName string, content string) ([]Match, error) {
+func (s *FilePatternsProcessor) Process(path string, repoName string, content string) ([]Match, error) {
 	var matches []Match
 	for _, pattern := range s.Patterns {
 		// Skip patterns that specify both file_names and file_extensions (Rule 1)

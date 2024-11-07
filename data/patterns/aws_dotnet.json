@@ -2,7 +2,7 @@
   {
     "type": "Cloud Service",
     "name": "Amazon Access Analyzer",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -10,13 +10,14 @@
       "Amazon.AccessAnalyzer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Account",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -24,13 +25,14 @@
       "Amazon.Account"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ACM PCA",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -38,13 +40,14 @@
       "Amazon.ACMPCA"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -52,13 +55,14 @@
       "Amazon.Amplify"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify Backend",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -66,13 +70,14 @@
       "Amazon.AmplifyBackend"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Amplify UI Builder",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -80,13 +85,14 @@
       "Amazon.AmplifyUIBuilder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -94,13 +100,14 @@
       "Amazon.APIGateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway Management API",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -108,13 +115,14 @@
       "Amazon.ApiGatewayManagementApi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon API Gateway V2",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -122,13 +130,14 @@
       "Amazon.ApiGatewayV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppConfig",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -136,13 +145,14 @@
       "Amazon.AppConfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppConfig Data",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -150,13 +160,14 @@
       "Amazon.AppConfigData"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppFabric",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -164,13 +175,14 @@
       "Amazon.AppFabric"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppFlow",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -178,13 +190,14 @@
       "Amazon.AppFlow"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppIntegrations Service",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -192,13 +205,14 @@
       "Amazon.AppIntegrationsService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Auto Scaling",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -206,13 +220,14 @@
       "Amazon.ApplicationAutoScaling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Cost Profiler",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -220,13 +235,14 @@
       "Amazon.ApplicationCostProfiler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Discovery Service",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -234,13 +250,14 @@
       "Amazon.ApplicationDiscoveryService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Insights",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -248,13 +265,14 @@
       "Amazon.ApplicationInsights"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Application Signals",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -262,13 +280,14 @@
       "Amazon.ApplicationSignals"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppMesh",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -276,13 +295,14 @@
       "Amazon.AppMesh"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppRegistry",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -290,13 +310,14 @@
       "Amazon.AppRegistry"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppRunner",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "cs"
     ],
@@ -304,13 +325,14 @@
       "Amazon.AppRunner"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppStream",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -318,13 +340,14 @@
       "Amazon.AppStream"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppSync",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -332,13 +355,14 @@
       "Amazon.AppSync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon AppTest",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -346,13 +370,14 @@
       "Amazon.AppTest"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ARC Zonal Shift",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "cs"
     ],
@@ -360,13 +385,14 @@
       "Amazon.ARCZonalShift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Artifact",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -374,13 +400,14 @@
       "Amazon.Artifact"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Athena",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -388,13 +415,14 @@
       "Amazon.Athena"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Audit Manager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -402,13 +430,14 @@
       "Amazon.AuditManager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Augmented AI Runtime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -416,13 +445,14 @@
       "Amazon.AugmentedAIRuntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Auto Scaling",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -430,13 +460,14 @@
       "Amazon.AutoScaling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Auto Scaling Plans",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -444,13 +475,14 @@
       "Amazon.AutoScalingPlans"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AWS Health",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -458,13 +490,14 @@
       "Amazon.AWSHealth"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AWS Marketplace Commerce Analytics",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "cs"
     ],
@@ -472,13 +505,14 @@
       "Amazon.AWSMarketplaceCommerceAnalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AWS Marketplace Metering",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "cs"
     ],
@@ -486,13 +520,14 @@
       "Amazon.AWSMarketplaceMetering"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AWS Support",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -500,13 +535,14 @@
       "Amazon.AWSSupport"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon B2bi",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -514,13 +550,14 @@
       "Amazon.B2bi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Backup",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "cs"
     ],
@@ -528,13 +565,14 @@
       "Amazon.Backup"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Backup Gateway",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "cs"
     ],
@@ -542,13 +580,14 @@
       "Amazon.BackupGateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Batch",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "cs"
     ],
@@ -556,13 +595,14 @@
       "Amazon.Batch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon BCM Data Exports",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -570,13 +610,14 @@
       "Amazon.BCMDataExports"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -584,13 +625,14 @@
       "Amazon.Bedrock"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock Agent",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -598,13 +640,14 @@
       "Amazon.BedrockAgent"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock Agent Runtime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -612,13 +655,14 @@
       "Amazon.BedrockAgentRuntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Bedrock Runtime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -626,13 +670,14 @@
       "Amazon.BedrockRuntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Billing Conductor",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -640,13 +685,14 @@
       "Amazon.BillingConductor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Braket",
-    "category": null,
+    "category": "Quantum Computing",
     "file_extensions": [
       "cs"
     ],
@@ -654,13 +700,14 @@
       "Amazon.Braket"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Budgets",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -668,13 +715,14 @@
       "Amazon.Budgets"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Certificate Manager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -682,13 +730,14 @@
       "Amazon.CertificateManager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chatbot",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -696,13 +745,14 @@
       "Amazon.Chatbot"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -710,13 +760,14 @@
       "Amazon.Chime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Identity",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -724,13 +775,14 @@
       "Amazon.ChimeSDKIdentity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Media Pipelines",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -738,13 +790,14 @@
       "Amazon.ChimeSDKMediaPipelines"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Meetings",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -752,13 +805,14 @@
       "Amazon.ChimeSDKMeetings"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Messaging",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -766,13 +820,14 @@
       "Amazon.ChimeSDKMessaging"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Chime SDK Voice",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -780,13 +835,14 @@
       "Amazon.ChimeSDKVoice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CleanRooms",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -794,13 +850,14 @@
       "Amazon.CleanRooms"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CleanRooms ML",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -808,13 +865,14 @@
       "Amazon.CleanRoomsML"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Cloud9",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -822,13 +880,14 @@
       "Amazon.Cloud9"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudControlApi",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -836,13 +895,14 @@
       "Amazon.CloudControlApi"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudDirectory",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -850,13 +910,14 @@
       "Amazon.CloudDirectory"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudFormation",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -864,13 +925,14 @@
       "Amazon.CloudFormation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudFront",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -878,13 +940,14 @@
       "Amazon.CloudFront"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudFront KeyValue Store",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -892,13 +955,14 @@
       "Amazon.CloudFrontKeyValueStore"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudHSM",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -906,13 +970,14 @@
       "Amazon.CloudHSM"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudHSM V2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -920,13 +985,14 @@
       "Amazon.CloudHSMV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudSearch",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "cs"
     ],
@@ -934,13 +1000,14 @@
       "Amazon.CloudSearch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudSearchDomain",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "cs"
     ],
@@ -948,13 +1015,14 @@
       "Amazon.CloudSearchDomain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudTrail",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -962,13 +1030,14 @@
       "Amazon.CloudTrail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudTrail Data",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -976,13 +1045,14 @@
       "Amazon.CloudTrailData"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -990,13 +1060,14 @@
       "Amazon.CloudWatch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Events",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -1004,13 +1075,14 @@
       "Amazon.CloudWatchEvents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Evidently",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -1018,13 +1090,14 @@
       "Amazon.CloudWatchEvidently"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch Logs",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -1032,13 +1105,14 @@
       "Amazon.CloudWatchLogs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CloudWatch RUM",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -1046,13 +1120,14 @@
       "Amazon.CloudWatchRUM"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeAnalysis",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1060,13 +1135,14 @@
       "Amazon.CodeAnalysis"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeArtifact",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1074,13 +1150,14 @@
       "Amazon.CodeArtifact"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeBuild",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1088,13 +1165,14 @@
       "Amazon.CodeBuild"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeCatalyst",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1102,13 +1180,14 @@
       "Amazon.CodeCatalyst"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeCommit",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1116,13 +1195,14 @@
       "Amazon.CodeCommit"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeConnections",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1130,13 +1210,14 @@
       "Amazon.CodeConnections"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeDeploy",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1144,13 +1225,14 @@
       "Amazon.CodeDeploy"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Profiler",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1158,13 +1240,14 @@
       "Amazon.CodeGuruProfiler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Reviewer",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1172,13 +1255,14 @@
       "Amazon.CodeGuruReviewer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeGuru Security",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -1186,13 +1270,14 @@
       "Amazon.CodeGuruSecurity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodePipeline",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1200,13 +1285,14 @@
       "Amazon.CodePipeline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeStarconnections",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1214,13 +1300,14 @@
       "Amazon.CodeStarconnections"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CodeStarNotifications",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1228,13 +1315,14 @@
       "Amazon.CodeStarNotifications"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoIdentity",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -1242,13 +1330,14 @@
       "Amazon.CognitoIdentity"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoIdentityProvider",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -1256,13 +1345,14 @@
       "Amazon.CognitoIdentityProvider"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CognitoSync",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -1270,13 +1360,14 @@
       "Amazon.CognitoSync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Comprehend",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -1284,13 +1375,14 @@
       "Amazon.Comprehend"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Comprehend Medical",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "cs"
     ],
@@ -1298,13 +1390,14 @@
       "Amazon.ComprehendMedical"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Compute Optimizer",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -1312,13 +1405,14 @@
       "Amazon.ComputeOptimizer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ConfigService",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -1326,13 +1420,14 @@
       "Amazon.ConfigService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -1340,13 +1435,14 @@
       "Amazon.Connect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Campaign Service",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -1354,13 +1450,14 @@
       "Amazon.ConnectCampaignService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Cases",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -1368,13 +1465,14 @@
       "Amazon.ConnectCases"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Contact Lens",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -1382,13 +1480,14 @@
       "Amazon.ConnectContactLens"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Participant",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -1396,13 +1495,14 @@
       "Amazon.ConnectParticipant"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Connect Wisdom Service",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -1410,13 +1510,14 @@
       "Amazon.ConnectWisdomService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Control Catalog",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -1424,13 +1525,14 @@
       "Amazon.ControlCatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Control Tower",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -1438,13 +1540,14 @@
       "Amazon.ControlTower"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Cost and Usage Report",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -1452,13 +1555,14 @@
       "Amazon.CostAndUsageReport"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon CostExplorer",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -1466,13 +1570,14 @@
       "Amazon.CostExplorer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Cost Optimization Hub",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -1480,13 +1585,14 @@
       "Amazon.CostOptimizationHub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Customer Profiles",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -1494,13 +1600,14 @@
       "Amazon.CustomerProfiles"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Database Migration Service",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -1508,13 +1615,14 @@
       "Amazon.DatabaseMigrationService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataExchange",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -1522,13 +1630,14 @@
       "Amazon.DataExchange"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataPipeline",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -1536,13 +1645,14 @@
       "Amazon.DataPipeline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataSync",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -1550,13 +1660,14 @@
       "Amazon.DataSync"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DataZone",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -1564,13 +1675,14 @@
       "Amazon.DataZone"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DAX",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -1578,13 +1690,14 @@
       "Amazon.DAX"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Deadline",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -1592,13 +1705,14 @@
       "Amazon.Deadline"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Detective",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -1606,13 +1720,14 @@
       "Amazon.Detective"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DeviceFarm",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1620,13 +1735,14 @@
       "Amazon.DeviceFarm"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DevOps Guru",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -1634,13 +1750,14 @@
       "Amazon.DevOpsGuru"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DirectConnect",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -1648,13 +1765,14 @@
       "Amazon.DirectConnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DirectoryService",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -1662,13 +1780,14 @@
       "Amazon.DirectoryService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DirectoryServiceData",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -1676,13 +1795,14 @@
       "Amazon.DirectoryServiceData"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DLM",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -1690,13 +1810,14 @@
       "Amazon.DLM"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DocDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -1704,13 +1825,14 @@
       "Amazon.DocDB"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DocDB Elastic",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -1718,13 +1840,14 @@
       "Amazon.DocDBElastic"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DRS",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "cs"
     ],
@@ -1732,13 +1855,14 @@
       "Amazon.Drs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon DynamoDBv2",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -1746,13 +1870,14 @@
       "Amazon.DynamoDBv2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EBS",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -1760,13 +1885,14 @@
       "Amazon.EBS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EC2",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "cs"
     ],
@@ -1774,13 +1900,14 @@
       "Amazon.EC2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EC2 Instance Connect",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -1788,13 +1915,14 @@
       "Amazon.EC2InstanceConnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECR",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1802,13 +1930,14 @@
       "Amazon.ECR"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECR Public",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1816,13 +1945,14 @@
       "Amazon.ECRPublic"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ECS",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "cs"
     ],
@@ -1830,13 +1960,14 @@
       "Amazon.ECS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EKS",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "cs"
     ],
@@ -1844,13 +1975,14 @@
       "Amazon.EKS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EKS Auth",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -1858,13 +1990,14 @@
       "Amazon.EKSAuth"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElastiCache",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -1872,13 +2005,14 @@
       "Amazon.ElastiCache"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticBeanstalk",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -1886,13 +2020,14 @@
       "Amazon.ElasticBeanstalk"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticFileSystem",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -1900,13 +2035,14 @@
       "Amazon.ElasticFileSystem"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticInference",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "cs"
     ],
@@ -1914,13 +2050,14 @@
       "Amazon.ElasticInference"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticLoadBalancing",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -1928,13 +2065,14 @@
       "Amazon.ElasticLoadBalancing"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticLoadBalancingV2",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -1942,13 +2080,14 @@
       "Amazon.ElasticLoadBalancingV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticMapReduce",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -1956,13 +2095,14 @@
       "Amazon.ElasticMapReduce"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Elasticsearch",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "cs"
     ],
@@ -1970,13 +2110,14 @@
       "Amazon.Elasticsearch"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ElasticTranscoder",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -1984,13 +2125,14 @@
       "Amazon.ElasticTranscoder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EMRContainers",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -1998,13 +2140,14 @@
       "Amazon.EMRContainers"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EMRServerless",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2012,13 +2155,14 @@
       "Amazon.EMRServerless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Entity Resolution",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2026,13 +2170,14 @@
       "Amazon.EntityResolution"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon EventBridge",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -2040,13 +2185,14 @@
       "Amazon.EventBridge"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Finspace",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2054,13 +2200,14 @@
       "Amazon.Finspace"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FinSpace Data",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2068,13 +2215,14 @@
       "Amazon.FinSpaceData"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FIS",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -2082,13 +2230,14 @@
       "Amazon.FIS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FMS",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -2096,13 +2245,14 @@
       "Amazon.FMS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ForecastQueryService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -2110,13 +2260,14 @@
       "Amazon.ForecastQueryService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ForecastService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -2124,13 +2275,14 @@
       "Amazon.ForecastService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Fraud Detector",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -2138,13 +2290,14 @@
       "Amazon.FraudDetector"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FreeTier",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -2152,13 +2305,14 @@
       "Amazon.FreeTier"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon FSx",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -2166,13 +2320,14 @@
       "Amazon.FSx"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GameLift",
-    "category": null,
+    "category": "Game Development",
     "file_extensions": [
       "cs"
     ],
@@ -2180,13 +2335,14 @@
       "Amazon.GameLift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glacier",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -2194,13 +2350,14 @@
       "Amazon.Glacier"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GlobalAccelerator",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -2208,13 +2365,14 @@
       "Amazon.GlobalAccelerator"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glue",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2222,13 +2380,14 @@
       "Amazon.Glue"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Glue DataBrew",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2236,13 +2395,14 @@
       "Amazon.GlueDataBrew"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Greengrass",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2250,13 +2410,14 @@
       "Amazon.Greengrass"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Greengrass V2",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2264,13 +2425,14 @@
       "Amazon.GreengrassV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GroundStation",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "cs"
     ],
@@ -2278,13 +2440,14 @@
       "Amazon.GroundStation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon GuardDuty",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -2292,13 +2455,14 @@
       "Amazon.GuardDuty"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon HealthLake",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "cs"
     ],
@@ -2306,13 +2470,14 @@
       "Amazon.HealthLake"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IAMRolesAnywhere",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -2320,13 +2485,14 @@
       "Amazon.IAMRolesAnywhere"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Identity Management",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -2334,13 +2500,14 @@
       "Amazon.IdentityManagement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IdentityStore",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -2348,13 +2515,14 @@
       "Amazon.IdentityStore"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Imagebuilder",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -2362,13 +2530,14 @@
       "Amazon.Imagebuilder"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ImportExport",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -2376,13 +2545,14 @@
       "Amazon.ImportExport"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Inspector",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -2390,13 +2560,14 @@
       "Amazon.Inspector"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Inspector2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -2404,13 +2575,14 @@
       "Amazon.Inspector2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon InspectorScan",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -2418,13 +2590,14 @@
       "Amazon.InspectorScan"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon InternetMonitor",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -2432,13 +2605,14 @@
       "Amazon.InternetMonitor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2446,13 +2620,14 @@
       "Amazon.IoT"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT1ClickDevicesService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2460,13 +2635,14 @@
       "Amazon.IoT1ClickDevicesService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoT1ClickProjects",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2474,13 +2650,14 @@
       "Amazon.IoT1ClickProjects"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTAnalytics",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2488,13 +2665,14 @@
       "Amazon.IoTAnalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IotData",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2502,13 +2680,14 @@
       "Amazon.IotData"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTDeviceAdvisor",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2516,13 +2695,14 @@
       "Amazon.IoTDeviceAdvisor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTEvents",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2530,13 +2710,14 @@
       "Amazon.IoTEvents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTEventsData",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2544,13 +2725,14 @@
       "Amazon.IoTEventsData"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTFleetHub",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2558,13 +2740,14 @@
       "Amazon.IoTFleetHub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTFleetWise",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2572,13 +2755,14 @@
       "Amazon.IoTFleetWise"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTJobsDataPlane",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2586,13 +2770,14 @@
       "Amazon.IoTJobsDataPlane"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTSecureTunneling",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2600,13 +2785,14 @@
       "Amazon.IoTSecureTunneling"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTSiteWise",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2614,13 +2800,14 @@
       "Amazon.IoTSiteWise"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTThingsGraph",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2628,13 +2815,14 @@
       "Amazon.IoTThingsGraph"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTTwinMaker",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2642,13 +2830,14 @@
       "Amazon.IoTTwinMaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IoTWireless",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -2656,13 +2845,14 @@
       "Amazon.IoTWireless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IVS",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -2670,13 +2860,14 @@
       "Amazon.IVS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Ivschat",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -2684,13 +2875,14 @@
       "Amazon.Ivschat"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon IVSRealTime",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -2698,13 +2890,14 @@
       "Amazon.IVSRealTime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kafka",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -2712,13 +2905,14 @@
       "Amazon.Kafka"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KafkaConnect",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -2726,13 +2920,14 @@
       "Amazon.KafkaConnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kendra",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "cs"
     ],
@@ -2740,13 +2935,14 @@
       "Amazon.Kendra"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KendraRanking",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "cs"
     ],
@@ -2754,13 +2950,14 @@
       "Amazon.KendraRanking"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KeyManagementService",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -2768,13 +2965,14 @@
       "Amazon.KeyManagementService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Keyspaces",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -2782,13 +2980,14 @@
       "Amazon.Keyspaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Kinesis",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2796,13 +2995,14 @@
       "Amazon.Kinesis"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisAnalytics",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2810,13 +3010,14 @@
       "Amazon.KinesisAnalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisAnalyticsV2",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2824,13 +3025,14 @@
       "Amazon.KinesisAnalyticsV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisFirehose",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -2838,13 +3040,14 @@
       "Amazon.KinesisFirehose"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideo",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -2852,13 +3055,14 @@
       "Amazon.KinesisVideo"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoArchivedMedia",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -2866,13 +3070,14 @@
       "Amazon.KinesisVideoArchivedMedia"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoMedia",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -2880,13 +3085,14 @@
       "Amazon.KinesisVideoMedia"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoSignalingChannels",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -2894,13 +3100,14 @@
       "Amazon.KinesisVideoSignalingChannels"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon KinesisVideoWebRTCStorage",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -2908,13 +3115,14 @@
       "Amazon.KinesisVideoWebRTCStorage"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LakeFormation",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -2922,13 +3130,14 @@
       "Amazon.LakeFormation"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lambda",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "cs"
     ],
@@ -2936,13 +3145,14 @@
       "Amazon.Lambda"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LaunchWizard",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -2950,13 +3160,14 @@
       "Amazon.LaunchWizard"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lex",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -2964,13 +3175,14 @@
       "Amazon.Lex"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lex ModelBuildingService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -2978,13 +3190,14 @@
       "Amazon.LexModelBuildingService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LexModelsV2",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -2992,13 +3205,14 @@
       "Amazon.LexModelsV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LexRuntimeV2",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -3006,13 +3220,14 @@
       "Amazon.LexRuntimeV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManager",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -3020,13 +3235,14 @@
       "Amazon.LicenseManager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManagerLinuxSubscriptions",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -3034,13 +3250,14 @@
       "Amazon.LicenseManagerLinuxSubscriptions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LicenseManagerUserSubscriptions",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -3048,13 +3265,14 @@
       "Amazon.LicenseManagerUserSubscriptions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Lightsail",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "cs"
     ],
@@ -3062,13 +3280,14 @@
       "Amazon.Lightsail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LocationService",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -3076,13 +3295,14 @@
       "Amazon.LocationService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutEquipment",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -3090,13 +3310,14 @@
       "Amazon.LookoutEquipment"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutforVision",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -3104,13 +3325,14 @@
       "Amazon.LookoutforVision"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon LookoutMetrics",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -3118,13 +3340,14 @@
       "Amazon.LookoutMetrics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MachineLearning",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -3132,13 +3355,14 @@
       "Amazon.MachineLearning"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Macie2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -3146,13 +3370,14 @@
       "Amazon.Macie2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MailManager",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -3160,13 +3385,14 @@
       "Amazon.MailManager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MainframeModernization",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -3174,13 +3400,14 @@
       "Amazon.MainframeModernization"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedBlockchain",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "cs"
     ],
@@ -3188,13 +3415,14 @@
       "Amazon.ManagedBlockchain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedBlockchainQuery",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "cs"
     ],
@@ -3202,13 +3430,14 @@
       "Amazon.ManagedBlockchainQuery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ManagedGrafana",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -3216,13 +3445,14 @@
       "Amazon.ManagedGrafana"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceAgreement",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "cs"
     ],
@@ -3230,13 +3460,14 @@
       "Amazon.MarketplaceAgreement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceCatalog",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "cs"
     ],
@@ -3244,13 +3475,14 @@
       "Amazon.MarketplaceCatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceDeployment",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "cs"
     ],
@@ -3258,13 +3490,14 @@
       "Amazon.MarketplaceDeployment"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceEntitlementService",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "cs"
     ],
@@ -3272,13 +3505,14 @@
       "Amazon.MarketplaceEntitlementService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MarketplaceReporting",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "cs"
     ],
@@ -3286,13 +3520,14 @@
       "Amazon.MarketplaceReporting"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaConnect",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3300,13 +3535,14 @@
       "Amazon.MediaConnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaConvert",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3314,13 +3550,14 @@
       "Amazon.MediaConvert"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaLive",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3328,13 +3565,14 @@
       "Amazon.MediaLive"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackage",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3342,13 +3580,14 @@
       "Amazon.MediaPackage"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackageV2",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3356,13 +3595,14 @@
       "Amazon.MediaPackageV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaPackageVod",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3370,13 +3610,14 @@
       "Amazon.MediaPackageVod"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaStore",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3384,13 +3625,14 @@
       "Amazon.MediaStore"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaStoreData",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3398,13 +3640,14 @@
       "Amazon.MediaStoreData"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MediaTailor",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "cs"
     ],
@@ -3412,13 +3655,14 @@
       "Amazon.MediaTailor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MedicalImaging",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "cs"
     ],
@@ -3426,13 +3670,14 @@
       "Amazon.MedicalImaging"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MemoryDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -3440,13 +3685,14 @@
       "Amazon.MemoryDB"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Mgn",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -3454,13 +3700,14 @@
       "Amazon.Mgn"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHub",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -3468,13 +3715,14 @@
       "Amazon.MigrationHub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubConfig",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -3482,13 +3730,14 @@
       "Amazon.MigrationHubConfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubOrchestrator",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -3496,13 +3745,14 @@
       "Amazon.MigrationHubOrchestrator"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubRefactorSpaces",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -3510,13 +3760,14 @@
       "Amazon.MigrationHubRefactorSpaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MigrationHubStrategyRecommendations",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -3524,13 +3775,14 @@
       "Amazon.MigrationHubStrategyRecommendations"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MobileAnalytics",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -3538,13 +3790,14 @@
       "Amazon.MobileAnalytics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MQ",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -3552,13 +3805,14 @@
       "Amazon.MQ"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MTurk",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -3566,13 +3820,14 @@
       "Amazon.MTurk"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon MWAA",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -3580,13 +3835,14 @@
       "Amazon.MWAA"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Neptune",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -3594,13 +3850,14 @@
       "Amazon.Neptune"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Neptunedata",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -3608,13 +3865,14 @@
       "Amazon.Neptunedata"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NeptuneGraph",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -3622,13 +3880,14 @@
       "Amazon.NeptuneGraph"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkFirewall",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -3636,13 +3895,14 @@
       "Amazon.NetworkFirewall"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkManager",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -3650,13 +3910,14 @@
       "Amazon.NetworkManager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon NetworkMonitor",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -3664,13 +3925,14 @@
       "Amazon.NetworkMonitor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OAM",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -3678,13 +3940,14 @@
       "Amazon.OAM"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Omics",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "cs"
     ],
@@ -3692,13 +3955,14 @@
       "Amazon.Omics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpenSearchServerless",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "cs"
     ],
@@ -3706,13 +3970,14 @@
       "Amazon.OpenSearchServerless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpenSearchService",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "cs"
     ],
@@ -3720,13 +3985,14 @@
       "Amazon.OpenSearchService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpsWorks",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -3734,13 +4000,14 @@
       "Amazon.OpsWorks"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OpsWorksCM",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -3748,13 +4015,14 @@
       "Amazon.OpsWorksCM"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Organizations",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -3762,13 +4030,14 @@
       "Amazon.Organizations"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon OSIS",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -3776,13 +4045,14 @@
       "Amazon.OSIS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Outposts",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "cs"
     ],
@@ -3790,13 +4060,14 @@
       "Amazon.Outposts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Panorama",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -3804,13 +4075,14 @@
       "Amazon.Panorama"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PaymentCryptography",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -3818,13 +4090,14 @@
       "Amazon.PaymentCryptography"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PaymentCryptographyData",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -3832,13 +4105,14 @@
       "Amazon.PaymentCryptographyData"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PcaConnectorAd",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -3846,13 +4120,14 @@
       "Amazon.PcaConnectorAd"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PcaConnectorScep",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -3860,13 +4135,14 @@
       "Amazon.PcaConnectorScep"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PCS",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -3874,13 +4150,14 @@
       "Amazon.PCS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Personalize",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -3888,13 +4165,14 @@
       "Amazon.Personalize"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PersonalizeEvents",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -3902,13 +4180,14 @@
       "Amazon.PersonalizeEvents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PersonalizeRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -3916,13 +4195,14 @@
       "Amazon.PersonalizeRuntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PI",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -3930,13 +4210,14 @@
       "Amazon.PI"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pinpoint",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -3944,13 +4225,14 @@
       "Amazon.Pinpoint"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointEmail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -3958,13 +4240,14 @@
       "Amazon.PinpointEmail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointSMSVoice",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -3972,13 +4255,14 @@
       "Amazon.PinpointSMSVoice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PinpointSMSVoiceV2",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -3986,13 +4270,14 @@
       "Amazon.PinpointSMSVoiceV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pipes",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -4000,13 +4285,14 @@
       "Amazon.Pipes"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Polly",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -4014,13 +4300,14 @@
       "Amazon.Polly"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Pricing",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -4028,13 +4315,14 @@
       "Amazon.Pricing"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Private5G",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -4042,13 +4330,14 @@
       "Amazon.Private5G"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon PrometheusService",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -4056,13 +4345,14 @@
       "Amazon.PrometheusService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Proton",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -4070,13 +4360,14 @@
       "Amazon.Proton"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QApps",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -4084,13 +4375,14 @@
       "Amazon.QApps"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QBusiness",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -4098,13 +4390,14 @@
       "Amazon.QBusiness"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QConnect",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -4112,13 +4405,14 @@
       "Amazon.QConnect"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QLDB",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "cs"
     ],
@@ -4126,13 +4420,14 @@
       "Amazon.QLDB"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QLDBSession",
-    "category": null,
+    "category": "Blockchain",
     "file_extensions": [
       "cs"
     ],
@@ -4140,13 +4435,14 @@
       "Amazon.QLDBSession"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon QuickSight",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -4154,13 +4450,14 @@
       "Amazon.QuickSight"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RAM",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4168,13 +4465,14 @@
       "Amazon.RAM"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RDS",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -4182,13 +4480,14 @@
       "Amazon.RDS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RDSDataService",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -4196,13 +4495,14 @@
       "Amazon.RDSDataService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RecycleBin",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4210,13 +4510,14 @@
       "Amazon.RecycleBin"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Redshift",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -4224,13 +4525,14 @@
       "Amazon.Redshift"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RedshiftDataAPIService",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -4238,13 +4540,14 @@
       "Amazon.RedshiftDataAPIService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RedshiftServerless",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "cs"
     ],
@@ -4252,13 +4555,14 @@
       "Amazon.RedshiftServerless"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Rekognition",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -4266,13 +4570,14 @@
       "Amazon.Rekognition"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Repostspace",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -4280,13 +4585,14 @@
       "Amazon.Repostspace"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResilienceHub",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "cs"
     ],
@@ -4294,13 +4600,14 @@
       "Amazon.ResilienceHub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceExplorer2",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4308,13 +4615,14 @@
       "Amazon.ResourceExplorer2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceGroups",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4322,13 +4630,14 @@
       "Amazon.ResourceGroups"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ResourceGroupsTaggingAPI",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4336,13 +4645,14 @@
       "Amazon.ResourceGroupsTaggingAPI"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon RoboMaker",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "cs"
     ],
@@ -4350,13 +4660,14 @@
       "Amazon.RoboMaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -4364,13 +4675,14 @@
       "Amazon.Route53"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Domains",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -4378,13 +4690,14 @@
       "Amazon.Route53Domains"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Profiles",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -4392,13 +4705,14 @@
       "Amazon.Route53Profiles"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryCluster",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "cs"
     ],
@@ -4406,13 +4720,14 @@
       "Amazon.Route53RecoveryCluster"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryControlConfig",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "cs"
     ],
@@ -4420,13 +4735,14 @@
       "Amazon.Route53RecoveryControlConfig"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53RecoveryReadiness",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "cs"
     ],
@@ -4434,13 +4750,14 @@
       "Amazon.Route53RecoveryReadiness"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Route53Resolver",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -4448,13 +4765,14 @@
       "Amazon.Route53Resolver"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -4462,13 +4780,14 @@
       "Amazon.S3"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3Control",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -4476,13 +4795,14 @@
       "Amazon.S3Control"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon S3Outposts",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -4490,13 +4810,14 @@
       "Amazon.S3Outposts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMaker",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -4504,13 +4825,14 @@
       "Amazon.SageMaker"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SagemakerEdgeManager",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -4518,13 +4840,14 @@
       "Amazon.SagemakerEdgeManager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerFeatureStoreRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -4532,13 +4855,14 @@
       "Amazon.SageMakerFeatureStoreRuntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerGeospatial",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -4546,13 +4870,14 @@
       "Amazon.SageMakerGeospatial"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerMetrics",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -4560,13 +4885,14 @@
       "Amazon.SageMakerMetrics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SageMakerRuntime",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -4574,13 +4900,14 @@
       "Amazon.SageMakerRuntime"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SavingsPlans",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "cs"
     ],
@@ -4588,13 +4915,14 @@
       "Amazon.SavingsPlans"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Scheduler",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -4602,13 +4930,14 @@
       "Amazon.Scheduler"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Schemas",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -4616,13 +4945,14 @@
       "Amazon.Schemas"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecretsManager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -4630,13 +4960,14 @@
       "Amazon.SecretsManager"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityHub",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -4644,13 +4975,14 @@
       "Amazon.SecurityHub"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityLake",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -4658,13 +4990,14 @@
       "Amazon.SecurityLake"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SecurityToken",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -4672,13 +5005,14 @@
       "Amazon.SecurityToken"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServerlessApplicationRepository",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "cs"
     ],
@@ -4686,13 +5020,14 @@
       "Amazon.ServerlessApplicationRepository"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServerMigrationService",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -4700,13 +5035,14 @@
       "Amazon.ServerMigrationService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceCatalog",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4714,13 +5050,14 @@
       "Amazon.ServiceCatalog"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceDiscovery",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -4728,13 +5065,14 @@
       "Amazon.ServiceDiscovery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon ServiceQuotas",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4742,13 +5080,14 @@
       "Amazon.ServiceQuotas"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Shield",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -4756,13 +5095,14 @@
       "Amazon.Shield"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Signer",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -4770,13 +5110,14 @@
       "Amazon.Signer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -4784,13 +5125,14 @@
       "Amazon.SimpleDB"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleEmail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -4798,13 +5140,14 @@
       "Amazon.SimpleEmail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleEmailV2",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -4812,13 +5155,14 @@
       "Amazon.SimpleEmailV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleNotificationService",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -4826,13 +5170,14 @@
       "Amazon.SimpleNotificationService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleSystemsManagement",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -4840,13 +5185,14 @@
       "Amazon.SimpleSystemsManagement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimpleWorkflow",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -4854,13 +5200,14 @@
       "Amazon.SimpleWorkflow"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SimSpaceWeaver",
-    "category": null,
+    "category": "Digital Twins and Simulations",
     "file_extensions": [
       "cs"
     ],
@@ -4868,13 +5215,14 @@
       "Amazon.SimSpaceWeaver"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Snowball",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -4882,13 +5230,14 @@
       "Amazon.Snowball"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SnowDeviceManagement",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "cs"
     ],
@@ -4896,13 +5245,14 @@
       "Amazon.SnowDeviceManagement"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SocialMessaging",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -4910,13 +5260,14 @@
       "Amazon.SocialMessaging"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SQS",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -4924,13 +5275,14 @@
       "Amazon.SQS"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSMContacts",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4938,13 +5290,14 @@
       "Amazon.SSMContacts"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSMIncidents",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4952,13 +5305,14 @@
       "Amazon.SSMIncidents"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSMQuickSetup",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4966,13 +5320,14 @@
       "Amazon.SSMQuickSetup"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SsmSap",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -4980,13 +5335,14 @@
       "Amazon.SsmSap"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSO",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -4994,13 +5350,14 @@
       "Amazon.SSO"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSOAdmin",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -5008,13 +5365,14 @@
       "Amazon.SSOAdmin"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SSOOIDC",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "cs"
     ],
@@ -5022,13 +5380,14 @@
       "Amazon.SSOOIDC"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon StepFunctions",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -5036,13 +5395,14 @@
       "Amazon.StepFunctions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon StorageGateway",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -5050,13 +5410,14 @@
       "Amazon.StorageGateway"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SupplyChain",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -5064,13 +5425,14 @@
       "Amazon.SupplyChain"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon SupportApp",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -5078,13 +5440,14 @@
       "Amazon.SupportApp"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Synthetics",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -5092,13 +5455,14 @@
       "Amazon.Synthetics"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TaxSettings",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -5106,13 +5470,14 @@
       "Amazon.TaxSettings"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Textract",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -5120,13 +5485,14 @@
       "Amazon.Textract"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamInfluxDB",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -5134,13 +5500,14 @@
       "Amazon.TimestreamInfluxDB"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamQuery",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -5148,13 +5515,14 @@
       "Amazon.TimestreamQuery"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TimestreamWrite",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "cs"
     ],
@@ -5162,13 +5530,14 @@
       "Amazon.TimestreamWrite"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Tnb",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "cs"
     ],
@@ -5176,13 +5545,14 @@
       "Amazon.Tnb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TranscribeService",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -5190,13 +5560,14 @@
       "Amazon.TranscribeService"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Transfer",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "cs"
     ],
@@ -5204,13 +5575,14 @@
       "Amazon.Transfer"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon Translate",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -5218,13 +5590,14 @@
       "Amazon.Translate"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon TrustedAdvisor",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -5232,13 +5605,14 @@
       "Amazon.TrustedAdvisor"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VerifiedPermissions",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -5246,13 +5620,14 @@
       "Amazon.VerifiedPermissions"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VoiceID",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "cs"
     ],
@@ -5260,13 +5635,14 @@
       "Amazon.VoiceID"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon VPCLattice",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "cs"
     ],
@@ -5274,13 +5650,14 @@
       "Amazon.VPCLattice"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WAF",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -5288,13 +5665,14 @@
       "Amazon.WAF"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WAFRegional",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -5302,13 +5680,14 @@
       "Amazon.WAFRegional"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WAFV2",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "cs"
     ],
@@ -5316,13 +5695,14 @@
       "Amazon.WAFV2"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WellArchitected",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "cs"
     ],
@@ -5330,13 +5710,14 @@
       "Amazon.WellArchitected"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkDocs",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -5344,13 +5725,14 @@
       "Amazon.WorkDocs"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkMail",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -5358,13 +5740,14 @@
       "Amazon.WorkMail"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkMailMessageFlow",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "cs"
     ],
@@ -5372,13 +5755,14 @@
       "Amazon.WorkMailMessageFlow"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpaces",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -5386,13 +5770,14 @@
       "Amazon.WorkSpaces"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpacesThinClient",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -5400,13 +5785,14 @@
       "Amazon.WorkSpacesThinClient"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon WorkSpacesWeb",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "cs"
     ],
@@ -5414,13 +5800,14 @@
       "Amazon.WorkSpacesWeb"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Amazon XRay",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "cs"
     ],
@@ -5428,7 +5815,8 @@
       "Amazon.XRay"
     ],
     "properties": {
-      "vendor": "AWS"
+      "vendor": "AWS",
+      "language": "csharp"
     }
   }
 ]

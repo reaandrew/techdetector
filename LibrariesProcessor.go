@@ -17,15 +17,15 @@ type Library struct {
 	Version  string `json:"version"`
 }
 
-type LibrariesProcessorProcessor struct {
+type LibrariesProcessor struct {
 	csprojPatterns []*regexp.Regexp
 }
 
-func NewLibrariesProcessor() *LibrariesProcessorProcessor {
-	return &LibrariesProcessorProcessor{}
+func NewLibrariesProcessor() *LibrariesProcessor {
+	return &LibrariesProcessor{}
 }
 
-func (mp *LibrariesProcessorProcessor) Supports(filePath string) bool {
+func (mp *LibrariesProcessor) Supports(filePath string) bool {
 	base := filepath.Base(filePath)
 	supportedFiles := []string{
 		"pom.xml",          // Java (Maven)
@@ -49,7 +49,7 @@ func (mp *LibrariesProcessorProcessor) Supports(filePath string) bool {
 	return false
 }
 
-func (mp *LibrariesProcessorProcessor) Process(path string, repoName string, content string) ([]Match, error) {
+func (mp *LibrariesProcessor) Process(path string, repoName string, content string) ([]Match, error) {
 	var Matches []Match
 	base := filepath.Base(path)
 
@@ -99,7 +99,7 @@ func (mp *LibrariesProcessorProcessor) Process(path string, repoName string, con
 	return Matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parsePomXML(content string, repoName string, path string) ([]Match, error) {
+func (mp *LibrariesProcessor) parsePomXML(content string, repoName string, path string) ([]Match, error) {
 	type Dependency struct {
 		GroupID    string `xml:"groupId"`
 		ArtifactID string `xml:"artifactId"`
@@ -137,7 +137,7 @@ func (mp *LibrariesProcessorProcessor) parsePomXML(content string, repoName stri
 	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parseGoMod(content string, repoName string, path string) ([]Match, error) {
+func (mp *LibrariesProcessor) parseGoMod(content string, repoName string, path string) ([]Match, error) {
 	lines := strings.Split(content, "\n")
 	var matches []Match
 	var inRequireBlock bool
@@ -186,7 +186,7 @@ func (mp *LibrariesProcessorProcessor) parseGoMod(content string, repoName strin
 	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parsePackageJSON(content string, repoName string, path string) ([]Match, error) {
+func (mp *LibrariesProcessor) parsePackageJSON(content string, repoName string, path string) ([]Match, error) {
 	type PackageJSON struct {
 		Dependencies    map[string]string `json:"dependencies"`
 		DevDependencies map[string]string `json:"devDependencies"`
@@ -226,7 +226,7 @@ func (mp *LibrariesProcessorProcessor) parsePackageJSON(content string, repoName
 	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parseRequirementsTXT(content string, repoName string, path string) ([]Match, error) {
+func (mp *LibrariesProcessor) parseRequirementsTXT(content string, repoName string, path string) ([]Match, error) {
 	lines := strings.Split(content, "\n")
 	matches := make([]Match, 0, len(lines))
 
@@ -271,7 +271,7 @@ func (mp *LibrariesProcessorProcessor) parseRequirementsTXT(content string, repo
 	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parsePyProjectToml(content string, repoName string, path string) ([]Match, error) {
+func (mp *LibrariesProcessor) parsePyProjectToml(content string, repoName string, path string) ([]Match, error) {
 	type PyProject struct {
 		Tool struct {
 			Poetry struct {
@@ -318,7 +318,7 @@ func (mp *LibrariesProcessorProcessor) parsePyProjectToml(content string, repoNa
 	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parseCsProj(content string, repoName string, path string) ([]Match, error) {
+func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path string) ([]Match, error) {
 	type PackageReference struct {
 		Include string `xml:"Include,attr"`
 		Version string `xml:"Version,attr"`

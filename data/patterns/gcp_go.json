@@ -2,7 +2,7 @@
   {
     "type": "Cloud Service",
     "name": "AccessApproval",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -10,13 +10,14 @@
       "cloud.google.com/go/accessapproval"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Container",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -24,13 +25,14 @@
       "cloud.google.com/go/containeranalysis"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "OsConfig",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -38,13 +40,14 @@
       "cloud.google.com/go/osconfig"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Retail",
-    "category": null,
+    "category": "Retail and Personalization",
     "file_extensions": [
       "go"
     ],
@@ -52,13 +55,14 @@
       "cloud.google.com/go/retail"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "RecommendationEngine",
-    "category": null,
+    "category": "Retail and Personalization",
     "file_extensions": [
       "go"
     ],
@@ -66,13 +70,14 @@
       "cloud.google.com/go/recommendationengine"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "NetworkManagement",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -80,13 +85,14 @@
       "cloud.google.com/go/networkmanagement"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "PhishingProtection",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -94,13 +100,14 @@
       "cloud.google.com/go/phishingprotection"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "PubSub",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -108,13 +115,14 @@
       "cloud.google.com/go/pubsub"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Talent",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -122,13 +130,14 @@
       "cloud.google.com/go/talent"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ResourceSettings",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -136,13 +145,14 @@
       "cloud.google.com/go/resourcesettings"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Security",
-    "category": null,
+    "category": "Security\nSecurity",
     "file_extensions": [
       "go"
     ],
@@ -150,13 +160,14 @@
       "cloud.google.com/go/security"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "DataCatalog",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -164,13 +175,14 @@
       "cloud.google.com/go/datacatalog"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AdvisoryNotifications",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -178,13 +190,14 @@
       "cloud.google.com/go/advisorynotifications"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ServiceUsage",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -192,13 +205,14 @@
       "cloud.google.com/go/serviceusage"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "TextToSpeech",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -206,13 +220,14 @@
       "cloud.google.com/go/texttospeech"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Config",
-    "category": null,
+    "category": "Governance and Compliance\nMonitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -220,13 +235,14 @@
       "cloud.google.com/go/config"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Trace",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -234,13 +250,14 @@
       "cloud.google.com/go/trace"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "WebRisk",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -248,13 +265,14 @@
       "cloud.google.com/go/webrisk"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "BackupDR",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -262,13 +280,14 @@
       "cloud.google.com/go/backupdr"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Analytics",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -276,13 +295,14 @@
       "cloud.google.com/go/analytics"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Deploy",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -290,13 +310,14 @@
       "cloud.google.com/go/deploy"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "LifeSciences",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "go"
     ],
@@ -304,13 +325,14 @@
       "cloud.google.com/go/lifesciences"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -318,13 +340,14 @@
       "cloud.google.com/go/internal/protoveneer"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -332,13 +355,14 @@
       "cloud.google.com/go/internal/godocfx"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -346,13 +370,14 @@
       "cloud.google.com/go/internal/generated"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -360,13 +385,14 @@
       "cloud.google.com/go/internal/postprocessor"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -374,13 +400,14 @@
       "cloud.google.com/go/internal/aliasfix"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -388,13 +415,14 @@
       "cloud.google.com/go/internal/gapicgen"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -402,13 +430,14 @@
       "cloud.google.com/go/internal/aliasgen"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -416,13 +445,14 @@
       "cloud.google.com/go/internal/actions"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -430,13 +460,14 @@
       "cloud.google.com/go/internal/carver"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -444,13 +475,14 @@
       "cloud.google.com/go/internal/examples/fake"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -458,13 +490,14 @@
       "cloud.google.com/go/internal/examples/mock"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "EdgeNetwork",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "go"
     ],
@@ -472,13 +505,14 @@
       "cloud.google.com/go/edgenetwork"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Identity",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -486,13 +520,14 @@
       "cloud.google.com/go/identitytoolkit"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "NetworkConnectivity",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -500,13 +535,14 @@
       "cloud.google.com/go/networkconnectivity"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "MediaTranslation",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -514,13 +550,14 @@
       "cloud.google.com/go/mediatranslation"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Bigtable",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -528,13 +565,14 @@
       "cloud.google.com/go/bigtable"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ServiceDirectory",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -542,13 +580,14 @@
       "cloud.google.com/go/servicedirectory"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Ids",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -556,13 +595,14 @@
       "cloud.google.com/go/ids"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "PolicyTroubleshooter",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -570,13 +610,14 @@
       "cloud.google.com/go/policytroubleshooter"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AIPlatform",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -584,13 +625,14 @@
       "cloud.google.com/go/vertexai"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ContactCenterInsights",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -598,13 +640,14 @@
       "cloud.google.com/go/contactcenterinsights"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "StorageTransfer",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -612,13 +655,14 @@
       "cloud.google.com/go/storagetransfer"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Security",
-    "category": null,
+    "category": "Security\nSecurity",
     "file_extensions": [
       "go"
     ],
@@ -626,13 +670,14 @@
       "cloud.google.com/go/securityposture"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "EssentialContacts",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -640,13 +685,14 @@
       "cloud.google.com/go/essentialcontacts"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AIPlatform",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -654,13 +700,14 @@
       "cloud.google.com/go/ai"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "DocumentAI",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -668,13 +715,14 @@
       "cloud.google.com/go/documentai"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "GSuiteAddOns",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -682,13 +730,14 @@
       "cloud.google.com/go/gsuiteaddons"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Firestore",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -696,13 +745,14 @@
       "cloud.google.com/go/firestore"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "BigQuery",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -710,13 +760,14 @@
       "cloud.google.com/go/bigquery"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Shopping",
-    "category": null,
+    "category": "Retail and Personalization",
     "file_extensions": [
       "go"
     ],
@@ -724,13 +775,14 @@
       "cloud.google.com/go/shopping"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "StorageInsights",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -738,13 +790,14 @@
       "cloud.google.com/go/storageinsights"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Commerce",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -752,7 +805,8 @@
       "cloud.google.com/go/commerce"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
@@ -766,13 +820,14 @@
       "cloud.google.com/go/iot"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Logging",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -780,13 +835,14 @@
       "cloud.google.com/go/logging"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "VideoIntelligence",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -794,13 +850,14 @@
       "cloud.google.com/go/videointelligence"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Storage",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -808,13 +865,14 @@
       "cloud.google.com/go/storage"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AccessApproval",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -822,13 +880,14 @@
       "cloud.google.com/go/accessapproval"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Run",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -836,13 +895,14 @@
       "cloud.google.com/go/run"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Maps",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -850,13 +910,14 @@
       "cloud.google.com/go/maps"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ApiHub",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -864,13 +925,14 @@
       "cloud.google.com/go/apihub"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Tpu",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -878,13 +940,14 @@
       "cloud.google.com/go/tpu"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Profiler",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -892,7 +955,8 @@
       "cloud.google.com/go/profiler"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
@@ -906,13 +970,14 @@
       "cloud.google.com/go/datalabeling"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Datastore",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -920,13 +985,14 @@
       "cloud.google.com/go/datastore"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -934,13 +1000,14 @@
       "cloud.google.com/go/grafeas"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "MigrationCenter",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -948,13 +1015,14 @@
       "cloud.google.com/go/migrationcenter"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "CloudControlsPartner",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -962,13 +1030,14 @@
       "cloud.google.com/go/cloudcontrolspartner"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "PolicySimulator",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -976,13 +1045,14 @@
       "cloud.google.com/go/policysimulator"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Workstations",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -990,13 +1060,14 @@
       "cloud.google.com/go/workstations"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "RapidMigrationAssessment",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -1004,13 +1075,14 @@
       "cloud.google.com/go/rapidmigrationassessment"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Dialogflow",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -1018,7 +1090,8 @@
       "cloud.google.com/go/dialogflow"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
@@ -1032,13 +1105,14 @@
       "cloud.google.com/go/edgecontainer"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ApigeeConnect",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -1046,13 +1120,14 @@
       "cloud.google.com/go/apigeeconnect"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Asset",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -1060,13 +1135,14 @@
       "cloud.google.com/go/asset"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Iam",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1074,13 +1150,14 @@
       "cloud.google.com/go/iam"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Optimization",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -1088,13 +1165,14 @@
       "cloud.google.com/go/optimization"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Scheduler",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1102,13 +1180,14 @@
       "cloud.google.com/go/scheduler"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Spanner",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1116,13 +1195,14 @@
       "cloud.google.com/go/spanner"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Spanner",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1130,13 +1210,14 @@
       "cloud.google.com/go/spanner/test"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Support",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -1144,13 +1225,14 @@
       "cloud.google.com/go/support"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Compute",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1158,13 +1240,14 @@
       "cloud.google.com/go/compute"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Compute",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1172,13 +1255,14 @@
       "cloud.google.com/go/compute/metadata"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "VpcAccess",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -1186,13 +1270,14 @@
       "cloud.google.com/go/vpcaccess"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AlloyDb",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1200,13 +1285,14 @@
       "cloud.google.com/go/alloydb"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Orchestration",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1214,13 +1300,14 @@
       "cloud.google.com/go/orchestration"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Datastream",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -1228,13 +1315,14 @@
       "cloud.google.com/go/datastream"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ApiKeys",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -1242,13 +1330,14 @@
       "cloud.google.com/go/apikeys"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Workflows",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1256,13 +1345,14 @@
       "cloud.google.com/go/workflows"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AIPlatform",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -1270,13 +1360,14 @@
       "cloud.google.com/go/aiplatform"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Apps",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -1284,13 +1375,14 @@
       "cloud.google.com/go/chat"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "VmwareEngine",
-    "category": null,
+    "category": "Hybrid and Edge Computing",
     "file_extensions": [
       "go"
     ],
@@ -1298,13 +1390,14 @@
       "cloud.google.com/go/vmwareengine"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "CloudBuild",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1312,13 +1405,14 @@
       "cloud.google.com/go/cloudbuild"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Cloud",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -1326,13 +1420,14 @@
       "cloud.google.com/go"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Memcache",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1340,13 +1435,14 @@
       "cloud.google.com/go/memcache"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "PrivilegedAccessManager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -1354,13 +1450,14 @@
       "cloud.google.com/go/privilegedaccessmanager"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AppHub",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1368,13 +1465,14 @@
       "cloud.google.com/go/apphub"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Monitoring",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -1382,13 +1480,14 @@
       "cloud.google.com/go/monitoring"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "NetworkServices",
-    "category": null,
+    "category": "Networking",
     "file_extensions": [
       "go"
     ],
@@ -1396,13 +1495,14 @@
       "cloud.google.com/go/networkservices"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Batch",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1410,13 +1510,14 @@
       "cloud.google.com/go/batch"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Recommender",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -1424,13 +1525,14 @@
       "cloud.google.com/go/recommender"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ApigeeRegistry",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -1438,13 +1540,14 @@
       "cloud.google.com/go/apigeeregistry"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Notebooks",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -1452,13 +1555,14 @@
       "cloud.google.com/go/notebooks"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "PrivateCatalog",
-    "category": null,
+    "category": "Cloud Marketplace",
     "file_extensions": [
       "go"
     ],
@@ -1466,13 +1570,14 @@
       "cloud.google.com/go/privatecatalog"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AutoML",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -1480,13 +1585,14 @@
       "cloud.google.com/go/automl"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "CloudQuotas",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -1494,13 +1600,14 @@
       "cloud.google.com/go/cloudquotas"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Translate",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -1508,13 +1615,14 @@
       "cloud.google.com/go/translate"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Metastore",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1522,13 +1630,14 @@
       "cloud.google.com/go/metastore"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "PubSub",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -1536,13 +1645,14 @@
       "cloud.google.com/go/pubsub"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Spanner",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1550,13 +1660,14 @@
       "cloud.google.com/go/spanner"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Cloud",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -1564,13 +1675,14 @@
       "cloud.google.com/go"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Bigtable",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1578,13 +1690,14 @@
       "cloud.google.com/go/bigtable"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "BigQuery",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1592,13 +1705,14 @@
       "cloud.google.com/go/bigquery"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Storage",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -1606,7 +1720,8 @@
       "cloud.google.com/go/storage"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
@@ -1620,13 +1735,14 @@
       "cloud.google.com/go/pubsublite"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Firestore",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1634,13 +1750,14 @@
       "cloud.google.com/go/firestore"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Logging",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -1648,13 +1765,14 @@
       "cloud.google.com/go/logging"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -1662,13 +1780,14 @@
       "cloud.google.com/go/internal/gapicgen"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -1676,13 +1795,14 @@
       "cloud.google.com/go/internal/godocfx"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -1690,13 +1810,14 @@
       "cloud.google.com/go/internal/examples/fake"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -1704,13 +1825,14 @@
       "cloud.google.com/go/internal/examples/mock"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Datastore",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -1718,13 +1840,14 @@
       "cloud.google.com/go/datastore"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AppEngine",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1732,13 +1855,14 @@
       "cloud.google.com/go/appengine"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Profiler",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -1746,13 +1870,14 @@
       "cloud.google.com/go/cloudprofiler"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ConfidentialComputing",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -1760,13 +1885,14 @@
       "cloud.google.com/go/confidentialcomputing"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Maps",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -1774,13 +1900,14 @@
       "cloud.google.com/go/streetview"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Dataflow",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -1788,13 +1915,14 @@
       "cloud.google.com/go/dataflow"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Common",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "go"
     ],
@@ -1802,13 +1930,14 @@
       "cloud.google.com/go/dataqna"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "OrgPolicy",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -1816,13 +1945,14 @@
       "cloud.google.com/go/orgpolicy"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ServiceManagement",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -1830,13 +1960,14 @@
       "cloud.google.com/go/servicemanagement"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "BareMetalSolution",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -1844,13 +1975,14 @@
       "cloud.google.com/go/baremetalsolution"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ServiceHealth",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -1858,13 +1990,14 @@
       "cloud.google.com/go/servicehealth"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "NetworkSecurity",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -1872,13 +2005,14 @@
       "cloud.google.com/go/networksecurity"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "SecretManager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -1886,13 +2020,14 @@
       "cloud.google.com/go/secretmanager"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ArtifactRegistry",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1900,13 +2035,14 @@
       "cloud.google.com/go/artifactregistry"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "WebSecurityScanner",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -1914,13 +2050,14 @@
       "cloud.google.com/go/websecurityscanner"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Shell",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1928,13 +2065,14 @@
       "cloud.google.com/go/shell"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Area120",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -1942,7 +2080,8 @@
       "cloud.google.com/go/area120"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
@@ -1956,13 +2095,14 @@
       "cloud.google.com/go/accesscontextmanager"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Domains",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -1970,13 +2110,14 @@
       "cloud.google.com/go/domains"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Vision",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -1984,13 +2125,14 @@
       "cloud.google.com/go/vision/v2"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Channel",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -1998,13 +2140,14 @@
       "cloud.google.com/go/channel"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Video",
-    "category": null,
+    "category": "Media and Content Delivery",
     "file_extensions": [
       "go"
     ],
@@ -2012,13 +2155,14 @@
       "cloud.google.com/go/video"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Iam",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -2026,13 +2170,14 @@
       "cloud.google.com/go/auth"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Iam",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -2040,13 +2185,14 @@
       "cloud.google.com/go/auth/oauth2adapt"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "GkeBackup",
-    "category": null,
+    "category": "Disaster Recovery and Backup",
     "file_extensions": [
       "go"
     ],
@@ -2054,13 +2200,14 @@
       "cloud.google.com/go/gkebackup"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "BinaryAuthorization",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2068,13 +2215,14 @@
       "cloud.google.com/go/binaryauthorization"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "VisionAI",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2082,13 +2230,14 @@
       "cloud.google.com/go/visionai"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "SecureSourceManager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2096,13 +2245,14 @@
       "cloud.google.com/go/securesourcemanager"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ErrorReporting",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -2110,13 +2260,14 @@
       "cloud.google.com/go/errorreporting"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "GkeConnect",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2124,13 +2275,14 @@
       "cloud.google.com/go/gkeconnect"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Iap",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -2138,13 +2290,14 @@
       "cloud.google.com/go/iap"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "OracleDatabase",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -2152,13 +2305,14 @@
       "cloud.google.com/go/oracledatabase"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "TelcoAutomation",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "go"
     ],
@@ -2166,13 +2320,14 @@
       "cloud.google.com/go/telcoautomation"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Apps",
-    "category": null,
+    "category": "Enterprise Applications",
     "file_extensions": [
       "go"
     ],
@@ -2180,13 +2335,14 @@
       "cloud.google.com/go/apps"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "SecurityCenterManagement",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2194,7 +2350,8 @@
       "cloud.google.com/go/securitycentermanagement"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
@@ -2208,13 +2365,14 @@
       "cloud.google.com/go/pubsublite"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "LongRunning",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -2222,13 +2380,14 @@
       "cloud.google.com/go/longrunning"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Dataproc",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -2236,13 +2395,14 @@
       "cloud.google.com/go/dataproc/v2"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "SecurityCenter",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2250,13 +2410,14 @@
       "cloud.google.com/go/securitycenter"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Filestore",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -2264,13 +2425,14 @@
       "cloud.google.com/go/filestore"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "DataFusion",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2278,13 +2440,14 @@
       "cloud.google.com/go/datafusion"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Functions",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -2292,13 +2455,14 @@
       "cloud.google.com/go/functions"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "BeyondCorp",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2306,13 +2470,14 @@
       "cloud.google.com/go/beyondcorp"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Speech",
-    "category": null,
+    "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2320,13 +2485,14 @@
       "cloud.google.com/go/speech"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "NetApp",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -2334,13 +2500,14 @@
       "cloud.google.com/go/netapp"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "CertificateManager",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2348,13 +2515,14 @@
       "cloud.google.com/go/certificatemanager"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Billing",
-    "category": null,
+    "category": "Cost Management",
     "file_extensions": [
       "go"
     ],
@@ -2362,13 +2530,14 @@
       "cloud.google.com/go/billing"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "VMMigration",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -2376,13 +2545,14 @@
       "cloud.google.com/go/vmmigration"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "GkeMultiV1",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2390,13 +2560,14 @@
       "cloud.google.com/go/gkemulticloud"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Kms",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2404,13 +2575,14 @@
       "cloud.google.com/go/kms"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Language",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "go"
     ],
@@ -2418,13 +2590,14 @@
       "cloud.google.com/go/language"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "DeveloperConnect",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -2432,13 +2605,14 @@
       "cloud.google.com/go/developerconnect"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Parallelstore",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "go"
     ],
@@ -2446,13 +2620,14 @@
       "cloud.google.com/go/parallelstore"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ManagedIdentities",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -2460,13 +2635,14 @@
       "cloud.google.com/go/managedidentities"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ResourceManager",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -2474,13 +2650,14 @@
       "cloud.google.com/go/resourcemanager"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ManagedKafka",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2488,13 +2665,14 @@
       "cloud.google.com/go/managedkafka"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ApiGateway",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2502,13 +2680,14 @@
       "cloud.google.com/go/apigateway"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Dataform",
-    "category": null,
+    "category": "Developer Tools",
     "file_extensions": [
       "go"
     ],
@@ -2516,13 +2695,14 @@
       "cloud.google.com/go/dataform"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "DiscoveryEngine",
-    "category": null,
+    "category": "Search and Indexing",
     "file_extensions": [
       "go"
     ],
@@ -2530,13 +2710,14 @@
       "cloud.google.com/go/discoveryengine"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "ServiceControl",
-    "category": null,
+    "category": "Monitoring and Management",
     "file_extensions": [
       "go"
     ],
@@ -2544,13 +2725,14 @@
       "cloud.google.com/go/servicecontrol"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Eventarc",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2558,13 +2740,14 @@
       "cloud.google.com/go/eventarc"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "RecaptchaEnterprise",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "go"
     ],
@@ -2572,13 +2755,14 @@
       "cloud.google.com/go/recaptchaenterprise/v2"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Tasks",
-    "category": null,
+    "category": "Collaboration and Communication",
     "file_extensions": [
       "go"
     ],
@@ -2586,13 +2770,14 @@
       "cloud.google.com/go/cloudtasks"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "GkeHub",
-    "category": null,
+    "category": "Integration",
     "file_extensions": [
       "go"
     ],
@@ -2600,13 +2785,14 @@
       "cloud.google.com/go/gkehub"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "CloudDms",
-    "category": null,
+    "category": "Migration and Transfer",
     "file_extensions": [
       "go"
     ],
@@ -2614,13 +2800,14 @@
       "cloud.google.com/go/clouddms"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Redis",
-    "category": null,
+    "category": "Databases",
     "file_extensions": [
       "go"
     ],
@@ -2628,13 +2815,14 @@
       "cloud.google.com/go/redis"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "OsLogin",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "go"
     ],
@@ -2642,13 +2830,14 @@
       "cloud.google.com/go/oslogin"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Dataplex",
-    "category": null,
+    "category": "Analytics and Big Data",
     "file_extensions": [
       "go"
     ],
@@ -2656,13 +2845,14 @@
       "cloud.google.com/go/dataplex"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "AssuredWorkloads",
-    "category": null,
+    "category": "Governance and Compliance",
     "file_extensions": [
       "go"
     ],
@@ -2670,13 +2860,14 @@
       "cloud.google.com/go/assuredworkloads"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Container",
-    "category": null,
+    "category": "Compute",
     "file_extensions": [
       "go"
     ],
@@ -2684,7 +2875,8 @@
       "cloud.google.com/go/container"
     ],
     "properties": {
-      "vendor": "GCP"
+      "vendor": "GCP",
+      "language": "javascript"
     }
   }
 ]

@@ -2,7 +2,7 @@
   {
     "type": "Cloud Service",
     "name": "Azure Core",
-    "category": null,
+    "category": "Developer Frameworks",
     "file_extensions": [
       "py"
     ],
@@ -10,7 +10,8 @@
       "import azure-core"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -24,13 +25,14 @@
       "import azure-ai-language-questionanswering"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure AI Language Conversations",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "py"
     ],
@@ -38,7 +40,8 @@
       "import azure-ai-language-conversations"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -52,7 +55,8 @@
       "import azure-mgmt-maintenance"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -66,7 +70,8 @@
       "import azure-mgmt-hdinsight"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -80,7 +85,8 @@
       "import azure-mgmt-hdinsightcontainers"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -94,7 +100,8 @@
       "import azure-agrifood-farming"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -108,7 +115,8 @@
       "import azure-mgmt-agrifood"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -122,7 +130,8 @@
       "import azure-mgmt-security"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -136,7 +145,8 @@
       "import azure-mgmt-hybridkubernetes"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -150,7 +160,8 @@
       "import azure-mgmt-chaos"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -164,7 +175,8 @@
       "import azure-mgmt-orbital"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -178,7 +190,8 @@
       "import azure-mgmt-datadog"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -192,7 +205,8 @@
       "import azure-mgmt-billingbenefits"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -206,7 +220,8 @@
       "import azure-eventgrid"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -220,7 +235,8 @@
       "import azure-mgmt-eventgrid"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -234,7 +250,8 @@
       "import azure-mgmt-networkanalytics"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -248,7 +265,8 @@
       "import azure-communication-identity"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -262,7 +280,8 @@
       "import azure-mgmt-trafficmanager"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -276,7 +295,8 @@
       "import azure-mgmt-baremetalinfrastructure"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -290,7 +310,8 @@
       "import azure-mgmt-sphere"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -304,7 +325,8 @@
       "import azure-mgmt-servicenetworking"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -318,7 +340,8 @@
       "import azure-ai-textanalytics"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -332,13 +355,14 @@
       "import azure-mgmt-storagepool"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Identity",
-    "category": null,
+    "category": "Identity and Access Management",
     "file_extensions": [
       "py"
     ],
@@ -346,7 +370,8 @@
       "import azure-identity"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -360,7 +385,8 @@
       "import azure-ai-documentintelligence"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -374,7 +400,8 @@
       "import azure-mgmt-managedservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -388,7 +415,8 @@
       "import azure-mgmt-kubernetesconfiguration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -402,7 +430,8 @@
       "import azure-mgmt-extendedlocation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -416,13 +445,14 @@
       "import azure-mgmt-subscription"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure AI Inference",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "py"
     ],
@@ -430,7 +460,8 @@
       "import azure-ai-inference"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -444,7 +475,8 @@
       "import azure-mgmt-fluidrelay"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -458,7 +490,8 @@
       "import azure-mgmt-automation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -472,7 +505,8 @@
       "import azure-mgmt-labservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -486,7 +520,8 @@
       "import azure-iot-deviceprovisioning"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -500,13 +535,14 @@
       "import azure-mgmt-quantum"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Quantum Jobs",
-    "category": null,
+    "category": "Quantum Computing",
     "file_extensions": [
       "py"
     ],
@@ -514,7 +550,8 @@
       "import azure-quantum-jobs"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -528,7 +565,8 @@
       "import azure-mgmt-providerhub"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -542,7 +580,8 @@
       "import azure-mgmt-mongocluster"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -556,7 +595,8 @@
       "import azure-ai-anomalydetector"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -570,7 +610,8 @@
       "import azure-mgmt-relay"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -584,7 +625,8 @@
       "import azure-mgmt-mobilenetwork"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -598,7 +640,8 @@
       "import azure-digitaltwins-core"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -612,7 +655,8 @@
       "import azure-mgmt-digitaltwins"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -626,7 +670,8 @@
       "import azure-mgmt-securityinsight"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -640,7 +685,8 @@
       "import azure-mgmt-storagesync"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -654,7 +700,8 @@
       "import azure-mgmt-datalake-store"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -668,7 +715,8 @@
       "import azure-mgmt-edgeorder"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -682,13 +730,14 @@
       "import azure-storage-blob-changefeed"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Storage Files Shares",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "py"
     ],
@@ -696,13 +745,14 @@
       "import azure-storage-file-share"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Storage Queues",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "py"
     ],
@@ -710,7 +760,8 @@
       "import azure-storage-queue"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -724,13 +775,14 @@
       "import azure-storage-file-datalake"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Storage Blobs",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "py"
     ],
@@ -738,13 +790,14 @@
       "import azure-storage-blob"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Storage Blobs Batch",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "py"
     ],
@@ -752,7 +805,8 @@
       "import azure-storage-blob-batch"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -766,13 +820,14 @@
       "import azure-maps-timezone"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Maps Weather",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "py"
     ],
@@ -780,13 +835,14 @@
       "import azure-maps-weather"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Maps Geolocation",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "py"
     ],
@@ -794,7 +850,8 @@
       "import azure-maps-geolocation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -808,7 +865,8 @@
       "import azure-maps-render"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -822,13 +880,14 @@
       "import azure-maps-route"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Maps Search",
-    "category": null,
+    "category": "IoT",
     "file_extensions": [
       "py"
     ],
@@ -836,7 +895,8 @@
       "import azure-maps-search"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -850,7 +910,8 @@
       "import azure-mgmt-recoveryservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -864,7 +925,8 @@
       "import azure-mgmt-recoveryservicessiterecovery"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -878,7 +940,8 @@
       "import azure-mgmt-recoveryservicesdatareplication"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -892,7 +955,8 @@
       "import azure-mgmt-cosmosdb"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -906,7 +970,8 @@
       "import azure-cosmos"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -920,7 +985,8 @@
       "import azure-mgmt-compute"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -934,7 +1000,8 @@
       "import azure-mgmt-sql"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -948,7 +1015,8 @@
       "import azure-mgmt-redis"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -962,7 +1030,8 @@
       "import azure-mgmt-servicebus"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -976,7 +1045,8 @@
       "import azure-servicebus"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -990,7 +1060,8 @@
       "import azure-mgmt-network"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1004,7 +1075,8 @@
       "import azure-mgmt-resource"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1018,7 +1090,8 @@
       "import azure-mgmt-monitor"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1032,7 +1105,8 @@
       "import azure-mgmt-loganalytics"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1046,7 +1120,8 @@
       "import azure-mgmt-policyinsights"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1060,7 +1135,8 @@
       "import azure-mgmt-kusto"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1074,7 +1150,8 @@
       "import azure-mgmt-redisenterprise"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1088,7 +1165,8 @@
       "import azure-mgmt-sqlvirtualmachine"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1102,7 +1180,8 @@
       "import azure-mgmt-applicationinsights"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1116,7 +1195,8 @@
       "import azure-mgmt-storageimportexport"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1130,7 +1210,8 @@
       "import azure-mgmt-datamigration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1144,7 +1225,8 @@
       "import azure-mgmt-datafactory"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1158,7 +1240,8 @@
       "import azure-mgmt-synapse"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1172,7 +1255,8 @@
       "import azure-synapse-artifacts"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1186,7 +1270,8 @@
       "import azure-synapse-spark"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1200,7 +1285,8 @@
       "import azure-synapse-monitoring"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1214,7 +1300,8 @@
       "import azure-mgmt-devtestlabs"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1228,7 +1315,8 @@
       "import azure-mgmt-devopsinfrastructure"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1242,7 +1330,8 @@
       "import azure-mgmt-servicefabricmanagedclusters"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1256,13 +1345,14 @@
       "import azure-mgmt-healthcareapis"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Data Tables",
-    "category": null,
+    "category": "Storage",
     "file_extensions": [
       "py"
     ],
@@ -1270,7 +1360,8 @@
       "import azure-data-tables"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1284,7 +1375,8 @@
       "import azure-mgmt-elasticsan"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1298,7 +1390,8 @@
       "import azure-mgmt-containerinstance"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1312,7 +1405,8 @@
       "import azure-mgmt-graphservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1326,7 +1420,8 @@
       "import azure-mgmt-netapp"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1340,7 +1435,8 @@
       "import azure-mgmt-workloads"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1354,7 +1450,8 @@
       "import azure-healthinsights-cancerprofiling"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1368,7 +1465,8 @@
       "import azure-healthinsights-radiologyinsights"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1382,7 +1480,8 @@
       "import azure-healthinsights-clinicalmatching"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1396,7 +1495,8 @@
       "import azure-mgmt-dynatrace"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1410,7 +1510,8 @@
       "import azure-mgmt-billing"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1424,7 +1525,8 @@
       "import azure-iot-deviceupdate"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1438,13 +1540,14 @@
       "import azure-mgmt-authorization"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure AI Translation Text",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "py"
     ],
@@ -1452,13 +1555,14 @@
       "import azure-ai-translation-text"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure AI Translation Document",
-    "category": null,
+    "category": "Machine Learning and AI",
     "file_extensions": [
       "py"
     ],
@@ -1466,7 +1570,8 @@
       "import azure-ai-translation-document"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1480,7 +1585,8 @@
       "import azure-mgmt-networkcloud"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1494,7 +1600,8 @@
       "import azure-mgmt-alertsmanagement"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1508,7 +1615,8 @@
       "import azure-messaging-webpubsubservice"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1522,7 +1630,8 @@
       "import azure-messaging-webpubsubclient"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1536,7 +1645,8 @@
       "import azure-mgmt-webpubsub"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1550,7 +1660,8 @@
       "import azure-mgmt-notificationhubs"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1564,7 +1675,8 @@
       "import azure-mgmt-operationsmanagement"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1578,7 +1690,8 @@
       "import azure-mgmt-education"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1592,7 +1705,8 @@
       "import azure-mgmt-appconfiguration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1606,7 +1720,8 @@
       "import azure-mgmt-desktopvirtualization"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1620,7 +1735,8 @@
       "import azure-mgmt-largeinstance"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1634,13 +1750,14 @@
       "import azure-mgmt-attestation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Security Attestation",
-    "category": null,
+    "category": "Security",
     "file_extensions": [
       "py"
     ],
@@ -1648,7 +1765,8 @@
       "import azure-security-attestation"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1662,7 +1780,8 @@
       "import azure-mgmt-costmanagement"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1676,7 +1795,8 @@
       "import azure-mgmt-databricks"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1690,7 +1810,8 @@
       "import azure-mgmt-storageactions"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1704,7 +1825,8 @@
       "import azure-mgmt-astro"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1718,7 +1840,8 @@
       "import azure-mgmt-resourceconnector"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1732,7 +1855,8 @@
       "import azure-mgmt-appplatform"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1746,7 +1870,8 @@
       "import azure-mgmt-newrelicobservability"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1760,7 +1885,8 @@
       "import azure-mgmt-informaticadatamanagement"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1774,7 +1900,8 @@
       "import azure-mgmt-defendereasm"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1788,7 +1915,8 @@
       "import azure-mgmt-redhatopenshift"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1802,13 +1930,14 @@
       "import azure-mgmt-logic"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
     "type": "Cloud Service",
     "name": "Azure Health Deidentification",
-    "category": null,
+    "category": "Healthcare and Life Sciences",
     "file_extensions": [
       "py"
     ],
@@ -1816,7 +1945,8 @@
       "import azure-health-deidentification"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1830,7 +1960,8 @@
       "import azure-mgmt-healthdataaiservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1844,7 +1975,8 @@
       "import azure-mgmt-privatedns"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1858,7 +1990,8 @@
       "import azure-mgmt-support"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1872,7 +2005,8 @@
       "import azure-mgmt-powerbidedicated"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1886,7 +2020,8 @@
       "import azure-mgmt-guestconfig"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1900,7 +2035,8 @@
       "import azure-mgmt-nginx"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1914,7 +2050,8 @@
       "import azure-mgmt-sqlvirtualmachine"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1928,7 +2065,8 @@
       "import azure-mgmt-iotcentral"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1942,7 +2080,8 @@
       "import azure-mgmt-storagecache"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1956,7 +2095,8 @@
       "import azure-cognitiveservices-formrecognizer"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1970,7 +2110,8 @@
       "import azure-mgmt-cognitiveservices"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1984,7 +2125,8 @@
       "import azure-mgmt-keyvault"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -1998,7 +2140,8 @@
       "import azure-keyvault-certificates"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2012,7 +2155,8 @@
       "import azure-keyvault-administration"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2026,7 +2170,8 @@
       "import azure-keyvault-secrets"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2040,7 +2185,8 @@
       "import azure-keyvault-keys"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2054,7 +2200,8 @@
       "import azure-openai"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2068,7 +2215,8 @@
       "import azure-mgmt-computefleet"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2082,7 +2230,8 @@
       "import azure-mgmt-postgresqlflexibleservers"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2096,7 +2245,8 @@
       "import azure-mgmt-databoxedge"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2110,7 +2260,8 @@
       "import azure-mgmt-advisor"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2124,7 +2275,8 @@
       "import azure-mgmt-apicenter"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2138,7 +2290,8 @@
       "import azure-mgmt-qumulo"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2152,7 +2305,8 @@
       "import azure-mgmt-migrationdiscoverysap"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2166,7 +2320,8 @@
       "import azure-mgmt-healthbot"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2180,7 +2335,8 @@
       "import azure-mgmt-dataprotection"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2194,7 +2350,8 @@
       "import azure-mgmt-marketplaceordering"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2208,7 +2365,8 @@
       "import azure-mgmt-databox"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2222,7 +2380,8 @@
       "import azure-mgmt-computeschedule"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2236,7 +2395,8 @@
       "import azure-mgmt-oracledatabase"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2250,7 +2410,8 @@
       "import azure-mgmt-networkfunction"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2264,7 +2425,8 @@
       "import azure-mgmt-azurearcdata"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2278,7 +2440,8 @@
       "import easm"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2292,7 +2455,8 @@
       "import azure-mgmt-hybridconnectivity"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2306,7 +2470,8 @@
       "import azure-mgmt-imagebuilder"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2320,7 +2485,8 @@
       "import azure-mgmt-servicefabricmanagedclusters"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   },
   {
@@ -2334,7 +2500,8 @@
       "import azure-mgmt-healthcareapis"
     ],
     "properties": {
-      "vendor": "AZURE"
+      "vendor": "AZURE",
+      "language": "python"
     }
   }
 ]

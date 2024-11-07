@@ -16,7 +16,7 @@ func TestSomething(t *testing.T) {
 			},
 		},
 	}
-	processor := SomethingProcessor{Patterns: patterns}
+	processor := FilePatternsProcessor{Patterns: patterns}
 
 	matches, err := processor.Process("/no_extension", "some-repo", "content")
 	assert.Nil(t, err)
@@ -34,7 +34,7 @@ func TestAsteriskInPattern(t *testing.T) {
 			},
 		},
 	}
-	processor := SomethingProcessor{Patterns: patterns}
+	processor := FilePatternsProcessor{Patterns: patterns}
 	processor.CompilePatterns()
 
 	matches, err := processor.Process("/something.ora", "some-repo", "content")
@@ -53,7 +53,7 @@ func TestFileExtension(t *testing.T) {
 			},
 		},
 	}
-	processor := SomethingProcessor{Patterns: patterns}
+	processor := FilePatternsProcessor{Patterns: patterns}
 	processor.CompilePatterns()
 
 	matches, err := processor.Process("/something.py", "some-repo", "content")
@@ -72,7 +72,7 @@ func TestSimpleContentPattern(t *testing.T) {
 			},
 		},
 	}
-	processor := SomethingProcessor{Patterns: patterns}
+	processor := FilePatternsProcessor{Patterns: patterns}
 	processor.CompilePatterns()
 
 	content := `
@@ -97,7 +97,7 @@ func TestContentPatternWithFileExtensionCriteria(t *testing.T) {
 			},
 		},
 	}
-	processor := SomethingProcessor{Patterns: patterns}
+	processor := FilePatternsProcessor{Patterns: patterns}
 	processor.CompilePatterns()
 
 	content := `
@@ -122,7 +122,7 @@ func TestContentPatternWithFileNamesCriteria(t *testing.T) {
 			},
 		},
 	}
-	processor := SomethingProcessor{Patterns: patterns}
+	processor := FilePatternsProcessor{Patterns: patterns}
 	processor.CompilePatterns()
 
 	content := `
@@ -147,7 +147,7 @@ func TestContentPatternFailsIfFileNamesCriteriaDoesNotMatch(t *testing.T) {
 			},
 		},
 	}
-	processor := SomethingProcessor{Patterns: patterns}
+	processor := FilePatternsProcessor{Patterns: patterns}
 	processor.CompilePatterns()
 
 	content := `
@@ -172,7 +172,7 @@ func TestContentPatternsContainingPeriodPasses(t *testing.T) {
 			},
 		},
 	}
-	processor := SomethingProcessor{Patterns: patterns}
+	processor := FilePatternsProcessor{Patterns: patterns}
 	processor.CompilePatterns()
 
 	content := `

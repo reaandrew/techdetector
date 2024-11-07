@@ -16,7 +16,9 @@ type Processor interface {
 func InitializeProcessors() []Processor {
 	var processors []Processor
 
-	somethingProcessor := NewSomethingProcessor(patternsFS)
-	processors = append(processors, somethingProcessor)
+	filePatternsProcessor := NewFilePatternsProcessor(patternsFS)
+	processors = append(processors, filePatternsProcessor)
+
+	processors = append(processors, NewLibrariesProcessor())
 	return processors
 }
