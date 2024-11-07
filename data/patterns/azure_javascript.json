@@ -1,0 +1,5537 @@
+[
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/abort-controller"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI FormRecognizer",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/ai-form-recognizer"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI Language Conversations",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/ai-language-conversations"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI Language Text",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/ai-language-text"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI Language Text",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/ai-language-textauthoring"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI MetricsAdvisor",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/ai-metrics-advisor"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI TextAnalytics",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/ai-text-analytics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ApiManagement",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/api-management-custom-widgets-scaffolder"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ApiManagement",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/api-management-custom-widgets-tools"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Data AppConfiguration",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/app-configuration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Advisor",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-advisor"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AgFoodPlatform",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-agrifood"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Analysis",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-analysisservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ApiCenter",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-apicenter"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ApiManagement",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-apimanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AppComplianceAutomation",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-appcomplianceautomation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AppConfiguration",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-appconfiguration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AppContainers",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-appcontainers"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ApplicationInsights",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-appinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AppPlatform",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-appplatform"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AppService",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-appservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AppService",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-appservice-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Astro",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-astro"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Authorization",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-authorization"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Authorization",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-authorization-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Automanage",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-automanage"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Automation",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-automation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Avs",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-avs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AzureADExternalIdentities",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-azureadexternalidentities"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AzureStack",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-azurestack"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AzureStackHCI",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-azurestackhci"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager BareMetalInfrastructure",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-baremetalinfrastructure"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Batch",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-batch"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Billing",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-billing"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager BillingBenefits",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-billingbenefits"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager BotService",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-botservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Cdn",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-cdn"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ChangeAnalysis",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-changeanalysis"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ChangeAnalysis",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-changes"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Chaos",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-chaos"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager CognitiveServices",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-cognitiveservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Commerce",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-commerce"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Commerce",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-commerce-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager CommitmentPlans",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-commitmentplans"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Communication",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-communication"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-compute"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ComputeFleet",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-computefleet"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-compute-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ComputeSchedule",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-computeschedule"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ConfidentialLedger",
+    "category": "Blockchain",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-confidentialledger"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Confluent",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-confluent"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ConnectedVMwarevSphere",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-connectedvmware"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Consumption",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-consumption"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ContainerInstance",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-containerinstance"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ContainerOrchestratorRuntime",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-containerorchestratorruntime"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ContainerRegistry",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-containerregistry"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ContainerService",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-containerservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ContainerServiceFleet",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-containerservicefleet"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager CosmosDB",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-cosmosdb"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager CosmosDBForPostgreSql",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-cosmosdbforpostgresql"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager CostManagement",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-costmanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager CustomerInsights",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-customerinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Dashboard",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-dashboard"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataBoundaries",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-databoundaries"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataBox",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-databox"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataBoxEdge",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-databoxedge"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataBoxEdge",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-databoxedge-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Databricks",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-databricks"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataCatalog",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-datacatalog"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Datadog",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-datadog"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataFactory",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-datafactory"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataLakeAnalytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-datalake-analytics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataMigration",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-datamigration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataProtectionBackup",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-dataprotection"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DefenderEasm",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-defendereasm"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DeploymentManager",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-deploymentmanager"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DesktopVirtualization",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-desktopvirtualization"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DevCenter",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-devcenter"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DevHub",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-devhub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DeviceProvisioningServices",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-deviceprovisioningservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DeviceRegistry",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-deviceregistry"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DeviceUpdate",
+    "category": "Io",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-deviceupdate"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DevOpsInfrastructure",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-devopsinfrastructure"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DevSpaces",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-devspaces"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DigitalTwins",
+    "category": "Digital Twins and Simulations",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-digitaltwins"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Dns",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-dns"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Dns",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-dns-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DnsResolver",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-dnsresolver"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DomainServices",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-domainservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Dynatrace",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-dynatrace"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager EdgeZones",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-edgezones"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Education",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-education"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Elastic",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-elastic"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ElasticSan",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-elasticsan"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager EventGrid",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-eventgrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager EventHubs",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-eventhub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager EventHubs",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-eventhub-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ExtendedLocations",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-extendedlocation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Fabric",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-fabric"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Features",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-features"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager FluidRelay",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-fluidrelay"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager FrontDoor",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-frontdoor"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager GraphServices",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-graphservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager GuestConfiguration",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-guestconfiguration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HanaOnAzure",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hanaonazure"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HardwareSecurityModules",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hardwaresecuritymodules"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HDInsight",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hdinsight"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HDInsight Containers",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hdinsightcontainers"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HealthBot",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-healthbot"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HealthcareApis",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-healthcareapis"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HealthDataAIServices",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-healthdataaiservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HybridCompute",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hybridcompute"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HybridConnectivity",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hybridconnectivity"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HybridContainerService",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hybridcontainerservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HybridContainerService",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hybridkubernetes"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager HybridNetwork",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-hybridnetwork"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ImageBuilder",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-imagebuilder"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager InformaticaDataManagement",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-informaticadatamanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager IotCentral",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-iotcentral"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager IotFirmwareDefense",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-iotfirmwaredefense"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager IotHub",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-iothub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager IotHub",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-iothub-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager IotOperations",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-iotoperations"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager KeyVault",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-keyvault"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager KeyVault",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-keyvault-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager KubernetesConfiguration",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-kubernetesconfiguration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Kusto",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-kusto"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager LabServices",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-labservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager LargeInstance",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-largeinstance"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Links",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-links"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Locks",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-locks"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Locks",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-locks-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Logic",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-logic"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MachineLearning",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-machinelearning"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MachineLearningCompute",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-machinelearningcompute"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MachineLearningExperimentation",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-machinelearningexperimentation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Maintenance",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-maintenance"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ManagedApplications",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-managedapplications"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ManagedNetworkFabric",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-managednetworkfabric"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ManagementGroups",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-managementgroups"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ManagementPartner",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-managementpartner"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-maps"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Mariadb",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-mariadb"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MarketplaceOrdering",
+    "category": "Cloud Marketplace",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-marketplaceordering"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Media",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-mediaservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Migrate",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-migrate"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MigrationDiscoverySap",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-migrationdiscoverysap"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MixedReality",
+    "category": "Mixed Reality",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-mixedreality"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MobileNetwork",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-mobilenetwork"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MongoCluster",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-mongocluster"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Monitor",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-monitor"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Monitor",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-monitor-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ManagedServiceIdentities",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-msi"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MySql",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-mysql"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MySqlFlexible",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-mysql-flexible"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager NetApp",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-netapp"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Network",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-network"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager NetworkAnalytics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-networkanalytics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager NetworkCloud",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-networkcloud"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager NetworkFunction",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-networkfunction"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Network",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-network-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager NewRelicObservability",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-newrelicobservability"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Nginx",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-nginx"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager NotificationHubs",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-notificationhubs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Oep",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-oep"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager OperationalInsights",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-operationalinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Operations",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-operations"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager OracleDatabase",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-oracledatabase"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Orbital",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-orbital"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PaloAltoNetworks Ngfw",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-paloaltonetworksngfw"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Peering",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-peering"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Policy",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-policy"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PolicyInsights",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-policyinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Policy",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-policy-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Portal",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-portal"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PostgreSql",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-postgresql"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PostgreSqlFlexible",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-postgresql-flexible"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PowerBIDedicated",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-powerbidedicated"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PowerBIEmbedded",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-powerbiembedded"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PrivateDns",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-privatedns"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Purview",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-purview"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Quantum",
+    "category": "Quantum Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-quantum"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Qumulo",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-qumulo"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Quota",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-quota"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager RecoveryServices",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-recoveryservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager RecoveryServicesBackup",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-recoveryservicesbackup"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager RecoveryServicesDataReplication",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-recoveryservicesdatareplication"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager RecoveryServicesSiteRecovery",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-recoveryservices-siterecovery"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager RedhatOpenshift",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-redhatopenshift"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-rediscache"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager RedisEnterprise",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-redisenterprisecache"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Relay",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-relay"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Reservations",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-reservations"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ResourceConnector",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-resourceconnector"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ResourceGraph",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-resourcegraph"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ResourceHealth",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-resourcehealth"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ResourceMover",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-resourcemover"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Resources",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-resources"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ResourcesDeploymentStacks",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-resourcesdeploymentstacks"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Resources",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-resources-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Subscription",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-resources-subscriptions"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ScVmm",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-scvmm"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Search",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-search"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-security"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SecurityDevOps",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-securitydevops"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SecurityInsights",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-securityinsight"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SelfHelp",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-selfhelp"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SerialConsole",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-serialconsole"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceBus",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-servicebus"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceFabric",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-servicefabric"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceFabricManagedClusters",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-servicefabricmanagedclusters"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceFabricMesh",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-servicefabricmesh"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceLinker",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-servicelinker"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceMap",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-servicemap"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceNetworking",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-servicenetworking"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SignalR",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-signalr"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Sphere",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-sphere"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SpringAppDiscovery",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-springappdiscovery"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Sql",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-sql"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SqlVirtualMachine",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-sqlvirtualmachine"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StandbyPool",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-standbypool"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storage"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorageActions",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storageactions"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorageCache",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storagecache"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorageImportExport",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storageimportexport"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorageMover",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storagemover"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorageProfile2020_09_01_Hybrid",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storage-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorageSync",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storagesync"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorSimple1200Series",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storsimple1200series"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorSimple8000Series",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-storsimple8000series"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StreamAnalytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-streamanalytics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Subscriptions",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-subscriptions"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SubscriptionsProfile2020_09_01_Hybrid",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-subscriptions-profile-2020-09-01-hybrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Support",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-support"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Synapse",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-synapse"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager TemplateSpecs",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-templatespecs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager TimeSeriesInsights",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-timeseriesinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager TrafficManager",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-trafficmanager"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager TrustedSigning",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-trustedsigning"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager VoiceServices",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-voiceservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager WebPubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-webpubsub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager WebServices",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-webservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Workloads",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-workloads"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager WorkloadsSapVirtualInstance",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-workloadssapvirtualinstance"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Workspaces",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/arm-workspaces"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Batch",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/batch"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication CallAutomation",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-call-automation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication Chat",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-chat"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication Common",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-common"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication Email",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-email"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication Identity",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-identity"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication JobRouter",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-job-router"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication PhoneNumbers",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-phone-numbers"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication Rooms",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-rooms"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication Sms",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/communication-sms"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Containers ContainerRegistry",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/container-registry"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Amqp",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-amqp"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Auth",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-auth"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Client",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-client"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Http Compat",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-http-compat"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Lro",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-lro"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Paging",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-paging"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Rest Pipeline",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-rest-pipeline"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Sse",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-sse"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Tracing",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-tracing"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Util",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-util"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core Xml",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/core-xml"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Cosmos DB",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/cosmos"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Data Tables",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/data-tables"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Developer DevCenter",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/dev-tool"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure DigitalTwins Core",
+    "category": "Digital Twins and Simulations",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/digital-twins-core"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ESLint Plugin Azure SDK",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/eslint-plugin-azure-sdk"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure EventGrid",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/eventgrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure EventGrid Namespaces",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/eventgrid-namespaces"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure EventGrid SystemEvents",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/eventgrid-system-events"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure EventHubs",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/event-hubs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure EventHubs CheckpointStore Blob",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/eventhubs-checkpointstore-blob"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure EventHubs CheckpointStore Table",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/eventhubs-checkpointstore-table"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Functions Authentication Events",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/functions-authentication-events"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Identity",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/identity"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Identity Broker",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/identity-broker"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Identity Cache Persistence",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/identity-cache-persistence"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Identity VSCode",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/identity-vscode"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure IoT ModelsRepository",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/iot-modelsrepository"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure KeyVault Admin",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/keyvault-admin"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure KeyVault Certificates",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/keyvault-certificates"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure KeyVault Common",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/keyvault-common"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure KeyVault Keys",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/keyvault-keys"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure KeyVault Secrets",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/keyvault-secrets"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Logger",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/logger"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Maps Common",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/maps-common"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure MixedReality Authentication",
+    "category": "Mixed Reality",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/mixed-reality-authentication"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure MixedReality RemoteRendering",
+    "category": "Mixed Reality",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/mixed-reality-remote-rendering"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Monitor Ingestion",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/monitor-ingestion"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Monitor OpenTelemetry",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/monitor-opentelemetry"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Monitor OpenTelemetry Exporter",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/monitor-opentelemetry-exporter"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Monitor Query",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/monitor-query"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Notification Hubs",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/notification-hubs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure OpenAI",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/openai"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure OpenTelemetry Instrumentation Azure SDK",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/opentelemetry-instrumentation-azure-sdk"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Quantum Jobs",
+    "category": "Quantum Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/quantum-jobs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Agrifood Farming",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/agrifood-farming"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI Anomaly Detector",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-anomaly-detector"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI ContentSafety",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-content-safety"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI Document Intelligence",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-document-intelligence"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI Document Translator",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-document-translator"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI Inference",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-inference"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI Translation Document",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-translation-document"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI Translation Text",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-translation-text"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI Vision Face",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-vision-face"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest AI Vision ImageAnalysis",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/ai-vision-image-analysis"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Arm AppService",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/arm-appservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Arm Compute",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/arm-compute"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Arm ContainerService",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/arm-containerservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Arm Network",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/arm-network"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Arm ServiceFabric",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/arm-servicefabric"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Batch",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/batch"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Communication JobRouter",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/communication-job-router"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Communication Messages",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/communication-messages"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Confidential Ledger",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/confidential-ledger"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Core Client",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/core-client"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Defender Easm",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/defender-easm"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Developer DevCenter",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/developer-devcenter"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Health Deidentification",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/health-deidentification"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Health Insights CancerProfiling",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/health-insights-cancerprofiling"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Health Insights ClinicalMatching",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/health-insights-clinicalmatching"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Health Insights RadiologyInsights",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/health-insights-radiologyinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest IoT DeviceUpdate",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/iot-device-update"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Maps Geolocation",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/maps-geolocation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Maps Render",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/maps-render"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Maps Route",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/maps-route"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Maps Search",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/maps-search"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Purview Administration",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/purview-administration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Purview Catalog",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/purview-catalog"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Purview DataMap",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/purview-datamap"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Purview Scanning",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/purview-scanning"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Purview Sharing",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/purview-sharing"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Purview Workflow",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/purview-workflow"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Synapse AccessControl",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/synapse-access-control"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Schema Registry",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/schema-registry"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Schema Registry Avro",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/schema-registry-avro"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Schema Registry Json",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/schema-registry-json"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Search Documents",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/search-documents"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest ServiceBus",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/service-bus"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Storage Blob",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/storage-blob"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Storage Blob ChangeFeed",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/storage-blob-changefeed"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Storage File Datalake",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/storage-file-datalake"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Storage File Share",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/storage-file-share"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Storage Internal Avro",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/storage-internal-avro"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Storage Queue",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/storage-queue"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Synapse AccessControl",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/synapse-access-control"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Synapse Artifacts",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/synapse-artifacts"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Synapse ManagedPrivateEndpoints",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/synapse-managed-private-endpoints"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Synapse Monitoring",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/synapse-monitoring"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Synapse Spark",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/synapse-spark"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Template",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/template"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Rest Template Dpg",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-rest/template-dpg"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Tools Analyze Deps",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-tools/analyze-deps"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Tools Communication AlphaIds",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-tools/communication-alpha-ids"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Tools Communication RecipientVerification",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-tools/communication-recipient-verification"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Tools Communication ShortCodes",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-tools/communication-short-codes"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Tools Communication Tiering",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-tools/communication-tiering"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Tools Communication TollFreeVerification",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-tools/communication-toll-free-verification"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Tools Eng Package Utils",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-tools/eng-package-utils"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Tools Versioning",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure-tools/versioning"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure WebPubSub",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/web-pubsub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure WebPubSub Client",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/web-pubsub-client"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure WebPubSub Client Protobuf",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/web-pubsub-client-protobuf"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure WebPubSub Express",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@azure/web-pubsub-express"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  }
+]

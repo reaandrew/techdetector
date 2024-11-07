@@ -1,0 +1,2507 @@
+[
+  {
+    "type": "Cloud Service",
+    "name": "Azure Core",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-core"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI Language Question Answering",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-ai-language-questionanswering"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI Language Conversations",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-ai-language-conversations"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Maintenance",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-maintenance"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management HDInsight",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-hdinsight"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management HDInsight Containers",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-hdinsightcontainers"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AgriFood Farming",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-agrifood-farming"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management AgriFood",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-agrifood"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Security",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-security"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Hybrid Kubernetes",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-hybridkubernetes"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Chaos",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-chaos"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Orbital",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-orbital"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Datadog",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-datadog"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Billing Benefits",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-billingbenefits"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Event Grid",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-eventgrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Event Grid",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-eventgrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Network Analytics",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-networkanalytics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Communication Services",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-communication-identity"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Traffic Manager",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-trafficmanager"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Bare Metal Infrastructure",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-baremetalinfrastructure"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Sphere",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-sphere"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Service Networking",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-servicenetworking"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Text Analytics",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-ai-textanalytics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Storage Pool",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-storagepool"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Identity",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-identity"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Document Intelligence",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-ai-documentintelligence"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Managed Services",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-managedservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Kubernetes Configuration",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-kubernetesconfiguration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Extended Locations",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-extendedlocation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Subscription",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-subscription"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI Inference",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-ai-inference"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Fluid Relay",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-fluidrelay"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Automation",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-automation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Lab Services",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-labservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure IoT Models Repository",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-iot-deviceprovisioning"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Quantum",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-quantum"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Quantum Jobs",
+    "category": "Quantum Computing",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-quantum-jobs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Provider Hub",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-providerhub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Mongo Cluster",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-mongocluster"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Anomaly Detector",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-ai-anomalydetector"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Relay",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-relay"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Mobile Network",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-mobilenetwork"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Digital Twins Core",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-digitaltwins-core"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Digital Twins",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-digitaltwins"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Security Insights",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-securityinsight"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Storage Sync",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-storagesync"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Data Lake Store",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-datalake-store"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Edge Order",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-edgeorder"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Blobs Change Feed",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-storage-blob-changefeed"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Files Shares",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-storage-file-share"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Queues",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-storage-queue"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Data Lake",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-storage-file-datalake"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Blobs",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-storage-blob"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Blobs Batch",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-storage-blob-batch"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Maps Timezone",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-maps-timezone"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Maps Weather",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-maps-weather"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Maps Geolocation",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-maps-geolocation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Maps Render",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-maps-render"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Maps Route",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-maps-route"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Maps Search",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-maps-search"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Recovery Services",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-recoveryservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Recovery Services Site Recovery",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-recoveryservicessiterecovery"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Recovery Services Data Replication",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-recoveryservicesdatareplication"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Cosmos DB",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-cosmosdb"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Cosmos DB",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-cosmos"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Compute",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-compute"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management SQL",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-sql"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Redis",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-redis"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Service Bus",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-servicebus"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Service Bus",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-servicebus"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Network",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-network"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Resources",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-resource"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Monitor",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-monitor"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Log Analytics",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-loganalytics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Policy Insights",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-policyinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Kusto",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-kusto"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Redis Enterprise",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-redisenterprise"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management SQL Virtual Machine",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-sqlvirtualmachine"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Application Insights",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-applicationinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Storage Import Export",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-storageimportexport"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Data Migration",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-datamigration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Data Factory",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-datafactory"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Synapse",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-synapse"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Synapse Artifacts",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-synapse-artifacts"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Synapse Spark",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-synapse-spark"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Synapse Monitoring",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-synapse-monitoring"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management DevTest Labs",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-devtestlabs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management DevOps Infrastructure",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-devopsinfrastructure"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Service Fabric Managed Clusters",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-servicefabricmanagedclusters"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Healthcare APIs",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-healthcareapis"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Data Tables",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-data-tables"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Elastic San",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-elasticsan"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Container Instance",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-containerinstance"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Graph Services",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-graphservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management NetApp",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-netapp"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Workloads",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-workloads"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Health Insights Cancer Profiling",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-healthinsights-cancerprofiling"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Health Insights Radiology Insights",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-healthinsights-radiologyinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Health Insights Clinical Matching",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-healthinsights-clinicalmatching"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Dynatrace",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-dynatrace"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Billing",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-billing"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure IoT Device Update",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-iot-deviceupdate"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Authorization",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-authorization"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI Translation Text",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-ai-translation-text"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI Translation Document",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-ai-translation-document"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Network Cloud",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-networkcloud"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Alerts Management",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-alertsmanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Messaging Web PubSub Service",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-messaging-webpubsubservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Messaging Web PubSub Client",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-messaging-webpubsubclient"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Web PubSub",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-webpubsub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Notification Hubs",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-notificationhubs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Operations Management",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-operationsmanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Education",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-education"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management App Configuration",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-appconfiguration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Desktop Virtualization",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-desktopvirtualization"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Large Instance",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-largeinstance"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Attestation",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-attestation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security Attestation",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-security-attestation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Cost Management",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-costmanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Databricks",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-databricks"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Storage Actions",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-storageactions"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Astro",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-astro"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Resource Connector",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-resourceconnector"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management App Platform",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-appplatform"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management New Relic Observability",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-newrelicobservability"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Informatica Data Management",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-informaticadatamanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Defender EASM",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-defendereasm"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Red Hat OpenShift",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-redhatopenshift"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Logic",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-logic"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Health Deidentification",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-health-deidentification"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Health Data AI Services",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-healthdataaiservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Private DNS",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-privatedns"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Support",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-support"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Power BI Dedicated",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-powerbidedicated"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Guest Configuration",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-guestconfig"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management NGINX",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-nginx"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management SQL Virtual Machine",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-sqlvirtualmachine"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Iot Central",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-iotcentral"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Storage Cache",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-storagecache"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Cognitive Services",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-cognitiveservices-formrecognizer"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Cognitive Services",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-cognitiveservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Key Vault",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-keyvault"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security Key Vault Certificates",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-keyvault-certificates"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security Key Vault Administration",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-keyvault-administration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security Key Vault Secrets",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-keyvault-secrets"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security Key Vault Keys",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-keyvault-keys"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure OpenAI",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-openai"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Compute Fleet",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-computefleet"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management PostgreSQL Flexible Servers",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-postgresqlflexibleservers"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Data Box Edge",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-databoxedge"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Advisor",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-advisor"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management API Center",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-apicenter"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Qumulo",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-qumulo"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Migration Discovery SAP",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-migrationdiscoverysap"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Health Bot",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-healthbot"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Data Protection Backup",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-dataprotection"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Marketplace Ordering",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-marketplaceordering"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Data Box",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-databox"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Compute Schedule",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-computeschedule"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Oracle Database",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-oracledatabase"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Network Function",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-networkfunction"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Azure Arc Data",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-azurearcdata"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Defender EASM",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import easm"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Hybrid Connectivity",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-hybridconnectivity"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Image Builder",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-imagebuilder"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Service Fabric Managed Clusters",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-servicefabricmanagedclusters"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Management Healthcare APIs",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import azure-mgmt-healthcareapis"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "python"
+    }
+  }
+]

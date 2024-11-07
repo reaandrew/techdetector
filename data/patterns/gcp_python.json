@@ -1,0 +1,4547 @@
+[
+  {
+    "type": "Cloud Service",
+    "name": "Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import compute_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "MediaTranslation",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import mediatranslation_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Retail",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import retail_v2beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Retail",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import retail_v2alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Retail",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import retail_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import gkehub_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.gkehub import configmanagement_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.gkehub import multiclusteringress_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import gkehub_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Commerce",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import commerce_consumer_procurement_v1alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Commerce",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import commerce_consumer_procurement_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Asset",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import asset_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Asset",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import asset_v1p2beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Asset",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import asset_v1p4beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Asset",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import asset_v1p5beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Asset",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import asset_v1p1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DevTools",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.devtools import containeranalysis_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GdcHardwareManagement",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import gdchardwaremanagement_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OracleDatabase",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import oracledatabase_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataflow",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dataflow_v1beta3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_datasources_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_connection_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Cloud",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import source_context_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceControl",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import servicecontrol_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceControl",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import servicecontrol_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PrivateCatalog",
+    "category": "Cloud Marketplace",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import privatecatalog_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsConfig",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import osconfig_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsConfig",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import osconfig_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import beyondcorp_appconnections_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import fleetengine_delivery_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudBuild",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.devtools import cloudbuild_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudBuild",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.devtools import cloudbuild_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicyTroubleshooter",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import policytroubleshooter_iam_v3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Monitoring",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import monitoring_dashboard_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import securitycenter_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import securitycenter_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import securitycenter_v1p1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import securitycenter_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import beyondcorp_clientconnectorservices_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dialogflow_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dialogflow_v2beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ContactCenterInsights",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import contact_center_insights_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import routing_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "StorageInsights",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import storageinsights_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import areainsights_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Parallelstore",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import parallelstore_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Parallelstore",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import parallelstore_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BinaryAuthorization",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import binaryauthorization_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BinaryAuthorization",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import binaryauthorization_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Orchestration",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.orchestration.airflow import service_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Orchestration",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.orchestration.airflow import service_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AutoML",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import automl_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AutoML",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import automl_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataplex",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dataplex_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiKeys",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import api_keys_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_accounts_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Functions",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import functions_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Functions",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import functions_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import storage_control_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_analyticshub_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EdgeNetwork",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import edgecontainer_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkManagement",
+    "category": "Networking",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import network_management_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TextToSpeech",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import texttospeech_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TextToSpeech",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import texttospeech_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_reports_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApigeeConnect",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import apigeeconnect_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataCatalog",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import datacatalog_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataCatalog",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import datacatalog_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Eventarc",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import eventarc_publishing_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ManagedIdentities",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import managedidentities_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GSuiteAddOns",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import gsuiteaddons_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import css_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_datatransfer_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataform",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dataform_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import places_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Config",
+    "category": "Governance and Compliance\nMonitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import config_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudControlsPartner",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import cloudcontrolspartner_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudControlsPartner",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import cloudcontrolspartner_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceHealth",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import servicehealth_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import mapsplatformdatasets_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DevTools",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "import grafeas.grafeas_v1 as grafeas_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Channel",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import channel_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DeveloperConnect",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import developerconnect_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudQuotas",
+    "category": "Cost Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import cloudquotas_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Notebooks",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import notebooks_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Notebooks",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import notebooks_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Notebooks",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import notebooks_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AlloyDb",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.alloydb import connectors_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Run",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import run_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Language",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import language_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Language",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import language_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Language",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import language_v1beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ResourceManager",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import resourcemanager_v3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.video import transcoder_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps import meet_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps import meet_v2beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Memcache",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import memcache_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Memcache",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import memcache_v1beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Geo",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.geo import type as geo_type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Ads",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.ads import admanager_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebRisk",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import webrisk_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebRisk",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import webrisk_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Metastore",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import metastore_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Metastore",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import metastore_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Metastore",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import metastore_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Recommender",
+    "category": "Cost Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import recommender_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Recommender",
+    "category": "Cost Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import recommender_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkServices",
+    "category": "Networking",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import network_services_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkSecurity",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import network_security_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkSecurity",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import network_security_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ConfidentialComputing",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import confidentialcomputing_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PhishingProtection",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import phishingprotection_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Deploy",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import deploy_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import workflows_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import workflows_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.workflows import executions_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.workflows import executions_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastream",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import datastream_v1alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastream",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import datastream_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workstations",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import workstations_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workstations",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import workstations_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DiscoveryEngine",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import discoveryengine_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DiscoveryEngine",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import discoveryengine_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DiscoveryEngine",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import discoveryengine_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Billing",
+    "category": "Cost Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.billing import budgets_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Billing",
+    "category": "Cost Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.billing import budgets_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_promotions_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BackupDR",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import backupdr_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_products_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import speech_v1p1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import speech_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import speech_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.video import stitcher_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Area120",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.area120 import tables_v1alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Monitoring",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import monitoring_metrics_scope_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicyTroubleshooter",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import policytroubleshooter_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VMMigration",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import vmmigration_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dialogflowcx_v3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dialogflowcx_v3beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import beyondcorp_appconnectors_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Common",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import common"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RapidMigrationAssessment",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import rapidmigrationassessment_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shell",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import shell_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EdgeNetwork",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import edgenetwork_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_biglake_v1alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_biglake_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps import card_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceDirectory",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import servicedirectory_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceDirectory",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import servicedirectory_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_notifications_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Kms",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import kms_inventory_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceUsage",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import service_usage_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiHub",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import apihub_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Analytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.analytics import data_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Analytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.analytics import data_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tpu",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import tpu_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tpu",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import tpu_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tpu",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import tpu_v2alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import redis_cluster_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import redis_cluster_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_lfp_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeConnect",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.gkeconnect import gateway_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeConnect",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.gkeconnect import gateway_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Kms",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import kms_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Ids",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import ids_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VisionAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import visionai_v1alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VisionAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import visionai_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataproc",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dataproc_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import vision_v1p2beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import vision_v1p1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import vision_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import vision_v1p3beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import vision_v1p4beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dlp",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dlp_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiGateway",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import apigateway_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataLabeling",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import datalabeling_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_quota_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecureSourceManager",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import securesourcemanager_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import fleetengine_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Cloud",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import contentwarehouse_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AccessApproval",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import accessapproval_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EssentialContacts",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import essential_contacts_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import iam_admin_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import iam_v2beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import iam_credentials_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import iam_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_reservation_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApigeeRegistry",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import apigee_registry_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import beyondcorp_clientgateways_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iap",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import iap_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ResourceSettings",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import resourcesettings_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebSecurityScanner",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import websecurityscanner_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebSecurityScanner",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import websecurityscanner_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebSecurityScanner",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import websecurityscanner_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Filestore",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import filestore_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VmwareEngine",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import vmwareengine_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translate",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import translate_v3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translate",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import translate_v3beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import beyondcorp_appgateways_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Domains",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import domains_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Domains",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import domains_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_data_exchange_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TelcoAutomation",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import telcoautomation_v1alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TelcoAutomation",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import telcoautomation_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AppEngine",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import appengine_admin_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import type as shopping_type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_migration_v2alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_migration_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Support",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import support_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RecaptchaEnterprise",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import recaptchaenterprise_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Eventarc",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import eventarc_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Trace",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import trace_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Trace",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import trace_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DocumentAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import documentai_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DocumentAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import documentai_v1beta3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "StorageTransfer",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import storage_transfer_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AssuredWorkloads",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import assuredworkloads_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AssuredWorkloads",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import assuredworkloads_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Billing",
+    "category": "Cost Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import billing_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import solar_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Monitoring",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import monitoring_v3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import videointelligence_v1beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import videointelligence_v1p1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import videointelligence_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import videointelligence_v1p2beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import videointelligence_v1p3beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.video import live_stream_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EnterpriseKnowledgeGraph",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import enterpriseknowledgegraph_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsLogin",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import oslogin_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsLogin",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.oslogin import common as oslogin_common"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataFusion",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import data_fusion_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Batch",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import batch_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Batch",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import batch_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": "Security\nSecurity",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.security import publicca_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": "Security\nSecurity",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.security import publicca_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Talent",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import talent_v4"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Talent",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import talent_v4beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceManagement",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import servicemanagement_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": "Security\nSecurity",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.security import privateca_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": "Security\nSecurity",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.security import privateca_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PrivilegedAccessManager",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import privilegedaccessmanager_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenterManagement",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import securitycentermanagement_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeBackup",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import gke_backup_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ArtifactRegistry",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import artifactregistry_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ArtifactRegistry",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import artifactregistry_v1beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AlloyDb",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import alloydb_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AlloyDb",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import alloydb_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AlloyDb",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import alloydb_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import addressvalidation_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_datapolicies_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bigquery_datapolicies_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Ads",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.ads.marketingplatform import admin_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkConnectivity",
+    "category": "Networking",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import networkconnectivity_v1alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkConnectivity",
+    "category": "Networking",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import networkconnectivity_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicySimulator",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import policysimulator_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudDms",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import clouddms_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud.bigquery import logging_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AppHub",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import apphub_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import redis_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import redis_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Scheduler",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import scheduler_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Scheduler",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import scheduler_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "MigrationCenter",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import migrationcenter_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataCatalog",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import datacatalog_lineage_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps import events_subscriptions_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps.script import type as script_type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps.script.type import gmail"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps.script.type import slides"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps.script.type import drive"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps.script.type import calendar"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps.script.type import docs"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps.script.type import sheets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeMultiCloud",
+    "category": null,
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import gke_multicloud_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "LifeSciences",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import lifesciences_v2beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import iam_logging_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VpcAccess",
+    "category": "Networking",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import vpcaccess_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Analytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.analytics import admin_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Analytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.analytics import admin_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Cloud",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import dataqna_v1alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_conversions_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecretManager",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import secretmanager_v1beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecretManager",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import secretmanager_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecretManager",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import secretmanager_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Container",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import container_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Container",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import container_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BareMetalSolution",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import bare_metal_solution_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.maps import routeoptimization_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AppEngine",
+    "category": "Compute",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import appengine_logging_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ManagedKafka",
+    "category": "Integration",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import managedkafka_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Optimization",
+    "category": "Cost Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import optimization_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.shopping import merchant_inventories_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AdvisoryNotifications",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import advisorynotifications_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RecommendationEngine",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import recommendationengine_v1beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.apps import chat_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CertificateManager",
+    "category": "Security",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import certificate_manager_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetApp",
+    "category": "Storage",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import netapp_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tasks",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import tasks_v2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tasks",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import tasks_v2beta3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tasks",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.cloud import tasks_v2beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.ai import generativelanguage_v1beta3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.ai import generativelanguage_v1beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.ai import generativelanguage_v1beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "py"
+    ],
+    "content_patterns": [
+      "from google.ai import generativelanguage_v1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "python"
+    }
+  }
+]

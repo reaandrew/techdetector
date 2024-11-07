@@ -10,7 +10,7 @@ func TestSupports(t *testing.T) {
 	processor := NewLibrariesProcessor()
 
 	tests := []struct {
-		filePath      string
+		Path          string
 		shouldSupport bool
 	}{
 		// Supported files
@@ -30,9 +30,9 @@ func TestSupports(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		supports := processor.Supports(tt.filePath)
+		supports := processor.Supports(tt.Path)
 		if supports != tt.shouldSupport {
-			t.Errorf("Supports(%s) = %v; want %v", tt.filePath, supports, tt.shouldSupport)
+			t.Errorf("Supports(%s) = %v; want %v", tt.Path, supports, tt.shouldSupport)
 		}
 	}
 }
@@ -46,7 +46,7 @@ func TestParsePomXML(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []Match
 		expectError bool
 	}{
 		{
@@ -73,24 +73,26 @@ func TestParsePomXML(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/pom.xml",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "org.springframework:spring-core",
-						Language: "Java",
-						Version:  "5.3.8",
+					Name: "org.springframework:spring-core",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Java",
+						"Version":  "5.3.8",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pom.xml",
+					RepoName: "test-repo",
+					Path:     "sample/pom.xml",
 				},
 				{
-					Library: &Library{
-						Name:     "com.fasterxml.jackson.core:jackson-databind",
-						Language: "Java",
-						Version:  "2.12.3",
+					Name: "com.fasterxml.jackson.core:jackson-databind",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Java",
+						"Version":  "2.12.3",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pom.xml",
+					RepoName: "test-repo",
+					Path:     "sample/pom.xml",
 				},
 			},
 			expectError: false,
@@ -108,14 +110,14 @@ func TestParsePomXML(t *testing.T) {
 			content:     `<project></project>`,
 			repoName:    "test-repo",
 			path:        "sample/pom.xml",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			findings, err := processor.parsePomXML(tt.content, tt.repoName, tt.path)
+			matches, err := processor.parsePomXML(tt.content, tt.repoName, tt.path)
 			if tt.expectError {
 				assert.Error(t, err, "Expected an error but got none")
 				return
@@ -123,18 +125,18 @@ func TestParsePomXML(t *testing.T) {
 
 			assert.NoError(t, err, "Did not expect an error but got one")
 
-			findings = normalizeFindings(findings)
-			expected := normalizeFindings(tt.expected)
+			matches = normalizeMatches(matches)
+			expected := normalizeMatches(tt.expected)
 
-			assert.True(t, findingsEqual(findings, expected), "Findings do not match expected results")
-			if !findingsEqual(findings, expected) {
-				t.Logf("Actual Findings:")
-				for _, finding := range findings {
-					t.Logf("%+v", finding)
+			assert.True(t, MatchesEqual(matches, expected), "matches do not match expected results")
+			if !MatchesEqual(matches, expected) {
+				t.Logf("Actual matches:")
+				for _, Match := range matches {
+					t.Logf("%+v", Match)
 				}
-				t.Logf("Expected Findings:")
-				for _, finding := range expected {
-					t.Logf("%+v", finding)
+				t.Logf("Expected matches:")
+				for _, Match := range expected {
+					t.Logf("%+v", Match)
 				}
 			}
 		})
@@ -150,7 +152,7 @@ func TestParseGoMod(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []Match
 		expectError bool
 	}{
 		{
@@ -167,24 +169,26 @@ require (
 `,
 			repoName: "test-repo",
 			path:     "sample/go.mod",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "github.com/sirupsen/logrus",
-						Language: "Go",
-						Version:  "v1.8.1",
+					Name: "github.com/sirupsen/logrus",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Go",
+						"Version":  "v1.8.1",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/go.mod",
+					RepoName: "test-repo",
+					Path:     "sample/go.mod",
 				},
 				{
-					Library: &Library{
-						Name:     "github.com/stretchr/testify",
-						Language: "Go",
-						Version:  "v1.7.0",
+					Name: "github.com/stretchr/testify",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Go",
+						"Version":  "v1.7.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/go.mod",
+					RepoName: "test-repo",
+					Path:     "sample/go.mod",
 				},
 			},
 			expectError: false,
@@ -194,7 +198,7 @@ require (
 			content:     `module github.com/example/project`,
 			repoName:    "test-repo",
 			path:        "sample/go.mod",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 		{
@@ -208,7 +212,7 @@ require github.com/sirupsen/logrus
 `,
 			repoName:    "test-repo",
 			path:        "sample/go.mod",
-			expected:    []Finding{}, // Malformed require line should be ignored
+			expected:    []Match{}, // Malformed require line should be ignored
 			expectError: false,
 		},
 		{
@@ -216,14 +220,14 @@ require github.com/sirupsen/logrus
 			content:     ``,
 			repoName:    "test-repo",
 			path:        "sample/go.mod",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			findings, err := processor.parseGoMod(tt.content, tt.repoName, tt.path)
+			matches, err := processor.parseGoMod(tt.content, tt.repoName, tt.path)
 			if (err != nil) != tt.expectError {
 				t.Errorf("parseGoMod() error = %v, expectError = %v", err, tt.expectError)
 				return
@@ -235,20 +239,20 @@ require github.com/sirupsen/logrus
 			}
 
 			// Normalize both slices to handle nil vs empty slices
-			findings = normalizeFindings(findings)
-			expected := normalizeFindings(tt.expected)
+			matches = normalizeMatches(matches)
+			expected := normalizeMatches(tt.expected)
 
-			if !findingsEqual(findings, expected) {
-				t.Errorf("parseGoMod() got %+v, want %+v", findings, expected)
-				// Detailed logging for each finding
-				for i, finding := range findings {
+			if !MatchesEqual(matches, expected) {
+				t.Errorf("parseGoMod() got %+v, want %+v", matches, expected)
+				// Detailed logging for each Match
+				for i, match := range matches {
 					if i >= len(expected) {
-						t.Logf("Unexpected Finding %d: %+v", i, finding)
+						t.Logf("Unexpected Match %d: %+v", i, match)
 						continue
 					}
 					exp := expected[i]
-					if !findingsEqual([]Finding{finding}, []Finding{exp}) {
-						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, finding, exp)
+					if !MatchesEqual([]Match{match}, []Match{exp}) {
+						t.Logf("Match %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
 			}
@@ -265,7 +269,7 @@ func TestParsePackageJSON(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []Match
 		expectError bool
 	}{
 		{
@@ -286,42 +290,46 @@ func TestParsePackageJSON(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/package.json",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "express",
-						Language: "Node.js",
-						Version:  "^4.17.1",
+					Name: "express",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Node.js",
+						"Version":  "^4.17.1",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/package.json",
+					RepoName: "test-repo",
+					Path:     "sample/package.json",
 				},
 				{
-					Library: &Library{
-						Name:     "lodash",
-						Language: "Node.js",
-						Version:  "^4.17.21",
+					Name: "lodash",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Node.js",
+						"Version":  "^4.17.21",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/package.json",
+					RepoName: "test-repo",
+					Path:     "sample/package.json",
 				},
 				{
-					Library: &Library{
-						Name:     "jest",
-						Language: "Node.js",
-						Version:  "^26.6.3",
+					Name: "jest",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Node.js",
+						"Version":  "^26.6.3",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/package.json",
+					RepoName: "test-repo",
+					Path:     "sample/package.json",
 				},
 				{
-					Library: &Library{
-						Name:     "nodemon",
-						Language: "Node.js",
-						Version:  "^2.0.7",
+					Name: "nodemon",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Node.js",
+						"Version":  "^2.0.7",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/package.json",
+					RepoName: "test-repo",
+					Path:     "sample/package.json",
 				},
 			},
 			expectError: false,
@@ -339,15 +347,16 @@ func TestParsePackageJSON(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/package.json",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "react",
-						Language: "Node.js",
-						Version:  "^17.0.2",
+					Name: "react",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Node.js",
+						"Version":  "^17.0.2",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/package.json",
+					RepoName: "test-repo",
+					Path:     "sample/package.json",
 				},
 			},
 			expectError: false,
@@ -365,15 +374,16 @@ func TestParsePackageJSON(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/package.json",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "webpack",
-						Language: "Node.js",
-						Version:  "^5.38.1",
+					Name: "webpack",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Node.js",
+						"Version":  "^5.38.1",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/package.json",
+					RepoName: "test-repo",
+					Path:     "sample/package.json",
 				},
 			},
 			expectError: false,
@@ -396,14 +406,14 @@ func TestParsePackageJSON(t *testing.T) {
 `,
 			repoName:    "test-repo",
 			path:        "sample/package.json",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			findings, err := processor.parsePackageJSON(tt.content, tt.repoName, tt.path)
+			matches, err := processor.parsePackageJSON(tt.content, tt.repoName, tt.path)
 			if (err != nil) != tt.expectError {
 				t.Errorf("parsePackageJSON() error = %v, expectError = %v", err, tt.expectError)
 				return
@@ -415,20 +425,20 @@ func TestParsePackageJSON(t *testing.T) {
 			}
 
 			// Normalize both slices to handle nil vs empty slices
-			findings = normalizeFindings(findings)
-			expected := normalizeFindings(tt.expected)
+			matches = normalizeMatches(matches)
+			expected := normalizeMatches(tt.expected)
 
-			if !findingsEqual(findings, expected) {
-				t.Errorf("parsePackageJSON() got %+v, want %+v", findings, expected)
-				// Detailed logging for each finding
-				for i, finding := range findings {
+			if !MatchesEqual(matches, expected) {
+				t.Errorf("parsePackageJSON() got %+v, want %+v", matches, expected)
+				// Detailed logging for each Match
+				for i, match := range matches {
 					if i >= len(expected) {
-						t.Logf("Unexpected Finding %d: %+v", i, finding)
+						t.Logf("Unexpected Match %d: %+v", i, match)
 						continue
 					}
 					exp := expected[i]
-					if !findingsEqual([]Finding{finding}, []Finding{exp}) {
-						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, finding, exp)
+					if !MatchesEqual([]Match{match}, []Match{exp}) {
+						t.Logf("Match %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
 			}
@@ -445,7 +455,7 @@ func TestParseRequirementsTXT(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []Match
 		expectError bool
 	}{
 		{
@@ -457,33 +467,36 @@ scipy
 `,
 			repoName: "test-repo",
 			path:     "sample/requirements.txt",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "numpy",
-						Language: "Python",
-						Version:  "N/A",
+					Name: "numpy",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "N/A",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/requirements.txt",
+					RepoName: "test-repo",
+					Path:     "sample/requirements.txt",
 				},
 				{
-					Library: &Library{
-						Name:     "pandas",
-						Language: "Python",
-						Version:  "N/A",
+					Name: "pandas",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "N/A",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/requirements.txt",
+					RepoName: "test-repo",
+					Path:     "sample/requirements.txt",
 				},
 				{
-					Library: &Library{
-						Name:     "scipy",
-						Language: "Python",
-						Version:  "N/A",
+					Name: "scipy",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "N/A",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/requirements.txt",
+					RepoName: "test-repo",
+					Path:     "sample/requirements.txt",
 				},
 			},
 			expectError: false,
@@ -493,14 +506,14 @@ scipy
 			content:     ``,
 			repoName:    "test-repo",
 			path:        "sample/requirements.txt",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			findings, err := processor.parseRequirementsTXT(tt.content, tt.repoName, tt.path)
+			matches, err := processor.parseRequirementsTXT(tt.content, tt.repoName, tt.path)
 			if (err != nil) != tt.expectError {
 				t.Errorf("parseRequirementsTXT() error = %v, expectError = %v", err, tt.expectError)
 				return
@@ -512,20 +525,20 @@ scipy
 			}
 
 			// Normalize both slices to handle nil vs empty slices
-			findings = normalizeFindings(findings)
-			expected := normalizeFindings(tt.expected)
+			matches = normalizeMatches(matches)
+			expected := normalizeMatches(tt.expected)
 
-			if !findingsEqual(findings, expected) {
-				t.Errorf("parseRequirementsTXT() got %+v, want %+v", findings, expected)
-				// Detailed logging for each finding
-				for i, finding := range findings {
+			if !MatchesEqual(matches, expected) {
+				t.Errorf("parseRequirementsTXT() got %+v, want %+v", matches, expected)
+				// Detailed logging for each Match
+				for i, match := range matches {
 					if i >= len(expected) {
-						t.Logf("Unexpected Finding %d: %+v", i, finding)
+						t.Logf("Unexpected Match %d: %+v", i, match)
 						continue
 					}
 					exp := expected[i]
-					if !findingsEqual([]Finding{finding}, []Finding{exp}) {
-						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, finding, exp)
+					if !MatchesEqual([]Match{match}, []Match{exp}) {
+						t.Logf("Match %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
 			}
@@ -542,7 +555,7 @@ func TestParsePyProjectToml(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []Match
 		expectError bool
 	}{
 		{
@@ -562,42 +575,46 @@ flake8 = "^3.9.1"
 `,
 			repoName: "test-repo",
 			path:     "sample/pyproject.toml",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "python",
-						Language: "Python",
-						Version:  "^3.8",
+					Name: "python",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "^3.8",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pyproject.toml",
+					RepoName: "test-repo",
+					Path:     "sample/pyproject.toml",
 				},
 				{
-					Library: &Library{
-						Name:     "requests",
-						Language: "Python",
-						Version:  "^2.25.1",
+					Name: "requests",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "^2.25.1",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pyproject.toml",
+					RepoName: "test-repo",
+					Path:     "sample/pyproject.toml",
 				},
 				{
-					Library: &Library{
-						Name:     "pytest",
-						Language: "Python",
-						Version:  "^6.2.4",
+					Name: "pytest",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "^6.2.4",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pyproject.toml",
+					RepoName: "test-repo",
+					Path:     "sample/pyproject.toml",
 				},
 				{
-					Library: &Library{
-						Name:     "flake8",
-						Language: "Python",
-						Version:  "^3.9.1",
+					Name: "flake8",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "^3.9.1",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pyproject.toml",
+					RepoName: "test-repo",
+					Path:     "sample/pyproject.toml",
 				},
 			},
 			expectError: false,
@@ -614,15 +631,16 @@ django = "^3.2"
 `,
 			repoName: "test-repo",
 			path:     "sample/pyproject.toml",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "django",
-						Language: "Python",
-						Version:  "^3.2",
+					Name: "django",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "^3.2",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pyproject.toml",
+					RepoName: "test-repo",
+					Path:     "sample/pyproject.toml",
 				},
 			},
 			expectError: false,
@@ -639,15 +657,16 @@ mypy = "^0.812"
 `,
 			repoName: "test-repo",
 			path:     "sample/pyproject.toml",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "mypy",
-						Language: "Python",
-						Version:  "^0.812",
+					Name: "mypy",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Python",
+						"Version":  "^0.812",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pyproject.toml",
+					RepoName: "test-repo",
+					Path:     "sample/pyproject.toml",
 				},
 			},
 			expectError: false,
@@ -665,7 +684,7 @@ mypy = "^0.812"
 			content:     ``,
 			repoName:    "test-repo",
 			path:        "sample/pyproject.toml",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 		{
@@ -677,7 +696,7 @@ version = "1.0.0"
 `,
 			repoName:    "test-repo",
 			path:        "sample/pyproject.toml",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 		{
@@ -692,14 +711,14 @@ requests = { version = "^2.25.1", extras = ["security"] }
 `,
 			repoName:    "test-repo",
 			path:        "sample/pyproject.toml",
-			expected:    []Finding{}, // Since version is not a string, it should be ignored
+			expected:    []Match{}, // Since version is not a string, it should be ignored
 			expectError: false,
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			findings, err := processor.parsePyProjectToml(tt.content, tt.repoName, tt.path)
+			matches, err := processor.parsePyProjectToml(tt.content, tt.repoName, tt.path)
 			if (err != nil) != tt.expectError {
 				t.Errorf("parsePyProjectToml() error = %v, expectError = %v", err, tt.expectError)
 				return
@@ -711,20 +730,20 @@ requests = { version = "^2.25.1", extras = ["security"] }
 			}
 
 			// Normalize both slices to handle nil vs empty slices
-			findings = normalizeFindings(findings)
-			expected := normalizeFindings(tt.expected)
+			matches = normalizeMatches(matches)
+			expected := normalizeMatches(tt.expected)
 
-			if !findingsEqual(findings, expected) {
-				t.Errorf("parsePyProjectToml() got %+v, want %+v", findings, expected)
-				// Detailed logging for each finding
-				for i, finding := range findings {
+			if !MatchesEqual(matches, expected) {
+				t.Errorf("parsePyProjectToml() got %+v, want %+v", matches, expected)
+				// Detailed logging for each Match
+				for i, match := range matches {
 					if i >= len(expected) {
-						t.Logf("Unexpected Finding %d: %+v", i, finding)
+						t.Logf("Unexpected Match %d: %+v", i, match)
 						continue
 					}
 					exp := expected[i]
-					if !findingsEqual([]Finding{finding}, []Finding{exp}) {
-						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, finding, exp)
+					if !MatchesEqual([]Match{match}, []Match{exp}) {
+						t.Logf("Match %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
 			}
@@ -741,7 +760,7 @@ func TestParseCsProj(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []Match
 		expectError bool
 	}{
 		{
@@ -766,51 +785,56 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/example.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Newtonsoft.Json",
-						Language: "C#",
-						Version:  "13.0.1",
+					Name: "Newtonsoft.Json",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "13.0.1",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/example.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/example.csproj",
 				},
 				{
-					Library: &Library{
-						Name:     "Serilog",
-						Language: "C#",
-						Version:  "2.10.0",
+					Name: "Serilog",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "2.10.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/example.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/example.csproj",
 				},
 				{
-					Library: &Library{
-						Name:     "System.Data",
-						Language: "C#",
-						Version:  "N/A",
+					Name: "System.Data",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "N/A",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/example.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/example.csproj",
 				},
 				{
-					Library: &Library{
-						Name:     "System.Xml",
-						Language: "C#",
-						Version:  "4.0.0.0",
+					Name: "System.Xml",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "4.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/example.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/example.csproj",
 				},
 				{
-					Library: &Library{
-						Name:     "CuttingEdge.Conditions",
-						Language: "C#",
-						Version:  "1.2.0.11174",
+					Name: "CuttingEdge.Conditions",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.2.0.11174",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/example.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/example.csproj",
 				},
 			},
 			expectError: false,
@@ -826,15 +850,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/only_packages.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "NUnit",
-						Language: "C#",
-						Version:  "3.12.0",
+					Name: "NUnit",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "3.12.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/only_packages.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/only_packages.csproj",
 				},
 			},
 			expectError: false,
@@ -851,24 +876,26 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/only_references.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "System.Xml",
-						Language: "C#",
-						Version:  "4.0.0.0",
+					Name: "System.Xml",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "4.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/only_references.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/only_references.csproj",
 				},
 				{
-					Library: &Library{
-						Name:     "AnotherLib",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "AnotherLib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/only_references.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/only_references.csproj",
 				},
 			},
 			expectError: false,
@@ -885,24 +912,26 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/separate_versions.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "System.Net.Http",
-						Language: "C#",
-						Version:  "4.3.4",
+					Name: "System.Net.Http",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "4.3.4",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/separate_versions.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/separate_versions.csproj",
 				},
 				{
-					Library: &Library{
-						Name:     "System.Data",
-						Language: "C#",
-						Version:  "N/A",
+					Name: "System.Data",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "N/A",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/separate_versions.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/separate_versions.csproj",
 				},
 			},
 			expectError: false,
@@ -923,7 +952,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName:    "test-repo",
 			path:        "sample/empty.csproj",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 		{
@@ -937,15 +966,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/no_version.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "System.Drawing",
-						Language: "C#",
-						Version:  "N/A",
+					Name: "System.Drawing",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "N/A",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/no_version.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/no_version.csproj",
 				},
 			},
 			expectError: false,
@@ -964,15 +994,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/multiple_attributes.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Example.Lib",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "Example.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/multiple_attributes.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/multiple_attributes.csproj",
 				},
 			},
 			expectError: false,
@@ -988,15 +1019,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/conflicting_versions.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Conflicting.Lib",
-						Language: "C#",
-						Version:  "2.0.0.0", // Embedded version takes precedence
+					Name: "Conflicting.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "2.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/conflicting_versions.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/conflicting_versions.csproj",
 				},
 			},
 			expectError: false,
@@ -1012,15 +1044,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/only_embedded_version.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Only.Embedded.Lib",
-						Language: "C#",
-						Version:  "3.0.0.0",
+					Name: "Only.Embedded.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "3.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/only_embedded_version.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/only_embedded_version.csproj",
 				},
 			},
 			expectError: false,
@@ -1036,15 +1069,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/no_name.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/no_name.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/no_name.csproj",
 				},
 			},
 			expectError: false,
@@ -1060,15 +1094,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/multiple_versions.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Multi.Version.Lib",
-						Language: "C#",
-						Version:  "1.0.0.0", // First occurrence is taken
+					Name: "Multi.Version.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/multiple_versions.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/multiple_versions.csproj",
 				},
 			},
 			expectError: false,
@@ -1084,15 +1119,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/trailing_spaces.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Trailing.Space.Lib",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "Trailing.Space.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/trailing_spaces.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/trailing_spaces.csproj",
 				},
 			},
 			expectError: false,
@@ -1110,7 +1146,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName:    "test-repo",
 			path:        "sample/no_include.csproj",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 		{
@@ -1124,7 +1160,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName:    "test-repo",
 			path:        "sample/empty_include.csproj",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 		{
@@ -1141,15 +1177,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/complex_reference.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Complex.Lib",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "Complex.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/complex_reference.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/complex_reference.csproj",
 				},
 			},
 			expectError: false,
@@ -1165,15 +1202,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/multiple_commas.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Multi.Comma.Lib",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "Multi.Comma.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/multiple_commas.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/multiple_commas.csproj",
 				},
 			},
 			expectError: false,
@@ -1189,15 +1227,16 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/no_name_version.csproj",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/no_name_version.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/no_name_version.csproj",
 				},
 			},
 			expectError: false,
@@ -1206,7 +1245,7 @@ func TestParseCsProj(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			findings, err := processor.parseCsProj(tt.content, tt.repoName, tt.path)
+			matches, err := processor.parseCsProj(tt.content, tt.repoName, tt.path)
 			if (err != nil) != tt.expectError {
 				t.Errorf("parseCsProj() error = %v, expectError = %v", err, tt.expectError)
 				return
@@ -1218,20 +1257,20 @@ func TestParseCsProj(t *testing.T) {
 			}
 
 			// Normalize both slices to handle nil vs empty slices
-			findings = normalizeFindings(findings)
-			expected := normalizeFindings(tt.expected)
+			matches = normalizeMatches(matches)
+			expected := normalizeMatches(tt.expected)
 
-			if !findingsEqual(findings, expected) {
-				t.Errorf("parseCsProj() got %+v, want %+v", findings, expected)
-				// Detailed logging for each finding
-				for i, finding := range findings {
+			if !MatchesEqual(matches, expected) {
+				t.Errorf("parseCsProj() got %+v, want %+v", matches, expected)
+				// Detailed logging for each Match
+				for i, match := range matches {
 					if i >= len(expected) {
-						t.Logf("Unexpected Finding %d: %+v", i, finding)
+						t.Logf("Unexpected Match %d: %+v", i, match)
 						continue
 					}
 					exp := expected[i]
-					if !findingsEqual([]Finding{finding}, []Finding{exp}) {
-						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, finding, exp)
+					if !MatchesEqual([]Match{match}, []Match{exp}) {
+						t.Logf("Match %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
 			}
@@ -1245,15 +1284,15 @@ func TestProcess(t *testing.T) {
 
 	tests := []struct {
 		name        string
-		filePath    string
+		Path        string
 		content     string
 		repoName    string
-		expected    []Finding
+		expected    []Match
 		expectError bool
 	}{
 		{
-			name:     "Process valid pom.xml",
-			filePath: "sample/pom.xml",
+			name: "Process valid pom.xml",
+			Path: "sample/pom.xml",
 			content: `
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -1270,22 +1309,23 @@ func TestProcess(t *testing.T) {
 </project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "org.springframework:spring-core",
-						Language: "Java",
-						Version:  "5.3.8",
+					Name: "org.springframework:spring-core",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "Java",
+						"Version":  "5.3.8",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/pom.xml",
+					RepoName: "test-repo",
+					Path:     "sample/pom.xml",
 				},
 			},
 			expectError: false,
 		},
 		{
-			name:     "Process .csproj with embedded version",
-			filePath: "sample/example.csproj",
+			name: "Process .csproj with embedded version",
+			Path: "sample/example.csproj",
 			content: `
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
@@ -1296,22 +1336,23 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "CuttingEdge.Conditions",
-						Language: "C#",
-						Version:  "1.2.0.11174",
+					Name: "CuttingEdge.Conditions",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.2.0.11174",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/example.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/example.csproj",
 				},
 			},
 			expectError: false,
 		},
 		{
-			name:     "Process .csproj with separate Version attributes",
-			filePath: "sample/separate_versions.csproj",
+			name: "Process .csproj with separate Version attributes",
+			Path: "sample/separate_versions.csproj",
 			content: `
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
@@ -1321,50 +1362,52 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "System.Net.Http",
-						Language: "C#",
-						Version:  "4.3.4",
+					Name: "System.Net.Http",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "4.3.4",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/separate_versions.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/separate_versions.csproj",
 				},
 				{
-					Library: &Library{
-						Name:     "System.Data",
-						Language: "C#",
-						Version:  "N/A",
+					Name: "System.Data",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "N/A",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/separate_versions.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/separate_versions.csproj",
 				},
 			},
 			expectError: false,
 		},
 		{
 			name:        "Process .csproj with invalid XML",
-			filePath:    "sample/malformed.csproj",
+			Path:        "sample/malformed.csproj",
 			content:     `<Project><Invalid></Project>`,
 			repoName:    "test-repo",
 			expected:    nil, // Expecting an error
 			expectError: true,
 		},
 		{
-			name:     "Process empty .csproj",
-			filePath: "sample/empty.csproj",
+			name: "Process empty .csproj",
+			Path: "sample/empty.csproj",
 			content: `
 <Project Sdk="Microsoft.NET.Sdk">
 </Project>
 `,
 			repoName:    "test-repo",
-			expected:    []Finding{},
+			expected:    []Match{},
 			expectError: false,
 		},
 		{
-			name:     "Process .csproj with multiple References",
-			filePath: "sample/multiple_references.csproj",
+			name: "Process .csproj with multiple References",
+			Path: "sample/multiple_references.csproj",
 			content: `
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
@@ -1374,31 +1417,33 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "LibraryOne",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "LibraryOne",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/multiple_references.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/multiple_references.csproj",
 				},
 				{
-					Library: &Library{
-						Name:     "LibraryTwo",
-						Language: "C#",
-						Version:  "2.0.0.0",
+					Name: "LibraryTwo",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "2.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/multiple_references.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/multiple_references.csproj",
 				},
 			},
 			expectError: false,
 		},
 		{
-			name:     "Process .csproj with Reference having separate Version attribute",
-			filePath: "sample/with_separate_version.csproj",
+			name: "Process .csproj with Reference having separate Version attribute",
+			Path: "sample/with_separate_version.csproj",
 			content: `
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
@@ -1407,22 +1452,23 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Separate.Version.Lib",
-						Language: "C#",
-						Version:  "1.1.1",
+					Name: "Separate.Version.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.1.1",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/with_separate_version.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/with_separate_version.csproj",
 				},
 			},
 			expectError: false,
 		},
 		{
-			name:     "Process .csproj with Reference having embedded version and separate Version attribute",
-			filePath: "sample/embedded_and_separate_version.csproj",
+			name: "Process .csproj with Reference having embedded version and separate Version attribute",
+			Path: "sample/embedded_and_separate_version.csproj",
 			content: `
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
@@ -1431,22 +1477,23 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Conflicting.Lib",
-						Language: "C#",
-						Version:  "2.0.0.0", // Embedded version takes precedence
+					Name: "Conflicting.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "2.0.0.0", // Embedded version takes precedence
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/embedded_and_separate_version.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/embedded_and_separate_version.csproj",
 				},
 			},
 			expectError: false,
 		},
 		{
-			name:     "Process .csproj with Reference having multiple commas in embedded version",
-			filePath: "sample/multiple_commas.csproj",
+			name: "Process .csproj with Reference having multiple commas in embedded version",
+			Path: "sample/multiple_commas.csproj",
 			content: `
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
@@ -1455,22 +1502,23 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "Complex.Lib",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "Complex.Lib",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/multiple_commas.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/multiple_commas.csproj",
 				},
 			},
 			expectError: false,
 		},
 		{
-			name:     "Process .csproj with Reference having no library name",
-			filePath: "sample/no_library_name.csproj",
+			name: "Process .csproj with Reference having no library name",
+			Path: "sample/no_library_name.csproj",
 			content: `
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
@@ -1479,15 +1527,16 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []Match{
 				{
-					Library: &Library{
-						Name:     "",
-						Language: "C#",
-						Version:  "1.0.0.0",
+					Name: "",
+					Type: "Library",
+					Properties: map[string]interface{}{
+						"Language": "C#",
+						"Version":  "1.0.0.0",
 					},
-					Repository: "test-repo",
-					Filepath:   "sample/no_library_name.csproj",
+					RepoName: "test-repo",
+					Path:     "sample/no_library_name.csproj",
 				},
 			},
 			expectError: false,
@@ -1496,7 +1545,7 @@ func TestProcess(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			findings, err := processor.Process(tt.filePath, tt.repoName, tt.content)
+			matches, err := processor.Process(tt.Path, tt.repoName, tt.content)
 			if (err != nil) != tt.expectError {
 				t.Errorf("Process() error = %v, expectError = %v", err, tt.expectError)
 				return
@@ -1508,20 +1557,20 @@ func TestProcess(t *testing.T) {
 			}
 
 			// Normalize both slices to handle nil vs empty slices
-			findings = normalizeFindings(findings)
-			expected := normalizeFindings(tt.expected)
+			matches = normalizeMatches(matches)
+			expected := normalizeMatches(tt.expected)
 
-			if !findingsEqual(findings, expected) {
-				t.Errorf("Process() got %+v, want %+v", findings, expected)
-				// Detailed logging for each finding
-				for i, finding := range findings {
+			if !MatchesEqual(matches, expected) {
+				t.Errorf("Process() got %+v, want %+v", matches, expected)
+				// Detailed logging for each Match
+				for i, match := range matches {
 					if i >= len(expected) {
-						t.Logf("Unexpected Finding %d: %+v", i, finding)
+						t.Logf("Unexpected Match %d: %+v", i, match)
 						continue
 					}
 					exp := expected[i]
-					if !findingsEqual([]Finding{finding}, []Finding{exp}) {
-						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, finding, exp)
+					if !MatchesEqual([]Match{match}, []Match{exp}) {
+						t.Logf("Match %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
 			}
@@ -1529,49 +1578,66 @@ func TestProcess(t *testing.T) {
 	}
 }
 
-func normalizeFindings(findings []Finding) []Finding {
-	if findings == nil {
-		return []Finding{}
+func normalizeMatches(Matches []Match) []Match {
+	if Matches == nil {
+		return []Match{}
 	}
-	return findings
+	return Matches
 }
 
-func findingsEqual(a, b []Finding) bool {
+func MatchesEqual(a, b []Match) bool {
 	if len(a) != len(b) {
 		return false
 	}
 
-	// Create maps to track findings
-	mapA := make(map[string]Library)
-	mapB := make(map[string]Library)
+	// Create maps to track Match instances
+	mapA := make(map[string]Match)
+	mapB := make(map[string]Match)
 
-	for _, finding := range a {
-		key := finding.Repository + "|" + finding.Filepath + "|" + finding.Library.Name
-		if finding.Library != nil {
-			mapA[key] = *finding.Library
-		} else {
-			// Handle nil Library if necessary
-			mapA[key] = Library{}
-		}
+	// Helper function to create a unique key for a Match
+	generateKey := func(m Match) string {
+		return m.RepoName + "|" + m.Path + "|" + m.Name + "|" + m.Type + "|" + m.Category
 	}
 
-	for _, finding := range b {
-		key := finding.Repository + "|" + finding.Filepath + "|" + finding.Library.Name
-		if finding.Library != nil {
-			mapB[key] = *finding.Library
-		} else {
-			// Handle nil Library if necessary
-			mapB[key] = Library{}
-		}
+	// Populate mapA
+	for _, match := range a {
+		key := generateKey(match)
+		mapA[key] = match
+	}
+
+	// Populate mapB
+	for _, match := range b {
+		key := generateKey(match)
+		mapB[key] = match
 	}
 
 	// Compare the maps
-	for key, libA := range mapA {
-		libB, exists := mapB[key]
+	for key, matchA := range mapA {
+		matchB, exists := mapB[key]
 		if !exists {
 			return false
 		}
-		if libA.Name != libB.Name || libA.Language != libB.Language || libA.Version != libB.Version {
+		// Compare Properties map
+		if !propertiesEqual(matchA.Properties, matchB.Properties) {
+			return false
+		}
+	}
+
+	return true
+}
+
+// Helper function to compare two maps of string to interface{}
+func propertiesEqual(a, b map[string]interface{}) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	for key, valA := range a {
+		valB, exists := b[key]
+		if !exists {
+			return false
+		}
+		if valA != valB {
 			return false
 		}
 	}

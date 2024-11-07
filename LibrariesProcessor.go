@@ -17,15 +17,15 @@ type Library struct {
 	Version  string `json:"version"`
 }
 
-type LibrariesProcessorProcessor struct {
+type LibrariesProcessor struct {
 	csprojPatterns []*regexp.Regexp
 }
 
-func NewLibrariesProcessor() *LibrariesProcessorProcessor {
-	return &LibrariesProcessorProcessor{}
+func NewLibrariesProcessor() *LibrariesProcessor {
+	return &LibrariesProcessor{}
 }
 
-func (mp *LibrariesProcessorProcessor) Supports(filePath string) bool {
+func (mp *LibrariesProcessor) Supports(filePath string) bool {
 	base := filepath.Base(filePath)
 	supportedFiles := []string{
 		"pom.xml",          // Java (Maven)
@@ -49,8 +49,8 @@ func (mp *LibrariesProcessorProcessor) Supports(filePath string) bool {
 	return false
 }
 
-func (mp *LibrariesProcessorProcessor) Process(path string, repoName string, content string) ([]Finding, error) {
-	var findings []Finding
+func (mp *LibrariesProcessor) Process(path string, repoName string, content string) ([]Match, error) {
+	var Matches []Match
 	base := filepath.Base(path)
 
 	switch base {
@@ -59,47 +59,47 @@ func (mp *LibrariesProcessorProcessor) Process(path string, repoName string, con
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse pom.xml: %w", err)
 		}
-		findings = append(findings, fs...)
+		Matches = append(Matches, fs...)
 	case "go.mod":
 		fs, err := mp.parseGoMod(content, repoName, path)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse go.mod: %w", err)
 		}
-		findings = append(findings, fs...)
+		Matches = append(Matches, fs...)
 	case "package.json":
 		fs, err := mp.parsePackageJSON(content, repoName, path)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse package.json: %w", err)
 		}
-		findings = append(findings, fs...)
+		Matches = append(Matches, fs...)
 	case "requirements.txt":
 		fs, err := mp.parseRequirementsTXT(content, repoName, path)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse requirements.txt: %w", err)
 		}
-		findings = append(findings, fs...)
+		Matches = append(Matches, fs...)
 	case "pyproject.toml":
 		fs, err := mp.parsePyProjectToml(content, repoName, path)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse pyproject.toml: %w", err)
 		}
-		findings = append(findings, fs...)
+		Matches = append(Matches, fs...)
 	default:
 		if strings.HasSuffix(base, ".csproj") {
 			fs, err := mp.parseCsProj(content, repoName, path)
 			if err != nil {
 				return nil, fmt.Errorf("failed to parse .csproj: %w", err)
 			}
-			findings = append(findings, fs...)
+			Matches = append(Matches, fs...)
 		} else {
 			return nil, errors.New("unsupported package file")
 		}
 	}
 
-	return findings, nil
+	return Matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parsePomXML(content string, repoName string, path string) ([]Finding, error) {
+func (mp *LibrariesProcessor) parsePomXML(content string, repoName string, path string) ([]Match, error) {
 	type Dependency struct {
 		GroupID    string `xml:"groupId"`
 		ArtifactID string `xml:"artifactId"`
@@ -117,26 +117,29 @@ func (mp *LibrariesProcessorProcessor) parsePomXML(content string, repoName stri
 		return nil, err
 	}
 
-	var findings []Finding
+	var matches []Match
 	for _, dep := range project.Dependencies {
 		libraryName := fmt.Sprintf("%s:%s", dep.GroupID, dep.ArtifactID)
-		findings = append(findings, Finding{
-			Library: &Library{
-				Name:     libraryName,
-				Language: "Java",
-				Version:  dep.Version,
+		match := Match{
+			Name:     libraryName,
+			Type:     "Library",
+			Category: "",
+			Properties: map[string]interface{}{
+				"Language": "Java",
+				"Version":  dep.Version,
 			},
-			Repository: repoName,
-			Filepath:   path,
-		})
+			Path:     path,
+			RepoName: repoName,
+		}
+		matches = append(matches, match)
 	}
 
-	return findings, nil
+	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parseGoMod(content string, repoName string, path string) ([]Finding, error) {
+func (mp *LibrariesProcessor) parseGoMod(content string, repoName string, path string) ([]Match, error) {
 	lines := strings.Split(content, "\n")
-	var findings []Finding
+	var matches []Match
 	var inRequireBlock bool
 
 	for _, line := range lines {
@@ -164,23 +167,26 @@ func (mp *LibrariesProcessorProcessor) parseGoMod(content string, repoName strin
 			if len(parts) >= 2 {
 				libraryName := parts[0]
 				version := parts[1]
-				findings = append(findings, Finding{
-					Library: &Library{
-						Name:     libraryName,
-						Language: "Go",
-						Version:  version,
+				match := Match{
+					Name:     libraryName,
+					Type:     "Library",
+					Category: "",
+					Properties: map[string]interface{}{
+						"Language": "Go",
+						"Version":  version,
 					},
-					Repository: repoName,
-					Filepath:   path,
-				})
+					Path:     path,
+					RepoName: repoName,
+				}
+				matches = append(matches, match)
 			}
 		}
 	}
 
-	return findings, nil
+	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parsePackageJSON(content string, repoName string, path string) ([]Finding, error) {
+func (mp *LibrariesProcessor) parsePackageJSON(content string, repoName string, path string) ([]Match, error) {
 	type PackageJSON struct {
 		Dependencies    map[string]string `json:"dependencies"`
 		DevDependencies map[string]string `json:"devDependencies"`
@@ -192,7 +198,7 @@ func (mp *LibrariesProcessorProcessor) parsePackageJSON(content string, repoName
 		return nil, err
 	}
 
-	var findings []Finding
+	var matches []Match
 
 	combined := make(map[string]string)
 	for k, v := range pkg.Dependencies {
@@ -203,23 +209,26 @@ func (mp *LibrariesProcessorProcessor) parsePackageJSON(content string, repoName
 	}
 
 	for lib, ver := range combined {
-		findings = append(findings, Finding{
-			Library: &Library{
-				Name:     lib,
-				Language: "Node.js",
-				Version:  ver,
+		match := Match{
+			Name:     lib,
+			Type:     "Library",
+			Category: "",
+			Properties: map[string]interface{}{
+				"Language": "Node.js",
+				"Version":  ver,
 			},
-			Repository: repoName,
-			Filepath:   path,
-		})
+			Path:     path,
+			RepoName: repoName,
+		}
+		matches = append(matches, match)
 	}
 
-	return findings, nil
+	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parseRequirementsTXT(content string, repoName string, path string) ([]Finding, error) {
+func (mp *LibrariesProcessor) parseRequirementsTXT(content string, repoName string, path string) ([]Match, error) {
 	lines := strings.Split(content, "\n")
-	findings := make([]Finding, 0, len(lines)) // Preallocate for the number of lines
+	matches := make([]Match, 0, len(lines))
 
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
@@ -245,22 +254,24 @@ func (mp *LibrariesProcessorProcessor) parseRequirementsTXT(content string, repo
 			libraryName = line
 			version = "N/A"
 		}
-
-		findings = append(findings, Finding{
-			Library: &Library{
-				Name:     libraryName,
-				Language: "Python",
-				Version:  version,
+		match := Match{
+			Name:     libraryName,
+			Type:     "Library",
+			Category: "",
+			Properties: map[string]interface{}{
+				"Language": "Python",
+				"Version":  version,
 			},
-			Repository: repoName,
-			Filepath:   path,
-		})
+			Path:     path,
+			RepoName: repoName,
+		}
+		matches = append(matches, match)
 	}
 
-	return findings, nil
+	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parsePyProjectToml(content string, repoName string, path string) ([]Finding, error) {
+func (mp *LibrariesProcessor) parsePyProjectToml(content string, repoName string, path string) ([]Match, error) {
 	type PyProject struct {
 		Tool struct {
 			Poetry struct {
@@ -275,7 +286,7 @@ func (mp *LibrariesProcessorProcessor) parsePyProjectToml(content string, repoNa
 		return nil, err
 	}
 
-	var findings []Finding
+	var matches []Match
 
 	combined := make(map[string]string)
 	for k, v := range py.Tool.Poetry.Dependencies {
@@ -290,21 +301,24 @@ func (mp *LibrariesProcessorProcessor) parsePyProjectToml(content string, repoNa
 	}
 
 	for lib, ver := range combined {
-		findings = append(findings, Finding{
-			Library: &Library{
-				Name:     lib,
-				Language: "Python",
-				Version:  ver,
+		match := Match{
+			Name:     lib,
+			Type:     "Library",
+			Category: "",
+			Properties: map[string]interface{}{
+				"Language": "Python",
+				"Version":  ver,
 			},
-			Repository: repoName,
-			Filepath:   path,
-		})
+			Path:     path,
+			RepoName: repoName,
+		}
+		matches = append(matches, match)
 	}
 
-	return findings, nil
+	return matches, nil
 }
 
-func (mp *LibrariesProcessorProcessor) parseCsProj(content string, repoName string, path string) ([]Finding, error) {
+func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path string) ([]Match, error) {
 	type PackageReference struct {
 		Include string `xml:"Include,attr"`
 		Version string `xml:"Version,attr"`
@@ -327,7 +341,7 @@ func (mp *LibrariesProcessorProcessor) parseCsProj(content string, repoName stri
 		return nil, err
 	}
 
-	var findings []Finding
+	var matches []Match
 
 	for _, pr := range project.PackageReferences {
 		if strings.TrimSpace(pr.Include) == "" {
@@ -341,15 +355,18 @@ func (mp *LibrariesProcessorProcessor) parseCsProj(content string, repoName stri
 			version = "N/A" // Or any default value you prefer
 		}
 
-		findings = append(findings, Finding{
-			Library: &Library{
-				Name:     libraryName,
-				Language: "C#",
-				Version:  version,
+		match := Match{
+			Name:     libraryName,
+			Type:     "Library",
+			Category: "",
+			Properties: map[string]interface{}{
+				"Language": "C#",
+				"Version":  version,
 			},
-			Repository: repoName,
-			Filepath:   path,
-		})
+			Path:     path,
+			RepoName: repoName,
+		}
+		matches = append(matches, match)
 	}
 
 	for _, ref := range project.References {
@@ -365,19 +382,21 @@ func (mp *LibrariesProcessorProcessor) parseCsProj(content string, repoName stri
 		if strings.TrimSpace(version) == "" {
 			version = "N/A" // Default if both are missing
 		}
-
-		findings = append(findings, Finding{
-			Library: &Library{
-				Name:     libraryName,
-				Language: "C#",
-				Version:  version,
+		match := Match{
+			Name:     libraryName,
+			Type:     "Library",
+			Category: "",
+			Properties: map[string]interface{}{
+				"Language": "C#",
+				"Version":  version,
 			},
-			Repository: repoName,
-			Filepath:   path,
-		})
+			Path:     path,
+			RepoName: repoName,
+		}
+		matches = append(matches, match)
 	}
 
-	return findings, nil
+	return matches, nil
 }
 
 func ParseReferenceInclude(include string) (string, string) {

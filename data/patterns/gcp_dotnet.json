@@ -1,0 +1,7127 @@
+[
+  {
+    "type": "Cloud Service",
+    "name": "Ads",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Ads.AdManager.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Ads",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Ads.MarketingPlatform.Admin.V1Alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Analytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Analytics.Admin.V1Alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Analytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Analytics.Admin.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Analytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Analytics.Data.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Card.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Chat.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Events.Subscriptions.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Meet.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Meet.V2Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Script.Type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Script.Type.Calendar"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Script.Type.Docs"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Script.Type.Drive"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Script.Type.Gmail"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Script.Type.Sheets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Apps",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Apps.Script.Type.Slides"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Area120",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Area120.Tables.V1Alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Cloud",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AccessApproval",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AccessApproval.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AdvisoryNotifications",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AdvisoryNotifications.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1Beta1.Schema"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1Beta1.Schema.Predict.Instance"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1Beta1.Schema.Predict.Params"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1Beta1.Schema.Predict.Prediction"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1Beta1.Schema.TrainingJob.Definition"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1.Schema.Predict.Instance"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1.Schema.Predict.Params"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1.Schema.Predict.Prediction"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1.Schema.TrainingJob.Definition"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AIPlatform",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AIPlatform.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AlloyDb",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AlloyDb.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AlloyDb",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AlloyDb.V1Alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AlloyDb",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AlloyDb.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiGateway",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ApiGateway.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApigeeConnect",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ApigeeConnect.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApigeeRegistry",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ApigeeRegistry.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiHub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ApiHub.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ApiKeys",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ApiKeys.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AppEngine",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AppEngine.Logging.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AppEngine",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AppEngine.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AppHub",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AppHub.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ArtifactRegistry",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ArtifactRegistry.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ArtifactRegistry",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ArtifactRegistry.V1Beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Asset",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Asset.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AssuredWorkloads",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AssuredWorkloads.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AssuredWorkloads",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AssuredWorkloads.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Audit",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Audit"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AutoML",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.AutoML.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BackupDR",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BackupDR.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BareMetalSolution",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BareMetalSolution.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Batch",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Batch.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Batch",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Batch.V1Alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BeyondCorp.AppConnections.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BeyondCorp.AppConnectors.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BeyondCorp.AppGateways.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BeyondCorp",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BeyondCorp.ClientGateways.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.AnalyticsHub.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.Connection.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.DataExchange.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.DataPolicies.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.DataPolicies.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.DataTransfer.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.DataTransfer.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.Logging.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.Migration.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.Reservation.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.Storage.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.V2.Benchmarks"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.V2.CleanTestData"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.V2.GenerateOverloads"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.V2.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.V2.PerformanceTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.V2.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BigQuery",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BigQuery.V2.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.Admin.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.Admin.V2.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.Admin.V2.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.Common.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.V2.GenerateClient"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.V2.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.V2.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.V2.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Bigtable",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Bigtable.V2.Tests.Conformance"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Billing",
+    "category": "Cost Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Billing.Budgets.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Billing",
+    "category": "Cost Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Billing.Budgets.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Billing",
+    "category": "Cost Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Billing.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BinaryAuthorization",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BinaryAuthorization.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "BinaryAuthorization",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.BinaryAuthorization.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CertificateManager",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.CertificateManager.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Channel",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Channel.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ClientTesting",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ClientTesting"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudBuild",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.CloudBuild.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudBuild",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.CloudBuild.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudControlsPartner",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.CloudControlsPartner.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudControlsPartner",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.CloudControlsPartner.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudDms",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.CloudDms.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "CloudQuotas",
+    "category": "Cost Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.CloudQuotas.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Commerce",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Commerce.Consumer.Procurement.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Common",
+    "category": "Developer Frameworks",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Common"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Compute.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Compute.V1.EnumConstantGenerator"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Compute.V1.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Compute.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Compute.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ConfidentialComputing",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ConfidentialComputing.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ConfidentialComputing",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ConfidentialComputing.V1Alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Config",
+    "category": "Governance and Compliance\nMonitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Config.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Connectors",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Connectors.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ContactCenterInsights",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ContactCenterInsights.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Container",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Container.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Container",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Container.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataCatalog",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DataCatalog.Lineage.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataCatalog",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DataCatalog.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataflow",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dataflow.V1Beta3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataform",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dataform.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DataFusion",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DataFusion.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataplex",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dataplex.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dataproc",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dataproc.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Datastore.Admin.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Datastore.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Datastore.V1.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Datastore.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Datastore.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastream",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Datastream.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Datastream",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Datastream.V1Alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Deploy",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Deploy.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DeveloperConnect",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DeveloperConnect.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DevTools",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DevTools.Common.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DevTools",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DevTools.ContainerAnalysis.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DevTools",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DevTools.Source.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.AspNetCore3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.AspNetCore3.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.AspNetCore3.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.AspNetCore3.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.Common"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.Common."
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.Common.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.Common.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.Common.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.Common.Tests.Logging"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Diagnostics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Diagnostics.Common.Tests.Trace"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dialogflow.Cx.V3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dialogflow.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dialogflow.V2Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dialogflow",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dialogflow.V2.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DiscoveryEngine",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DiscoveryEngine.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DiscoveryEngine",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DiscoveryEngine.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dlp",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dlp.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Dlp",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Dlp.V2.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Docs",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Docs.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DocumentAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DocumentAI.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DocumentAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DocumentAI.V1Beta3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DocumentAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DocumentAI.V1Beta3.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "DocumentAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.DocumentAI.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Domains",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Domains.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Domains",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Domains.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EdgeNetwork",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.EdgeNetwork.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EnterpriseKnowledgeGraph",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.EnterpriseKnowledgeGraph.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ErrorReporting",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ErrorReporting.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ErrorReporting",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ErrorReporting.V1Beta1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "EssentialContacts",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.EssentialContacts.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Eventarc",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Eventarc.Publishing.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Eventarc",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Eventarc.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Filestore",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Filestore.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.Admin.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.Benchmark"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.Benchmarks"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.CleanTestData"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.Converters"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.IntegrationTests.Models"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.Tests.Converters"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.Tests.Proto"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Firestore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Firestore.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Functions",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Functions.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Functions",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Functions.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Functions",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Functions.V2Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GdcHardwareManagement",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GdcHardwareManagement.V1Alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeBackup",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GkeBackup.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeConnect",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GkeConnect.Gateway.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GkeHub.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GkeHub.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GkeHub.V1.ConfigManagement"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeHub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GkeHub.V1.MultiClusterIngress"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeMultiCloud",
+    "category": null,
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GkeMultiCloud.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GkeMultiCloud",
+    "category": null,
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GkeMultiCloud.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GSuiteAddOns",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.GSuiteAddOns.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Iam.Admin.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Iam.Credentials.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Iam.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Iam.V1.Logging"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Iam.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iam",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Iam.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Iap",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Iap.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Ids",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Ids.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Kms",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Kms.Inventory.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Kms",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Kms.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Kms",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Kms.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Language",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Language.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Language",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Language.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Language",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Language.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Language",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Language.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "LifeSciences",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.LifeSciences.V2Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Location",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Location"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.Console"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.Console.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.Log4Net"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.Log4Net.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.Log4Net.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.Log4Net.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.NLog"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.NLog.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.NLog.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.NLog.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.Type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Logging",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Logging.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ManagedIdentities",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ManagedIdentities.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ManagedKafka",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ManagedKafka.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "MediaTranslation",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.MediaTranslation.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Memcache",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Memcache.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Memcache",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Memcache.V1Beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Metastore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Metastore.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Metastore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Metastore.V1Alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Metastore",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Metastore.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "MigrationCenter",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.MigrationCenter.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Monitoring",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Monitoring.V3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetApp",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.NetApp.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkConnectivity",
+    "category": "Networking",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.NetworkConnectivity.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkConnectivity",
+    "category": "Networking",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.NetworkConnectivity.V1Alpha1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkManagement",
+    "category": "Networking",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.NetworkManagement.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkSecurity",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.NetworkSecurity.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "NetworkServices",
+    "category": "Networking",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.NetworkServices.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Notebooks",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Notebooks.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Notebooks",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Notebooks.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Notebooks",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Notebooks.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Optimization",
+    "category": "Cost Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Optimization.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OracleDatabase",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.OracleDatabase.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Orchestration",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Orchestration.Airflow.Service.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OrgPolicy",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.OrgPolicy.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OrgPolicy",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.OrgPolicy.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsConfig",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.OsConfig.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsConfig",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.OsConfig.V1Alpha"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsLogin",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.OsLogin.Common"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsLogin",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.OsLogin.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "OsLogin",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.OsLogin.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Parallelstore",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Parallelstore.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Parallelstore",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Parallelstore.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PhishingProtection",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PhishingProtection.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicySimulator",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PolicySimulator.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicyTroubleshooter",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PolicyTroubleshooter.Iam.V3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PolicyTroubleshooter",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PolicyTroubleshooter.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PrivateCatalog",
+    "category": "Cloud Marketplace",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PrivateCatalog.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PrivilegedAccessManager",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PrivilegedAccessManager.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Profiler",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Profiler.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PubSub.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PubSub.V1.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PubSub.V1.OrderingKeyTester"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PubSub.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PubSub.V1.Tasks"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PubSub.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "PubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.PubSub.V1.Tests.Tasks"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RapidMigrationAssessment",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.RapidMigrationAssessment.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RecaptchaEnterprise",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.RecaptchaEnterprise.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RecaptchaEnterprise",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.RecaptchaEnterprise.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "RecommendationEngine",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.RecommendationEngine.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Recommender",
+    "category": "Cost Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Recommender.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Redis.Cluster.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Redis.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Redis.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Redis.V1Beta1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Redis.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ResourceManager",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ResourceManager.V3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ResourceSettings",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ResourceSettings.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Retail",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Retail.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Run",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Run.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Scheduler",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Scheduler.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Scheduler",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Scheduler.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecretManager",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecretManager.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecretManager",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecretManager.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecretManager",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecretManager.V1Beta2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecureSourceManager",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecureSourceManager.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenterManagement",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecurityCenterManagement.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecurityCenter.Settings.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecurityCenter.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecurityCenter.V1P1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "SecurityCenter",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.SecurityCenter.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": "Security\nSecurity",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Security.PrivateCA.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": "Security\nSecurity",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Security.PublicCA.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Security",
+    "category": "Security\nSecurity",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Security.PublicCA.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceControl",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ServiceControl.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceDirectory",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ServiceDirectory.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceDirectory",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ServiceDirectory.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceHealth",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ServiceHealth.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceManagement",
+    "category": "Integration",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ServiceManagement.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "ServiceUsage",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.ServiceUsage.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shell",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Shell.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Css.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Accounts.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Conversions.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.DataSources.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Inventories.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Lfp.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Notifications.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Products.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Promotions.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Quota.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Reports.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Storage.V2.CleanTestData"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Admin.Database.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Admin.Database.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Admin.Instance.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Admin.Instance.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Common.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Data"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Data.CleanTestData"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Data.CommonTesting"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Data.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Data.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Data.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.Data.Ycsb"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.V1.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.V1.Internal"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.V1.Internal.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.V1.Internal.Logging"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.V1.Internal.Logging.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.V1.Internal.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Spanner",
+    "category": "Databases",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Spanner.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Speech.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Speech.V1.LanguageCodeGenerator"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Speech.V1P1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Speech.V1P1Beta1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Speech.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Speech.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Speech.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Speech",
+    "category": "Machine Learning and AI\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Speech.V2.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.Control.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "StorageInsights",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.StorageInsights.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "StorageTransfer",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.StorageTransfer.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1.BenchmarkingTool"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1.CreateCommonTestBucket"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1.RetryConformanceTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1.Tests.Conformance"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V1.ThroughputTool"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Storage.V2.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Support",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Support.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Talent",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Talent.V4"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Talent",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Talent.V4Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Talent",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Talent.V4Beta1.CleanTestData"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Talent",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Talent.V4Beta1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tasks",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tasks.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tasks",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tasks.V2Beta3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TelcoAutomation",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.TelcoAutomation.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TextToSpeech",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.TextToSpeech.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TextToSpeech",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.TextToSpeech.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "TextToSpeech",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.TextToSpeech.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.ApiIndex.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.Common"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.CompareVersions"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.DocfxMetadata"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.DocUploader"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.GenerateDocfxSources"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.GenerateSnippetMarkdown"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.PostProcessDevSite"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.ProcessBuildTimingLog"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.RegenerateToc"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.ReleaseManager"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.ReleaseManager.BatchRelease"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.ReleaseManager.History"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.ReleaseManager.History.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.ReleaseManager.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.ReleaseProgressReporter"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.SbomGenerator"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.SbomGenerator.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.CecilUtils"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Detectors"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.Class"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.ClassConstant"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.ClassMethod"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.ClassProperty"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.ClassStructCtor"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.Enum"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.Interface"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.Obsolete"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.Struct"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.StructConstant"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.StructMethod"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.StructProperty"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Tests.TopLevel"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tools",
+    "category": "Developer Tools\nDeveloper Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tools.VersionCompat.Utils"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Tpu",
+    "category": "Compute",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Tpu.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Trace",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Trace.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Trace",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Trace.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Trace",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Trace.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translate",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Translate.V3"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translate",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Translate.V3.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translation",
+    "category": "Media and Content Delivery\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Translation.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translation",
+    "category": "Media and Content Delivery\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Translation.V2.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translation",
+    "category": "Media and Content Delivery\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Translation.V2.LanguageCodeGenerator"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translation",
+    "category": "Media and Content Delivery\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Translation.V2.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Translation",
+    "category": "Media and Content Delivery\nMachine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Translation.V2.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.VideoIntelligence.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.VideoIntelligence.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VideoIntelligence",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.VideoIntelligence.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Video.LiveStream.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Video.Stitcher.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Video",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Video.Transcoder.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VisionAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.VisionAI.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Vision.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Vision.V1.IntegrationTests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Vision.V1.PopulateProductSearchTestSet"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Vision.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Vision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Vision.V1.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VMMigration",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.VMMigration.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VmwareEngine",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.VmwareEngine.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "VpcAccess",
+    "category": "Networking",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.VpcAccess.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebRisk",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.WebRisk.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebRisk",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.WebRisk.V1Beta1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebRisk",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.WebRisk.V1Beta1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "WebSecurityScanner",
+    "category": "Security",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.WebSecurityScanner.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Workflows.Common.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Workflows.Common.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Workflows.Executions.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Workflows.Executions.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Workflows.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workflows",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Workflows.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Workstations",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Cloud.Workstations.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "GoogleCSharpSnippets",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "GoogleCSharpSnippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Geo",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Geo.Type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Identity",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Identity.AccessContextManager.Type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Identity",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Identity.AccessContextManager.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "LongRunning",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.LongRunning"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "LongRunning",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.LongRunning.Tests"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.AddressValidation.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.AreaInsights.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.FleetEngine.Delivery.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.FleetEngine.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.MapsPlatformDatasets.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.Places.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.Places.V1.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.RouteOptimization.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.Routing.V2"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Maps.Routing.V2.Snippets"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Css.V1"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Accounts.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Conversions.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.DataSources.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Inventories.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Lfp.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Notifications.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Products.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Promotions.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Quota.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Merchant.Reports.V1Beta"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Shopping",
+    "category": "Retail and Personalization",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Shopping.Type"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "cs"
+    ],
+    "content_patterns": [
+      "Google.Storage.V2.CleanTestData"
+    ],
+    "properties": {
+      "vendor": "GCP",
+      "language": "csharp"
+    }
+  }
+]

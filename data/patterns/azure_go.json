@@ -1,0 +1,1397 @@
+[
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security KeyVault Secrets",
+    "category": "Security",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azsecrets"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security KeyVault Keys",
+    "category": "Security",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azkeys"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security KeyVault Administration",
+    "category": "Security",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azadmin"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Security KeyVault Certificates",
+    "category": "Security",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azcertificates"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Messaging EventGrid",
+    "category": "Integration",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/messaging/eventgrid/azeventgrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Messaging EventGrid Namespaces",
+    "category": "Integration",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/messaging/eventgrid/aznamespaces"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Messaging WebPubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/messaging/azwebpubsub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Identity",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI OpenAI",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/ai/azopenai"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure AI OpenAI Assistants",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/ai/azopenaiassistants"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Files Shares",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/storage/azfile"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Files DataLake",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/storage/azdatalake"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Queues",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/storage/azqueue"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Storage Blobs",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Containers ContainerRegistry",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/containers/azcontainerregistry"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Monitor Ingestion",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/monitor/ingestion/azlogs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Monitor Query",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/monitor/azquery"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Monitor Query",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/monitor/query/azlogs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Monitor Query",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/monitor/query/azmetrics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Data Tables",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/data/aztables"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Data AppConfiguration",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/data/azappconfig"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ManagedServiceIdentities",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/msi/armmsi"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ContainerService",
+    "category": "Compute",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/containerservicefleet/armcontainerservicefleet"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Chaos",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/chaos/armchaos"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure Developer LoadTesting",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/loadtesting/armloadtesting"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/internal"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager EventGrid",
+    "category": "Integration",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/eventgrid/armeventgrid"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Communication",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/communication/armcommunication"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MySql",
+    "category": "Databases",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mariadb/armmariadb"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager LabServices",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/labservices/armlabservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MongoCluster",
+    "category": "Databases",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mongocluster/armmongocluster"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Relay",
+    "category": "Integration",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/relay/armrelay"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager MobileNetwork",
+    "category": "Networking",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mobilenetwork/armmobilenetwork"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataLakeStore",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/datalake-store/armdatalakestore"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Storage",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/storage/armstorage"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Maps",
+    "category": "IoT",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/maps/armmaps"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager RecoveryServices",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/recoveryservices/armrecoveryservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ContainerRegistry",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/containerregistry/armcontainerregistry"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ManagementGroups",
+    "category": null,
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/managementgroups/armmanagementgroups"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ContainerService",
+    "category": "Compute",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/containerservice/armcontainerservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Cdn",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/cdn/armcdn"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SelfHelp",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/selfhelp/armselfhelp"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager EdgeZones",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/edgezones/armedgezones"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Compute",
+    "category": "Compute",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/compute/armcompute"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager BotService",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/botservice/armbotservice"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Kusto",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/kusto/armkusto"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager RedisEnterprise",
+    "category": "Databases",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/redisenterprise/armredisenterprise"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceBus",
+    "category": "Integration",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/servicebus/armservicebus"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Media",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mediaservices/armmediaservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armfeatures"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armtemplatespecs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PolicyInsights",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armpolicy"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Subscription",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armsubscriptions"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armdeploymentscripts"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Resources",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armresources"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager OperationalInsights",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/operationalinsights/armoperationalinsights"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager EventHub",
+    "category": null,
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/eventhub/armeventhub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ServiceFabric",
+    "category": "Compute",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/servicefabric/armservicefabric"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Analysis",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/analysisservices/armanalysisservices"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Batch",
+    "category": "Compute",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/batch/armbatch"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DnsResolver",
+    "category": "Networking",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/dnsresolver/armdnsresolver"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Search",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/search/armsearch"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager SignalR",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/signalr/armsignalr"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StreamAnalytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/streamanalytics/armstreamanalytics"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Monitor",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/monitor/armmonitor"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PrivateDns",
+    "category": "Networking",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/privatedns/armprivatedns"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DevCenter",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/devcenter/armdevcenter"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager DataFactory",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/datafactory/armdatafactory"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Attestation",
+    "category": "Security",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/attestation/armattestation"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Databricks",
+    "category": null,
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/databricks/armdatabricks"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AppPlatform",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/appplatform/armappplatform"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Logic",
+    "category": "Integration",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/logic/armlogic"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Network",
+    "category": "Networking",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/network/armnetwork"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ApiManagement",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/apimanagement/armapimanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager IotCentral",
+    "category": "IoT",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/iotcentral/armiotcentral"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorageCache",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/storagecache/armstoragecache"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Quota",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/quota/armquota"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ChangeAnalysis",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/changeanalysis/armchangeanalysis"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager StorageMover",
+    "category": "Storage",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/storagemover/armstoragemover"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager IotHub",
+    "category": "IoT",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/iothub/armiothub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager KeyVault",
+    "category": "Security",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/keyvault/armkeyvault"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager PostgreSql",
+    "category": "Databases",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/postgresql/armpostgresql"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Advisor",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/advisor/armadvisor"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager ApiCenter",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/apicenter/armapicenter"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager CosmosforPostgreSql",
+    "category": null,
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/cosmosforpostgresql/armcosmosforpostgresql"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Cosmos",
+    "category": null,
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/cosmos/armcosmos"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Dynatrace",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/dynatrace/armdynatrace"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AlertsManagement",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/alertsmanagement/armalertsmanagement"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager WebPubSub",
+    "category": "Integration",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/webpubsub/armwebpubsub"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager NotificationHubs",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/notificationhubs/armnotificationhubs"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager AppConfiguration",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/appconfiguration/armappconfiguration"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Redis",
+    "category": "Databases",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/redis/armredis"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Azure ResourceManager Dns",
+    "category": "Networking",
+    "file_extensions": [
+      "go"
+    ],
+    "content_patterns": [
+      "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/dns/armdns"
+    ],
+    "properties": {
+      "vendor": "AZURE",
+      "language": "javascript"
+    }
+  }
+]

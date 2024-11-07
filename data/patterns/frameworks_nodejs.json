@@ -1,0 +1,1322 @@
+[
+  {
+    "type": "Framework",
+    "name": "Express.js",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"express\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Koa.js",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"koa\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hapi.js",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"@hapi/hapi\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NestJS",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"@nestjs/core\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sails.js",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"sails\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Fastify",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"fastify\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Meteor",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"meteor\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "AdonisJS",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"@adonisjs/core\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Total.js",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"total.js\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Feathers.js",
+    "category": "Web",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"@feathersjs/feathers\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sequelize",
+    "category": "ORM",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"sequelize\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TypeORM",
+    "category": "ORM",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"typeorm\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mongoose",
+    "category": "ORM",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"mongoose\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Objection.js",
+    "category": "ORM",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"objection\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Prisma",
+    "category": "ORM",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"@prisma/client\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Bookshelf.js",
+    "category": "ORM",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"bookshelf\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Waterline",
+    "category": "ORM",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"waterline\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mocha",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"mocha\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jest",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"jest\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Jasmine",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"jasmine\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Ava",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"ava\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Tape",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"tape\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "QUnit",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"qunit\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Supertest",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"supertest\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Chai",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"chai\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sinon",
+    "category": "Testing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"sinon\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Passport.js",
+    "category": "Security",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"passport\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Helmet",
+    "category": "Security",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"helmet\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Csurf",
+    "category": "Security",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"csurf\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "bcrypt",
+    "category": "Security",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"bcrypt\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jsonwebtoken",
+    "category": "Security",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"jsonwebtoken\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "express-rate-limit",
+    "category": "Security",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"express-rate-limit\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "cors",
+    "category": "Security",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"cors\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Winston",
+    "category": "Logging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"winston\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Bunyan",
+    "category": "Logging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"bunyan\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Morgan",
+    "category": "Logging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"morgan\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Pino",
+    "category": "Logging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"pino\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Log4js",
+    "category": "Logging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"log4js\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Debug",
+    "category": "Logging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"debug\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Google Wire",
+    "category": "Dependency Injection",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"inversify\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Awilix",
+    "category": "Dependency Injection",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"awilix\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "BottleJS",
+    "category": "Dependency Injection",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"bottlejs\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Tsyringe",
+    "category": "Dependency Injection",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"tsyringe\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Bull",
+    "category": "Task Queue",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"bull\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kue",
+    "category": "Task Queue",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"kue\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Bee-Queue",
+    "category": "Task Queue",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"bee-queue\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Agenda",
+    "category": "Task Queue",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"agenda\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SQSConsumer",
+    "category": "Task Queue",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"sqs-consumer\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Socket.io",
+    "category": "Messaging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"socket.io\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "EventEmitter3",
+    "category": "Messaging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"eventemitter3\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "amqplib",
+    "category": "Messaging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"amqplib\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "nats",
+    "category": "Messaging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"nats\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "kafka-node",
+    "category": "Messaging",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"kafka-node\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swagger UI Express",
+    "category": "API",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"swagger-ui-express\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "swagger-jsdoc",
+    "category": "API",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"swagger-jsdoc\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "loopback",
+    "category": "API",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"loopback\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Restify",
+    "category": "API",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"restify\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jsdoc",
+    "category": "Documentation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"jsdoc\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "typedoc",
+    "category": "Documentation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"typedoc\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "docdash",
+    "category": "Documentation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"docdash\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "documentation",
+    "category": "Documentation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"documentation\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Prometheus Client",
+    "category": "Monitoring",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"prom-client\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PM2",
+    "category": "Monitoring",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"pm2\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "New Relic",
+    "category": "Monitoring",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"newrelic\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Datadog",
+    "category": "Monitoring",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"dd-trace\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sentry",
+    "category": "Monitoring",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"@sentry/node\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Moleculer",
+    "category": "Microservices",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"moleculer\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Seneca",
+    "category": "Microservices",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"seneca\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Micro",
+    "category": "Microservices",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"micro\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Electron",
+    "category": "Graphical UI",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"electron\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NW.js",
+    "category": "Graphical UI",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"nw\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Phaser",
+    "category": "Game Development",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"phaser\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Babylon.js",
+    "category": "Game Development",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"babylonjs\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Three.js",
+    "category": "Game Development",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"three\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RxJS",
+    "category": "Reactive",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"rxjs\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Most.js",
+    "category": "Reactive",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"most\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Kefir",
+    "category": "Reactive",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"kefir\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Web3.js",
+    "category": "Blockchain",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"web3\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ethers.js",
+    "category": "Blockchain",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"ethers\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Truffle",
+    "category": "Blockchain",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"truffle\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Ganache",
+    "category": "Blockchain",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"ganache-cli\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "pdfkit",
+    "category": "File Processing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"pdfkit\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "docx",
+    "category": "File Processing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"docx\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jspdf",
+    "category": "File Processing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"jspdf\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "mammoth",
+    "category": "File Processing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"mammoth\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "TensorFlow.js",
+    "category": "Machine Learning",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"@tensorflow/tfjs\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Brain.js",
+    "category": "Machine Learning",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"brain.js\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Synaptic",
+    "category": "Machine Learning",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"synaptic\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ML5.js",
+    "category": "Machine Learning",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"ml5\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Next.js",
+    "category": "Static Site Generation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"next\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gatsby",
+    "category": "Static Site Generation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"gatsby\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Nuxt.js",
+    "category": "Static Site Generation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"nuxt\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hexo",
+    "category": "Static Site Generation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"hexo\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gulp",
+    "category": "Build Automation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"gulp\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Grunt",
+    "category": "Build Automation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"grunt\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Webpack",
+    "category": "Build Automation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"webpack\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Rollup",
+    "category": "Build Automation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"rollup\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Parcel",
+    "category": "Build Automation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"parcel\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "npm scripts",
+    "category": "Build Automation",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"scripts\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Istio JavaScript Integrations",
+    "category": "Service Mesh",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"istio\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Linkerd JavaScript Client",
+    "category": "Service Mesh",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"linkerd\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "i18n",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"i18n\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "react-i18next",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"react-i18next\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "@lingui/core",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"@lingui/core\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "node-polyglot",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"node-polyglot\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "stripe",
+    "category": "Payment Integration",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"stripe\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "paypal-rest-sdk",
+    "category": "Payment Integration",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"paypal-rest-sdk\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "braintree",
+    "category": "Payment Integration",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"braintree\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "pdfkit",
+    "category": "File Processing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"pdfkit\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "docx",
+    "category": "File Processing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"docx\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jspdf",
+    "category": "File Processing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"jspdf\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "mammoth",
+    "category": "File Processing",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"mammoth\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "mongoose",
+    "category": "Database Clients",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"mongoose\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "pg",
+    "category": "Database Clients",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"pg\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "mysql2",
+    "category": "Database Clients",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"mysql2\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "oracledb",
+    "category": "Database Clients",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"oracledb\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "cassandra-driver",
+    "category": "Database Clients",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"cassandra-driver\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "couchbase",
+    "category": "Database Clients",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"couchbase\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ravendb",
+    "category": "Database Clients",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"ravendb\":"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "sqlite3",
+    "category": "Database Clients",
+    "file_names": [
+      "package.json"
+    ],
+    "content_patterns": [
+      "\"sqlite3\":"
+    ]
+  }
+]

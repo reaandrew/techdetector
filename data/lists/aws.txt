@@ -1,0 +1,390 @@
+Amazon Access Analyzer : Security
+Amazon Account : Governance and Compliance
+Amazon ACM PCA : Security
+Amazon Amplify : Developer Tools
+Amazon Amplify Backend : Developer Tools
+Amazon Amplify UI Builder : Developer Tools
+Amazon API Gateway : Integration
+Amazon API Gateway Management API : Integration
+Amazon API Gateway V2 : Integration
+Amazon AppConfig : Monitoring and Management
+Amazon AppConfig Data : Monitoring and Management
+Amazon AppFabric : Integration
+Amazon AppFlow : Integration
+Amazon AppIntegrations Service : Integration
+Amazon Application Auto Scaling : Monitoring and Management
+Amazon Application Cost Profiler : Cost Management
+Amazon Application Discovery Service : Migration and Transfer
+Amazon Application Insights : Monitoring and Management
+Amazon Application Signals : Monitoring and Management
+Amazon AppMesh : Networking
+Amazon AppRegistry : Governance and Compliance
+Amazon AppRunner : Compute
+Amazon AppStream : Media and Content Delivery
+Amazon AppSync : Integration
+Amazon AppTest : Developer Tools
+Amazon ARC Zonal Shift : Hybrid and Edge Computing
+Amazon Artifact : Governance and Compliance
+Amazon Athena : Analytics and Big Data
+Amazon Audit Manager : Security
+Amazon Augmented AI Runtime : Machine Learning and AI
+Amazon Auto Scaling : Monitoring and Management
+Amazon Auto Scaling Plans : Monitoring and Management
+AWS Health : Monitoring and Management
+AWS Marketplace Commerce Analytics : Cloud Marketplace
+AWS Marketplace Metering : Cloud Marketplace
+AWS Support : Governance and Compliance
+Amazon B2bi : Integration
+Amazon Backup : Disaster Recovery and Backup
+Amazon Backup Gateway : Disaster Recovery and Backup
+Amazon Batch : Compute
+Amazon BCM Data Exports : Analytics and Big Data
+Amazon Bedrock : Machine Learning and AI
+Amazon Bedrock Agent : Machine Learning and AI
+Amazon Bedrock Agent Runtime : Machine Learning and AI
+Amazon Bedrock Runtime : Machine Learning and AI
+Amazon Billing Conductor : Cost Management
+Amazon Braket : Quantum Computing
+Amazon Budgets : Cost Management
+Amazon Certificate Manager : Security
+Amazon Chatbot : Collaboration and Communication
+Amazon Chime : Collaboration and Communication
+Amazon Chime SDK Identity : Collaboration and Communication
+Amazon Chime SDK Media Pipelines : Collaboration and Communication
+Amazon Chime SDK Meetings : Collaboration and Communication
+Amazon Chime SDK Messaging : Collaboration and Communication
+Amazon Chime SDK Voice : Collaboration and Communication
+Amazon CleanRooms : Security
+Amazon CleanRooms ML : Machine Learning and AI
+Amazon Cloud9 : Developer Tools
+Amazon CloudControlApi : Governance and Compliance
+Amazon CloudDirectory : Identity and Access Management
+Amazon CloudFormation : Developer Tools
+Amazon CloudFront : Networking
+Amazon CloudFront KeyValue Store : Storage
+Amazon CloudHSM : Security
+Amazon CloudHSM V2 : Security
+Amazon CloudSearch : Search and Indexing
+Amazon CloudSearchDomain : Search and Indexing
+Amazon CloudTrail : Security
+Amazon CloudTrail Data : Security
+Amazon CloudWatch : Monitoring and Management
+Amazon CloudWatch Events : Monitoring and Management
+Amazon CloudWatch Evidently : Monitoring and Management
+Amazon CloudWatch Logs : Monitoring and Management
+Amazon CloudWatch RUM : Monitoring and Management
+Amazon CodeAnalysis : Developer Tools
+Amazon CodeArtifact : Developer Tools
+Amazon CodeBuild : Developer Tools
+Amazon CodeCatalyst : Developer Tools
+Amazon CodeCommit : Developer Tools
+Amazon CodeConnections : Developer Tools
+Amazon CodeDeploy : Developer Tools
+Amazon CodeGuru Profiler : Developer Tools
+Amazon CodeGuru Reviewer : Developer Tools
+Amazon CodeGuru Security : Security
+Amazon CodePipeline : Developer Tools
+Amazon CodeStarconnections : Developer Tools
+Amazon CodeStarNotifications : Developer Tools
+Amazon CognitoIdentity : Identity and Access Management
+Amazon CognitoIdentityProvider : Identity and Access Management
+Amazon CognitoSync : Identity and Access Management
+Amazon Comprehend : Machine Learning and AI
+Amazon Comprehend Medical : Healthcare and Life Sciences
+Amazon Compute Optimizer : Monitoring and Management
+Amazon ConfigService : Governance and Compliance
+Amazon Connect : Enterprise Applications
+Amazon Connect Campaign Service : Enterprise Applications
+Amazon Connect Cases : Enterprise Applications
+Amazon Connect Contact Lens : Enterprise Applications
+Amazon Connect Participant : Enterprise Applications
+Amazon Connect Wisdom Service : Enterprise Applications
+Amazon Control Catalog : Governance and Compliance
+Amazon Control Tower : Governance and Compliance
+Amazon Cost and Usage Report : Cost Management
+Amazon CostExplorer : Cost Management
+Amazon Cost Optimization Hub : Cost Management
+Amazon Customer Profiles : Analytics and Big Data
+Amazon Database Migration Service : Migration and Transfer
+Amazon DataExchange : Integration
+Amazon DataPipeline : Analytics and Big Data
+Amazon DataSync : Migration and Transfer
+Amazon DataZone : Analytics and Big Data
+Amazon DAX : Databases
+Amazon Deadline : Media and Content Delivery
+Amazon Detective : Security
+Amazon DeviceFarm : Developer Tools
+Amazon DevOps Guru : Monitoring and Management
+Amazon DirectConnect : Networking
+Amazon DirectoryService : Identity and Access Management
+Amazon DirectoryServiceData : Identity and Access Management
+Amazon DLM : Storage
+Amazon DocDB : Databases
+Amazon DocDB Elastic : Databases
+Amazon DRS : Disaster Recovery and Backup
+Amazon DynamoDBv2 : Databases
+Amazon EBS : Storage
+Amazon EC2 : Compute
+Amazon EC2 Instance Connect : Identity and Access Management
+Amazon ECR : Developer Tools
+Amazon ECR Public : Developer Tools
+Amazon ECS : Compute
+Amazon EKS : Compute
+Amazon EKS Auth : Identity and Access Management
+Amazon ElastiCache : Databases
+Amazon ElasticBeanstalk : Developer Tools
+Amazon ElasticFileSystem : Storage
+Amazon ElasticInference : Compute
+Amazon ElasticLoadBalancing : Networking
+Amazon ElasticLoadBalancingV2 : Networking
+Amazon ElasticMapReduce : Analytics and Big Data
+Amazon Elasticsearch : Search and Indexing
+Amazon ElasticTranscoder : Media and Content Delivery
+Amazon EMRContainers : Analytics and Big Data
+Amazon EMRServerless : Analytics and Big Data
+Amazon Entity Resolution : Analytics and Big Data
+Amazon EventBridge : Integration
+Amazon Finspace : Analytics and Big Data
+Amazon FinSpace Data : Analytics and Big Data
+Amazon FIS : Security
+Amazon FMS : Security
+Amazon ForecastQueryService : Machine Learning and AI
+Amazon ForecastService : Machine Learning and AI
+Amazon Fraud Detector : Machine Learning and AI
+Amazon FreeTier : Cost Management
+Amazon FSx : Storage
+Amazon GameLift : Game Development
+Amazon Glacier : Storage
+Amazon GlobalAccelerator : Networking
+Amazon Glue : Analytics and Big Data
+Amazon Glue DataBrew : Analytics and Big Data
+Amazon Greengrass : IoT
+Amazon Greengrass V2 : IoT
+Amazon GroundStation : Hybrid and Edge Computing
+Amazon GuardDuty : Security
+Amazon HealthLake : Healthcare and Life Sciences
+Amazon IAMRolesAnywhere : Identity and Access Management
+Amazon Identity Management : Identity and Access Management
+Amazon IdentityStore : Identity and Access Management
+Amazon Imagebuilder : Developer Tools
+Amazon ImportExport : Migration and Transfer
+Amazon Inspector : Security
+Amazon Inspector2 : Security
+Amazon InspectorScan : Security
+Amazon InternetMonitor : Monitoring and Management
+Amazon IoT : IoT
+Amazon IoT1ClickDevicesService : IoT
+Amazon IoT1ClickProjects : IoT
+Amazon IoTAnalytics : IoT
+Amazon IotData : IoT
+Amazon IoTDeviceAdvisor : IoT
+Amazon IoTEvents : IoT
+Amazon IoTEventsData : IoT
+Amazon IoTFleetHub : IoT
+Amazon IoTFleetWise : IoT
+Amazon IoTJobsDataPlane : IoT
+Amazon IoTSecureTunneling : IoT
+Amazon IoTSiteWise : IoT
+Amazon IoTThingsGraph : IoT
+Amazon IoTTwinMaker : IoT
+Amazon IoTWireless : IoT
+Amazon IVS : Media and Content Delivery
+Amazon Ivschat : Media and Content Delivery
+Amazon IVSRealTime : Media and Content Delivery
+Amazon Kafka : Integration
+Amazon KafkaConnect : Integration
+Amazon Kendra : Search and Indexing
+Amazon KendraRanking : Search and Indexing
+Amazon KeyManagementService : Security
+Amazon Keyspaces : Databases
+Amazon Kinesis : Analytics and Big Data
+Amazon KinesisAnalytics : Analytics and Big Data
+Amazon KinesisAnalyticsV2 : Analytics and Big Data
+Amazon KinesisFirehose : Analytics and Big Data
+Amazon KinesisVideo : Media and Content Delivery
+Amazon KinesisVideoArchivedMedia : Media and Content Delivery
+Amazon KinesisVideoMedia : Media and Content Delivery
+Amazon KinesisVideoSignalingChannels : Media and Content Delivery
+Amazon KinesisVideoWebRTCStorage : Media and Content Delivery
+Amazon LakeFormation : Databases
+Amazon Lambda : Compute
+Amazon LaunchWizard : Developer Tools
+Amazon Lex : Machine Learning and AI
+Amazon Lex ModelBuildingService : Machine Learning and AI
+Amazon LexModelsV2 : Machine Learning and AI
+Amazon LexRuntimeV2 : Machine Learning and AI
+Amazon LicenseManager : Governance and Compliance
+Amazon LicenseManagerLinuxSubscriptions : Governance and Compliance
+Amazon LicenseManagerUserSubscriptions : Governance and Compliance
+Amazon Lightsail : Compute
+Amazon LocationService : IoT
+Amazon LookoutEquipment : Machine Learning and AI
+Amazon LookoutforVision : Machine Learning and AI
+Amazon LookoutMetrics : Machine Learning and AI
+Amazon MachineLearning : Machine Learning and AI
+Amazon Macie2 : Security
+Amazon MailManager : Collaboration and Communication
+Amazon MainframeModernization : Migration and Transfer
+Amazon ManagedBlockchain : Blockchain
+Amazon ManagedBlockchainQuery : Blockchain
+Amazon ManagedGrafana : Monitoring and Management
+Amazon MarketplaceAgreement : Cloud Marketplace
+Amazon MarketplaceCatalog : Cloud Marketplace
+Amazon MarketplaceDeployment : Cloud Marketplace
+Amazon MarketplaceEntitlementService : Cloud Marketplace
+Amazon MarketplaceReporting : Cloud Marketplace
+Amazon MediaConnect : Media and Content Delivery
+Amazon MediaConvert : Media and Content Delivery
+Amazon MediaLive : Media and Content Delivery
+Amazon MediaPackage : Media and Content Delivery
+Amazon MediaPackageV2 : Media and Content Delivery
+Amazon MediaPackageVod : Media and Content Delivery
+Amazon MediaStore : Media and Content Delivery
+Amazon MediaStoreData : Media and Content Delivery
+Amazon MediaTailor : Media and Content Delivery
+Amazon MedicalImaging : Healthcare and Life Sciences
+Amazon MemoryDB : Databases
+
+
+Amazon Mgn : Migration and Transfer
+Amazon MigrationHub : Migration and Transfer
+Amazon MigrationHubConfig : Migration and Transfer
+Amazon MigrationHubOrchestrator : Migration and Transfer
+Amazon MigrationHubRefactorSpaces : Migration and Transfer
+Amazon MigrationHubStrategyRecommendations : Migration and Transfer
+Amazon MobileAnalytics : Analytics and Big Data
+Amazon MQ : Integration
+Amazon MTurk : Collaboration and Communication
+Amazon MWAA : Developer Tools
+Amazon Neptune : Databases
+Amazon Neptunedata : Databases
+Amazon NeptuneGraph : Databases
+Amazon NetworkFirewall : Security
+Amazon NetworkManager : Networking
+Amazon NetworkMonitor : Monitoring and Management
+Amazon OAM : Monitoring and Management
+Amazon Omics : Healthcare and Life Sciences
+Amazon OpenSearchServerless : Search and Indexing
+Amazon OpenSearchService : Search and Indexing
+Amazon OpsWorks : Developer Tools
+Amazon OpsWorksCM : Developer Tools
+Amazon Organizations : Governance and Compliance
+Amazon OSIS : Governance and Compliance
+Amazon Outposts : Hybrid and Edge Computing
+Amazon Panorama : IoT
+Amazon PaymentCryptography : Security
+Amazon PaymentCryptographyData : Security
+Amazon PcaConnectorAd : Security
+Amazon PcaConnectorScep : Security
+Amazon PCS : Integration
+Amazon Personalize : Machine Learning and AI
+Amazon PersonalizeEvents : Machine Learning and AI
+Amazon PersonalizeRuntime : Machine Learning and AI
+Amazon PI : Monitoring and Management
+Amazon Pinpoint : Collaboration and Communication
+Amazon PinpointEmail : Collaboration and Communication
+Amazon PinpointSMSVoice : Collaboration and Communication
+Amazon PinpointSMSVoiceV2 : Collaboration and Communication
+Amazon Pipes : Integration
+Amazon Polly : Machine Learning and AI
+Amazon Pricing : Cost Management
+Amazon Private5G : Networking
+Amazon PrometheusService : Monitoring and Management
+Amazon Proton : Developer Tools
+Amazon QApps : Collaboration and Communication
+Amazon QBusiness : Collaboration and Communication
+Amazon QConnect : Collaboration and Communication
+Amazon QLDB : Blockchain
+Amazon QLDBSession : Blockchain
+Amazon QuickSight : Analytics and Big Data
+Amazon RAM : Governance and Compliance
+Amazon RDS : Databases
+Amazon RDSDataService : Databases
+Amazon RecycleBin : Governance and Compliance
+Amazon Redshift : Analytics and Big Data
+Amazon RedshiftDataAPIService : Analytics and Big Data
+Amazon RedshiftServerless : Analytics and Big Data
+Amazon Rekognition : Machine Learning and AI
+Amazon Repostspace : Collaboration and Communication
+Amazon ResilienceHub : Disaster Recovery and Backup
+Amazon ResourceExplorer2 : Governance and Compliance
+Amazon ResourceGroups : Governance and Compliance
+Amazon ResourceGroupsTaggingAPI : Governance and Compliance
+Amazon RoboMaker : IoT
+Amazon Route53 : Networking
+Amazon Route53Domains : Networking
+Amazon Route53Profiles : Networking
+Amazon Route53RecoveryCluster : Disaster Recovery and Backup
+Amazon Route53RecoveryControlConfig : Disaster Recovery and Backup
+Amazon Route53RecoveryReadiness : Disaster Recovery and Backup
+Amazon Route53Resolver : Networking
+Amazon S3 : Storage
+Amazon S3Control : Storage
+Amazon S3Outposts : Storage
+Amazon SageMaker : Machine Learning and AI
+Amazon SagemakerEdgeManager : Machine Learning and AI
+Amazon SageMakerFeatureStoreRuntime : Machine Learning and AI
+Amazon SageMakerGeospatial : Machine Learning and AI
+Amazon SageMakerMetrics : Machine Learning and AI
+Amazon SageMakerRuntime : Machine Learning and AI
+Amazon SavingsPlans : Cost Management
+Amazon Scheduler : Monitoring and Management
+Amazon Schemas : Integration
+Amazon SecretsManager : Security
+Amazon SecurityHub : Security
+Amazon SecurityLake : Security
+Amazon SecurityToken : Security
+Amazon ServerlessApplicationRepository : Developer Tools
+Amazon ServerMigrationService : Migration and Transfer
+Amazon ServiceCatalog : Governance and Compliance
+Amazon ServiceDiscovery : Integration
+Amazon ServiceQuotas : Governance and Compliance
+Amazon Shield : Security
+Amazon Signer : Security
+Amazon SimpleDB : Databases
+Amazon SimpleEmail : Collaboration and Communication
+Amazon SimpleEmailV2 : Collaboration and Communication
+Amazon SimpleNotificationService : Integration
+Amazon SimpleSystemsManagement : Monitoring and Management
+Amazon SimpleWorkflow : Integration
+Amazon SimSpaceWeaver : Digital Twins and Simulations
+Amazon Snowball : Migration and Transfer
+Amazon SnowDeviceManagement : Migration and Transfer
+Amazon SocialMessaging : Collaboration and Communication
+Amazon SQS : Integration
+Amazon SSMContacts : Governance and Compliance
+Amazon SSMIncidents : Governance and Compliance
+Amazon SSMQuickSetup : Governance and Compliance
+Amazon SsmSap : Governance and Compliance
+Amazon SSO : Identity and Access Management
+Amazon SSOAdmin : Identity and Access Management
+Amazon SSOOIDC : Identity and Access Management
+Amazon StepFunctions : Integration
+Amazon StorageGateway : Storage
+Amazon SupplyChain : Governance and Compliance
+Amazon SupportApp : Governance and Compliance
+Amazon Synthetics : Monitoring and Management
+Amazon TaxSettings : Governance and Compliance
+Amazon Textract : Machine Learning and AI
+Amazon TimestreamInfluxDB : Databases
+Amazon TimestreamQuery : Databases
+Amazon TimestreamWrite : Databases
+Amazon Tnb : Integration
+Amazon TranscribeService : Machine Learning and AI
+Amazon Transfer : Storage
+Amazon Translate : Machine Learning and AI
+Amazon TrustedAdvisor : Governance and Compliance
+Amazon VerifiedPermissions : Security
+Amazon VoiceID : Machine Learning and AI
+Amazon VPCLattice : Networking
+Amazon WAF : Security
+Amazon WAFRegional : Security
+Amazon WAFV2 : Security
+Amazon WellArchitected : Governance and Compliance
+Amazon WorkDocs : Collaboration and Communication
+Amazon WorkMail : Collaboration and Communication
+Amazon WorkMailMessageFlow : Collaboration and Communication
+Amazon WorkSpaces : Enterprise Applications
+Amazon WorkSpacesThinClient : Enterprise Applications
+Amazon WorkSpacesWeb : Enterprise Applications
+Amazon XRay : Monitoring and Management

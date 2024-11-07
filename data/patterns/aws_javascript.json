@@ -1,0 +1,5867 @@
+[
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Access Analyzer",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-accessanalyzer"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Account",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-account"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Certificate Manager",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-acm"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ACM PCA",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-acm-pca"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Managed Service for Prometheus",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-amp"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Amplify",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-amplify"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Amplify Backend",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-amplifybackend"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Amplify UI Builder",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-amplifyuibuilder"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon API Gateway",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-api-gateway"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon API Gateway Management API",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-apigatewaymanagementapi"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon API Gateway V2",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-apigatewayv2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppConfig",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-appconfig"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppConfig Data",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-appconfigdata"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppFabric",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-appfabric"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppFlow",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-appflow"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppIntegrations Service",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-appintegrations"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Application Auto Scaling",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-application-auto-scaling"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Application Cost Profiler",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-applicationcostprofiler"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Application Discovery Service",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-application-discovery-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Application Insights",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-application-insights"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Application Signals",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-application-signals"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppMesh",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-app-mesh"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppRegistry",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-appregistry"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppRunner",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-apprunner"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppStream",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-appstream"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppSync",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-appsync"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon AppTest",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-apptest"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ARC Zonal Shift",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-arc-zonal-shift"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Artifact",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-artifact"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Athena",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-athena"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Audit Manager",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-auditmanager"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Auto Scaling",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-auto-scaling"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Auto Scaling Plans",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-auto-scaling-plans"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon B2bi",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-b2bi"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Backup",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-backup"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Backup Gateway",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-backup-gateway"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Batch",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-batch"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon BCM Data Exports",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-bcm-data-exports"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Bedrock",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-bedrock"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Bedrock Agent",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-bedrock-agent"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Bedrock Agent Runtime",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-bedrock-agent-runtime"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Bedrock Runtime",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-bedrock-runtime"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Billing Conductor",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-billingconductor"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Braket",
+    "category": "Quantum Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-braket"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Budgets",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-budgets"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Chatbot",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-chatbot"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Chime",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-chime"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Chime SDK Identity",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-chime-sdk-identity"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Chime SDK Media Pipelines",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-chime-sdk-media-pipelines"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Chime SDK Meetings",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-chime-sdk-meetings"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Chime SDK Messaging",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-chime-sdk-messaging"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Chime SDK Voice",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-chime-sdk-voice"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CleanRooms",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cleanrooms"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CleanRooms ML",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cleanroomsml"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Cloud9",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloud9"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudControlApi",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudcontrol"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudDirectory",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-clouddirectory"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudFormation",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudformation"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudFront",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudfront"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudFront KeyValue Store",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudfront-keyvaluestore"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudHSM",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudhsm"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudHSM V2",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudhsm-v2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudSearch",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudsearch"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudSearchDomain",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudsearch-domain"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudTrail",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudtrail"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudTrail Data",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudtrail-data"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudWatch",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudwatch"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudWatch Events",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudwatch-events"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudWatch Logs",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cloudwatch-logs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeArtifact",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codeartifact"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeBuild",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codebuild"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeCatalyst",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codecatalyst"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeCommit",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codecommit"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeConnections",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codeconnections"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeDeploy",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codedeploy"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeGuru Profiler",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codeguruprofiler"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeGuru Reviewer",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codeguru-reviewer"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeGuru Security",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codeguru-security"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodePipeline",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codepipeline"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeStarConnections",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codestar-connections"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CodeStarNotifications",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-codestar-notifications"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CognitoIdentity",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cognito-identity"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CognitoIdentityProvider",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cognito-identity-provider"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CognitoSync",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cognito-sync"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Comprehend",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-comprehend"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Comprehend Medical",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-comprehendmedical"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Compute Optimizer",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-compute-optimizer"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ConfigService",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-config-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Connect",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-connect"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Connect Campaign Service",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-connectcampaigns"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Connect Cases",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-connectcases"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Connect Contact Lens",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-connect-contact-lens"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Connect Participant",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-connectparticipant"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Control Catalog",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-controlcatalog"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Control Tower",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-controltower"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Cost and Usage Report",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cost-and-usage-report-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CostExplorer",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cost-explorer"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Cost Optimization Hub",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-cost-optimization-hub"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Customer Profiles",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-customer-profiles"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Database Migration Service",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-database-migration-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Glue DataBrew",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-databrew"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DataExchange",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-dataexchange"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DataPipeline",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-data-pipeline"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DataSync",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-datasync"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DataZone",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-datazone"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DAX",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-dax"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Deadline",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-deadline"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Detective",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-detective"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DeviceFarm",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-device-farm"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DevOps Guru",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-devops-guru"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DirectConnect",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-direct-connect"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DirectoryService",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-directory-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DirectoryServiceData",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-directory-service-data"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DLM",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-dlm"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DocDB",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-docdb"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DocDB Elastic",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-docdb-elastic"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DRS",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-drs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DynamoDBv2",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-dynamodb"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon DynamoDB Streams",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-dynamodb-streams"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon EBS",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ebs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon EC2",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ec2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon EC2 Instance Connect",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ec2-instance-connect"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ECR",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ecr"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ECR Public",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ecr-public"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ECS",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ecs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ElasticFileSystem",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-efs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon EKS",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-eks"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon EKS Auth",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-eks-auth"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ElastiCache",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-elasticache"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ElasticBeanstalk",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-elastic-beanstalk"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ElasticInference",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-elastic-inference"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ElasticLoadBalancing",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-elastic-load-balancing"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ElasticLoadBalancingV2",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-elastic-load-balancing-v2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Elasticsearch",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-elasticsearch-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ElasticTranscoder",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-elastic-transcoder"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ElasticMapReduce",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-emr"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon EMRContainers",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-emr-containers"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon EMRServerless",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-emr-serverless"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Entity Resolution",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-entityresolution"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon EventBridge",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-eventbridge"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudWatch Evidently",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-evidently"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Finspace",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-finspace"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon FinSpace Data",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-finspace-data"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KinesisFirehose",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-firehose"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon FIS",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-fis"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon FMS",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-fms"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ForecastService",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-forecast"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ForecastQueryService",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-forecastquery"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Fraud Detector",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-frauddetector"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon FreeTier",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-freetier"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon FSx",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-fsx"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon GameLift",
+    "category": "Game Development",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-gamelift"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LocationService",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-geo-maps"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LocationService",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-geo-places"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LocationService",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-geo-routes"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Glacier",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-glacier"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon GlobalAccelerator",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-global-accelerator"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Glue",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-glue"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ManagedGrafana",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-grafana"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Greengrass",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-greengrass"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Greengrass V2",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-greengrassv2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon GroundStation",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-groundstation"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon GuardDuty",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-guardduty"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "AWS Health",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-health"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon HealthLake",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-healthlake"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Identity Management",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iam"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IdentityStore",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-identitystore"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Imagebuilder",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-imagebuilder"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Inspector",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-inspector"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Inspector2",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-inspector2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon InspectorScan",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-inspector-scan"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon InternetMonitor",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-internetmonitor"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoT",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iot"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoT1ClickDevicesService",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iot-1click-devices-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoT1ClickProjects",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iot-1click-projects"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTAnalytics",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iotanalytics"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IotData",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iot-data-plane"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTDeviceAdvisor",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iotdeviceadvisor"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTEvents",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iot-events"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTEventsData",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iot-events-data"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTFleetHub",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iotfleethub"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTFleetWise",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iotfleetwise"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTJobsDataPlane",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iot-jobs-data-plane"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTSecureTunneling",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iotsecuretunneling"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTSiteWise",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iotsitewise"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTThingsGraph",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iotthingsgraph"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTTwinMaker",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iottwinmaker"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IoTWireless",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-iot-wireless"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IVS",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ivs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Ivschat",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ivschat"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon IVSRealTime",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ivs-realtime"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Kafka",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kafka"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KafkaConnect",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kafkaconnect"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Kendra",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kendra"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KendraRanking",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kendra-ranking"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KeyManagementService",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kms"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Keyspaces",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-keyspaces"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Kinesis",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kinesis"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KinesisAnalytics",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kinesis-analytics"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KinesisAnalyticsV2",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kinesis-analytics-v2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KinesisVideo",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kinesis-video"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KinesisVideoArchivedMedia",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kinesis-video-archived-media"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KinesisVideoMedia",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kinesis-video-media"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KinesisVideoSignalingChannels",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kinesis-video-signaling"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon KinesisVideoWebRTCStorage",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-kinesis-video-webrtc-storage"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LakeFormation",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lakeformation"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Lambda",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lambda"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LaunchWizard",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-launch-wizard"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Lex ModelBuildingService",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lex-model-building-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LexModelsV2",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lex-models-v2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LexRuntimeV2",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lex-runtime-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LexRuntimeV2",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lex-runtime-v2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LicenseManager",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-license-manager"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LicenseManagerLinuxSubscriptions",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-license-manager-linux-subscriptions"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LicenseManagerUserSubscriptions",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-license-manager-user-subscriptions"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Lightsail",
+    "category": "Compute",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lightsail"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LocationService",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-location"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LookoutEquipment",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lookoutequipment"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LookoutMetrics",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lookoutmetrics"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon LookoutforVision",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-lookoutvision"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon M2",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-m2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MachineLearning",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-machine-learning"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Macie2",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-macie2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MailManager",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mailmanager"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ManagedBlockchain",
+    "category": "Blockchain",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-managedblockchain"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ManagedBlockchainQuery",
+    "category": "Blockchain",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-managedblockchain-query"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MarketplaceAgreement",
+    "category": "Cloud Marketplace",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-marketplace-agreement"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MarketplaceCatalog",
+    "category": "Cloud Marketplace",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-marketplace-catalog"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MarketplaceCommerceAnalytics",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-marketplace-commerce-analytics"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MarketplaceDeployment",
+    "category": "Cloud Marketplace",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-marketplace-deployment"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MarketplaceEntitlementService",
+    "category": "Cloud Marketplace",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-marketplace-entitlement-service"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MarketplaceMetering",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-marketplace-metering"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MarketplaceReporting",
+    "category": "Cloud Marketplace",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-marketplace-reporting"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaConnect",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mediaconnect"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaConvert",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mediaconvert"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaLive",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-medialive"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaPackage",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mediapackage"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaPackageV2",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mediapackagev2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaPackageVod",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mediapackage-vod"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaStore",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mediastore"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaStoreData",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mediastore-data"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MediaTailor",
+    "category": "Media and Content Delivery",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mediatailor"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MedicalImaging",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-medical-imaging"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MemoryDB",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-memorydb"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Mgn",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mgn"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MigrationHub",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-migration-hub"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MigrationHubConfig",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-migrationhub-config"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MigrationHubOrchestrator",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-migrationhuborchestrator"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MigrationHubRefactorSpaces",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-migration-hub-refactor-spaces"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MigrationHubStrategyRecommendations",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-migrationhubstrategy"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MQ",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mq"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MTurk",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mturk"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon MWAA",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-mwaa"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Neptune",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-neptune"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Neptunedata",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-neptunedata"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon NeptuneGraph",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-neptune-graph"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon NetworkFirewall",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-network-firewall"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon NetworkManager",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-networkmanager"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon NetworkMonitor",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-networkmonitor"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon OAM",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-oam"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Omics",
+    "category": "Healthcare and Life Sciences",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-omics"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon OpenSearchService",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-opensearch"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon OpenSearchServerless",
+    "category": "Search and Indexing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-opensearchserverless"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon OpsWorks",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-opsworks"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon OpsWorksCM",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-opsworkscm"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Organizations",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-organizations"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon OSIS",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-osis"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Outposts",
+    "category": "Hybrid and Edge Computing",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-outposts"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Panorama",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-panorama"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PaymentCryptography",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-payment-cryptography"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PaymentCryptographyData",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-payment-cryptography-data"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PcaConnectorAd",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pca-connector-ad"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PcaConnectorScep",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pca-connector-scep"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PCS",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pcs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Personalize",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-personalize"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PersonalizeEvents",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-personalize-events"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PersonalizeRuntime",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-personalize-runtime"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PI",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pi"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Pinpoint",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pinpoint"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PinpointEmail",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pinpoint-email"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PinpointSMSVoice",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pinpoint-sms-voice"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon PinpointSMSVoiceV2",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pinpoint-sms-voice-v2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Pipes",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pipes"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Polly",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-polly"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Pricing",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-pricing"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Private5G",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-privatenetworks"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Proton",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-proton"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon QApps",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-qapps"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon QBusiness",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-qbusiness"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon QConnect",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-qconnect"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon QLDB",
+    "category": "Blockchain",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-qldb"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon QLDBSession",
+    "category": "Blockchain",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-qldb-session"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon QuickSight",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-quicksight"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon RAM",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ram"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon RecycleBin",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-rbin"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon RDS",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-rds"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon RDSDataService",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-rds-data"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Redshift",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-redshift"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon RedshiftDataAPIService",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-redshift-data"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon RedshiftServerless",
+    "category": "Analytics and Big Data",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-redshift-serverless"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Rekognition",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-rekognition"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Rekognitionstreaming",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-rekognitionstreaming"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Repostspace",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-repostspace"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ResilienceHub",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-resiliencehub"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ResourceExplorer2",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-resource-explorer-2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ResourceGroups",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-resource-groups"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ResourceGroupsTaggingAPI",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-resource-groups-tagging-api"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon RoboMaker",
+    "category": "IoT",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-robomaker"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon RolesAnywhere",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-rolesanywhere"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Route53",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-route-53"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Route53Domains",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-route-53-domains"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Route53Profiles",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-route53profiles"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Route53RecoveryCluster",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-route53-recovery-cluster"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Route53RecoveryControlConfig",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-route53-recovery-control-config"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Route53RecoveryReadiness",
+    "category": "Disaster Recovery and Backup",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-route53-recovery-readiness"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Route53Resolver",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-route53resolver"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon CloudWatch RUM",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-rum"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon S3",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-s3"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon S3Control",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-s3-control"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon S3Outposts",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-s3outposts"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SageMaker",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sagemaker"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SageMakerA2IRuntime",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sagemaker-a2i-runtime"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SageMakerEdgeManager",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sagemaker-edge"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SageMakerFeatureStoreRuntime",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sagemaker-featurestore-runtime"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SageMakerGeospatial",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sagemaker-geospatial"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SageMakerMetrics",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sagemaker-metrics"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SageMakerRuntime",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sagemaker-runtime"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SavingsPlans",
+    "category": "Cost Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-savingsplans"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Scheduler",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-scheduler"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Schemas",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-schemas"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SecretsManager",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-secrets-manager"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SecurityHub",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-securityhub"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SecurityLake",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-securitylake"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ServerlessApplicationRepository",
+    "category": "Developer Tools",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-serverlessapplicationrepository"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ServiceCatalog",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-service-catalog"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ServiceCatalog AppRegistry",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-service-catalog-appregistry"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ServiceDiscovery",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-servicediscovery"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon ServiceQuotas",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-service-quotas"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SimpleEmail",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ses"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SimpleEmailV2",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sesv2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon StepFunctions",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sfn"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Shield",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-shield"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Signer",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-signer"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SimSpaceWeaver",
+    "category": "Digital Twins and Simulations",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-simspaceweaver"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SMS",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sms"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Snowball",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-snowball"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SnowDeviceManagement",
+    "category": "Migration and Transfer",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-snow-device-management"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SimpleNotificationService",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sns"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SocialMessaging",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-socialmessaging"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SQS",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sqs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SimpleSystemsManagement",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ssm"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SSMContacts",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ssm-contacts"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SSMIncidents",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ssm-incidents"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SSMQuickSetup",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ssm-quicksetup"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SsmSap",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-ssm-sap"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SSO",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sso"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SSOAdmin",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sso-admin"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SSOOIDC",
+    "category": "Identity and Access Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sso-oidc"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon StorageGateway",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-storage-gateway"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SecurityToken",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-sts"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SupplyChain",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-supplychain"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Support",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-support"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SupportApp",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-support-app"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon SimpleWorkflow",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-swf"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Synthetics",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-synthetics"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon TaxSettings",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-taxsettings"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Textract",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-textract"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon TimestreamInfluxDB",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-timestream-influxdb"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon TimestreamQuery",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-timestream-query"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon TimestreamWrite",
+    "category": "Databases",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-timestream-write"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Tnb",
+    "category": "Integration",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-tnb"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon TranscribeService",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-transcribe"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon TranscribeStreaming",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-transcribe-streaming"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Transfer",
+    "category": "Storage",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-transfer"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Translate",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-translate"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon TrustedAdvisor",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-trustedadvisor"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon VerifiedPermissions",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-verifiedpermissions"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon VoiceID",
+    "category": "Machine Learning and AI",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-voice-id"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon VPCLattice",
+    "category": "Networking",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-vpc-lattice"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WAF",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-waf"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WAFRegional",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-waf-regional"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WAFV2",
+    "category": "Security",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-wafv2"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WellArchitected",
+    "category": "Governance and Compliance",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-wellarchitected"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon Wisdom",
+    "category": null,
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-wisdom"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WorkDocs",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-workdocs"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WorkMail",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-workmail"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WorkMailMessageFlow",
+    "category": "Collaboration and Communication",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-workmailmessageflow"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WorkSpaces",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-workspaces"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WorkSpacesThinClient",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-workspaces-thin-client"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon WorkSpacesWeb",
+    "category": "Enterprise Applications",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-workspaces-web"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  },
+  {
+    "type": "Cloud Service",
+    "name": "Amazon XRay",
+    "category": "Monitoring and Management",
+    "file_extensions": [
+      "js"
+    ],
+    "content_patterns": [
+      "@aws-sdk/client-xray"
+    ],
+    "properties": {
+      "vendor": "AWS",
+      "language": "javascript"
+    }
+  }
+]

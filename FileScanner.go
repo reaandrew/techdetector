@@ -13,8 +13,8 @@ type FileScanner struct {
 	processors []Processor
 }
 
-func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]Finding, error) {
-	var findings []Finding
+func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]Match, error) {
+	var Matches []Match
 
 	info, err := os.Stat(targetDir)
 	if os.IsNotExist(err) {
@@ -25,7 +25,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 	}
 
 	files := make(chan string, 100)
-	fileFindings := make(chan Finding, 100)
+	fileMatches := make(chan Match, 100)
 
 	var wg sync.WaitGroup
 
@@ -60,8 +60,8 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 				for _, processor := range fileScanner.processors {
 					if processor.Supports(path) {
 						results, _ := processor.Process(path, repoName, text)
-						for _, finding := range results {
-							fileFindings <- finding
+						for _, Match := range results {
+							fileMatches <- Match
 						}
 					}
 				}
@@ -90,15 +90,15 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 		close(files)
 	}()
 
-	// Collect findings in a separate goroutine
+	// Collect Matches in a separate goroutine
 	go func() {
 		wg.Wait()
-		close(fileFindings)
+		close(fileMatches)
 	}()
 
-	for finding := range fileFindings {
-		findings = append(findings, finding)
+	for Match := range fileMatches {
+		Matches = append(Matches, Match)
 	}
 
-	return findings, nil
+	return Matches, nil
 }

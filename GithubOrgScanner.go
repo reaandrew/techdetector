@@ -16,7 +16,7 @@ type RepoJob struct {
 }
 
 type RepoResult struct {
-	Findings []Finding
+	Matches  []Match
 	Error    error
 	RepoName string
 }
@@ -69,19 +69,19 @@ func (githubOrgScanner GithubOrgScanner) scan(orgName string, reportFormat strin
 	wg.Wait()
 	close(results)
 
-	var allFindings []Finding
+	var allMatches []Match
 	for res := range results {
 		if res.Error != nil {
 			log.Printf("Error processing repository '%s': %v", res.RepoName, res.Error)
 			continue
 		}
-		allFindings = append(allFindings, res.Findings...)
+		allMatches = append(allMatches, res.Matches...)
 	}
 
-	fmt.Printf("Total findings: %d\n", len(allFindings)) // Debug statement
+	fmt.Printf("Total Matches: %d\n", len(allMatches)) // Debug statement
 
 	// Generate report
-	err = githubOrgScanner.reporter.GenerateReport(allFindings, reportFormat)
+	err = githubOrgScanner.reporter.GenerateReport(allMatches, reportFormat)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}
@@ -99,17 +99,17 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 		err := CloneRepository(repo.GetCloneURL(), repoPath)
 		if err != nil {
 			results <- RepoResult{
-				Findings: nil,
+				Matches:  nil,
 				Error:    fmt.Errorf("failed to clone repository '%s': %w", repoName, err),
 				RepoName: repoName,
 			}
 			continue
 		}
 
-		findings, err := githubOrgScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
+		Matches, err := githubOrgScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
 		if err != nil {
 			results <- RepoResult{
-				Findings: nil,
+				Matches:  nil,
 				Error:    fmt.Errorf("error searching repository '%s': %w", repoName, err),
 				RepoName: repoName,
 			}
@@ -117,7 +117,7 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 		}
 
 		results <- RepoResult{
-			Findings: findings,
+			Matches:  Matches,
 			Error:    nil,
 			RepoName: repoName,
 		}

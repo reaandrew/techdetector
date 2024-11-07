@@ -4,195 +4,136 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/xuri/excelize/v2"
+	"sort"
+	"strings"
 )
 
 const (
-	DefaultReport   = "cloud_services_report.xlsx"
-	ServicesSheet   = "Services"
-	FrameworksSheet = "Frameworks"
-	LibrariesSheet  = "Libraries"
+	DefaultReport = "cloud_services_report.xlsx"
 )
 
 type XlsxReporter struct {
 }
 
-// Report generates an XLSX report from the findings.
-// It creates two worksheets: "Services" and "Frameworks".
-func (xlsxReporter XlsxReporter) Report(findings []Finding) error {
+func (xlsxReporter XlsxReporter) Report(matches []Match) error {
 	fmt.Println("Generating XLSX file")
 
 	// Create a new Excel file
 	f := excelize.NewFile()
 
-	// Rename the default sheet to "Services"
-	defaultSheet := f.GetSheetName(0)
-	if defaultSheet != ServicesSheet {
-		if err := f.SetSheetName(defaultSheet, ServicesSheet); err != nil {
-			return fmt.Errorf("failed to rename sheet '%s' to '%s': %w", defaultSheet, ServicesSheet, err)
+	// Map to collect matches by normalized type
+	matchesByType := make(map[string][]Match)
+
+	// Collect all unique property keys per normalized match type
+	propertyKeysByType := make(map[string]map[string]struct{})
+
+	// Standard fields (excluding Properties)
+	standardFields := []string{"Name", "Category", "RepoName", "Path"}
+
+	// Iterate over Matches to build matchesByType and collect property keys
+	for _, match := range matches {
+		// Normalize match type (e.g., trim spaces and convert to lower case)
+		matchType := strings.TrimSpace(match.Type)
+		matchType = strings.ToLower(matchType)
+
+		// Update the match.Type to normalized value to maintain consistency
+		match.Type = matchType
+
+		matchesByType[matchType] = append(matchesByType[matchType], match)
+
+		if propertyKeysByType[matchType] == nil {
+			propertyKeysByType[matchType] = make(map[string]struct{})
 		}
-		fmt.Printf("Renamed default sheet '%s' to '%s'\n", defaultSheet, ServicesSheet)
+
+		for key := range match.Properties {
+			propertyKeysByType[matchType][key] = struct{}{}
+		}
 	}
 
-	// Create the "Frameworks" sheet
-	frameworksIndex, err := f.NewSheet(FrameworksSheet)
-	if err != nil {
-		return fmt.Errorf("failed to create sheet '%s': %w", FrameworksSheet, err)
-	}
-	fmt.Printf("Created sheet '%s' with index %d\n", FrameworksSheet, frameworksIndex)
+	// Keep track of sheet names
+	sheetNames := make(map[string]struct{})
 
-	// Create the "Libraries" sheet
-	librariesIndex, err := f.NewSheet(LibrariesSheet)
-	if err != nil {
-		return fmt.Errorf("failed to create sheet '%s': %w", LibrariesSheet, err)
-	}
-	fmt.Printf("Created sheet '%s' with index %d\n", LibrariesSheet, librariesIndex)
-
-	// Set headers for Services sheet
-	servicesHeaders := []string{
-		"Cloud Vendor",
-		"Cloud Service",
-		"Language",
-		"Reference",
-		"Repository",
-		"Filepath",
-	}
-	if err := f.SetSheetRow(ServicesSheet, "A1", &servicesHeaders); err != nil {
-		return fmt.Errorf("failed to set headers for sheet '%s': %w", ServicesSheet, err)
-	}
-	fmt.Printf("Set headers for sheet '%s'\n", ServicesSheet)
-
-	// Set headers for Frameworks sheet
-	frameworksHeaders := []string{
-		"Name",
-		"Category",
-		"Package File Name",
-		"Pattern",
-		"Repository",
-		"Filepath",
-	}
-	if err := f.SetSheetRow(FrameworksSheet, "A1", &frameworksHeaders); err != nil {
-		return fmt.Errorf("failed to set headers for sheet '%s': %w", FrameworksSheet, err)
-	}
-	fmt.Printf("Set headers for sheet '%s'\n", FrameworksSheet)
-
-	// Set headers for Libraries sheet
-	librariesHeaders := []string{
-		"Library Name",
-		"Language",
-		"Version",
-		"Repository",
-		"Filepath",
-	}
-	if err := f.SetSheetRow(LibrariesSheet, "A1", &librariesHeaders); err != nil {
-		return fmt.Errorf("failed to set headers for sheet '%s': %w", LibrariesSheet, err)
-	}
-	fmt.Printf("Set headers for sheet '%s'\n", LibrariesSheet)
-
-	// Initialize row counters for each sheet
-	servicesRow := 2   // Starting from row 2 (row 1 is for headers)
-	frameworksRow := 2 // Starting from row 2 (row 1 is for headers)
-	librariesRow := 2  // Starting from row 2 (row 1 is for headers)
-
-	// Iterate over findings and populate respective sheets
-	for _, finding := range findings {
-		// Handle Services
-		if finding.Service != nil {
-			// Prepare data for Services sheet
-			rowData := []interface{}{
-				finding.Service.CloudVendor,
-				finding.Service.CloudService,
-				finding.Service.Language,
-				finding.Service.Reference,
-				finding.Repository,
-				finding.Filepath,
-			}
-
-			// Convert row number to cell address (e.g., A2)
-			cellAddress, err := excelize.CoordinatesToCellName(1, servicesRow)
+	// For each match type, create a sheet and write the data
+	for matchType, matchesOfType := range matchesByType {
+		// Check if the sheet already exists
+		if _, exists := sheetNames[matchType]; !exists {
+			// Create new sheet
+			index, err := f.NewSheet(matchType)
 			if err != nil {
-				return fmt.Errorf("failed to get cell address for row %d in sheet '%s': %w", servicesRow, ServicesSheet, err)
+				return fmt.Errorf("failed to create sheet '%s': %w", matchType, err)
 			}
 
-			// Set the row data starting from column A
-			if err := f.SetSheetRow(ServicesSheet, cellAddress, &rowData); err != nil {
-				return fmt.Errorf("failed to set data for row %d in sheet '%s': %w", servicesRow, ServicesSheet, err)
+			// Set the active sheet to the first one created
+			if len(sheetNames) == 0 {
+				f.SetActiveSheet(index)
 			}
 
-			servicesRow++ // Move to the next row for Services
+			// Add the sheet name to the map
+			sheetNames[matchType] = struct{}{}
 		}
 
-		// Handle Frameworks
-		if finding.Framework != nil {
-			// Prepare data for Frameworks sheet
-			rowData := []interface{}{
-				finding.Framework.Name,
-				finding.Framework.Category,
-				finding.Framework.PackageFileName,
-				finding.Framework.Pattern,
-				finding.Repository,
-				finding.Filepath,
-			}
+		// Collect property keys for this match type and sort them
+		var propertyKeys []string
+		for key := range propertyKeysByType[matchType] {
+			propertyKeys = append(propertyKeys, key)
+		}
+		sort.Strings(propertyKeys)
 
-			// Convert row number to cell address (e.g., A2)
-			cellAddress, err := excelize.CoordinatesToCellName(1, frameworksRow)
-			if err != nil {
-				return fmt.Errorf("failed to get cell address for row %d in sheet '%s': %w", frameworksRow, FrameworksSheet, err)
-			}
+		// Create headers: standard fields + property keys
+		headers := append(standardFields, propertyKeys...)
 
-			// Set the row data starting from column A
-			if err := f.SetSheetRow(FrameworksSheet, cellAddress, &rowData); err != nil {
-				return fmt.Errorf("failed to set data for row %d in sheet '%s': %w", frameworksRow, FrameworksSheet, err)
-			}
-
-			frameworksRow++ // Move to the next row for Frameworks
+		// Set headers in row 1
+		if err := f.SetSheetRow(matchType, "A1", &headers); err != nil {
+			return fmt.Errorf("failed to set headers for sheet '%s': %w", matchType, err)
 		}
 
-		// Handle Libraries
-		if finding.Library != nil {
-			// Prepare data for Libraries sheet
+		// Write matches data
+		rowNum := 2 // Start from row 2
+		for _, match := range matchesOfType {
+			// Prepare row data
 			rowData := []interface{}{
-				finding.Library.Name,
-				finding.Library.Language,
-				finding.Library.Version,
-				finding.Repository,
-				finding.Filepath,
+				match.Name,
+				match.Category,
+				match.RepoName,
+				match.Path,
+			}
+			// Append property values in order of propertyKeys
+			for _, key := range propertyKeys {
+				value, ok := match.Properties[key]
+				if !ok {
+					rowData = append(rowData, "") // Empty if property not present
+				} else {
+					rowData = append(rowData, value)
+				}
 			}
 
-			// Convert row number to cell address (e.g., A2)
-			cellAddress, err := excelize.CoordinatesToCellName(1, librariesRow)
+			// Set the row data
+			cellAddress, err := excelize.CoordinatesToCellName(1, rowNum)
 			if err != nil {
-				return fmt.Errorf("failed to get cell address for row %d in sheet '%s': %w", librariesRow, LibrariesSheet, err)
+				return fmt.Errorf("failed to get cell address for row %d in sheet '%s': %w", rowNum, matchType, err)
+			}
+			if err := f.SetSheetRow(matchType, cellAddress, &rowData); err != nil {
+				return fmt.Errorf("failed to set data for row %d in sheet '%s': %w", rowNum, matchType, err)
 			}
 
-			// Set the row data starting from column A
-			if err := f.SetSheetRow(LibrariesSheet, cellAddress, &rowData); err != nil {
-				return fmt.Errorf("failed to set data for row %d in sheet '%s': %w", librariesRow, LibrariesSheet, err)
-			}
-
-			librariesRow++ // Move to the next row for Libraries
+			rowNum++
 		}
 	}
 
-	// Optionally, set the active sheet to Services
-	index, _ := f.GetSheetIndex(ServicesSheet)
-	f.SetActiveSheet(index)
-
-	// Determine the output file name
-	outputFile := DefaultReport
-	// Uncomment and modify the following lines if you want dynamic naming based on findings
-	/*
-	   if len(findings) > 0 {
-	       if findings[0].Service != nil || findings[0].Framework != nil || findings[0].Library != nil {
-	           outputFile = fmt.Sprintf("report_%s.xlsx", strings.ReplaceAll(findings[0].Repository, "/", "_"))
-	       }
-	   }
-	*/
+	// Remove default sheet if not used
+	defaultSheetName := f.GetSheetName(0)
+	if defaultSheetName == "Sheet1" {
+		// Delete default sheet
+		f.DeleteSheet(defaultSheetName)
+	}
 
 	// Save the Excel file
+	outputFile := DefaultReport
 	if err := f.SaveAs(outputFile); err != nil {
 		return fmt.Errorf("failed to save XLSX file '%s': %w", outputFile, err)
 	}
 
+	fmt.Println(sheetNames)
 	fmt.Printf("XLSX report generated successfully: %s\n", outputFile)
 	return nil
 }
@@ -202,17 +143,17 @@ type Reporter struct {
 }
 
 // GenerateReport decides which report to generate based on the report format.
-func (reporter Reporter) GenerateReport(findings []Finding, reportFormat string) error {
+func (reporter Reporter) GenerateReport(matches []Match, reportFormat string) error {
 	if reportFormat == "xlsx" {
-		return reporter.xlsxReporter.Report(findings)
+		return reporter.xlsxReporter.Report(matches)
 	}
 
 	// Default to JSON output
-	findingsJSON, err := json.MarshalIndent(findings, "", "    ")
+	matchesJSON, err := json.MarshalIndent(matches, "", "    ")
 	if err != nil {
-		return fmt.Errorf("failed to marshal findings to JSON: %w", err)
+		return fmt.Errorf("failed to marshal matches to JSON: %w", err)
 	}
 
-	fmt.Println(string(findingsJSON))
+	fmt.Println(string(matchesJSON))
 	return nil
 }

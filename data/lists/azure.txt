@@ -1,0 +1,397 @@
+Azure AI AnomalyDetector : Machine Learning and AI
+Azure AI ContentSafety : Security
+Azure AI DocumentIntelligence : Machine Learning and AI
+Azure AI FormRecognizer : Machine Learning and AI
+Azure AI FormRecognizer Perf : Machine Learning and AI
+Azure AI Inference : Machine Learning and AI
+Azure AI Language Conversations : Machine Learning and AI
+Azure AI Language QuestionAnswering : Machine Learning and AI
+Azure AI Language Text : Machine Learning and AI
+Azure AI MetricsAdvisor : Machine Learning and AI
+Azure AI MetricsAdvisor Perf : Machine Learning and AI
+Azure AI OpenAI : Machine Learning and AI
+Azure AI OpenAI Assistants : Machine Learning and AI
+Azure AI Personalizer : Retail and Personalization
+Azure AI TextAnalytics : Machine Learning and AI
+Azure AI TextAnalytics Legacy Shared : Machine Learning and AI
+Azure AI TextAnalytics Perf : Machine Learning and AI
+Azure AI Translation Document : Machine Learning and AI
+Azure AI Translation Text : Machine Learning and AI
+Azure AI Vision Face : Machine Learning and AI
+Azure AI Vision ImageAnalysis : Machine Learning and AI
+Azure Analytics Defender Easm : Security
+Azure Analytics Purview Account : Governance and Compliance
+Azure Analytics Purview Administration : Governance and Compliance
+Azure Analytics Purview Catalog : Governance and Compliance
+Azure Analytics Purview DataMap : Governance and Compliance
+Azure Analytics Purview Scanning : Governance and Compliance
+Azure Analytics Purview Shared : Governance and Compliance
+Azure Analytics Purview Sharing : Governance and Compliance
+Azure Analytics Purview Workflows : Governance and Compliance
+Azure Analytics Synapse AccessControl : Analytics and Big Data
+Azure Analytics Synapse Artifacts : Analytics and Big Data
+Azure Analytics Synapse ManagedPrivateEndpoints : Networking
+Azure Analytics Synapse Monitoring : Monitoring and Management
+Azure Analytics Synapse Shared : Analytics and Big Data
+Azure Analytics Synapse Spark : Analytics and Big Data
+Azure Batch : Compute
+Azure Batch Conventions Files : Compute
+Azure Batch FileStaging : Compute
+Azure Communication AlphaIds : Collaboration and Communication
+Azure Communication CallAutomation : Collaboration and Communication
+Azure Communication CallingServer : Collaboration and Communication
+Azure Communication Chat : Collaboration and Communication
+Azure Communication Common : Collaboration and Communication
+Azure Communication Email : Collaboration and Communication
+Azure Communication Identity : Identity and Access Management
+Azure Communication JobRouter : Collaboration and Communication
+Azure Communication Messages : Collaboration and Communication
+Azure Communication PhoneNumbers : Collaboration and Communication
+Azure Communication ProgrammableConnectivity : Collaboration and Communication
+Azure Communication Rooms : Collaboration and Communication
+Azure Communication ShortCodes : Collaboration and Communication
+Azure Communication Sms : Collaboration and Communication
+Azure Compute Batch : Compute
+Azure Containers ContainerRegistry : Developer Tools
+Azure Containers ContainerRegistry Perf : Developer Tools
+Azure Core : Developer Frameworks
+Azure Core Amqp : Developer Frameworks
+Azure Core Experimental : Developer Frameworks
+Azure Core Expressions DataFactory : Developer Frameworks
+Azure Core NewtonsoftJson : Developer Frameworks
+Azure Core Spatial : Developer Frameworks
+Azure Core Spatial NewtonsoftJson : Developer Frameworks
+Azure Core TestFramework : Developer Frameworks
+Azure Data AppConfiguration : Developer Tools
+Azure Data SchemaRegistry : Developer Tools
+Azure Data SchemaRegistry ApacheAvro : Developer Tools
+Azure Data Tables : Storage
+Azure Developer DevCenter : Developer Tools
+Azure Developer LoadTesting : Developer Tools
+Azure Developer MicrosoftPlaywrightTesting NUnit : Developer Tools
+Azure Developer MicrosoftPlaywrightTesting TestLogger : Developer Tools
+Azure DigitalTwins Core : Digital Twins and Simulations
+Azure DigitalTwins Core Perf : Digital Twins and Simulations
+Azure EventHubs : Integration
+Azure EventHubs Processor : Integration
+Azure EventHubs ServiceFabricProcessor : Integration
+Azure Extensions AspNetCore Configuration Secrets : Developer Tools
+Azure Extensions AspNetCore DataProtection Blobs : Developer Tools
+Azure Extensions AspNetCore DataProtection Keys : Developer Tools
+Azure Functions Worker Extensions WebPubSub : Integration
+Azure HDInsight Job : Analytics and Big Data
+Azure Health Deidentification : Healthcare and Life Sciences
+Azure Health Insights CancerProfiling : Healthcare and Life Sciences
+Azure Health Insights ClinicalMatching : Healthcare and Life Sciences
+Azure Health Insights RadiologyInsights : Healthcare and Life Sciences
+Azure Identity : Identity and Access Management
+Azure Identity Broker : Identity and Access Management
+Azure IoT DeviceUpdate : IoT
+Azure IoT Hub Service : IoT
+Azure IoT ModelsRepository : IoT
+Azure IoT TimeSeriesInsights : IoT
+Azure Maps Common : IoT
+Azure Maps Geolocation : IoT
+Azure Maps Rendering : IoT
+Azure Maps Routing : IoT
+Azure Maps Search : IoT
+Azure Maps TimeZone : IoT
+Azure Maps Weather : IoT
+Azure Media VideoAnalyzer Edge : Media and Content Delivery
+Azure Messaging EventGrid : Integration
+Azure Messaging EventGrid CloudNativeCloudEvents : Integration
+Azure Messaging EventGrid Namespaces : Integration
+Azure Messaging EventGrid SystemEvents : Integration
+Azure Messaging EventHubs : Integration
+Azure Messaging EventHubs Processor : Integration
+Azure Messaging EventHubs Shared : Integration
+Azure Messaging ServiceBus : Integration
+Azure Messaging WebPubSub : Integration
+Azure Messaging WebPubSub Client : Integration
+Azure MixedReality Authentication : Mixed Reality
+Azure MixedReality Authentication Tests : Mixed Reality
+Azure MixedReality ObjectAnchors Conversion : Mixed Reality
+Azure MixedReality RemoteRendering : Mixed Reality
+Azure Monitor AspNetCoreTestApp : Monitoring and Management
+Azure Monitor Ingestion : Monitoring and Management
+Azure Monitor OpenTelemetry AspNetCore : Monitoring and Management
+Azure Monitor OpenTelemetry AspNetCore Demo : Monitoring and Management
+Azure Monitor OpenTelemetry AspNetCore Integration Tests : Monitoring and Management
+Azure Monitor OpenTelemetry AspNetCore Tests : Monitoring and Management
+Azure Monitor OpenTelemetry Exporter : Monitoring and Management
+Azure Monitor OpenTelemetry Exporter AotCompatibilityTestApp : Monitoring and Management
+Azure Monitor OpenTelemetry Exporter Benchmarks : Monitoring and Management
+Azure Monitor OpenTelemetry Exporter Demo : Monitoring and Management
+Azure Monitor OpenTelemetry Exporter Tests : Monitoring and Management
+Azure Monitor OpenTelemetry LiveMetrics : Monitoring and Management
+Azure Monitor OpenTelemetry LiveMetrics Demo : Monitoring and Management
+Azure Monitor Query : Monitoring and Management
+Azure Provisioning AppConfiguration : Governance and Compliance
+Azure Provisioning AppContainers : Governance and Compliance
+Azure Provisioning ApplicationInsights : Governance and Compliance
+Azure Provisioning AppService : Governance and Compliance
+Azure Provisioning CloudMachine : Governance and Compliance
+Azure Provisioning CognitiveServices : Governance and Compliance
+Azure Provisioning Communication : Governance and Compliance
+Azure Provisioning ContainerRegistry : Governance and Compliance
+Azure Provisioning ContainerService : Governance and Compliance
+Azure Provisioning CosmosDB : Databases
+Azure Provisioning Deployment : Governance and Compliance
+Azure Provisioning EventGrid : Integration
+Azure Provisioning EventHubs : Integration
+Azure Provisioning KeyVault : Security
+Azure Provisioning Kubernetes : Governance and Compliance
+Azure Provisioning KubernetesConfiguration : Governance and Compliance
+Azure Provisioning OperationalInsights : Monitoring and Management
+Azure Provisioning PostgreSql : Databases
+Azure Provisioning Redis : Databases
+Azure Provisioning Search : Search and Indexing
+Azure Provisioning ServiceBus : Integration
+Azure Provisioning SignalR : Collaboration and Communication
+Azure Provisioning Sql : Databases
+Azure Provisioning Storage : Storage
+Azure Provisioning WebPubSub : Integration
+Azure Quantum Jobs : Quantum Computing
+Azure ResourceManager : Governance and Compliance
+Azure ResourceManager Advisor : Governance and Compliance
+Azure ResourceManager AgFoodPlatform : IoT
+Azure ResourceManager AlertsManagement : Monitoring and Management
+Azure ResourceManager Analysis : Analytics and Big Data
+Azure ResourceManager ApiCenter : Developer Tools
+Azure ResourceManager ApiManagement : Developer Tools
+Azure ResourceManager AppComplianceAutomation : Governance and Compliance
+Azure ResourceManager AppConfiguration : Governance and Compliance
+Azure ResourceManager AppContainers : Governance and Compliance
+Azure ResourceManager ApplicationInsights : Monitoring and Management
+Azure ResourceManager AppPlatform : Developer Tools
+Azure ResourceManager AppService : Developer Tools
+Azure ResourceManager Astro : Developer Tools
+Azure ResourceManager Attestation : Security
+Azure ResourceManager Authorization : Identity and Access Management
+Azure ResourceManager Automanage : Monitoring and Management
+Azure ResourceManager Automation : Developer Tools
+Azure ResourceManager Avs : Compute
+Azure ResourceManager Batch : Compute
+Azure ResourceManager Billing : Cost Management
+Azure ResourceManager BillingBenefits : Cost Management
+Azure ResourceManager Blueprint : Governance and Compliance
+Azure ResourceManager BotService : Developer Tools
+Azure ResourceManager Cdn : Media and Content Delivery
+Azure ResourceManager ChangeAnalysis : Monitoring and Management
+Azure ResourceManager Chaos : Monitoring and Management
+Azure ResourceManager CognitiveServices : Machine Learning and AI
+Azure ResourceManager Communication : Collaboration and Communication
+Azure ResourceManager Compute : Compute
+Azure ResourceManager ComputeFleet : Compute
+Azure ResourceManager ComputeSchedule : Compute
+Azure ResourceManager ConfidentialLedger : Blockchain
+Azure ResourceManager Confluent : Developer Tools
+Azure ResourceManager ConnectedVMwarevSphere : Hybrid and Edge Computing
+Azure ResourceManager Consumption : Cost Management
+Azure ResourceManager ContainerInstance : Compute
+Azure ResourceManager ContainerOrchestratorRuntime : Compute
+Azure ResourceManager ContainerRegistry : Developer Tools
+Azure ResourceManager ContainerService : Compute
+Azure ResourceManager ContainerServiceFleet : Compute
+Azure ResourceManager CosmosDB : Databases
+Azure ResourceManager CosmosDBForPostgreSql : Databases
+Azure ResourceManager CostManagement : Cost Management
+Azure ResourceManager CustomerInsights : Retail and Personalization
+Azure ResourceManager DataBox : Migration and Transfer
+Azure ResourceManager DataBoxEdge : Migration and Transfer
+Azure ResourceManager Datadog : Monitoring and Management
+Azure ResourceManager DataFactory : Analytics and Big Data
+Azure ResourceManager DataLakeAnalytics : Analytics and Big Data
+Azure ResourceManager DataLakeStore : Storage
+Azure ResourceManager DataMigration : Migration and Transfer
+Azure ResourceManager DataProtectionBackup : Disaster Recovery and Backup
+Azure ResourceManager DataShare : Integration
+Azure ResourceManager DefenderEasm : Security
+Azure ResourceManager DesktopVirtualization : Enterprise Applications
+Azure ResourceManager DevCenter : Developer Tools
+Azure ResourceManager DeviceProvisioningServices : IoT
+Azure ResourceManager DeviceRegistry : IoT
+Azure ResourceManager DeviceUpdate : Io
+
+T
+Azure ResourceManager DevOpsInfrastructure : Developer Tools
+Azure ResourceManager DevSpaces : Developer Tools
+Azure ResourceManager DevTestLabs : Developer Tools
+Azure ResourceManager DigitalTwins : Digital Twins and Simulations
+Azure ResourceManager Dns : Networking
+Azure ResourceManager DnsResolver : Networking
+Azure ResourceManager Dynatrace : Monitoring and Management
+Azure ResourceManager EdgeOrder : Hybrid and Edge Computing
+Azure ResourceManager EdgeZones : Hybrid and Edge Computing
+Azure ResourceManager Elastic : Databases
+Azure ResourceManager ElasticSan : Storage
+Azure ResourceManager EnergyServices : IoT
+Azure ResourceManager EventGrid : Integration
+Azure ResourceManager EventHubs : Integration
+Azure ResourceManager ExtendedLocations : Hybrid and Edge Computing
+Azure ResourceManager Fabric : Developer Tools
+Azure ResourceManager FluidRelay : Integration
+Azure ResourceManager FrontDoor : Networking
+Azure ResourceManager Grafana : Monitoring and Management
+Azure ResourceManager GraphServices : Developer Tools
+Azure ResourceManager GuestConfiguration : Governance and Compliance
+Azure ResourceManager HardwareSecurityModules : Security
+Azure ResourceManager Hci : Hybrid and Edge Computing
+Azure ResourceManager HDInsight : Analytics and Big Data
+Azure ResourceManager HDInsight Containers : Analytics and Big Data
+Azure ResourceManager HealthBot : Healthcare and Life Sciences
+Azure ResourceManager HealthcareApis : Healthcare and Life Sciences
+Azure ResourceManager HealthDataAIServices : Healthcare and Life Sciences
+Azure ResourceManager HybridCompute : Hybrid and Edge Computing
+Azure ResourceManager HybridConnectivity : Networking
+Azure ResourceManager HybridContainerService : Hybrid and Edge Computing
+Azure ResourceManager HybridNetwork : Networking
+Azure ResourceManager InformaticaDataManagement : Analytics and Big Data
+Azure ResourceManager IotCentral : IoT
+Azure ResourceManager IotFirmwareDefense : IoT
+Azure ResourceManager IotHub : IoT
+Azure ResourceManager KeyVault : Security
+Azure ResourceManager Kubernetes : Compute
+Azure ResourceManager KubernetesConfiguration : Governance and Compliance
+Azure ResourceManager Kusto : Analytics and Big Data
+Azure ResourceManager LabServices : Developer Tools
+Azure ResourceManager LargeInstance : Compute
+Azure ResourceManager LoadTesting : Developer Tools
+Azure ResourceManager Logic : Integration
+Azure ResourceManager MachineLearning : Machine Learning and AI
+Azure ResourceManager MachineLearningCompute : Machine Learning and AI
+Azure ResourceManager Maintenance : Governance and Compliance
+Azure ResourceManager ManagedNetwork : Networking
+Azure ResourceManager ManagedNetworkFabric : Networking
+Azure ResourceManager ManagedServiceIdentities : Identity and Access Management
+Azure ResourceManager ManagedServices : Governance and Compliance
+Azure ResourceManager ManagementPartner : Governance and Compliance
+Azure ResourceManager Maps : IoT
+Azure ResourceManager Marketplace : Cloud Marketplace
+Azure ResourceManager MarketplaceOrdering : Cloud Marketplace
+Azure ResourceManager Media : Media and Content Delivery
+Azure ResourceManager MigrationDiscoverySap : Migration and Transfer
+Azure ResourceManager MixedReality : Mixed Reality
+Azure ResourceManager MobileNetwork : Networking
+Azure ResourceManager MongoCluster : Databases
+Azure ResourceManager Monitor : Monitoring and Management
+Azure ResourceManager MySql : Databases
+Azure ResourceManager NetApp : Storage
+Azure ResourceManager Network : Networking
+Azure ResourceManager NetworkAnalytics : Monitoring and Management
+Azure ResourceManager NetworkCloud : Networking
+Azure ResourceManager NetworkFunction : Networking
+Azure ResourceManager NewRelicObservability : Monitoring and Management
+Azure ResourceManager Nginx : Networking
+Azure ResourceManager NotificationHubs : Collaboration and Communication
+Azure ResourceManager OperationalInsights : Monitoring and Management
+Azure ResourceManager OracleDatabase : Databases
+Azure ResourceManager Orbital : IoT
+Azure ResourceManager PaloAltoNetworks Ngfw : Security
+Azure ResourceManager Peering : Networking
+Azure ResourceManager PlaywrightTesting : Developer Tools
+Azure ResourceManager PolicyInsights : Governance and Compliance
+Azure ResourceManager PostgreSql : Databases
+Azure ResourceManager PowerBIDedicated : Analytics and Big Data
+Azure ResourceManager PrivateDns : Networking
+Azure ResourceManager ProviderHub : Cloud Marketplace
+Azure ResourceManager Purview : Governance and Compliance
+Azure ResourceManager Quantum : Quantum Computing
+Azure ResourceManager Qumulo : Storage
+Azure ResourceManager Quota : Governance and Compliance
+Azure ResourceManager RecoveryServices : Disaster Recovery and Backup
+Azure ResourceManager RecoveryServicesBackup : Disaster Recovery and Backup
+Azure ResourceManager RecoveryServicesDataReplication : Disaster Recovery and Backup
+Azure ResourceManager RecoveryServicesSiteRecovery : Disaster Recovery and Backup
+Azure ResourceManager Redis : Databases
+Azure ResourceManager RedisEnterprise : Databases
+Azure ResourceManager Relay : Integration
+Azure ResourceManager Reservations : Cost Management
+Azure ResourceManager ResourceConnector : Integration
+Azure ResourceManager ResourceGraph : Analytics and Big Data
+Azure ResourceManager ResourceHealth : Monitoring and Management
+Azure ResourceManager ResourceMover : Migration and Transfer
+Azure ResourceManager Resources : Governance and Compliance
+Azure ResourceManager ScVmm : Hybrid and Edge Computing
+Azure ResourceManager Search : Search and Indexing
+Azure ResourceManager SecurityCenter : Security
+Azure ResourceManager SecurityDevOps : Security
+Azure ResourceManager SecurityInsights : Security
+Azure ResourceManager SelfHelp : Collaboration and Communication
+Azure ResourceManager ServiceBus : Integration
+Azure ResourceManager ServiceFabric : Compute
+Azure ResourceManager ServiceFabricManagedClusters : Compute
+Azure ResourceManager ServiceLinker : Integration
+Azure ResourceManager ServiceNetworking : Networking
+Azure ResourceManager SignalR : Collaboration and Communication
+Azure ResourceManager Sphere : IoT
+Azure ResourceManager SpringAppDiscovery : Developer Tools
+Azure ResourceManager Sql : Databases
+Azure ResourceManager SqlVirtualMachine : Databases
+Azure ResourceManager StandbyPool : Compute
+Azure ResourceManager Storage : Storage
+Azure ResourceManager StorageActions : Storage
+Azure ResourceManager StorageCache : Storage
+Azure ResourceManager StorageMover : Storage
+Azure ResourceManager StoragePool : Storage
+Azure ResourceManager StorageSync : Storage
+Azure ResourceManager StreamAnalytics : Analytics and Big Data
+Azure ResourceManager Subscription : Governance and Compliance
+Azure ResourceManager Support : Governance and Compliance
+Azure ResourceManager Synapse : Analytics and Big Data
+Azure ResourceManager TrafficManager : Networking
+Azure ResourceManager TrustedSigning : Security
+Azure ResourceManager VoiceServices : Collaboration and Communication
+Azure ResourceManager WebPubSub : Integration
+Azure ResourceManager WorkloadMonitor : Monitoring and Management
+Azure ResourceManager Workloads : Compute
+Azure Search Documents : Search and Indexing
+Azure Search Documents Perf : Search and Indexing
+Azure Security Attestation : Security
+Azure Security CodeTransparency : Security
+Azure Security ConfidentialLedger : Blockchain
+Azure Security KeyVault Administration : Security
+Azure Security KeyVault Certificates : Security
+Azure Security KeyVault Keys : Security
+Azure Security KeyVault Secrets : Security
+Azure Security KeyVault Shared : Security
+Azure ServiceBus : Integration
+Azure Storage Blob Perf : Storage
+Azure Storage Blobs : Storage
+Azure Storage Blobs Batch : Storage
+Azure Storage Blobs ChangeFeed : Storage
+Azure Storage Blobs Perf : Storage
+Azure Storage Common : Storage
+Azure Storage DataMovement : Storage
+Azure Storage DataMovement Blobs : Storage
+Azure Storage DataMovement Blobs Perf : Storage
+Azure Storage DataMovement Files Shares : Storage
+Azure Storage DataMovement Perf : Storage
+Azure Storage File Perf : Storage
+Azure Storage Files DataLake : Storage
+Azure Storage Files DataLake Perf : Storage
+Azure Storage Files Shares : Storage
+Azure Storage Files Shares Perf : Storage
+Azure Storage Internal Avro : Storage
+Azure Storage Queues : Storage
+Azure StorageQueues : Storage
+Azure StorageQueues Samples : Storage
+Azure Synapse : Analytics and Big Data
+Azure Template : Developer Tools
+Azure Verticals AgriFood Farming : IoT
+Azure WebJobs Extensions AuthenticationEvents : Developer Frameworks
+Azure WebJobs Extensions Clients : Developer Frameworks
+Azure WebJobs Extensions EventGrid : Integration
+Azure WebJobs Extensions EventHubs : Integration
+Azure WebJobs Extensions ServiceBus : Integration
+Azure WebJobs Extensions SignalRService : Collaboration and Communication
+Azure WebJobs Extensions Storage : Storage
+Azure WebJobs Extensions Storage Blobs : Storage
+Azure WebJobs Extensions Storage Common : Storage
+Azure WebJobs Extensions Storage Queues : Storage
+Azure WebJobs Extensions Storage Scenario Tests : Storage
+Azure WebJobs Extensions Tables : Storage
+Azure WebJobs Extensions WebPubSub : Integration
+Azure WebJobs Extensions WebPubSubForSocketIO : Integration
+Azure WebPubSub AspNetCore : Integration
+Azure WebPubSub Common : Integration

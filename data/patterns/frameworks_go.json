@@ -1,0 +1,706 @@
+[
+  {
+    "type": "Framework",
+    "name": "Gin",
+    "category": "Web",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/gin-gonic/gin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Echo",
+    "category": "Web",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/labstack/echo/v4"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Beego",
+    "category": "Web",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/beego/beego/v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Fiber",
+    "category": "Web",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/gofiber/fiber/v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Revel",
+    "category": "Web",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/revel/revel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GORM",
+    "category": "ORM",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "gorm.io/gorm"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "sqlx",
+    "category": "ORM",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/jmoiron/sqlx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Ent",
+    "category": "ORM",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "entgo.io/ent"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Bun",
+    "category": "ORM",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/uptrace/bun"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Testify",
+    "category": "Testing",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/stretchr/testify"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Ginkgo",
+    "category": "Testing",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/onsi/ginkgo"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gomega",
+    "category": "Testing",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/onsi/gomega"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GoMock",
+    "category": "Testing",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/golang/mock"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Casbin",
+    "category": "Security",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/casbin/casbin"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jwt-go",
+    "category": "Security",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/dgrijalva/jwt-go"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Logrus",
+    "category": "Logging",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/sirupsen/logrus"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Zap",
+    "category": "Logging",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "go.uber.org/zap"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Zerolog",
+    "category": "Logging",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/rs/zerolog"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Lumberjack",
+    "category": "Logging",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "gopkg.in/natefinch/lumberjack.v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Wire",
+    "category": "Dependency Injection",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/google/wire"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Fx",
+    "category": "Dependency Injection",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "go.uber.org/fx"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Dig",
+    "category": "Dependency Injection",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "go.uber.org/dig"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Asynq",
+    "category": "Task Queue",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/hibiken/asynq"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Go-Workers",
+    "category": "Task Queue",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/jrallison/go-workers"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "NATS",
+    "category": "Messaging",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/nats-io/nats.go"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Sarama",
+    "category": "Messaging",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/Shopify/sarama"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Streadway/amqp",
+    "category": "Messaging",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/streadway/amqp"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "go-swagger",
+    "category": "API",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/go-swagger/go-swagger"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Goa",
+    "category": "API",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "goa.design/goa/v3"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Swagger UI",
+    "category": "Documentation",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/swaggo/files"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GoDoc",
+    "category": "Documentation",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "golang.org/x/tools/cmd/godoc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Prometheus Client",
+    "category": "Monitoring",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/prometheus/client_golang"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "OpenTelemetry",
+    "category": "Monitoring",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "go.opentelemetry.io/otel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Go-Kit",
+    "category": "Microservices",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/go-kit/kit"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Micro",
+    "category": "Microservices",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/micro/micro/v3"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gio",
+    "category": "Graphical UI",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "gioui.org/ui"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Fyne",
+    "category": "Graphical UI",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "fyne.io/fyne/v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Ebiten",
+    "category": "Game Development",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/hajimehoshi/ebiten/v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "G3N",
+    "category": "Game Development",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/g3n/engine/v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Pixel",
+    "category": "Game Development",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/faiface/pixel"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Gomega",
+    "category": "Reactive",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/onsi/gomega"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RxGo",
+    "category": "Reactive",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/ReactiveX/RxGo/v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Go-ethereum",
+    "category": "Blockchain",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/ethereum/go-ethereum"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hyperledger Fabric SDK for Go",
+    "category": "Blockchain",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/hyperledger/fabric-sdk-go"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Stripe Go SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/stripe/stripe-go"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PayPal Go SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/plutov/paypal"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Braintree Go SDK",
+    "category": "Payment Integration",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/braintree-go/braintree-go"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Hugo",
+    "category": "Static Site Generation",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/gohugoio/hugo"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Caddy",
+    "category": "Static Site Generation",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/caddyserver/caddy/v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Mage",
+    "category": "Build Automation",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/magefile/mage"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Task",
+    "category": "Build Automation",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/go-task/task/v3"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "GoDoc",
+    "category": "Documentation",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "golang.org/x/tools/cmd/godoc"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Istio Go Client",
+    "category": "Service Mesh",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "istio.io/client-go"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Linkerd Go Client",
+    "category": "Service Mesh",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/linkerd/linkerd2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "go-i18n",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/nicksnyder/go-i18n/v2/i18n"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "ResourceBundle",
+    "category": "Internationalization (i18n)",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "golang.org/x/text"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MongoDB Go Driver",
+    "category": "Database Clients",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "go.mongodb.org/mongo-driver/mongo"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "PostgreSQL Driver (pgx)",
+    "category": "Database Clients",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/jackc/pgx/v4"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "MySQL Driver (go-sql-driver)",
+    "category": "Database Clients",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/go-sql-driver/mysql"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Oracle Driver (godror)",
+    "category": "Database Clients",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/godror/godror"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Cassandra Driver (gocql)",
+    "category": "Database Clients",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/gocql/gocql"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "Couchbase Go SDK",
+    "category": "Database Clients",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/couchbase/gocb/v2"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "RavenDB Go Client",
+    "category": "Database Clients",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "github.com/ravendb/ravendb-go-client"
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "SQLite Driver (modernc.org/sqlite)",
+    "category": "Database Clients",
+    "file_names": [
+      "go.mod"
+    ],
+    "content_patterns": [
+      "modernc.org/sqlite"
+    ]
+  }
+]
