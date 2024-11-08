@@ -166,7 +166,7 @@ func matchFileExtension(pattern Pattern, path string) bool {
 		return true
 	}
 	for _, extension := range pattern.FileExtensions {
-		if strings.TrimPrefix(filepath.Ext(path), ".") == extension {
+		if strings.TrimPrefix(filepath.Ext(path), ".") == strings.TrimPrefix(extension, ".") {
 			return true
 		}
 	}

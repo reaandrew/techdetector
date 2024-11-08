@@ -133,7 +133,6 @@ func (xlsxReporter XlsxReporter) Report(matches []Match) error {
 		return fmt.Errorf("failed to save XLSX file '%s': %w", outputFile, err)
 	}
 
-	fmt.Println(sheetNames)
 	fmt.Printf("XLSX report generated successfully: %s\n", outputFile)
 	return nil
 }

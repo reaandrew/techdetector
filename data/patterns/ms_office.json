@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Microsoft Word Document",
+    "type": "MS Office",
+    "category": "Word",
+    "file_extensions": [
+      ".doc",
+      ".docx",
+      ".docm",
+      ".dot",
+      ".dotx",
+      ".dotm"
+    ],
+    "properties": {
+      "description": "Microsoft Word document formats, including templates and macro-enabled documents.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from Word 97 to Word 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft Excel Spreadsheet",
+    "type": "MS Office",
+    "category": "Excel",
+    "file_extensions": [
+      ".xls",
+      ".xlsx",
+      ".xlsm",
+      ".xlt",
+      ".xltx",
+      ".xltm",
+      ".xlam"
+    ],
+    "properties": {
+      "description": "Microsoft Excel spreadsheet formats, including templates and macro-enabled workbooks.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from Excel 97 to Excel 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft PowerPoint Presentation",
+    "type": "MS Office",
+    "category": "PowerPoint",
+    "file_extensions": [
+      ".ppt",
+      ".pptx",
+      ".pptm",
+      ".pot",
+      ".potx",
+      ".potm",
+      ".pps",
+      ".ppsx",
+      ".ppsm"
+    ],
+    "properties": {
+      "description": "Microsoft PowerPoint presentation formats, including templates and macro-enabled presentations.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from PowerPoint 97 to PowerPoint 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft Access Database",
+    "type": "MS Office",
+    "category": "Access",
+    "file_extensions": [
+      ".mdb",
+      ".accdb",
+      ".accde",
+      ".accdr",
+      ".accdt",
+      ".ade",
+      ".adp"
+    ],
+    "properties": {
+      "description": "Microsoft Access database formats, including compiled and template databases.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from Access 97 to Access 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft Outlook Data File",
+    "type": "MS Office",
+    "category": "Outlook",
+    "file_extensions": [
+      ".pst",
+      ".ost",
+      ".msg",
+      ".ics",
+      ".nk2"
+    ],
+    "properties": {
+      "description": "Microsoft Outlook data files for emails, contacts, calendars, and other personal information.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from Outlook 97 to Outlook 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft OneNote Notebook",
+    "type": "MS Office",
+    "category": "OneNote",
+    "file_extensions": [
+      ".one",
+      ".onetoc2",
+      ".onepkg"
+    ],
+    "properties": {
+      "description": "Microsoft OneNote notebook files, including package and table of contents files.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from OneNote 2007 to OneNote 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft Publisher Publication",
+    "type": "MS Office",
+    "category": "Publisher",
+    "file_extensions": [
+      ".pub",
+      ".pubx"
+    ],
+    "properties": {
+      "description": "Microsoft Publisher publication files, including templates.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from Publisher 2003 to Publisher 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft Visio Diagram",
+    "type": "MS Office",
+    "category": "Visio",
+    "file_extensions": [
+      ".vsd",
+      ".vsdx",
+      ".vst",
+      ".vstx",
+      ".vsdm",
+      ".vssx"
+    ],
+    "properties": {
+      "description": "Microsoft Visio diagram files, including templates, stencils, and macro-enabled diagrams.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from Visio 2003 to Visio 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft Project File",
+    "type": "MS Office",
+    "category": "Project",
+    "file_extensions": [
+      ".mpp",
+      ".mpt",
+      ".mpx"
+    ],
+    "properties": {
+      "description": "Microsoft Project files for project management, including templates and exchange formats.",
+      "creator": "Microsoft",
+      "version_supported": "All versions from Project 2003 to Project 2021 and Office 365"
+    }
+  },
+  {
+    "name": "Microsoft Office Add-ins",
+    "type": "MS Office",
+    "category": "Add-in",
+    "file_extensions": [
+      ".xlam",
+      ".xla",
+      ".ppam",
+      ".ppa",
+      ".dotm",
+      ".dotx",
+      ".xltx"
+    ],
+    "properties": {
+      "description": "Microsoft Office add-ins extending the functionality of applications like Excel, PowerPoint, and Word.",
+      "creator": "Microsoft",
+      "version_supported": "All versions supporting add-ins from Office 97 to Office 2021 and Office 365"
+    }
+  }
+]
