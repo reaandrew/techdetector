@@ -371,10 +371,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any questions, suggestions, or support, feel free to reach out:
 
-- **Email**: your.email@example.com
-- **GitHub Issues**: [https://github.com/yourusername/techdetector/issues](https://github.com/yourusername/techdetector/issues)
-- **Twitter**: [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
+- **Email**: email@andrewrea.co.uk
+- **GitHub Issues**: [https://github.com/reaandrew/techdetector/issues](https://github.com/yourusername/techdetector/issues)
 
----
-
-*Note: Replace `yourusername`, `your.email@example.com`, and other placeholder information with your actual details.*
