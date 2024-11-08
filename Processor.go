@@ -20,5 +20,7 @@ func InitializeProcessors() []Processor {
 	processors = append(processors, filePatternsProcessor)
 
 	processors = append(processors, NewLibrariesProcessor())
+
+	processors = append(processors, DockerProcessor{})
 	return processors
 }

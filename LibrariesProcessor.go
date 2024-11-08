@@ -50,7 +50,7 @@ func (mp *LibrariesProcessor) Supports(filePath string) bool {
 }
 
 func (mp *LibrariesProcessor) Process(path string, repoName string, content string) ([]Match, error) {
-	var Matches []Match
+	var matches []Match
 	base := filepath.Base(path)
 
 	switch base {
@@ -59,44 +59,44 @@ func (mp *LibrariesProcessor) Process(path string, repoName string, content stri
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse pom.xml: %w", err)
 		}
-		Matches = append(Matches, fs...)
+		matches = append(matches, fs...)
 	case "go.mod":
 		fs, err := mp.parseGoMod(content, repoName, path)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse go.mod: %w", err)
 		}
-		Matches = append(Matches, fs...)
+		matches = append(matches, fs...)
 	case "package.json":
 		fs, err := mp.parsePackageJSON(content, repoName, path)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse package.json: %w", err)
 		}
-		Matches = append(Matches, fs...)
+		matches = append(matches, fs...)
 	case "requirements.txt":
 		fs, err := mp.parseRequirementsTXT(content, repoName, path)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse requirements.txt: %w", err)
 		}
-		Matches = append(Matches, fs...)
+		matches = append(matches, fs...)
 	case "pyproject.toml":
 		fs, err := mp.parsePyProjectToml(content, repoName, path)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse pyproject.toml: %w", err)
 		}
-		Matches = append(Matches, fs...)
+		matches = append(matches, fs...)
 	default:
 		if strings.HasSuffix(base, ".csproj") {
 			fs, err := mp.parseCsProj(content, repoName, path)
 			if err != nil {
 				return nil, fmt.Errorf("failed to parse .csproj: %w", err)
 			}
-			Matches = append(Matches, fs...)
+			matches = append(matches, fs...)
 		} else {
 			return nil, errors.New("unsupported package file")
 		}
 	}
 
-	return Matches, nil
+	return matches, nil
 }
 
 func (mp *LibrariesProcessor) parsePomXML(content string, repoName string, path string) ([]Match, error) {

@@ -69,7 +69,6 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 		}(i)
 	}
 
-	// Walk the directory and send file paths to the workers
 	go func() {
 		err := filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
 			if err != nil {

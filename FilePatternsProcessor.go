@@ -105,7 +105,38 @@ func LoadAllPatterns(f fs.FS) ([]Pattern, error) {
 }
 
 func (s *FilePatternsProcessor) Supports(path string) bool {
-	return true
+	for _, pattern := range s.Patterns {
+		// Skip patterns that specify both file_names and file_extensions (Rule 1)
+		if !isNilOrEmpty(pattern.Filenames) && !isNilOrEmpty(pattern.FileExtensions) {
+			log.Errorf("Pattern error: Pattern '%s' specifies both file_names and file_extensions", pattern.Name)
+			continue
+		}
+
+		// Skip patterns that have content_patterns but no file_names or file_extensions (Rule 2)
+		if isNilOrEmpty(pattern.Filenames) && isNilOrEmpty(pattern.FileExtensions) && !isNilOrEmpty(pattern.ContentPatterns) {
+			log.Errorf("Pattern error: Pattern '%s' has content_patterns but no file_names or file_extensions", pattern.Name)
+			continue
+		}
+
+		var isFilenameMatch bool = true
+		var isFileExtensionMatch bool = true
+
+		// Check filename match if file_names are specified
+		if !isNilOrEmpty(pattern.Filenames) {
+			isFilenameMatch = matchFilename(pattern, path)
+		}
+
+		// Check file extension match if file_extensions are specified
+		if !isNilOrEmpty(pattern.FileExtensions) {
+			isFileExtensionMatch = matchFileExtension(pattern, path)
+		}
+
+		// If either filename or file extension matches, return true
+		if (!isNilOrEmpty(pattern.Filenames) && isFilenameMatch) || (!isNilOrEmpty(pattern.FileExtensions) && isFileExtensionMatch) {
+			return true
+		}
+	}
+	return false
 }
 
 func matchFilename(pattern Pattern, path string) bool {

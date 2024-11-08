@@ -28,7 +28,7 @@ type GithubOrgScanner struct {
 
 func NewGithubOrgScanner(reporter Reporter, processors []Processor) *GithubOrgScanner {
 	return &GithubOrgScanner{
-		reporter:    Reporter{},
+		reporter:    reporter,
 		fileScanner: FileScanner{processors: processors},
 	}
 }

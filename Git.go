@@ -32,7 +32,6 @@ func ExtractRepoName(repoURL string) (string, error) {
 	return repoName, nil
 }
 
-// CloneRepository clones a Git repository to the specified destination.
 func CloneRepository(cloneURL, destination string) error {
 	if _, err := os.Stat(destination); err == nil {
 		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
