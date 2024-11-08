@@ -73,16 +73,6 @@ ENTRYPOINT ["bash", "-c", "echo Hello World"]
 			RepoName: repoName,
 		},
 		{
-			Name:     "ENV",
-			Type:     "Docker Directive",
-			Category: "",
-			Properties: map[string]interface{}{
-				"arguments": "APP_ENV=production",
-			},
-			Path:     path,
-			RepoName: repoName,
-		},
-		{
 			Name:     "EXPOSE",
 			Type:     "Docker Directive",
 			Category: "",
