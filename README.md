@@ -120,6 +120,8 @@ If you prefer not to build TechDetector from source, you can download the pre-co
 
 TechDetector provides a straightforward CLI with commands to scan individual repositories or entire GitHub organizations.
 
+**IMPORTANT!** : Ensure your GITHUB_TOKEN environment variable is set.
+
 ### Scanning a Single Repository
 
 To scan a specific Git repository:
