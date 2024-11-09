@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Bash Shell Script",
+    "type": "Shell",
+    "category": "Bash",
+    "file_extensions": [
+      ".sh",
+      ".bash"
+    ],
+    "properties": {
+      "description": "Bash shell script files used for automating tasks in Unix-like systems.",
+      "creator": "GNU Project",
+      "version_supported": "All versions supporting Bash scripting"
+    }
+  },
+  {
+    "name": "PowerShell Script",
+    "type": "Shell",
+    "category": "PowerShell",
+    "file_extensions": [
+      ".ps1",
+      ".psm1",
+      ".psd1"
+    ],
+    "properties": {
+      "description": "PowerShell script files used for automation and configuration management in Windows environments.",
+      "creator": "Microsoft",
+      "version_supported": "All versions of PowerShell from 1.0 to 7.x"
+    }
+  },
+  {
+    "name": "Batch Script",
+    "type": "Shell",
+    "category": "Batch",
+    "file_extensions": [
+      ".bat",
+      ".cmd"
+    ],
+    "properties": {
+      "description": "Batch script files used for automating tasks in Windows command-line environments.",
+      "creator": "Microsoft",
+      "version_supported": "All versions of Windows supporting batch scripting"
+    }
+  },
+  {
+    "name": "Zsh Shell Script",
+    "type": "Shell",
+    "category": "Zsh",
+    "file_extensions": [
+      ".zsh"
+    ],
+    "properties": {
+      "description": "Zsh shell script files used for automating tasks in Unix-like systems with Zsh.",
+      "creator": "Zsh Community",
+      "version_supported": "All versions supporting Zsh scripting"
+    }
+  },
+  {
+    "name": "Fish Shell Script",
+    "type": "Shell",
+    "category": "Fish",
+    "file_extensions": [
+      ".fish"
+    ],
+    "properties": {
+      "description": "Fish shell script files used for automating tasks in Unix-like systems with Fish shell.",
+      "creator": "Fish Shell Community",
+      "version_supported": "All versions supporting Fish scripting"
+    }
+  },
+  {
+    "name": "Korn Shell Script",
+    "type": "Shell",
+    "category": "KornShell",
+    "file_extensions": [
+      ".ksh"
+    ],
+    "properties": {
+      "description": "KornShell script files used for automating tasks in Unix-like systems with KornShell.",
+      "creator": "AT&T Bell Laboratories",
+      "version_supported": "All versions supporting KornShell scripting"
+    }
+  }
+]
