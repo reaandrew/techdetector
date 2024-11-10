@@ -5,16 +5,16 @@ import "embed"
 //go:embed data/patterns/*.json
 var patternsFS embed.FS
 
-// Processor is an interface that defines a generic processor.
-type Processor interface {
+// FileProcessor is an interface that defines a generic processor.
+type FileProcessor interface {
 	Supports(filePath string) bool
 
 	Process(path string, repoName string, content string) ([]Match, error)
 }
 
-// InitializeProcessors creates and returns a slice of Processor implementations.
-func InitializeProcessors() []Processor {
-	var processors []Processor
+// InitializeProcessors creates and returns a slice of FileProcessor implementations.
+func InitializeProcessors() []FileProcessor {
+	var processors []FileProcessor
 
 	filePatternsProcessor := NewFilePatternsProcessor(patternsFS)
 	processors = append(processors, filePatternsProcessor)

@@ -26,7 +26,7 @@ type GithubOrgScanner struct {
 	fileScanner FileScanner
 }
 
-func NewGithubOrgScanner(reporter Reporter, processors []Processor) *GithubOrgScanner {
+func NewGithubOrgScanner(reporter Reporter, processors []FileProcessor) *GithubOrgScanner {
 	return &GithubOrgScanner{
 		reporter:    reporter,
 		fileScanner: FileScanner{processors: processors},

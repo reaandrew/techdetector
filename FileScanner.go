@@ -10,7 +10,7 @@ import (
 )
 
 type FileScanner struct {
-	processors []Processor
+	processors []FileProcessor
 }
 
 func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]Match, error) {

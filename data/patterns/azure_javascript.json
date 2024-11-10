@@ -1,6 +1,6 @@
 [
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core",
     "category": "Developer Frameworks",
     "file_extensions": [
@@ -15,7 +15,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure AI FormRecognizer",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -30,7 +30,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure AI Language Conversations",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -45,7 +45,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure AI Language Text",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -60,7 +60,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure AI Language Text",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -75,7 +75,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure AI MetricsAdvisor",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -90,7 +90,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure AI TextAnalytics",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -105,7 +105,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ApiManagement",
     "category": "Developer Tools",
     "file_extensions": [
@@ -120,7 +120,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ApiManagement",
     "category": "Developer Tools",
     "file_extensions": [
@@ -135,7 +135,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Data AppConfiguration",
     "category": "Developer Tools",
     "file_extensions": [
@@ -150,7 +150,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Advisor",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -165,7 +165,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AgFoodPlatform",
     "category": "IoT",
     "file_extensions": [
@@ -180,7 +180,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Analysis",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -195,7 +195,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ApiCenter",
     "category": "Developer Tools",
     "file_extensions": [
@@ -210,7 +210,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ApiManagement",
     "category": "Developer Tools",
     "file_extensions": [
@@ -225,7 +225,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AppComplianceAutomation",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -240,7 +240,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AppConfiguration",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -255,7 +255,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AppContainers",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -270,7 +270,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ApplicationInsights",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -285,7 +285,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AppPlatform",
     "category": "Developer Tools",
     "file_extensions": [
@@ -300,7 +300,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AppService",
     "category": "Developer Tools",
     "file_extensions": [
@@ -315,7 +315,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AppService",
     "category": "Developer Tools",
     "file_extensions": [
@@ -330,7 +330,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Astro",
     "category": "Developer Tools",
     "file_extensions": [
@@ -345,7 +345,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Authorization",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -360,7 +360,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Authorization",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -375,7 +375,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Automanage",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -390,7 +390,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Automation",
     "category": "Developer Tools",
     "file_extensions": [
@@ -405,7 +405,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Avs",
     "category": "Compute",
     "file_extensions": [
@@ -420,7 +420,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AzureADExternalIdentities",
     "category": null,
     "file_extensions": [
@@ -435,7 +435,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AzureStack",
     "category": null,
     "file_extensions": [
@@ -450,7 +450,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager AzureStackHCI",
     "category": null,
     "file_extensions": [
@@ -465,7 +465,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager BareMetalInfrastructure",
     "category": null,
     "file_extensions": [
@@ -480,7 +480,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Batch",
     "category": "Compute",
     "file_extensions": [
@@ -495,7 +495,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Billing",
     "category": "Cost Management",
     "file_extensions": [
@@ -510,7 +510,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager BillingBenefits",
     "category": "Cost Management",
     "file_extensions": [
@@ -525,7 +525,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager BotService",
     "category": "Developer Tools",
     "file_extensions": [
@@ -540,7 +540,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Cdn",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -555,7 +555,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ChangeAnalysis",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -570,7 +570,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ChangeAnalysis",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -585,7 +585,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Chaos",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -600,7 +600,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager CognitiveServices",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -615,7 +615,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Commerce",
     "category": null,
     "file_extensions": [
@@ -630,7 +630,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Commerce",
     "category": null,
     "file_extensions": [
@@ -645,7 +645,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager CommitmentPlans",
     "category": null,
     "file_extensions": [
@@ -660,7 +660,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Communication",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -675,7 +675,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Compute",
     "category": "Compute",
     "file_extensions": [
@@ -690,7 +690,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ComputeFleet",
     "category": "Compute",
     "file_extensions": [
@@ -705,7 +705,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Compute",
     "category": "Compute",
     "file_extensions": [
@@ -720,7 +720,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ComputeSchedule",
     "category": "Compute",
     "file_extensions": [
@@ -735,7 +735,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ConfidentialLedger",
     "category": "Blockchain",
     "file_extensions": [
@@ -750,7 +750,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Confluent",
     "category": "Developer Tools",
     "file_extensions": [
@@ -765,7 +765,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ConnectedVMwarevSphere",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -780,7 +780,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Consumption",
     "category": "Cost Management",
     "file_extensions": [
@@ -795,7 +795,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ContainerInstance",
     "category": "Compute",
     "file_extensions": [
@@ -810,7 +810,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ContainerOrchestratorRuntime",
     "category": "Compute",
     "file_extensions": [
@@ -825,7 +825,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ContainerRegistry",
     "category": "Developer Tools",
     "file_extensions": [
@@ -840,7 +840,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ContainerService",
     "category": "Compute",
     "file_extensions": [
@@ -855,7 +855,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ContainerServiceFleet",
     "category": "Compute",
     "file_extensions": [
@@ -870,14 +870,14 @@
     }
   },
   {
-    "type": "Cloud Service",
-    "name": "Azure ResourceManager CosmosDB",
+    "type": "Cloud Service SDK",
+    "name": "Azure ResourceManager Cloud Service SDK SDKDB",
     "category": "Databases",
     "file_extensions": [
       "js"
     ],
     "content_patterns": [
-      "@azure/arm-cosmosdb"
+      "@azure/arm-Cloud Service SDK SDKdb"
     ],
     "properties": {
       "vendor": "AZURE",
@@ -885,14 +885,14 @@
     }
   },
   {
-    "type": "Cloud Service",
-    "name": "Azure ResourceManager CosmosDBForPostgreSql",
+    "type": "Cloud Service SDK",
+    "name": "Azure ResourceManager Cloud Service SDK SDKDBForPostgreSql",
     "category": "Databases",
     "file_extensions": [
       "js"
     ],
     "content_patterns": [
-      "@azure/arm-cosmosdbforpostgresql"
+      "@azure/arm-Cloud Service SDK SDKdbforpostgresql"
     ],
     "properties": {
       "vendor": "AZURE",
@@ -900,7 +900,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager CostManagement",
     "category": "Cost Management",
     "file_extensions": [
@@ -915,7 +915,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager CustomerInsights",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -930,7 +930,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Dashboard",
     "category": null,
     "file_extensions": [
@@ -945,7 +945,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataBoundaries",
     "category": null,
     "file_extensions": [
@@ -960,7 +960,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataBox",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -975,7 +975,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataBoxEdge",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -990,7 +990,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataBoxEdge",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -1005,7 +1005,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Databricks",
     "category": null,
     "file_extensions": [
@@ -1020,7 +1020,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataCatalog",
     "category": null,
     "file_extensions": [
@@ -1035,7 +1035,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Datadog",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -1050,7 +1050,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataFactory",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1065,7 +1065,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataLakeAnalytics",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1080,7 +1080,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataMigration",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -1095,7 +1095,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DataProtectionBackup",
     "category": "Disaster Recovery and Backup",
     "file_extensions": [
@@ -1110,7 +1110,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DefenderEasm",
     "category": "Security",
     "file_extensions": [
@@ -1125,7 +1125,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DeploymentManager",
     "category": null,
     "file_extensions": [
@@ -1140,7 +1140,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DesktopVirtualization",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -1155,7 +1155,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DevCenter",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1170,7 +1170,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DevHub",
     "category": null,
     "file_extensions": [
@@ -1185,7 +1185,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DeviceProvisioningServices",
     "category": "IoT",
     "file_extensions": [
@@ -1200,7 +1200,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DeviceRegistry",
     "category": "IoT",
     "file_extensions": [
@@ -1215,7 +1215,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DeviceUpdate",
     "category": "Io",
     "file_extensions": [
@@ -1230,7 +1230,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DevOpsInfrastructure",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1245,7 +1245,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DevSpaces",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1260,7 +1260,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DigitalTwins",
     "category": "Digital Twins and Simulations",
     "file_extensions": [
@@ -1275,7 +1275,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Dns",
     "category": "Networking",
     "file_extensions": [
@@ -1290,7 +1290,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Dns",
     "category": "Networking",
     "file_extensions": [
@@ -1305,7 +1305,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DnsResolver",
     "category": "Networking",
     "file_extensions": [
@@ -1320,7 +1320,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager DomainServices",
     "category": null,
     "file_extensions": [
@@ -1335,7 +1335,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Dynatrace",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -1350,7 +1350,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager EdgeZones",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -1365,7 +1365,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Education",
     "category": null,
     "file_extensions": [
@@ -1380,7 +1380,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Elastic",
     "category": "Databases",
     "file_extensions": [
@@ -1395,7 +1395,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ElasticSan",
     "category": "Storage",
     "file_extensions": [
@@ -1410,7 +1410,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager EventGrid",
     "category": "Integration",
     "file_extensions": [
@@ -1425,7 +1425,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager EventHubs",
     "category": "Integration",
     "file_extensions": [
@@ -1440,7 +1440,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager EventHubs",
     "category": "Integration",
     "file_extensions": [
@@ -1455,7 +1455,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ExtendedLocations",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -1470,7 +1470,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Fabric",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1485,7 +1485,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Features",
     "category": null,
     "file_extensions": [
@@ -1500,7 +1500,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager FluidRelay",
     "category": "Integration",
     "file_extensions": [
@@ -1515,7 +1515,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager FrontDoor",
     "category": "Networking",
     "file_extensions": [
@@ -1530,7 +1530,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager GraphServices",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1545,7 +1545,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager GuestConfiguration",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -1560,7 +1560,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HanaOnAzure",
     "category": null,
     "file_extensions": [
@@ -1575,7 +1575,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HardwareSecurityModules",
     "category": "Security",
     "file_extensions": [
@@ -1590,7 +1590,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HDInsight",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1605,7 +1605,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HDInsight Containers",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1620,7 +1620,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HealthBot",
     "category": "Healthcare and Life Sciences",
     "file_extensions": [
@@ -1635,7 +1635,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HealthcareApis",
     "category": "Healthcare and Life Sciences",
     "file_extensions": [
@@ -1650,7 +1650,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HealthDataAIServices",
     "category": "Healthcare and Life Sciences",
     "file_extensions": [
@@ -1665,7 +1665,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HybridCompute",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -1680,7 +1680,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HybridConnectivity",
     "category": "Networking",
     "file_extensions": [
@@ -1695,7 +1695,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HybridContainerService",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -1710,7 +1710,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HybridContainerService",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -1725,7 +1725,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager HybridNetwork",
     "category": "Networking",
     "file_extensions": [
@@ -1740,7 +1740,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ImageBuilder",
     "category": null,
     "file_extensions": [
@@ -1755,7 +1755,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager InformaticaDataManagement",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1770,7 +1770,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager IotCentral",
     "category": "IoT",
     "file_extensions": [
@@ -1785,7 +1785,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager IotFirmwareDefense",
     "category": "IoT",
     "file_extensions": [
@@ -1800,7 +1800,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager IotHub",
     "category": "IoT",
     "file_extensions": [
@@ -1815,7 +1815,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager IotHub",
     "category": "IoT",
     "file_extensions": [
@@ -1830,7 +1830,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager IotOperations",
     "category": null,
     "file_extensions": [
@@ -1845,7 +1845,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager KeyVault",
     "category": "Security",
     "file_extensions": [
@@ -1860,7 +1860,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager KeyVault",
     "category": "Security",
     "file_extensions": [
@@ -1875,7 +1875,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager KubernetesConfiguration",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -1890,7 +1890,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Kusto",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1905,7 +1905,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager LabServices",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1920,7 +1920,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager LargeInstance",
     "category": "Compute",
     "file_extensions": [
@@ -1935,7 +1935,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Links",
     "category": null,
     "file_extensions": [
@@ -1950,7 +1950,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Locks",
     "category": null,
     "file_extensions": [
@@ -1965,7 +1965,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Locks",
     "category": null,
     "file_extensions": [
@@ -1980,7 +1980,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Logic",
     "category": "Integration",
     "file_extensions": [
@@ -1995,7 +1995,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MachineLearning",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2010,7 +2010,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MachineLearningCompute",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2025,7 +2025,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MachineLearningExperimentation",
     "category": null,
     "file_extensions": [
@@ -2040,7 +2040,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Maintenance",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -2055,7 +2055,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ManagedApplications",
     "category": null,
     "file_extensions": [
@@ -2070,7 +2070,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ManagedNetworkFabric",
     "category": "Networking",
     "file_extensions": [
@@ -2085,7 +2085,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ManagementGroups",
     "category": null,
     "file_extensions": [
@@ -2100,7 +2100,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ManagementPartner",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -2115,7 +2115,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Maps",
     "category": "IoT",
     "file_extensions": [
@@ -2130,7 +2130,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Mariadb",
     "category": null,
     "file_extensions": [
@@ -2145,7 +2145,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MarketplaceOrdering",
     "category": "Cloud Marketplace",
     "file_extensions": [
@@ -2160,7 +2160,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Media",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -2175,7 +2175,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Migrate",
     "category": null,
     "file_extensions": [
@@ -2190,7 +2190,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MigrationDiscoverySap",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -2205,7 +2205,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MixedReality",
     "category": "Mixed Reality",
     "file_extensions": [
@@ -2220,7 +2220,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MobileNetwork",
     "category": "Networking",
     "file_extensions": [
@@ -2235,7 +2235,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MongoCluster",
     "category": "Databases",
     "file_extensions": [
@@ -2250,7 +2250,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Monitor",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2265,7 +2265,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Monitor",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2280,7 +2280,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ManagedServiceIdentities",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -2295,7 +2295,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MySql",
     "category": "Databases",
     "file_extensions": [
@@ -2310,7 +2310,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager MySqlFlexible",
     "category": null,
     "file_extensions": [
@@ -2325,7 +2325,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager NetApp",
     "category": "Storage",
     "file_extensions": [
@@ -2340,7 +2340,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Network",
     "category": "Networking",
     "file_extensions": [
@@ -2355,7 +2355,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager NetworkAnalytics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2370,7 +2370,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager NetworkCloud",
     "category": "Networking",
     "file_extensions": [
@@ -2385,7 +2385,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager NetworkFunction",
     "category": "Networking",
     "file_extensions": [
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Network",
     "category": "Networking",
     "file_extensions": [
@@ -2415,7 +2415,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager NewRelicObservability",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2430,7 +2430,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Nginx",
     "category": "Networking",
     "file_extensions": [
@@ -2445,7 +2445,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager NotificationHubs",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -2460,7 +2460,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Oep",
     "category": null,
     "file_extensions": [
@@ -2475,7 +2475,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager OperationalInsights",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2490,7 +2490,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Operations",
     "category": null,
     "file_extensions": [
@@ -2505,7 +2505,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager OracleDatabase",
     "category": "Databases",
     "file_extensions": [
@@ -2520,7 +2520,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Orbital",
     "category": "IoT",
     "file_extensions": [
@@ -2535,7 +2535,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager PaloAltoNetworks Ngfw",
     "category": "Security",
     "file_extensions": [
@@ -2550,7 +2550,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Peering",
     "category": "Networking",
     "file_extensions": [
@@ -2565,7 +2565,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Policy",
     "category": null,
     "file_extensions": [
@@ -2580,7 +2580,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager PolicyInsights",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -2595,7 +2595,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Policy",
     "category": null,
     "file_extensions": [
@@ -2610,7 +2610,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Portal",
     "category": null,
     "file_extensions": [
@@ -2625,7 +2625,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager PostgreSql",
     "category": "Databases",
     "file_extensions": [
@@ -2640,7 +2640,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager PostgreSqlFlexible",
     "category": null,
     "file_extensions": [
@@ -2655,7 +2655,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager PowerBIDedicated",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -2670,7 +2670,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager PowerBIEmbedded",
     "category": null,
     "file_extensions": [
@@ -2685,7 +2685,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager PrivateDns",
     "category": "Networking",
     "file_extensions": [
@@ -2700,7 +2700,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Purview",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -2715,7 +2715,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Quantum",
     "category": "Quantum Computing",
     "file_extensions": [
@@ -2730,7 +2730,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Qumulo",
     "category": "Storage",
     "file_extensions": [
@@ -2745,7 +2745,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Quota",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -2760,7 +2760,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager RecoveryServices",
     "category": "Disaster Recovery and Backup",
     "file_extensions": [
@@ -2775,7 +2775,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager RecoveryServicesBackup",
     "category": "Disaster Recovery and Backup",
     "file_extensions": [
@@ -2790,7 +2790,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager RecoveryServicesDataReplication",
     "category": "Disaster Recovery and Backup",
     "file_extensions": [
@@ -2805,7 +2805,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager RecoveryServicesSiteRecovery",
     "category": "Disaster Recovery and Backup",
     "file_extensions": [
@@ -2820,7 +2820,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager RedhatOpenshift",
     "category": null,
     "file_extensions": [
@@ -2835,7 +2835,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Redis",
     "category": "Databases",
     "file_extensions": [
@@ -2850,7 +2850,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager RedisEnterprise",
     "category": "Databases",
     "file_extensions": [
@@ -2865,7 +2865,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Relay",
     "category": "Integration",
     "file_extensions": [
@@ -2880,7 +2880,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Reservations",
     "category": "Cost Management",
     "file_extensions": [
@@ -2895,7 +2895,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ResourceConnector",
     "category": "Integration",
     "file_extensions": [
@@ -2910,7 +2910,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ResourceGraph",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -2925,7 +2925,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ResourceHealth",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2940,7 +2940,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ResourceMover",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -2955,7 +2955,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Resources",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -2970,7 +2970,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ResourcesDeploymentStacks",
     "category": null,
     "file_extensions": [
@@ -2985,7 +2985,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Resources",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -3000,7 +3000,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Subscription",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -3015,7 +3015,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ScVmm",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -3030,7 +3030,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Search",
     "category": "Search and Indexing",
     "file_extensions": [
@@ -3045,7 +3045,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SecurityCenter",
     "category": "Security",
     "file_extensions": [
@@ -3060,7 +3060,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SecurityDevOps",
     "category": "Security",
     "file_extensions": [
@@ -3075,7 +3075,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SecurityInsights",
     "category": "Security",
     "file_extensions": [
@@ -3090,7 +3090,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SelfHelp",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3105,7 +3105,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SerialConsole",
     "category": null,
     "file_extensions": [
@@ -3120,7 +3120,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ServiceBus",
     "category": "Integration",
     "file_extensions": [
@@ -3135,7 +3135,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ServiceFabric",
     "category": "Compute",
     "file_extensions": [
@@ -3150,7 +3150,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ServiceFabricManagedClusters",
     "category": "Compute",
     "file_extensions": [
@@ -3165,7 +3165,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ServiceFabricMesh",
     "category": null,
     "file_extensions": [
@@ -3180,7 +3180,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ServiceLinker",
     "category": "Integration",
     "file_extensions": [
@@ -3195,7 +3195,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ServiceMap",
     "category": null,
     "file_extensions": [
@@ -3210,7 +3210,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager ServiceNetworking",
     "category": "Networking",
     "file_extensions": [
@@ -3225,7 +3225,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SignalR",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3240,7 +3240,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Sphere",
     "category": "IoT",
     "file_extensions": [
@@ -3255,7 +3255,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SpringAppDiscovery",
     "category": "Developer Tools",
     "file_extensions": [
@@ -3270,7 +3270,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Sql",
     "category": "Databases",
     "file_extensions": [
@@ -3285,7 +3285,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SqlVirtualMachine",
     "category": "Databases",
     "file_extensions": [
@@ -3300,7 +3300,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StandbyPool",
     "category": "Compute",
     "file_extensions": [
@@ -3315,7 +3315,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Storage",
     "category": "Storage",
     "file_extensions": [
@@ -3330,7 +3330,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StorageActions",
     "category": "Storage",
     "file_extensions": [
@@ -3345,7 +3345,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StorageCache",
     "category": "Storage",
     "file_extensions": [
@@ -3360,7 +3360,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StorageImportExport",
     "category": null,
     "file_extensions": [
@@ -3375,7 +3375,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StorageMover",
     "category": "Storage",
     "file_extensions": [
@@ -3390,7 +3390,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StorageProfile2020_09_01_Hybrid",
     "category": null,
     "file_extensions": [
@@ -3405,7 +3405,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StorageSync",
     "category": "Storage",
     "file_extensions": [
@@ -3420,7 +3420,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StorSimple1200Series",
     "category": null,
     "file_extensions": [
@@ -3435,7 +3435,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StorSimple8000Series",
     "category": null,
     "file_extensions": [
@@ -3450,7 +3450,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager StreamAnalytics",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -3465,7 +3465,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Subscriptions",
     "category": null,
     "file_extensions": [
@@ -3480,7 +3480,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager SubscriptionsProfile2020_09_01_Hybrid",
     "category": null,
     "file_extensions": [
@@ -3495,7 +3495,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Support",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -3510,7 +3510,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Synapse",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -3525,7 +3525,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager TemplateSpecs",
     "category": null,
     "file_extensions": [
@@ -3540,7 +3540,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager TimeSeriesInsights",
     "category": null,
     "file_extensions": [
@@ -3555,7 +3555,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager TrafficManager",
     "category": "Networking",
     "file_extensions": [
@@ -3570,7 +3570,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager TrustedSigning",
     "category": "Security",
     "file_extensions": [
@@ -3585,7 +3585,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager VoiceServices",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3600,7 +3600,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager WebPubSub",
     "category": "Integration",
     "file_extensions": [
@@ -3615,7 +3615,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager WebServices",
     "category": null,
     "file_extensions": [
@@ -3630,7 +3630,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Workloads",
     "category": "Compute",
     "file_extensions": [
@@ -3645,7 +3645,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager WorkloadsSapVirtualInstance",
     "category": null,
     "file_extensions": [
@@ -3660,7 +3660,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ResourceManager Workspaces",
     "category": null,
     "file_extensions": [
@@ -3675,7 +3675,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Batch",
     "category": "Compute",
     "file_extensions": [
@@ -3690,7 +3690,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication CallAutomation",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3705,7 +3705,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication Chat",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3720,7 +3720,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication Common",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3735,7 +3735,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication Email",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3750,7 +3750,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication Identity",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3765,7 +3765,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication JobRouter",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3780,7 +3780,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication PhoneNumbers",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3795,7 +3795,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication Rooms",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3810,7 +3810,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Communication Sms",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -3825,7 +3825,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Containers ContainerRegistry",
     "category": "Developer Tools",
     "file_extensions": [
@@ -3840,7 +3840,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Amqp",
     "category": "Developer Frameworks",
     "file_extensions": [
@@ -3855,7 +3855,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Auth",
     "category": null,
     "file_extensions": [
@@ -3870,7 +3870,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Client",
     "category": null,
     "file_extensions": [
@@ -3885,7 +3885,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Http Compat",
     "category": null,
     "file_extensions": [
@@ -3900,7 +3900,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Lro",
     "category": null,
     "file_extensions": [
@@ -3915,7 +3915,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Paging",
     "category": null,
     "file_extensions": [
@@ -3930,7 +3930,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Rest Pipeline",
     "category": null,
     "file_extensions": [
@@ -3945,7 +3945,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Sse",
     "category": null,
     "file_extensions": [
@@ -3960,7 +3960,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Tracing",
     "category": null,
     "file_extensions": [
@@ -3975,7 +3975,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Util",
     "category": null,
     "file_extensions": [
@@ -3990,7 +3990,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Core Xml",
     "category": null,
     "file_extensions": [
@@ -4005,14 +4005,14 @@
     }
   },
   {
-    "type": "Cloud Service",
-    "name": "Azure Cosmos DB",
+    "type": "Cloud Service SDK",
+    "name": "Azure Cloud Service SDK SDK DB",
     "category": null,
     "file_extensions": [
       "js"
     ],
     "content_patterns": [
-      "@azure/cosmos"
+      "@azure/Cloud Service SDK SDK"
     ],
     "properties": {
       "vendor": "AZURE",
@@ -4020,7 +4020,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Data Tables",
     "category": "Storage",
     "file_extensions": [
@@ -4035,7 +4035,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Developer DevCenter",
     "category": "Developer Tools",
     "file_extensions": [
@@ -4050,7 +4050,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure DigitalTwins Core",
     "category": "Digital Twins and Simulations",
     "file_extensions": [
@@ -4065,7 +4065,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure ESLint Plugin Azure SDK",
     "category": null,
     "file_extensions": [
@@ -4080,7 +4080,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure EventGrid",
     "category": null,
     "file_extensions": [
@@ -4095,7 +4095,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure EventGrid Namespaces",
     "category": null,
     "file_extensions": [
@@ -4110,7 +4110,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure EventGrid SystemEvents",
     "category": null,
     "file_extensions": [
@@ -4125,7 +4125,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure EventHubs",
     "category": "Integration",
     "file_extensions": [
@@ -4140,7 +4140,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure EventHubs CheckpointStore Blob",
     "category": null,
     "file_extensions": [
@@ -4155,7 +4155,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure EventHubs CheckpointStore Table",
     "category": null,
     "file_extensions": [
@@ -4170,7 +4170,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Functions Authentication Events",
     "category": null,
     "file_extensions": [
@@ -4185,7 +4185,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Identity",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -4200,7 +4200,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Identity Broker",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -4215,7 +4215,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Identity Cache Persistence",
     "category": null,
     "file_extensions": [
@@ -4230,7 +4230,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Identity VSCode",
     "category": null,
     "file_extensions": [
@@ -4245,7 +4245,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure IoT ModelsRepository",
     "category": "IoT",
     "file_extensions": [
@@ -4260,7 +4260,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure KeyVault Admin",
     "category": null,
     "file_extensions": [
@@ -4275,7 +4275,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure KeyVault Certificates",
     "category": null,
     "file_extensions": [
@@ -4290,7 +4290,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure KeyVault Common",
     "category": null,
     "file_extensions": [
@@ -4305,7 +4305,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure KeyVault Keys",
     "category": null,
     "file_extensions": [
@@ -4320,7 +4320,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure KeyVault Secrets",
     "category": null,
     "file_extensions": [
@@ -4335,7 +4335,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Logger",
     "category": null,
     "file_extensions": [
@@ -4350,7 +4350,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Maps Common",
     "category": "IoT",
     "file_extensions": [
@@ -4365,7 +4365,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure MixedReality Authentication",
     "category": "Mixed Reality",
     "file_extensions": [
@@ -4380,7 +4380,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure MixedReality RemoteRendering",
     "category": "Mixed Reality",
     "file_extensions": [
@@ -4395,7 +4395,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Monitor Ingestion",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -4410,7 +4410,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Monitor OpenTelemetry",
     "category": null,
     "file_extensions": [
@@ -4425,7 +4425,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Monitor OpenTelemetry Exporter",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -4440,7 +4440,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Monitor Query",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -4455,7 +4455,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Notification Hubs",
     "category": null,
     "file_extensions": [
@@ -4470,7 +4470,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure OpenAI",
     "category": null,
     "file_extensions": [
@@ -4485,7 +4485,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure OpenTelemetry Instrumentation Azure SDK",
     "category": null,
     "file_extensions": [
@@ -4500,7 +4500,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Quantum Jobs",
     "category": "Quantum Computing",
     "file_extensions": [
@@ -4515,7 +4515,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Agrifood Farming",
     "category": null,
     "file_extensions": [
@@ -4530,7 +4530,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI Anomaly Detector",
     "category": null,
     "file_extensions": [
@@ -4545,7 +4545,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI ContentSafety",
     "category": null,
     "file_extensions": [
@@ -4560,7 +4560,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI Document Intelligence",
     "category": null,
     "file_extensions": [
@@ -4575,7 +4575,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI Document Translator",
     "category": null,
     "file_extensions": [
@@ -4590,7 +4590,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI Inference",
     "category": null,
     "file_extensions": [
@@ -4605,7 +4605,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI Translation Document",
     "category": null,
     "file_extensions": [
@@ -4620,7 +4620,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI Translation Text",
     "category": null,
     "file_extensions": [
@@ -4635,7 +4635,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI Vision Face",
     "category": null,
     "file_extensions": [
@@ -4650,7 +4650,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest AI Vision ImageAnalysis",
     "category": null,
     "file_extensions": [
@@ -4665,7 +4665,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Arm AppService",
     "category": null,
     "file_extensions": [
@@ -4680,7 +4680,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Arm Compute",
     "category": null,
     "file_extensions": [
@@ -4695,7 +4695,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Arm ContainerService",
     "category": null,
     "file_extensions": [
@@ -4710,7 +4710,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Arm Network",
     "category": null,
     "file_extensions": [
@@ -4725,7 +4725,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Arm ServiceFabric",
     "category": null,
     "file_extensions": [
@@ -4740,7 +4740,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Batch",
     "category": null,
     "file_extensions": [
@@ -4755,7 +4755,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Communication JobRouter",
     "category": null,
     "file_extensions": [
@@ -4770,7 +4770,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Communication Messages",
     "category": null,
     "file_extensions": [
@@ -4785,7 +4785,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Confidential Ledger",
     "category": null,
     "file_extensions": [
@@ -4800,7 +4800,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Core Client",
     "category": null,
     "file_extensions": [
@@ -4815,7 +4815,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Defender Easm",
     "category": null,
     "file_extensions": [
@@ -4830,7 +4830,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Developer DevCenter",
     "category": null,
     "file_extensions": [
@@ -4845,7 +4845,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Health Deidentification",
     "category": null,
     "file_extensions": [
@@ -4860,7 +4860,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Health Insights CancerProfiling",
     "category": null,
     "file_extensions": [
@@ -4875,7 +4875,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Health Insights ClinicalMatching",
     "category": null,
     "file_extensions": [
@@ -4890,7 +4890,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Health Insights RadiologyInsights",
     "category": null,
     "file_extensions": [
@@ -4905,7 +4905,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest IoT DeviceUpdate",
     "category": null,
     "file_extensions": [
@@ -4920,7 +4920,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Maps Geolocation",
     "category": null,
     "file_extensions": [
@@ -4935,7 +4935,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Maps Render",
     "category": null,
     "file_extensions": [
@@ -4950,7 +4950,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Maps Route",
     "category": null,
     "file_extensions": [
@@ -4965,7 +4965,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Maps Search",
     "category": null,
     "file_extensions": [
@@ -4980,7 +4980,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Purview Administration",
     "category": null,
     "file_extensions": [
@@ -4995,7 +4995,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Purview Catalog",
     "category": null,
     "file_extensions": [
@@ -5010,7 +5010,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Purview DataMap",
     "category": null,
     "file_extensions": [
@@ -5025,7 +5025,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Purview Scanning",
     "category": null,
     "file_extensions": [
@@ -5040,7 +5040,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Purview Sharing",
     "category": null,
     "file_extensions": [
@@ -5055,7 +5055,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Purview Workflow",
     "category": null,
     "file_extensions": [
@@ -5070,7 +5070,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Synapse AccessControl",
     "category": null,
     "file_extensions": [
@@ -5085,7 +5085,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Schema Registry",
     "category": null,
     "file_extensions": [
@@ -5100,7 +5100,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Schema Registry Avro",
     "category": null,
     "file_extensions": [
@@ -5115,7 +5115,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Schema Registry Json",
     "category": null,
     "file_extensions": [
@@ -5130,7 +5130,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Search Documents",
     "category": null,
     "file_extensions": [
@@ -5145,7 +5145,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest ServiceBus",
     "category": null,
     "file_extensions": [
@@ -5160,7 +5160,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Storage Blob",
     "category": null,
     "file_extensions": [
@@ -5175,7 +5175,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Storage Blob ChangeFeed",
     "category": null,
     "file_extensions": [
@@ -5190,7 +5190,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Storage File Datalake",
     "category": null,
     "file_extensions": [
@@ -5205,7 +5205,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Storage File Share",
     "category": null,
     "file_extensions": [
@@ -5220,7 +5220,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Storage Internal Avro",
     "category": null,
     "file_extensions": [
@@ -5235,7 +5235,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Storage Queue",
     "category": null,
     "file_extensions": [
@@ -5250,7 +5250,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Synapse AccessControl",
     "category": null,
     "file_extensions": [
@@ -5265,7 +5265,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Synapse Artifacts",
     "category": null,
     "file_extensions": [
@@ -5280,7 +5280,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Synapse ManagedPrivateEndpoints",
     "category": null,
     "file_extensions": [
@@ -5295,7 +5295,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Synapse Monitoring",
     "category": null,
     "file_extensions": [
@@ -5310,7 +5310,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Synapse Spark",
     "category": null,
     "file_extensions": [
@@ -5325,7 +5325,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Template",
     "category": null,
     "file_extensions": [
@@ -5340,7 +5340,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Rest Template Dpg",
     "category": null,
     "file_extensions": [
@@ -5355,7 +5355,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Tools Analyze Deps",
     "category": null,
     "file_extensions": [
@@ -5370,7 +5370,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Tools Communication AlphaIds",
     "category": null,
     "file_extensions": [
@@ -5385,7 +5385,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Tools Communication RecipientVerification",
     "category": null,
     "file_extensions": [
@@ -5400,7 +5400,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Tools Communication ShortCodes",
     "category": null,
     "file_extensions": [
@@ -5415,7 +5415,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Tools Communication Tiering",
     "category": null,
     "file_extensions": [
@@ -5430,7 +5430,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Tools Communication TollFreeVerification",
     "category": null,
     "file_extensions": [
@@ -5445,7 +5445,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Tools Eng Package Utils",
     "category": null,
     "file_extensions": [
@@ -5460,7 +5460,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure Tools Versioning",
     "category": null,
     "file_extensions": [
@@ -5475,7 +5475,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure WebPubSub",
     "category": null,
     "file_extensions": [
@@ -5490,7 +5490,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure WebPubSub Client",
     "category": null,
     "file_extensions": [
@@ -5505,7 +5505,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure WebPubSub Client Protobuf",
     "category": null,
     "file_extensions": [
@@ -5520,7 +5520,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Azure WebPubSub Express",
     "category": null,
     "file_extensions": [

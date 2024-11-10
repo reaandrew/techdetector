@@ -1,6 +1,6 @@
 [
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Ads",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -15,7 +15,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Ads",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -30,7 +30,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Analytics",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -45,7 +45,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Analytics",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -60,7 +60,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Analytics",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -75,7 +75,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -90,7 +90,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -105,7 +105,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -120,7 +120,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -135,7 +135,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -150,7 +150,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -165,7 +165,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -180,7 +180,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -195,7 +195,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -210,7 +210,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -225,7 +225,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -240,7 +240,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Apps",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -255,7 +255,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Area120",
     "category": "Developer Tools",
     "file_extensions": [
@@ -270,7 +270,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Cloud",
     "category": "Developer Frameworks",
     "file_extensions": [
@@ -285,7 +285,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AccessApproval",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -300,7 +300,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AdvisoryNotifications",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -315,7 +315,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -330,7 +330,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -345,7 +345,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -360,7 +360,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -375,7 +375,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -390,7 +390,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -405,7 +405,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -420,7 +420,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -435,7 +435,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -450,7 +450,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -465,7 +465,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -480,7 +480,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -495,7 +495,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AIPlatform",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -510,7 +510,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AlloyDb",
     "category": "Databases",
     "file_extensions": [
@@ -525,7 +525,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AlloyDb",
     "category": "Databases",
     "file_extensions": [
@@ -540,7 +540,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AlloyDb",
     "category": "Databases",
     "file_extensions": [
@@ -555,7 +555,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ApiGateway",
     "category": "Integration",
     "file_extensions": [
@@ -570,7 +570,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ApigeeConnect",
     "category": "Integration",
     "file_extensions": [
@@ -585,7 +585,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ApigeeRegistry",
     "category": "Integration",
     "file_extensions": [
@@ -600,7 +600,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ApiHub",
     "category": "Integration",
     "file_extensions": [
@@ -615,7 +615,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ApiKeys",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -630,7 +630,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AppEngine",
     "category": "Compute",
     "file_extensions": [
@@ -645,7 +645,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AppEngine",
     "category": "Compute",
     "file_extensions": [
@@ -660,7 +660,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AppHub",
     "category": "Developer Tools",
     "file_extensions": [
@@ -675,7 +675,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ArtifactRegistry",
     "category": "Developer Tools",
     "file_extensions": [
@@ -690,7 +690,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ArtifactRegistry",
     "category": "Developer Tools",
     "file_extensions": [
@@ -705,7 +705,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Asset",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -720,7 +720,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AssuredWorkloads",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -735,7 +735,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AssuredWorkloads",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -750,7 +750,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Audit",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -765,7 +765,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "AutoML",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -780,7 +780,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BackupDR",
     "category": "Disaster Recovery and Backup",
     "file_extensions": [
@@ -795,7 +795,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BareMetalSolution",
     "category": "Compute",
     "file_extensions": [
@@ -810,7 +810,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Batch",
     "category": "Compute",
     "file_extensions": [
@@ -825,7 +825,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Batch",
     "category": "Compute",
     "file_extensions": [
@@ -840,7 +840,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BeyondCorp",
     "category": "Security",
     "file_extensions": [
@@ -855,7 +855,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BeyondCorp",
     "category": "Security",
     "file_extensions": [
@@ -870,7 +870,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BeyondCorp",
     "category": "Security",
     "file_extensions": [
@@ -885,7 +885,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BeyondCorp",
     "category": "Security",
     "file_extensions": [
@@ -900,7 +900,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -915,7 +915,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -930,7 +930,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -945,7 +945,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -960,7 +960,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -975,7 +975,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -990,7 +990,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1005,7 +1005,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1020,7 +1020,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1035,7 +1035,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1050,7 +1050,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1065,7 +1065,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1080,7 +1080,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1095,7 +1095,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1110,7 +1110,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1125,7 +1125,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1140,7 +1140,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1155,7 +1155,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1170,7 +1170,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BigQuery",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1185,7 +1185,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1200,7 +1200,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1215,7 +1215,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1230,7 +1230,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1245,7 +1245,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1260,7 +1260,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1275,7 +1275,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1290,7 +1290,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1305,7 +1305,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1320,7 +1320,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Bigtable",
     "category": "Databases",
     "file_extensions": [
@@ -1335,7 +1335,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Billing",
     "category": "Cost Management",
     "file_extensions": [
@@ -1350,7 +1350,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Billing",
     "category": "Cost Management",
     "file_extensions": [
@@ -1365,7 +1365,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Billing",
     "category": "Cost Management",
     "file_extensions": [
@@ -1380,7 +1380,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BinaryAuthorization",
     "category": "Security",
     "file_extensions": [
@@ -1395,7 +1395,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "BinaryAuthorization",
     "category": "Security",
     "file_extensions": [
@@ -1410,7 +1410,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "CertificateManager",
     "category": "Security",
     "file_extensions": [
@@ -1425,7 +1425,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Channel",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -1440,7 +1440,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ClientTesting",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1455,7 +1455,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "CloudBuild",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1470,7 +1470,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "CloudBuild",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1485,7 +1485,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "CloudControlsPartner",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -1500,7 +1500,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "CloudControlsPartner",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -1515,7 +1515,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "CloudDms",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -1530,7 +1530,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "CloudQuotas",
     "category": "Cost Management",
     "file_extensions": [
@@ -1545,7 +1545,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Commerce",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -1560,7 +1560,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Common",
     "category": "Developer Frameworks",
     "file_extensions": [
@@ -1575,7 +1575,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Compute",
     "category": "Compute",
     "file_extensions": [
@@ -1590,7 +1590,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Compute",
     "category": "Compute",
     "file_extensions": [
@@ -1605,7 +1605,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Compute",
     "category": "Compute",
     "file_extensions": [
@@ -1620,7 +1620,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Compute",
     "category": "Compute",
     "file_extensions": [
@@ -1635,7 +1635,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Compute",
     "category": "Compute",
     "file_extensions": [
@@ -1650,7 +1650,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ConfidentialComputing",
     "category": "Security",
     "file_extensions": [
@@ -1665,7 +1665,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ConfidentialComputing",
     "category": "Security",
     "file_extensions": [
@@ -1680,7 +1680,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Config",
     "category": "Governance and Compliance\nMonitoring and Management",
     "file_extensions": [
@@ -1695,7 +1695,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Connectors",
     "category": "Integration",
     "file_extensions": [
@@ -1710,7 +1710,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ContactCenterInsights",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1725,7 +1725,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Container",
     "category": "Compute",
     "file_extensions": [
@@ -1740,7 +1740,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Container",
     "category": "Compute",
     "file_extensions": [
@@ -1755,7 +1755,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DataCatalog",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1770,7 +1770,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DataCatalog",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1785,7 +1785,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dataflow",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1800,7 +1800,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dataform",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1815,7 +1815,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DataFusion",
     "category": "Integration",
     "file_extensions": [
@@ -1830,7 +1830,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dataplex",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1845,7 +1845,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dataproc",
     "category": "Analytics and Big Data",
     "file_extensions": [
@@ -1860,7 +1860,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Datastore",
     "category": "Databases",
     "file_extensions": [
@@ -1875,7 +1875,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Datastore",
     "category": "Databases",
     "file_extensions": [
@@ -1890,7 +1890,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Datastore",
     "category": "Databases",
     "file_extensions": [
@@ -1905,7 +1905,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Datastore",
     "category": "Databases",
     "file_extensions": [
@@ -1920,7 +1920,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Datastore",
     "category": "Databases",
     "file_extensions": [
@@ -1935,7 +1935,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Datastream",
     "category": "Integration",
     "file_extensions": [
@@ -1950,7 +1950,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Datastream",
     "category": "Integration",
     "file_extensions": [
@@ -1965,7 +1965,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Deploy",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1980,7 +1980,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DeveloperConnect",
     "category": "Developer Tools",
     "file_extensions": [
@@ -1995,7 +1995,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DevTools",
     "category": "Developer Tools",
     "file_extensions": [
@@ -2010,7 +2010,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DevTools",
     "category": "Developer Tools",
     "file_extensions": [
@@ -2025,7 +2025,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DevTools",
     "category": "Developer Tools",
     "file_extensions": [
@@ -2040,7 +2040,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2055,7 +2055,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2070,7 +2070,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2085,7 +2085,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2100,7 +2100,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2115,7 +2115,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2130,7 +2130,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2145,7 +2145,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2160,7 +2160,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2175,7 +2175,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2190,7 +2190,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Diagnostics",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2205,7 +2205,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dialogflow",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2220,7 +2220,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dialogflow",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2235,7 +2235,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dialogflow",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2250,7 +2250,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dialogflow",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2265,7 +2265,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DiscoveryEngine",
     "category": "Search and Indexing",
     "file_extensions": [
@@ -2280,7 +2280,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DiscoveryEngine",
     "category": "Search and Indexing",
     "file_extensions": [
@@ -2295,7 +2295,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dlp",
     "category": "Security",
     "file_extensions": [
@@ -2310,7 +2310,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Dlp",
     "category": "Security",
     "file_extensions": [
@@ -2325,7 +2325,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Docs",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -2340,7 +2340,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DocumentAI",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2355,7 +2355,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DocumentAI",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2370,7 +2370,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DocumentAI",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2385,7 +2385,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "DocumentAI",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Domains",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -2415,7 +2415,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Domains",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -2430,7 +2430,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "EdgeNetwork",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -2445,7 +2445,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "EnterpriseKnowledgeGraph",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -2460,7 +2460,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ErrorReporting",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2475,7 +2475,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ErrorReporting",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2490,7 +2490,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "EssentialContacts",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -2505,7 +2505,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Eventarc",
     "category": "Integration",
     "file_extensions": [
@@ -2520,7 +2520,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Eventarc",
     "category": "Integration",
     "file_extensions": [
@@ -2535,7 +2535,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Filestore",
     "category": "Storage",
     "file_extensions": [
@@ -2550,7 +2550,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2565,7 +2565,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2580,7 +2580,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2595,7 +2595,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2610,7 +2610,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2625,7 +2625,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2640,7 +2640,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2655,7 +2655,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2670,7 +2670,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2685,7 +2685,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2700,7 +2700,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2715,7 +2715,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2730,7 +2730,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2745,7 +2745,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Firestore",
     "category": "Databases",
     "file_extensions": [
@@ -2760,7 +2760,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Functions",
     "category": "Compute",
     "file_extensions": [
@@ -2775,7 +2775,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Functions",
     "category": "Compute",
     "file_extensions": [
@@ -2790,7 +2790,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Functions",
     "category": "Compute",
     "file_extensions": [
@@ -2805,7 +2805,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GdcHardwareManagement",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -2820,7 +2820,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GkeBackup",
     "category": "Disaster Recovery and Backup",
     "file_extensions": [
@@ -2835,7 +2835,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GkeConnect",
     "category": "Integration",
     "file_extensions": [
@@ -2850,7 +2850,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GkeHub",
     "category": "Integration",
     "file_extensions": [
@@ -2865,7 +2865,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GkeHub",
     "category": "Integration",
     "file_extensions": [
@@ -2880,7 +2880,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GkeHub",
     "category": "Integration",
     "file_extensions": [
@@ -2895,7 +2895,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GkeHub",
     "category": "Integration",
     "file_extensions": [
@@ -2910,7 +2910,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GkeMultiCloud",
     "category": null,
     "file_extensions": [
@@ -2925,7 +2925,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GkeMultiCloud",
     "category": null,
     "file_extensions": [
@@ -2940,7 +2940,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GSuiteAddOns",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -2955,7 +2955,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Iam",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -2970,7 +2970,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Iam",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -2985,7 +2985,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Iam",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3000,7 +3000,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Iam",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3015,7 +3015,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Iam",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3030,7 +3030,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Iam",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3045,7 +3045,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Iap",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3060,7 +3060,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Ids",
     "category": "Security",
     "file_extensions": [
@@ -3075,7 +3075,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Kms",
     "category": "Security",
     "file_extensions": [
@@ -3090,7 +3090,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Kms",
     "category": "Security",
     "file_extensions": [
@@ -3105,7 +3105,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Kms",
     "category": "Security",
     "file_extensions": [
@@ -3120,7 +3120,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Language",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -3135,7 +3135,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Language",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -3150,7 +3150,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Language",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -3165,7 +3165,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Language",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -3180,7 +3180,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "LifeSciences",
     "category": "Healthcare and Life Sciences",
     "file_extensions": [
@@ -3195,7 +3195,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Location",
     "category": "IoT",
     "file_extensions": [
@@ -3210,7 +3210,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3225,7 +3225,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3240,7 +3240,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3255,7 +3255,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3270,7 +3270,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3285,7 +3285,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3300,7 +3300,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3315,7 +3315,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3330,7 +3330,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3345,7 +3345,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3360,7 +3360,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3375,7 +3375,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Logging",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3390,7 +3390,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ManagedIdentities",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3405,7 +3405,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ManagedKafka",
     "category": "Integration",
     "file_extensions": [
@@ -3420,7 +3420,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "MediaTranslation",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -3435,7 +3435,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Memcache",
     "category": "Databases",
     "file_extensions": [
@@ -3450,7 +3450,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Memcache",
     "category": "Databases",
     "file_extensions": [
@@ -3465,7 +3465,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Metastore",
     "category": "Databases",
     "file_extensions": [
@@ -3480,7 +3480,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Metastore",
     "category": "Databases",
     "file_extensions": [
@@ -3495,7 +3495,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Metastore",
     "category": "Databases",
     "file_extensions": [
@@ -3510,7 +3510,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "MigrationCenter",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -3525,7 +3525,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Monitoring",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3540,7 +3540,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "NetApp",
     "category": "Storage",
     "file_extensions": [
@@ -3555,7 +3555,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "NetworkConnectivity",
     "category": "Networking",
     "file_extensions": [
@@ -3570,7 +3570,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "NetworkConnectivity",
     "category": "Networking",
     "file_extensions": [
@@ -3585,7 +3585,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "NetworkManagement",
     "category": "Networking",
     "file_extensions": [
@@ -3600,7 +3600,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "NetworkSecurity",
     "category": "Security",
     "file_extensions": [
@@ -3615,7 +3615,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "NetworkServices",
     "category": "Networking",
     "file_extensions": [
@@ -3630,7 +3630,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Notebooks",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -3645,7 +3645,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Notebooks",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -3660,7 +3660,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Notebooks",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -3675,7 +3675,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Optimization",
     "category": "Cost Management",
     "file_extensions": [
@@ -3690,7 +3690,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "OracleDatabase",
     "category": "Databases",
     "file_extensions": [
@@ -3705,7 +3705,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Orchestration",
     "category": "Developer Tools",
     "file_extensions": [
@@ -3720,7 +3720,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "OrgPolicy",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -3735,7 +3735,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "OrgPolicy",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -3750,7 +3750,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "OsConfig",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3765,7 +3765,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "OsConfig",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3780,7 +3780,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "OsLogin",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3795,7 +3795,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "OsLogin",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3810,7 +3810,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "OsLogin",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -3825,7 +3825,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Parallelstore",
     "category": "Storage",
     "file_extensions": [
@@ -3840,7 +3840,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Parallelstore",
     "category": "Storage",
     "file_extensions": [
@@ -3855,7 +3855,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PhishingProtection",
     "category": "Security",
     "file_extensions": [
@@ -3870,7 +3870,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PolicySimulator",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -3885,7 +3885,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PolicyTroubleshooter",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -3900,7 +3900,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PolicyTroubleshooter",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -3915,7 +3915,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PrivateCatalog",
     "category": "Cloud Marketplace",
     "file_extensions": [
@@ -3930,7 +3930,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PrivilegedAccessManager",
     "category": "Security",
     "file_extensions": [
@@ -3945,7 +3945,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Profiler",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -3960,7 +3960,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PubSub",
     "category": "Integration",
     "file_extensions": [
@@ -3975,7 +3975,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PubSub",
     "category": "Integration",
     "file_extensions": [
@@ -3990,7 +3990,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PubSub",
     "category": "Integration",
     "file_extensions": [
@@ -4005,7 +4005,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PubSub",
     "category": "Integration",
     "file_extensions": [
@@ -4020,7 +4020,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PubSub",
     "category": "Integration",
     "file_extensions": [
@@ -4035,7 +4035,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PubSub",
     "category": "Integration",
     "file_extensions": [
@@ -4050,7 +4050,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "PubSub",
     "category": "Integration",
     "file_extensions": [
@@ -4065,7 +4065,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "RapidMigrationAssessment",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -4080,7 +4080,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "RecaptchaEnterprise",
     "category": "Security",
     "file_extensions": [
@@ -4095,7 +4095,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "RecaptchaEnterprise",
     "category": "Security",
     "file_extensions": [
@@ -4110,7 +4110,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "RecommendationEngine",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4125,7 +4125,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Recommender",
     "category": "Cost Management",
     "file_extensions": [
@@ -4140,7 +4140,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Redis",
     "category": "Databases",
     "file_extensions": [
@@ -4155,7 +4155,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Redis",
     "category": "Databases",
     "file_extensions": [
@@ -4170,7 +4170,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Redis",
     "category": "Databases",
     "file_extensions": [
@@ -4185,7 +4185,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Redis",
     "category": "Databases",
     "file_extensions": [
@@ -4200,7 +4200,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Redis",
     "category": "Databases",
     "file_extensions": [
@@ -4215,7 +4215,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ResourceManager",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -4230,7 +4230,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ResourceSettings",
     "category": "Governance and Compliance",
     "file_extensions": [
@@ -4245,7 +4245,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Retail",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4260,7 +4260,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Run",
     "category": "Compute",
     "file_extensions": [
@@ -4275,7 +4275,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Scheduler",
     "category": "Developer Tools",
     "file_extensions": [
@@ -4290,7 +4290,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Scheduler",
     "category": "Developer Tools",
     "file_extensions": [
@@ -4305,7 +4305,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecretManager",
     "category": "Security",
     "file_extensions": [
@@ -4320,7 +4320,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecretManager",
     "category": "Security",
     "file_extensions": [
@@ -4335,7 +4335,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecretManager",
     "category": "Security",
     "file_extensions": [
@@ -4350,7 +4350,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecureSourceManager",
     "category": "Security",
     "file_extensions": [
@@ -4365,7 +4365,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecurityCenterManagement",
     "category": "Security",
     "file_extensions": [
@@ -4380,7 +4380,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecurityCenter",
     "category": "Security",
     "file_extensions": [
@@ -4395,7 +4395,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecurityCenter",
     "category": "Security",
     "file_extensions": [
@@ -4410,7 +4410,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecurityCenter",
     "category": "Security",
     "file_extensions": [
@@ -4425,7 +4425,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "SecurityCenter",
     "category": "Security",
     "file_extensions": [
@@ -4440,7 +4440,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Security",
     "category": "Security\nSecurity",
     "file_extensions": [
@@ -4455,7 +4455,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Security",
     "category": "Security\nSecurity",
     "file_extensions": [
@@ -4470,7 +4470,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Security",
     "category": "Security\nSecurity",
     "file_extensions": [
@@ -4485,7 +4485,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ServiceControl",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -4500,7 +4500,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ServiceDirectory",
     "category": "Integration",
     "file_extensions": [
@@ -4515,7 +4515,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ServiceDirectory",
     "category": "Integration",
     "file_extensions": [
@@ -4530,7 +4530,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ServiceHealth",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -4545,7 +4545,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ServiceManagement",
     "category": "Integration",
     "file_extensions": [
@@ -4560,7 +4560,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "ServiceUsage",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -4575,7 +4575,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shell",
     "category": "Developer Tools",
     "file_extensions": [
@@ -4590,7 +4590,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4605,7 +4605,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4620,7 +4620,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4635,7 +4635,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4650,7 +4650,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4665,7 +4665,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4680,7 +4680,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4695,7 +4695,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4710,7 +4710,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4725,7 +4725,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4740,7 +4740,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4755,7 +4755,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -4770,7 +4770,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -4785,7 +4785,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4800,7 +4800,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4815,7 +4815,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4830,7 +4830,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4845,7 +4845,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4860,7 +4860,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4875,7 +4875,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4890,7 +4890,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4905,7 +4905,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4920,7 +4920,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4935,7 +4935,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4950,7 +4950,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4965,7 +4965,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4980,7 +4980,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -4995,7 +4995,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -5010,7 +5010,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -5025,7 +5025,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -5040,7 +5040,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -5055,7 +5055,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -5070,7 +5070,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Spanner",
     "category": "Databases",
     "file_extensions": [
@@ -5085,7 +5085,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Speech",
     "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
@@ -5100,7 +5100,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Speech",
     "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
@@ -5115,7 +5115,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Speech",
     "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
@@ -5130,7 +5130,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Speech",
     "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
@@ -5145,7 +5145,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Speech",
     "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
@@ -5160,7 +5160,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Speech",
     "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
@@ -5175,7 +5175,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Speech",
     "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
@@ -5190,7 +5190,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Speech",
     "category": "Machine Learning and AI\nMachine Learning and AI",
     "file_extensions": [
@@ -5205,7 +5205,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5220,7 +5220,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "StorageInsights",
     "category": "Storage",
     "file_extensions": [
@@ -5235,7 +5235,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "StorageTransfer",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -5250,7 +5250,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5265,7 +5265,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5280,7 +5280,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5295,7 +5295,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5310,7 +5310,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5325,7 +5325,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5340,7 +5340,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5355,7 +5355,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5370,7 +5370,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5385,7 +5385,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5400,7 +5400,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [
@@ -5415,7 +5415,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Support",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -5430,7 +5430,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Talent",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -5445,7 +5445,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Talent",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -5460,7 +5460,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Talent",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -5475,7 +5475,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Talent",
     "category": "Enterprise Applications",
     "file_extensions": [
@@ -5490,7 +5490,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tasks",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -5505,7 +5505,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tasks",
     "category": "Collaboration and Communication",
     "file_extensions": [
@@ -5520,7 +5520,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "TelcoAutomation",
     "category": "IoT",
     "file_extensions": [
@@ -5535,7 +5535,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "TextToSpeech",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -5550,7 +5550,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "TextToSpeech",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -5565,7 +5565,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "TextToSpeech",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -5580,7 +5580,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5595,7 +5595,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5610,7 +5610,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5625,7 +5625,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5640,7 +5640,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5655,7 +5655,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5670,7 +5670,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5685,7 +5685,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5700,7 +5700,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5715,7 +5715,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5730,7 +5730,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5745,7 +5745,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5760,7 +5760,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5775,7 +5775,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5790,7 +5790,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5805,7 +5805,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5820,7 +5820,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5835,7 +5835,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5850,7 +5850,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5865,7 +5865,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5880,7 +5880,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5895,7 +5895,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5910,7 +5910,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5925,7 +5925,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5940,7 +5940,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5955,7 +5955,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5970,7 +5970,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -5985,7 +5985,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6000,7 +6000,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6015,7 +6015,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6030,7 +6030,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6045,7 +6045,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6060,7 +6060,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6075,7 +6075,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6090,7 +6090,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6105,7 +6105,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6120,7 +6120,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tools",
     "category": "Developer Tools\nDeveloper Tools",
     "file_extensions": [
@@ -6135,7 +6135,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Tpu",
     "category": "Compute",
     "file_extensions": [
@@ -6150,7 +6150,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Trace",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -6165,7 +6165,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Trace",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -6180,7 +6180,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Trace",
     "category": "Monitoring and Management",
     "file_extensions": [
@@ -6195,7 +6195,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Translate",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -6210,7 +6210,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Translate",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -6225,7 +6225,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Translation",
     "category": "Media and Content Delivery\nMachine Learning and AI",
     "file_extensions": [
@@ -6240,7 +6240,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Translation",
     "category": "Media and Content Delivery\nMachine Learning and AI",
     "file_extensions": [
@@ -6255,7 +6255,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Translation",
     "category": "Media and Content Delivery\nMachine Learning and AI",
     "file_extensions": [
@@ -6270,7 +6270,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Translation",
     "category": "Media and Content Delivery\nMachine Learning and AI",
     "file_extensions": [
@@ -6285,7 +6285,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Translation",
     "category": "Media and Content Delivery\nMachine Learning and AI",
     "file_extensions": [
@@ -6300,7 +6300,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "VideoIntelligence",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -6315,7 +6315,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "VideoIntelligence",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -6330,7 +6330,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "VideoIntelligence",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -6345,7 +6345,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Video",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -6360,7 +6360,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Video",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -6375,7 +6375,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Video",
     "category": "Media and Content Delivery",
     "file_extensions": [
@@ -6390,7 +6390,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "VisionAI",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -6405,7 +6405,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Vision",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -6420,7 +6420,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Vision",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -6435,7 +6435,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Vision",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -6450,7 +6450,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Vision",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -6465,7 +6465,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Vision",
     "category": "Machine Learning and AI",
     "file_extensions": [
@@ -6480,7 +6480,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "VMMigration",
     "category": "Migration and Transfer",
     "file_extensions": [
@@ -6495,7 +6495,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "VmwareEngine",
     "category": "Hybrid and Edge Computing",
     "file_extensions": [
@@ -6510,7 +6510,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "VpcAccess",
     "category": "Networking",
     "file_extensions": [
@@ -6525,7 +6525,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "WebRisk",
     "category": "Security",
     "file_extensions": [
@@ -6540,7 +6540,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "WebRisk",
     "category": "Security",
     "file_extensions": [
@@ -6555,7 +6555,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "WebRisk",
     "category": "Security",
     "file_extensions": [
@@ -6570,7 +6570,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "WebSecurityScanner",
     "category": "Security",
     "file_extensions": [
@@ -6585,7 +6585,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Workflows",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6600,7 +6600,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Workflows",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6615,7 +6615,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Workflows",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6630,7 +6630,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Workflows",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6645,7 +6645,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Workflows",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6660,7 +6660,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Workflows",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6675,7 +6675,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Workstations",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6690,7 +6690,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "GoogleCSharpSnippets",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6705,7 +6705,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Geo",
     "category": "IoT",
     "file_extensions": [
@@ -6720,7 +6720,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Identity",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -6735,7 +6735,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Identity",
     "category": "Identity and Access Management",
     "file_extensions": [
@@ -6750,7 +6750,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "LongRunning",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6765,7 +6765,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "LongRunning",
     "category": "Developer Tools",
     "file_extensions": [
@@ -6780,7 +6780,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6795,7 +6795,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6810,7 +6810,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6825,7 +6825,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6840,7 +6840,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6855,7 +6855,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6870,7 +6870,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6885,7 +6885,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6900,7 +6900,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6915,7 +6915,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Maps",
     "category": "IoT",
     "file_extensions": [
@@ -6930,7 +6930,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -6945,7 +6945,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -6960,7 +6960,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -6975,7 +6975,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -6990,7 +6990,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -7005,7 +7005,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -7020,7 +7020,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -7035,7 +7035,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -7050,7 +7050,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -7065,7 +7065,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -7080,7 +7080,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -7095,7 +7095,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Shopping",
     "category": "Retail and Personalization",
     "file_extensions": [
@@ -7110,7 +7110,7 @@
     }
   },
   {
-    "type": "Cloud Service",
+    "type": "Cloud Service SDK",
     "name": "Storage",
     "category": "Storage",
     "file_extensions": [

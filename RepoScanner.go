@@ -12,7 +12,7 @@ type RepoScanner struct {
 	fileScanner FileScanner
 }
 
-func NewRepoScanner(reporter Reporter, processors []Processor) *RepoScanner {
+func NewRepoScanner(reporter Reporter, processors []FileProcessor) *RepoScanner {
 	return &RepoScanner{
 		reporter:    Reporter{},
 		fileScanner: FileScanner{processors: processors},
