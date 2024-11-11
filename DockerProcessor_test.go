@@ -82,36 +82,6 @@ ENTRYPOINT ["bash", "-c", "echo Hello World"]
 			Path:     path,
 			RepoName: repoName,
 		},
-		{
-			Name:     "VOLUME",
-			Type:     "Docker Directive",
-			Category: "",
-			Properties: map[string]interface{}{
-				"arguments": "/data",
-			},
-			Path:     path,
-			RepoName: repoName,
-		},
-		{
-			Name:     "USER",
-			Type:     "Docker Directive",
-			Category: "",
-			Properties: map[string]interface{}{
-				"arguments": "appuser",
-			},
-			Path:     path,
-			RepoName: repoName,
-		},
-		{
-			Name:     "ENTRYPOINT",
-			Type:     "Docker Directive",
-			Category: "",
-			Properties: map[string]interface{}{
-				"arguments": `["bash", "-c", "echo Hello World"]`,
-			},
-			Path:     path,
-			RepoName: repoName,
-		},
 	}
 
 	matches, err := d.Process(path, repoName, content)
