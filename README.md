@@ -26,11 +26,20 @@
 ## Features
 
 - **Comprehensive Scanning**: Analyze entire repositories or all repositories within a GitHub organization.
+
 - **Multi-Language Support**: Detect technologies across various programming languages including Go, Python, Java, JavaScript, C#, and more.
+
 - **Cloud Service Detection**: Identify cloud services from AWS, Azure, and GCP based on code patterns.
+    - Detect AWS and Azure resources in Terraform files
+    - Detect Azure resources in Bicep files
+    - Detect AWS resources in CloudFormation files
+
 - **Framework Identification**: Recognize popular frameworks such as Spring Boot, Django, Express.js, and more.
+
 - **Library Extraction**: Parse package files to extract library dependencies.
+
 - **Dockerfile Analysis**: Analyze Dockerfiles to identify used directives and configurations.
+
 - **Customizable Reports**: Generate detailed reports in XLSX format to visualize the detected technologies.
 
 ## Installation
@@ -272,15 +281,9 @@ Analyze Dockerfiles to identify used directives such as `FROM`, `RUN`, `ENV`, `E
 **Example Directives Detected:**
 
 - `FROM`
-- `RUN`
-- `ENV`
 - `EXPOSE`
-- `VOLUME`
-- `USER`
-- `ENTRYPOINT`
-- `CMD`
 - `LABEL`
-- `HEALTHCHECK`
+- `MAINTAINER`
 
 ## Pattern Files
 
