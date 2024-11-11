@@ -1,6 +1,10 @@
 package main
 
-import "github.com/spf13/cobra"
+import (
+	"github.com/spf13/cobra"
+	"log"
+	"os"
+)
 
 // Cli represents the command-line interface
 type Cli struct {
@@ -55,7 +59,43 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		},
 	}
 
+	scanDirCmd := &cobra.Command{
+		Use:   "dir [DIRECTORY]",
+		Short: "Scan all top-level directories in the specified directory (defaults to CWD) for technologies.",
+		Args:  cobra.MaximumNArgs(1), // Accepts zero or one argument
+		Run: func(cmd *cobra.Command, args []string) {
+			var directory string
+			if len(args) == 0 {
+				// No directory provided; use current working directory
+				cwd, err := os.Getwd()
+				if err != nil {
+					log.Fatalf("Failed to get current working directory: %v", err)
+				}
+				directory = cwd
+			} else {
+				// Directory provided as argument
+				directory = args[0]
+			}
+
+			// Check if the provided directory exists and is a directory
+			info, err := os.Stat(directory)
+			if err != nil {
+				log.Fatalf("Error accessing directory '%s': %v", directory, err)
+			}
+			if !info.IsDir() {
+				log.Fatalf("Provided path '%s' is not a directory.", directory)
+			}
+
+			// Initialize DirectoryScanner
+			directoryScanner := NewDirectoryScanner(Reporter{}, InitializeProcessors())
+
+			// Execute the scan
+			directoryScanner.Scan(directory, cli.reportFormat)
+		},
+	}
+
 	scanCmd.AddCommand(scanRepoCmd)
 	scanCmd.AddCommand(scanOrgCmd)
+	scanCmd.AddCommand(scanDirCmd)
 	return scanCmd
 }

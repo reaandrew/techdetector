@@ -14,7 +14,7 @@ type RepoScanner struct {
 
 func NewRepoScanner(reporter Reporter, processors []FileProcessor) *RepoScanner {
 	return &RepoScanner{
-		reporter:    Reporter{},
+		reporter:    reporter,
 		fileScanner: FileScanner{processors: processors},
 	}
 }
