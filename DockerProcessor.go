@@ -124,7 +124,7 @@ func (d DockerProcessor) Process(path string, repoName string, content string) (
 	if err != nil {
 		return nil, err
 	}
-	handledInstructions := []string{"VOLUME", "USER", "MAINTAINER", "LABEL", "HEALTHCHECK", "FROM", "EXPOSE", "ENTRYPOINT", "CMD"}
+	handledInstructions := []string{"MAINTAINER", "LABEL", "FROM", "EXPOSE"}
 
 	for _, instruction := range instructions {
 		if Contains(handledInstructions, instruction.Directive) {
