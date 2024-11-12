@@ -1,39 +1,42 @@
-package main
+package scanners
 
 import (
 	"fmt"
+	"github.com/reaandrew/techdetector/processors"
+	"github.com/reaandrew/techdetector/reporters"
+	"github.com/reaandrew/techdetector/utils"
 	"log"
 	"os"
 	"path/filepath"
 )
 
 type RepoScanner struct {
-	reporter    Reporter
+	reporter    reporters.Reporter
 	fileScanner FileScanner
 }
 
-func NewRepoScanner(reporter Reporter, processors []FileProcessor) *RepoScanner {
+func NewRepoScanner(reporter reporters.Reporter, processors []processors.FileProcessor) *RepoScanner {
 	return &RepoScanner{
 		reporter:    reporter,
 		fileScanner: FileScanner{processors: processors},
 	}
 }
 
-func (repoScanner RepoScanner) scan(repoURL string, reportFormat string) {
+func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 	// Ensure clone base directory exists
 	err := os.MkdirAll(CloneBaseDir, os.ModePerm)
 	if err != nil {
 		log.Fatalf("Failed to create clone base directory '%s': %v", CloneBaseDir, err)
 	}
 
-	repoName, err := ExtractRepoName(repoURL)
+	repoName, err := utils.ExtractRepoName(repoURL)
 	if err != nil {
 		log.Fatalf("Invalid repository URL '%s': %v", repoURL, err)
 	}
 
-	repoPath := filepath.Join(CloneBaseDir, SanitizeRepoName(repoName))
+	repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
 	fmt.Printf("Cloning repository: %s\n", repoName)
-	err = CloneRepository(repoURL, repoPath)
+	err = utils.CloneRepository(repoURL, repoPath)
 	if err != nil {
 		log.Fatalf("Failed to clone repository '%s': %v", repoName, err)
 	}

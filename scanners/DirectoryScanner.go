@@ -1,7 +1,9 @@
-package main
+package scanners
 
 import (
 	"fmt"
+	"github.com/reaandrew/techdetector/processors"
+	"github.com/reaandrew/techdetector/reporters"
 	"log"
 	"os"
 	"path/filepath"
@@ -9,12 +11,12 @@ import (
 
 // DirectoryScanner struct
 type DirectoryScanner struct {
-	reporter    Reporter
+	reporter    reporters.Reporter
 	fileScanner FileScanner
 }
 
 // NewDirectoryScanner creates a new DirectoryScanner
-func NewDirectoryScanner(reporter Reporter, processors []FileProcessor) *DirectoryScanner {
+func NewDirectoryScanner(reporter reporters.Reporter, processors []processors.FileProcessor) *DirectoryScanner {
 	return &DirectoryScanner{
 		reporter:    reporter,
 		fileScanner: FileScanner{processors: processors},
@@ -30,24 +32,24 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 	}
 
 	if len(dirs) == 0 {
-		log.Println("No top-level directories found to scan.")
+		log.Println("No top-level directories found to Scan.")
 		return
 	}
 
-	var allMatches []Match
+	var allMatches []processors.Match
 
 	for _, dir := range dirs {
 		fmt.Printf("Processing directory: %s\n", dir)
 
 		// Traverse and search
-		findings, err := ds.fileScanner.TraverseAndSearch(dir, filepath.Base(dir))
+		matches, err := ds.fileScanner.TraverseAndSearch(dir, filepath.Base(dir))
 		if err != nil {
 			log.Printf("Error searching directory '%s': %v", dir, err)
 			continue // Proceed with the next directory
 		}
 
-		fmt.Printf("Number of findings in '%s': %d\n", dir, len(findings))
-		allMatches = append(allMatches, findings...)
+		fmt.Printf("Number of matches in '%s': %d\n", dir, len(matches))
+		allMatches = append(allMatches, matches...)
 	}
 
 	// Generate consolidated report

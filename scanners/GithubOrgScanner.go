@@ -1,9 +1,12 @@
-package main
+package scanners
 
 import (
 	"context"
 	"fmt"
 	"github.com/google/go-github/v50/github"
+	"github.com/reaandrew/techdetector/processors"
+	"github.com/reaandrew/techdetector/reporters"
+	"github.com/reaandrew/techdetector/utils"
 	"golang.org/x/oauth2"
 	"log"
 	"os"
@@ -16,24 +19,24 @@ type RepoJob struct {
 }
 
 type RepoResult struct {
-	Matches  []Match
+	Matches  []processors.Match
 	Error    error
 	RepoName string
 }
 
 type GithubOrgScanner struct {
-	reporter    Reporter
+	reporter    reporters.Reporter
 	fileScanner FileScanner
 }
 
-func NewGithubOrgScanner(reporter Reporter, processors []FileProcessor) *GithubOrgScanner {
+func NewGithubOrgScanner(reporter reporters.Reporter, processors []processors.FileProcessor) *GithubOrgScanner {
 	return &GithubOrgScanner{
 		reporter:    reporter,
 		fileScanner: FileScanner{processors: processors},
 	}
 }
 
-func (githubOrgScanner GithubOrgScanner) scan(orgName string, reportFormat string) {
+func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat string) {
 	client := initializeGitHubClient()
 
 	// Ensure clone base directory exists
@@ -69,7 +72,7 @@ func (githubOrgScanner GithubOrgScanner) scan(orgName string, reportFormat strin
 	wg.Wait()
 	close(results)
 
-	var allMatches []Match
+	var allMatches []processors.Match
 	for res := range results {
 		if res.Error != nil {
 			log.Printf("Error processing repository '%s': %v", res.RepoName, res.Error)
@@ -95,8 +98,8 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 		repoName := repo.GetFullName()
 		fmt.Printf("Worker: Cloning repository %s\n", repoName)
 
-		repoPath := filepath.Join(CloneBaseDir, SanitizeRepoName(repoName))
-		err := CloneRepository(repo.GetCloneURL(), repoPath)
+		repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
+		err := utils.CloneRepository(repo.GetCloneURL(), repoPath)
 		if err != nil {
 			results <- RepoResult{
 				Matches:  nil,

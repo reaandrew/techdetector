@@ -1,8 +1,9 @@
-package main
+package reporters
 
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/reaandrew/techdetector/processors"
 	"github.com/xuri/excelize/v2"
 	"sort"
 	"strings"
@@ -15,14 +16,14 @@ const (
 type XlsxReporter struct {
 }
 
-func (xlsxReporter XlsxReporter) Report(matches []Match) error {
+func (xlsxReporter XlsxReporter) Report(matches []processors.Match) error {
 	fmt.Println("Generating XLSX file")
 
 	// Create a new Excel file
 	f := excelize.NewFile()
 
 	// Map to collect matches by normalized type
-	matchesByType := make(map[string][]Match)
+	matchesByType := make(map[string][]processors.Match)
 
 	// Collect all unique property keys per normalized match type
 	propertyKeysByType := make(map[string]map[string]struct{})
@@ -142,7 +143,7 @@ type Reporter struct {
 }
 
 // GenerateReport decides which report to generate based on the report format.
-func (reporter Reporter) GenerateReport(matches []Match, reportFormat string) error {
+func (reporter Reporter) GenerateReport(matches []processors.Match, reportFormat string) error {
 	if reportFormat == "xlsx" {
 		return reporter.xlsxReporter.Report(matches)
 	}
