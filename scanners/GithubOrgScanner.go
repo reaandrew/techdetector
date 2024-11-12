@@ -6,6 +6,7 @@ import (
 	"github.com/google/go-github/v50/github"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
+	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/utils"
 	"golang.org/x/oauth2"
 	"log"
@@ -25,14 +26,18 @@ type RepoResult struct {
 }
 
 type GithubOrgScanner struct {
-	reporter    reporters.Reporter
-	fileScanner FileScanner
+	reporter        reporters.Reporter
+	fileScanner     FileScanner
+	matchRepository repositories.MatchRepository
 }
 
-func NewGithubOrgScanner(reporter reporters.Reporter, processors []processors.FileProcessor) *GithubOrgScanner {
+func NewGithubOrgScanner(reporter reporters.Reporter,
+	processors []processors.FileProcessor,
+	matchRepository repositories.MatchRepository) *GithubOrgScanner {
 	return &GithubOrgScanner{
-		reporter:    reporter,
-		fileScanner: FileScanner{processors: processors},
+		reporter:        reporter,
+		fileScanner:     FileScanner{processors: processors},
+		matchRepository: matchRepository,
 	}
 }
 
@@ -45,18 +50,18 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 		log.Fatalf("Failed to create clone base directory '%s': %v", CloneBaseDir, err)
 	}
 
-	fmt.Printf("Fetching repositories for organization: %s\n", orgName)
+	fmt.Printf("Fetching repos for organization: %s\n", orgName)
 
-	repositories, err := listRepositories(client, orgName)
+	repos, err := listRepositories(client, orgName)
 	if err != nil {
-		log.Fatalf("Error listing repositories: %v", err)
+		log.Fatalf("Error listing repos: %v", err)
 	}
-	if len(repositories) == 0 {
-		log.Fatalf("No repositories found in organization '%s'. Exiting.", orgName)
+	if len(repos) == 0 {
+		log.Fatalf("No repos found in organization '%s'. Exiting.", orgName)
 	}
 
-	jobs := make(chan RepoJob, len(repositories))
-	results := make(chan RepoResult, len(repositories))
+	jobs := make(chan RepoJob, len(repos))
+	results := make(chan RepoResult, len(repos))
 
 	var wg sync.WaitGroup
 	for w := 1; w <= MaxWorkers; w++ {
@@ -64,7 +69,7 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 		go githubOrgScanner.worker(w, jobs, results, &wg)
 	}
 
-	for _, repo := range repositories {
+	for _, repo := range repos {
 		jobs <- RepoJob{Repo: repo}
 	}
 	close(jobs)
@@ -72,19 +77,19 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 	wg.Wait()
 	close(results)
 
-	var allMatches []processors.Match
 	for res := range results {
 		if res.Error != nil {
 			log.Printf("Error processing repository '%s': %v", res.RepoName, res.Error)
 			continue
 		}
-		allMatches = append(allMatches, res.Matches...)
+		err := githubOrgScanner.matchRepository.Store(res.Matches)
+		if err != nil {
+			log.Fatalf("Error storing matches in '%s': %v", res.RepoName, err)
+		}
 	}
 
-	fmt.Printf("Total Matches: %d\n", len(allMatches)) // Debug statement
-
 	// Generate report
-	err = githubOrgScanner.reporter.GenerateReport(allMatches, reportFormat)
+	err = githubOrgScanner.reporter.GenerateReport(githubOrgScanner.matchRepository, reportFormat)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}

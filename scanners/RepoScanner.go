@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
+	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/utils"
 	"log"
 	"os"
@@ -11,14 +12,19 @@ import (
 )
 
 type RepoScanner struct {
-	reporter    reporters.Reporter
-	fileScanner FileScanner
+	reporter        reporters.Reporter
+	fileScanner     FileScanner
+	matchRepository repositories.MatchRepository
 }
 
-func NewRepoScanner(reporter reporters.Reporter, processors []processors.FileProcessor) *RepoScanner {
+func NewRepoScanner(
+	reporter reporters.Reporter,
+	processors []processors.FileProcessor,
+	matchRepository repositories.MatchRepository) *RepoScanner {
 	return &RepoScanner{
-		reporter:    reporter,
-		fileScanner: FileScanner{processors: processors},
+		reporter:        reporter,
+		fileScanner:     FileScanner{processors: processors},
+		matchRepository: matchRepository,
 	}
 }
 
@@ -42,15 +48,19 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 	}
 
 	// Traverse and search with processors
-	findings, err := repoScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
+	matches, err := repoScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
+	if err != nil {
+		log.Fatalf("Error storing matches in '%s': %v", repoName, err)
+	}
+	err = repoScanner.matchRepository.Store(matches)
 	if err != nil {
 		log.Fatalf("Error searching repository '%s': %v", repoName, err)
 	}
 
-	fmt.Printf("Number of findings: %d\n", len(findings)) // Debug statement
+	fmt.Printf("Number of matches: %d\n", len(matches)) // Debug statement
 
 	// Generate report
-	err = repoScanner.reporter.GenerateReport(findings, reportFormat)
+	err = repoScanner.reporter.GenerateReport(repoScanner.matchRepository, reportFormat)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}

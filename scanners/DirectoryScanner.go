@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
+	"github.com/reaandrew/techdetector/repositories"
 	"log"
 	"os"
 	"path/filepath"
@@ -11,15 +12,19 @@ import (
 
 // DirectoryScanner struct
 type DirectoryScanner struct {
-	reporter    reporters.Reporter
-	fileScanner FileScanner
+	reporter        reporters.Reporter
+	fileScanner     FileScanner
+	matchRepository repositories.MatchRepository
 }
 
 // NewDirectoryScanner creates a new DirectoryScanner
-func NewDirectoryScanner(reporter reporters.Reporter, processors []processors.FileProcessor) *DirectoryScanner {
+func NewDirectoryScanner(reporter reporters.Reporter,
+	processors []processors.FileProcessor,
+	matchRepository repositories.MatchRepository) *DirectoryScanner {
 	return &DirectoryScanner{
-		reporter:    reporter,
-		fileScanner: FileScanner{processors: processors},
+		reporter:        reporter,
+		fileScanner:     FileScanner{processors: processors},
+		matchRepository: matchRepository,
 	}
 }
 
@@ -36,7 +41,7 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 		return
 	}
 
-	var allMatches []processors.Match
+	//var allMatches []processors.Match
 
 	for _, dir := range dirs {
 		fmt.Printf("Processing directory: %s\n", dir)
@@ -49,16 +54,20 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 		}
 
 		fmt.Printf("Number of matches in '%s': %d\n", dir, len(matches))
-		allMatches = append(allMatches, matches...)
+		err = ds.matchRepository.Store(matches)
+		if err != nil {
+			log.Fatalf("Error storing matches in '%s': %v", dir, err)
+		}
+		//allMatches = append(allMatches, matches...)
 	}
 
-	// Generate consolidated report
-	if len(allMatches) == 0 {
-		fmt.Println("No findings detected across all directories.")
-		return
-	}
+	//// Generate consolidated report
+	//if len(allMatches) == 0 {
+	//	fmt.Println("No findings detected across all directories.")
+	//	return
+	//}
 
-	err = ds.reporter.GenerateReport(allMatches, reportFormat)
+	err = ds.reporter.GenerateReport(ds.matchRepository, reportFormat)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}
