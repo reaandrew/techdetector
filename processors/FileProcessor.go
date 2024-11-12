@@ -1,6 +1,8 @@
-package main
+package processors
 
-import "embed"
+import (
+	"embed"
+)
 
 //go:embed data/patterns/*.json
 var patternsFS embed.FS

@@ -6,11 +6,11 @@ require (
 	github.com/BurntSushi/toml v1.4.0
 	github.com/go-git/go-git/v5 v5.12.0
 	github.com/google/go-github/v50 v50.2.0
+	github.com/google/uuid v1.6.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.6.1
 	github.com/stretchr/testify v1.9.0
 	github.com/xuri/excelize/v2 v2.9.0
-	github.com/xwb1989/sqlparser v0.0.0-20180606152119-120387863bf2
 	golang.org/x/oauth2 v0.23.0
 )
 

@@ -1,9 +1,11 @@
-package main
+package reporters
 
 import (
-	"encoding/json"
 	"fmt"
+	"github.com/reaandrew/techdetector/processors"
+	"github.com/reaandrew/techdetector/repositories"
 	"github.com/xuri/excelize/v2"
+	"log"
 	"sort"
 	"strings"
 )
@@ -15,14 +17,14 @@ const (
 type XlsxReporter struct {
 }
 
-func (xlsxReporter XlsxReporter) Report(matches []Match) error {
+func (xlsxReporter XlsxReporter) Report(repository repositories.MatchRepository) error {
 	fmt.Println("Generating XLSX file")
 
 	// Create a new Excel file
 	f := excelize.NewFile()
 
 	// Map to collect matches by normalized type
-	matchesByType := make(map[string][]Match)
+	matchesByType := make(map[string][]processors.Match)
 
 	// Collect all unique property keys per normalized match type
 	propertyKeysByType := make(map[string]map[string]struct{})
@@ -30,8 +32,10 @@ func (xlsxReporter XlsxReporter) Report(matches []Match) error {
 	// Standard fields (excluding Properties)
 	standardFields := []string{"Name", "Category", "RepoName", "Path"}
 
-	// Iterate over Matches to build matchesByType and collect property keys
-	for _, match := range matches {
+	iterator := repository.NewIterator()
+	for iterator.HasNext() {
+		match, _ := iterator.Next()
+
 		// Normalize match type (e.g., trim spaces and convert to lower case)
 		matchType := strings.TrimSpace(match.Type)
 		matchType = strings.ToLower(matchType)
@@ -141,18 +145,16 @@ type Reporter struct {
 	xlsxReporter XlsxReporter
 }
 
-// GenerateReport decides which report to generate based on the report format.
-func (reporter Reporter) GenerateReport(matches []Match, reportFormat string) error {
+func (reporter Reporter) GenerateReport(repository repositories.MatchRepository, reportFormat string) error {
+	defer func(repository repositories.MatchRepository) {
+		err := repository.Clear()
+		if err != nil {
+			log.Fatalf("error clearing repository files %v", err)
+		}
+	}(repository)
 	if reportFormat == "xlsx" {
-		return reporter.xlsxReporter.Report(matches)
+		return reporter.xlsxReporter.Report(repository)
 	}
 
-	// Default to JSON output
-	matchesJSON, err := json.MarshalIndent(matches, "", "    ")
-	if err != nil {
-		return fmt.Errorf("failed to marshal matches to JSON: %w", err)
-	}
-
-	fmt.Println(string(matchesJSON))
 	return nil
 }

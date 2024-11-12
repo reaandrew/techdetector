@@ -1,8 +1,9 @@
-package main
+package processors
 
 import (
 	"bufio"
 	"fmt"
+	"github.com/reaandrew/techdetector/utils"
 	"io"
 	"path/filepath"
 	"strings"
@@ -127,7 +128,7 @@ func (d DockerProcessor) Process(path string, repoName string, content string) (
 	handledInstructions := []string{"MAINTAINER", "LABEL", "FROM", "EXPOSE"}
 
 	for _, instruction := range instructions {
-		if Contains(handledInstructions, instruction.Directive) {
+		if utils.Contains(handledInstructions, instruction.Directive) {
 			matches = append(matches, Match{
 				Name:     instruction.Directive,
 				Type:     "Docker Directive",

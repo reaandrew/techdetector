@@ -1,6 +1,10 @@
 package main
 
 import (
+	"github.com/reaandrew/techdetector/processors"
+	"github.com/reaandrew/techdetector/reporters"
+	"github.com/reaandrew/techdetector/repositories"
+	"github.com/reaandrew/techdetector/scanners"
 	"github.com/spf13/cobra"
 	"log"
 	"os"
@@ -42,9 +46,12 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			scanner := NewRepoScanner(Reporter{}, InitializeProcessors())
+			scanner := scanners.NewRepoScanner(
+				reporters.Reporter{},
+				processors.InitializeProcessors(),
+				repositories.NewFileBasedMatchRepository())
 			repoURL := args[0]
-			scanner.scan(repoURL, cli.reportFormat)
+			scanner.Scan(repoURL, cli.reportFormat)
 		},
 	}
 
@@ -53,9 +60,12 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			scanner := NewGithubOrgScanner(Reporter{}, InitializeProcessors())
+			scanner := scanners.NewGithubOrgScanner(
+				reporters.Reporter{},
+				processors.InitializeProcessors(),
+				repositories.NewFileBasedMatchRepository())
 			orgName := args[0]
-			scanner.scan(orgName, cli.reportFormat)
+			scanner.Scan(orgName, cli.reportFormat)
 		},
 	}
 
@@ -87,7 +97,10 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			}
 
 			// Initialize DirectoryScanner
-			directoryScanner := NewDirectoryScanner(Reporter{}, InitializeProcessors())
+			directoryScanner := scanners.NewDirectoryScanner(
+				reporters.Reporter{},
+				processors.InitializeProcessors(),
+				repositories.NewFileBasedMatchRepository())
 
 			// Execute the scan
 			directoryScanner.Scan(directory, cli.reportFormat)

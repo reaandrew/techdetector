@@ -1,7 +1,8 @@
-package main
+package scanners
 
 import (
 	"fmt"
+	"github.com/reaandrew/techdetector/processors"
 	"io/fs"
 	"log"
 	"os"
@@ -9,12 +10,18 @@ import (
 	"sync"
 )
 
+const (
+	MaxWorkers     = 10
+	MaxFileWorkers = 10
+	CloneBaseDir   = "/tmp/techdetector" // You can make this configurable if needed
+)
+
 type FileScanner struct {
-	processors []FileProcessor
+	processors []processors.FileProcessor
 }
 
-func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]Match, error) {
-	var Matches []Match
+func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]processors.Match, error) {
+	var Matches []processors.Match
 
 	info, err := os.Stat(targetDir)
 	if os.IsNotExist(err) {
@@ -25,7 +32,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 	}
 
 	files := make(chan string, 100)
-	fileMatches := make(chan Match, 100)
+	fileMatches := make(chan processors.Match, 100)
 
 	var wg sync.WaitGroup
 

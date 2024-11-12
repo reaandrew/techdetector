@@ -1,4 +1,4 @@
-package main
+package processors
 
 import (
 	"github.com/stretchr/testify/assert"
