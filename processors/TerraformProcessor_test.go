@@ -1,24 +1,52 @@
-package main
+package processors
 
 import (
 	"fmt"
 	"github.com/hashicorp/hcl/v2/hclparse"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/zclconf/go-cty/cty"
-	"math/big"
 	"os"
 	"testing"
 )
 
-type TerraformBlock struct {
-	Type       string
-	Labels     []string
-	Attributes map[string]interface{}
-	Blocks     []*TerraformBlock
-}
-
 func TestSomethingParserTerraform(t *testing.T) {
 	data := `
+
+module "pfs-software-terraform-modules" {
+  source     = "./modules/repository-collaborators"
+  repository = "pfs-software-terraform-modules"
+  collaborators = [
+    {
+      github_user  = "nathanials"
+      permission   = "admin"
+      name         = "Nathanials Stewart"
+      email        = "n.stewart@kainos.com"
+      org          = "Kainos"
+      reason       = "Kainos is working on transfering code from a kainos owned repo to an MOJ owned repo for Jenkins"
+      added_by     = "jonathan.houston@justice.gov.uk"
+      review_after = "2025-01-26"
+    },
+    {
+      github_user  = "simongivan"
+      permission   = "admin"
+      name         = "Simon Givan"
+      email        = "s.givan@kainos.com"
+      org          = "Kainos"
+      reason       = "Kainos is working on transfering code from a kainos owned repo to an MOJ owned repo"
+      added_by     = "jonathan.houston@justice.gov.uk"
+      review_after = "2025-01-26"
+    },
+    {
+      github_user  = "dmeehankainos"
+      permission   = "admin"
+      name         = "Darren Meehan"
+      email        = "darren.meehan@kainos.com"
+      org          = "Kainos"
+      reason       = "Kainos is working on new modernization platform for Unilink services"
+      added_by     = "federico.staiano1@justice.gov.uk"
+      review_after = "2025-01-26"
+    },
+  ]
+}
 
 module "lambda_AuthenticateFunction" {
   source      = "./terraform-modules/golang-lambda-function"
@@ -109,7 +137,6 @@ resource "aws_security_group_rule" "incoming_dns_udp" {
 }
 `
 
-	// Use hclparse to parse the HCL data
 	parser := hclparse.NewParser()
 	file, diags := parser.ParseHCL([]byte(data), "config.tf")
 	if diags.HasErrors() {
@@ -117,99 +144,22 @@ resource "aws_security_group_rule" "incoming_dns_udp" {
 		os.Exit(1)
 	}
 
-	// Assert that the file body is of type *hclsyntax.Body
 	body, ok := file.Body.(*hclsyntax.Body)
 	if !ok {
 		fmt.Println("Failed to cast body to hclsyntax.Body")
 		os.Exit(1)
 	}
 
-	tfBlocks := parseBody(body, []byte(data))
+	tfBlocks := ParseBody(body, []byte(data))
 
-	// Now you can work with tfBlocks programmatically
 	for _, block := range tfBlocks {
-		printBlock(block, 0)
+		PrintBlock(block, 0)
 	}
 
 	fmt.Println("FINISHED")
 }
 
-// parseBody recursively parses HCL syntax body into TerraformBlock structures.
-func parseBody(body *hclsyntax.Body, src []byte) []*TerraformBlock {
-	var blocks []*TerraformBlock
-
-	// Parse blocks
-	for _, block := range body.Blocks {
-		tfBlock := &TerraformBlock{
-			Type:       block.Type,
-			Labels:     block.Labels,
-			Attributes: make(map[string]interface{}),
-		}
-
-		// Parse attributes within the block
-		for name, attr := range block.Body.Attributes {
-			val, diags := attr.Expr.Value(nil)
-			if diags.HasErrors() {
-				// If unable to evaluate (due to variables, functions, etc.), store the expression as a string
-				rng := attr.Expr.Range()
-				exprSrc := string(src[rng.Start.Byte:rng.End.Byte])
-				tfBlock.Attributes[name] = exprSrc
-				continue
-			}
-
-			tfBlock.Attributes[name] = convertCtyValueToGo(val)
-		}
-
-		// Recursively parse nested blocks
-		tfBlock.Blocks = parseBody(block.Body, src)
-
-		blocks = append(blocks, tfBlock)
-	}
-
-	return blocks
-}
-
-// convertCtyValueToGo converts a cty.Value to a Go interface{}, handling different types appropriately.
-func convertCtyValueToGo(val cty.Value) interface{} {
-	if !val.IsKnown() || val.IsNull() {
-		return nil
-	}
-
-	switch {
-	case val.Type().Equals(cty.String):
-		return val.AsString()
-	case val.Type().Equals(cty.Bool):
-		return val.True()
-	case val.Type().Equals(cty.Number):
-		bf := val.AsBigFloat()
-		if i, acc := bf.Int64(); acc == big.Exact {
-			return i
-		} else if f, _ := bf.Float64(); true {
-			return f
-		} else {
-			return bf.String()
-		}
-	case val.Type().IsListType() || val.Type().IsTupleType():
-		elems := val.AsValueSlice()
-		var list []interface{}
-		for _, elem := range elems {
-			list = append(list, convertCtyValueToGo(elem))
-		}
-		return list
-	case val.Type().IsMapType() || val.Type().IsObjectType():
-		m := make(map[string]interface{})
-		for key, v := range val.AsValueMap() {
-			m[key] = convertCtyValueToGo(v)
-		}
-		return m
-	default:
-		// For other types, return the string representation
-		return val.GoString()
-	}
-}
-
-// printBlock prints the TerraformBlock content with indentation for readability.
-func printBlock(block *TerraformBlock, indent int) {
+func PrintBlock(block *TerraformBlock, indent int) {
 	indentStr := ""
 	for i := 0; i < indent; i++ {
 		indentStr += "  "
@@ -226,6 +176,6 @@ func printBlock(block *TerraformBlock, indent int) {
 		}
 	}
 	for _, nestedBlock := range block.Blocks {
-		printBlock(nestedBlock, indent+1)
+		PrintBlock(nestedBlock, indent+1)
 	}
 }

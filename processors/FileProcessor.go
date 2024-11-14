@@ -24,5 +24,7 @@ func InitializeProcessors() []FileProcessor {
 	processors = append(processors, NewLibrariesProcessor())
 
 	processors = append(processors, DockerProcessor{})
+
+	processors = append(processors, NewTerraformProcessor())
 	return processors
 }
