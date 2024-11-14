@@ -1,132 +1,40 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"github.com/hashicorp/hcl/v2/hclparse"
-	"github.com/hashicorp/hcl/v2/hclsimple"
-	"log"
+	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/zclconf/go-cty/cty"
+	"math/big"
 	"os"
-	"path/filepath"
-	"strings"
 	"testing"
 )
 
-// TerraformConfig represents the structure of Terraform files.
-type TerraformConfig struct {
-	Resources []Resource `hcl:"resource,block"`
-	Variables []Variable `hcl:"variable,block"`
-	Outputs   []Output   `hcl:"output,block"`
-}
-
-// Resource represents a Terraform resource block.
-type Resource struct {
-	Type string                 `hcl:"type,label"` // Resource type (e.g., "aws_s3_bucket")
-	Name string                 `hcl:"name,label"` // Resource name (e.g., "example")
-	Body map[string]interface{} `hcl:",remain"`    // Resource body as a map
-}
-
-// Variable represents a Terraform variable block.
-type Variable struct {
-	Name string                 `hcl:"name,label"` // Variable name
-	Body map[string]interface{} `hcl:",remain"`    // Variable body as a map
-}
-
-// Output represents a Terraform output block.
-type Output struct {
-	Name string                 `hcl:"name,label"` // Output name
-	Body map[string]interface{} `hcl:",remain"`    // Output body as a map
-}
-
-func TestSomethingTerraform(t *testing.T) {
-	data := `
-# Create an SSH key pair for accessing the EC2 instance
-resource "aws_key_pair" "this" {
-  public_key = "${file("${var.ssh_public_key_path}")}"
-}
-
-# Create our default security group to access the instance, over specific protocols
-resource "aws_security_group" "this" {
-  vpc_id = "${data.aws_vpc.this.id}"
-  tags   = "${merge(var.tags, map("Name", "${var.hostname}"))}"
-}
-
-# Incoming SSH & outgoing ANY needs to be allowed for provisioning to work
-
-resource "aws_security_group_rule" "outgoing_any" {
-  security_group_id = "${aws_security_group.this.id}"
-  type              = "egress"
-  from_port         = 0
-  to_port           = 0
-  protocol          = "-1"
-  cidr_blocks       = ["0.0.0.0/0"]
-}
-
-resource "aws_security_group_rule" "incoming_ssh" {
-  security_group_id = "${aws_security_group.this.id}"
-  type              = "ingress"
-  from_port         = 22
-  to_port           = 22
-  protocol          = "tcp"
-  cidr_blocks       = ["0.0.0.0/0"]
-}
-
-# The rest of the security rules are opt-in
-
-resource "aws_security_group_rule" "incoming_http" {
-  count             = "${var.allow_incoming_http ? 1 : 0}"
-  security_group_id = "${aws_security_group.this.id}"
-  type              = "ingress"
-  from_port         = 80
-  to_port           = 80
-  protocol          = "tcp"
-  cidr_blocks       = ["0.0.0.0/0"]
-}
-
-resource "aws_security_group_rule" "incoming_https" {
-  count             = "${var.allow_incoming_https ? 1 : 0}"
-  security_group_id = "${aws_security_group.this.id}"
-  type              = "ingress"
-  from_port         = 443
-  to_port           = 443
-  protocol          = "tcp"
-  cidr_blocks       = ["0.0.0.0/0"]
-}
-
-resource "aws_security_group_rule" "incoming_dns_tcp" {
-  count             = "${var.allow_incoming_dns ? 1 : 0}"
-  security_group_id = "${aws_security_group.this.id}"
-  type              = "ingress"
-  from_port         = 53
-  to_port           = 53
-  protocol          = "tcp"
-  cidr_blocks       = ["0.0.0.0/0"]
-}
-
-resource "aws_security_group_rule" "incoming_dns_udp" {
-  count             = "${var.allow_incoming_dns ? 1 : 0}"
-  security_group_id = "${aws_security_group.this.id}"
-  type              = "ingress"
-  from_port         = 53
-  to_port           = 53
-  protocol          = "udp"
-  cidr_blocks       = ["0.0.0.0/0"]
-}
-`
-
-	config := TerraformConfig{}
-
-	err := hclsimple.Decode("something.hcl", []byte(data), nil, &config)
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	configJson, _ := json.MarshalIndent(config, "", "  ")
-	fmt.Println(string(configJson))
+type TerraformBlock struct {
+	Type       string
+	Labels     []string
+	Attributes map[string]interface{}
+	Blocks     []*TerraformBlock
 }
 
 func TestSomethingParserTerraform(t *testing.T) {
 	data := `
+
+module "lambda_AuthenticateFunction" {
+  source      = "./terraform-modules/golang-lambda-function"
+  lambda_function_description = "Authenticate Function"
+  lambda_function_name = "AuthenticateFunction"
+  lambda_path = "lambdas/AuthenticateFunction"
+  lambda_role_arn = aws_iam_role.lambda.arn
+  lambda_permission_enabled   = true
+  lambda_permission_principal = "apigateway.amazonaws.com"
+  lambda_permission_source_arn = "${aws_apigatewayv2_api.example_http_api.execution_arn}/*/*/*"
+  lambda_environment = var.environment
+  lambda_env_vars = {
+    JWT_SIGNING_SECRET_NAME = "/stackscanner/${var.environment}/jwt_signing_secret_key"
+  }
+}
+
 # Create an SSH key pair for accessing the EC2 instance
 resource "aws_key_pair" "this" {
   public_key = "${file("${var.ssh_public_key_path}")}"
@@ -201,43 +109,123 @@ resource "aws_security_group_rule" "incoming_dns_udp" {
 }
 `
 
-	config := TerraformConfig{}
-
+	// Use hclparse to parse the HCL data
 	parser := hclparse.NewParser()
+	file, diags := parser.ParseHCL([]byte(data), "config.tf")
+	if diags.HasErrors() {
+		fmt.Println("Failed to parse HCL:", diags)
+		os.Exit(1)
+	}
 
-	body, diags := parser.ParseHCL([]byte(data), "something.hcl")
+	// Assert that the file body is of type *hclsyntax.Body
+	body, ok := file.Body.(*hclsyntax.Body)
+	if !ok {
+		fmt.Println("Failed to cast body to hclsyntax.Body")
+		os.Exit(1)
+	}
 
-	if !diags.HasErrors(){
-		body.
+	tfBlocks := parseBody(body, []byte(data))
+
+	// Now you can work with tfBlocks programmatically
+	for _, block := range tfBlocks {
+		printBlock(block, 0)
+	}
+
+	fmt.Println("FINISHED")
+}
+
+// parseBody recursively parses HCL syntax body into TerraformBlock structures.
+func parseBody(body *hclsyntax.Body, src []byte) []*TerraformBlock {
+	var blocks []*TerraformBlock
+
+	// Parse blocks
+	for _, block := range body.Blocks {
+		tfBlock := &TerraformBlock{
+			Type:       block.Type,
+			Labels:     block.Labels,
+			Attributes: make(map[string]interface{}),
+		}
+
+		// Parse attributes within the block
+		for name, attr := range block.Body.Attributes {
+			val, diags := attr.Expr.Value(nil)
+			if diags.HasErrors() {
+				// If unable to evaluate (due to variables, functions, etc.), store the expression as a string
+				rng := attr.Expr.Range()
+				exprSrc := string(src[rng.Start.Byte:rng.End.Byte])
+				tfBlock.Attributes[name] = exprSrc
+				continue
+			}
+
+			tfBlock.Attributes[name] = convertCtyValueToGo(val)
+		}
+
+		// Recursively parse nested blocks
+		tfBlock.Blocks = parseBody(block.Body, src)
+
+		blocks = append(blocks, tfBlock)
+	}
+
+	return blocks
+}
+
+// convertCtyValueToGo converts a cty.Value to a Go interface{}, handling different types appropriately.
+func convertCtyValueToGo(val cty.Value) interface{} {
+	if !val.IsKnown() || val.IsNull() {
+		return nil
+	}
+
+	switch {
+	case val.Type().Equals(cty.String):
+		return val.AsString()
+	case val.Type().Equals(cty.Bool):
+		return val.True()
+	case val.Type().Equals(cty.Number):
+		bf := val.AsBigFloat()
+		if i, acc := bf.Int64(); acc == big.Exact {
+			return i
+		} else if f, _ := bf.Float64(); true {
+			return f
+		} else {
+			return bf.String()
+		}
+	case val.Type().IsListType() || val.Type().IsTupleType():
+		elems := val.AsValueSlice()
+		var list []interface{}
+		for _, elem := range elems {
+			list = append(list, convertCtyValueToGo(elem))
+		}
+		return list
+	case val.Type().IsMapType() || val.Type().IsObjectType():
+		m := make(map[string]interface{})
+		for key, v := range val.AsValueMap() {
+			m[key] = convertCtyValueToGo(v)
+		}
+		return m
+	default:
+		// For other types, return the string representation
+		return val.GoString()
 	}
 }
 
-func TestFileWalkerSomething(t *testing.T) {
-	rootDir := "/tmp/terraform-examples"
-	filepath.WalkDir(rootDir, func(path string, d os.DirEntry, err error) error {
-		if err != nil {
-			// If there's an error accessing the path, skip it
-			fmt.Fprintf(os.Stderr, "error accessing path %q: %v\n", path, err)
-			return nil
+// printBlock prints the TerraformBlock content with indentation for readability.
+func printBlock(block *TerraformBlock, indent int) {
+	indentStr := ""
+	for i := 0; i < indent; i++ {
+		indentStr += "  "
+	}
+
+	fmt.Printf("%sType: %s\n", indentStr, block.Type)
+	if len(block.Labels) > 0 {
+		fmt.Printf("%sLabels: %v\n", indentStr, block.Labels)
+	}
+	if len(block.Attributes) > 0 {
+		fmt.Printf("%sAttributes:\n", indentStr)
+		for k, v := range block.Attributes {
+			fmt.Printf("%s  %s = %v\n", indentStr, k, v)
 		}
-
-		// If it's a file and has a .tf extension
-		if !d.IsDir() && strings.HasSuffix(d.Name(), ".tf") {
-
-			hcl_path := strings.ReplaceAll(path, ".tf", ".hcl")
-			content, _ := os.ReadFile(path)
-
-			config := TerraformConfig{}
-
-			err := hclsimple.Decode(hcl_path, []byte(content), nil, &config)
-
-			if err != nil {
-				configJson, _ := json.MarshalIndent(config, "", "  ")
-				fmt.Println(string(configJson))
-			} else {
-				log.Fatal(err)
-			}
-		}
-		return nil
-	})
+	}
+	for _, nestedBlock := range block.Blocks {
+		printBlock(nestedBlock, indent+1)
+	}
 }
