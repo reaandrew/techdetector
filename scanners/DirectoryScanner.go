@@ -67,7 +67,7 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 	//	return
 	//}
 
-	err = ds.reporter.GenerateReport(ds.matchRepository, reportFormat)
+	err = ds.reporter.Report(ds.matchRepository)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}

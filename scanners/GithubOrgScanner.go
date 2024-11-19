@@ -89,7 +89,7 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 	}
 
 	// Generate report
-	err = githubOrgScanner.reporter.GenerateReport(githubOrgScanner.matchRepository, reportFormat)
+	err = githubOrgScanner.reporter.Report(githubOrgScanner.matchRepository)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}

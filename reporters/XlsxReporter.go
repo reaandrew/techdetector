@@ -5,7 +5,6 @@ import (
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/xuri/excelize/v2"
-	"log"
 	"sort"
 	"strings"
 )
@@ -138,23 +137,5 @@ func (xlsxReporter XlsxReporter) Report(repository repositories.MatchRepository)
 	}
 
 	fmt.Printf("XLSX report generated successfully: %s\n", outputFile)
-	return nil
-}
-
-type Reporter struct {
-	xlsxReporter XlsxReporter
-}
-
-func (reporter Reporter) GenerateReport(repository repositories.MatchRepository, reportFormat string) error {
-	defer func(repository repositories.MatchRepository) {
-		err := repository.Clear()
-		if err != nil {
-			log.Fatalf("error clearing repository files %v", err)
-		}
-	}(repository)
-	if reportFormat == "xlsx" {
-		return reporter.xlsxReporter.Report(repository)
-	}
-
 	return nil
 }

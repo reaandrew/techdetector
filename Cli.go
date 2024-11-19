@@ -46,8 +46,12 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
+			reporter, err := reporters.CreateReporter(cli.reportFormat)
+			if err != nil {
+				log.Fatal(err)
+			}
 			scanner := scanners.NewRepoScanner(
-				reporters.Reporter{},
+				reporter,
 				processors.InitializeProcessors(),
 				repositories.NewFileBasedMatchRepository())
 			repoURL := args[0]
@@ -60,8 +64,12 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
+			reporter, err := reporters.CreateReporter(cli.reportFormat)
+			if err != nil {
+				log.Fatal(err)
+			}
 			scanner := scanners.NewGithubOrgScanner(
-				reporters.Reporter{},
+				reporter,
 				processors.InitializeProcessors(),
 				repositories.NewFileBasedMatchRepository())
 			orgName := args[0]
@@ -96,9 +104,13 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 				log.Fatalf("Provided path '%s' is not a directory.", directory)
 			}
 
+			reporter, err := reporters.CreateReporter(cli.reportFormat)
+			if err != nil {
+				log.Fatal(err)
+			}
 			// Initialize DirectoryScanner
 			directoryScanner := scanners.NewDirectoryScanner(
-				reporters.Reporter{},
+				reporter,
 				processors.InitializeProcessors(),
 				repositories.NewFileBasedMatchRepository())
 
