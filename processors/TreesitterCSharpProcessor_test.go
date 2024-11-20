@@ -2,6 +2,7 @@ package processors
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	sitter "github.com/smacker/go-tree-sitter"
 	"github.com/smacker/go-tree-sitter/csharp"
@@ -10,6 +11,7 @@ import (
 	"os"
 	"path"
 	"path/filepath"
+	"strings"
 	"sync"
 	"testing"
 )
@@ -74,6 +76,7 @@ func test_collectTypeDeclarations(node *sitter.Node, sourceCode []byte, typeToFi
 
 	for i := 0; i < int(node.NamedChildCount()); i++ {
 		child := node.NamedChild(i)
+
 		test_collectTypeDeclarations(child, sourceCode, typeToFile, filePath)
 	}
 }
@@ -285,4 +288,216 @@ namespace SampleApp
 		fmt.Println("Dependency graph generated in dependencies.dot")
 	}
 
+}
+
+// Queue is a generic queue data structure
+type Queue[T any] struct {
+	elements []T
+}
+
+// Enqueue adds an element to the end of the queue
+func (q *Queue[T]) Enqueue(value T) {
+	q.elements = append(q.elements, value)
+}
+
+// Dequeue removes and returns the front element from the queue
+// Returns an error if the queue is empty
+func (q *Queue[T]) Dequeue() (T, error) {
+	var zeroValue T // Default zero value for the type
+	if len(q.elements) == 0 {
+		return zeroValue, errors.New("queue is empty")
+	}
+
+	// Get the front element
+	front := q.elements[0]
+
+	// Remove the front element
+	q.elements = q.elements[1:]
+
+	return front, nil
+}
+
+func TestSomethingElseElseCSharp(t *testing.T) {
+	tempDir, err := os.MkdirTemp("", "csfiles")
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	csFiles := map[string]string{
+		"Program.cs": `using System;
+
+namespace SampleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var greeter = new Greeter();
+            greeter.Greet("World");
+
+            var calculator = new Calculator();
+            int sum = calculator.Add(5, 7);
+            Console.WriteLine($"Sum: {sum}");
+
+            var dataService = new DataService();
+            dataService.SaveData("Sample Data");
+        }
+    }
+}`,
+		"Greeter.cs": `using System;
+
+namespace SampleApp
+{
+    public class Greeter
+    {
+        public void Greet(string name)
+        {
+            Console.WriteLine($"Hello, {name}!");
+        }
+    }
+}`,
+		"Calculator.cs": `namespace SampleApp
+{
+    public class Calculator
+    {
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
+    }
+}`,
+		"DataService.cs": `using System;
+
+namespace SampleApp
+{
+    public class DataService
+    {
+        public void SaveData(string data)
+        {
+            Console.WriteLine($"Data '{data}' has been saved.");
+        }
+    }
+}`,
+	}
+
+	for fileName, content := range csFiles {
+		err := os.WriteFile(path.Join(tempDir, fileName), []byte(content), 0644)
+		if err != nil {
+			t.Fatal(err)
+		}
+	}
+
+	fileTrees := make(map[string]*sitter.Tree)
+	var mu sync.Mutex
+	var wg sync.WaitGroup
+
+	//dir := tempDir
+	dir := "/home/parallels/Development/clients/defra/epr/epr-laps-home"
+	// Walk through the directory and parse each .cs file
+	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		if filepath.Ext(path) == ".cs" {
+			wg.Add(1)
+			go func(path string) {
+				defer wg.Done()
+				sourceCode, err := os.ReadFile(path)
+				if err != nil {
+					log.Printf("Failed to read file %s: %v\n", path, err)
+					return
+				}
+
+				parser := sitter.NewParser()
+				parser.SetLanguage(csharp.GetLanguage())
+				tree, _ := parser.ParseCtx(context.TODO(), nil, sourceCode)
+
+				mu.Lock()
+				fileTrees[path] = tree
+				mu.Unlock()
+			}(path)
+		}
+		return nil
+	})
+
+	if err != nil {
+		log.Fatalf("Error walking the path %q: %v\n", dir, err)
+	}
+
+	wg.Wait()
+
+	nodeQueue := Queue[*sitter.Node]{}
+
+	for path, filetree := range fileTrees {
+		root := filetree.RootNode()
+		nodeQueue.Enqueue(root)
+		code, _ := os.ReadFile(path)
+		var currentNamespace string
+		//usingDirectives := map[string]bool{} // Track `using` directives
+
+		for len(nodeQueue.elements) > 0 {
+			node, _ := nodeQueue.Dequeue()
+
+			switch node.Type() {
+			case "namespace_declaration", "file_scoped_namespace_declaration":
+				nameNode := node.ChildByFieldName("name")
+				if nameNode != nil {
+					currentNamespace = nameNode.Content(code)
+				}
+
+			case "qualified_name":
+				if currentNamespace != "" {
+					target := sanitizeDOTLabel(node.Content(code))
+					fmt.Printf("    \"%s\" -> \"%s\";\n", currentNamespace, target)
+				}
+			}
+
+			// Enqueue child nodes
+			for i := 0; i < int(node.NamedChildCount()); i++ {
+				nodeQueue.Enqueue(node.NamedChild(i))
+			}
+		}
+	}
+	/*
+
+		AN ATTEMPT AT JAVA:
+
+		nodeQueue := Queue[*sitter.Node]{}
+
+		for path, filetree := range fileTrees {
+			root := filetree.RootNode()
+			nodeQueue.Enqueue(root)
+			code, _ := os.ReadFile(path)
+			var currentPackage string
+
+			for len(nodeQueue.elements) > 0 {
+				node, _ := nodeQueue.Dequeue()
+
+				switch node.Type() {
+				case "package_declaration":
+					nameNode := node.ChildByFieldName("name")
+					if nameNode != nil {
+						currentPackage = nameNode.Content(code)
+					}
+
+				case "qualified_identifier":
+					if currentPackage != "" {
+						target := sanitizeDOTLabel(node.Content(code))
+						fmt.Printf("    \"%s\" -> \"%s\";\n", currentPackage, target)
+					}
+				}
+
+				// Enqueue child nodes
+				for i := 0; i < int(node.NamedChildCount()); i++ {
+					nodeQueue.Enqueue(node.NamedChild(i))
+				}
+			}
+		}
+
+
+	*/
+}
+
+func sanitizeDOTLabel(label string) string {
+	return strings.ReplaceAll(label, "\"", "\\\"")
 }
