@@ -15,7 +15,7 @@ type FileBasedMatchRepository struct {
 	files []string
 }
 
-func NewFileBasedMatchRepository() *FileBasedMatchRepository {
+func NewFileBasedMatchRepository() MatchRepository {
 	return &FileBasedMatchRepository{
 		path:  os.TempDir(),
 		files: make([]string, 0),
@@ -49,69 +49,53 @@ func (r *FileBasedMatchRepository) Clear() error {
 	return nil
 }
 
-// NewIterator creates a new MatchIterator for the repository
-func (r *FileBasedMatchRepository) NewIterator() *MatchIterator {
-	return &MatchIterator{
-		repository:   r,
-		currentFile:  0,
-		matches:      nil,
-		currentMatch: 0,
+// NewIterator creates a new FileBasedMatchIterator for the Repository
+func (r *FileBasedMatchRepository) NewIterator() MatchIterator {
+	return &FileBasedMatchIterator{
+		Repository:  r,
+		currentFile: 0,
+		matchSet:    MatchSet{Matches: nil},
 	}
 }
 
-// MatchIterator implements the Iterator pattern for Match instances
-type MatchIterator struct {
-	repository   *FileBasedMatchRepository
-	currentFile  int
-	matches      []processors.Match
-	currentMatch int
+// FileBasedMatchIterator implements the Iterator pattern for Match instances
+type FileBasedMatchIterator struct {
+	Repository  *FileBasedMatchRepository
+	currentFile int
+	matchSet    MatchSet
 }
 
 // HasNext checks if there are more Match instances to iterate over
-func (it *MatchIterator) HasNext() bool {
-	// Check if there are remaining matches in the current file
-	if it.matches != nil && it.currentMatch < len(it.matches) {
-		return true
-	}
-
-	// Attempt to load the next file until a file with matches is found or all files are exhausted
-	for it.currentFile < len(it.repository.files) {
+func (it *FileBasedMatchIterator) HasNext() bool {
+	// Attempt to load the next file until a file with matchSet is found or all files are exhausted
+	for it.currentFile < len(it.Repository.files) {
 		err := it.loadNextFile()
 		if err != nil {
-			// Log the error and skip to the next file
-			log.Printf("Error loading file %s: %v", it.repository.files[it.currentFile], err)
+			log.Printf("Error loading file %s: %v", it.Repository.files[it.currentFile], err)
 			it.currentFile++
 			continue
 		}
-
-		// If the loaded file has matches, return true
-		if len(it.matches) > 0 && it.currentMatch < len(it.matches) {
-			return true
-		}
+		return true
 	}
-
-	// No more matches available
 	return false
 }
 
 // Next retrieves the next Match instance
-func (it *MatchIterator) Next() (processors.Match, error) {
-	if !it.HasNext() {
-		return processors.Match{}, fmt.Errorf("no more matches available")
-	}
+func (it *FileBasedMatchIterator) Next() (MatchSet, error) {
 
-	match := it.matches[it.currentMatch]
-	it.currentMatch++
-	return match, nil
+	if it.matchSet.Matches == nil {
+		return MatchSet{}, fmt.Errorf("no more matchSet available")
+	}
+	return it.matchSet, nil
 }
 
-// loadNextFile loads matches from the next file
-func (it *MatchIterator) loadNextFile() error {
-	if it.currentFile >= len(it.repository.files) {
+// loadNextFile loads matchSet from the next file
+func (it *FileBasedMatchIterator) loadNextFile() error {
+	if it.currentFile >= len(it.Repository.files) {
 		return fmt.Errorf("no more files to load")
 	}
 
-	filePath := it.repository.files[it.currentFile]
+	filePath := it.Repository.files[it.currentFile]
 	data, err := os.ReadFile(filePath)
 	if err != nil {
 		return fmt.Errorf("failed to read file %s: %w", filePath, err)
@@ -119,12 +103,12 @@ func (it *MatchIterator) loadNextFile() error {
 
 	var matches []processors.Match
 	err = json.Unmarshal(data, &matches)
+
 	if err != nil {
 		return fmt.Errorf("failed to parse JSON in file %s: %w", filePath, err)
 	}
 
-	it.matches = matches
-	it.currentMatch = 0
+	it.matchSet = MatchSet{Matches: matches}
 	it.currentFile++
 
 	return nil

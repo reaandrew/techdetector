@@ -33,23 +33,25 @@ func (xlsxReporter XlsxReporter) Report(repository repositories.MatchRepository)
 
 	iterator := repository.NewIterator()
 	for iterator.HasNext() {
-		match, _ := iterator.Next()
+		matchSet, _ := iterator.Next()
 
-		// Normalize match type (e.g., trim spaces and convert to lower case)
-		matchType := strings.TrimSpace(match.Type)
-		matchType = strings.ToLower(matchType)
+		for _, match := range matchSet.Matches {
+			// Normalize match type (e.g., trim spaces and convert to lower case)
+			matchType := strings.TrimSpace(match.Type)
+			matchType = strings.ToLower(matchType)
 
-		// Update the match.Type to normalized value to maintain consistency
-		match.Type = matchType
+			// Update the match.Type to normalized value to maintain consistency
+			match.Type = matchType
 
-		matchesByType[matchType] = append(matchesByType[matchType], match)
+			matchesByType[matchType] = append(matchesByType[matchType], match)
 
-		if propertyKeysByType[matchType] == nil {
-			propertyKeysByType[matchType] = make(map[string]struct{})
-		}
+			if propertyKeysByType[matchType] == nil {
+				propertyKeysByType[matchType] = make(map[string]struct{})
+			}
 
-		for key := range match.Properties {
-			propertyKeysByType[matchType][key] = struct{}{}
+			for key := range match.Properties {
+				propertyKeysByType[matchType][key] = struct{}{}
+			}
 		}
 	}
 

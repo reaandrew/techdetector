@@ -97,6 +97,7 @@ func TestIterator(t *testing.T) {
 			Name: "match 2",
 		},
 	})
+	assert.Nil(t, err)
 	err = repository.Store([]processors.Match{
 		{
 			Name: "match 3",
@@ -105,15 +106,18 @@ func TestIterator(t *testing.T) {
 			Name: "match 4",
 		},
 	})
+	assert.Nil(t, err)
 
 	count := 0
 	names := []string{}
 	matchIterator := repository.NewIterator()
 	for matchIterator.HasNext() {
-		match, err := matchIterator.Next()
+		matchSet, err := matchIterator.Next()
 		assert.Nil(t, err)
-		names = append(names, match.Name)
-		count++
+		for _, match := range matchSet.Matches {
+			names = append(names, match.Name)
+			count++
+		}
 	}
 
 	assert.Equal(t, 4, count)
