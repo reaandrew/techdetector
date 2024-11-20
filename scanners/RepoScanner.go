@@ -60,6 +60,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 	fmt.Printf("Number of matches: %d\n", len(matches)) // Debug statement
 
 	// Generate report
+
 	err = repoScanner.reporter.Report(repoScanner.matchRepository)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)

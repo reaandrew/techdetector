@@ -110,6 +110,6 @@ func TestHttpReporter_Report(t *testing.T) {
 	assert.Equal(t, "POST", request1.Method)
 
 	request2 := client.GetRequests()[1]
-	assert.Equal(t, fmt.Sprintf("https://somewhere/reports/%s", expectedId), request2.URL.String())
+	assert.Equal(t, fmt.Sprintf("https://somewhere/report/%s", expectedId), request2.URL.String())
 	assert.Equal(t, "PATCH", request2.Method)
 }

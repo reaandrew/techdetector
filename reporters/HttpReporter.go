@@ -29,7 +29,14 @@ type DefaultHttpClient struct {
 }
 
 func (d DefaultHttpClient) Do(req *http.Request) (*http.Response, error) {
-	return http.DefaultClient.Do(req)
+	fmt.Println("Sending request")
+	response, err := http.DefaultClient.Do(req)
+	if err != nil {
+		fmt.Printf("Error sending request: %v\n", err)
+	} else {
+		fmt.Printf("Success sending request: %v\n", response)
+	}
+	return response, err
 }
 
 func NewDefaultHttpReporter(baseUrl string) HttpReporter {
@@ -47,6 +54,7 @@ type HttpReporter struct {
 }
 
 func (h HttpReporter) Report(repository repositories.MatchRepository) error {
+	fmt.Println("Reporting to HTTP")
 	iterator := repository.NewIterator()
 
 	reportId := h.ReportIdGenerator.Generate()
@@ -56,12 +64,15 @@ func (h HttpReporter) Report(repository repositories.MatchRepository) error {
 
 		err := h.postMatch(matchSet, reportId)
 		if err != nil {
+			fmt.Println(err)
 			return fmt.Errorf("failed to report matchSet: %v", err)
 		}
 	}
 
+	fmt.Println("signalling completion")
 	err := h.signalCompletion(reportId)
 	if err != nil {
+		fmt.Println(err)
 		return fmt.Errorf("failed to signal completion: %v", err)
 	}
 
@@ -96,12 +107,13 @@ func (h HttpReporter) postMatch(match repositories.MatchSet, reportId string) er
 }
 
 func (h HttpReporter) signalCompletion(reportId string) error {
-	url := fmt.Sprintf("%s/reports/%s", h.BaseURL, reportId)
-
+	url := fmt.Sprintf("%s/report/%s", h.BaseURL, reportId)
+	fmt.Printf("URL: %s", url)
 	req, err := http.NewRequest("PATCH", url, bytes.NewReader([]byte(`{
     "status": "completed"
 }`)))
 	if err != nil {
+		fmt.Println(err)
 		return fmt.Errorf("failed to create request: %v", err)
 	}
 
