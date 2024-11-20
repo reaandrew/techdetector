@@ -27,3 +27,5 @@ go.work.sum
 *.xlsx
 cloud_services_report.json
 techdetector
+*.dot
+dependencies.png
