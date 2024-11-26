@@ -176,8 +176,8 @@ func copyProperties(properties map[string]interface{}) map[string]interface{} {
 	return newProperties
 }
 
-func (s *FilePatternsProcessor) Process(path string, repoName string, content string) ([]reporters.Finding, error) {
-	var matches []reporters.Finding
+func (s *FilePatternsProcessor) Process(path string, repoName string, content string) ([]core.Finding, error) {
+	var matches []core.Finding
 	for _, pattern := range s.Patterns {
 		// Skip patterns that specify both file_names and file_extensions (Rule 1)
 		if !isNilOrEmpty(pattern.Filenames) && !isNilOrEmpty(pattern.FileExtensions) {
@@ -230,8 +230,8 @@ func (s *FilePatternsProcessor) Process(path string, repoName string, content st
 	return matches, nil
 }
 
-func createMatch(pattern Pattern, path string, repoName string) reporters.Finding {
-	return reporters.Finding{
+func createMatch(pattern Pattern, path string, repoName string) core.Finding {
+	return core.Finding{
 		Name:       pattern.Name,
 		Type:       pattern.Type,
 		Category:   pattern.Category,

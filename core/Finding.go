@@ -1,4 +1,4 @@
-package reporters
+package core
 
 type Finding struct {
 	Name       string                 `json:"name,omitempty"`

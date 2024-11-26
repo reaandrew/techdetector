@@ -2,7 +2,7 @@ package reporters
 
 import (
 	"fmt"
-	reporters2 "github.com/reaandrew/techdetector/core"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/xuri/excelize/v2"
 	"sort"
 	"strings"
@@ -15,14 +15,14 @@ const (
 type XlsxReporter struct {
 }
 
-func (xlsxReporter XlsxReporter) Report(repository reporters2.FindingRepository) error {
+func (xlsxReporter XlsxReporter) Report(repository core.FindingRepository) error {
 	fmt.Println("Generating XLSX file")
 
 	// Create a new Excel file
 	f := excelize.NewFile()
 
 	// Map to collect matches by normalized type
-	matchesByType := make(map[string][]reporters2.Finding)
+	matchesByType := make(map[string][]core.Finding)
 
 	// Collect all unique property keys per normalized match type
 	propertyKeysByType := make(map[string]map[string]struct{})

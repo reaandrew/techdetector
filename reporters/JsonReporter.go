@@ -15,7 +15,7 @@ const (
 type JsonReporter struct {
 }
 
-func (j JsonReporter) Report(repository reporters.FindingRepository) error {
+func (j JsonReporter) Report(repository core.FindingRepository) error {
 	outputFile, err := os.OpenFile(DefaultJsonReport, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatalf("Failed to open outputFile: %v", err)

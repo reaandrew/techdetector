@@ -1,4 +1,4 @@
-package reporters
+package core
 
 // FileProcessor is an interface that defines a generic processor.
 type FileProcessor interface {

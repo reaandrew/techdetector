@@ -1,4 +1,4 @@
-package reporters
+package core
 
 type FindingSet struct {
 	Matches []Finding `json:"matchSet"`

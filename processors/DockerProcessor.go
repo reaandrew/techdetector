@@ -119,8 +119,8 @@ func (d DockerProcessor) Supports(filePath string) bool {
 	return filename == "Dockerfile" || strings.HasPrefix(filename, "Dockerfile.")
 }
 
-func (d DockerProcessor) Process(path string, repoName string, content string) ([]reporters.Finding, error) {
-	var matches []reporters.Finding
+func (d DockerProcessor) Process(path string, repoName string, content string) ([]core.Finding, error) {
+	var matches []core.Finding
 	reader := strings.NewReader(content)
 	instructions, err := ParseDockerfile(reader)
 	if err != nil {
@@ -130,7 +130,7 @@ func (d DockerProcessor) Process(path string, repoName string, content string) (
 
 	for _, instruction := range instructions {
 		if utils.Contains(handledInstructions, instruction.Directive) {
-			matches = append(matches, reporters.Finding{
+			matches = append(matches, core.Finding{
 				Name:     instruction.Directive,
 				Type:     "Docker Directive",
 				Category: "",

@@ -1,4 +1,4 @@
-package reporters
+package core
 
 type Reporter interface {
 	Report(repository FindingRepository) error

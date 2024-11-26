@@ -50,8 +50,8 @@ func (mp *LibrariesProcessor) Supports(filePath string) bool {
 	return false
 }
 
-func (mp *LibrariesProcessor) Process(path string, repoName string, content string) ([]reporters.Finding, error) {
-	var matches []reporters.Finding
+func (mp *LibrariesProcessor) Process(path string, repoName string, content string) ([]core.Finding, error) {
+	var matches []core.Finding
 	base := filepath.Base(path)
 
 	switch base {
@@ -100,7 +100,7 @@ func (mp *LibrariesProcessor) Process(path string, repoName string, content stri
 	return matches, nil
 }
 
-func (mp *LibrariesProcessor) parsePomXML(content string, repoName string, path string) ([]reporters.Finding, error) {
+func (mp *LibrariesProcessor) parsePomXML(content string, repoName string, path string) ([]core.Finding, error) {
 	type Dependency struct {
 		GroupID    string `xml:"groupId"`
 		ArtifactID string `xml:"artifactId"`
@@ -118,10 +118,10 @@ func (mp *LibrariesProcessor) parsePomXML(content string, repoName string, path 
 		return nil, err
 	}
 
-	var matches []reporters.Finding
+	var matches []core.Finding
 	for _, dep := range project.Dependencies {
 		libraryName := fmt.Sprintf("%s:%s", dep.GroupID, dep.ArtifactID)
-		match := reporters.Finding{
+		match := core.Finding{
 			Name:     libraryName,
 			Type:     "Library",
 			Category: "",
@@ -138,9 +138,9 @@ func (mp *LibrariesProcessor) parsePomXML(content string, repoName string, path 
 	return matches, nil
 }
 
-func (mp *LibrariesProcessor) parseGoMod(content string, repoName string, path string) ([]reporters.Finding, error) {
+func (mp *LibrariesProcessor) parseGoMod(content string, repoName string, path string) ([]core.Finding, error) {
 	lines := strings.Split(content, "\n")
-	var matches []reporters.Finding
+	var matches []core.Finding
 	var inRequireBlock bool
 
 	for _, line := range lines {
@@ -168,7 +168,7 @@ func (mp *LibrariesProcessor) parseGoMod(content string, repoName string, path s
 			if len(parts) >= 2 {
 				libraryName := parts[0]
 				version := parts[1]
-				match := reporters.Finding{
+				match := core.Finding{
 					Name:     libraryName,
 					Type:     "Library",
 					Category: "",
@@ -187,7 +187,7 @@ func (mp *LibrariesProcessor) parseGoMod(content string, repoName string, path s
 	return matches, nil
 }
 
-func (mp *LibrariesProcessor) parsePackageJSON(content string, repoName string, path string) ([]reporters.Finding, error) {
+func (mp *LibrariesProcessor) parsePackageJSON(content string, repoName string, path string) ([]core.Finding, error) {
 	type PackageJSON struct {
 		Dependencies    map[string]string `json:"dependencies"`
 		DevDependencies map[string]string `json:"devDependencies"`
@@ -199,7 +199,7 @@ func (mp *LibrariesProcessor) parsePackageJSON(content string, repoName string, 
 		return nil, err
 	}
 
-	var matches []reporters.Finding
+	var matches []core.Finding
 
 	combined := make(map[string]string)
 	for k, v := range pkg.Dependencies {
@@ -210,7 +210,7 @@ func (mp *LibrariesProcessor) parsePackageJSON(content string, repoName string, 
 	}
 
 	for lib, ver := range combined {
-		match := reporters.Finding{
+		match := core.Finding{
 			Name:     lib,
 			Type:     "Library",
 			Category: "",
@@ -227,9 +227,9 @@ func (mp *LibrariesProcessor) parsePackageJSON(content string, repoName string, 
 	return matches, nil
 }
 
-func (mp *LibrariesProcessor) parseRequirementsTXT(content string, repoName string, path string) ([]reporters.Finding, error) {
+func (mp *LibrariesProcessor) parseRequirementsTXT(content string, repoName string, path string) ([]core.Finding, error) {
 	lines := strings.Split(content, "\n")
-	matches := make([]reporters.Finding, 0, len(lines))
+	matches := make([]core.Finding, 0, len(lines))
 
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
@@ -255,7 +255,7 @@ func (mp *LibrariesProcessor) parseRequirementsTXT(content string, repoName stri
 			libraryName = line
 			version = "N/A"
 		}
-		match := reporters.Finding{
+		match := core.Finding{
 			Name:     libraryName,
 			Type:     "Library",
 			Category: "",
@@ -272,7 +272,7 @@ func (mp *LibrariesProcessor) parseRequirementsTXT(content string, repoName stri
 	return matches, nil
 }
 
-func (mp *LibrariesProcessor) parsePyProjectToml(content string, repoName string, path string) ([]reporters.Finding, error) {
+func (mp *LibrariesProcessor) parsePyProjectToml(content string, repoName string, path string) ([]core.Finding, error) {
 	type PyProject struct {
 		Tool struct {
 			Poetry struct {
@@ -287,7 +287,7 @@ func (mp *LibrariesProcessor) parsePyProjectToml(content string, repoName string
 		return nil, err
 	}
 
-	var matches []reporters.Finding
+	var matches []core.Finding
 
 	combined := make(map[string]string)
 	for k, v := range py.Tool.Poetry.Dependencies {
@@ -302,7 +302,7 @@ func (mp *LibrariesProcessor) parsePyProjectToml(content string, repoName string
 	}
 
 	for lib, ver := range combined {
-		match := reporters.Finding{
+		match := core.Finding{
 			Name:     lib,
 			Type:     "Library",
 			Category: "",
@@ -319,7 +319,7 @@ func (mp *LibrariesProcessor) parsePyProjectToml(content string, repoName string
 	return matches, nil
 }
 
-func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path string) ([]reporters.Finding, error) {
+func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path string) ([]core.Finding, error) {
 	type PackageReference struct {
 		Include string `xml:"Include,attr"`
 		Version string `xml:"Version,attr"`
@@ -342,7 +342,7 @@ func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path 
 		return nil, err
 	}
 
-	var matches []reporters.Finding
+	var matches []core.Finding
 
 	for _, pr := range project.PackageReferences {
 		if strings.TrimSpace(pr.Include) == "" {
@@ -356,7 +356,7 @@ func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path 
 			version = "N/A" // Or any default value you prefer
 		}
 
-		match := reporters.Finding{
+		match := core.Finding{
 			Name:     libraryName,
 			Type:     "Library",
 			Category: "",
@@ -383,7 +383,7 @@ func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path 
 		if strings.TrimSpace(version) == "" {
 			version = "N/A" // Default if both are missing
 		}
-		match := reporters.Finding{
+		match := core.Finding{
 			Name:     libraryName,
 			Type:     "Library",
 			Category: "",

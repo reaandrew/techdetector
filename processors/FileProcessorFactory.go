@@ -9,8 +9,8 @@ import (
 var patternsFS embed.FS
 
 // InitializeProcessors creates and returns a slice of FileProcessor implementations.
-func InitializeProcessors() []reporters.FileProcessor {
-	var processors []reporters.FileProcessor
+func InitializeProcessors() []core.FileProcessor {
+	var processors []core.FileProcessor
 
 	filePatternsProcessor := NewFilePatternsProcessor(patternsFS)
 	processors = append(processors, filePatternsProcessor)

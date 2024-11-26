@@ -2,7 +2,7 @@ package scanners
 
 import (
 	"fmt"
-	reporters2 "github.com/reaandrew/techdetector/core"
+	"github.com/reaandrew/techdetector/core"
 	"log"
 	"os"
 	"path/filepath"
@@ -10,15 +10,15 @@ import (
 
 // DirectoryScanner struct
 type DirectoryScanner struct {
-	reporter        reporters2.Reporter
+	reporter        core.Reporter
 	fileScanner     FileScanner
-	matchRepository reporters2.FindingRepository
+	matchRepository core.FindingRepository
 }
 
 // NewDirectoryScanner creates a new DirectoryScanner
-func NewDirectoryScanner(reporter reporters2.Reporter,
-	processors []reporters2.FileProcessor,
-	matchRepository reporters2.FindingRepository) *DirectoryScanner {
+func NewDirectoryScanner(reporter core.Reporter,
+	processors []core.FileProcessor,
+	matchRepository core.FindingRepository) *DirectoryScanner {
 	return &DirectoryScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},

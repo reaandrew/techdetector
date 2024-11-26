@@ -15,14 +15,14 @@ type FileBasedFindingRepository struct {
 	files []string
 }
 
-func NewFileBasedMatchRepository() reporters.FindingRepository {
+func NewFileBasedMatchRepository() core.FindingRepository {
 	return &FileBasedFindingRepository{
 		path:  os.TempDir(),
 		files: make([]string, 0),
 	}
 }
 
-func (r *FileBasedFindingRepository) Store(matches []reporters.Finding) error {
+func (r *FileBasedFindingRepository) Store(matches []core.Finding) error {
 	jsonData, err := json.MarshalIndent(matches, "", "  ") // Pretty-print with indentation
 	if err != nil {
 		return err
@@ -50,11 +50,11 @@ func (r *FileBasedFindingRepository) Clear() error {
 }
 
 // NewIterator creates a new FileBasedMatchIterator for the Repository
-func (r *FileBasedFindingRepository) NewIterator() reporters.FindingIterator {
+func (r *FileBasedFindingRepository) NewIterator() core.FindingIterator {
 	return &FileBasedMatchIterator{
 		Repository:  r,
 		currentFile: 0,
-		matchSet:    reporters.FindingSet{Matches: nil},
+		matchSet:    core.FindingSet{Matches: nil},
 	}
 }
 
@@ -62,7 +62,7 @@ func (r *FileBasedFindingRepository) NewIterator() reporters.FindingIterator {
 type FileBasedMatchIterator struct {
 	Repository  *FileBasedFindingRepository
 	currentFile int
-	matchSet    reporters.FindingSet
+	matchSet    core.FindingSet
 }
 
 // HasNext checks if there are more Finding instances to iterate over
@@ -81,10 +81,10 @@ func (it *FileBasedMatchIterator) HasNext() bool {
 }
 
 // Next retrieves the next Finding instance
-func (it *FileBasedMatchIterator) Next() (reporters.FindingSet, error) {
+func (it *FileBasedMatchIterator) Next() (core.FindingSet, error) {
 
 	if it.matchSet.Matches == nil {
-		return reporters.FindingSet{}, fmt.Errorf("no more matchSet available")
+		return core.FindingSet{}, fmt.Errorf("no more matchSet available")
 	}
 	return it.matchSet, nil
 }
@@ -101,14 +101,14 @@ func (it *FileBasedMatchIterator) loadNextFile() error {
 		return fmt.Errorf("failed to read file %s: %w", filePath, err)
 	}
 
-	var matches []reporters.Finding
+	var matches []core.Finding
 	err = json.Unmarshal(data, &matches)
 
 	if err != nil {
 		return fmt.Errorf("failed to parse JSON in file %s: %w", filePath, err)
 	}
 
-	it.matchSet = reporters.FindingSet{Matches: matches}
+	it.matchSet = core.FindingSet{Matches: matches}
 	it.currentFile++
 
 	return nil

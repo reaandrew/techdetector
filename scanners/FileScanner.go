@@ -17,11 +17,11 @@ const (
 )
 
 type FileScanner struct {
-	processors []reporters.FileProcessor
+	processors []core.FileProcessor
 }
 
-func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]reporters.Finding, error) {
-	var Matches []reporters.Finding
+func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]core.Finding, error) {
+	var Matches []core.Finding
 
 	info, err := os.Stat(targetDir)
 	if os.IsNotExist(err) {
@@ -32,7 +32,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 	}
 
 	files := make(chan string, 100)
-	fileMatches := make(chan reporters.Finding, 100)
+	fileMatches := make(chan core.Finding, 100)
 
 	var wg sync.WaitGroup
 

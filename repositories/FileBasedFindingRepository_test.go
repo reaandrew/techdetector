@@ -20,8 +20,8 @@ func TestStoreWritesMatchesToFile(t *testing.T) {
 		path: dir,
 	}
 
-	err = repository.Store([]reporters.Finding{
-		reporters.Finding{},
+	err = repository.Store([]core.Finding{
+		core.Finding{},
 	})
 	assert.Nil(t, err)
 	count, err := utils.CountFiles(dir)
@@ -40,8 +40,8 @@ func TestClearRemovesAllFiles(t *testing.T) {
 		path: dir,
 	}
 
-	err = repository.Store([]reporters.Finding{
-		reporters.Finding{},
+	err = repository.Store([]core.Finding{
+		core.Finding{},
 	})
 	assert.Nil(t, err)
 	err = repository.Clear()
@@ -64,8 +64,8 @@ func TestClearOnlyDeletesFilesItCreated(t *testing.T) {
 	otherFile := path.Join(dir, utils.GenerateRandomFilename("other"))
 	err = os.WriteFile(otherFile, []byte("something"), 0644)
 	assert.Nil(t, err)
-	err = repository.Store([]reporters.Finding{
-		reporters.Finding{},
+	err = repository.Store([]core.Finding{
+		core.Finding{},
 	})
 	assert.Nil(t, err)
 	count_before, err := utils.CountFiles(dir)
@@ -89,7 +89,7 @@ func TestIterator(t *testing.T) {
 		path: dir,
 	}
 
-	err = repository.Store([]reporters.Finding{
+	err = repository.Store([]core.Finding{
 		{
 			Name: "match 1",
 		},
@@ -98,7 +98,7 @@ func TestIterator(t *testing.T) {
 		},
 	})
 	assert.Nil(t, err)
-	err = repository.Store([]reporters.Finding{
+	err = repository.Store([]core.Finding{
 		{
 			Name: "match 3",
 		},
