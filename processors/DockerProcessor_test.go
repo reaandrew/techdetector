@@ -1,6 +1,7 @@
 package processors
 
 import (
+	"github.com/reaandrew/techdetector/core"
 	"reflect"
 	"testing"
 )
@@ -61,7 +62,7 @@ USER appuser
 ENTRYPOINT ["bash", "-c", "echo Hello World"]
 `
 
-	expectedMatches := []Match{
+	expectedMatches := []core.Finding{
 		{
 			Name:     "FROM",
 			Type:     "Docker Directive",

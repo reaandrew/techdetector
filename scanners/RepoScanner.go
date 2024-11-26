@@ -2,9 +2,7 @@ package scanners
 
 import (
 	"fmt"
-	"github.com/reaandrew/techdetector/processors"
-	"github.com/reaandrew/techdetector/reporters"
-	"github.com/reaandrew/techdetector/repositories"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	"log"
 	"os"
@@ -12,15 +10,15 @@ import (
 )
 
 type RepoScanner struct {
-	reporter        reporters.Reporter
+	reporter        core.Reporter
 	fileScanner     FileScanner
-	matchRepository repositories.MatchRepository
+	matchRepository core.FindingRepository
 }
 
 func NewRepoScanner(
-	reporter reporters.Reporter,
-	processors []processors.FileProcessor,
-	matchRepository repositories.MatchRepository) *RepoScanner {
+	reporter core.Reporter,
+	processors []core.FileProcessor,
+	matchRepository core.FindingRepository) *RepoScanner {
 	return &RepoScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},
@@ -60,6 +58,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 	fmt.Printf("Number of matches: %d\n", len(matches)) // Debug statement
 
 	// Generate report
+
 	err = repoScanner.reporter.Report(repoScanner.matchRepository)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)

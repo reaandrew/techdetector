@@ -2,9 +2,7 @@ package scanners
 
 import (
 	"fmt"
-	"github.com/reaandrew/techdetector/processors"
-	"github.com/reaandrew/techdetector/reporters"
-	"github.com/reaandrew/techdetector/repositories"
+	"github.com/reaandrew/techdetector/core"
 	"log"
 	"os"
 	"path/filepath"
@@ -12,15 +10,15 @@ import (
 
 // DirectoryScanner struct
 type DirectoryScanner struct {
-	reporter        reporters.Reporter
+	reporter        core.Reporter
 	fileScanner     FileScanner
-	matchRepository repositories.MatchRepository
+	matchRepository core.FindingRepository
 }
 
 // NewDirectoryScanner creates a new DirectoryScanner
-func NewDirectoryScanner(reporter reporters.Reporter,
-	processors []processors.FileProcessor,
-	matchRepository repositories.MatchRepository) *DirectoryScanner {
+func NewDirectoryScanner(reporter core.Reporter,
+	processors []core.FileProcessor,
+	matchRepository core.FindingRepository) *DirectoryScanner {
 	return &DirectoryScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},
@@ -41,7 +39,7 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 		return
 	}
 
-	//var allMatches []processors.Match
+	//var allMatches []processors.Finding
 
 	for _, dir := range dirs {
 		fmt.Printf("Processing directory: %s\n", dir)

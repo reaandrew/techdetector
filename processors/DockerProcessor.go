@@ -3,6 +3,7 @@ package processors
 import (
 	"bufio"
 	"fmt"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	"io"
 	"path/filepath"
@@ -118,8 +119,8 @@ func (d DockerProcessor) Supports(filePath string) bool {
 	return filename == "Dockerfile" || strings.HasPrefix(filename, "Dockerfile.")
 }
 
-func (d DockerProcessor) Process(path string, repoName string, content string) ([]Match, error) {
-	var matches []Match
+func (d DockerProcessor) Process(path string, repoName string, content string) ([]core.Finding, error) {
+	var matches []core.Finding
 	reader := strings.NewReader(content)
 	instructions, err := ParseDockerfile(reader)
 	if err != nil {
@@ -129,7 +130,7 @@ func (d DockerProcessor) Process(path string, repoName string, content string) (
 
 	for _, instruction := range instructions {
 		if utils.Contains(handledInstructions, instruction.Directive) {
-			matches = append(matches, Match{
+			matches = append(matches, core.Finding{
 				Name:     instruction.Directive,
 				Type:     "Docker Directive",
 				Category: "",

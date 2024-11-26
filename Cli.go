@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
 	"github.com/reaandrew/techdetector/repositories"
@@ -13,6 +15,7 @@ import (
 // Cli represents the command-line interface
 type Cli struct {
 	reportFormat string
+	baseUrl      string
 }
 
 // Execute sets up and runs the root command
@@ -40,13 +43,14 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 
 	// Add the --report flag to the scan command
 	scanCmd.PersistentFlags().StringVar(&cli.reportFormat, "report", "xlsx", "Report format (supported: xlsx)")
+	scanCmd.PersistentFlags().StringVar(&cli.baseUrl, "baseurl", "xlsx", "Http report base url")
 
 	scanRepoCmd := &cobra.Command{
 		Use:   "repo <REPO_URL>",
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			reporter, err := reporters.CreateReporter(cli.reportFormat)
+			reporter, err := cli.createReporter(cli.reportFormat)
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -64,7 +68,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			reporter, err := reporters.CreateReporter(cli.reportFormat)
+			reporter, err := cli.createReporter(cli.reportFormat)
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -104,7 +108,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 				log.Fatalf("Provided path '%s' is not a directory.", directory)
 			}
 
-			reporter, err := reporters.CreateReporter(cli.reportFormat)
+			reporter, err := cli.createReporter(cli.reportFormat)
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -123,4 +127,18 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	scanCmd.AddCommand(scanOrgCmd)
 	scanCmd.AddCommand(scanDirCmd)
 	return scanCmd
+}
+
+func (cli *Cli) createReporter(reportFormat string) (core.Reporter, error) {
+	if reportFormat == "xlsx" {
+		return reporters.XlsxReporter{}, nil
+	}
+	if reportFormat == "json" {
+		return reporters.JsonReporter{}, nil
+	}
+	if reportFormat == "http" {
+		return reporters.NewDefaultHttpReporter(cli.baseUrl), nil
+	}
+
+	return nil, fmt.Errorf("unknown report format: %s", reportFormat)
 }
