@@ -3,26 +3,26 @@ package repositories
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/reaandrew/techdetector/processors"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	"log"
 	"os"
 	"path"
 )
 
-type FileBasedMatchRepository struct {
+type FileBasedFindingRepository struct {
 	path  string
 	files []string
 }
 
-func NewFileBasedMatchRepository() MatchRepository {
-	return &FileBasedMatchRepository{
+func NewFileBasedMatchRepository() FindingRepository {
+	return &FileBasedFindingRepository{
 		path:  os.TempDir(),
 		files: make([]string, 0),
 	}
 }
 
-func (r *FileBasedMatchRepository) Store(matches []processors.Finding) error {
+func (r *FileBasedFindingRepository) Store(matches []reporters.Finding) error {
 	jsonData, err := json.MarshalIndent(matches, "", "  ") // Pretty-print with indentation
 	if err != nil {
 		return err
@@ -37,7 +37,7 @@ func (r *FileBasedMatchRepository) Store(matches []processors.Finding) error {
 	return nil
 }
 
-func (r *FileBasedMatchRepository) Clear() error {
+func (r *FileBasedFindingRepository) Clear() error {
 	for _, filepath := range r.files {
 		err := os.Remove(filepath)
 		if err != nil {
@@ -50,19 +50,19 @@ func (r *FileBasedMatchRepository) Clear() error {
 }
 
 // NewIterator creates a new FileBasedMatchIterator for the Repository
-func (r *FileBasedMatchRepository) NewIterator() MatchIterator {
+func (r *FileBasedFindingRepository) NewIterator() FindingIterator {
 	return &FileBasedMatchIterator{
 		Repository:  r,
 		currentFile: 0,
-		matchSet:    MatchSet{Matches: nil},
+		matchSet:    FindingSet{Matches: nil},
 	}
 }
 
 // FileBasedMatchIterator implements the Iterator pattern for Finding instances
 type FileBasedMatchIterator struct {
-	Repository  *FileBasedMatchRepository
+	Repository  *FileBasedFindingRepository
 	currentFile int
-	matchSet    MatchSet
+	matchSet    FindingSet
 }
 
 // HasNext checks if there are more Finding instances to iterate over
@@ -81,10 +81,10 @@ func (it *FileBasedMatchIterator) HasNext() bool {
 }
 
 // Next retrieves the next Finding instance
-func (it *FileBasedMatchIterator) Next() (MatchSet, error) {
+func (it *FileBasedMatchIterator) Next() (FindingSet, error) {
 
 	if it.matchSet.Matches == nil {
-		return MatchSet{}, fmt.Errorf("no more matchSet available")
+		return FindingSet{}, fmt.Errorf("no more matchSet available")
 	}
 	return it.matchSet, nil
 }
@@ -101,14 +101,14 @@ func (it *FileBasedMatchIterator) loadNextFile() error {
 		return fmt.Errorf("failed to read file %s: %w", filePath, err)
 	}
 
-	var matches []processors.Finding
+	var matches []reporters.Finding
 	err = json.Unmarshal(data, &matches)
 
 	if err != nil {
 		return fmt.Errorf("failed to parse JSON in file %s: %w", filePath, err)
 	}
 
-	it.matchSet = MatchSet{Matches: matches}
+	it.matchSet = FindingSet{Matches: matches}
 	it.currentFile++
 
 	return nil

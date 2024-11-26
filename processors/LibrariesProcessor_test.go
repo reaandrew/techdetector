@@ -1,6 +1,7 @@
 package processors
 
 import (
+	"github.com/reaandrew/techdetector/core"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -46,7 +47,7 @@ func TestParsePomXML(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []reporters.Finding
 		expectError bool
 	}{
 		{
@@ -73,7 +74,7 @@ func TestParsePomXML(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/pom.xml",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "org.springframework:spring-core",
 					Type: "Library",
@@ -110,7 +111,7 @@ func TestParsePomXML(t *testing.T) {
 			content:     `<project></project>`,
 			repoName:    "test-repo",
 			path:        "sample/pom.xml",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 	}
@@ -152,7 +153,7 @@ func TestParseGoMod(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []reporters.Finding
 		expectError bool
 	}{
 		{
@@ -169,7 +170,7 @@ require (
 `,
 			repoName: "test-repo",
 			path:     "sample/go.mod",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "github.com/sirupsen/logrus",
 					Type: "Library",
@@ -198,7 +199,7 @@ require (
 			content:     `module github.com/example/project`,
 			repoName:    "test-repo",
 			path:        "sample/go.mod",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 		{
@@ -212,7 +213,7 @@ require github.com/sirupsen/logrus
 `,
 			repoName:    "test-repo",
 			path:        "sample/go.mod",
-			expected:    []Finding{}, // Malformed require line should be ignored
+			expected:    []reporters.Finding{}, // Malformed require line should be ignored
 			expectError: false,
 		},
 		{
@@ -220,7 +221,7 @@ require github.com/sirupsen/logrus
 			content:     ``,
 			repoName:    "test-repo",
 			path:        "sample/go.mod",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 	}
@@ -251,7 +252,7 @@ require github.com/sirupsen/logrus
 						continue
 					}
 					exp := expected[i]
-					if !MatchesEqual([]Finding{match}, []Finding{exp}) {
+					if !MatchesEqual([]reporters.Finding{match}, []reporters.Finding{exp}) {
 						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
@@ -269,7 +270,7 @@ func TestParsePackageJSON(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []reporters.Finding
 		expectError bool
 	}{
 		{
@@ -290,7 +291,7 @@ func TestParsePackageJSON(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/package.json",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "express",
 					Type: "Library",
@@ -347,7 +348,7 @@ func TestParsePackageJSON(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/package.json",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "react",
 					Type: "Library",
@@ -374,7 +375,7 @@ func TestParsePackageJSON(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/package.json",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "webpack",
 					Type: "Library",
@@ -406,7 +407,7 @@ func TestParsePackageJSON(t *testing.T) {
 `,
 			repoName:    "test-repo",
 			path:        "sample/package.json",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 	}
@@ -437,7 +438,7 @@ func TestParsePackageJSON(t *testing.T) {
 						continue
 					}
 					exp := expected[i]
-					if !MatchesEqual([]Finding{match}, []Finding{exp}) {
+					if !MatchesEqual([]reporters.Finding{match}, []reporters.Finding{exp}) {
 						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
@@ -455,7 +456,7 @@ func TestParseRequirementsTXT(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []reporters.Finding
 		expectError bool
 	}{
 		{
@@ -467,7 +468,7 @@ scipy
 `,
 			repoName: "test-repo",
 			path:     "sample/requirements.txt",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "numpy",
 					Type: "Library",
@@ -506,7 +507,7 @@ scipy
 			content:     ``,
 			repoName:    "test-repo",
 			path:        "sample/requirements.txt",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 	}
@@ -537,7 +538,7 @@ scipy
 						continue
 					}
 					exp := expected[i]
-					if !MatchesEqual([]Finding{match}, []Finding{exp}) {
+					if !MatchesEqual([]reporters.Finding{match}, []reporters.Finding{exp}) {
 						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
@@ -555,7 +556,7 @@ func TestParsePyProjectToml(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []reporters.Finding
 		expectError bool
 	}{
 		{
@@ -575,7 +576,7 @@ flake8 = "^3.9.1"
 `,
 			repoName: "test-repo",
 			path:     "sample/pyproject.toml",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "python",
 					Type: "Library",
@@ -631,7 +632,7 @@ django = "^3.2"
 `,
 			repoName: "test-repo",
 			path:     "sample/pyproject.toml",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "django",
 					Type: "Library",
@@ -657,7 +658,7 @@ mypy = "^0.812"
 `,
 			repoName: "test-repo",
 			path:     "sample/pyproject.toml",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "mypy",
 					Type: "Library",
@@ -684,7 +685,7 @@ mypy = "^0.812"
 			content:     ``,
 			repoName:    "test-repo",
 			path:        "sample/pyproject.toml",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 		{
@@ -696,7 +697,7 @@ version = "1.0.0"
 `,
 			repoName:    "test-repo",
 			path:        "sample/pyproject.toml",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 		{
@@ -711,7 +712,7 @@ requests = { version = "^2.25.1", extras = ["security"] }
 `,
 			repoName:    "test-repo",
 			path:        "sample/pyproject.toml",
-			expected:    []Finding{}, // Since version is not a string, it should be ignored
+			expected:    []reporters.Finding{}, // Since version is not a string, it should be ignored
 			expectError: false,
 		},
 	}
@@ -742,7 +743,7 @@ requests = { version = "^2.25.1", extras = ["security"] }
 						continue
 					}
 					exp := expected[i]
-					if !MatchesEqual([]Finding{match}, []Finding{exp}) {
+					if !MatchesEqual([]reporters.Finding{match}, []reporters.Finding{exp}) {
 						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
@@ -760,7 +761,7 @@ func TestParseCsProj(t *testing.T) {
 		content     string
 		repoName    string
 		path        string
-		expected    []Finding
+		expected    []reporters.Finding
 		expectError bool
 	}{
 		{
@@ -785,7 +786,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/example.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Newtonsoft.Json",
 					Type: "Library",
@@ -850,7 +851,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/only_packages.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "NUnit",
 					Type: "Library",
@@ -876,7 +877,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/only_references.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "System.Xml",
 					Type: "Library",
@@ -912,7 +913,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/separate_versions.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "System.Net.Http",
 					Type: "Library",
@@ -952,7 +953,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName:    "test-repo",
 			path:        "sample/empty.csproj",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 		{
@@ -966,7 +967,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/no_version.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "System.Drawing",
 					Type: "Library",
@@ -994,7 +995,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/multiple_attributes.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Example.Lib",
 					Type: "Library",
@@ -1019,7 +1020,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/conflicting_versions.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Conflicting.Lib",
 					Type: "Library",
@@ -1044,7 +1045,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/only_embedded_version.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Only.Embedded.Lib",
 					Type: "Library",
@@ -1069,7 +1070,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/no_name.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "",
 					Type: "Library",
@@ -1094,7 +1095,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/multiple_versions.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Multi.Version.Lib",
 					Type: "Library",
@@ -1119,7 +1120,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/trailing_spaces.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Trailing.Space.Lib",
 					Type: "Library",
@@ -1146,7 +1147,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName:    "test-repo",
 			path:        "sample/no_include.csproj",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 		{
@@ -1160,7 +1161,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName:    "test-repo",
 			path:        "sample/empty_include.csproj",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 		{
@@ -1177,7 +1178,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/complex_reference.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Complex.Lib",
 					Type: "Library",
@@ -1202,7 +1203,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/multiple_commas.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Multi.Comma.Lib",
 					Type: "Library",
@@ -1227,7 +1228,7 @@ func TestParseCsProj(t *testing.T) {
 `,
 			repoName: "test-repo",
 			path:     "sample/no_name_version.csproj",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "",
 					Type: "Library",
@@ -1269,7 +1270,7 @@ func TestParseCsProj(t *testing.T) {
 						continue
 					}
 					exp := expected[i]
-					if !MatchesEqual([]Finding{match}, []Finding{exp}) {
+					if !MatchesEqual([]reporters.Finding{match}, []reporters.Finding{exp}) {
 						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
@@ -1287,7 +1288,7 @@ func TestProcess(t *testing.T) {
 		Path        string
 		content     string
 		repoName    string
-		expected    []Finding
+		expected    []reporters.Finding
 		expectError bool
 	}{
 		{
@@ -1309,7 +1310,7 @@ func TestProcess(t *testing.T) {
 </project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "org.springframework:spring-core",
 					Type: "Library",
@@ -1336,7 +1337,7 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "CuttingEdge.Conditions",
 					Type: "Library",
@@ -1362,7 +1363,7 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "System.Net.Http",
 					Type: "Library",
@@ -1402,7 +1403,7 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName:    "test-repo",
-			expected:    []Finding{},
+			expected:    []reporters.Finding{},
 			expectError: false,
 		},
 		{
@@ -1417,7 +1418,7 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "LibraryOne",
 					Type: "Library",
@@ -1452,7 +1453,7 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Separate.Version.Lib",
 					Type: "Library",
@@ -1477,7 +1478,7 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Conflicting.Lib",
 					Type: "Library",
@@ -1502,7 +1503,7 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "Complex.Lib",
 					Type: "Library",
@@ -1527,7 +1528,7 @@ func TestProcess(t *testing.T) {
 </Project>
 `,
 			repoName: "test-repo",
-			expected: []Finding{
+			expected: []reporters.Finding{
 				{
 					Name: "",
 					Type: "Library",
@@ -1569,7 +1570,7 @@ func TestProcess(t *testing.T) {
 						continue
 					}
 					exp := expected[i]
-					if !MatchesEqual([]Finding{match}, []Finding{exp}) {
+					if !MatchesEqual([]reporters.Finding{match}, []reporters.Finding{exp}) {
 						t.Logf("Finding %d mismatch:\nGot: %+v\nWant: %+v", i, match, exp)
 					}
 				}
@@ -1578,24 +1579,24 @@ func TestProcess(t *testing.T) {
 	}
 }
 
-func normalizeMatches(Matches []Finding) []Finding {
+func normalizeMatches(Matches []reporters.Finding) []reporters.Finding {
 	if Matches == nil {
-		return []Finding{}
+		return []reporters.Finding{}
 	}
 	return Matches
 }
 
-func MatchesEqual(a, b []Finding) bool {
+func MatchesEqual(a, b []reporters.Finding) bool {
 	if len(a) != len(b) {
 		return false
 	}
 
 	// Create maps to track Finding instances
-	mapA := make(map[string]Finding)
-	mapB := make(map[string]Finding)
+	mapA := make(map[string]reporters.Finding)
+	mapB := make(map[string]reporters.Finding)
 
 	// Helper function to create a unique key for a Finding
-	generateKey := func(m Finding) string {
+	generateKey := func(m reporters.Finding) string {
 		return m.RepoName + "|" + m.Path + "|" + m.Name + "|" + m.Type + "|" + m.Category
 	}
 

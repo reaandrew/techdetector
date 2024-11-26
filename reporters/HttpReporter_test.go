@@ -3,7 +3,7 @@ package reporters
 import (
 	"bytes"
 	"fmt"
-	"github.com/reaandrew/techdetector/processors"
+	reporters2 "github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/stretchr/testify/assert"
 	"io"
@@ -34,10 +34,10 @@ func (m MockHttpClient) GetRequests() []http.Request {
 }
 
 type MockMatchRepository struct {
-	matches []processors.Finding
+	matches []reporters2.Finding
 }
 
-func (m MockMatchRepository) Store(matches []processors.Finding) error {
+func (m MockMatchRepository) Store(matches []reporters2.Finding) error {
 	//TODO implement me
 	panic("implement me")
 }
@@ -47,10 +47,10 @@ func (m MockMatchRepository) Clear() error {
 	panic("implement me")
 }
 
-func (m MockMatchRepository) NewIterator() repositories.MatchIterator {
+func (m MockMatchRepository) NewIterator() repositories.FindingIterator {
 	return &MockMatchIterator{
 		position: 0,
-		matches: []repositories.MatchSet{
+		matches: []repositories.FindingSet{
 			{Matches: m.matches},
 		},
 	}
@@ -58,14 +58,14 @@ func (m MockMatchRepository) NewIterator() repositories.MatchIterator {
 
 type MockMatchIterator struct {
 	position int
-	matches  []repositories.MatchSet
+	matches  []repositories.FindingSet
 }
 
 func (m *MockMatchIterator) HasNext() bool {
 	return m.position < len(m.matches)
 }
 
-func (m *MockMatchIterator) Next() (repositories.MatchSet, error) {
+func (m *MockMatchIterator) Next() (repositories.FindingSet, error) {
 	returnValue := m.matches[m.position]
 	m.position++
 	return returnValue, nil
@@ -81,7 +81,7 @@ func (m MockReportIdGenerator) Generate() string {
 
 func TestHttpReporter_Report(t *testing.T) {
 	expectedId := "101"
-	mockRepository := MockMatchRepository{matches: []processors.Finding{
+	mockRepository := MockMatchRepository{matches: []reporters2.Finding{
 		{
 			Name:     "Match1",
 			Type:     "Type1",

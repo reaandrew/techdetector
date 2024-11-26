@@ -14,13 +14,13 @@ import (
 type RepoScanner struct {
 	reporter        reporters.Reporter
 	fileScanner     FileScanner
-	matchRepository repositories.MatchRepository
+	matchRepository repositories.FindingRepository
 }
 
 func NewRepoScanner(
 	reporter reporters.Reporter,
 	processors []processors.FileProcessor,
-	matchRepository repositories.MatchRepository) *RepoScanner {
+	matchRepository repositories.FindingRepository) *RepoScanner {
 	return &RepoScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},

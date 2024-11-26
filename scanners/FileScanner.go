@@ -2,6 +2,7 @@ package scanners
 
 import (
 	"fmt"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/processors"
 	"io/fs"
 	"log"
@@ -20,8 +21,8 @@ type FileScanner struct {
 	processors []processors.FileProcessor
 }
 
-func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]processors.Finding, error) {
-	var Matches []processors.Finding
+func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]reporters.Finding, error) {
+	var Matches []reporters.Finding
 
 	info, err := os.Stat(targetDir)
 	if os.IsNotExist(err) {
@@ -32,7 +33,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 	}
 
 	files := make(chan string, 100)
-	fileMatches := make(chan processors.Finding, 100)
+	fileMatches := make(chan reporters.Finding, 100)
 
 	var wg sync.WaitGroup
 

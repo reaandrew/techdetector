@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"github.com/reaandrew/techdetector/processors"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	"github.com/stretchr/testify/assert"
 	"os"
@@ -16,12 +16,12 @@ func TestStoreWritesMatchesToFile(t *testing.T) {
 	}
 	defer os.RemoveAll(dir)
 
-	repository := FileBasedMatchRepository{
+	repository := FileBasedFindingRepository{
 		path: dir,
 	}
 
-	err = repository.Store([]processors.Finding{
-		processors.Finding{},
+	err = repository.Store([]reporters.Finding{
+		reporters.Finding{},
 	})
 	assert.Nil(t, err)
 	count, err := utils.CountFiles(dir)
@@ -36,12 +36,12 @@ func TestClearRemovesAllFiles(t *testing.T) {
 	}
 	defer os.RemoveAll(dir)
 
-	repository := FileBasedMatchRepository{
+	repository := FileBasedFindingRepository{
 		path: dir,
 	}
 
-	err = repository.Store([]processors.Finding{
-		processors.Finding{},
+	err = repository.Store([]reporters.Finding{
+		reporters.Finding{},
 	})
 	assert.Nil(t, err)
 	err = repository.Clear()
@@ -58,14 +58,14 @@ func TestClearOnlyDeletesFilesItCreated(t *testing.T) {
 	}
 	defer os.RemoveAll(dir)
 
-	repository := FileBasedMatchRepository{
+	repository := FileBasedFindingRepository{
 		path: dir,
 	}
 	otherFile := path.Join(dir, utils.GenerateRandomFilename("other"))
 	err = os.WriteFile(otherFile, []byte("something"), 0644)
 	assert.Nil(t, err)
-	err = repository.Store([]processors.Finding{
-		processors.Finding{},
+	err = repository.Store([]reporters.Finding{
+		reporters.Finding{},
 	})
 	assert.Nil(t, err)
 	count_before, err := utils.CountFiles(dir)
@@ -85,11 +85,11 @@ func TestIterator(t *testing.T) {
 	}
 	defer os.RemoveAll(dir)
 
-	repository := FileBasedMatchRepository{
+	repository := FileBasedFindingRepository{
 		path: dir,
 	}
 
-	err = repository.Store([]processors.Finding{
+	err = repository.Store([]reporters.Finding{
 		{
 			Name: "match 1",
 		},
@@ -98,7 +98,7 @@ func TestIterator(t *testing.T) {
 		},
 	})
 	assert.Nil(t, err)
-	err = repository.Store([]processors.Finding{
+	err = repository.Store([]reporters.Finding{
 		{
 			Name: "match 3",
 		},

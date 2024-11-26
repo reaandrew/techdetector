@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/google/go-github/v50/github"
+	reporters2 "github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
 	"github.com/reaandrew/techdetector/repositories"
@@ -20,7 +21,7 @@ type RepoJob struct {
 }
 
 type RepoResult struct {
-	Matches  []processors.Finding
+	Matches  []reporters2.Finding
 	Error    error
 	RepoName string
 }
@@ -28,12 +29,12 @@ type RepoResult struct {
 type GithubOrgScanner struct {
 	reporter        reporters.Reporter
 	fileScanner     FileScanner
-	matchRepository repositories.MatchRepository
+	matchRepository repositories.FindingRepository
 }
 
 func NewGithubOrgScanner(reporter reporters.Reporter,
 	processors []processors.FileProcessor,
-	matchRepository repositories.MatchRepository) *GithubOrgScanner {
+	matchRepository repositories.FindingRepository) *GithubOrgScanner {
 	return &GithubOrgScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},

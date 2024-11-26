@@ -2,6 +2,7 @@ package processors
 
 import (
 	"embed"
+	"github.com/reaandrew/techdetector/core"
 )
 
 //go:embed data/patterns/*.json
@@ -11,7 +12,7 @@ var patternsFS embed.FS
 type FileProcessor interface {
 	Supports(filePath string) bool
 
-	Process(path string, repoName string, content string) ([]Finding, error)
+	Process(path string, repoName string, content string) ([]reporters.Finding, error)
 }
 
 // InitializeProcessors creates and returns a slice of FileProcessor implementations.

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/hashicorp/hcl/v2/hclparse"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/zclconf/go-cty/cty"
 	"math/big"
 	"strings"
@@ -17,15 +18,15 @@ type TerraformBlock struct {
 }
 
 type TerraformBlockProcessor interface {
-	Process(block *TerraformBlock, path string, repoName string) ([]Finding, error)
+	Process(block *TerraformBlock, path string, repoName string) ([]reporters.Finding, error)
 }
 
 type ModuleBlockProcessor struct{}
 
-func (m ModuleBlockProcessor) Process(block *TerraformBlock, path string, repoName string) ([]Finding, error) {
-	matches := make([]Finding, 0)
+func (m ModuleBlockProcessor) Process(block *TerraformBlock, path string, repoName string) ([]reporters.Finding, error) {
+	matches := make([]reporters.Finding, 0)
 	if block.Type == "module" && len(block.Attributes) > 0 {
-		matches = append(matches, Finding{
+		matches = append(matches, reporters.Finding{
 			Name:     "TF Module",
 			Type:     "TF Module Use",
 			Category: "",
@@ -54,7 +55,7 @@ func (t TerraformProcessor) Supports(filePath string) bool {
 	return strings.HasSuffix(filePath, ".tf")
 }
 
-func (t TerraformProcessor) Process(path string, repoName string, content string) ([]Finding, error) {
+func (t TerraformProcessor) Process(path string, repoName string, content string) ([]reporters.Finding, error) {
 	parser := hclparse.NewParser()
 	file, diags := parser.ParseHCL([]byte(content), path)
 	if diags.HasErrors() {
@@ -67,7 +68,7 @@ func (t TerraformProcessor) Process(path string, repoName string, content string
 	}
 	tfBlocks := ParseBody(body, []byte(content))
 
-	matches := make([]Finding, 0)
+	matches := make([]reporters.Finding, 0)
 	for _, tfBlock := range tfBlocks {
 		for _, processor := range t.processors {
 			match, err := processor.Process(tfBlock, path, repoName)

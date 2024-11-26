@@ -53,7 +53,7 @@ type HttpReporter struct {
 	ReportIdGenerator ReportIdGenerator
 }
 
-func (h HttpReporter) Report(repository repositories.MatchRepository) error {
+func (h HttpReporter) Report(repository repositories.FindingRepository) error {
 	fmt.Println("Reporting to HTTP")
 	iterator := repository.NewIterator()
 
@@ -79,7 +79,7 @@ func (h HttpReporter) Report(repository repositories.MatchRepository) error {
 	return nil
 }
 
-func (h HttpReporter) postMatch(match repositories.MatchSet, reportId string) error {
+func (h HttpReporter) postMatch(match repositories.FindingSet, reportId string) error {
 	url := fmt.Sprintf("%s/reports/%s/results", h.BaseURL, reportId)
 
 	payload, err := json.Marshal(match)

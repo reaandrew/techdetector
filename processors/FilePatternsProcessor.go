@@ -3,6 +3,7 @@ package processors
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/reaandrew/techdetector/core"
 	log "github.com/sirupsen/logrus"
 	"io/fs"
 	"path/filepath"
@@ -24,15 +25,6 @@ type Pattern struct {
 	FilenameRegexs       []*regexp.Regexp
 	ContentPatternRegexs []*regexp.Regexp
 	Properties           map[string]interface{} `json:"properties,omitempty"`
-}
-
-type Finding struct {
-	Name       string                 `json:"name,omitempty"`
-	Type       string                 `json:"type,omitempty"`
-	Category   string                 `json:"category,omitempty"`
-	Properties map[string]interface{} `json:"properties,omitempty"`
-	Path       string                 `json:"path,omitempty"`
-	RepoName   string                 `json:"repo_name,omitempty"`
 }
 
 type FilePatternsProcessor struct {
@@ -184,8 +176,8 @@ func copyProperties(properties map[string]interface{}) map[string]interface{} {
 	return newProperties
 }
 
-func (s *FilePatternsProcessor) Process(path string, repoName string, content string) ([]Finding, error) {
-	var matches []Finding
+func (s *FilePatternsProcessor) Process(path string, repoName string, content string) ([]reporters.Finding, error) {
+	var matches []reporters.Finding
 	for _, pattern := range s.Patterns {
 		// Skip patterns that specify both file_names and file_extensions (Rule 1)
 		if !isNilOrEmpty(pattern.Filenames) && !isNilOrEmpty(pattern.FileExtensions) {
@@ -238,8 +230,8 @@ func (s *FilePatternsProcessor) Process(path string, repoName string, content st
 	return matches, nil
 }
 
-func createMatch(pattern Pattern, path string, repoName string) Finding {
-	return Finding{
+func createMatch(pattern Pattern, path string, repoName string) reporters.Finding {
+	return reporters.Finding{
 		Name:       pattern.Name,
 		Type:       pattern.Type,
 		Category:   pattern.Category,

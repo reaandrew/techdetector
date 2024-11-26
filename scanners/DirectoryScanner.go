@@ -14,13 +14,13 @@ import (
 type DirectoryScanner struct {
 	reporter        reporters.Reporter
 	fileScanner     FileScanner
-	matchRepository repositories.MatchRepository
+	matchRepository repositories.FindingRepository
 }
 
 // NewDirectoryScanner creates a new DirectoryScanner
 func NewDirectoryScanner(reporter reporters.Reporter,
 	processors []processors.FileProcessor,
-	matchRepository repositories.MatchRepository) *DirectoryScanner {
+	matchRepository repositories.FindingRepository) *DirectoryScanner {
 	return &DirectoryScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},
