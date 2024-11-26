@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"fmt"
 	reporters2 "github.com/reaandrew/techdetector/core"
-	"github.com/reaandrew/techdetector/repositories"
 	"github.com/stretchr/testify/assert"
 	"io"
 	"net/http"
@@ -47,10 +46,10 @@ func (m MockMatchRepository) Clear() error {
 	panic("implement me")
 }
 
-func (m MockMatchRepository) NewIterator() repositories.FindingIterator {
+func (m MockMatchRepository) NewIterator() reporters2.FindingIterator {
 	return &MockMatchIterator{
 		position: 0,
-		matches: []repositories.FindingSet{
+		matches: []reporters2.FindingSet{
 			{Matches: m.matches},
 		},
 	}
@@ -58,14 +57,14 @@ func (m MockMatchRepository) NewIterator() repositories.FindingIterator {
 
 type MockMatchIterator struct {
 	position int
-	matches  []repositories.FindingSet
+	matches  []reporters2.FindingSet
 }
 
 func (m *MockMatchIterator) HasNext() bool {
 	return m.position < len(m.matches)
 }
 
-func (m *MockMatchIterator) Next() (repositories.FindingSet, error) {
+func (m *MockMatchIterator) Next() (reporters2.FindingSet, error) {
 	returnValue := m.matches[m.position]
 	m.position++
 	return returnValue, nil

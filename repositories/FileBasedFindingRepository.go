@@ -15,7 +15,7 @@ type FileBasedFindingRepository struct {
 	files []string
 }
 
-func NewFileBasedMatchRepository() FindingRepository {
+func NewFileBasedMatchRepository() reporters.FindingRepository {
 	return &FileBasedFindingRepository{
 		path:  os.TempDir(),
 		files: make([]string, 0),
@@ -50,11 +50,11 @@ func (r *FileBasedFindingRepository) Clear() error {
 }
 
 // NewIterator creates a new FileBasedMatchIterator for the Repository
-func (r *FileBasedFindingRepository) NewIterator() FindingIterator {
+func (r *FileBasedFindingRepository) NewIterator() reporters.FindingIterator {
 	return &FileBasedMatchIterator{
 		Repository:  r,
 		currentFile: 0,
-		matchSet:    FindingSet{Matches: nil},
+		matchSet:    reporters.FindingSet{Matches: nil},
 	}
 }
 
@@ -62,7 +62,7 @@ func (r *FileBasedFindingRepository) NewIterator() FindingIterator {
 type FileBasedMatchIterator struct {
 	Repository  *FileBasedFindingRepository
 	currentFile int
-	matchSet    FindingSet
+	matchSet    reporters.FindingSet
 }
 
 // HasNext checks if there are more Finding instances to iterate over
@@ -81,10 +81,10 @@ func (it *FileBasedMatchIterator) HasNext() bool {
 }
 
 // Next retrieves the next Finding instance
-func (it *FileBasedMatchIterator) Next() (FindingSet, error) {
+func (it *FileBasedMatchIterator) Next() (reporters.FindingSet, error) {
 
 	if it.matchSet.Matches == nil {
-		return FindingSet{}, fmt.Errorf("no more matchSet available")
+		return reporters.FindingSet{}, fmt.Errorf("no more matchSet available")
 	}
 	return it.matchSet, nil
 }
@@ -108,7 +108,7 @@ func (it *FileBasedMatchIterator) loadNextFile() error {
 		return fmt.Errorf("failed to parse JSON in file %s: %w", filePath, err)
 	}
 
-	it.matchSet = FindingSet{Matches: matches}
+	it.matchSet = reporters.FindingSet{Matches: matches}
 	it.currentFile++
 
 	return nil

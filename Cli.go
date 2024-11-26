@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	reporters2 "github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
 	"github.com/reaandrew/techdetector/repositories"
@@ -128,7 +129,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	return scanCmd
 }
 
-func (cli *Cli) createReporter(reportFormat string) (reporters.Reporter, error) {
+func (cli *Cli) createReporter(reportFormat string) (reporters2.Reporter, error) {
 	if reportFormat == "xlsx" {
 		return reporters.XlsxReporter{}, nil
 	}

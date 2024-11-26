@@ -5,9 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/google/uuid"
+	"github.com/reaandrew/techdetector/core"
 	"net/http"
-
-	"github.com/reaandrew/techdetector/repositories"
 )
 
 type ReportIdGenerator interface {
@@ -53,7 +52,7 @@ type HttpReporter struct {
 	ReportIdGenerator ReportIdGenerator
 }
 
-func (h HttpReporter) Report(repository repositories.FindingRepository) error {
+func (h HttpReporter) Report(repository reporters.FindingRepository) error {
 	fmt.Println("Reporting to HTTP")
 	iterator := repository.NewIterator()
 
@@ -79,7 +78,7 @@ func (h HttpReporter) Report(repository repositories.FindingRepository) error {
 	return nil
 }
 
-func (h HttpReporter) postMatch(match repositories.FindingSet, reportId string) error {
+func (h HttpReporter) postMatch(match reporters.FindingSet, reportId string) error {
 	url := fmt.Sprintf("%s/reports/%s/results", h.BaseURL, reportId)
 
 	payload, err := json.Marshal(match)

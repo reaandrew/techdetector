@@ -3,7 +3,6 @@ package reporters
 import (
 	"fmt"
 	reporters2 "github.com/reaandrew/techdetector/core"
-	"github.com/reaandrew/techdetector/repositories"
 	"github.com/xuri/excelize/v2"
 	"sort"
 	"strings"
@@ -16,7 +15,7 @@ const (
 type XlsxReporter struct {
 }
 
-func (xlsxReporter XlsxReporter) Report(repository repositories.FindingRepository) error {
+func (xlsxReporter XlsxReporter) Report(repository reporters2.FindingRepository) error {
 	fmt.Println("Generating XLSX file")
 
 	// Create a new Excel file

@@ -5,9 +5,6 @@ import (
 	"fmt"
 	"github.com/google/go-github/v50/github"
 	reporters2 "github.com/reaandrew/techdetector/core"
-	"github.com/reaandrew/techdetector/processors"
-	"github.com/reaandrew/techdetector/reporters"
-	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/utils"
 	"golang.org/x/oauth2"
 	"log"
@@ -27,14 +24,14 @@ type RepoResult struct {
 }
 
 type GithubOrgScanner struct {
-	reporter        reporters.Reporter
+	reporter        reporters2.Reporter
 	fileScanner     FileScanner
-	matchRepository repositories.FindingRepository
+	matchRepository reporters2.FindingRepository
 }
 
-func NewGithubOrgScanner(reporter reporters.Reporter,
-	processors []processors.FileProcessor,
-	matchRepository repositories.FindingRepository) *GithubOrgScanner {
+func NewGithubOrgScanner(reporter reporters2.Reporter,
+	processors []reporters2.FileProcessor,
+	matchRepository reporters2.FindingRepository) *GithubOrgScanner {
 	return &GithubOrgScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},

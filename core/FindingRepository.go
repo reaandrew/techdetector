@@ -1,15 +1,11 @@
-package repositories
-
-import (
-	"github.com/reaandrew/techdetector/core"
-)
+package reporters
 
 type FindingSet struct {
-	Matches []reporters.Finding `json:"matchSet"`
+	Matches []Finding `json:"matchSet"`
 }
 
 type FindingRepository interface {
-	Store(matches []reporters.Finding) error
+	Store(matches []Finding) error
 	Clear() error
 	NewIterator() FindingIterator
 }

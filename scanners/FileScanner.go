@@ -3,7 +3,6 @@ package scanners
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
-	"github.com/reaandrew/techdetector/processors"
 	"io/fs"
 	"log"
 	"os"
@@ -18,7 +17,7 @@ const (
 )
 
 type FileScanner struct {
-	processors []processors.FileProcessor
+	processors []reporters.FileProcessor
 }
 
 func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]reporters.Finding, error) {

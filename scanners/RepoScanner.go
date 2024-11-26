@@ -2,9 +2,7 @@ package scanners
 
 import (
 	"fmt"
-	"github.com/reaandrew/techdetector/processors"
-	"github.com/reaandrew/techdetector/reporters"
-	"github.com/reaandrew/techdetector/repositories"
+	reporters2 "github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	"log"
 	"os"
@@ -12,15 +10,15 @@ import (
 )
 
 type RepoScanner struct {
-	reporter        reporters.Reporter
+	reporter        reporters2.Reporter
 	fileScanner     FileScanner
-	matchRepository repositories.FindingRepository
+	matchRepository reporters2.FindingRepository
 }
 
 func NewRepoScanner(
-	reporter reporters.Reporter,
-	processors []processors.FileProcessor,
-	matchRepository repositories.FindingRepository) *RepoScanner {
+	reporter reporters2.Reporter,
+	processors []reporters2.FileProcessor,
+	matchRepository reporters2.FindingRepository) *RepoScanner {
 	return &RepoScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},
