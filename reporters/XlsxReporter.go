@@ -23,7 +23,7 @@ func (xlsxReporter XlsxReporter) Report(repository repositories.MatchRepository)
 	f := excelize.NewFile()
 
 	// Map to collect matches by normalized type
-	matchesByType := make(map[string][]processors.Match)
+	matchesByType := make(map[string][]processors.Finding)
 
 	// Collect all unique property keys per normalized match type
 	propertyKeysByType := make(map[string]map[string]struct{})

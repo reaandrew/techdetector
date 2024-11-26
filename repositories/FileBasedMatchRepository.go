@@ -22,7 +22,7 @@ func NewFileBasedMatchRepository() MatchRepository {
 	}
 }
 
-func (r *FileBasedMatchRepository) Store(matches []processors.Match) error {
+func (r *FileBasedMatchRepository) Store(matches []processors.Finding) error {
 	jsonData, err := json.MarshalIndent(matches, "", "  ") // Pretty-print with indentation
 	if err != nil {
 		return err
@@ -58,14 +58,14 @@ func (r *FileBasedMatchRepository) NewIterator() MatchIterator {
 	}
 }
 
-// FileBasedMatchIterator implements the Iterator pattern for Match instances
+// FileBasedMatchIterator implements the Iterator pattern for Finding instances
 type FileBasedMatchIterator struct {
 	Repository  *FileBasedMatchRepository
 	currentFile int
 	matchSet    MatchSet
 }
 
-// HasNext checks if there are more Match instances to iterate over
+// HasNext checks if there are more Finding instances to iterate over
 func (it *FileBasedMatchIterator) HasNext() bool {
 	// Attempt to load the next file until a file with matchSet is found or all files are exhausted
 	for it.currentFile < len(it.Repository.files) {
@@ -80,7 +80,7 @@ func (it *FileBasedMatchIterator) HasNext() bool {
 	return false
 }
 
-// Next retrieves the next Match instance
+// Next retrieves the next Finding instance
 func (it *FileBasedMatchIterator) Next() (MatchSet, error) {
 
 	if it.matchSet.Matches == nil {
@@ -101,7 +101,7 @@ func (it *FileBasedMatchIterator) loadNextFile() error {
 		return fmt.Errorf("failed to read file %s: %w", filePath, err)
 	}
 
-	var matches []processors.Match
+	var matches []processors.Finding
 	err = json.Unmarshal(data, &matches)
 
 	if err != nil {

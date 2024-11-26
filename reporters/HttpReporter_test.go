@@ -34,10 +34,10 @@ func (m MockHttpClient) GetRequests() []http.Request {
 }
 
 type MockMatchRepository struct {
-	matches []processors.Match
+	matches []processors.Finding
 }
 
-func (m MockMatchRepository) Store(matches []processors.Match) error {
+func (m MockMatchRepository) Store(matches []processors.Finding) error {
 	//TODO implement me
 	panic("implement me")
 }
@@ -81,7 +81,7 @@ func (m MockReportIdGenerator) Generate() string {
 
 func TestHttpReporter_Report(t *testing.T) {
 	expectedId := "101"
-	mockRepository := MockMatchRepository{matches: []processors.Match{
+	mockRepository := MockMatchRepository{matches: []processors.Finding{
 		{
 			Name:     "Match1",
 			Type:     "Type1",

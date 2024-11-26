@@ -26,7 +26,7 @@ type Pattern struct {
 	Properties           map[string]interface{} `json:"properties,omitempty"`
 }
 
-type Match struct {
+type Finding struct {
 	Name       string                 `json:"name,omitempty"`
 	Type       string                 `json:"type,omitempty"`
 	Category   string                 `json:"category,omitempty"`
@@ -184,8 +184,8 @@ func copyProperties(properties map[string]interface{}) map[string]interface{} {
 	return newProperties
 }
 
-func (s *FilePatternsProcessor) Process(path string, repoName string, content string) ([]Match, error) {
-	var matches []Match
+func (s *FilePatternsProcessor) Process(path string, repoName string, content string) ([]Finding, error) {
+	var matches []Finding
 	for _, pattern := range s.Patterns {
 		// Skip patterns that specify both file_names and file_extensions (Rule 1)
 		if !isNilOrEmpty(pattern.Filenames) && !isNilOrEmpty(pattern.FileExtensions) {
@@ -238,8 +238,8 @@ func (s *FilePatternsProcessor) Process(path string, repoName string, content st
 	return matches, nil
 }
 
-func createMatch(pattern Pattern, path string, repoName string) Match {
-	return Match{
+func createMatch(pattern Pattern, path string, repoName string) Finding {
+	return Finding{
 		Name:       pattern.Name,
 		Type:       pattern.Type,
 		Category:   pattern.Category,

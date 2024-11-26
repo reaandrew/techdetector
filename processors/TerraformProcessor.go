@@ -17,15 +17,15 @@ type TerraformBlock struct {
 }
 
 type TerraformBlockProcessor interface {
-	Process(block *TerraformBlock, path string, repoName string) ([]Match, error)
+	Process(block *TerraformBlock, path string, repoName string) ([]Finding, error)
 }
 
 type ModuleBlockProcessor struct{}
 
-func (m ModuleBlockProcessor) Process(block *TerraformBlock, path string, repoName string) ([]Match, error) {
-	matches := make([]Match, 0)
+func (m ModuleBlockProcessor) Process(block *TerraformBlock, path string, repoName string) ([]Finding, error) {
+	matches := make([]Finding, 0)
 	if block.Type == "module" && len(block.Attributes) > 0 {
-		matches = append(matches, Match{
+		matches = append(matches, Finding{
 			Name:     "TF Module",
 			Type:     "TF Module Use",
 			Category: "",
@@ -54,7 +54,7 @@ func (t TerraformProcessor) Supports(filePath string) bool {
 	return strings.HasSuffix(filePath, ".tf")
 }
 
-func (t TerraformProcessor) Process(path string, repoName string, content string) ([]Match, error) {
+func (t TerraformProcessor) Process(path string, repoName string, content string) ([]Finding, error) {
 	parser := hclparse.NewParser()
 	file, diags := parser.ParseHCL([]byte(content), path)
 	if diags.HasErrors() {
@@ -67,7 +67,7 @@ func (t TerraformProcessor) Process(path string, repoName string, content string
 	}
 	tfBlocks := ParseBody(body, []byte(content))
 
-	matches := make([]Match, 0)
+	matches := make([]Finding, 0)
 	for _, tfBlock := range tfBlocks {
 		for _, processor := range t.processors {
 			match, err := processor.Process(tfBlock, path, repoName)

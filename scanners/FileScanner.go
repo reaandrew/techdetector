@@ -20,8 +20,8 @@ type FileScanner struct {
 	processors []processors.FileProcessor
 }
 
-func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]processors.Match, error) {
-	var Matches []processors.Match
+func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]processors.Finding, error) {
+	var Matches []processors.Finding
 
 	info, err := os.Stat(targetDir)
 	if os.IsNotExist(err) {
@@ -32,7 +32,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 	}
 
 	files := make(chan string, 100)
-	fileMatches := make(chan processors.Match, 100)
+	fileMatches := make(chan processors.Finding, 100)
 
 	var wg sync.WaitGroup
 

@@ -11,7 +11,7 @@ var patternsFS embed.FS
 type FileProcessor interface {
 	Supports(filePath string) bool
 
-	Process(path string, repoName string, content string) ([]Match, error)
+	Process(path string, repoName string, content string) ([]Finding, error)
 }
 
 // InitializeProcessors creates and returns a slice of FileProcessor implementations.

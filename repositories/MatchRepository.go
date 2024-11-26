@@ -5,11 +5,11 @@ import (
 )
 
 type MatchSet struct {
-	Matches []processors.Match `json:"matchSet"`
+	Matches []processors.Finding `json:"matchSet"`
 }
 
 type MatchRepository interface {
-	Store(matches []processors.Match) error
+	Store(matches []processors.Finding) error
 	Clear() error
 	NewIterator() MatchIterator
 }

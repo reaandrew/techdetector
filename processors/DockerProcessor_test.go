@@ -61,7 +61,7 @@ USER appuser
 ENTRYPOINT ["bash", "-c", "echo Hello World"]
 `
 
-	expectedMatches := []Match{
+	expectedMatches := []Finding{
 		{
 			Name:     "FROM",
 			Type:     "Docker Directive",

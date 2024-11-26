@@ -20,7 +20,7 @@ type RepoJob struct {
 }
 
 type RepoResult struct {
-	Matches  []processors.Match
+	Matches  []processors.Finding
 	Error    error
 	RepoName string
 }

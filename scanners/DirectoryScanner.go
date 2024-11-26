@@ -41,7 +41,7 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 		return
 	}
 
-	//var allMatches []processors.Match
+	//var allMatches []processors.Finding
 
 	for _, dir := range dirs {
 		fmt.Printf("Processing directory: %s\n", dir)
