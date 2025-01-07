@@ -22,5 +22,7 @@ func InitializeProcessors() []core.FileProcessor {
 	processors = append(processors, NewTerraformProcessor())
 
 	processors = append(processors, DockerComposeProcessor{})
+
+	processors = append(processors, CloudFormationProcessor{})
 	return processors
 }

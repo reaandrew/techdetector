@@ -89,7 +89,7 @@ func TestDockerComposeProcessor_Process_InvalidYaml(t *testing.T) {
 	invalidContent := `
 	this is not valid:
   compose: data
-  ???
+  ???!
 
 `
 	filePath := "docker-compose.yml"

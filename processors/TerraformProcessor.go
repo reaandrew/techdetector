@@ -56,6 +56,7 @@ func (a AWSResourceBlockProcessor) Process(block *TerraformBlock, path string, r
 			Properties: map[string]interface{}{
 				"resource_type": block.Labels[0],
 				"attributes":    block.Attributes,
+				"vendor":        "AWS",
 			},
 			RepoName: repoName,
 			Path:     path,
@@ -80,6 +81,7 @@ func (a AzureResourceBlockProcessor) Process(block *TerraformBlock, path string,
 			Properties: map[string]interface{}{
 				"resource_type": block.Labels[0],
 				"attributes":    block.Attributes,
+				"vendor":        "Azure",
 			},
 			RepoName: repoName,
 			Path:     path,
@@ -104,6 +106,7 @@ func (g GCPResourceBlockProcessor) Process(block *TerraformBlock, path string, r
 			Properties: map[string]interface{}{
 				"resource_type": block.Labels[0],
 				"attributes":    block.Attributes,
+				"vendor":        "GCP",
 			},
 			RepoName: repoName,
 			Path:     path,
