@@ -41,6 +41,78 @@ func (m ModuleBlockProcessor) Process(block *TerraformBlock, path string, repoNa
 	return matches, nil
 }
 
+// -- New AWS Resource Block Processor --
+type AWSResourceBlockProcessor struct{}
+
+func (a AWSResourceBlockProcessor) Process(block *TerraformBlock, path string, repoName string) ([]core.Finding, error) {
+	matches := make([]core.Finding, 0)
+
+	// Check if block is a "resource" and if the first label has "aws_" prefix
+	if block.Type == "resource" && len(block.Labels) > 0 && strings.HasPrefix(block.Labels[0], "aws_") {
+		matches = append(matches, core.Finding{
+			Name:     "AWS Resource",
+			Type:     "AWS Resource Use",
+			Category: "AWS", // or whatever category you prefer
+			Properties: map[string]interface{}{
+				"resource_type": block.Labels[0],
+				"attributes":    block.Attributes,
+			},
+			RepoName: repoName,
+			Path:     path,
+		})
+	}
+
+	return matches, nil
+}
+
+// -- New Azure Resource Block Processor --
+type AzureResourceBlockProcessor struct{}
+
+func (a AzureResourceBlockProcessor) Process(block *TerraformBlock, path string, repoName string) ([]core.Finding, error) {
+	matches := make([]core.Finding, 0)
+
+	// Check if block is a "resource" and if the first label has "azurerm_" prefix
+	if block.Type == "resource" && len(block.Labels) > 0 && strings.HasPrefix(block.Labels[0], "azurerm_") {
+		matches = append(matches, core.Finding{
+			Name:     "Azure Resource",
+			Type:     "Azure Resource Use",
+			Category: "Azure",
+			Properties: map[string]interface{}{
+				"resource_type": block.Labels[0],
+				"attributes":    block.Attributes,
+			},
+			RepoName: repoName,
+			Path:     path,
+		})
+	}
+
+	return matches, nil
+}
+
+// -- New GCP Resource Block Processor --
+type GCPResourceBlockProcessor struct{}
+
+func (g GCPResourceBlockProcessor) Process(block *TerraformBlock, path string, repoName string) ([]core.Finding, error) {
+	matches := make([]core.Finding, 0)
+
+	// Check if block is a "resource" and if the first label has "google_" prefix
+	if block.Type == "resource" && len(block.Labels) > 0 && strings.HasPrefix(block.Labels[0], "google_") {
+		matches = append(matches, core.Finding{
+			Name:     "GCP Resource",
+			Type:     "GCP Resource Use",
+			Category: "GCP",
+			Properties: map[string]interface{}{
+				"resource_type": block.Labels[0],
+				"attributes":    block.Attributes,
+			},
+			RepoName: repoName,
+			Path:     path,
+		})
+	}
+
+	return matches, nil
+}
+
 type TerraformProcessor struct {
 	processors []TerraformBlockProcessor
 }
@@ -48,6 +120,9 @@ type TerraformProcessor struct {
 func NewTerraformProcessor() *TerraformProcessor {
 	return &TerraformProcessor{processors: []TerraformBlockProcessor{
 		ModuleBlockProcessor{},
+		AWSResourceBlockProcessor{},
+		AzureResourceBlockProcessor{},
+		GCPResourceBlockProcessor{},
 	}}
 }
 

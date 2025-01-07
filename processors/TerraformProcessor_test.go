@@ -5,6 +5,7 @@ import (
 	"github.com/hashicorp/hcl/v2/hclparse"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	"os"
+	"reflect"
 	"testing"
 )
 
@@ -177,5 +178,95 @@ func PrintBlock(block *TerraformBlock, indent int) {
 	}
 	for _, nestedBlock := range block.Blocks {
 		PrintBlock(nestedBlock, indent+1)
+	}
+}
+
+func TestTerraformProcessor_AWSResource(t *testing.T) {
+	content := `
+resource "aws_s3_bucket" "example" {
+  bucket = "my-bucket"
+  acl    = "private"
+}
+`
+
+	processor := NewTerraformProcessor()
+	findings, err := processor.Process("test.tf", "some-repo", content)
+	if err != nil {
+		t.Fatalf("unexpected error processing AWS resource: %v", err)
+	}
+
+	if len(findings) != 1 {
+		t.Fatalf("expected 1 finding, got %d", len(findings))
+	}
+
+	f := findings[0]
+	if f.Name != "AWS Resource" {
+		t.Errorf("expected finding name 'AWS Resource', got %s", f.Name)
+	}
+	if f.Type != "AWS Resource Use" {
+		t.Errorf("expected finding type 'AWS Resource Use', got %s", f.Type)
+	}
+	if !reflect.DeepEqual(f.Properties["resource_type"], "aws_s3_bucket") {
+		t.Errorf("expected resource_type 'aws_s3_bucket', got %v", f.Properties["resource_type"])
+	}
+}
+
+func TestTerraformProcessor_AzureResource(t *testing.T) {
+	content := `
+resource "azurerm_resource_group" "example" {
+  name     = "rg-example"
+  location = "West US"
+}
+`
+
+	processor := NewTerraformProcessor()
+	findings, err := processor.Process("test.tf", "some-repo", content)
+	if err != nil {
+		t.Fatalf("unexpected error processing Azure resource: %v", err)
+	}
+
+	if len(findings) != 1 {
+		t.Fatalf("expected 1 finding, got %d", len(findings))
+	}
+
+	f := findings[0]
+	if f.Name != "Azure Resource" {
+		t.Errorf("expected finding name 'Azure Resource', got %s", f.Name)
+	}
+	if f.Type != "Azure Resource Use" {
+		t.Errorf("expected finding type 'Azure Resource Use', got %s", f.Type)
+	}
+	if !reflect.DeepEqual(f.Properties["resource_type"], "azurerm_resource_group") {
+		t.Errorf("expected resource_type 'azurerm_resource_group', got %v", f.Properties["resource_type"])
+	}
+}
+
+func TestTerraformProcessor_GCPResource(t *testing.T) {
+	content := `
+resource "google_storage_bucket" "example" {
+  name     = "my-gcs-bucket"
+  location = "US"
+}
+`
+
+	processor := NewTerraformProcessor()
+	findings, err := processor.Process("test.tf", "some-repo", content)
+	if err != nil {
+		t.Fatalf("unexpected error processing GCP resource: %v", err)
+	}
+
+	if len(findings) != 1 {
+		t.Fatalf("expected 1 finding, got %d", len(findings))
+	}
+
+	f := findings[0]
+	if f.Name != "GCP Resource" {
+		t.Errorf("expected finding name 'GCP Resource', got %s", f.Name)
+	}
+	if f.Type != "GCP Resource Use" {
+		t.Errorf("expected finding type 'GCP Resource Use', got %s", f.Type)
+	}
+	if !reflect.DeepEqual(f.Properties["resource_type"], "google_storage_bucket") {
+		t.Errorf("expected resource_type 'google_storage_bucket', got %v", f.Properties["resource_type"])
 	}
 }
