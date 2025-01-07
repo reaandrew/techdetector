@@ -12,17 +12,12 @@ var patternsFS embed.FS
 func InitializeProcessors() []core.FileProcessor {
 	var processors []core.FileProcessor
 
-	filePatternsProcessor := NewFilePatternsProcessor(patternsFS)
-	processors = append(processors, filePatternsProcessor)
-
+	processors = append(processors, NewFilePatternsProcessor(patternsFS))
 	processors = append(processors, NewLibrariesProcessor())
-
 	processors = append(processors, DockerProcessor{})
-
 	processors = append(processors, NewTerraformProcessor())
-
 	processors = append(processors, DockerComposeProcessor{})
-
 	processors = append(processors, CloudFormationProcessor{})
+	processors = append(processors, CloudDeploymentManagerProcessor{})
 	return processors
 }
