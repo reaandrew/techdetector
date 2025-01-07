@@ -233,7 +233,7 @@ func (s *FilePatternsProcessor) Process(path string, repoName string, content st
 func createMatch(pattern Pattern, path string, repoName string) core.Finding {
 	return core.Finding{
 		Name:       pattern.Name,
-		Type:       pattern.Type,
+		Report:     pattern.Type,
 		Category:   pattern.Category,
 		Properties: copyProperties(pattern.Properties),
 		Path:       path,

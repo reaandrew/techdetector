@@ -60,6 +60,11 @@ type MockMatchIterator struct {
 	matches  []core.FindingSet
 }
 
+func (m *MockMatchIterator) Reset() error {
+	m.position = 0
+	return nil
+}
+
 func (m *MockMatchIterator) HasNext() bool {
 	return m.position < len(m.matches)
 }
@@ -83,7 +88,7 @@ func TestHttpReporter_Report(t *testing.T) {
 	mockRepository := MockMatchRepository{matches: []core.Finding{
 		{
 			Name:     "Match1",
-			Type:     "Type1",
+			Report:   "Type1",
 			Category: "Category1",
 			Properties: map[string]interface{}{
 				"key1": "value1",

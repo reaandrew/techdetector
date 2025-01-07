@@ -89,6 +89,12 @@ func (it *FileBasedMatchIterator) Next() (core.FindingSet, error) {
 	return it.matchSet, nil
 }
 
+func (it *FileBasedMatchIterator) Reset() error {
+	it.currentFile = 0
+	it.matchSet = core.FindingSet{}
+	return nil
+}
+
 // loadNextFile loads matchSet from the next file
 func (it *FileBasedMatchIterator) loadNextFile() error {
 	if it.currentFile >= len(it.Repository.files) {

@@ -17,7 +17,7 @@ type CloudFormationTemplate struct {
 
 // CloudFormationResource is a partial representation of a CloudFormation resource.
 type CloudFormationResource struct {
-	Type       string                 `yaml:"Type,omitempty" json:"Type,omitempty"`
+	Type       string                 `yaml:"Report,omitempty" json:"Report,omitempty"`
 	Properties map[string]interface{} `yaml:"Properties,omitempty" json:"Properties,omitempty"`
 }
 
@@ -46,7 +46,7 @@ func (c CloudFormationProcessor) Process(path string, repoName string, content s
 		jsonErr := json.Unmarshal([]byte(content), &template)
 		if jsonErr != nil {
 			// Not recognized as valid YAML or JSON for CloudFormation
-			return nil, nil
+			return nil, jsonErr
 		}
 	}
 
@@ -60,7 +60,7 @@ func (c CloudFormationProcessor) Process(path string, repoName string, content s
 	for resourceName, resource := range template.Resources {
 		matches = append(matches, core.Finding{
 			Name:     resourceName,
-			Type:     "CloudFormation Resource",
+			Report:   "CloudFormation Resource",
 			Category: "AWS",
 			Properties: map[string]interface{}{
 				"resource_type": resource.Type,

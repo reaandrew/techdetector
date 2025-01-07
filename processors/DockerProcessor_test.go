@@ -65,7 +65,7 @@ ENTRYPOINT ["bash", "-c", "echo Hello World"]
 	expectedMatches := []core.Finding{
 		{
 			Name:     "FROM",
-			Type:     "Docker Directive",
+			Report:   "Docker Directive",
 			Category: "",
 			Properties: map[string]interface{}{
 				"arguments": "ubuntu:20.04",
@@ -75,7 +75,7 @@ ENTRYPOINT ["bash", "-c", "echo Hello World"]
 		},
 		{
 			Name:     "EXPOSE",
-			Type:     "Docker Directive",
+			Report:   "Docker Directive",
 			Category: "",
 			Properties: map[string]interface{}{
 				"arguments": "8080",

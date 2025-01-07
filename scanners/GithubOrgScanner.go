@@ -86,6 +86,40 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 		}
 	}
 
+	// Generate summaries
+
+	cloudVendors := map[string]int{}
+	var summaries []core.Finding
+	iterator := githubOrgScanner.matchRepository.NewIterator()
+	for iterator.HasNext() {
+		matchSet, _ := iterator.Next()
+
+		for _, match := range matchSet.Matches {
+			if val, ok := match.Properties["vendor"]; ok {
+				if _, vendorOk := cloudVendors[val.(string)]; !vendorOk {
+					cloudVendors[val.(string)] = 0
+				}
+				cloudVendors[val.(string)]++
+			}
+		}
+
+	}
+
+	for key, value := range cloudVendors {
+		summaries = append(summaries, core.Finding{
+			Name:     "Cloud Vendors",
+			Report:   "Summary",
+			Category: key,
+			Properties: map[string]interface{}{
+				"count": value,
+			},
+			Path:     "",
+			RepoName: "",
+		})
+	}
+
+	githubOrgScanner.matchRepository.Store(summaries)
+
 	// Generate report
 	err = githubOrgScanner.reporter.Report(githubOrgScanner.matchRepository)
 	if err != nil {

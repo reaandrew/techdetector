@@ -68,8 +68,8 @@ resources:
 	if findings[0].Name != "my-sample-resource" {
 		t.Errorf("Expected Name to be 'my-sample-resource', got %q", findings[0].Name)
 	}
-	if findings[0].Type != "Deployment Manager Resource" {
-		t.Errorf("Expected Type to be 'Deployment Manager Resource', got %q", findings[0].Type)
+	if findings[0].Report != "Deployment Manager Resource" {
+		t.Errorf("Expected Report to be 'Deployment Manager Resource', got %q", findings[0].Report)
 	}
 	if findings[0].Category != "GCP" {
 		t.Errorf("Expected Category to be 'GCP', got %q", findings[0].Category)

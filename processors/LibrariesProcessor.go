@@ -123,7 +123,7 @@ func (mp *LibrariesProcessor) parsePomXML(content string, repoName string, path 
 		libraryName := fmt.Sprintf("%s:%s", dep.GroupID, dep.ArtifactID)
 		match := core.Finding{
 			Name:     libraryName,
-			Type:     "Library",
+			Report:   "Library",
 			Category: "",
 			Properties: map[string]interface{}{
 				"Language": "Java",
@@ -170,7 +170,7 @@ func (mp *LibrariesProcessor) parseGoMod(content string, repoName string, path s
 				version := parts[1]
 				match := core.Finding{
 					Name:     libraryName,
-					Type:     "Library",
+					Report:   "Library",
 					Category: "",
 					Properties: map[string]interface{}{
 						"Language": "Go",
@@ -212,7 +212,7 @@ func (mp *LibrariesProcessor) parsePackageJSON(content string, repoName string, 
 	for lib, ver := range combined {
 		match := core.Finding{
 			Name:     lib,
-			Type:     "Library",
+			Report:   "Library",
 			Category: "",
 			Properties: map[string]interface{}{
 				"Language": "Node.js",
@@ -257,7 +257,7 @@ func (mp *LibrariesProcessor) parseRequirementsTXT(content string, repoName stri
 		}
 		match := core.Finding{
 			Name:     libraryName,
-			Type:     "Library",
+			Report:   "Library",
 			Category: "",
 			Properties: map[string]interface{}{
 				"Language": "Python",
@@ -304,7 +304,7 @@ func (mp *LibrariesProcessor) parsePyProjectToml(content string, repoName string
 	for lib, ver := range combined {
 		match := core.Finding{
 			Name:     lib,
-			Type:     "Library",
+			Report:   "Library",
 			Category: "",
 			Properties: map[string]interface{}{
 				"Language": "Python",
@@ -358,7 +358,7 @@ func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path 
 
 		match := core.Finding{
 			Name:     libraryName,
-			Type:     "Library",
+			Report:   "Library",
 			Category: "",
 			Properties: map[string]interface{}{
 				"Language": "C#",
@@ -385,7 +385,7 @@ func (mp *LibrariesProcessor) parseCsProj(content string, repoName string, path 
 		}
 		match := core.Finding{
 			Name:     libraryName,
-			Type:     "Library",
+			Report:   "Library",
 			Category: "",
 			Properties: map[string]interface{}{
 				"Language": "C#",

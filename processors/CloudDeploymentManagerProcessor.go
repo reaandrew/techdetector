@@ -57,7 +57,7 @@ func (p CloudDeploymentManagerProcessor) Process(path string, repoName string, c
 	for _, resource := range template.Resources {
 		finding := core.Finding{
 			Name:     resource.Name,
-			Type:     "Deployment Manager Resource",
+			Report:   "Deployment Manager Resource",
 			Category: "GCP",
 			Properties: map[string]interface{}{
 				"resource_type": resource.Type,

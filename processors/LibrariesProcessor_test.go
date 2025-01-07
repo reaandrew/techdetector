@@ -76,8 +76,8 @@ func TestParsePomXML(t *testing.T) {
 			path:     "sample/pom.xml",
 			expected: []core.Finding{
 				{
-					Name: "org.springframework:spring-core",
-					Type: "Library",
+					Name:   "org.springframework:spring-core",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Java",
 						"Version":  "5.3.8",
@@ -86,8 +86,8 @@ func TestParsePomXML(t *testing.T) {
 					Path:     "sample/pom.xml",
 				},
 				{
-					Name: "com.fasterxml.jackson.core:jackson-databind",
-					Type: "Library",
+					Name:   "com.fasterxml.jackson.core:jackson-databind",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Java",
 						"Version":  "2.12.3",
@@ -172,8 +172,8 @@ require (
 			path:     "sample/go.mod",
 			expected: []core.Finding{
 				{
-					Name: "github.com/sirupsen/logrus",
-					Type: "Library",
+					Name:   "github.com/sirupsen/logrus",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Go",
 						"Version":  "v1.8.1",
@@ -182,8 +182,8 @@ require (
 					Path:     "sample/go.mod",
 				},
 				{
-					Name: "github.com/stretchr/testify",
-					Type: "Library",
+					Name:   "github.com/stretchr/testify",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Go",
 						"Version":  "v1.7.0",
@@ -293,8 +293,8 @@ func TestParsePackageJSON(t *testing.T) {
 			path:     "sample/package.json",
 			expected: []core.Finding{
 				{
-					Name: "express",
-					Type: "Library",
+					Name:   "express",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Node.js",
 						"Version":  "^4.17.1",
@@ -303,8 +303,8 @@ func TestParsePackageJSON(t *testing.T) {
 					Path:     "sample/package.json",
 				},
 				{
-					Name: "lodash",
-					Type: "Library",
+					Name:   "lodash",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Node.js",
 						"Version":  "^4.17.21",
@@ -313,8 +313,8 @@ func TestParsePackageJSON(t *testing.T) {
 					Path:     "sample/package.json",
 				},
 				{
-					Name: "jest",
-					Type: "Library",
+					Name:   "jest",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Node.js",
 						"Version":  "^26.6.3",
@@ -323,8 +323,8 @@ func TestParsePackageJSON(t *testing.T) {
 					Path:     "sample/package.json",
 				},
 				{
-					Name: "nodemon",
-					Type: "Library",
+					Name:   "nodemon",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Node.js",
 						"Version":  "^2.0.7",
@@ -350,8 +350,8 @@ func TestParsePackageJSON(t *testing.T) {
 			path:     "sample/package.json",
 			expected: []core.Finding{
 				{
-					Name: "react",
-					Type: "Library",
+					Name:   "react",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Node.js",
 						"Version":  "^17.0.2",
@@ -377,8 +377,8 @@ func TestParsePackageJSON(t *testing.T) {
 			path:     "sample/package.json",
 			expected: []core.Finding{
 				{
-					Name: "webpack",
-					Type: "Library",
+					Name:   "webpack",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Node.js",
 						"Version":  "^5.38.1",
@@ -470,8 +470,8 @@ scipy
 			path:     "sample/requirements.txt",
 			expected: []core.Finding{
 				{
-					Name: "numpy",
-					Type: "Library",
+					Name:   "numpy",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "N/A",
@@ -480,8 +480,8 @@ scipy
 					Path:     "sample/requirements.txt",
 				},
 				{
-					Name: "pandas",
-					Type: "Library",
+					Name:   "pandas",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "N/A",
@@ -490,8 +490,8 @@ scipy
 					Path:     "sample/requirements.txt",
 				},
 				{
-					Name: "scipy",
-					Type: "Library",
+					Name:   "scipy",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "N/A",
@@ -578,8 +578,8 @@ flake8 = "^3.9.1"
 			path:     "sample/pyproject.toml",
 			expected: []core.Finding{
 				{
-					Name: "python",
-					Type: "Library",
+					Name:   "python",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "^3.8",
@@ -588,8 +588,8 @@ flake8 = "^3.9.1"
 					Path:     "sample/pyproject.toml",
 				},
 				{
-					Name: "requests",
-					Type: "Library",
+					Name:   "requests",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "^2.25.1",
@@ -598,8 +598,8 @@ flake8 = "^3.9.1"
 					Path:     "sample/pyproject.toml",
 				},
 				{
-					Name: "pytest",
-					Type: "Library",
+					Name:   "pytest",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "^6.2.4",
@@ -608,8 +608,8 @@ flake8 = "^3.9.1"
 					Path:     "sample/pyproject.toml",
 				},
 				{
-					Name: "flake8",
-					Type: "Library",
+					Name:   "flake8",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "^3.9.1",
@@ -634,8 +634,8 @@ django = "^3.2"
 			path:     "sample/pyproject.toml",
 			expected: []core.Finding{
 				{
-					Name: "django",
-					Type: "Library",
+					Name:   "django",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "^3.2",
@@ -660,8 +660,8 @@ mypy = "^0.812"
 			path:     "sample/pyproject.toml",
 			expected: []core.Finding{
 				{
-					Name: "mypy",
-					Type: "Library",
+					Name:   "mypy",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Python",
 						"Version":  "^0.812",
@@ -788,8 +788,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/example.csproj",
 			expected: []core.Finding{
 				{
-					Name: "Newtonsoft.Json",
-					Type: "Library",
+					Name:   "Newtonsoft.Json",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "13.0.1",
@@ -798,8 +798,8 @@ func TestParseCsProj(t *testing.T) {
 					Path:     "sample/example.csproj",
 				},
 				{
-					Name: "Serilog",
-					Type: "Library",
+					Name:   "Serilog",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "2.10.0",
@@ -808,8 +808,8 @@ func TestParseCsProj(t *testing.T) {
 					Path:     "sample/example.csproj",
 				},
 				{
-					Name: "System.Data",
-					Type: "Library",
+					Name:   "System.Data",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "N/A",
@@ -818,8 +818,8 @@ func TestParseCsProj(t *testing.T) {
 					Path:     "sample/example.csproj",
 				},
 				{
-					Name: "System.Xml",
-					Type: "Library",
+					Name:   "System.Xml",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "4.0.0.0",
@@ -828,8 +828,8 @@ func TestParseCsProj(t *testing.T) {
 					Path:     "sample/example.csproj",
 				},
 				{
-					Name: "CuttingEdge.Conditions",
-					Type: "Library",
+					Name:   "CuttingEdge.Conditions",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.2.0.11174",
@@ -853,8 +853,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/only_packages.csproj",
 			expected: []core.Finding{
 				{
-					Name: "NUnit",
-					Type: "Library",
+					Name:   "NUnit",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "3.12.0",
@@ -879,8 +879,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/only_references.csproj",
 			expected: []core.Finding{
 				{
-					Name: "System.Xml",
-					Type: "Library",
+					Name:   "System.Xml",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "4.0.0.0",
@@ -889,8 +889,8 @@ func TestParseCsProj(t *testing.T) {
 					Path:     "sample/only_references.csproj",
 				},
 				{
-					Name: "AnotherLib",
-					Type: "Library",
+					Name:   "AnotherLib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -915,8 +915,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/separate_versions.csproj",
 			expected: []core.Finding{
 				{
-					Name: "System.Net.Http",
-					Type: "Library",
+					Name:   "System.Net.Http",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "4.3.4",
@@ -925,8 +925,8 @@ func TestParseCsProj(t *testing.T) {
 					Path:     "sample/separate_versions.csproj",
 				},
 				{
-					Name: "System.Data",
-					Type: "Library",
+					Name:   "System.Data",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "N/A",
@@ -969,8 +969,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/no_version.csproj",
 			expected: []core.Finding{
 				{
-					Name: "System.Drawing",
-					Type: "Library",
+					Name:   "System.Drawing",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "N/A",
@@ -997,8 +997,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/multiple_attributes.csproj",
 			expected: []core.Finding{
 				{
-					Name: "Example.Lib",
-					Type: "Library",
+					Name:   "Example.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1022,8 +1022,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/conflicting_versions.csproj",
 			expected: []core.Finding{
 				{
-					Name: "Conflicting.Lib",
-					Type: "Library",
+					Name:   "Conflicting.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "2.0.0.0",
@@ -1047,8 +1047,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/only_embedded_version.csproj",
 			expected: []core.Finding{
 				{
-					Name: "Only.Embedded.Lib",
-					Type: "Library",
+					Name:   "Only.Embedded.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "3.0.0.0",
@@ -1072,8 +1072,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/no_name.csproj",
 			expected: []core.Finding{
 				{
-					Name: "",
-					Type: "Library",
+					Name:   "",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1097,8 +1097,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/multiple_versions.csproj",
 			expected: []core.Finding{
 				{
-					Name: "Multi.Version.Lib",
-					Type: "Library",
+					Name:   "Multi.Version.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1122,8 +1122,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/trailing_spaces.csproj",
 			expected: []core.Finding{
 				{
-					Name: "Trailing.Space.Lib",
-					Type: "Library",
+					Name:   "Trailing.Space.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1180,8 +1180,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/complex_reference.csproj",
 			expected: []core.Finding{
 				{
-					Name: "Complex.Lib",
-					Type: "Library",
+					Name:   "Complex.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1205,8 +1205,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/multiple_commas.csproj",
 			expected: []core.Finding{
 				{
-					Name: "Multi.Comma.Lib",
-					Type: "Library",
+					Name:   "Multi.Comma.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1230,8 +1230,8 @@ func TestParseCsProj(t *testing.T) {
 			path:     "sample/no_name_version.csproj",
 			expected: []core.Finding{
 				{
-					Name: "",
-					Type: "Library",
+					Name:   "",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1312,8 +1312,8 @@ func TestProcess(t *testing.T) {
 			repoName: "test-repo",
 			expected: []core.Finding{
 				{
-					Name: "org.springframework:spring-core",
-					Type: "Library",
+					Name:   "org.springframework:spring-core",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "Java",
 						"Version":  "5.3.8",
@@ -1339,8 +1339,8 @@ func TestProcess(t *testing.T) {
 			repoName: "test-repo",
 			expected: []core.Finding{
 				{
-					Name: "CuttingEdge.Conditions",
-					Type: "Library",
+					Name:   "CuttingEdge.Conditions",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.2.0.11174",
@@ -1365,8 +1365,8 @@ func TestProcess(t *testing.T) {
 			repoName: "test-repo",
 			expected: []core.Finding{
 				{
-					Name: "System.Net.Http",
-					Type: "Library",
+					Name:   "System.Net.Http",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "4.3.4",
@@ -1375,8 +1375,8 @@ func TestProcess(t *testing.T) {
 					Path:     "sample/separate_versions.csproj",
 				},
 				{
-					Name: "System.Data",
-					Type: "Library",
+					Name:   "System.Data",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "N/A",
@@ -1420,8 +1420,8 @@ func TestProcess(t *testing.T) {
 			repoName: "test-repo",
 			expected: []core.Finding{
 				{
-					Name: "LibraryOne",
-					Type: "Library",
+					Name:   "LibraryOne",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1430,8 +1430,8 @@ func TestProcess(t *testing.T) {
 					Path:     "sample/multiple_references.csproj",
 				},
 				{
-					Name: "LibraryTwo",
-					Type: "Library",
+					Name:   "LibraryTwo",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "2.0.0.0",
@@ -1455,8 +1455,8 @@ func TestProcess(t *testing.T) {
 			repoName: "test-repo",
 			expected: []core.Finding{
 				{
-					Name: "Separate.Version.Lib",
-					Type: "Library",
+					Name:   "Separate.Version.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.1.1",
@@ -1480,8 +1480,8 @@ func TestProcess(t *testing.T) {
 			repoName: "test-repo",
 			expected: []core.Finding{
 				{
-					Name: "Conflicting.Lib",
-					Type: "Library",
+					Name:   "Conflicting.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "2.0.0.0", // Embedded version takes precedence
@@ -1505,8 +1505,8 @@ func TestProcess(t *testing.T) {
 			repoName: "test-repo",
 			expected: []core.Finding{
 				{
-					Name: "Complex.Lib",
-					Type: "Library",
+					Name:   "Complex.Lib",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1530,8 +1530,8 @@ func TestProcess(t *testing.T) {
 			repoName: "test-repo",
 			expected: []core.Finding{
 				{
-					Name: "",
-					Type: "Library",
+					Name:   "",
+					Report: "Library",
 					Properties: map[string]interface{}{
 						"Language": "C#",
 						"Version":  "1.0.0.0",
@@ -1597,7 +1597,7 @@ func MatchesEqual(a, b []core.Finding) bool {
 
 	// Helper function to create a unique key for a Finding
 	generateKey := func(m core.Finding) string {
-		return m.RepoName + "|" + m.Path + "|" + m.Name + "|" + m.Type + "|" + m.Category
+		return m.RepoName + "|" + m.Path + "|" + m.Name + "|" + m.Report + "|" + m.Category
 	}
 
 	// Populate mapA

@@ -13,4 +13,5 @@ type FindingRepository interface {
 type FindingIterator interface {
 	HasNext() bool
 	Next() (FindingSet, error)
+	Reset() error // New method to reset the iterator
 }

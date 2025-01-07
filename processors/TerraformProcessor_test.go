@@ -203,8 +203,8 @@ resource "aws_s3_bucket" "example" {
 	if f.Name != "AWS Resource" {
 		t.Errorf("expected finding name 'AWS Resource', got %s", f.Name)
 	}
-	if f.Type != "AWS Resource Use" {
-		t.Errorf("expected finding type 'AWS Resource Use', got %s", f.Type)
+	if f.Report != "Terraform Resource Use" {
+		t.Errorf("expected finding type 'Terraform Resource Use', got %s", f.Report)
 	}
 	if !reflect.DeepEqual(f.Properties["resource_type"], "aws_s3_bucket") {
 		t.Errorf("expected resource_type 'aws_s3_bucket', got %v", f.Properties["resource_type"])
@@ -233,8 +233,8 @@ resource "azurerm_resource_group" "example" {
 	if f.Name != "Azure Resource" {
 		t.Errorf("expected finding name 'Azure Resource', got %s", f.Name)
 	}
-	if f.Type != "Azure Resource Use" {
-		t.Errorf("expected finding type 'Azure Resource Use', got %s", f.Type)
+	if f.Report != "Terraform Resource Use" {
+		t.Errorf("expected finding type 'Terraform Resource Use', got %s", f.Report)
 	}
 	if !reflect.DeepEqual(f.Properties["resource_type"], "azurerm_resource_group") {
 		t.Errorf("expected resource_type 'azurerm_resource_group', got %v", f.Properties["resource_type"])
@@ -263,8 +263,8 @@ resource "google_storage_bucket" "example" {
 	if f.Name != "GCP Resource" {
 		t.Errorf("expected finding name 'GCP Resource', got %s", f.Name)
 	}
-	if f.Type != "GCP Resource Use" {
-		t.Errorf("expected finding type 'GCP Resource Use', got %s", f.Type)
+	if f.Report != "Terraform Resource Use" {
+		t.Errorf("expected finding type 'Terraform Resource Use', got %s", f.Report)
 	}
 	if !reflect.DeepEqual(f.Properties["resource_type"], "google_storage_bucket") {
 		t.Errorf("expected resource_type 'google_storage_bucket', got %v", f.Properties["resource_type"])

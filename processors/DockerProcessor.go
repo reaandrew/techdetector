@@ -132,7 +132,7 @@ func (d DockerProcessor) Process(path string, repoName string, content string) (
 		if utils.Contains(handledInstructions, instruction.Directive) {
 			matches = append(matches, core.Finding{
 				Name:     instruction.Directive,
-				Type:     "Docker Directive",
+				Report:   "Docker Directive",
 				Category: "",
 				Properties: map[string]interface{}{
 					"arguments": instruction.Arguments,
