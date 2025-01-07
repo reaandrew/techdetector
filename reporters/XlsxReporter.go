@@ -36,11 +36,11 @@ func (xlsxReporter XlsxReporter) Report(repository core.FindingRepository) error
 
 		for _, match := range matchSet.Matches {
 			// Normalize match type (e.g., trim spaces and convert to lower case)
-			matchType := strings.TrimSpace(match.Report)
+			matchType := strings.TrimSpace(match.Type)
 			matchType = strings.ToLower(matchType)
 
-			// Update the match.Report to normalized value to maintain consistency
-			match.Report = matchType
+			// Update the match.Type to normalized value to maintain consistency
+			match.Type = matchType
 
 			matchesByType[matchType] = append(matchesByType[matchType], match)
 

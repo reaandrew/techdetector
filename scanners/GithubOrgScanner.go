@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/google/go-github/v50/github"
 	"github.com/reaandrew/techdetector/core"
+	"github.com/reaandrew/techdetector/summaryprocessors"
 	"github.com/reaandrew/techdetector/utils"
 	"golang.org/x/oauth2"
 	"log"
@@ -88,37 +89,23 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 
 	// Generate summaries
 
-	cloudVendors := map[string]int{}
-	var summaries []core.Finding
+	summaryProcessors := []summaryprocessors.SummaryProcessor{
+		summaryprocessors.NewCloudVendorsSummaryProcessor(),
+	}
+	
 	iterator := githubOrgScanner.matchRepository.NewIterator()
 	for iterator.HasNext() {
 		matchSet, _ := iterator.Next()
 
 		for _, match := range matchSet.Matches {
-			if val, ok := match.Properties["vendor"]; ok {
-				if _, vendorOk := cloudVendors[val.(string)]; !vendorOk {
-					cloudVendors[val.(string)] = 0
-				}
-				cloudVendors[val.(string)]++
+			for _, processor := range summaryProcessors {
+				processor.Process(match)
 			}
 		}
-
 	}
-
-	for key, value := range cloudVendors {
-		summaries = append(summaries, core.Finding{
-			Name:     "Cloud Vendors",
-			Report:   "Summary",
-			Category: key,
-			Properties: map[string]interface{}{
-				"count": value,
-			},
-			Path:     "",
-			RepoName: "",
-		})
+	for _, processor := range summaryProcessors {
+		githubOrgScanner.matchRepository.Store(processor.GetFindings())
 	}
-
-	githubOrgScanner.matchRepository.Store(summaries)
 
 	// Generate report
 	err = githubOrgScanner.reporter.Report(githubOrgScanner.matchRepository)

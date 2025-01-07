@@ -70,7 +70,7 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 		log.Fatalf("Error generating report: %v", err)
 	}
 
-	fmt.Println("Report generation completed successfully.")
+	fmt.Println("Type generation completed successfully.")
 }
 
 // Helper function to list top-level directories in a given path

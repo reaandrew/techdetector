@@ -63,8 +63,8 @@ services:
 		if !expectedNames[f.Name] {
 			t.Errorf("Unexpected service name: %s", f.Name)
 		}
-		if f.Report != "Docker Compose Service" {
-			t.Errorf("Expected type 'Docker Compose Service', got '%s'", f.Report)
+		if f.Type != "Docker Compose Service" {
+			t.Errorf("Expected type 'Docker Compose Service', got '%s'", f.Type)
 		}
 		if f.RepoName != repoName {
 			t.Errorf("Expected RepoName '%s', got '%s'", repoName, f.RepoName)

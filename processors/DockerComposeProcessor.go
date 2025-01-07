@@ -46,7 +46,7 @@ func (d DockerComposeProcessor) Process(path string, repoName string, content st
 		// Create a Finding for each service
 		matches = append(matches, core.Finding{
 			Name:     serviceName,
-			Report:   "Docker Compose Service",
+			Type:     "Docker Compose Service",
 			Category: "",
 			Properties: map[string]interface{}{
 				"image": service.Image,

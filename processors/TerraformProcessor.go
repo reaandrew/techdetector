@@ -28,7 +28,7 @@ func (m ModuleBlockProcessor) Process(block *TerraformBlock, path string, repoNa
 	if block.Type == "module" && len(block.Attributes) > 0 {
 		matches = append(matches, core.Finding{
 			Name:     "TF Module",
-			Report:   "TF Module Use",
+			Type:     "TF Module Use",
 			Category: "",
 			Properties: map[string]interface{}{
 				"source": block.Attributes["source"],
@@ -51,7 +51,7 @@ func (a AWSResourceBlockProcessor) Process(block *TerraformBlock, path string, r
 	if block.Type == "resource" && len(block.Labels) > 0 && strings.HasPrefix(block.Labels[0], "aws_") {
 		matches = append(matches, core.Finding{
 			Name:     "AWS Resource",
-			Report:   "Terraform Resource Use",
+			Type:     "Terraform Resource Use",
 			Category: "AWS", // or whatever category you prefer
 			Properties: map[string]interface{}{
 				"resource_type": block.Labels[0],
@@ -76,7 +76,7 @@ func (a AzureResourceBlockProcessor) Process(block *TerraformBlock, path string,
 	if block.Type == "resource" && len(block.Labels) > 0 && strings.HasPrefix(block.Labels[0], "azurerm_") {
 		matches = append(matches, core.Finding{
 			Name:     "Azure Resource",
-			Report:   "Terraform Resource Use",
+			Type:     "Terraform Resource Use",
 			Category: "Azure",
 			Properties: map[string]interface{}{
 				"resource_type": block.Labels[0],
@@ -101,7 +101,7 @@ func (g GCPResourceBlockProcessor) Process(block *TerraformBlock, path string, r
 	if block.Type == "resource" && len(block.Labels) > 0 && strings.HasPrefix(block.Labels[0], "google_") {
 		matches = append(matches, core.Finding{
 			Name:     "GCP Resource",
-			Report:   "Terraform Resource Use",
+			Type:     "Terraform Resource Use",
 			Category: "GCP",
 			Properties: map[string]interface{}{
 				"resource_type": block.Labels[0],

@@ -42,7 +42,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	}
 
 	// Add the --report flag to the scan command
-	scanCmd.PersistentFlags().StringVar(&cli.reportFormat, "report", "xlsx", "Report format (supported: xlsx)")
+	scanCmd.PersistentFlags().StringVar(&cli.reportFormat, "report", "xlsx", "Type format (supported: xlsx)")
 	scanCmd.PersistentFlags().StringVar(&cli.baseUrl, "baseurl", "xlsx", "Http report base url")
 
 	scanRepoCmd := &cobra.Command{

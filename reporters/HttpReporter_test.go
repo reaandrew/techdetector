@@ -88,7 +88,7 @@ func TestHttpReporter_Report(t *testing.T) {
 	mockRepository := MockMatchRepository{matches: []core.Finding{
 		{
 			Name:     "Match1",
-			Report:   "Type1",
+			Type:     "Type1",
 			Category: "Category1",
 			Properties: map[string]interface{}{
 				"key1": "value1",

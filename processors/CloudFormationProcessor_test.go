@@ -38,11 +38,11 @@ Description: A sample template
 
 Resources:
   MyBucket:
-    Report: AWS::S3::Bucket
+    Type: AWS::S3::Bucket
     Properties:
       BucketName: my-sample-bucket
   MyLambda:
-    Report: AWS::Lambda::Function
+    Type: AWS::Lambda::Function
     Properties:
       FunctionName: my-sample-lambda
 `
@@ -65,8 +65,8 @@ Resources:
 		if !expectedNames[f.Name] {
 			t.Errorf("Unexpected resource name: %s", f.Name)
 		}
-		if f.Report != "CloudFormation Resource" {
-			t.Errorf("Expected 'CloudFormation Resource', got '%s'", f.Report)
+		if f.Type != "CloudFormation Resource" {
+			t.Errorf("Expected 'CloudFormation Resource', got '%s'", f.Type)
 		}
 		resourceType, ok := f.Properties["resource_type"]
 		if !ok {
@@ -91,7 +91,7 @@ func TestCloudFormationProcessor_Process_JsonSuccess(t *testing.T) {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
     "MyBucket": {
-      "Report": "AWS::S3::Bucket",
+      "Type": "AWS::S3::Bucket",
       "Properties": {
         "BucketName": "my-sample-bucket"
       }
