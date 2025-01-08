@@ -1,8 +1,5 @@
 package core
 
-var SummaryFinding int = 1
-var DetailFinding int = 2
-
 type Finding struct {
 	Name       string                 `json:"name,omitempty"`
 	Type       string                 `json:"type,omitempty"`

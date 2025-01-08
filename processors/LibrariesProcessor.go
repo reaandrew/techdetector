@@ -27,6 +27,12 @@ func NewLibrariesProcessor() *LibrariesProcessor {
 }
 
 func (mp *LibrariesProcessor) Supports(filePath string) bool {
+	ignoredDirs := []string{"node_modules", "vendor", ".git"}
+	for _, dir := range ignoredDirs {
+		if strings.Contains(filePath, dir) {
+			return false
+		}
+	}
 	base := filepath.Base(filePath)
 	supportedFiles := []string{
 		"pom.xml",          // Java (Maven)

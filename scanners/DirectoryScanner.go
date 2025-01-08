@@ -3,8 +3,8 @@ package scanners
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
+	"github.com/reaandrew/techdetector/reporters"
 	"log"
-	"os"
 	"path/filepath"
 )
 
@@ -28,66 +28,32 @@ func NewDirectoryScanner(reporter core.Reporter,
 
 // Scan method for DirectoryScanner
 func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
-	// List top-level directories
-	dirs, err := listTopLevelDirectories(directory)
+	// Traverse and search the root directory
+	matches, err := ds.fileScanner.TraverseAndSearch(directory, filepath.Base(directory))
 	if err != nil {
-		log.Fatalf("Failed to list directories in '%s': %v", directory, err)
+		log.Fatalf("Error scanning directory '%s': %v", directory, err)
 	}
 
-	if len(dirs) == 0 {
-		log.Println("No top-level directories found to Scan.")
-		return
+	fmt.Printf("Number of matches in '%s': %d\n", directory, len(matches))
+
+	// Store matches
+	err = ds.matchRepository.Store(matches)
+	if err != nil {
+		log.Fatalf("Error storing matches in '%s': %v", directory, err)
 	}
 
-	//var allMatches []processors.Finding
-
-	for _, dir := range dirs {
-		fmt.Printf("Processing directory: %s\n", dir)
-
-		// Traverse and search
-		matches, err := ds.fileScanner.TraverseAndSearch(dir, filepath.Base(dir))
-		if err != nil {
-			log.Printf("Error searching directory '%s': %v", dir, err)
-			continue // Proceed with the next directory
-		}
-
-		fmt.Printf("Number of matches in '%s': %d\n", dir, len(matches))
-		err = ds.matchRepository.Store(matches)
-		if err != nil {
-			log.Fatalf("Error storing matches in '%s': %v", dir, err)
-		}
-		//allMatches = append(allMatches, matches...)
+	// Generate summary report
+	summaryReporter := reporters.XlsxSummaryReporter{}
+	err = summaryReporter.Report(ds.matchRepository)
+	if err != nil {
+		log.Fatalf("Error generating summary report: %v", err)
 	}
 
-	//// Generate consolidated report
-	//if len(allMatches) == 0 {
-	//	fmt.Println("No findings detected across all directories.")
-	//	return
-	//}
-
+	// Generate main report
 	err = ds.reporter.Report(ds.matchRepository)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}
 
-	fmt.Println("Type generation completed successfully.")
-}
-
-// Helper function to list top-level directories in a given path
-func listTopLevelDirectories(path string) ([]string, error) {
-	var directories []string
-
-	entries, err := os.ReadDir(path)
-	if err != nil {
-		return nil, err
-	}
-
-	for _, entry := range entries {
-		if entry.IsDir() {
-			dirPath := filepath.Join(path, entry.Name())
-			directories = append(directories, dirPath)
-		}
-	}
-
-	return directories, nil
+	fmt.Println("Scan completed successfully.")
 }

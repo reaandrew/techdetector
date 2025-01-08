@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/google/go-github/v50/github"
 	"github.com/reaandrew/techdetector/core"
-	"github.com/reaandrew/techdetector/summaryprocessors"
+	"github.com/reaandrew/techdetector/reporters"
 	"github.com/reaandrew/techdetector/utils"
 	"golang.org/x/oauth2"
 	"log"
@@ -87,26 +87,32 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 		}
 	}
 
-	// Generate summaries
+	//// Generate summaries
+	//
+	//summaryProcessors := []summaryprocessors.SummaryProcessor{
+	//	summaryprocessors.NewCloudVendorsSummaryProcessor(),
+	//	summaryprocessors.NewCloudSdkSummaryProcessor(),
+	//}
+	//
+	//iterator := githubOrgScanner.matchRepository.NewIterator()
+	//for iterator.HasNext() {
+	//	matchSet, _ := iterator.Next()
+	//
+	//	for _, match := range matchSet.Matches {
+	//		for _, processor := range summaryProcessors {
+	//			processor.Process(match)
+	//		}
+	//	}
+	//}
+	//for _, processor := range summaryProcessors {
+	//	githubOrgScanner.matchRepository.Store(processor.GetFindings())
+	//}
 
-	summaryProcessors := []summaryprocessors.SummaryProcessor{
-		summaryprocessors.NewCloudVendorsSummaryProcessor(),
+	summaryReporter := reporters.XlsxSummaryReporter{}
+	err = summaryReporter.Report(githubOrgScanner.matchRepository)
+	if err != nil {
+		log.Fatalf("Error generating summary report: %v", err)
 	}
-	
-	iterator := githubOrgScanner.matchRepository.NewIterator()
-	for iterator.HasNext() {
-		matchSet, _ := iterator.Next()
-
-		for _, match := range matchSet.Matches {
-			for _, processor := range summaryProcessors {
-				processor.Process(match)
-			}
-		}
-	}
-	for _, processor := range summaryProcessors {
-		githubOrgScanner.matchRepository.Store(processor.GetFindings())
-	}
-
 	// Generate report
 	err = githubOrgScanner.reporter.Report(githubOrgScanner.matchRepository)
 	if err != nil {

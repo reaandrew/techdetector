@@ -10,31 +10,6 @@ import (
 	"strings"
 )
 
-/*
-https://docs.docker.com/reference/dockerfile/
-
-Instruction	Description
-ADD			Add local or remote files and directories.
-ARG			Use build-time variables.
-CMD			Specify default commands.
-COPY		Copy files and directories.
-ENTRYPOINT	Specify default executable.
-ENV	Set 	environment variables.
-EXPOSE		Describe which ports your application is listening on.
-FROM		Create a new build stage from a base image.
-HEALTHCHECK	Check a container's health on startup.
-LABEL		Add metadata to an image.
-MAINTAINER	Specify the author of an image.
-ONBUILD		Specify instructions for when the image is used in a build.
-RUN			Execute build commands.
-SHELL		Set the default shell of an image.
-STOPSIGNAL	Specify the system call signal for exiting a container.
-USER		Set user and group ID.
-VOLUME		Create volume mounts.
-WORKDIR		Change working directory.
-
-*/
-
 type DockerInstruction struct {
 	Directive string
 	Arguments string
@@ -47,7 +22,6 @@ func ParseDockerfile(reader io.Reader) ([]DockerInstruction, error) {
 	scanner := bufio.NewScanner(reader)
 	for scanner.Scan() {
 		line := scanner.Text()
-
 		trimmedLine := strings.TrimSpace(line)
 
 		if trimmedLine == "" || strings.HasPrefix(trimmedLine, "#") {
@@ -129,7 +103,27 @@ func (d DockerProcessor) Process(path string, repoName string, content string) (
 	handledInstructions := []string{"MAINTAINER", "LABEL", "FROM", "EXPOSE"}
 
 	for _, instruction := range instructions {
-		if utils.Contains(handledInstructions, instruction.Directive) {
+		if instruction.Directive == "FROM" {
+			// Handle multi-stage FROM directives with AS
+			imageParts, alias := parseFromDirective(instruction.Arguments)
+			properties := map[string]interface{}{
+				"owner":   imageParts["owner"],
+				"image":   imageParts["image"],
+				"version": imageParts["version"],
+			}
+			if alias != "" {
+				properties["alias"] = alias
+			}
+
+			matches = append(matches, core.Finding{
+				Name:       instruction.Directive,
+				Type:       "Docker Directive",
+				Category:   "",
+				Properties: properties,
+				Path:       path,
+				RepoName:   repoName,
+			})
+		} else if utils.Contains(handledInstructions, instruction.Directive) {
 			matches = append(matches, core.Finding{
 				Name:     instruction.Directive,
 				Type:     "Docker Directive",
@@ -143,4 +137,45 @@ func (d DockerProcessor) Process(path string, repoName string, content string) (
 		}
 	}
 	return matches, nil
+}
+
+// Helper function to parse the FROM directive
+func parseFromDirective(arguments string) (map[string]string, string) {
+	alias := ""
+	if strings.Contains(arguments, " AS ") {
+		parts := strings.SplitN(arguments, " AS ", 2)
+		arguments = parts[0]
+		alias = strings.TrimSpace(parts[1])
+	}
+
+	imageParts := splitDockerImage(arguments)
+	return imageParts, alias
+}
+
+// Helper function to split a Docker image string into components
+func splitDockerImage(image string) map[string]string {
+	parts := strings.Split(image, "/")
+	result := map[string]string{
+		"owner":   "",
+		"image":   "",
+		"version": "",
+	}
+
+	if len(parts) == 2 {
+		result["owner"] = parts[0]
+		imageWithVersion := parts[1]
+		imageVersionParts := strings.SplitN(imageWithVersion, ":", 2)
+		result["image"] = imageVersionParts[0]
+		if len(imageVersionParts) == 2 {
+			result["version"] = imageVersionParts[1]
+		}
+	} else if len(parts) == 1 {
+		imageVersionParts := strings.SplitN(parts[0], ":", 2)
+		result["image"] = imageVersionParts[0]
+		if len(imageVersionParts) == 2 {
+			result["version"] = imageVersionParts[1]
+		}
+	}
+
+	return result
 }
