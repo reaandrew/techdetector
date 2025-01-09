@@ -43,7 +43,7 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 	}
 
 	// Generate summary report
-	summaryReporter := reporters.XlsxSummaryReporter{}
+	summaryReporter := reporters.DynamicXlsxSummaryReporter{}
 	err = summaryReporter.Report(ds.matchRepository)
 	if err != nil {
 		log.Fatalf("Error generating summary report: %v", err)
