@@ -8,6 +8,7 @@ import (
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/scanners"
 	"github.com/spf13/cobra"
+	"gopkg.in/yaml.v3"
 	"log"
 	"os"
 )
@@ -16,6 +17,7 @@ import (
 type Cli struct {
 	reportFormat string
 	baseUrl      string
+	queriesPath  string
 }
 
 // Execute sets up and runs the root command
@@ -32,6 +34,22 @@ func (cli *Cli) Execute() error {
 	return rootCmd.Execute()
 }
 
+func (cli *Cli) loadSqlQueries(filename string) (core.SqlQueries, error) {
+	var sqlQueries core.SqlQueries
+
+	fileData, err := os.ReadFile(filename)
+	if err != nil {
+		return sqlQueries, fmt.Errorf("failed to read YAML file '%s': %w", filename, err)
+	}
+
+	err = yaml.Unmarshal(fileData, &sqlQueries)
+	if err != nil {
+		return sqlQueries, fmt.Errorf("failed to unmarshal YAML data: %w", err)
+	}
+
+	return sqlQueries, nil
+}
+
 // createScanCommand creates the 'scan' subcommand with its flags and subcommands
 func (cli *Cli) createScanCommand() *cobra.Command {
 
@@ -44,13 +62,20 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	// Add the --report flag to the scan command
 	scanCmd.PersistentFlags().StringVar(&cli.reportFormat, "report", "xlsx", "Type format (supported: xlsx)")
 	scanCmd.PersistentFlags().StringVar(&cli.baseUrl, "baseurl", "xlsx", "Http report base url")
+	scanCmd.PersistentFlags().StringVar(&cli.queriesPath, "queries-path", "", "Queries path")
+
+	if err := scanCmd.MarkPersistentFlagRequired("queries-path"); err != nil {
+		fmt.Printf("Error making queries-path flag required: %v\n", err)
+		os.Exit(1)
+	}
 
 	scanRepoCmd := &cobra.Command{
 		Use:   "repo <REPO_URL>",
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			reporter, err := cli.createReporter(cli.reportFormat)
+			err, queries := cli.loadQueries(cmd)
+			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -68,7 +93,8 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			reporter, err := cli.createReporter(cli.reportFormat)
+			err, queries := cli.loadQueries(cmd)
+			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -108,11 +134,14 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 				log.Fatalf("Provided path '%s' is not a directory.", directory)
 			}
 
-			reporter, err := cli.createReporter(cli.reportFormat)
+			err, queries := cli.loadQueries(cmd)
+			fmt.Printf("Queries from CLI: %v", queries)
+			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
-			// Initialize DirectoryScanner
+
+			// Create a new DirectoryScanner with the dynamic reporter
 			directoryScanner := scanners.NewDirectoryScanner(
 				reporter,
 				processors.InitializeProcessors(),
@@ -129,9 +158,23 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	return scanCmd
 }
 
-func (cli *Cli) createReporter(reportFormat string) (core.Reporter, error) {
+func (cli *Cli) loadQueries(cmd *cobra.Command) (error, core.SqlQueries) {
+	// Ensure the queries file exists
+	if _, err := os.Stat(cli.queriesPath); os.IsNotExist(err) {
+		log.Fatalf("Queries file '%s' does not exist.", cli.queriesPath)
+	}
+
+	// Initialize the dynamic reporter and load queries
+	queries, err := cli.loadSqlQueries(cli.queriesPath)
+	if err != nil {
+		log.Fatalf("Failed to load queries file: %v", err)
+	}
+	return err, queries
+}
+
+func (cli *Cli) createReporter(reportFormat string, queries core.SqlQueries) (core.Reporter, error) {
 	if reportFormat == "xlsx" {
-		return reporters.XlsxReporter{}, nil
+		return reporters.XlsxReporter{queries}, nil
 	}
 	if reportFormat == "json" {
 		return reporters.JsonReporter{}, nil

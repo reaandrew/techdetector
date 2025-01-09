@@ -15,7 +15,9 @@ import (
 )
 
 // DynamicXlsxSummaryReporter is responsible for generating the XLSX summary report.
-type DynamicXlsxSummaryReporter struct{}
+type DynamicXlsxSummaryReporter struct {
+	SqlQueries core.SqlQueries
+}
 
 // Report generates the summary XLSX file based on the findings repository.
 func (xr DynamicXlsxSummaryReporter) Report(repository core.FindingRepository) error {
@@ -45,12 +47,6 @@ func (xr DynamicXlsxSummaryReporter) Report(repository core.FindingRepository) e
 		return fmt.Errorf("failed to import findings into SQLite: %w", err)
 	}
 
-	// Define dynamic queries for the Excel report.
-	queries, err := xr.generateQueries(db)
-	if err != nil {
-		return fmt.Errorf("failed to generate queries: %w", err)
-	}
-
 	// Initialize Excel file.
 	excelFile := excelize.NewFile()
 
@@ -60,11 +56,12 @@ func (xr DynamicXlsxSummaryReporter) Report(repository core.FindingRepository) e
 		return fmt.Errorf("failed to delete default sheet %q: %w", defaultSheet, err)
 	}
 
+	fmt.Printf("Queries: %v \n", xr.SqlQueries.Queries)
 	// Execute each query and write to Excel sheets.
-	for sheetName, query := range queries {
-		fmt.Printf("Executing query for: %s\n", sheetName)
-		if err := xr.executeAndWriteQuery(db, excelFile, query, sheetName); err != nil {
-			return fmt.Errorf("failed to write query result for '%s': %w", sheetName, err)
+	for _, query := range xr.SqlQueries.Queries {
+		fmt.Printf("Executing query for: %s\n", query.Name)
+		if err := xr.executeAndWriteQuery(db, excelFile, query.Query, query.Name); err != nil {
+			return fmt.Errorf("failed to write query result for '%s': %w", query.Name, err)
 		}
 	}
 
@@ -138,7 +135,6 @@ func (xr DynamicXlsxSummaryReporter) createDynamicTables(db *sql.DB, typePropert
 func (xr DynamicXlsxSummaryReporter) importFindings(db *sql.DB, findings []core.Finding) error {
 	for _, finding := range findings {
 		tableName := sanitizeIdentifier(finding.Type)
-		fmt.Printf("Processing Table: %s\n", tableName)
 
 		// Get column names for the table.
 		columns, err := xr.getTableColumns(db, tableName)
@@ -228,103 +224,10 @@ func (xr DynamicXlsxSummaryReporter) getTableColumns(db *sql.DB, tableName strin
 	return columns, nil
 }
 
-// generateQueries defines the dynamic queries for the Excel report.
-// It maintains your original queries, assuming that the dynamic table creation includes all necessary columns.
-func (xr DynamicXlsxSummaryReporter) generateQueries(db *sql.DB) (map[string]string, error) {
-	queries := make(map[string]string)
-
-	// Retrieve table names from the SQLite database.
-	rows, err := db.Query("SELECT name FROM sqlite_master WHERE type='table';")
-	if err != nil {
-		return nil, fmt.Errorf("failed to retrieve table names: %w", err)
-	}
-	defer rows.Close()
-
-	var tableName string
-	for rows.Next() {
-		if err := rows.Scan(&tableName); err != nil {
-			return nil, fmt.Errorf("failed to scan table name: %w", err)
-		}
-
-		// Define queries based on table names and their expected properties.
-		switch tableName {
-		case "Library":
-			queries["Library Versions"] = `
-				SELECT 
-					Name,
-					COUNT(DISTINCT Version) AS VersionCount,
-					GROUP_CONCAT(DISTINCT Version) AS Versions
-				FROM 
-					Library
-				GROUP BY 
-					Name
--- 				HAVING 
--- 					COUNT(DISTINCT Version) > 1
-				ORDER BY 
-					Name;
-			`
-			queries["Library Versions By RepoName"] = `
-				SELECT 
-					Name,
-					RepoName,
-					COUNT(DISTINCT Version) AS VersionCount,
-					GROUP_CONCAT(DISTINCT Version) AS Versions
-				FROM 
-					Library
-				GROUP BY 
-					Name, RepoName
--- 				HAVING 
--- 					COUNT(DISTINCT Version) > 1
-				ORDER BY 
-					Name;
-			`
-		case "Docker_Directive":
-			queries["Docker Image Owners"] = `
-				SELECT 
-					COALESCE(NULLIF(owner, ''), 'EMPTY') AS owner,
-					COUNT(*) AS owner_count
-				FROM 
-					Docker_Directive
-				GROUP BY 
-					owner
-				ORDER BY 
-					owner_count DESC;
-			`
-			queries["Docker Images By Owner"] = `
-				SELECT 
-					COALESCE(NULLIF(owner, ''), 'EMPTY') AS owner,
-					COUNT(DISTINCT image) AS image_count,
-					GROUP_CONCAT(DISTINCT image) AS images
-				FROM 
-					Docker_Directive
-				GROUP BY 
-					owner
-				ORDER BY 
-					image_count DESC;
-			`
-			queries["Docker Image Versions by Image"] = `
-				SELECT 
-					image,
-					COUNT(DISTINCT version) AS VersionCount,
-					GROUP_CONCAT(DISTINCT version) AS Versions
-				FROM 
-					Docker_Directive
-				GROUP BY 
-					image
-				ORDER BY 
-					VersionCount DESC;
-			`
-		// Add more cases for other table names and their corresponding queries.
-		default:
-			// Optionally, handle or ignore other tables.
-		}
-	}
-
-	return queries, nil
-}
-
 // executeAndWriteQuery executes a SQL query and writes the result to an Excel sheet.
 func (xr DynamicXlsxSummaryReporter) executeAndWriteQuery(db *sql.DB, excelFile *excelize.File, query, sheetName string) error {
+	fmt.Printf("sheetName: %s", sheetName)
+
 	// Execute the query.
 	rows, err := db.Query(query)
 	if err != nil {

@@ -16,7 +16,8 @@ type DirectoryScanner struct {
 }
 
 // NewDirectoryScanner creates a new DirectoryScanner
-func NewDirectoryScanner(reporter core.Reporter,
+func NewDirectoryScanner(
+	reporter core.Reporter,
 	processors []core.FileProcessor,
 	matchRepository core.FindingRepository) *DirectoryScanner {
 	return &DirectoryScanner{

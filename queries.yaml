@@ -1,0 +1,67 @@
+# sql_queries.yaml
+
+queries:
+  - name: "Library Versions"
+    query: |
+      SELECT 
+        Name,
+        COUNT(DISTINCT Version) AS VersionCount,
+        GROUP_CONCAT(DISTINCT Version) AS Versions
+      FROM 
+        Library
+      GROUP BY 
+        Name
+      ORDER BY 
+        Name;
+
+  - name: "Library Versions By RepoName"
+    query: |
+      SELECT 
+        Name,
+        RepoName,
+        COUNT(DISTINCT Version) AS VersionCount,
+        GROUP_CONCAT(DISTINCT Version) AS Versions
+      FROM 
+        Library
+      GROUP BY 
+        Name, RepoName
+      ORDER BY 
+        Name;
+
+  - name: "Docker Image Owners"
+    query: |
+      SELECT 
+        COALESCE(NULLIF(owner, ''), 'EMPTY') AS owner,
+        COUNT(*) AS owner_count
+      FROM 
+        Docker_Directive
+      GROUP BY 
+        owner
+      ORDER BY 
+        owner_count DESC;
+
+  - name: "Docker Images By Owner"
+    query: |
+      SELECT 
+        COALESCE(NULLIF(owner, ''), 'EMPTY') AS owner,
+        COUNT(DISTINCT image) AS image_count,
+        GROUP_CONCAT(DISTINCT image) AS images
+      FROM 
+        Docker_Directive
+      GROUP BY 
+        owner
+      ORDER BY 
+        image_count DESC;
+
+  - name: "Docker Image Versions by Image"
+    query: |
+      SELECT 
+        image,
+        COUNT(DISTINCT version) AS VersionCount,
+        GROUP_CONCAT(DISTINCT version) AS Versions
+      FROM 
+        Docker_Directive
+      GROUP BY 
+        image
+      ORDER BY 
+        VersionCount DESC;
