@@ -18,6 +18,7 @@ type Cli struct {
 	reportFormat string
 	baseUrl      string
 	queriesPath  string
+	dumpSchema   bool
 }
 
 // Execute sets up and runs the root command
@@ -31,7 +32,9 @@ func (cli *Cli) Execute() error {
 
 	rootCmd.AddCommand(scanCmd)
 
-	return rootCmd.Execute()
+	err := rootCmd.Execute()
+
+	return err
 }
 
 func (cli *Cli) loadSqlQueries(filename string) (core.SqlQueries, error) {
@@ -63,6 +66,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	scanCmd.PersistentFlags().StringVar(&cli.reportFormat, "report", "xlsx", "Type format (supported: xlsx)")
 	scanCmd.PersistentFlags().StringVar(&cli.baseUrl, "baseurl", "xlsx", "Http report base url")
 	scanCmd.PersistentFlags().StringVar(&cli.queriesPath, "queries-path", "", "Queries path")
+	scanCmd.PersistentFlags().BoolVar(&cli.dumpSchema, "dump-schema", false, "Dump SQLite schema to a text file")
 
 	if err := scanCmd.MarkPersistentFlagRequired("queries-path"); err != nil {
 		fmt.Printf("Error making queries-path flag required: %v\n", err)
@@ -75,7 +79,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			err, queries := cli.loadQueries(cmd)
-			reporter, err := cli.createReporter(cli.reportFormat, queries)
+			reporter, err := cli.createReporter(cli.reportFormat, queries, cli.dumpSchema)
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -94,7 +98,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			err, queries := cli.loadQueries(cmd)
-			reporter, err := cli.createReporter(cli.reportFormat, queries)
+			reporter, err := cli.createReporter(cli.reportFormat, queries, cli.dumpSchema)
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -136,7 +140,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 
 			err, queries := cli.loadQueries(cmd)
 			fmt.Printf("Queries from CLI: %v", queries)
-			reporter, err := cli.createReporter(cli.reportFormat, queries)
+			reporter, err := cli.createReporter(cli.reportFormat, queries, cli.dumpSchema)
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -172,9 +176,9 @@ func (cli *Cli) loadQueries(cmd *cobra.Command) (error, core.SqlQueries) {
 	return err, queries
 }
 
-func (cli *Cli) createReporter(reportFormat string, queries core.SqlQueries) (core.Reporter, error) {
+func (cli *Cli) createReporter(reportFormat string, queries core.SqlQueries, dumpSchema bool) (core.Reporter, error) {
 	if reportFormat == "xlsx" {
-		return reporters.XlsxReporter{queries}, nil
+		return reporters.XlsxReporter{queries, dumpSchema}, nil
 	}
 	if reportFormat == "json" {
 		return reporters.JsonReporter{}, nil

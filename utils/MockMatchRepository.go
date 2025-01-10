@@ -1,46 +1,63 @@
+// File: ./utils/Utils.go
 package utils
 
-import "github.com/reaandrew/techdetector/core"
+import (
+	"fmt"
+	"github.com/reaandrew/techdetector/core"
+)
 
+// MockMatchRepository is a mock implementation of core.FindingRepository
 type MockMatchRepository struct {
 	Matches []core.Finding
 }
 
-func (m MockMatchRepository) Store(matches []core.Finding) error {
-	//TODO implement me
-	panic("implement me")
+// Store appends the provided findings to the repository's Matches slice.
+func (m *MockMatchRepository) Store(matches []core.Finding) error {
+	m.Matches = append(m.Matches, matches...)
+	return nil
 }
 
-func (m MockMatchRepository) Clear() error {
-	//TODO implement me
-	panic("implement me")
+// Clear removes all findings from the repository.
+func (m *MockMatchRepository) Clear() error {
+	m.Matches = nil
+	return nil
 }
 
-func (m MockMatchRepository) NewIterator() core.FindingIterator {
+// NewIterator returns a new MockMatchIterator for iterating over the findings.
+func (m *MockMatchRepository) NewIterator() core.FindingIterator {
+	// Create copies of the findings to prevent mutation during iteration
+	copiedFindings := make([]core.Finding, len(m.Matches))
+	copy(copiedFindings, m.Matches)
+
 	return &MockMatchIterator{
 		position: 0,
-		matches: []core.FindingSet{
-			{Matches: m.Matches},
-		},
+		matches:  []core.FindingSet{{Matches: copiedFindings}},
 	}
 }
 
+// MockMatchIterator is a mock implementation of core.FindingIterator
 type MockMatchIterator struct {
 	position int
 	matches  []core.FindingSet
 }
 
+// Reset resets the iterator to the beginning.
 func (m *MockMatchIterator) Reset() error {
 	m.position = 0
 	return nil
 }
 
+// HasNext checks if there are more findings to iterate over.
 func (m *MockMatchIterator) HasNext() bool {
 	return m.position < len(m.matches)
 }
 
+// Next retrieves the next set of findings.
 func (m *MockMatchIterator) Next() (core.FindingSet, error) {
-	returnValue := m.matches[m.position]
+	if !m.HasNext() {
+		return core.FindingSet{}, fmt.Errorf("no more findings")
+	}
+	findingSet := m.matches[m.position]
 	m.position++
-	return returnValue, nil
+	return findingSet, nil
 }

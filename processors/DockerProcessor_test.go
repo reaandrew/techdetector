@@ -68,7 +68,9 @@ ENTRYPOINT ["bash", "-c", "echo Hello World"]
 			Type:     "Docker Directive",
 			Category: "",
 			Properties: map[string]interface{}{
-				"arguments": "ubuntu:20.04",
+				"image":   "ubuntu",
+				"version": "20.04",
+				"owner":   "",
 			},
 			Path:     path,
 			RepoName: repoName,

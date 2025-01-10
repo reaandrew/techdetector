@@ -42,17 +42,16 @@ queries:
 
   - name: "Docker Images By Owner"
     query: |
-      SELECT 
-        COALESCE(NULLIF(owner, ''), 'EMPTY') AS owner,
-        COUNT(DISTINCT image) AS image_count,
-        GROUP_CONCAT(DISTINCT image) AS images
-      FROM 
-        Docker_Directive
-      GROUP BY 
-        owner
-      ORDER BY 
-        image_count DESC;
-
+      SELECT
+      COALESCE(NULLIF(owner, ''), 'EMPTY') AS owner,
+      COUNT(DISTINCT CASE WHEN image IS NOT NULL AND image != '' THEN image END) AS image_count,
+      GROUP_CONCAT(DISTINCT CASE WHEN image IS NOT NULL AND image != '' THEN image END) AS images
+      FROM
+      Docker_Directive
+      GROUP BY
+      owner
+      ORDER BY
+      image_count DESC;
   - name: "Docker Image Versions by Image"
     query: |
       SELECT 
@@ -65,3 +64,196 @@ queries:
         image
       ORDER BY 
         VersionCount DESC;
+  - name: "Framework Usage by Repo"
+    query: |
+      SELECT 
+        RepoName,
+        COUNT(DISTINCT Name) AS FrameworkCount,
+        GROUP_CONCAT(DISTINCT Name) AS Frameworks
+      FROM 
+        Framework
+      GROUP BY 
+        RepoName
+      ORDER BY 
+        FrameworkCount DESC;
+
+  - name: "Cloud Services by Vendor"
+    query: |
+      SELECT 
+        vendor,
+        COUNT(DISTINCT Name) AS ServiceCount,
+        GROUP_CONCAT(DISTINCT Name) AS Services
+      FROM 
+        Cloud_Service_SDK
+      GROUP BY 
+        vendor
+      ORDER BY 
+        ServiceCount DESC;
+
+  - name: "Applications by Repo"
+    query: |
+      SELECT 
+        RepoName,
+        COUNT(DISTINCT Name) AS ApplicationCount,
+        GROUP_CONCAT(DISTINCT Name) AS Applications
+      FROM 
+        Application
+      GROUP BY 
+        RepoName
+      ORDER BY 
+        ApplicationCount DESC;
+
+  - name: "Top Languages in Libraries"
+    query: |
+      SELECT 
+        Language,
+        COUNT(*) AS LibraryCount
+      FROM 
+        Library
+      GROUP BY 
+        Language
+      ORDER BY 
+        LibraryCount DESC;
+
+  - name: "Docker Imgs Without Owners"
+    query: |
+      SELECT 
+        image,
+        COUNT(*) AS ImageCount
+      FROM 
+        Docker_Directive
+      WHERE 
+        owner IS NULL OR owner = ''
+      GROUP BY 
+        image
+      ORDER BY 
+        ImageCount DESC;
+
+  - name: "Top Categories"
+    query: |
+      SELECT 
+        Category,
+        COUNT(*) AS OccurrenceCount
+      FROM (
+        SELECT Category FROM Docker_Compose_Service
+        UNION ALL
+        SELECT Category FROM Framework
+        UNION ALL
+        SELECT Category FROM Library
+        UNION ALL
+        SELECT Category FROM Application
+        UNION ALL
+        SELECT Category FROM Docker_Directive
+        UNION ALL
+        SELECT Category FROM Cloud_Service_SDK
+      )
+      GROUP BY 
+        Category
+      ORDER BY 
+        OccurrenceCount DESC;
+
+  - name: "Cloud Svcs Sdks Usage"
+    query: |
+      SELECT 
+        RepoName,
+        COUNT(DISTINCT Name) AS CloudServiceCount,
+        GROUP_CONCAT(DISTINCT Name) AS CloudServices
+      FROM 
+        Cloud_Service_SDK
+      GROUP BY 
+        RepoName
+      HAVING 
+        CloudServiceCount > 1
+      ORDER BY 
+        CloudServiceCount DESC;
+
+  - name: "Top Docker Imgs Used"
+    query: |
+      SELECT 
+        image,
+        COUNT(*) AS UsageCount
+      FROM 
+        Docker_Directive
+      GROUP BY 
+        image
+      ORDER BY 
+        UsageCount DESC;
+
+  - name: "Most Docker Directives"
+    query: |
+      SELECT 
+        RepoName,
+        COUNT(*) AS DirectiveCount
+      FROM 
+        Docker_Directive
+      GROUP BY 
+        RepoName
+      ORDER BY 
+        DirectiveCount DESC;
+
+  - name: "Framework Types by Repo"
+    query: |
+      SELECT 
+        RepoName,
+        Type,
+        COUNT(DISTINCT Name) AS FrameworkCount,
+        GROUP_CONCAT(DISTINCT Name) AS Frameworks
+      FROM 
+        Framework
+      GROUP BY 
+        RepoName, Type
+      ORDER BY 
+        FrameworkCount DESC;
+
+  - name: "Libs by Lang and Repo"
+    query: |
+      SELECT 
+        Language,
+        RepoName,
+        COUNT(DISTINCT Name) AS LibraryCount,
+        GROUP_CONCAT(DISTINCT Name) AS Libraries
+      FROM 
+        Library
+      GROUP BY 
+        Language, RepoName
+      ORDER BY 
+        Language, LibraryCount DESC;
+
+  - name: "Repos Without Applications"
+    query: |
+      SELECT 
+        DISTINCT RepoName
+      FROM 
+        Framework
+      WHERE 
+        RepoName NOT IN (
+          SELECT DISTINCT RepoName FROM Application
+        )
+      ORDER BY 
+        RepoName;
+
+  - name: "Most Common Lib Cats"
+    query: |
+      SELECT 
+        Category,
+        COUNT(*) AS CategoryCount
+      FROM 
+        Library
+      GROUP BY 
+        Category
+      ORDER BY 
+        CategoryCount DESC;
+
+  - name: "Repos With No Frameworks"
+    query: |
+      SELECT 
+        DISTINCT RepoName
+      FROM 
+        Application
+      WHERE 
+        RepoName NOT IN (
+          SELECT DISTINCT RepoName FROM Framework
+        )
+      ORDER BY 
+        RepoName;
+

@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
-	"github.com/reaandrew/techdetector/utils"
 	"github.com/stretchr/testify/assert"
 	"io"
 	"net/http"
@@ -33,6 +32,49 @@ func (m MockHttpClient) GetRequests() []http.Request {
 	return m.requests
 }
 
+type MockMatchRepository struct {
+	matches []core.Finding
+}
+
+func (m MockMatchRepository) Store(matches []core.Finding) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (m MockMatchRepository) Clear() error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (m MockMatchRepository) NewIterator() core.FindingIterator {
+	return &MockMatchIterator{
+		position: 0,
+		matches: []core.FindingSet{
+			{Matches: m.matches},
+		},
+	}
+}
+
+type MockMatchIterator struct {
+	position int
+	matches  []core.FindingSet
+}
+
+func (m *MockMatchIterator) Reset() error {
+	m.position = 0
+	return nil
+}
+
+func (m *MockMatchIterator) HasNext() bool {
+	return m.position < len(m.matches)
+}
+
+func (m *MockMatchIterator) Next() (core.FindingSet, error) {
+	returnValue := m.matches[m.position]
+	m.position++
+	return returnValue, nil
+}
+
 type MockReportIdGenerator struct {
 	id string
 }
@@ -43,7 +85,7 @@ func (m MockReportIdGenerator) Generate() string {
 
 func TestHttpReporter_Report(t *testing.T) {
 	expectedId := "101"
-	mockRepository := utils.MockMatchRepository{Matches: []core.Finding{
+	mockRepository := MockMatchRepository{matches: []core.Finding{
 		{
 			Name:     "Match1",
 			Type:     "Type1",

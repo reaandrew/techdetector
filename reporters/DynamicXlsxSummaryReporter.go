@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+	"github.com/reaandrew/techdetector/utils"
 	"log"
 	"os"
 	"strings"
@@ -14,9 +15,15 @@ import (
 	"github.com/xuri/excelize/v2"
 )
 
+const (
+	XlsxSummaryReport = "summary_report.xlsx"
+	XlsxSQLiteDB      = "findings.db"
+)
+
 // DynamicXlsxSummaryReporter is responsible for generating the XLSX summary report.
 type DynamicXlsxSummaryReporter struct {
 	SqlQueries core.SqlQueries
+	DumpSchema bool
 }
 
 // Report generates the summary XLSX file based on the findings repository.
@@ -24,12 +31,12 @@ func (xr DynamicXlsxSummaryReporter) Report(repository core.FindingRepository) e
 	fmt.Println("Generating Summary XLSX file")
 
 	// Open SQLite database.
-	db, err := sql.Open("sqlite3", xlsxSQLiteDB)
+	db, err := sql.Open("sqlite3", XlsxSQLiteDB)
 	if err != nil {
 		return fmt.Errorf("failed to create SQLite database: %w", err)
 	}
 	defer db.Close()
-	defer os.Remove(xlsxSQLiteDB)
+	defer os.Remove(XlsxSQLiteDB)
 
 	// Collect all findings and gather unique properties per type.
 	typeProperties, findings, err := xr.collectPropertiesAndFindings(repository)
@@ -68,6 +75,10 @@ func (xr DynamicXlsxSummaryReporter) Report(repository core.FindingRepository) e
 	// Save the Excel report.
 	if err := excelFile.SaveAs(XlsxSummaryReport); err != nil {
 		return fmt.Errorf("failed to save summary report: %w", err)
+	}
+
+	if xr.DumpSchema {
+		utils.DumpSQLiteSchema(XlsxSQLiteDB)
 	}
 
 	fmt.Printf("Summary XLSX report generated successfully: %s\n", XlsxSummaryReport)
@@ -131,7 +142,15 @@ func (xr DynamicXlsxSummaryReporter) createDynamicTables(db *sql.DB, typePropert
 	return nil
 }
 
-// importFindings inserts findings into their respective dynamic tables.
+func contains(slice []string, item string) bool {
+	for _, s := range slice {
+		if s == item {
+			return true
+		}
+	}
+	return false
+}
+
 func (xr DynamicXlsxSummaryReporter) importFindings(db *sql.DB, findings []core.Finding) error {
 	for _, finding := range findings {
 		tableName := sanitizeIdentifier(finding.Type)
@@ -143,47 +162,41 @@ func (xr DynamicXlsxSummaryReporter) importFindings(db *sql.DB, findings []core.
 			continue
 		}
 
+		// Prepare fields, placeholders, and arguments for the INSERT statement.
 		fields := []string{}
 		placeholders := []string{}
 		args := []interface{}{}
 
-		for _, col := range columns {
-			switch col {
-			case "Name", "Type", "Category", "Path", "RepoName":
-				var value interface{}
-				switch col {
-				case "Name":
-					value = finding.Name
-				case "Type":
-					value = finding.Type
-				case "Category":
-					value = finding.Category
-				case "Path":
-					value = finding.Path
-				case "RepoName":
-					value = finding.RepoName
-				}
+		// Add predefined fields from the Finding struct.
+		predefinedFields := map[string]interface{}{
+			"Name":     finding.Name,
+			"Type":     finding.Type,
+			"Category": finding.Category,
+			"Path":     finding.Path,
+			"RepoName": finding.RepoName,
+		}
+
+		for col := range predefinedFields {
+			if contains(columns, col) { // Ensure column exists in the table
 				fields = append(fields, col)
 				placeholders = append(placeholders, "?")
+				args = append(args, predefinedFields[col])
+			}
+		}
+
+		// Add dynamic properties.
+		for key, value := range finding.Properties {
+			sanitizedKey := sanitizeIdentifier(key)
+			if contains(columns, sanitizedKey) { // Ensure column exists in the table
+				fields = append(fields, sanitizedKey)
+				placeholders = append(placeholders, "?")
 				args = append(args, value)
-			default:
-				// Dynamic properties
-				value, exists := finding.Properties[col]
-				if exists {
-					fields = append(fields, col)
-					placeholders = append(placeholders, "?")
-					args = append(args, value)
-				} else {
-					// Property missing in this finding
-					fields = append(fields, col)
-					placeholders = append(placeholders, "NULL")
-					args = append(args, nil)
-				}
 			}
 		}
 
 		// Build the INSERT statement.
-		insertStmt := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s);",
+		insertStmt := fmt.Sprintf(
+			"INSERT INTO %s (%s) VALUES (%s);",
 			tableName,
 			strings.Join(fields, ", "),
 			strings.Join(placeholders, ", "),

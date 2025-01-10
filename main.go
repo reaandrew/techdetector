@@ -5,9 +5,11 @@ import (
 )
 
 const (
-	MaxWorkers     = 10
-	MaxFileWorkers = 10
-	CloneBaseDir   = "/tmp/techdetector" // You can make this configurable if needed
+	MaxWorkers        = 10
+	MaxFileWorkers    = 10
+	CloneBaseDir      = "/tmp/techdetector" // You can make this configurable if needed
+	XlsxSummaryReport = "summary_report.xlsx"
+	XlsxSQLiteDB      = "findings.db"
 )
 
 var Version string
