@@ -6,20 +6,21 @@ import (
 )
 
 type XlsxReporter struct {
-	Queries    core.SqlQueries
-	DumpSchema bool
+	Queries        core.SqlQueries
+	DumpSchema     bool
+	ArtifactPrefix string
 }
 
 func (x XlsxReporter) Report(repository core.FindingRepository) error {
 	// Generate summary report
-	summaryReporter := DynamicXlsxSummaryReporter{x.Queries, x.DumpSchema}
+	summaryReporter := DynamicXlsxSummaryReporter{x.Queries, x.DumpSchema, x.ArtifactPrefix}
 	err := summaryReporter.Report(repository)
 	if err != nil {
 		log.Fatalf("Error generating summary report: %v", err)
 		return err
 	}
 
-	rawReporter := XlsxRawReporter{}
+	rawReporter := XlsxRawReporter{x.ArtifactPrefix}
 	err = rawReporter.Report(repository)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)

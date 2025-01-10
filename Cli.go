@@ -19,6 +19,7 @@ type Cli struct {
 	baseUrl      string
 	queriesPath  string
 	dumpSchema   bool
+	prefix       string
 }
 
 // Execute sets up and runs the root command
@@ -37,22 +38,6 @@ func (cli *Cli) Execute() error {
 	return err
 }
 
-func (cli *Cli) loadSqlQueries(filename string) (core.SqlQueries, error) {
-	var sqlQueries core.SqlQueries
-
-	fileData, err := os.ReadFile(filename)
-	if err != nil {
-		return sqlQueries, fmt.Errorf("failed to read YAML file '%s': %w", filename, err)
-	}
-
-	err = yaml.Unmarshal(fileData, &sqlQueries)
-	if err != nil {
-		return sqlQueries, fmt.Errorf("failed to unmarshal YAML data: %w", err)
-	}
-
-	return sqlQueries, nil
-}
-
 // createScanCommand creates the 'scan' subcommand with its flags and subcommands
 func (cli *Cli) createScanCommand() *cobra.Command {
 
@@ -67,6 +52,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	scanCmd.PersistentFlags().StringVar(&cli.baseUrl, "baseurl", "xlsx", "Http report base url")
 	scanCmd.PersistentFlags().StringVar(&cli.queriesPath, "queries-path", "", "Queries path")
 	scanCmd.PersistentFlags().BoolVar(&cli.dumpSchema, "dump-schema", false, "Dump SQLite schema to a text file")
+	scanCmd.PersistentFlags().StringVar(&cli.prefix, "prefix", "techdetector", "A prefix for the output artifacts")
 
 	if err := scanCmd.MarkPersistentFlagRequired("queries-path"); err != nil {
 		fmt.Printf("Error making queries-path flag required: %v\n", err)
@@ -78,39 +64,51 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			err, queries := cli.loadQueries(cmd)
-			reporter, err := cli.createReporter(cli.reportFormat, queries, cli.dumpSchema)
+			err, queries := cli.loadQueries()
+			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
+			repository := repositories.NewFileBasedMatchRepository()
+			defer func(repository core.FindingRepository) {
+				err := repository.Clear()
+				if err != nil {
+					log.Fatalf("Error when clearing down Match repository %v", err)
+				}
+			}(repository)
 			scanner := scanners.NewRepoScanner(
 				reporter,
 				processors.InitializeProcessors(),
-				repositories.NewFileBasedMatchRepository())
+				repository)
 			repoURL := args[0]
 			scanner.Scan(repoURL, cli.reportFormat)
 		},
 	}
-
 	scanOrgCmd := &cobra.Command{
 		Use:   "github_org <ORG_NAME>",
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			err, queries := cli.loadQueries(cmd)
-			reporter, err := cli.createReporter(cli.reportFormat, queries, cli.dumpSchema)
+			err, queries := cli.loadQueries()
+			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
+			repository := repositories.NewFileBasedMatchRepository()
+			defer func(repository core.FindingRepository) {
+				err := repository.Clear()
+				if err != nil {
+					log.Fatalf("Error when clearing down Match repository %v", err)
+				}
+			}(repository)
 			scanner := scanners.NewGithubOrgScanner(
 				reporter,
 				processors.InitializeProcessors(),
-				repositories.NewFileBasedMatchRepository())
+				repository)
 			orgName := args[0]
 			scanner.Scan(orgName, cli.reportFormat)
 		},
 	}
-
 	scanDirCmd := &cobra.Command{
 		Use:   "dir [DIRECTORY]",
 		Short: "Scan all top-level directories in the specified directory (defaults to CWD) for technologies.",
@@ -138,18 +136,25 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 				log.Fatalf("Provided path '%s' is not a directory.", directory)
 			}
 
-			err, queries := cli.loadQueries(cmd)
-			fmt.Printf("Queries from CLI: %v", queries)
-			reporter, err := cli.createReporter(cli.reportFormat, queries, cli.dumpSchema)
+			err, queries := cli.loadQueries()
+			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
+
+			repository := repositories.NewFileBasedMatchRepository()
+			defer func(repository core.FindingRepository) {
+				err := repository.Clear()
+				if err != nil {
+					log.Fatalf("Error when clearing down Match repository %v", err)
+				}
+			}(repository)
 
 			// Create a new DirectoryScanner with the dynamic reporter
 			directoryScanner := scanners.NewDirectoryScanner(
 				reporter,
 				processors.InitializeProcessors(),
-				repositories.NewFileBasedMatchRepository())
+				repository)
 
 			// Execute the scan
 			directoryScanner.Scan(directory, cli.reportFormat)
@@ -162,7 +167,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	return scanCmd
 }
 
-func (cli *Cli) loadQueries(cmd *cobra.Command) (error, core.SqlQueries) {
+func (cli *Cli) loadQueries() (error, core.SqlQueries) {
 	// Ensure the queries file exists
 	if _, err := os.Stat(cli.queriesPath); os.IsNotExist(err) {
 		log.Fatalf("Queries file '%s' does not exist.", cli.queriesPath)
@@ -176,9 +181,25 @@ func (cli *Cli) loadQueries(cmd *cobra.Command) (error, core.SqlQueries) {
 	return err, queries
 }
 
-func (cli *Cli) createReporter(reportFormat string, queries core.SqlQueries, dumpSchema bool) (core.Reporter, error) {
+func (cli *Cli) loadSqlQueries(filename string) (core.SqlQueries, error) {
+	var sqlQueries core.SqlQueries
+
+	fileData, err := os.ReadFile(filename)
+	if err != nil {
+		return sqlQueries, fmt.Errorf("failed to read YAML file '%s': %w", filename, err)
+	}
+
+	err = yaml.Unmarshal(fileData, &sqlQueries)
+	if err != nil {
+		return sqlQueries, fmt.Errorf("failed to unmarshal YAML data: %w", err)
+	}
+
+	return sqlQueries, nil
+}
+
+func (cli *Cli) createReporter(reportFormat string, queries core.SqlQueries) (core.Reporter, error) {
 	if reportFormat == "xlsx" {
-		return reporters.XlsxReporter{queries, dumpSchema}, nil
+		return reporters.XlsxReporter{Queries: queries, DumpSchema: cli.dumpSchema, ArtifactPrefix: cli.prefix}, nil
 	}
 	if reportFormat == "json" {
 		return reporters.JsonReporter{}, nil

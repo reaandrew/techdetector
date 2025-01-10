@@ -13,6 +13,7 @@ const (
 )
 
 type XlsxRawReporter struct {
+	ArtifactPrefix string
 }
 
 func (xlsxReporter XlsxRawReporter) Report(repository core.FindingRepository) error {
@@ -132,7 +133,8 @@ func (xlsxReporter XlsxRawReporter) Report(repository core.FindingRepository) er
 	}
 
 	// Save the Excel file
-	outputFile := DefaultReport
+	outputFile := fmt.Sprintf("%s_%s", xlsxReporter.ArtifactPrefix, DefaultReport)
+	
 	if err := f.SaveAs(outputFile); err != nil {
 		return fmt.Errorf("failed to save XLSX file '%s': %w", outputFile, err)
 	}

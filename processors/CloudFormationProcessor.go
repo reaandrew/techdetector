@@ -49,25 +49,28 @@ func (c CloudFormationProcessor) Process(path string, repoName string, content s
 			return nil, jsonErr
 		}
 	}
-
-	// If AWSTemplateFormatVersion is empty, there's a chance
-	// it's not a real CF template. We'll just do a quick check:
+	
 	if template.AWSTemplateFormatVersion == "" && len(template.Resources) == 0 {
 		return nil, nil // Doesn't look like a CloudFormation template
 	}
 
 	var matches []core.Finding
+
 	for resourceName, resource := range template.Resources {
+
+		props := map[string]interface{}{
+			"resource_type": resource.Type,
+		}
+		for key, value := range resource.Properties {
+			props[key] = value
+		}
 		matches = append(matches, core.Finding{
-			Name:     resourceName,
-			Type:     "CloudFormation Resource",
-			Category: "AWS",
-			Properties: map[string]interface{}{
-				"resource_type": resource.Type,
-				"properties":    resource.Properties,
-			},
-			Path:     path,
-			RepoName: repoName,
+			Name:       resourceName,
+			Type:       "CloudFormation Resource",
+			Category:   "AWS",
+			Properties: props,
+			Path:       path,
+			RepoName:   repoName,
 		})
 	}
 

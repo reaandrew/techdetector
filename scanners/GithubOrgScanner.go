@@ -85,7 +85,7 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 			log.Fatalf("Error storing matches in '%s': %v", res.RepoName, err)
 		}
 	}
-	
+
 	// Generate report
 	err = githubOrgScanner.reporter.Report(githubOrgScanner.matchRepository)
 	if err != nil {
@@ -103,6 +103,7 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 
 		repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
 		err := utils.CloneRepository(repo.GetCloneURL(), repoPath)
+
 		if err != nil {
 			results <- RepoResult{
 				Matches:  nil,

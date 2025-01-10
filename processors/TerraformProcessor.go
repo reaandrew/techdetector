@@ -49,17 +49,22 @@ func (a AWSResourceBlockProcessor) Process(block *TerraformBlock, path string, r
 
 	// Check if block is a "resource" and if the first label has "aws_" prefix
 	if block.Type == "resource" && len(block.Labels) > 0 && strings.HasPrefix(block.Labels[0], "aws_") {
+		props := map[string]interface{}{
+			"resource_type": block.Labels[0],
+			"vendor":        "AWS",
+		}
+
+		for key, value := range block.Attributes {
+			props[key] = value
+		}
+
 		matches = append(matches, core.Finding{
-			Name:     "AWS Resource",
-			Type:     "Terraform Resource Use",
-			Category: "AWS", // or whatever category you prefer
-			Properties: map[string]interface{}{
-				"resource_type": block.Labels[0],
-				"attributes":    block.Attributes,
-				"vendor":        "AWS",
-			},
-			RepoName: repoName,
-			Path:     path,
+			Name:       "AWS Resource",
+			Type:       "Terraform Resource Use",
+			Category:   "AWS", // or whatever category you prefer
+			Properties: props,
+			RepoName:   repoName,
+			Path:       path,
 		})
 	}
 
@@ -74,17 +79,22 @@ func (a AzureResourceBlockProcessor) Process(block *TerraformBlock, path string,
 
 	// Check if block is a "resource" and if the first label has "azurerm_" prefix
 	if block.Type == "resource" && len(block.Labels) > 0 && strings.HasPrefix(block.Labels[0], "azurerm_") {
+		props := map[string]interface{}{
+			"resource_type": block.Labels[0],
+			"vendor":        "Azure",
+		}
+
+		for key, value := range block.Attributes {
+			props[key] = value
+		}
+
 		matches = append(matches, core.Finding{
-			Name:     "Azure Resource",
-			Type:     "Terraform Resource Use",
-			Category: "Azure",
-			Properties: map[string]interface{}{
-				"resource_type": block.Labels[0],
-				"attributes":    block.Attributes,
-				"vendor":        "Azure",
-			},
-			RepoName: repoName,
-			Path:     path,
+			Name:       "Azure Resource",
+			Type:       "Terraform Resource Use",
+			Category:   "Azure",
+			Properties: props,
+			RepoName:   repoName,
+			Path:       path,
 		})
 	}
 

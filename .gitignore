@@ -30,3 +30,4 @@ techdetector
 *.dot
 dependencies.png
 schema.txt
+*.db

@@ -3,7 +3,6 @@ package scanners
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
-	"github.com/reaandrew/techdetector/reporters"
 	"log"
 	"path/filepath"
 )
@@ -42,14 +41,7 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 	if err != nil {
 		log.Fatalf("Error storing matches in '%s': %v", directory, err)
 	}
-
-	// Generate summary report
-	summaryReporter := reporters.DynamicXlsxSummaryReporter{}
-	err = summaryReporter.Report(ds.matchRepository)
-	if err != nil {
-		log.Fatalf("Error generating summary report: %v", err)
-	}
-
+	
 	// Generate main report
 	err = ds.reporter.Report(ds.matchRepository)
 	if err != nil {

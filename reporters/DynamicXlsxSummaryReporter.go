@@ -5,13 +5,14 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	"log"
-	"os"
+
+	//"os"
 	"strings"
 
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/reaandrew/techdetector/core"
 	"github.com/xuri/excelize/v2"
 )
 
@@ -20,60 +21,52 @@ const (
 	XlsxSQLiteDB      = "findings.db"
 )
 
-// DynamicXlsxSummaryReporter is responsible for generating the XLSX summary report.
 type DynamicXlsxSummaryReporter struct {
-	SqlQueries core.SqlQueries
-	DumpSchema bool
+	SqlQueries     core.SqlQueries
+	DumpSchema     bool
+	ArtifactPrefix string
 }
 
-// Report generates the summary XLSX file based on the findings repository.
-func (xr DynamicXlsxSummaryReporter) Report(repository core.FindingRepository) error {
-	fmt.Println("Generating Summary XLSX file")
+var PredefinedFieldsSlice = []string{"Name", "Type", "Category", "Path", "RepoName"}
 
-	// Open SQLite database.
-	db, err := sql.Open("sqlite3", XlsxSQLiteDB)
+func (xr DynamicXlsxSummaryReporter) Report(repository core.FindingRepository) error {
+	//fmt.Println("Generating Summary XLSX file")
+
+	db, err := sql.Open("sqlite3", fmt.Sprintf("%s_%s", xr.ArtifactPrefix, XlsxSQLiteDB))
 	if err != nil {
 		return fmt.Errorf("failed to create SQLite database: %w", err)
 	}
 	defer db.Close()
-	defer os.Remove(XlsxSQLiteDB)
+	//defer os.Remove(XlsxSQLiteDB)
 
-	// Collect all findings and gather unique properties per type.
 	typeProperties, findings, err := xr.collectPropertiesAndFindings(repository)
 	if err != nil {
 		return fmt.Errorf("failed to collect properties and findings: %w", err)
 	}
 
-	// Dynamically create tables based on collected properties.
 	if err := xr.createDynamicTables(db, typeProperties); err != nil {
 		return fmt.Errorf("failed to create SQLite tables: %w", err)
 	}
 
-	// Import findings into the dynamic tables.
-	if err := xr.importFindings(db, findings); err != nil {
+	if err := xr.importFindings(db, findings, typeProperties); err != nil {
 		return fmt.Errorf("failed to import findings into SQLite: %w", err)
 	}
 
-	// Initialize Excel file.
 	excelFile := excelize.NewFile()
 
-	// Remove default sheet.
 	defaultSheet := excelFile.GetSheetName(0)
 	if err := excelFile.DeleteSheet(defaultSheet); err != nil {
 		return fmt.Errorf("failed to delete default sheet %q: %w", defaultSheet, err)
 	}
 
-	fmt.Printf("Queries: %v \n", xr.SqlQueries.Queries)
-	// Execute each query and write to Excel sheets.
 	for _, query := range xr.SqlQueries.Queries {
-		fmt.Printf("Executing query for: %s\n", query.Name)
+		//fmt.Printf("Executing query for: %s\n", query.Name)
 		if err := xr.executeAndWriteQuery(db, excelFile, query.Query, query.Name); err != nil {
 			return fmt.Errorf("failed to write query result for '%s': %w", query.Name, err)
 		}
 	}
 
-	// Save the Excel report.
-	if err := excelFile.SaveAs(XlsxSummaryReport); err != nil {
+	if err := excelFile.SaveAs(fmt.Sprintf("%s_%s", xr.ArtifactPrefix, XlsxSummaryReport)); err != nil {
 		return fmt.Errorf("failed to save summary report: %w", err)
 	}
 
@@ -81,11 +74,10 @@ func (xr DynamicXlsxSummaryReporter) Report(repository core.FindingRepository) e
 		utils.DumpSQLiteSchema(XlsxSQLiteDB)
 	}
 
-	fmt.Printf("Summary XLSX report generated successfully: %s\n", XlsxSummaryReport)
+	//fmt.Printf("Summary XLSX report generated successfully: %s\n", XlsxSummaryReport)
 	return nil
 }
 
-// collectPropertiesAndFindings iterates through the repository and collects unique properties per type.
 func (xr DynamicXlsxSummaryReporter) collectPropertiesAndFindings(repo core.FindingRepository) (map[string]map[string]bool, []core.Finding, error) {
 	typeProperties := make(map[string]map[string]bool)
 	var allFindings []core.Finding
@@ -98,19 +90,70 @@ func (xr DynamicXlsxSummaryReporter) collectPropertiesAndFindings(repo core.Find
 			if _, exists := typeProperties[finding.Type]; !exists {
 				typeProperties[finding.Type] = make(map[string]bool)
 			}
-			for prop := range finding.Properties {
+			// Flatten properties
+			flattenedProps := flattenProperties(finding.Properties)
+			for prop := range flattenedProps {
 				typeProperties[finding.Type][prop] = true
 			}
+			// Replace original properties with flattened ones for later insertion
+			finding.Properties = flattenedProps
 		}
 	}
 
 	return typeProperties, allFindings, nil
 }
 
-// createDynamicTables creates tables dynamically based on the collected properties.
+func flattenProperties(properties map[string]interface{}) map[string]interface{} {
+	flattened := make(map[string]interface{})
+	for key, value := range properties {
+		if isPredefinedField(key) {
+			continue
+		}
+
+		switch v := value.(type) {
+		case map[string]interface{}:
+			for subKey, subValue := range v {
+				if isPredefinedField(subKey) {
+					continue
+				}
+				if subMap, ok := subValue.(map[string]interface{}); ok {
+					jsonBytes, err := json.Marshal(subMap)
+					if err != nil {
+						log.Printf("Failed to marshal nested map for key '%s': %v", subKey, err)
+						flattened[subKey] = nil
+					} else {
+						flattened[subKey] = string(jsonBytes)
+					}
+				} else {
+					flattened[subKey] = subValue
+				}
+			}
+		default:
+			flattened[key] = value
+		}
+	}
+	return flattened
+}
+
+func isPredefinedField(key string) bool {
+	for _, field := range PredefinedFieldsSlice {
+		if strings.EqualFold(key, field) {
+			return true
+		}
+	}
+	return false
+}
+
 func (xr DynamicXlsxSummaryReporter) createDynamicTables(db *sql.DB, typeProperties map[string]map[string]bool) error {
 	for typeName, properties := range typeProperties {
-		// Base fields from the Finding struct.
+		sanitizedTypeName := sanitizeIdentifier(typeName)
+
+		// Drop the table if it exists
+		dropStmt := fmt.Sprintf("DROP TABLE IF EXISTS %s;", sanitizedTypeName)
+		if _, err := db.Exec(dropStmt); err != nil {
+			return fmt.Errorf("failed to drop existing table '%s': %w", sanitizedTypeName, err)
+		}
+
 		baseFields := map[string]string{
 			"Name":     "TEXT",
 			"Type":     "TEXT",
@@ -119,21 +162,19 @@ func (xr DynamicXlsxSummaryReporter) createDynamicTables(db *sql.DB, typePropert
 			"RepoName": "TEXT",
 		}
 
-		// Add dynamic property fields.
 		for prop := range properties {
-			// Sanitize property names to be SQL-friendly.
 			sanitizedProp := sanitizeIdentifier(prop)
-			baseFields[sanitizedProp] = "TEXT" // You might want to infer type based on value
+			baseFields[sanitizedProp] = "TEXT" // All dynamic fields are TEXT to accommodate JSON strings
 		}
 
-		// Build the CREATE TABLE statement.
 		fields := []string{}
 		for field, dtype := range baseFields {
 			fields = append(fields, fmt.Sprintf("%s %s", field, dtype))
 		}
 
-		createStmt := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s);", sanitizeIdentifier(typeName), strings.Join(fields, ", "))
-		fmt.Printf("Creating table for type '%s' with columns: %s\n", typeName, strings.Join(fields, ", "))
+		createStmt := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s);", sanitizedTypeName, strings.Join(fields, ", "))
+		//fmt.Println(createStmt)
+		//fmt.Printf("Creating table for type '%s' with columns: %s\n", typeName, strings.Join(fields, ", "))
 		if _, err := db.Exec(createStmt); err != nil {
 			return fmt.Errorf("failed to execute CREATE TABLE for type '%s': %w", typeName, err)
 		}
@@ -142,32 +183,25 @@ func (xr DynamicXlsxSummaryReporter) createDynamicTables(db *sql.DB, typePropert
 	return nil
 }
 
-func contains(slice []string, item string) bool {
-	for _, s := range slice {
-		if s == item {
-			return true
-		}
-	}
-	return false
-}
-
-func (xr DynamicXlsxSummaryReporter) importFindings(db *sql.DB, findings []core.Finding) error {
+func (xr DynamicXlsxSummaryReporter) importFindings(db *sql.DB, findings []core.Finding, typeProperties map[string]map[string]bool) error {
 	for _, finding := range findings {
+		// Determine the table name dynamically
 		tableName := sanitizeIdentifier(finding.Type)
 
-		// Get column names for the table.
-		columns, err := xr.getTableColumns(db, tableName)
-		if err != nil {
-			log.Printf("Skipping insertion for finding '%s' due to error getting columns: %v", finding.Name, err)
+		// Get dynamic properties for the type from typeProperties
+		dynamicProperties, ok := typeProperties[finding.Type]
+		//fmt.Println(dynamicProperties)
+		if !ok {
+			log.Printf("No dynamic properties found for type '%s'. Skipping.", finding.Type)
 			continue
 		}
 
-		// Prepare fields, placeholders, and arguments for the INSERT statement.
+		// Prepare fields, placeholders, and arguments
 		fields := []string{}
 		placeholders := []string{}
 		args := []interface{}{}
 
-		// Add predefined fields from the Finding struct.
+		// Add predefined fields
 		predefinedFields := map[string]interface{}{
 			"Name":     finding.Name,
 			"Type":     finding.Type,
@@ -176,25 +210,37 @@ func (xr DynamicXlsxSummaryReporter) importFindings(db *sql.DB, findings []core.
 			"RepoName": finding.RepoName,
 		}
 
-		for col := range predefinedFields {
-			if contains(columns, col) { // Ensure column exists in the table
-				fields = append(fields, col)
-				placeholders = append(placeholders, "?")
-				args = append(args, predefinedFields[col])
+		for col, val := range predefinedFields {
+			fields = append(fields, col)
+			placeholders = append(placeholders, "?")
+			args = append(args, val)
+		}
+
+		// Add dynamic properties
+		for prop, exists := range dynamicProperties {
+			if exists {
+				if value, ok := finding.Properties[prop]; ok {
+					fields = append(fields, prop)
+					placeholders = append(placeholders, "?")
+
+					// Handle value types
+					switch v := value.(type) {
+					case string, int, int64, float64, bool:
+						args = append(args, v)
+					default:
+						jsonBytes, err := json.Marshal(v)
+						if err != nil {
+							log.Printf("Failed to marshal property '%s': %v", prop, err)
+							args = append(args, nil)
+						} else {
+							args = append(args, string(jsonBytes))
+						}
+					}
+				}
 			}
 		}
 
-		// Add dynamic properties.
-		for key, value := range finding.Properties {
-			sanitizedKey := sanitizeIdentifier(key)
-			if contains(columns, sanitizedKey) { // Ensure column exists in the table
-				fields = append(fields, sanitizedKey)
-				placeholders = append(placeholders, "?")
-				args = append(args, value)
-			}
-		}
-
-		// Build the INSERT statement.
+		// Construct and execute the INSERT statement
 		insertStmt := fmt.Sprintf(
 			"INSERT INTO %s (%s) VALUES (%s);",
 			tableName,
@@ -202,7 +248,8 @@ func (xr DynamicXlsxSummaryReporter) importFindings(db *sql.DB, findings []core.
 			strings.Join(placeholders, ", "),
 		)
 
-		// Execute the INSERT statement.
+		//fmt.Println(insertStmt)
+
 		if _, err := db.Exec(insertStmt, args...); err != nil {
 			log.Printf("Error inserting finding '%s' into table '%s': %v", finding.Name, tableName, err)
 		}
@@ -211,7 +258,6 @@ func (xr DynamicXlsxSummaryReporter) importFindings(db *sql.DB, findings []core.
 	return nil
 }
 
-// getTableColumns retrieves the column names for a given table.
 func (xr DynamicXlsxSummaryReporter) getTableColumns(db *sql.DB, tableName string) ([]string, error) {
 	query := fmt.Sprintf("PRAGMA table_info(%s);", tableName)
 	rows, err := db.Query(query)
@@ -237,36 +283,36 @@ func (xr DynamicXlsxSummaryReporter) getTableColumns(db *sql.DB, tableName strin
 	return columns, nil
 }
 
-// executeAndWriteQuery executes a SQL query and writes the result to an Excel sheet.
 func (xr DynamicXlsxSummaryReporter) executeAndWriteQuery(db *sql.DB, excelFile *excelize.File, query, sheetName string) error {
-	fmt.Printf("sheetName: %s", sheetName)
+	//fmt.Printf("sheetName: %s\n", sheetName)
 
-	// Execute the query.
+	// Try executing the query
 	rows, err := db.Query(query)
 	if err != nil {
+		// Check if the error is related to a missing table
+		if strings.Contains(err.Error(), "no such table") {
+			log.Printf("Skipping query for sheet '%s': %v", sheetName, err)
+			return nil // Safely skip this query
+		}
 		return fmt.Errorf("failed to execute query: %w", err)
 	}
 	defer rows.Close()
 
-	// Get column names.
 	colNames, err := rows.Columns()
 	if err != nil {
 		return fmt.Errorf("failed to get columns: %w", err)
 	}
 
-	// Create a new sheet.
 	_, err = excelFile.NewSheet(sheetName)
 	if err != nil {
 		return fmt.Errorf("failed to create sheet '%s': %w", sheetName, err)
 	}
 
-	// Write headers.
 	if err := excelFile.SetSheetRow(sheetName, "A1", &colNames); err != nil {
 		return fmt.Errorf("failed to write headers: %w", err)
 	}
 
-	// Write rows.
-	rowIndex := 2
+	rowIndex := 2 // Start from row 2
 	for rows.Next() {
 		cols := make([]interface{}, len(colNames))
 		colPtrs := make([]interface{}, len(cols))
@@ -278,19 +324,18 @@ func (xr DynamicXlsxSummaryReporter) executeAndWriteQuery(db *sql.DB, excelFile 
 			return fmt.Errorf("failed to scan row: %w", err)
 		}
 
-		// Convert each column to string for Excel.
 		strCols := make([]interface{}, len(cols))
 		for i, col := range cols {
 			if col == nil {
 				strCols[i] = ""
 				continue
 			}
-			// If the column is Properties (JSON), format it.
-			if strings.EqualFold(colNames[i], "Properties") {
+			if isJSONColumn(colNames[i]) {
 				var prettyJSON bytes.Buffer
-				// json.Indent writes to bytes.Buffer
+				// Attempt to parse as JSON
 				err := json.Indent(&prettyJSON, []byte(fmt.Sprintf("%v", col)), "", "  ")
 				if err != nil {
+					// Not valid JSON, write as is
 					strCols[i] = fmt.Sprintf("%v", col)
 				} else {
 					strCols[i] = prettyJSON.String()
@@ -307,11 +352,30 @@ func (xr DynamicXlsxSummaryReporter) executeAndWriteQuery(db *sql.DB, excelFile 
 		rowIndex++
 	}
 
+	defaultSheetName := excelFile.GetSheetName(0)
+	if defaultSheetName == "Sheet1" {
+		// Delete default sheet
+		excelFile.DeleteSheet(defaultSheetName)
+	}
+
 	return nil
 }
 
-// sanitizeIdentifier ensures the table name and column names are safe for SQL.
+func isJSONColumn(columnName string) bool {
+	jsonColumns := map[string]bool{
+		"attributes": true,
+	}
+
+	columnName = strings.ToLower(columnName)
+	return jsonColumns[columnName]
+}
+
 func sanitizeIdentifier(name string) string {
-	// Replace spaces and other unsafe characters with underscores.
-	return strings.ReplaceAll(name, " ", "_")
+	// Replace spaces and other unsafe characters with underscores and convert to lowercase.
+	return strings.ToLower(strings.ReplaceAll(name, " ", "_"))
+}
+
+func isJSON(s string) bool {
+	var js json.RawMessage
+	return json.Unmarshal([]byte(s), &js) == nil
 }
