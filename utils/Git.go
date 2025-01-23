@@ -32,18 +32,28 @@ func ExtractRepoName(repoURL string) (string, error) {
 	return repoName, nil
 }
 
-func CloneRepository(cloneURL, destination string) error {
+func CloneRepository(cloneURL, destination string, bare bool) error {
 	if _, err := os.Stat(destination); err == nil {
 		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
 		return nil
 	}
 
-	_, err := git.PlainClone(destination, false, &git.CloneOptions{
+	cloneOptions := &git.CloneOptions{
 		URL:      cloneURL,
 		Progress: os.Stdout,
-	})
-	if err != nil {
-		return fmt.Errorf("git clone failed: %w", err)
+	}
+
+	if bare {
+		log.Printf("Performing a bare clone to '%s'.", destination)
+		_, err := git.PlainClone(destination, true, cloneOptions) // true = bare clone
+		if err != nil {
+			return fmt.Errorf("git bare clone failed: %w", err)
+		}
+	} else {
+		_, err := git.PlainClone(destination, false, cloneOptions)
+		if err != nil {
+			return fmt.Errorf("git clone failed: %w", err)
+		}
 	}
 
 	return nil

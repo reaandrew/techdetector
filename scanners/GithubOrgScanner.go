@@ -102,7 +102,7 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 		fmt.Printf("Worker: Cloning repository %s\n", repoName)
 
 		repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
-		err := utils.CloneRepository(repo.GetCloneURL(), repoPath)
+		err := utils.CloneRepository(repo.GetCloneURL(), repoPath, false)
 
 		if err != nil {
 			results <- RepoResult{
