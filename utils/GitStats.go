@@ -89,7 +89,7 @@ func CollectGitMetrics(repoPath, repoName string) ([]core.Finding, error) {
 	diffFindings := createFileDiffFindings(repoName, fileStatsMap)
 	findings = append(findings, diffFindings...)
 
-	compressedFindings, err := getCompressedFileChangeMetrics(repo, repoName, 1000)
+	compressedFindings, err := getCompressedFileAndLineMetrics(repo, repoName, 1000)
 	if err != nil {
 		return nil, fmt.Errorf("failed to collect compressed file change metrics: %w", err)
 	}
@@ -1094,27 +1094,29 @@ func createFileDiffFindings(repoName string, fileStatsMap map[string]*FileStats)
 }
 
 type FileChangeStats struct {
-	Daily   map[string]FileChangeCount // Format: "YYYYMMDD"
-	Weekly  map[string]FileChangeCount // Format: "YYYYWww"
-	Monthly map[string]FileChangeCount // Format: "YYYYMM"
+	Daily   map[string]ChangeMetrics
+	Weekly  map[string]ChangeMetrics
+	Monthly map[string]ChangeMetrics
 }
 
-// FileChangeCount stores the count of added and deleted files.
-type FileChangeCount struct {
-	Added   int
-	Deleted int
+// ChangeMetrics stores file-level and line-level changes.
+type ChangeMetrics struct {
+	FilesAdded   int
+	FilesDeleted int
+	LinesAdded   int
+	LinesDeleted int
 }
 
-// collectFileChangeStats iterates over commits, including root commits.
-// If commit.NumParents() == 0, we treat all files in that commit as "added".
-func collectFileChangeStats(repo *git.Repository, maxCommits int) (*FileChangeStats, error) {
+// Collect file + line changes for day/week/month
+func collectFileAndLineStats(repo *git.Repository, maxCommits int) (*FileChangeStats, error) {
+	// Prepare stats maps
 	fileCounts := &FileChangeStats{
-		Daily:   make(map[string]FileChangeCount),
-		Weekly:  make(map[string]FileChangeCount),
-		Monthly: make(map[string]FileChangeCount),
+		Daily:   make(map[string]ChangeMetrics),
+		Weekly:  make(map[string]ChangeMetrics),
+		Monthly: make(map[string]ChangeMetrics),
 	}
 
-	// Retrieve all commits from all refs, ordered by committer time
+	// Retrieve all commits (all branches/refs)
 	commitIter, err := repo.Log(&git.LogOptions{All: true})
 	if err != nil {
 		return nil, fmt.Errorf("failed to retrieve commit log: %w", err)
@@ -1124,53 +1126,51 @@ func collectFileChangeStats(repo *git.Repository, maxCommits int) (*FileChangeSt
 	commitCounter := 0
 
 	err = commitIter.ForEach(func(commit *object.Commit) error {
-		// Optionally limit the number of commits processed
 		if maxCommits > 0 && commitCounter >= maxCommits {
 			return storer.ErrStop
 		}
 		commitCounter++
 
-		// Use the UTC version of the committer date or author date—whichever you prefer
 		commitDate := commit.Committer.When.UTC()
 		dayKey := commitDate.Format("20060102")
 		year, week := commitDate.ISOWeek()
 		weekKey := fmt.Sprintf("%dW%02d", year, week)
 		monthKey := commitDate.Format("200601")
 
-		// If it's a root commit (no parents), treat every file as "added"
+		// Root commit logic
 		if commit.NumParents() == 0 {
 			currentTree, err := commit.Tree()
 			if err != nil {
 				return fmt.Errorf("failed to get tree for root commit: %w", err)
 			}
-			// For each file in the tree, increment "Added"
 			err = currentTree.Files().ForEach(func(file *object.File) error {
-				dailyStats := fileCounts.Daily[dayKey]
-				dailyStats.Added++
-				fileCounts.Daily[dayKey] = dailyStats
+				// For root commits, treat each file as fully "added"
+				// We can't detect line-level changes for the root beyond "all lines are added" (optional).
+				// We'll just increment FilesAdded by 1.
+				stats := fileCounts.getOrCreate(dayKey, weekKey, monthKey)
 
-				weeklyStats := fileCounts.Weekly[weekKey]
-				weeklyStats.Added++
-				fileCounts.Weekly[weekKey] = weeklyStats
+				// Increase file-level add
+				stats.FilesAdded++
 
-				monthlyStats := fileCounts.Monthly[monthKey]
-				monthlyStats.Added++
-				fileCounts.Monthly[monthKey] = monthlyStats
+				// If you wanted to approximate lines for the root commit, you could read the file size or do a line count:
+				lines, err := file.Lines()
+				if err != nil {
+					return err
+				}
 
+				// lines is a []string, so to get the count:
+				stats.LinesAdded += len(lines)
+
+				fileCounts.set(dayKey, weekKey, monthKey, stats)
 				return nil
 			})
-			if err != nil {
-				return fmt.Errorf("failed to enumerate files in root commit tree: %w", err)
-			}
-			// Root commit handled—no parent diff needed
-			return nil
+			return err
 		}
 
-		// Otherwise, handle normal commits (with parents)
+		// Normal commits: Compare with first parent
 		parent, err := commit.Parent(0)
 		if err != nil {
-			// Possibly a broken or partial history—skip
-			return nil
+			return nil // skip commits we can't read parent for
 		}
 
 		parentTree, err := parent.Tree()
@@ -1179,109 +1179,146 @@ func collectFileChangeStats(repo *git.Repository, maxCommits int) (*FileChangeSt
 		}
 		currentTree, err := commit.Tree()
 		if err != nil {
-			return fmt.Errorf("failed to get commit tree: %w", err)
+			return fmt.Errorf("failed to get current tree: %w", err)
 		}
 
+		// Identify file-level changes via merkletrie
 		changes, err := parentTree.Diff(currentTree)
 		if err != nil {
 			return fmt.Errorf("failed to compute diff: %w", err)
 		}
 
-		// For each file change, determine if it's Insert or Delete
+		// For line-level changes, get a Patch() that we can chunk-scan
+		patch, err := changes.Patch()
+		if err != nil {
+			return fmt.Errorf("failed to create patch: %w", err)
+		}
+
+		var totalLinesAdded, totalLinesDeleted int
+
 		for _, change := range changes {
-			action, err := change.Action()
-			if err != nil {
-				return fmt.Errorf("failed to determine change action: %w", err)
-			}
+			action, _ := change.Action()
 
-			dailyStats := fileCounts.Daily[dayKey]
-			weeklyStats := fileCounts.Weekly[weekKey]
-			monthlyStats := fileCounts.Monthly[monthKey]
-
+			stats := fileCounts.getOrCreate(dayKey, weekKey, monthKey)
 			switch action {
 			case merkletrie.Insert:
-				dailyStats.Added++
-				weeklyStats.Added++
-				monthlyStats.Added++
+				stats.FilesAdded++
 			case merkletrie.Delete:
-				dailyStats.Deleted++
-				weeklyStats.Deleted++
-				monthlyStats.Deleted++
+				stats.FilesDeleted++
 			}
-
-			fileCounts.Daily[dayKey] = dailyStats
-			fileCounts.Weekly[weekKey] = weeklyStats
-			fileCounts.Monthly[monthKey] = monthlyStats
+			fileCounts.set(dayKey, weekKey, monthKey, stats)
 		}
+
+		// Now gather line-level changes from the patch
+		for _, fp := range patch.FilePatches() {
+			for _, chunk := range fp.Chunks() {
+				switch chunk.Type() {
+				case diff.Add:
+					countAdded := strings.Count(chunk.Content(), "\n")
+					totalLinesAdded += countAdded
+				case diff.Delete:
+					countDeleted := strings.Count(chunk.Content(), "\n")
+					totalLinesDeleted += countDeleted
+				}
+			}
+		}
+
+		// Add line-level totals for the day/week/month
+		stats := fileCounts.getOrCreate(dayKey, weekKey, monthKey)
+		stats.LinesAdded += totalLinesAdded
+		stats.LinesDeleted += totalLinesDeleted
+		fileCounts.set(dayKey, weekKey, monthKey, stats)
+
 		return nil
 	})
 
 	if err != nil && err != storer.ErrStop {
-		return nil, fmt.Errorf("error iterating over commits: %w", err)
+		return nil, fmt.Errorf("error iterating commits: %w", err)
 	}
 
 	return fileCounts, nil
 }
 
-func getCompressedFileChangeMetrics(repo *git.Repository, repoName string, maxCommits int) ([]core.Finding, error) {
-	fileCounts, err := collectFileChangeStats(repo, maxCommits)
+// Helper to get or create the stats struct in each map
+func (f *FileChangeStats) getOrCreate(dayKey, weekKey, monthKey string) ChangeMetrics {
+	dayStats := f.Daily[dayKey]
+	return dayStats
+}
+
+func (f *FileChangeStats) set(dayKey, weekKey, monthKey string, stats ChangeMetrics) {
+	f.Daily[dayKey] = stats
+
+	// The same logic to sync to weekly, monthly:
+	weekStats := f.Weekly[weekKey]
+	weekStats.FilesAdded += stats.FilesAdded - weekStats.FilesAdded
+	weekStats.FilesDeleted += stats.FilesDeleted - weekStats.FilesDeleted
+	weekStats.LinesAdded += stats.LinesAdded - weekStats.LinesAdded
+	weekStats.LinesDeleted += stats.LinesDeleted - weekStats.LinesDeleted
+	f.Weekly[weekKey] = weekStats
+
+	monthStats := f.Monthly[monthKey]
+	monthStats.FilesAdded += stats.FilesAdded - monthStats.FilesAdded
+	monthStats.FilesDeleted += stats.FilesDeleted - monthStats.FilesDeleted
+	monthStats.LinesAdded += stats.LinesAdded - monthStats.LinesAdded
+	monthStats.LinesDeleted += stats.LinesDeleted - monthStats.LinesDeleted
+	f.Monthly[monthKey] = monthStats
+}
+
+func compressChangeStats(stats map[string]ChangeMetrics) []string {
+	compressed := make([]string, 0, len(stats))
+
+	for period, cm := range stats {
+		line := fmt.Sprintf("%s:%d:%d:%d:%d",
+			period,
+			cm.FilesAdded,
+			cm.FilesDeleted,
+			cm.LinesAdded,
+			cm.LinesDeleted,
+		)
+		compressed = append(compressed, line)
+	}
+
+	sort.Strings(compressed) // Sort to maintain chronological or lexical order
+	return compressed
+}
+
+func getCompressedFileAndLineMetrics(repo *git.Repository, repoName string, maxCommits int) ([]core.Finding, error) {
+	stats, err := collectFileAndLineStats(repo, maxCommits)
 	if err != nil {
 		return nil, err
 	}
 
-	// Convert daily statistics to compressed format
-	dailyCompressed := compressFileChangeStats(fileCounts.Daily)
-	weeklyCompressed := compressFileChangeStats(fileCounts.Weekly)
-	monthlyCompressed := compressFileChangeStats(fileCounts.Monthly)
+	dailyCompressed := compressChangeStats(stats.Daily)     // e.g. ["20231204:1:0:15:0", ...]
+	weeklyCompressed := compressChangeStats(stats.Weekly)   // e.g. ["2023W49:4:1:30:10", ...]
+	monthlyCompressed := compressChangeStats(stats.Monthly) // e.g. ["202312:15:2:60:20", ...]
 
-	var findings []core.Finding
-
-	// Store daily metrics
-	findings = append(findings, core.Finding{
-		Name:     "Daily File Change Metrics (Compressed)",
-		Type:     "git_metric",
-		Category: "repository_analysis",
-		Properties: map[string]interface{}{
-			"changes": dailyCompressed,
+	return []core.Finding{
+		{
+			Name:     "Daily File+Line Change (Compressed)",
+			Type:     "git_metric",
+			Category: "repository_analysis",
+			Properties: map[string]interface{}{
+				"changes": dailyCompressed,
+			},
+			RepoName: repoName,
 		},
-		RepoName: repoName,
-	})
-
-	// Store weekly metrics
-	findings = append(findings, core.Finding{
-		Name:     "Weekly File Change Metrics (Compressed)",
-		Type:     "git_metric",
-		Category: "repository_analysis",
-		Properties: map[string]interface{}{
-			"changes": weeklyCompressed,
+		{
+			Name:     "Weekly File+Line Change (Compressed)",
+			Type:     "git_metric",
+			Category: "repository_analysis",
+			Properties: map[string]interface{}{
+				"changes": weeklyCompressed,
+			},
+			RepoName: repoName,
 		},
-		RepoName: repoName,
-	})
-
-	// Store monthly metrics
-	findings = append(findings, core.Finding{
-		Name:     "Monthly File Change Metrics (Compressed)",
-		Type:     "git_metric",
-		Category: "repository_analysis",
-		Properties: map[string]interface{}{
-			"changes": monthlyCompressed,
+		{
+			Name:     "Monthly File+Line Change (Compressed)",
+			Type:     "git_metric",
+			Category: "repository_analysis",
+			Properties: map[string]interface{}{
+				"changes": monthlyCompressed,
+			},
+			RepoName: repoName,
 		},
-		RepoName: repoName,
-	})
-
-	return findings, nil
-}
-
-// compressFileChangeStats converts file counts to compressed format like ["20240101:10:2", "20240102:0:1"]
-func compressFileChangeStats(stats map[string]FileChangeCount) []string {
-	var compressed []string
-
-	for period, counts := range stats {
-		compressed = append(compressed, fmt.Sprintf("%s:%d:%d", period, counts.Added, counts.Deleted))
-	}
-
-	// Sort to maintain chronological order
-	sort.Strings(compressed)
-
-	return compressed
+	}, nil
 }
