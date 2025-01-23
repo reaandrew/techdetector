@@ -8,8 +8,10 @@ import (
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	"log"
+	"math"
 	"os"
 	"path/filepath"
+	"sort"
 	"time"
 )
 
@@ -194,26 +196,33 @@ func CollectGitMetrics(repoPath, repoName string) ([]core.Finding, error) {
 		return nil, fmt.Errorf("failed to open git repository: %w", err)
 	}
 
-	// Collect branch count findings
+	// Collect branch-related metrics
 	branchFindings, err := getBranchMetrics(repo, repoName)
 	if err != nil {
 		return nil, err
 	}
 	findings = append(findings, branchFindings...)
 
-	// Collect tag count findings
+	// Collect tag-related metrics
 	tagFindings, err := getTagMetrics(repo, repoName)
 	if err != nil {
 		return nil, err
 	}
 	findings = append(findings, tagFindings...)
 
-	// Collect commit statistics findings
+	// Collect commit-related metrics
 	commitFindings, err := getCommitMetrics(repo, repoName)
 	if err != nil {
 		return nil, err
 	}
 	findings = append(findings, commitFindings...)
+
+	// Collect additional branch-based metrics
+	branchActivityFindings, err := getBranchActivityMetrics(repo, repoName)
+	if err != nil {
+		return nil, err
+	}
+	findings = append(findings, branchActivityFindings...)
 
 	return findings, nil
 }
@@ -254,30 +263,62 @@ func getBranchMetrics(repo *git.Repository, repoName string) ([]core.Finding, er
 // ----------------- Tag Metrics -----------------
 func getTagMetrics(repo *git.Repository, repoName string) ([]core.Finding, error) {
 	var findings []core.Finding
+	var tagDates []time.Time
+
+	// Iterate over all tags (includes lightweight and annotated)
 	tags, err := repo.Tags()
 	if err != nil {
 		return nil, fmt.Errorf("failed to retrieve tags: %w", err)
 	}
 
-	var tagCount int
-	var tagNames []string
-
 	err = tags.ForEach(func(ref *plumbing.Reference) error {
-		tagNames = append(tagNames, ref.Name().Short())
-		tagCount++
+		tag, err := repo.TagObject(ref.Hash())
+		if err == nil {
+			// Annotated tag
+			tagDates = append(tagDates, tag.Tagger.When)
+		} else {
+			// Lightweight tag - get commit date directly
+			commit, err := repo.CommitObject(ref.Hash())
+			if err == nil {
+				tagDates = append(tagDates, commit.Committer.When)
+			}
+		}
 		return nil
 	})
 
-	findings = append(findings, core.Finding{
-		Name:     "Tag Count",
-		Type:     "git_metric",
-		Category: "repository_analysis",
-		Properties: map[string]interface{}{
-			"value": tagCount,
-			"tags":  tagNames,
-		},
-		RepoName: repoName,
-	})
+	// Calculate average time between tags
+	if len(tagDates) > 1 {
+		sort.Slice(tagDates, func(i, j int) bool {
+			return tagDates[i].Before(tagDates[j])
+		})
+
+		var totalTime time.Duration
+		for i := 1; i < len(tagDates); i++ {
+			totalTime += tagDates[i].Sub(tagDates[i-1])
+		}
+
+		averageTagTime := totalTime / time.Duration(len(tagDates)-1)
+
+		findings = append(findings, core.Finding{
+			Name:     "Average Time Between Tags",
+			Type:     "git_metric",
+			Category: "repository_analysis",
+			Properties: map[string]interface{}{
+				"value": fmt.Sprintf("%.2f days", averageTagTime.Hours()/24),
+			},
+			RepoName: repoName,
+		})
+	} else {
+		findings = append(findings, core.Finding{
+			Name:     "Average Time Between Tags",
+			Type:     "git_metric",
+			Category: "repository_analysis",
+			Properties: map[string]interface{}{
+				"value": "Not enough tags to calculate",
+			},
+			RepoName: repoName,
+		})
+	}
 
 	return findings, nil
 }
@@ -451,4 +492,122 @@ func calculateMaxAndAvg(commitStats map[string]int) (int, float64) {
 	}
 
 	return maxCommits, avgCommits
+}
+
+// ----------------- Branch Activity Metrics -----------------
+func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Finding, error) {
+	var findings []core.Finding
+
+	refIter, err := repo.References()
+	if err != nil {
+		return nil, fmt.Errorf("failed to retrieve branch references: %w", err)
+	}
+
+	var latestCommitDate time.Time
+	minDaysSinceLastCommit := math.MaxInt64
+	totalCommits := 0
+	branchCommitCounts := make(map[string]int)
+
+	forEachErr := refIter.ForEach(func(ref *plumbing.Reference) error {
+		if ref.Name().IsRemote() || ref.Name().IsBranch() {
+			branchName := ref.Name().Short()
+			commitIter, err := repo.Log(&git.LogOptions{From: ref.Hash()})
+			if err != nil {
+				return fmt.Errorf("failed to retrieve commits for branch %s: %w", branchName, err)
+			}
+
+			commitCount := 0
+			var lastCommitDate time.Time
+			commitIter.ForEach(func(c *object.Commit) error {
+				commitCount++
+				if c.Committer.When.After(lastCommitDate) {
+					lastCommitDate = c.Committer.When
+				}
+				return nil
+			})
+
+			branchCommitCounts[branchName] = commitCount
+			totalCommits += commitCount
+
+			// Check for latest commit
+			if lastCommitDate.After(latestCommitDate) {
+				latestCommitDate = lastCommitDate
+			}
+
+			// Calculate days since last commit
+			daysSinceLastCommit := int(time.Since(lastCommitDate).Hours() / 24)
+			if daysSinceLastCommit < minDaysSinceLastCommit {
+				minDaysSinceLastCommit = daysSinceLastCommit
+			}
+		}
+		return nil
+	})
+
+	if forEachErr != nil {
+		return nil, forEachErr
+	}
+
+	// Calculate days since last commit on default branch (assume "main")
+	mainRef, err := repo.Reference(plumbing.NewBranchReferenceName("main"), true)
+	if err == nil {
+		commitIter, _ := repo.Log(&git.LogOptions{From: mainRef.Hash()})
+		mainLastCommit, _ := commitIter.Next()
+		mainDaysSinceLastCommit := int(time.Since(mainLastCommit.Committer.When).Hours() / 24)
+
+		findings = append(findings, core.Finding{
+			Name:     "Days Since Last Commit to Main Branch",
+			Type:     "git_metric",
+			Category: "repository_analysis",
+			Properties: map[string]interface{}{
+				"value": mainDaysSinceLastCommit,
+			},
+			RepoName: repoName,
+		})
+	}
+
+	// Store the minimum days since last commit across all branches
+	findings = append(findings, core.Finding{
+		Name:     "Days Since Last Commit to Any Branch",
+		Type:     "git_metric",
+		Category: "repository_analysis",
+		Properties: map[string]interface{}{
+			"value": minDaysSinceLastCommit,
+		},
+		RepoName: repoName,
+	})
+
+	// Calculate average commits per branch
+	avgCommitsPerBranch := float64(totalCommits) / float64(len(branchCommitCounts))
+	findings = append(findings, core.Finding{
+		Name:     "Average Commits Per Branch",
+		Type:     "git_metric",
+		Category: "repository_analysis",
+		Properties: map[string]interface{}{
+			"value": avgCommitsPerBranch,
+		},
+		RepoName: repoName,
+	})
+
+	// Determine the branch with the max commits
+	var maxCommitsBranch string
+	maxCommits := 0
+	for branch, count := range branchCommitCounts {
+		if count > maxCommits {
+			maxCommits = count
+			maxCommitsBranch = branch
+		}
+	}
+
+	findings = append(findings, core.Finding{
+		Name:     "Max Commits Per Branch",
+		Type:     "git_metric",
+		Category: "repository_analysis",
+		Properties: map[string]interface{}{
+			"value":       maxCommits,
+			"branch_name": maxCommitsBranch,
+		},
+		RepoName: repoName,
+	})
+
+	return findings, nil
 }
