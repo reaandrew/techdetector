@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	github.com/BurntSushi/toml v1.4.0
+	github.com/aws/aws-lambda-go v1.47.0
 	github.com/go-git/go-git/v5 v5.12.0
 	github.com/google/go-github/v50 v50.2.0
 	github.com/google/uuid v1.6.0
