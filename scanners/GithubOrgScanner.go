@@ -123,6 +123,23 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 			continue
 		}
 
+		// Perform bare clone to extract metadata
+		bareRepoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName)+"_bare")
+		err = utils.CloneRepository(repo.GetCloneURL(), bareRepoPath, true)
+		if err != nil {
+			log.Fatalf("Failed to perform bare clone for '%s': %v", repoName, err)
+		}
+
+		// Collect Git metrics
+		gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName)
+		if err != nil {
+			log.Fatalf("Error collecting Git metrics for '%s': %v", repoName, err)
+		}
+
+		fmt.Printf("Git Metrics: %+v\n", gitFindings)
+
+		Matches = append(Matches, gitFindings...)
+
 		results <- RepoResult{
 			Matches:  Matches,
 			Error:    nil,

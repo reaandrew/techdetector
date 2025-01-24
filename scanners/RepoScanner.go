@@ -57,9 +57,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 	if err != nil {
 		log.Fatalf("Error collecting Git metrics for '%s': %v", repoName, err)
 	}
-
-	fmt.Printf("Git Metrics: %+v\n", gitFindings)
-
+	
 	// Traverse and search with processors
 	matches, err := repoScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
 	if err != nil {
@@ -79,6 +77,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 
 	err = repoScanner.reporter.Report(repoScanner.matchRepository)
 	if err != nil {
+		log.Println("Dumping Schema!!!")
 		log.Fatalf("Error generating report: %v", err)
 	}
 }

@@ -9,7 +9,6 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/storer"
 	"github.com/go-git/go-git/v5/utils/merkletrie"
 	"github.com/reaandrew/techdetector/core"
-	"log"
 	"math"
 	"sort"
 	"strings"
@@ -603,7 +602,6 @@ func findReferenceForBlob(repo *git.Repository, targetHash plumbing.Hash) (*Blob
 		branchName := ref.Name().Short()
 		headCommit, commitErr := repo.CommitObject(ref.Hash())
 		if commitErr != nil {
-			log.Printf("Skipping branch '%s': cannot retrieve commit object. Error: %v\n", branchName, commitErr)
 			return nil
 		}
 
@@ -715,7 +713,6 @@ func findBlobReferencesInHeads(
 
 		headCommit, commitErr := repo.CommitObject(ref.Hash())
 		if commitErr != nil {
-			log.Printf("Skipping branch '%s': cannot retrieve commit object. Error: %v\n", branchName, commitErr)
 			return nil
 		}
 
@@ -866,8 +863,6 @@ func collectPerFileChangeStats(repo *git.Repository, opts DiffStatsOptions) (map
 		}
 		parent, err := commit.Parent(0)
 		if err != nil {
-			// Might be no parent or an error. We skip it to avoid partial data.
-			log.Printf("Skipping commit %s due to parent error: %v\n", commit.Hash, err)
 			return nil
 		}
 

@@ -13,6 +13,8 @@ import (
 	"os"
 )
 
+const SQLiteDBFilename = "findings.db"
+
 // Cli represents the command-line interface
 type Cli struct {
 	reportFormat string
@@ -64,6 +66,10 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
+			dbPath := fmt.Sprintf("%s_%s", cli.prefix, SQLiteDBFilename)
+			defer DeleteDatabaseFileIfExists(dbPath)
+
+			fmt.Printf("Dumping? %v", cli.dumpSchema)
 			err, queries := cli.loadQueries()
 			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
@@ -199,14 +205,48 @@ func (cli *Cli) loadSqlQueries(filename string) (core.SqlQueries, error) {
 
 func (cli *Cli) createReporter(reportFormat string, queries core.SqlQueries) (core.Reporter, error) {
 	if reportFormat == "xlsx" {
-		return reporters.XlsxReporter{Queries: queries, DumpSchema: cli.dumpSchema, ArtifactPrefix: cli.prefix}, nil
+		return reporters.XlsxReporter{
+			Queries:          queries,
+			DumpSchema:       cli.dumpSchema,
+			ArtifactPrefix:   cli.prefix,
+			SqliteDBFilename: SQLiteDBFilename,
+		}, nil
 	}
 	if reportFormat == "json" {
-		return reporters.JsonReporter{}, nil
+		return reporters.JsonReporter{
+			Queries:          queries,
+			ArtifactPrefix:   cli.prefix,
+			SqliteDBFilename: SQLiteDBFilename,
+		}, nil
 	}
 	if reportFormat == "http" {
 		return reporters.NewDefaultHttpReporter(cli.baseUrl), nil
 	}
 
 	return nil, fmt.Errorf("unknown report format: %s", reportFormat)
+}
+
+func DeleteDatabaseFileIfExists(path string) error {
+	// Check if the file exists
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		// File does not exist; nothing to delete
+		return nil
+	} else if err != nil {
+		// An error occurred while trying to stat the file
+		return fmt.Errorf("failed to check if file exists at path %s: %w", path, err)
+	}
+
+	// Ensure that the path is a file and not a directory
+	if info.IsDir() {
+		return fmt.Errorf("path %s is a directory, not a file", path)
+	}
+
+	// Attempt to delete the file
+	err = os.Remove(path)
+	if err != nil {
+		return fmt.Errorf("failed to delete database file at path %s: %w", path, err)
+	}
+
+	return nil
 }
