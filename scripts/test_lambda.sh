@@ -8,5 +8,9 @@ REPO_URL="https://github.com/reaandrew/techdetector.git"
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
-  -d "{\"repo\": \"${REPO_URL}\"}" \
-  "${LAMBDA_URL}"
+  -d @- "${LAMBDA_URL}" <<EOF
+{
+  "repo": "${REPO_URL}",
+  "cutoff": "1 week ago"
+}
+EOF

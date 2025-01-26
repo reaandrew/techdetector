@@ -24,7 +24,8 @@ import (
 
 // LambdaRequest represents the expected JSON structure in the request body
 type LambdaRequest struct {
-	Repo string `json:"repo"`
+	Repo   string `json:"repo"`
+	Cutoff string `json:"cutoff"`
 }
 
 // LambdaResponse represents the structure of the response
@@ -100,8 +101,10 @@ func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 		return toAPIGatewayResponse(400, fmt.Sprintf(`{"error": "%s"}`, errMsg)), nil
 	}
 
+	fmt.Printf("Cut off: %s", lambdaReq.Cutoff)
+
 	// Step 5: Perform the scan
-	jsonReport, err := ScanRepo(lambdaReq.Repo, "/var/task/queries.yaml", "techdetector")
+	jsonReport, err := ScanRepo(lambdaReq.Repo, "/var/task/queries.yaml", "techdetector", lambdaReq.Cutoff)
 	if err != nil {
 		log.Printf("Error scanning repository: %v", err)
 		errorBody, _ := json.Marshal(map[string]string{"error": err.Error()})
@@ -161,7 +164,7 @@ func getStoredToken(ctx context.Context, userID string) (string, error) {
 }
 
 // ScanRepo performs the repository scan and returns the JSON report
-func ScanRepo(repoURL string, queriesPath string, prefix string) (string, error) {
+func ScanRepo(repoURL string, queriesPath string, prefix string, cutoff string) (string, error) {
 	queries, err := loadQueries(queriesPath)
 	if err != nil {
 		return "", fmt.Errorf("failed to load queries: %v", err)
@@ -183,6 +186,7 @@ func ScanRepo(repoURL string, queriesPath string, prefix string) (string, error)
 		reporter,
 		processors.InitializeProcessors(),
 		repository,
+		cutoff,
 	)
 
 	scanner.Scan(repoURL, "json")

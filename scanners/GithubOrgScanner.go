@@ -27,15 +27,18 @@ type GithubOrgScanner struct {
 	reporter        core.Reporter
 	fileScanner     FileScanner
 	matchRepository core.FindingRepository
+	Cutoff          string
 }
 
 func NewGithubOrgScanner(reporter core.Reporter,
 	processors []core.FileProcessor,
-	matchRepository core.FindingRepository) *GithubOrgScanner {
+	matchRepository core.FindingRepository,
+	cutoff string) *GithubOrgScanner {
 	return &GithubOrgScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},
 		matchRepository: matchRepository,
+		Cutoff:          cutoff,
 	}
 }
 
@@ -131,7 +134,7 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 		}
 
 		// Collect Git metrics
-		gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName)
+		gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName, githubOrgScanner.Cutoff)
 		if err != nil {
 			log.Fatalf("Error collecting Git metrics for '%s': %v", repoName, err)
 		}

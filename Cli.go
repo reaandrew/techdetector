@@ -22,6 +22,7 @@ type Cli struct {
 	queriesPath  string
 	dumpSchema   bool
 	prefix       string
+	cutoff       string
 }
 
 // Execute sets up and runs the root command
@@ -55,6 +56,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	scanCmd.PersistentFlags().StringVar(&cli.queriesPath, "queries-path", "", "Queries path")
 	scanCmd.PersistentFlags().BoolVar(&cli.dumpSchema, "dump-schema", false, "Dump SQLite schema to a text file")
 	scanCmd.PersistentFlags().StringVar(&cli.prefix, "prefix", "techdetector", "A prefix for the output artifacts")
+	scanCmd.PersistentFlags().StringVar(&cli.cutoff, "date-cutoff", "", "A date cutoff to process git repos in")
 
 	if err := scanCmd.MarkPersistentFlagRequired("queries-path"); err != nil {
 		fmt.Printf("Error making queries-path flag required: %v\n", err)
@@ -86,7 +88,8 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			scanner := scanners.NewRepoScanner(
 				reporter,
 				processors.InitializeProcessors(),
-				repository)
+				repository,
+				cli.cutoff)
 			repoURL := args[0]
 			scanner.Scan(repoURL, cli.reportFormat)
 		},
@@ -111,7 +114,8 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			scanner := scanners.NewGithubOrgScanner(
 				reporter,
 				processors.InitializeProcessors(),
-				repository)
+				repository,
+				cli.cutoff)
 			orgName := args[0]
 			scanner.Scan(orgName, cli.reportFormat)
 		},

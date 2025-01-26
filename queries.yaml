@@ -22,6 +22,14 @@ queries:
       FROM Findings
       WHERE Type = 'Docker Directive' AND Name = 'EXPOSE'
       ORDER BY Port;
+  - name: "Docker Images Detected"
+    query: |
+      SELECT DISTINCT
+          json_extract(Properties, '$.image') AS Image,
+          json_extract(Properties, '$.version') AS Version
+      FROM Findings
+      WHERE Type = 'Docker Directive'
+        AND json_extract(Properties, '$.image') IS NOT NULL;
   - name: "Libs and Versions Detected"
     query: |
       SELECT 

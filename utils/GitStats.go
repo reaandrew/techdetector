@@ -8,14 +8,30 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/object"
 	"github.com/go-git/go-git/v5/plumbing/storer"
 	"github.com/go-git/go-git/v5/utils/merkletrie"
+	dateparser "github.com/markusmobius/go-dateparser"
 	"github.com/reaandrew/techdetector/core"
+	"log"
 	"math"
 	"sort"
 	"strings"
+	"sync"
 	"time"
 )
 
-func CollectGitMetrics(repoPath, repoName string) ([]core.Finding, error) {
+func parseCutoffDate(dateStr string) (int64, error) {
+	if dateStr == "" {
+		return -1, nil
+	}
+
+	parsedTime, err := dateparser.Parse(nil, dateStr)
+	if err != nil {
+		return 0, fmt.Errorf("could not parse date string '%s': %w", dateStr, err)
+	}
+
+	return parsedTime.Time.Unix(), nil
+}
+
+func CollectGitMetrics(repoPath, repoName string, cutoffDate string) ([]core.Finding, error) {
 	var findings []core.Finding
 
 	repo, err := git.PlainOpen(repoPath)
@@ -23,82 +39,90 @@ func CollectGitMetrics(repoPath, repoName string) ([]core.Finding, error) {
 		return nil, fmt.Errorf("failed to open git repository: %w", err)
 	}
 
+	// Parse the cutoff date
+	cutoffTimestamp, err := parseCutoffDate(cutoffDate)
+	if err != nil {
+		return nil, fmt.Errorf("failed to parse cutoff date: %w", err)
+	}
+
+	log.Println("Fetching Branch Statistics")
 	// Collect branch-related metrics
-	branchFindings, err := getBranchMetrics(repo, repoName)
+	branchFindings, err := getBranchMetrics(repo, repoName, cutoffTimestamp)
 	if err != nil {
 		return nil, err
 	}
 	findings = append(findings, branchFindings...)
+	//
+	//log.Println("Fetching Tag Statistics")
+	//tagFindings, err := getTagMetrics(repo, repoName)
+	//if err != nil {
+	//	return nil, err
+	//}
+	//findings = append(findings, tagFindings...)
+	////
+	//log.Println("Fetching Commit Statistics")
+	//commitFindings, err := getCommitMetrics(repo, repoName)
+	//if err != nil {
+	//	return nil, err
+	//}
+	//findings = append(findings, commitFindings...)
 
-	// Collect tag-related metrics
-	tagFindings, err := getTagMetrics(repo, repoName)
-	if err != nil {
-		return nil, err
-	}
-	findings = append(findings, tagFindings...)
-
-	// Collect commit-related metrics
-	commitFindings, err := getCommitMetrics(repo, repoName)
-	if err != nil {
-		return nil, err
-	}
-	findings = append(findings, commitFindings...)
-
-	// Collect additional branch-based metrics
-	branchActivityFindings, err := getBranchActivityMetrics(repo, repoName)
-	if err != nil {
-		return nil, err
-	}
-	findings = append(findings, branchActivityFindings...)
-
-	// Collect additional object size metrics
-	objectSizeFindings, err := getObjectSizeMetrics(repo, repoName)
-	if err != nil {
-		return nil, err
-	}
-	findings = append(findings, objectSizeFindings...)
-
-	// For example, 2 MB threshold
-	const MB = 1024 * 1024
-	sizeThreshold := int64(2 * MB)
-
-	oversizedFindings, err := getOversizedObjectFindings(repo, repoName, sizeThreshold)
-	if err != nil {
-		return nil, err
-	}
-	findings = append(findings, oversizedFindings...)
-
-	// Example: skip merges, process up to 1000 commits
-	opts := DiffStatsOptions{
-		SkipMerges: true,
-		MaxCommits: 1000,
-	}
-
-	// 1) Gather per-file stats
-	fileStatsMap, err := collectPerFileChangeStats(repo, opts)
-	if err != nil {
-		return nil, fmt.Errorf("failed to collect file stats: %w", err)
-	}
-	if len(fileStatsMap) == 0 {
-		// Possibly no commits or all merges were skipped
-		return findings, nil
-	}
-
-	// 2) Derive top-level metrics & produce findings
-	diffFindings := createFileDiffFindings(repoName, fileStatsMap)
-	findings = append(findings, diffFindings...)
-
-	compressedFindings, err := getCompressedFileAndLineMetrics(repo, repoName, 1000)
-	if err != nil {
-		return nil, fmt.Errorf("failed to collect compressed file change metrics: %w", err)
-	}
-	findings = append(findings, compressedFindings...)
+	//log.Println("Fetching Branch Activity Statistics")
+	//branchActivityFindings, err := getBranchActivityMetrics(repo, repoName)
+	//if err != nil {
+	//	return nil, err
+	//}
+	//findings = append(findings, branchActivityFindings...)
+	//log.Println("Completed Statistics")
+	//
+	//log.Println("Fetching Object Sizing Statistics")
+	//objectSizeFindings, err := getObjectSizeMetrics(repo, repoName)
+	//if err != nil {
+	//	return nil, err
+	//}
+	//findings = append(findings, objectSizeFindings...)
+	//
+	//log.Println("Fetching Oversized Blobs Statistics")
+	//const MB = 1024 * 1024
+	//sizeThreshold := int64(50 * MB)
+	//
+	//oversizedFindings, err := getOversizedObjectFindings(repo, repoName, sizeThreshold)
+	//if err != nil {
+	//	return nil, err
+	//}
+	//findings = append(findings, oversizedFindings...)
+	//log.Println("Completed Statistics")
+	//// Example: skip merges, process up to 1000 commits
+	//opts := DiffStatsOptions{
+	//	SkipMerges: true,
+	//	MaxCommits: 1000,
+	//}
+	//
+	//// 1) Gather per-file stats
+	//fileStatsMap, err := collectPerFileChangeStats(repo, opts)
+	//if err != nil {
+	//	return nil, fmt.Errorf("failed to collect file stats: %w", err)
+	//}
+	//if len(fileStatsMap) == 0 {
+	//	// Possibly no commits or all merges were skipped
+	//	return findings, nil
+	//}
+	//
+	//// 2) Derive top-level metrics & produce findings
+	//diffFindings := createFileDiffFindings(repoName, fileStatsMap)
+	//findings = append(findings, diffFindings...)
+	//
+	//compressedFindings, err := getCompressedFileAndLineMetrics(repo, repoName, 1000)
+	//if err != nil {
+	//	return nil, fmt.Errorf("failed to collect compressed file change metrics: %w", err)
+	//}
+	//findings = append(findings, compressedFindings...)
 
 	return findings, nil
 }
 
 // ----------------- Branch Metrics -----------------
-func getBranchMetrics(repo *git.Repository, repoName string) ([]core.Finding, error) {
+func getBranchMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64) ([]core.Finding, error) {
 	var findings []core.Finding
 	branches, err := repo.References()
 	if err != nil {
@@ -110,11 +134,31 @@ func getBranchMetrics(repo *git.Repository, repoName string) ([]core.Finding, er
 
 	err = branches.ForEach(func(ref *plumbing.Reference) error {
 		if ref.Name().IsRemote() || ref.Name().IsBranch() {
-			branchNames = append(branchNames, ref.Name().String())
-			branchCount++
+			commitIter, err := repo.Log(&git.LogOptions{From: ref.Hash()})
+			if err != nil {
+				return fmt.Errorf("failed to get commits for branch %s: %w", ref.Name(), err)
+			}
+
+			// Get the latest commit timestamp
+			latestCommit, err := commitIter.Next()
+			if err != nil {
+				return fmt.Errorf("failed to read commit for branch %s: %w", ref.Name(), err)
+			}
+
+			commitTime := latestCommit.Author.When.Unix()
+
+			// If a cutoff timestamp is provided, check if the commit is within the time window
+			if cutoffTimestamp == -1 || commitTime >= cutoffTimestamp {
+				branchNames = append(branchNames, ref.Name().String())
+				branchCount++
+			}
 		}
 		return nil
 	})
+
+	if err != nil {
+		return nil, err
+	}
 
 	findings = append(findings, core.Finding{
 		Name:     "Branch Count",
@@ -123,6 +167,7 @@ func getBranchMetrics(repo *git.Repository, repoName string) ([]core.Finding, er
 		Properties: map[string]interface{}{
 			"value":    branchCount,
 			"branches": branchNames,
+			"cutoff":   cutoffTimestamp,
 		},
 		RepoName: repoName,
 	})
@@ -369,6 +414,8 @@ func calculateMaxAndAvg(commitStats map[string]int) (int, float64) {
 // ----------------- Branch Activity Metrics -----------------
 func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Finding, error) {
 	var findings []core.Finding
+	var mu sync.Mutex
+	var wg sync.WaitGroup
 
 	refIter, err := repo.References()
 	if err != nil {
@@ -380,40 +427,64 @@ func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Fin
 	totalCommits := 0
 	branchCommitCounts := make(map[string]int)
 
+	// Channel to collect errors from goroutines
+	errChan := make(chan error, 1)
+
+	// Process each branch concurrently
 	forEachErr := refIter.ForEach(func(ref *plumbing.Reference) error {
 		if ref.Name().IsRemote() || ref.Name().IsBranch() {
-			branchName := ref.Name().Short()
-			commitIter, err := repo.Log(&git.LogOptions{From: ref.Hash()})
-			if err != nil {
-				return fmt.Errorf("failed to retrieve commits for branch %s: %w", branchName, err)
-			}
+			wg.Add(1)
+			go func(ref plumbing.Reference) {
+				defer wg.Done()
 
-			commitCount := 0
-			var lastCommitDate time.Time
-			commitIter.ForEach(func(c *object.Commit) error {
-				commitCount++
-				if c.Committer.When.After(lastCommitDate) {
-					lastCommitDate = c.Committer.When
+				branchName := ref.Name().Short()
+
+				commitIter, err := repo.Log(&git.LogOptions{From: ref.Hash()})
+				if err != nil {
+					errChan <- fmt.Errorf("failed to retrieve commits for branch %s: %w", branchName, err)
+					return
 				}
-				return nil
-			})
 
-			branchCommitCounts[branchName] = commitCount
-			totalCommits += commitCount
+				commitCount := 0
+				var lastCommitDate time.Time
+				commitIter.ForEach(func(c *object.Commit) error {
+					commitCount++
+					if c.Committer.When.After(lastCommitDate) {
+						lastCommitDate = c.Committer.When
+					}
+					return nil
+				})
 
-			// Check for latest commit
-			if lastCommitDate.After(latestCommitDate) {
-				latestCommitDate = lastCommitDate
-			}
+				mu.Lock()
+				branchCommitCounts[branchName] = commitCount
+				totalCommits += commitCount
 
-			// Calculate days since last commit
-			daysSinceLastCommit := int(time.Since(lastCommitDate).Hours() / 24)
-			if daysSinceLastCommit < minDaysSinceLastCommit {
-				minDaysSinceLastCommit = daysSinceLastCommit
-			}
+				// Check for latest commit
+				if lastCommitDate.After(latestCommitDate) {
+					latestCommitDate = lastCommitDate
+				}
+
+				// Calculate days since last commit
+				daysSinceLastCommit := int(time.Since(lastCommitDate).Hours() / 24)
+				if daysSinceLastCommit < minDaysSinceLastCommit {
+					minDaysSinceLastCommit = daysSinceLastCommit
+				}
+				mu.Unlock()
+				log.Printf("Branch: %s", branchName)
+			}(*ref)
 		}
 		return nil
 	})
+
+	wg.Wait()
+	close(errChan)
+
+	// Check if any errors occurred in goroutines
+	for err := range errChan {
+		if err != nil {
+			return nil, err
+		}
+	}
 
 	if forEachErr != nil {
 		return nil, forEachErr
