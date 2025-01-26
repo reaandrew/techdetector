@@ -1,11 +1,14 @@
 # Use Amazon Linux 2 as base image
 FROM amazonlinux:2
 
+
+ARG GO_VERSION=1.22.4
+
 # Install dependencies and Go
 RUN yum install -y gcc gcc-c++ glibc-static tar gzip curl && \
-    curl -OL https://golang.org/dl/go1.21.5.linux-amd64.tar.gz && \
-    tar -C /usr/local -xzf go1.21.5.linux-amd64.tar.gz && \
-    rm go1.21.5.linux-amd64.tar.gz
+    curl -OL https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
+    rm go${GO_VERSION}.linux-amd64.tar.gz
 
 # Set Go environment variables
 ENV PATH="/usr/local/go/bin:$PATH"

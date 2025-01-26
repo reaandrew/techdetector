@@ -4,26 +4,30 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"gopkg.in/yaml.v3"
+	"strings"
+
+	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/config"
+	"github.com/aws/aws-sdk-go-v2/service/ssm"
+
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/scanners"
-	"gopkg.in/yaml.v3"
+
 	"log"
 	"os"
 )
 
-const (
-	queriesFilePath = "/var/task/queries.yaml" // Standard path inside Lambda
-	prefix          = "techdetector"
-)
-
+// LambdaRequest represents the expected JSON structure in the request body
 type LambdaRequest struct {
 	Repo string `json:"repo"`
 }
 
+// LambdaResponse represents the structure of the response
 type LambdaResponse struct {
 	StatusCode      int               `json:"statusCode"`
 	Headers         map[string]string `json:"headers,omitempty"`
@@ -31,49 +35,60 @@ type LambdaResponse struct {
 	IsBase64Encoded bool              `json:"isBase64Encoded"`
 }
 
-// Lambda handler function compatible with AWS Lambda Function URLs
-//func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-//	var lambdaReq LambdaRequest
-//
-//	// Parse JSON body
-//	err := json.Unmarshal([]byte(request.Body), &lambdaReq)
-//	if err != nil {
-//		log.Printf("Error parsing request body: %v", err)
-//		return toAPIGatewayResponse(400, `{"error": "Invalid JSON format."}`), nil
-//	}
-//
-//	if lambdaReq.Repo == "" {
-//		errMsg := "The 'repo' field is required in the JSON request."
-//		log.Println(errMsg)
-//		return toAPIGatewayResponse(400, fmt.Sprintf(`{"error": "%s"}`, errMsg)), nil
-//	}
-//
-//	// Perform the scan
-//	jsonReport, err := ScanRepo(lambdaReq.Repo, queriesFilePath, prefix)
-//	if err != nil {
-//		log.Printf("Error scanning repository: %v", err)
-//		errorBody, _ := json.Marshal(map[string]string{"error": err.Error()})
-//		return toAPIGatewayResponse(500, string(errorBody)), nil
-//	}
-//
-//	// Successful response
-//	return toAPIGatewayResponse(200, jsonReport), nil
-//}
-
-func Handler(ctx context.Context, request map[string]interface{}) (events.APIGatewayProxyResponse, error) {
+// Handler is the Lambda function handler
+func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	log.Println("Received request:", request)
 
-	var body string
-	switch v := request["body"].(type) {
-	case string:
-		body = v
-	default:
-		log.Println("Invalid request format")
-		return toAPIGatewayResponse(400, `{"error": "Invalid request format"}`), nil
+	// Step 1: Authenticate the request
+	authHeader := request.Headers["authorization"]
+	if authHeader == "" {
+		log.Println("Missing Authorization header")
+		return toAPIGatewayResponse(401, `{"error": "Missing Authorization header."}`), nil
 	}
 
+	// Expecting format: "Bearer tdt_<userid>_<token>"
+	parts := strings.SplitN(authHeader, " ", 2)
+	if len(parts) != 2 || strings.ToLower(parts[0]) != "bearer" {
+		log.Println("Invalid Authorization header format")
+		return toAPIGatewayResponse(401, `{"error": "Invalid Authorization header format."}`), nil
+	}
+
+	token := parts[1]
+	if !strings.HasPrefix(token, "tdt_") {
+		log.Println("Invalid token prefix")
+		return toAPIGatewayResponse(401, `{"error": "Invalid token format."}`), nil
+	}
+
+	// Split the token to extract userid and token
+	tokenParts := strings.SplitN(token, "_", 3)
+	if len(tokenParts) != 3 {
+		log.Println("Invalid token structure")
+		return toAPIGatewayResponse(401, `{"error": "Invalid token structure."}`), nil
+	}
+
+	userID := strings.TrimSpace(tokenParts[1])
+	providedToken := strings.TrimSpace(tokenParts[2])
+	storedToken, err := getStoredToken(ctx, userID)
+	expectedToken := fmt.Sprintf("tdt_%s_%s", userID, providedToken)
+
+	//log.Printf("Provided Token: '%s'", providedToken)
+	//log.Printf("Stored Token: '%s'", storedToken)
+
+	if err != nil {
+		log.Printf("Error retrieving token for user '%s': %v", userID, err)
+		// To prevent user enumeration, return a generic error message
+		return toAPIGatewayResponse(401, `{"error": "Unauthorized."}`), nil
+	}
+
+	// Step 3: Compare the provided token with the stored token
+	if expectedToken != storedToken {
+		log.Printf("Token mismatch for user '%s'", userID)
+		return toAPIGatewayResponse(401, `{"error": "Unauthorized."}`), nil
+	}
+
+	// Step 4: Parse the request body
 	var lambdaReq LambdaRequest
-	err := json.Unmarshal([]byte(body), &lambdaReq)
+	err = json.Unmarshal([]byte(request.Body), &lambdaReq)
 	if err != nil {
 		log.Printf("Error parsing request body: %v", err)
 		return toAPIGatewayResponse(400, `{"error": "Invalid JSON format."}`), nil
@@ -85,13 +100,15 @@ func Handler(ctx context.Context, request map[string]interface{}) (events.APIGat
 		return toAPIGatewayResponse(400, fmt.Sprintf(`{"error": "%s"}`, errMsg)), nil
 	}
 
-	jsonReport, err := ScanRepo(lambdaReq.Repo, queriesFilePath, prefix)
+	// Step 5: Perform the scan
+	jsonReport, err := ScanRepo(lambdaReq.Repo, "/var/task/queries.yaml", "techdetector")
 	if err != nil {
 		log.Printf("Error scanning repository: %v", err)
 		errorBody, _ := json.Marshal(map[string]string{"error": err.Error()})
 		return toAPIGatewayResponse(500, string(errorBody)), nil
 	}
 
+	// Successful response with the JSON report
 	return toAPIGatewayResponse(200, jsonReport), nil
 }
 
@@ -105,6 +122,45 @@ func toAPIGatewayResponse(statusCode int, body string) events.APIGatewayProxyRes
 	}
 }
 
+// getStoredToken retrieves the stored token for a given userID from SSM Parameter Store
+func getStoredToken(ctx context.Context, userID string) (string, error) {
+	// Load the AWS configuration
+	cfg, err := config.LoadDefaultConfig(ctx)
+	if err != nil {
+		return "", fmt.Errorf("unable to load AWS SDK config: %w", err)
+	}
+
+	// Create an SSM client
+	svc := ssm.NewFromConfig(cfg)
+
+	// Retrieve the SSM parameter prefix from environment variables
+	paramPrefix := os.Getenv("SSM_PARAMETER_PREFIX")
+	if paramPrefix == "" {
+		return "", fmt.Errorf("SSM_PARAMETER_PREFIX environment variable is not set")
+	}
+
+	// Construct the parameter name for the given userID
+	paramName := fmt.Sprintf("%s%s", paramPrefix, userID)
+
+	// Fetch the parameter value (token)
+	input := &ssm.GetParameterInput{
+		Name:           aws.String(paramName),
+		WithDecryption: aws.Bool(true),
+	}
+
+	result, err := svc.GetParameter(ctx, input)
+	if err != nil {
+		return "", fmt.Errorf("failed to retrieve parameter '%s': %w", paramName, err)
+	}
+
+	if result.Parameter == nil || result.Parameter.Value == nil {
+		return "", fmt.Errorf("parameter '%s' has no value", paramName)
+	}
+
+	return *result.Parameter.Value, nil
+}
+
+// ScanRepo performs the repository scan and returns the JSON report
 func ScanRepo(repoURL string, queriesPath string, prefix string) (string, error) {
 	queries, err := loadQueries(queriesPath)
 	if err != nil {
@@ -131,17 +187,22 @@ func ScanRepo(repoURL string, queriesPath string, prefix string) (string, error)
 
 	scanner.Scan(repoURL, "json")
 
-	// Read the generated JSON report
+	// Read the generated detailed JSON report
 	reportFilePath := fmt.Sprintf("/tmp/%s_%s", prefix, reporters.DefaultJsonSummaryReport)
+	log.Printf("Attempting to read detailed JSON report from: %s", reportFilePath)
 	reportData, err := os.ReadFile(reportFilePath)
 	if err != nil {
 		return "", fmt.Errorf("failed to read JSON report: %v", err)
 	}
 
+	// Log the size of the report for debugging
+	log.Printf("Read JSON report of size: %d bytes", len(reportData))
+
 	// Return the full JSON report as a string
 	return string(reportData), nil
 }
 
+// loadQueries loads SQL queries from a YAML file
 func loadQueries(queriesPath string) (core.SqlQueries, error) {
 	var queries core.SqlQueries
 
@@ -158,6 +219,7 @@ func loadQueries(queriesPath string) (core.SqlQueries, error) {
 	return queries, nil
 }
 
+// createJSONReporter initializes a JsonReporter
 func createJSONReporter(queries core.SqlQueries, prefix string) (core.Reporter, error) {
 	return reporters.JsonReporter{
 		Queries:          queries,

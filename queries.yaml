@@ -63,3 +63,11 @@ queries:
       WHERE Type = 'git_metric'
       GROUP BY RepoName,Name
       ORDER BY RepoName,Name;
+  - name: "Terraform Resources Detected"
+    query: |
+      SELECT
+        json_extract(Properties, '$.resource_type') AS resource_type,
+        COUNT(*) AS count
+      FROM Findings
+      WHERE Type = "Terraform Resource Use"
+      GROUP BY resource_type;

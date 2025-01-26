@@ -67,7 +67,8 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			dbPath := fmt.Sprintf("%s_%s", cli.prefix, SQLiteDBFilename)
-			defer DeleteDatabaseFileIfExists(dbPath)
+			DeleteDatabaseFileIfExists(dbPath)
+			//defer DeleteDatabaseFileIfExists(dbPath)
 
 			fmt.Printf("Dumping? %v", cli.dumpSchema)
 			err, queries := cli.loadQueries()
