@@ -18,6 +18,8 @@ import (
 	"time"
 )
 
+const maxWorkers int = 4
+
 func parseCutoffDate(dateStr string) (int64, error) {
 	if dateStr == "" {
 		return -1, nil
@@ -67,12 +69,12 @@ func CollectGitMetrics(repoPath, repoName string, cutoffDate string) ([]core.Fin
 	}
 	findings = append(findings, commitFindings...)
 
-	//log.Println("Fetching Branch Activity Statistics")
-	//branchActivityFindings, err := getBranchActivityMetrics(repo, repoName)
-	//if err != nil {
-	//	return nil, err
-	//}
-	//findings = append(findings, branchActivityFindings...)
+	log.Println("Fetching Branch Activity Statistics")
+	branchActivityFindings, err := getBranchActivityMetrics(repo, repoName, cutoffTimestamp)
+	if err != nil {
+		return nil, err
+	}
+	findings = append(findings, branchActivityFindings...)
 	//log.Println("Completed Statistics")
 	//
 	//log.Println("Fetching Object Sizing Statistics")
@@ -454,7 +456,7 @@ func calculateMaxAndAvg(commitStats map[string]int) (int, float64) {
 }
 
 // ----------------- Branch Activity Metrics -----------------
-func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Finding, error) {
+func getBranchActivityMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64) ([]core.Finding, error) {
 	var findings []core.Finding
 	var mu sync.Mutex
 	var wg sync.WaitGroup
@@ -464,32 +466,38 @@ func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Fin
 		return nil, fmt.Errorf("failed to retrieve branch references: %w", err)
 	}
 
+	if cutoffTimestamp == 0 {
+		cutoffTimestamp = -1
+	}
+
 	var latestCommitDate time.Time
 	minDaysSinceLastCommit := math.MaxInt64
 	totalCommits := 0
 	branchCommitCounts := make(map[string]int)
 
-	// Channel to collect errors from goroutines
 	errChan := make(chan error, 1)
+	branchChan := make(chan *plumbing.Reference)
 
-	// Process each branch concurrently
-	forEachErr := refIter.ForEach(func(ref *plumbing.Reference) error {
-		if ref.Name().IsRemote() || ref.Name().IsBranch() {
-			wg.Add(1)
-			go func(ref plumbing.Reference) {
-				defer wg.Done()
-
+	// Worker pool to limit concurrency
+	for i := 0; i < maxWorkers; i++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for ref := range branchChan {
 				branchName := ref.Name().Short()
-
 				commitIter, err := repo.Log(&git.LogOptions{From: ref.Hash()})
 				if err != nil {
 					errChan <- fmt.Errorf("failed to retrieve commits for branch %s: %w", branchName, err)
-					return
+					continue
 				}
 
 				commitCount := 0
 				var lastCommitDate time.Time
-				commitIter.ForEach(func(c *object.Commit) error {
+				_ = commitIter.ForEach(func(c *object.Commit) error {
+					commitTime := c.Committer.When.Unix()
+					if cutoffTimestamp != -1 && commitTime < cutoffTimestamp {
+						return nil // Skip older commits
+					}
 					commitCount++
 					if c.Committer.When.After(lastCommitDate) {
 						lastCommitDate = c.Committer.When
@@ -501,27 +509,34 @@ func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Fin
 				branchCommitCounts[branchName] = commitCount
 				totalCommits += commitCount
 
-				// Check for latest commit
 				if lastCommitDate.After(latestCommitDate) {
 					latestCommitDate = lastCommitDate
 				}
 
-				// Calculate days since last commit
 				daysSinceLastCommit := int(time.Since(lastCommitDate).Hours() / 24)
 				if daysSinceLastCommit < minDaysSinceLastCommit {
 					minDaysSinceLastCommit = daysSinceLastCommit
 				}
 				mu.Unlock()
-				log.Printf("Branch: %s", branchName)
-			}(*ref)
+
+				log.Printf("Branch: %s, Commits: %d", branchName, commitCount)
+			}
+		}()
+	}
+
+	// Iterate over references and send them to worker channel
+	forEachErr := refIter.ForEach(func(ref *plumbing.Reference) error {
+		if ref.Name().IsRemote() || ref.Name().IsBranch() {
+			branchChan <- ref
 		}
 		return nil
 	})
 
-	wg.Wait()
-	close(errChan)
+	close(branchChan) // Signal workers to stop
+	wg.Wait()         // Wait for all workers to finish
+	close(errChan)    // Close the error channel after workers finish
 
-	// Check if any errors occurred in goroutines
+	// Handle errors
 	for err := range errChan {
 		if err != nil {
 			return nil, err
@@ -532,25 +547,7 @@ func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Fin
 		return nil, forEachErr
 	}
 
-	// Calculate days since last commit on default branch (assume "main")
-	mainRef, err := repo.Reference(plumbing.NewBranchReferenceName("main"), true)
-	if err == nil {
-		commitIter, _ := repo.Log(&git.LogOptions{From: mainRef.Hash()})
-		mainLastCommit, _ := commitIter.Next()
-		mainDaysSinceLastCommit := int(time.Since(mainLastCommit.Committer.When).Hours() / 24)
-
-		findings = append(findings, core.Finding{
-			Name:     "Days Since Last Commit to Main Branch",
-			Type:     "git_metric",
-			Category: "repository_analysis",
-			Properties: map[string]interface{}{
-				"value": mainDaysSinceLastCommit,
-			},
-			RepoName: repoName,
-		})
-	}
-
-	// Store the minimum days since last commit across all branches
+	// Process findings
 	findings = append(findings, core.Finding{
 		Name:     "Days Since Last Commit to Any Branch",
 		Type:     "git_metric",
@@ -561,7 +558,6 @@ func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Fin
 		RepoName: repoName,
 	})
 
-	// Calculate average commits per branch
 	avgCommitsPerBranch := float64(totalCommits) / float64(len(branchCommitCounts))
 	findings = append(findings, core.Finding{
 		Name:     "Average Commits Per Branch",
@@ -573,7 +569,6 @@ func getBranchActivityMetrics(repo *git.Repository, repoName string) ([]core.Fin
 		RepoName: repoName,
 	})
 
-	// Determine the branch with the max commits
 	var maxCommitsBranch string
 	maxCommits := 0
 	for branch, count := range branchCommitCounts {
