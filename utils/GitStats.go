@@ -52,13 +52,13 @@ func CollectGitMetrics(repoPath, repoName string, cutoffDate string) ([]core.Fin
 		return nil, err
 	}
 	findings = append(findings, branchFindings...)
-	//
-	//log.Println("Fetching Tag Statistics")
-	//tagFindings, err := getTagMetrics(repo, repoName)
-	//if err != nil {
-	//	return nil, err
-	//}
-	//findings = append(findings, tagFindings...)
+
+	log.Println("Fetching Tag Statistics")
+	tagFindings, err := getTagMetrics(repo, repoName, cutoffTimestamp)
+	if err != nil {
+		return nil, err
+	}
+	findings = append(findings, tagFindings...)
 	////
 	//log.Println("Fetching Commit Statistics")
 	//commitFindings, err := getCommitMetrics(repo, repoName)
@@ -176,9 +176,14 @@ func getBranchMetrics(repo *git.Repository, repoName string, cutoffTimestamp int
 }
 
 // ----------------- Tag Metrics -----------------
-func getTagMetrics(repo *git.Repository, repoName string) ([]core.Finding, error) {
+func getTagMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64) ([]core.Finding, error) {
 	var findings []core.Finding
 	var tagDates []time.Time
+
+	// If cutoffTimestamp is empty (0), set to -1
+	if cutoffTimestamp == 0 {
+		cutoffTimestamp = -1
+	}
 
 	// Iterate over all tags (includes lightweight and annotated)
 	tags, err := repo.Tags()
@@ -187,18 +192,41 @@ func getTagMetrics(repo *git.Repository, repoName string) ([]core.Finding, error
 	}
 
 	err = tags.ForEach(func(ref *plumbing.Reference) error {
+		var tagTime time.Time
+
 		tag, err := repo.TagObject(ref.Hash())
 		if err == nil {
 			// Annotated tag
-			tagDates = append(tagDates, tag.Tagger.When)
+			tagTime = tag.Tagger.When
 		} else {
 			// Lightweight tag - get commit date directly
 			commit, err := repo.CommitObject(ref.Hash())
 			if err == nil {
-				tagDates = append(tagDates, commit.Committer.When)
+				tagTime = commit.Committer.When
 			}
 		}
+
+		// Apply cutoff if applicable
+		if cutoffTimestamp == -1 || tagTime.Unix() >= cutoffTimestamp {
+			tagDates = append(tagDates, tagTime)
+		}
+
 		return nil
+	})
+	if err != nil {
+		return nil, fmt.Errorf("failed to iterate over tags: %w", err)
+	}
+
+	// Tag count finding
+	tagCount := len(tagDates)
+	findings = append(findings, core.Finding{
+		Name:     "Tag Count",
+		Type:     "git_metric",
+		Category: "repository_analysis",
+		Properties: map[string]interface{}{
+			"value": tagCount,
+		},
+		RepoName: repoName,
 	})
 
 	// Calculate average time between tags
