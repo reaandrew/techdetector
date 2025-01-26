@@ -33,8 +33,10 @@ func (j *JsonReporter) setDefaultOutputDir() {
 
 // Report generates both detailed and summary JSON reports
 func (j JsonReporter) Report(repository core.FindingRepository) error {
-	dbPath := fmt.Sprintf("/tmp/%s_%s", j.ArtifactPrefix, j.SqliteDBFilename)
+	j.setDefaultOutputDir()
 
+	dbPath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, j.SqliteDBFilename)
+	fmt.Printf("dbPath: %v", dbPath)
 	// Initialize SQLite database
 	db, err := utils.InitializeSQLiteDB(dbPath)
 	if err != nil {
@@ -148,7 +150,6 @@ func (j JsonReporter) generateSummaryReport(dbPath string) error {
 	summaryData := make(map[string]interface{})
 
 	for _, query := range j.Queries.Queries {
-		log.Printf("Executing query: %s\n", query.Query)
 		results, err := executeSQLQuery(db, query.Query)
 		if err != nil {
 			log.Printf("Skipping query for '%s': %v", query.Name, err)
@@ -161,24 +162,17 @@ func (j JsonReporter) generateSummaryReport(dbPath string) error {
 		summaryData[query.Name] = results
 	}
 
-	// Debug: Print summaryData before marshaling
-	log.Printf("Summary Data: %+v\n", summaryData)
-
 	// Write summary data to JSON file
 	summaryBytes, err := json.MarshalIndent(summaryData, "", "  ")
 	if err != nil {
 		return fmt.Errorf("failed to marshal summary data: %w", err)
 	}
 
-	// Debug: Print the marshaled JSON string
-	log.Printf("Marshaled Summary JSON: %s\n", string(summaryBytes))
-
 	_, err = outputFile.Write(summaryBytes)
 	if err != nil {
 		return fmt.Errorf("failed to write to summary output file: %v", err)
 	}
 
-	fmt.Printf("Summary JSON report generated successfully: %s\n", outputFile.Name())
 	return nil
 }
 
