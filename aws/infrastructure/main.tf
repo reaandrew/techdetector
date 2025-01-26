@@ -78,6 +78,7 @@ resource "aws_lambda_function" "lambda_techdetector" {
   timeout       = 900
   memory_size   = 6144
   filename      = "${path.module}/lambda_dist/bootstrap.zip"
+  source_code_hash = filebase64sha256("${path.module}/lambda_dist/bootstrap.zip")
 
   environment {
     variables = {
@@ -113,7 +114,6 @@ resource "aws_lambda_permission" "public_access" {
   function_name = aws_lambda_function.lambda_techdetector.function_name
   principal     = "*"
   function_url_auth_type = "NONE"
-  source_arn    = aws_lambda_function_url.lambda_url.function_arn  # Use 'id' instead of 'arn'
 }
 
 # Outputs

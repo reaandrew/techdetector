@@ -71,3 +71,7 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+*.tar.gz
+.cache/
+techdetector_cloud_services_report.json
+techdetector_cloud_services_summary.json

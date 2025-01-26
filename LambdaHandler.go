@@ -32,11 +32,48 @@ type LambdaResponse struct {
 }
 
 // Lambda handler function compatible with AWS Lambda Function URLs
-func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	var lambdaReq LambdaRequest
+//func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+//	var lambdaReq LambdaRequest
+//
+//	// Parse JSON body
+//	err := json.Unmarshal([]byte(request.Body), &lambdaReq)
+//	if err != nil {
+//		log.Printf("Error parsing request body: %v", err)
+//		return toAPIGatewayResponse(400, `{"error": "Invalid JSON format."}`), nil
+//	}
+//
+//	if lambdaReq.Repo == "" {
+//		errMsg := "The 'repo' field is required in the JSON request."
+//		log.Println(errMsg)
+//		return toAPIGatewayResponse(400, fmt.Sprintf(`{"error": "%s"}`, errMsg)), nil
+//	}
+//
+//	// Perform the scan
+//	jsonReport, err := ScanRepo(lambdaReq.Repo, queriesFilePath, prefix)
+//	if err != nil {
+//		log.Printf("Error scanning repository: %v", err)
+//		errorBody, _ := json.Marshal(map[string]string{"error": err.Error()})
+//		return toAPIGatewayResponse(500, string(errorBody)), nil
+//	}
+//
+//	// Successful response
+//	return toAPIGatewayResponse(200, jsonReport), nil
+//}
 
-	// Parse JSON body
-	err := json.Unmarshal([]byte(request.Body), &lambdaReq)
+func Handler(ctx context.Context, request map[string]interface{}) (events.APIGatewayProxyResponse, error) {
+	log.Println("Received request:", request)
+
+	var body string
+	switch v := request["body"].(type) {
+	case string:
+		body = v
+	default:
+		log.Println("Invalid request format")
+		return toAPIGatewayResponse(400, `{"error": "Invalid request format"}`), nil
+	}
+
+	var lambdaReq LambdaRequest
+	err := json.Unmarshal([]byte(body), &lambdaReq)
 	if err != nil {
 		log.Printf("Error parsing request body: %v", err)
 		return toAPIGatewayResponse(400, `{"error": "Invalid JSON format."}`), nil
@@ -48,7 +85,6 @@ func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 		return toAPIGatewayResponse(400, fmt.Sprintf(`{"error": "%s"}`, errMsg)), nil
 	}
 
-	// Perform the scan
 	jsonReport, err := ScanRepo(lambdaReq.Repo, queriesFilePath, prefix)
 	if err != nil {
 		log.Printf("Error scanning repository: %v", err)
@@ -56,7 +92,6 @@ func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 		return toAPIGatewayResponse(500, string(errorBody)), nil
 	}
 
-	// Successful response
 	return toAPIGatewayResponse(200, jsonReport), nil
 }
 
@@ -96,8 +131,15 @@ func ScanRepo(repoURL string, queriesPath string, prefix string) (string, error)
 
 	scanner.Scan(repoURL, "json")
 
-	jsonReport := fmt.Sprintf(`{"repo": "%s", "status": "Scan completed successfully."}`, repoURL)
-	return jsonReport, nil
+	// Read the generated JSON report
+	reportFilePath := fmt.Sprintf("/tmp/%s_%s", prefix, reporters.DefaultJsonSummaryReport)
+	reportData, err := os.ReadFile(reportFilePath)
+	if err != nil {
+		return "", fmt.Errorf("failed to read JSON report: %v", err)
+	}
+
+	// Return the full JSON report as a string
+	return string(reportData), nil
 }
 
 func loadQueries(queriesPath string) (core.SqlQueries, error) {
@@ -121,5 +163,6 @@ func createJSONReporter(queries core.SqlQueries, prefix string) (core.Reporter, 
 		Queries:          queries,
 		ArtifactPrefix:   prefix,
 		SqliteDBFilename: "findings.db",
+		OutputDir:        "/tmp",
 	}, nil
 }

@@ -22,11 +22,18 @@ type JsonReporter struct {
 	Queries          core.SqlQueries
 	ArtifactPrefix   string
 	SqliteDBFilename string
+	OutputDir        string
+}
+
+func (j *JsonReporter) setDefaultOutputDir() {
+	if j.OutputDir == "" {
+		j.OutputDir = "."
+	}
 }
 
 // Report generates both detailed and summary JSON reports
 func (j JsonReporter) Report(repository core.FindingRepository) error {
-	dbPath := fmt.Sprintf("%s_%s", j.ArtifactPrefix, j.SqliteDBFilename)
+	dbPath := fmt.Sprintf("/tmp/%s_%s", j.ArtifactPrefix, j.SqliteDBFilename)
 
 	// Initialize SQLite database
 	db, err := utils.InitializeSQLiteDB(dbPath)
@@ -63,7 +70,13 @@ func (j JsonReporter) Report(repository core.FindingRepository) error {
 
 // generateDetailedReport creates a detailed JSON report of all findings
 func (j JsonReporter) generateDetailedReport(repository core.FindingRepository) error {
-	outputFile, err := os.Create(fmt.Sprintf("%s_%s", j.ArtifactPrefix, DefaultJsonReport))
+	j.setDefaultOutputDir()
+
+	// Create the full path for the output file
+	outputFilePath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, DefaultJsonReport)
+
+	outputFile, err := os.Create(outputFilePath)
+
 	if err != nil {
 		return fmt.Errorf("failed to create detailed output file: %v", err)
 	}
@@ -120,7 +133,13 @@ func (j JsonReporter) generateSummaryReport(dbPath string) error {
 		return nil
 	}
 
-	outputFile, err := os.Create(fmt.Sprintf("%s_%s", j.ArtifactPrefix, DefaultJsonSummaryReport))
+	j.setDefaultOutputDir()
+
+	// Create the full path for the summary output file
+	outputFilePath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, DefaultJsonSummaryReport)
+
+	outputFile, err := os.Create(outputFilePath)
+
 	if err != nil {
 		return fmt.Errorf("failed to create summary JSON output file: %w", err)
 	}
