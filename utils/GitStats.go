@@ -60,12 +60,12 @@ func CollectGitMetrics(repoPath, repoName string, cutoffDate string) ([]core.Fin
 	}
 	findings = append(findings, tagFindings...)
 	////
-	//log.Println("Fetching Commit Statistics")
-	//commitFindings, err := getCommitMetrics(repo, repoName)
-	//if err != nil {
-	//	return nil, err
-	//}
-	//findings = append(findings, commitFindings...)
+	log.Println("Fetching Commit Statistics")
+	commitFindings, err := getCommitMetrics(repo, repoName, cutoffTimestamp)
+	if err != nil {
+		return nil, err
+	}
+	findings = append(findings, commitFindings...)
 
 	//log.Println("Fetching Branch Activity Statistics")
 	//branchActivityFindings, err := getBranchActivityMetrics(repo, repoName)
@@ -267,8 +267,13 @@ func getTagMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64)
 }
 
 // ----------------- Commit Metrics -----------------
-func getCommitMetrics(repo *git.Repository, repoName string) ([]core.Finding, error) {
+func getCommitMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64) ([]core.Finding, error) {
 	var findings []core.Finding
+
+	// Default cutoffTimestamp to -1 if empty
+	if cutoffTimestamp == 0 {
+		cutoffTimestamp = -1
+	}
 
 	commitIter, err := repo.Log(&git.LogOptions{
 		All: true,
@@ -287,6 +292,11 @@ func getCommitMetrics(repo *git.Repository, repoName string) ([]core.Finding, er
 
 	err = commitIter.ForEach(func(c *object.Commit) error {
 		commitDate := c.Committer.When
+
+		// Apply cutoff timestamp if provided
+		if cutoffTimestamp != -1 && commitDate.Unix() < cutoffTimestamp {
+			return nil
+		}
 
 		// Fixing the ISOWeek error by capturing both return values
 		year, week := commitDate.ISOWeek()
@@ -309,6 +319,10 @@ func getCommitMetrics(repo *git.Repository, repoName string) ([]core.Finding, er
 		totalCommits++
 		return nil
 	})
+
+	if err != nil {
+		return nil, fmt.Errorf("error processing commits: %w", err)
+	}
 
 	maxCommitsPerDay, avgCommitsPerDay := calculateMaxAndAvg(commitsPerDay)
 	maxCommitsPerWeek, avgCommitsPerWeek := calculateMaxAndAvg(commitsPerWeek)
