@@ -87,6 +87,15 @@ queries:
       FROM Findings
       WHERE Type = "Azure Bicep"
       GROUP BY resource_type;
+  - name: "Cloud Formation Detected"
+    query: |
+      SELECT
+          RepoName,
+          Name,
+          COUNT(*) AS count
+      FROM Findings
+      WHERE Type = "CloudFormation Resource"
+      GROUP BY RepoName, Name;
   - name: "Library Version Detection"
     query: |
       SELECT

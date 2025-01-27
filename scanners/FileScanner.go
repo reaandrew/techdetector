@@ -3,7 +3,6 @@ package scanners
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
-	log "github.com/sirupsen/logrus"
 	"io/fs"
 	"os"
 	"path/filepath"
@@ -46,7 +45,6 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 			for path := range files {
 				for _, processor := range fileScanner.processors {
 					if processor.Supports(path) {
-						log.Infof("Processor supports %s", path)
 						content, err := os.ReadFile(path)
 						if err != nil {
 							errs <- fmt.Errorf("failed to read file %s: %v", path, err)

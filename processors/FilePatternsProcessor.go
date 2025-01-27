@@ -133,7 +133,6 @@ func (s *FilePatternsProcessor) Supports(path string) bool {
 
 		// Ensure all criteria must match
 		if isFilenameMatch || isFileExtensionMatch || isPathMatch {
-			log.Infof("Pattern %s supports path %s", pattern.Name, path)
 			return true
 		}
 	}
@@ -248,13 +247,6 @@ func (s *FilePatternsProcessor) Process(path string, repoName string, content st
 			}
 		}
 
-		// If we reach here, all specified conditions matched
-		log.Infof("Creating match for %s for path %s %v,%v,%v \n",
-			pattern,
-			path,
-			isFilenameMatch,
-			isContentPatternMatch,
-			isFileExtensionMatch)
 		matches = append(matches, createMatch(pattern, path, repoName))
 	}
 	return matches, nil
