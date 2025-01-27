@@ -162,8 +162,10 @@ func (j JsonReporter) generateSummaryReport(dbPath string) error {
 		summaryData[query.Name] = results
 	}
 
+	cleanedSummaryData := removeNilValues(summaryData)
 	// Write summary data to JSON file
-	summaryBytes, err := json.MarshalIndent(summaryData, "", "  ")
+	summaryBytes, err := json.MarshalIndent(cleanedSummaryData, "", "  ")
+
 	if err != nil {
 		return fmt.Errorf("failed to marshal summary data: %w", err)
 	}
@@ -223,4 +225,19 @@ func executeSQLQuery(db *sql.DB, query string) ([]map[string]interface{}, error)
 	}
 
 	return results, nil
+}
+
+func removeNilValues(data map[string]interface{}) map[string]interface{} {
+	cleanedData := make(map[string]interface{})
+	for key, value := range data {
+		if value == nil {
+			continue // Skip nil values
+		}
+		// Check for empty slices
+		if slice, ok := value.([]map[string]interface{}); ok && len(slice) == 0 {
+			continue // Skip empty slice results
+		}
+		cleanedData[key] = value
+	}
+	return cleanedData
 }

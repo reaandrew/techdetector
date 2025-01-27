@@ -79,3 +79,35 @@ queries:
       FROM Findings
       WHERE Type = "Terraform Resource Use"
       GROUP BY resource_type;
+  - name: "Azure Resources Detected"
+    query: |
+      SELECT
+          json_extract(Properties, '$.resource') AS resource_type,
+          COUNT(*) AS count
+      FROM Findings
+      WHERE Type = "Azure Bicep"
+      GROUP BY resource_type;
+  - name: "Library Version Detection"
+    query: |
+      SELECT
+        Name,
+        Language,
+        GROUP_CONCAT(Version, ', ') AS Versions,
+        COUNT(*) AS Count
+      FROM (
+        SELECT DISTINCT
+          Name,
+          json_extract(Properties, '$.Language') AS Language,
+          json_extract(Properties, '$.Version') AS Version
+        FROM Findings
+        WHERE Type = 'Library'
+      )
+      GROUP BY Name, Language
+      HAVING COUNT(*) > 1;
+  - name: "MS Office Files"
+    query: |
+      select Type, Category, Count(*)
+      from Findings
+      where Type = "MS Office"
+      group by Type, Category;
+

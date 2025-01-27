@@ -10,7 +10,6 @@ curl -X POST \
   -H "Content-Type: application/json" \
   -d @- "${LAMBDA_URL}" <<EOF
 {
-  "repo": "${REPO_URL}",
-  "cutoff": "1 week ago"
+  "repo": "${REPO_URL}"
 }
 EOF
