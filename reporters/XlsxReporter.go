@@ -6,14 +6,19 @@ import (
 )
 
 type XlsxReporter struct {
-	Queries        core.SqlQueries
-	DumpSchema     bool
-	ArtifactPrefix string
+	Queries          core.SqlQueries
+	DumpSchema       bool
+	ArtifactPrefix   string
+	SqliteDBFilename string
 }
 
 func (x XlsxReporter) Report(repository core.FindingRepository) error {
 	// Generate summary report
-	summaryReporter := DynamicXlsxSummaryReporter{x.Queries, x.DumpSchema, x.ArtifactPrefix}
+	summaryReporter := DynamicXlsxSummaryReporterForFindingsSqlTable{
+		x.Queries,
+		x.DumpSchema,
+		x.ArtifactPrefix,
+		x.SqliteDBFilename}
 	err := summaryReporter.Report(repository)
 	if err != nil {
 		log.Fatalf("Error generating summary report: %v", err)

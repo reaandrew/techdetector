@@ -27,15 +27,18 @@ type GithubOrgScanner struct {
 	reporter        core.Reporter
 	fileScanner     FileScanner
 	matchRepository core.FindingRepository
+	Cutoff          string
 }
 
 func NewGithubOrgScanner(reporter core.Reporter,
 	processors []core.FileProcessor,
-	matchRepository core.FindingRepository) *GithubOrgScanner {
+	matchRepository core.FindingRepository,
+	cutoff string) *GithubOrgScanner {
 	return &GithubOrgScanner{
 		reporter:        reporter,
 		fileScanner:     FileScanner{processors: processors},
 		matchRepository: matchRepository,
+		Cutoff:          cutoff,
 	}
 }
 
@@ -102,7 +105,7 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 		fmt.Printf("Worker: Cloning repository %s\n", repoName)
 
 		repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
-		err := utils.CloneRepository(repo.GetCloneURL(), repoPath)
+		err := utils.CloneRepository(repo.GetCloneURL(), repoPath, false)
 
 		if err != nil {
 			results <- RepoResult{
@@ -122,6 +125,23 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 			}
 			continue
 		}
+
+		// Perform bare clone to extract metadata
+		bareRepoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName)+"_bare")
+		err = utils.CloneRepository(repo.GetCloneURL(), bareRepoPath, true)
+		if err != nil {
+			log.Fatalf("Failed to perform bare clone for '%s': %v", repoName, err)
+		}
+
+		// Collect Git metrics
+		gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName, githubOrgScanner.Cutoff)
+		if err != nil {
+			log.Fatalf("Error collecting Git metrics for '%s': %v", repoName, err)
+		}
+
+		fmt.Printf("Git Metrics: %+v\n", gitFindings)
+
+		Matches = append(Matches, gitFindings...)
 
 		results <- RepoResult{
 			Matches:  Matches,

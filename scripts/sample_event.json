@@ -1,0 +1,49 @@
+{
+  "resource": "/",
+  "path": "/",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "multiValueHeaders": {
+    "Content-Type": [
+      "application/json"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "123456",
+    "resourcePath": "/",
+    "httpMethod": "POST",
+    "extendedRequestId": "request-id",
+    "requestTime": "10/Mar/2023:12:34:56 +0000",
+    "path": "/",
+    "accountId": "123456789012",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "example",
+    "requestTimeEpoch": 1678455296000,
+    "requestId": "c1234567-d89b-12d3-a456-426614174000",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "127.0.0.1",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "Custom User Agent String",
+      "user": null
+    },
+    "domainName": "example.com",
+    "apiId": "abcdef1234"
+  },
+  "body": "{\"repo\": \"https://github.com/reaandrew/techdetector.git\"}",
+  "isBase64Encoded": false
+}

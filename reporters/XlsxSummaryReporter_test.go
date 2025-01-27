@@ -25,7 +25,7 @@ func TestDynamicXlsxSummaryReporter_Report(t *testing.T) {
 	}
 	repo.Store(findings)
 
-	xr := DynamicXlsxSummaryReporter{
+	xr := DynamicXlsxSummaryReporterForFindingsSqlTable{
 		SqlQueries: core.SqlQueries{
 			Queries: []core.SqlQuery{
 				{
@@ -57,7 +57,7 @@ func TestDynamicXlsxSummaryReporter_createDynamicTables(t *testing.T) {
 	assert.NoError(t, err)
 	defer db.Close()
 
-	xr := DynamicXlsxSummaryReporter{}
+	xr := DynamicXlsxSummaryReporterForFindingsSqlTable{}
 	typeProperties := map[string]map[string]bool{
 		"TypeA": {
 			"Key1": true,
@@ -80,7 +80,7 @@ func TestDynamicXlsxSummaryReporter_importFindings(t *testing.T) {
 	assert.NoError(t, err)
 	defer db.Close()
 
-	xr := DynamicXlsxSummaryReporter{}
+	xr := DynamicXlsxSummaryReporterForFindingsSqlTable{}
 	typeProperties := map[string]map[string]bool{
 		"TypeA": {
 			"Key1": true,

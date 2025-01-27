@@ -3,6 +3,7 @@ package processors
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/gobwas/glob"
 	"github.com/reaandrew/techdetector/core"
 	log "github.com/sirupsen/logrus"
 	"io/fs"
@@ -20,10 +21,12 @@ type Pattern struct {
 	Type                 string   `json:"type,omitempty"`
 	Category             string   `json:"category,omitempty"`
 	Filenames            []string `json:"file_names,omitempty"`
+	PathPatterns         []string `json:"path_patterns,omitempty"`
 	FileExtensions       []string `json:"file_extensions,omitempty"`
 	ContentPatterns      []string `json:"content_patterns,omitempty"`
 	FilenameRegexs       []*regexp.Regexp
 	ContentPatternRegexs []*regexp.Regexp
+	PathPatternGlobs     []glob.Glob
 	Properties           map[string]interface{} `json:"properties,omitempty"`
 }
 
@@ -45,6 +48,9 @@ func (s *FilePatternsProcessor) CompilePatterns() {
 		}
 		for _, content := range s.Patterns[i].ContentPatterns {
 			s.Patterns[i].ContentPatternRegexs = append(s.Patterns[i].ContentPatternRegexs, regexp.MustCompile(content))
+		}
+		for _, pathPattern := range s.Patterns[i].PathPatterns {
+			s.Patterns[i].PathPatternGlobs = append(s.Patterns[i].PathPatternGlobs, glob.MustCompile(pathPattern))
 		}
 	}
 }
@@ -98,33 +104,46 @@ func LoadAllPatterns(f fs.FS) ([]Pattern, error) {
 
 func (s *FilePatternsProcessor) Supports(path string) bool {
 	for _, pattern := range s.Patterns {
-		// Skip patterns that specify both file_names and file_extensions (Rule 1)
 		if !isNilOrEmpty(pattern.Filenames) && !isNilOrEmpty(pattern.FileExtensions) {
 			log.Errorf("Pattern error: Pattern '%s' specifies both file_names and file_extensions", pattern.Name)
 			continue
 		}
 
-		// Skip patterns that have content_patterns but no file_names or file_extensions (Rule 2)
 		if isNilOrEmpty(pattern.Filenames) && isNilOrEmpty(pattern.FileExtensions) && !isNilOrEmpty(pattern.ContentPatterns) {
 			log.Errorf("Pattern error: Pattern '%s' has content_patterns but no file_names or file_extensions", pattern.Name)
 			continue
 		}
 
-		var isFilenameMatch bool = true
-		var isFileExtensionMatch bool = true
+		var isFilenameMatch, isFileExtensionMatch, isPathMatch = false, false, false
 
-		// Check filename match if file_names are specified
+		// Check filename match if specified
 		if !isNilOrEmpty(pattern.Filenames) {
 			isFilenameMatch = matchFilename(pattern, path)
 		}
 
-		// Check file extension match if file_extensions are specified
+		// Check file extension match if specified
 		if !isNilOrEmpty(pattern.FileExtensions) {
 			isFileExtensionMatch = matchFileExtension(pattern, path)
 		}
 
-		// If either filename or file extension matches, return true
-		if (!isNilOrEmpty(pattern.Filenames) && isFilenameMatch) || (!isNilOrEmpty(pattern.FileExtensions) && isFileExtensionMatch) {
+		// Check path pattern match if specified
+		if !isNilOrEmpty(pattern.PathPatterns) {
+			isPathMatch = matchPath(pattern, path)
+		}
+
+		// Ensure all criteria must match
+		if isFilenameMatch || isFileExtensionMatch || isPathMatch {
+			return true
+		}
+	}
+	return false
+}
+
+func matchPath(pattern Pattern, path string) bool {
+	normalizedPath := "/" + filepath.ToSlash(strings.TrimPrefix(path, "/"))
+	for _, glob := range pattern.PathPatternGlobs {
+		if glob.Match(normalizedPath) {
+			log.Infof("Matched path: %s with pattern: %s", normalizedPath, glob)
 			return true
 		}
 	}
@@ -132,9 +151,6 @@ func (s *FilePatternsProcessor) Supports(path string) bool {
 }
 
 func matchFilename(pattern Pattern, path string) bool {
-	if isNilOrEmpty(pattern.Filenames) {
-		return true
-	}
 
 	filename := filepath.Base(path) // Extract the base filename from the path
 
@@ -191,9 +207,15 @@ func (s *FilePatternsProcessor) Process(path string, repoName string, content st
 			continue
 		}
 
-		var isFilenameMatch bool = true
-		var isFileExtensionMatch bool = true
-		var isContentPatternMatch bool = true
+		var isFilenameMatch bool = false
+		var isFileExtensionMatch bool = false
+		var isContentPatternMatch bool = false
+		var isPathPatternMatch = false
+
+		// Check path pattern match if specified
+		if !isNilOrEmpty(pattern.PathPatterns) {
+			isPathPatternMatch = matchPath(pattern, path)
+		}
 
 		// Check filename match if file_names are specified
 		if !isNilOrEmpty(pattern.Filenames) {
@@ -205,8 +227,9 @@ func (s *FilePatternsProcessor) Process(path string, repoName string, content st
 			isFileExtensionMatch = matchFileExtension(pattern, path)
 		}
 
-		// If neither filename nor file extension matches, skip to next pattern
-		if (!isNilOrEmpty(pattern.Filenames) && !isFilenameMatch) || (!isNilOrEmpty(pattern.FileExtensions) && !isFileExtensionMatch) {
+		if (!isNilOrEmpty(pattern.Filenames) && !isFilenameMatch) ||
+			(!isNilOrEmpty(pattern.FileExtensions) && !isFileExtensionMatch) ||
+			(!isNilOrEmpty(pattern.PathPatterns) && !isPathPatternMatch) {
 			continue
 		}
 
@@ -224,7 +247,6 @@ func (s *FilePatternsProcessor) Process(path string, repoName string, content st
 			}
 		}
 
-		// If we reach here, all specified conditions matched
 		matches = append(matches, createMatch(pattern, path, repoName))
 	}
 	return matches, nil

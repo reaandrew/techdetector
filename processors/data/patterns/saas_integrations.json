@@ -1,0 +1,157 @@
+[
+  {
+    "name": "GitHub Actions",
+    "type": "SAAS Integration",
+    "category": "CI/CD",
+    "path_patterns": ["**/.github/workflows/*.yml"],
+    "properties": {
+      "description": "GitHub Actions automates workflows within GitHub repositories.",
+      "creator": "GitHub",
+      "version_supported": "All GitHub repositories"
+    }
+  },
+  {
+    "name": "Travis CI",
+    "type": "SAAS Integration",
+    "category": "CI/CD",
+    "file_names": [".travis.yml"],
+    "properties": {
+      "description": "Travis CI provides CI/CD for GitHub repositories.",
+      "creator": "Travis CI",
+      "version_supported": "Cloud-hosted and self-hosted versions available"
+    }
+  },
+  {
+    "name": "CircleCI",
+    "type": "SAAS Integration",
+    "category": "CI/CD",
+    "path_patterns": ["**/.circleci/config.yml"],
+    "properties": {
+      "description": "CircleCI automates software builds and testing.",
+      "creator": "CircleCI",
+      "version_supported": "Cloud-hosted and self-hosted versions available"
+    }
+  },
+  {
+    "name": "Code Climate",
+    "type": "SAAS Integration",
+    "category": "Code Quality",
+    "file_names": [".codeclimate.yml"],
+    "properties": {
+      "description": "Automated code review for maintainability and security.",
+      "creator": "Code Climate",
+      "version_supported": "Cloud-hosted and self-hosted versions available"
+    }
+  },
+  {
+    "name": "SonarCloud",
+    "type": "SAAS Integration",
+    "category": "Code Quality",
+    "file_names": ["sonar-project.properties"],
+    "properties": {
+      "description": "Cloud-based code analysis and security scanning.",
+      "creator": "SonarSource",
+      "version_supported": "Cloud-hosted with multiple platform integrations"
+    }
+  },
+  {
+    "name": "Snyk",
+    "type": "SAAS Integration",
+    "category": "Security",
+    "file_names": [".snyk"],
+    "properties": {
+      "description": "Find and fix vulnerabilities in dependencies.",
+      "creator": "Snyk Ltd.",
+      "version_supported": "Cloud-hosted with integrations for GitHub, GitLab, and Bitbucket"
+    }
+  },
+  {
+    "name": "Dependabot",
+    "type": "SAAS Integration",
+    "category": "Dependency Management",
+    "path_patterns": ["**/.github/dependabot.yml"],
+    "properties": {
+      "description": "Automates pull requests for dependency updates.",
+      "creator": "GitHub",
+      "version_supported": "Native integration with GitHub repositories"
+    }
+  },
+  {
+    "name": "Netlify",
+    "type": "SAAS Integration",
+    "category": "Deployment",
+    "file_names": ["netlify.toml"],
+    "properties": {
+      "description": "Cloud hosting for front-end applications.",
+      "creator": "Netlify",
+      "version_supported": "Cloud-hosted with GitHub support"
+    }
+  },
+  {
+    "name": "Vercel",
+    "type": "SAAS Integration",
+    "category": "Deployment",
+    "file_names": ["vercel.json"],
+    "properties": {
+      "description": "Cloud deployment for web applications.",
+      "creator": "Vercel",
+      "version_supported": "Cloud-hosted with GitHub integration"
+    }
+  },
+  {
+    "name": "ReadTheDocs",
+    "type": "SAAS Integration",
+    "category": "Documentation",
+    "file_names": ["readthedocs.yml"],
+    "properties": {
+      "description": "Hosts documentation generated from source code.",
+      "creator": "Read the Docs",
+      "version_supported": "Cloud-hosted with GitHub integration"
+    }
+  },
+  {
+    "name": "Datadog",
+    "type": "SAAS Integration",
+    "category": "Monitoring",
+    "file_names": ["datadog.yaml"],
+    "properties": {
+      "description": "Cloud monitoring for applications and infrastructure.",
+      "creator": "Datadog",
+      "version_supported": "Cloud-hosted with multiple integrations"
+    }
+  },
+  {
+    "name": "New Relic",
+    "type": "SAAS Integration",
+    "category": "Monitoring",
+    "file_names": ["newrelic.yml"],
+    "properties": {
+      "description": "Application performance monitoring and observability.",
+      "creator": "New Relic",
+      "version_supported": "Cloud-hosted with multiple integrations"
+    }
+  },
+  {
+    "name": "Sentry",
+    "type": "SAAS Integration",
+    "category": "Error Tracking",
+    "file_names": [".sentryclirc", "sentry.properties"],
+    "properties": {
+      "description": "Cloud-based error tracking for applications.",
+      "creator": "Sentry",
+      "version_supported": "Cloud-hosted with GitHub integration"
+    }
+  },
+  {
+    "name": "Jira",
+    "type": "SAAS Integration",
+    "category": "Project Management",
+    "path_patterns": ["**/.jira/config.yml"],
+    "properties": {
+      "description": "Issue tracking and project management for teams.",
+      "creator": "Atlassian",
+      "version_supported": "Cloud-hosted with GitHub integration"
+    }
+  }
+]
+

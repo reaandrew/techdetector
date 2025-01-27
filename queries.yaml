@@ -1,705 +1,123 @@
 # sql_queries.yaml
 
 queries:
-  - name: "Library Versions"
+  - name: "Type Findings"
     query: |
-      SELECT 
-        Name,
-        COUNT(DISTINCT Version) AS VersionCount,
-        GROUP_CONCAT(DISTINCT Version) AS Versions
-      FROM 
-        Library
-      GROUP BY 
-        Name
-      ORDER BY 
-        Name;
-
-  - name: "Library Versions By RepoName"
+      SELECT DISTINCT RepoName,Type, COUNT(*) as count
+      FROM Findings
+      GROUP BY RepoName,Type;
+  - name: "Cloud Service SDKs Used"
     query: |
-      SELECT 
-        Name,
-        RepoName,
-        COUNT(DISTINCT Version) AS VersionCount,
-        GROUP_CONCAT(DISTINCT Version) AS Versions
-      FROM 
-        Library
-      GROUP BY 
-        Name, RepoName
-      ORDER BY 
-        Name;
-
-  - name: "Docker Image Owners"
+      SELECT DISTINCT RepoName,Name
+        FROM Findings
+        WHERE Type = "Cloud Service SDK";
+  - name: "Applications"
     query: |
-      SELECT 
-        COALESCE(NULLIF(owner, ''), 'EMPTY') AS owner,
-        COUNT(*) AS owner_count
-      FROM 
-        Docker_Directive
-      GROUP BY 
-        owner
-      ORDER BY 
-        owner_count DESC;
-
-  - name: "Docker Images By Owner"
+      SELECT DISTINCT RepoName,Name
+        FROM Findings
+        WHERE Type = "Application";
+  - name: "Docker Ports Detected"
     query: |
-      SELECT
-      COALESCE(NULLIF(owner, ''), 'EMPTY') AS owner,
-      COUNT(DISTINCT CASE WHEN image IS NOT NULL AND image != '' THEN image END) AS image_count,
-      GROUP_CONCAT(DISTINCT CASE WHEN image IS NOT NULL AND image != '' THEN image END) AS images
-      FROM
-      Docker_Directive
-      GROUP BY
-      owner
-      ORDER BY
-      image_count DESC;
-  - name: "Docker Image Versions by Image"
+      SELECT DISTINCT  RepoName,json_extract(Properties, '$.arguments') AS Port
+      FROM Findings
+      WHERE Type = 'Docker Directive' AND Name = 'EXPOSE'
+      ORDER BY Port;
+  - name: "Docker Images Detected"
     query: |
-      SELECT 
-        image,
-        COUNT(DISTINCT version) AS VersionCount,
-        GROUP_CONCAT(DISTINCT version) AS Versions
-      FROM 
-        Docker_Directive
-      GROUP BY 
-        image
-      ORDER BY 
-        VersionCount DESC;
-  - name: "Framework Usage by Repo"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(DISTINCT Name) AS FrameworkCount,
-        GROUP_CONCAT(DISTINCT Name) AS Frameworks
-      FROM 
-        Framework
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        FrameworkCount DESC;
-
-  - name: "Cloud Services by Vendor"
-    query: |
-      SELECT 
-        vendor,
-        COUNT(DISTINCT Name) AS ServiceCount,
-        GROUP_CONCAT(DISTINCT Name) AS Services
-      FROM 
-        Cloud_Service_SDK
-      GROUP BY 
-        vendor
-      ORDER BY 
-        ServiceCount DESC;
-
-  - name: "Applications by Repo"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(DISTINCT Name) AS ApplicationCount,
-        GROUP_CONCAT(DISTINCT Name) AS Applications
-      FROM 
-        Application
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        ApplicationCount DESC;
-
-  - name: "Top Languages in Libraries"
-    query: |
-      SELECT 
-        Language,
-        COUNT(*) AS LibraryCount
-      FROM 
-        Library
-      GROUP BY 
-        Language
-      ORDER BY 
-        LibraryCount DESC;
-
-  - name: "Docker Imgs Without Owners"
-    query: |
-      SELECT 
-        image,
-        COUNT(*) AS ImageCount
-      FROM 
-        Docker_Directive
-      WHERE 
-        owner IS NULL OR owner = ''
-      GROUP BY 
-        image
-      ORDER BY 
-        ImageCount DESC;
-
-  - name: "Top Categories"
-    query: |
-      SELECT 
-        Category,
-        COUNT(*) AS OccurrenceCount
-      FROM (
-        SELECT Category FROM Docker_Compose_Service
-        UNION ALL
-        SELECT Category FROM Framework
-        UNION ALL
-        SELECT Category FROM Library
-        UNION ALL
-        SELECT Category FROM Application
-        UNION ALL
-        SELECT Category FROM Docker_Directive
-        UNION ALL
-        SELECT Category FROM Cloud_Service_SDK
-      )
-      GROUP BY 
-        Category
-      ORDER BY 
-        OccurrenceCount DESC;
-
-  - name: "Cloud Svcs Sdks Usage"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(DISTINCT Name) AS CloudServiceCount,
-        GROUP_CONCAT(DISTINCT Name) AS CloudServices
-      FROM 
-        Cloud_Service_SDK
-      GROUP BY 
-        RepoName
-      HAVING 
-        CloudServiceCount > 1
-      ORDER BY 
-        CloudServiceCount DESC;
-
-  - name: "Top Docker Imgs Used"
-    query: |
-      SELECT 
-        image,
-        COUNT(*) AS UsageCount
-      FROM 
-        Docker_Directive
-      GROUP BY 
-        image
-      ORDER BY 
-        UsageCount DESC;
-
-  - name: "Most Docker Directives"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(*) AS DirectiveCount
-      FROM 
-        Docker_Directive
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        DirectiveCount DESC;
-
-  - name: "Framework Types by Repo"
-    query: |
-      SELECT 
-        RepoName,
-        Type,
-        COUNT(DISTINCT Name) AS FrameworkCount,
-        GROUP_CONCAT(DISTINCT Name) AS Frameworks
-      FROM 
-        Framework
-      GROUP BY 
-        RepoName, Type
-      ORDER BY 
-        FrameworkCount DESC;
-
-  - name: "Libs by Lang and Repo"
-    query: |
-      SELECT 
-        Language,
-        RepoName,
-        COUNT(DISTINCT Name) AS LibraryCount,
-        GROUP_CONCAT(DISTINCT Name) AS Libraries
-      FROM 
-        Library
-      GROUP BY 
-        Language, RepoName
-      ORDER BY 
-        Language, LibraryCount DESC;
-
-  - name: "Repos Without Applications"
-    query: |
-      SELECT 
-        DISTINCT RepoName
-      FROM 
-        Framework
-      WHERE 
-        RepoName NOT IN (
-          SELECT DISTINCT RepoName FROM Application
-        )
-      ORDER BY 
-        RepoName;
-
-  - name: "Most Common Lib Cats"
-    query: |
-      SELECT 
-        Category,
-        COUNT(*) AS CategoryCount
-      FROM 
-        Library
-      GROUP BY 
-        Category
-      ORDER BY 
-        CategoryCount DESC;
-
-  - name: "Repos With No Frameworks"
-    query: |
-      SELECT 
-        DISTINCT RepoName
-      FROM 
-        Application
-      WHERE 
-        RepoName NOT IN (
-          SELECT DISTINCT RepoName FROM Framework
-        )
-      ORDER BY 
-        RepoName;
-
-  - name: "Top Repos by Lib Count"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(*) AS LibraryCount,
-        GROUP_CONCAT(DISTINCT Name) AS Libraries
-      FROM 
-        Library
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        LibraryCount DESC;
-
-  - name: "Libraries Used by Repos"
-    query: |
-      SELECT 
-        Name,
-        COUNT(DISTINCT RepoName) AS RepoCount,
-        GROUP_CONCAT(DISTINCT RepoName) AS Repositories
-      FROM 
-        Library
-      GROUP BY 
-        Name
-      HAVING 
-        RepoCount > 1
-      ORDER BY 
-        RepoCount DESC;
-
-  - name: "Repos Multiple Lib Versions"
+      SELECT DISTINCT
+          RepoName,
+          json_extract(Properties, '$.image') AS Image,
+          json_extract(Properties, '$.version') AS Version
+      FROM Findings
+      WHERE Type = 'Docker Directive'
+        AND json_extract(Properties, '$.image') IS NOT NULL;
+  - name: "Libs and Versions Detected"
     query: |
       SELECT 
         RepoName,
         Name,
-        COUNT(DISTINCT Version) AS VersionCount,
-        GROUP_CONCAT(DISTINCT Version) AS Versions
-      FROM 
-        Library
-      GROUP BY 
-        RepoName, Name
-      HAVING 
-        VersionCount > 1
-      ORDER BY 
-        RepoName, Name;
-
-  - name: "Repos Using Multiple Languages"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(DISTINCT language) AS LanguageCount,
-        GROUP_CONCAT(DISTINCT language) AS Languages
-      FROM 
-        Library
-      WHERE 
-        language IS NOT NULL AND language != ''
-      GROUP BY 
-        RepoName
-      HAVING 
-        LanguageCount > 1
-      ORDER BY 
-        LanguageCount DESC;
-
-  - name: "Repos Using Most TF Resources"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(*) AS TerraformResourceCount,
-        GROUP_CONCAT(DISTINCT resource_type) AS Resources
-      FROM 
-        Terraform_Resource_Use
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        TerraformResourceCount DESC;
-
-  - name: "Repos with Diverse Components"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(DISTINCT Type) AS TypeCount,
-        GROUP_CONCAT(DISTINCT Type) AS Types
-      FROM (
-        SELECT RepoName, Type FROM Docker_Compose_Service
-        UNION ALL
-        SELECT RepoName, Type FROM Framework
-        UNION ALL
-        SELECT RepoName, Type FROM Library
-        UNION ALL
-        SELECT RepoName, Type FROM Application
-        UNION ALL
-        SELECT RepoName, Type FROM Docker_Directive
-        UNION ALL
-        SELECT RepoName, Type FROM Cloud_Service_SDK
-      )
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        TypeCount DESC;
-
-  - name: "Top Repos by Cloud SDKs"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(*) AS CloudServiceSDKCount,
-        GROUP_CONCAT(DISTINCT Name) AS CloudServiceSDKs
-      FROM 
-        Cloud_Service_SDK
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        CloudServiceSDKCount DESC;
-
-  - name: "Top Docker Imgs without Owners"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(*) AS ImageCount,
-        GROUP_CONCAT(DISTINCT image) AS DockerImages
-      FROM 
-        Docker_Directive
-      WHERE 
-        owner IS NULL OR owner = ''
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        ImageCount DESC;
-
-  - name: "Common Categories per Type"
-    query: |
-      SELECT 
-        ComponentType,
-        Category,
-        COUNT(*) AS Count
-      FROM (
-        SELECT 'Docker Compose Service' AS ComponentType, Category FROM Docker_Compose_Service
-        UNION ALL
-        SELECT 'Framework' AS ComponentType, Category FROM Framework
-        UNION ALL
-        SELECT 'Library' AS ComponentType, Category FROM Library
-        UNION ALL
-        SELECT 'Application' AS ComponentType, Category FROM Application
-        UNION ALL
-        SELECT 'Docker Directive' AS ComponentType, Category FROM Docker_Directive
-        UNION ALL
-        SELECT 'Cloud Service SDK' AS ComponentType, Category FROM Cloud_Service_SDK
-      )
-      GROUP BY 
-        ComponentType, Category
-      ORDER BY 
-        ComponentType, Count DESC;
-
-  - name: "Repos Using Specific Categories"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(*) AS CategoryUsageCount,
-        GROUP_CONCAT(DISTINCT Category) AS Categories
-      FROM (
-        SELECT RepoName, Category FROM Docker_Compose_Service
-        UNION ALL
-        SELECT RepoName, Category FROM Framework
-        UNION ALL
-        SELECT RepoName, Category FROM Library
-        UNION ALL
-        SELECT RepoName, Category FROM Application
-        UNION ALL
-        SELECT RepoName, Category FROM Docker_Directive
-        UNION ALL
-        SELECT RepoName, Category FROM Cloud_Service_SDK
-      )
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        CategoryUsageCount DESC;
-
-  - name: "Repos Multiple Docker Imgs"
-    query: |
-      SELECT 
-        RepoName,
-        COUNT(DISTINCT image) AS DockerImageCount,
-        GROUP_CONCAT(DISTINCT image) AS DockerImages
-      FROM 
-        Docker_Directive
-      WHERE 
-        image IS NOT NULL AND image != ''
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        DockerImageCount DESC;
-
-  - name: "Repos with No Docker Directives"
-    query: |
-      SELECT 
-        DISTINCT RepoName
-      FROM 
-        Application
-      WHERE 
-        RepoName NOT IN (
-          SELECT DISTINCT RepoName FROM Docker_Directive
-        )
-      ORDER BY 
-        RepoName;
-
-  - name: "Repos Using IaC (TF)"
+        json_extract(Properties, '$.Language') AS Language,
+        GROUP_CONCAT(DISTINCT json_extract(Properties, '$.Version')) AS Versions
+      FROM Findings
+      WHERE Type = 'Library'
+      GROUP BY RepoName, Name, Language
+      ORDER BY Name;
+  - name: "Frameworks Detected"
     query: |
       SELECT DISTINCT 
-        RepoName
-      FROM 
-        Terraform_Resource_Use
-      ORDER BY 
-        RepoName;
-
-  - name: "Libs Without Version Info"
-    query: |
-      SELECT 
-        Name,
-        COUNT(*) AS Count
-      FROM 
-        Library
-      WHERE 
-        Version IS NULL OR Version = ''
-      GROUP BY 
-        Name
-      ORDER BY 
-        Count DESC;
-
-  - name: "Common Libs by Language"
-    query: |
-      SELECT 
-        language,
-        Name,
-        COUNT(*) AS UsageCount
-      FROM 
-        Library
-      WHERE 
-        language IS NOT NULL AND language != ''
-      GROUP BY 
-        language, Name
-      ORDER BY 
-        language, UsageCount DESC;
-
-  - name: "AVG Libs per Repo"
-    query: |
-      SELECT 
-        AVG(LibraryCount) AS AverageLibrariesPerRepo
-      FROM (
-        SELECT 
-          RepoName,
-          COUNT(*) AS LibraryCount
-        FROM 
-          Library
-        GROUP BY 
-          RepoName
-      );
-
-  - name: "Top Security Groups in TF"
-    query: |
-      SELECT 
-        security_group_ids,
-        COUNT(*) AS UsageCount
-      FROM 
-        Terraform_Resource_Use
-      WHERE 
-        security_group_ids IS NOT NULL AND security_group_ids != ''
-      GROUP BY 
-        security_group_ids
-      ORDER BY 
-        UsageCount DESC;
-
-  - name: "VPCs Used Across Repos"
-    query: |
-      SELECT 
-        vpc,
-        COUNT(DISTINCT RepoName) AS RepoCount,
-        GROUP_CONCAT(DISTINCT RepoName) AS Repositories
-      FROM 
-        terraform_resource_use
-      WHERE 
-        vpc IS NOT NULL AND vpc != ''
-      GROUP BY 
-        vpc
-      ORDER BY 
-        RepoCount DESC;
-
-  - name: "Top Repos by Cloud Vendors"
-    query: |
-      SELECT 
         RepoName,
-        COUNT(DISTINCT vendor) AS VendorCount,
-        GROUP_CONCAT(DISTINCT vendor) AS Vendors
-      FROM 
-        Cloud_Service_SDK
-      GROUP BY 
-        RepoName
-      ORDER BY 
-        VendorCount DESC;
-
-  - name: "Repos Using AWS Services"
-    query: |
-      SELECT 
-        RepoName,
-        Name AS AWS_Service
-      FROM 
-        AWS_Terraform
-      WHERE 
-        Name IN ('EC2', 'S3', 'Lambda', 'RDS', 'DynamoDB')  -- Replace with specific AWS services of interest
-      ORDER BY 
-        RepoName, AWS_Service;
-
-  - name: "Libs by Category and Language"
-    query: |
-      SELECT 
-        Category,
-        language,
-        COUNT(*) AS LibraryCount,
-        GROUP_CONCAT(DISTINCT Name) AS Libraries
-      FROM 
-        Library
-      WHERE 
-        language IS NOT NULL AND language != ''
-      GROUP BY 
-        Category, language
-      ORDER BY 
-        Category, LibraryCount DESC;
-
-  - name: "Top Categories with Components"
-    query: |
-      SELECT 
-        Category,
-        COUNT(DISTINCT Type) AS ComponentTypeCount,
-        GROUP_CONCAT(DISTINCT Type) AS ComponentTypes
-      FROM (
-        SELECT Category, Type FROM Docker_Compose_Service
-        UNION ALL
-        SELECT Category, Type FROM Framework
-        UNION ALL
-        SELECT Category, Type FROM Library
-        UNION ALL
-        SELECT Category, Type FROM Application
-        UNION ALL
-        SELECT Category, Type FROM Docker_Directive
-        UNION ALL
-        SELECT Category, Type FROM Cloud_Service_SDK
-      )
-      GROUP BY 
+        Name,
         Category
-      ORDER BY 
-        ComponentTypeCount DESC, Category;
-
-  - name: "Common VPC Configs in Terraform"
+      FROM Findings
+      WHERE Type = 'Framework'
+      ORDER BY RepoName,Name;
+  - name: "Git Stats"
     query: |
-      SELECT 
-        vpc_security_group_ids,
-        COUNT(*) AS UsageCount
-      FROM 
-        Terraform_Resource_Use
-      WHERE 
-        vpc_security_group_ids IS NOT NULL AND vpc_security_group_ids != ''
-      GROUP BY 
-        vpc_security_group_ids
-      ORDER BY 
-        UsageCount DESC;
-
-  - name: "Libraries Without Repos"
+      SELECT
+      RepoName,
+      Name,
+      MAX(
+        CAST(
+          COALESCE(
+            json_extract(Properties, '$.value'),
+            json_extract(Properties, '$.size'),
+            json_extract(Properties, '$.commits_touched'),
+            json_extract(Properties, '$.churn'),
+            json_extract(Properties, '$.contributors'),
+            json_extract(Properties, '$.max_lines_added')
+          ) AS INTEGER
+        )
+      ) AS Metric
+      FROM Findings
+      WHERE Type = 'git_metric'
+      GROUP BY RepoName,Name
+      ORDER BY RepoName,Name;
+  - name: "Terraform Resources Detected"
     query: |
-      SELECT 
-        Name,
-        COUNT(*) AS Count
-      FROM 
-        Library
-      WHERE 
-        RepoName IS NULL OR RepoName = ''
-      GROUP BY 
-        Name
-      ORDER BY 
-        Count DESC;
-
-  - name: "Top Docker Images by Version"
+      SELECT
+        RepoName,
+        json_extract(Properties, '$.resource_type') AS resource_type,
+        COUNT(*) AS count
+      FROM Findings
+      WHERE Type = "Terraform Resource Use"
+      GROUP BY RepoName,resource_type;
+  - name: "Azure Resources Detected"
     query: |
-      SELECT 
-        image,
-        COUNT(DISTINCT version) AS VersionCount,
-        GROUP_CONCAT(DISTINCT version) AS Versions
-      FROM 
-        Docker_Directive
-      WHERE 
-        image IS NOT NULL AND image != ''
-      GROUP BY 
-        image
-      ORDER BY 
-        VersionCount DESC;
-
-  - name: "Component Usage Trends"
+      SELECT
+          RepoName,
+          json_extract(Properties, '$.resource') AS resource_type,
+          COUNT(*) AS count
+      FROM Findings
+      WHERE Type = "Azure Bicep"
+      GROUP BY RepoName,resource_type;
+  - name: "Cloud Formation Detected"
     query: |
-      SELECT 
-        ComponentType,
-        Name,
-        COUNT(DISTINCT RepoName) AS RepoCount,
-        GROUP_CONCAT(DISTINCT RepoName) AS Repositories
-      FROM (
-        SELECT 'Library' AS ComponentType, Name, RepoName FROM Library
-        UNION ALL
-        SELECT 'Framework' AS ComponentType, Name, RepoName FROM Framework
-        UNION ALL
-        SELECT 'Application' AS ComponentType, Name, RepoName FROM Application
-        UNION ALL
-        SELECT 'Docker Compose Service' AS ComponentType, Name, RepoName FROM Docker_Compose_Service
-        UNION ALL
-        SELECT 'Docker Directive' AS ComponentType, Name, RepoName FROM Docker_Directive
-        UNION ALL
-        SELECT 'Cloud Service SDK' AS ComponentType, Name, RepoName FROM Cloud_Service_SDK
-      )
-      GROUP BY 
-        ComponentType, Name
-      ORDER BY 
-        RepoCount DESC, ComponentType, Name;
-
-  - name: "Repos Using High-Usage Libs"
+      SELECT
+          RepoName,
+          Name,
+          COUNT(*) AS count
+      FROM Findings
+      WHERE Type = "CloudFormation Resource"
+      GROUP BY RepoName, Name;
+  - name: "MS Office Files"
     query: |
-      SELECT 
-        l.RepoName,
-        l.Name,
-        COUNT(*) AS UsageCount
-      FROM 
-        Library l
-      GROUP BY 
-        l.Name
-      HAVING 
-        COUNT(l.RepoName) > 10  -- Define threshold as needed
-      ORDER BY 
-        UsageCount DESC;
-
-  - name: "Libs with Most Dependencies"
+      select RepoName,Type, Category, Count(*) AS Count
+      from Findings
+      where Type = "MS Office"
+      group by RepoName,Type, Category;
+  - name: "Language Detection"
     query: |
-      SELECT 
-        Name,
-        COUNT(DISTINCT RepoName) AS DependentRepos,
-        GROUP_CONCAT(DISTINCT RepoName) AS Repositories
-      FROM 
-        Library
-      GROUP BY 
-        Name
-      ORDER BY 
-        DependentRepos DESC
-      LIMIT 100;  
-
-
+      select RepoName,Name, Count(*) AS Count
+      from Findings
+      where Type = "Programming Language"
+      group by RepoName,Name;
+  - name: "File Count"
+    query: |
+      select RepoName,count(*) as FileCount
+      from Findings
+      where Type = "File";
+  - name: "SAAS Integrations"
+    query: |
+      select RepoName, Name, Count(*) as Count from Findings
+      where Type = "SAAS Integration"
+      Group by RepoName, Name;
