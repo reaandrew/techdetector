@@ -10,6 +10,7 @@ require (
 	github.com/aws/aws-sdk-go-v2 v1.34.0
 	github.com/aws/aws-sdk-go-v2/config v1.29.2
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.56.8
+	github.com/go-enry/go-enry/v2 v2.9.1
 	github.com/go-git/go-git/v5 v5.12.0
 	github.com/gobwas/glob v0.2.3
 	github.com/google/go-github/v50 v50.2.0
@@ -48,6 +49,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/elliotchance/pie/v2 v2.7.0 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
+	github.com/go-enry/go-oniguruma v1.2.1 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
 	github.com/go-git/go-billy/v5 v5.5.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect

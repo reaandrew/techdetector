@@ -36,6 +36,7 @@ func (j JsonReporter) Report(repository core.FindingRepository) error {
 	j.setDefaultOutputDir()
 
 	dbPath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, j.SqliteDBFilename)
+	utils.DeleteDatabaseFileIfExists(dbPath)
 	fmt.Printf("dbPath: %v", dbPath)
 	// Initialize SQLite database
 	db, err := utils.InitializeSQLiteDB(dbPath)

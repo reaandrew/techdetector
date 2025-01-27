@@ -115,8 +115,14 @@ queries:
       HAVING COUNT(*) > 1;
   - name: "MS Office Files"
     query: |
-      select Type, Category, Count(*)
+      select Type, Category, Count(*) AS Count
       from Findings
       where Type = "MS Office"
       group by Type, Category;
+  - name: "Language Detection"
+    query: |
+      select RepoName,Name, Count(*) AS Count
+      from Findings
+      where Type = "Programming Language"
+      group by RepoName,Name;
 
