@@ -1,6 +1,7 @@
 package processors
 
 import (
+	"github.com/gobwas/glob"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -159,4 +160,52 @@ using Amazon.ACMPCA;
 	matches, err := processor.Process("/something.ora", "some-repo", content)
 	assert.Nil(t, err)
 	assert.Len(t, matches, 1)
+}
+
+func TestMatchPath(t *testing.T) {
+	p := Pattern{
+		Name:      "Something",
+		Type:      "Some Type",
+		Category:  "Some Category",
+		Filenames: nil,
+		PathPatterns: []string{
+			"**/.circleci/config.yml",
+		},
+		FileExtensions:       nil,
+		ContentPatterns:      nil,
+		FilenameRegexs:       nil,
+		ContentPatternRegexs: nil,
+		PathPatternGlobs: []glob.Glob{
+			glob.MustCompile("**/.circleci/config.yml"),
+		},
+		Properties: nil,
+	}
+
+	result := matchPath(p, ".circleci/config.yml")
+
+	assert.True(t, result)
+}
+
+func TestMatchPathReturnsFalse(t *testing.T) {
+	p := Pattern{
+		Name:      "Something",
+		Type:      "Some Type",
+		Category:  "Some Category",
+		Filenames: nil,
+		PathPatterns: []string{
+			"**/.circleci/config.yml",
+		},
+		FileExtensions:       nil,
+		ContentPatterns:      nil,
+		FilenameRegexs:       nil,
+		ContentPatternRegexs: nil,
+		PathPatternGlobs: []glob.Glob{
+			glob.MustCompile("**/.circleci/config.yml"),
+		},
+		Properties: nil,
+	}
+
+	result := matchPath(p, "/tmp/techdetector/Fennel/test/bad/all.sh")
+
+	assert.False(t, result)
 }

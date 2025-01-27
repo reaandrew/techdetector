@@ -3,8 +3,8 @@ package scanners
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
+	log "github.com/sirupsen/logrus"
 	"io/fs"
-	"log"
 	"os"
 	"path/filepath"
 	"sync"
@@ -22,6 +22,7 @@ type FileScanner struct {
 
 func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]core.Finding, error) {
 	var Matches []core.Finding
+	var mu sync.Mutex
 
 	info, err := os.Stat(targetDir)
 	if os.IsNotExist(err) {
@@ -32,77 +33,64 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 	}
 
 	files := make(chan string, 100)
-	fileMatches := make(chan core.Finding, 100)
+	fileMatches := make(chan core.Finding, 1000)
+	errs := make(chan error, 10)
 
 	var wg sync.WaitGroup
 
-	// Start file workers
+	// File processing workers
 	for i := 0; i < MaxFileWorkers; i++ {
 		wg.Add(1)
-		go func(workerID int) {
+		go func() {
 			defer wg.Done()
 			for path := range files {
-				// Check if any processor supports this file
-				supported := false
 				for _, processor := range fileScanner.processors {
 					if processor.Supports(path) {
-						supported = true
-						break
-					}
-				}
-
-				if !supported {
-					continue // Skip files not supported by any processor
-				}
-
-				content, err := os.ReadFile(path)
-				if err != nil {
-					log.Printf("Failed to read file '%s': %v", path, err)
-					continue
-				}
-
-				text := string(content)
-				// Apply all processors that support this file
-				for _, processor := range fileScanner.processors {
-					if processor.Supports(path) {
-						results, _ := processor.Process(path, repoName, text)
+						log.Infof("Processor supports %s", path)
+						content, err := os.ReadFile(path)
+						if err != nil {
+							errs <- fmt.Errorf("failed to read file %s: %v", path, err)
+							continue
+						}
+						results, _ := processor.Process(path, repoName, string(content))
 						for _, Match := range results {
 							fileMatches <- Match
 						}
+						break // No need to check further processors
 					}
 				}
 			}
-		}(i)
+		}()
 	}
 
 	go func() {
-		err := filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
+		_ = filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
 			if err != nil {
-				log.Printf("Error accessing path '%s': %v", path, err)
-				return nil // Continue walking.
-			}
-
-			if d.IsDir() {
+				errs <- err
 				return nil
 			}
-
-			files <- path
+			if !d.IsDir() {
+				files <- path
+			}
 			return nil
 		})
-		if err != nil {
-			log.Printf("Error walking the directory: %v", err)
-		}
 		close(files)
 	}()
 
-	// Collect Matches in a separate goroutine
 	go func() {
 		wg.Wait()
 		close(fileMatches)
+		close(errs)
 	}()
 
-	for Match := range fileMatches {
-		Matches = append(Matches, Match)
+	for match := range fileMatches {
+		mu.Lock()
+		Matches = append(Matches, match)
+		mu.Unlock()
+	}
+
+	if len(errs) > 0 {
+		return Matches, fmt.Errorf("some errors occurred during scanning")
 	}
 
 	return Matches, nil
