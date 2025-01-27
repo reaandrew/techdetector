@@ -2,15 +2,18 @@ package utils
 
 import (
 	"fmt"
+	"sort"
+	"time"
+
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/object"
 	"github.com/markusmobius/go-dateparser"
 	"github.com/reaandrew/techdetector/core"
-	"sort"
-	"time"
 )
 
+// parseCutoffDate parses the cutoff date string into a Unix timestamp.
+// If the dateStr is empty, it returns -1 to indicate no cutoff.
 func parseCutoffDate(dateStr string) (int64, error) {
 	if dateStr == "" {
 		return -1, nil
@@ -24,6 +27,7 @@ func parseCutoffDate(dateStr string) (int64, error) {
 	return parsedTime.Time.Unix(), nil
 }
 
+// CollectGitMetrics collects various Git metrics from the repository.
 func CollectGitMetrics(repoPath, repoName string, cutoffDate string) ([]core.Finding, error) {
 	var findings []core.Finding
 
@@ -58,6 +62,7 @@ func CollectGitMetrics(repoPath, repoName string, cutoffDate string) ([]core.Fin
 	return findings, nil
 }
 
+// getBranchMetrics retrieves metrics related to branches in the repository.
 func getBranchMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64) ([]core.Finding, error) {
 	var findings []core.Finding
 	branches, err := repo.References()
@@ -109,6 +114,7 @@ func getBranchMetrics(repo *git.Repository, repoName string, cutoffTimestamp int
 	return findings, nil
 }
 
+// getTagMetrics retrieves metrics related to tags in the repository.
 func getTagMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64) ([]core.Finding, error) {
 	var findings []core.Finding
 	var tagDates []time.Time
@@ -127,10 +133,8 @@ func getTagMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64)
 
 		tag, err := repo.TagObject(ref.Hash())
 		if err == nil {
-
 			tagTime = tag.Tagger.When
 		} else {
-
 			commit, err := repo.CommitObject(ref.Hash())
 			if err == nil {
 				tagTime = commit.Committer.When
@@ -194,12 +198,10 @@ func getTagMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64)
 	return findings, nil
 }
 
+// getCommitMetrics retrieves metrics related to commits in the repository.
+// It ensures that each commit is counted only once, regardless of how many references include it.
 func getCommitMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64) ([]core.Finding, error) {
 	var findings []core.Finding
-
-	if cutoffTimestamp == 0 {
-		cutoffTimestamp = -1
-	}
 
 	commitIter, err := repo.Log(&git.LogOptions{
 		All: true,
@@ -215,8 +217,17 @@ func getCommitMetrics(repo *git.Repository, repoName string, cutoffTimestamp int
 	var firstCommitDate, lastCommitDate time.Time
 	var totalCommits int
 	authorSet := make(map[string]struct{})
+	processedCommits := make(map[string]struct{}) // Track processed commits
 
 	err = commitIter.ForEach(func(c *object.Commit) error {
+		commitHash := c.Hash.String()
+		if _, exists := processedCommits[commitHash]; exists {
+			// Commit already processed; skip to avoid duplication
+			return nil
+		}
+		// Mark commit as processed
+		processedCommits[commitHash] = struct{}{}
+
 		commitDate := c.Committer.When
 
 		if cutoffTimestamp != -1 && commitDate.Unix() < cutoffTimestamp {
@@ -355,6 +366,7 @@ func getCommitMetrics(repo *git.Repository, repoName string, cutoffTimestamp int
 	return findings, nil
 }
 
+// calculateMaxAndAvg calculates the maximum and average values from a map of counts.
 func calculateMaxAndAvg(commitStats map[string]int) (int, float64) {
 	var maxCommits int
 	var totalCommits int

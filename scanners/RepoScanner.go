@@ -55,6 +55,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 		log.Fatalf("Failed to perform bare clone for '%s': %v", repoName, err)
 	}
 
+	log.Println("Fetching Git Metrics")
 	// Collect Git metrics
 	gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName, repoScanner.Cutoff)
 	if err != nil {

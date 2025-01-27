@@ -3,7 +3,7 @@
 LAMBDA_URL="$1"
 TOKEN="$2"
 
-REPO_URL="https://github.com/DEFRA/epr-regulator-service-facade.git"
+REPO_URL="https://github.com/DEFRA/aqie-front-end.git"
 
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \

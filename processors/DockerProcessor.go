@@ -90,7 +90,8 @@ type DockerProcessor struct {
 
 func (d DockerProcessor) Supports(filePath string) bool {
 	filename := filepath.Base(filePath)
-	return filename == "Dockerfile" || strings.HasPrefix(filename, "Dockerfile.")
+	supported := filename == "Dockerfile" || strings.HasPrefix(filename, "Dockerfile.")
+	return supported
 }
 
 func (d DockerProcessor) Process(path string, repoName string, content string) ([]core.Finding, error) {

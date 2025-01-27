@@ -54,7 +54,6 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 						for _, Match := range results {
 							fileMatches <- Match
 						}
-						break // No need to check further processors
 					}
 				}
 			}

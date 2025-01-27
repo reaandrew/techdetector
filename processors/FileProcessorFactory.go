@@ -20,5 +20,6 @@ func InitializeProcessors() []core.FileProcessor {
 	processors = append(processors, CloudFormationProcessor{})
 	processors = append(processors, CloudDeploymentManagerProcessor{})
 	processors = append(processors, LanguageProcessor{})
+	processors = append(processors, FilenameProcessor{})
 	return processors
 }

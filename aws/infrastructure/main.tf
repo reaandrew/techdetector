@@ -107,8 +107,11 @@ resource "aws_lambda_function" "lambda_techdetector" {
   role             = aws_iam_role.lambda.arn
   handler          = "bootstrap"
   runtime          = "provided.al2"
+  ephemeral_storage {
+    size = 6144
+  }
   timeout          = 900
-  memory_size      = 6144
+  memory_size      = 5120
   filename         = "${path.module}/lambda_dist/bootstrap.zip"
   source_code_hash = filebase64sha256("${path.module}/lambda_dist/bootstrap.zip")
 

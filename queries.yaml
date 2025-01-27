@@ -25,6 +25,7 @@ queries:
   - name: "Docker Images Detected"
     query: |
       SELECT DISTINCT
+          RepoName,
           json_extract(Properties, '$.image') AS Image,
           json_extract(Properties, '$.version') AS Version
       FROM Findings
@@ -74,19 +75,21 @@ queries:
   - name: "Terraform Resources Detected"
     query: |
       SELECT
+        RepoName,
         json_extract(Properties, '$.resource_type') AS resource_type,
         COUNT(*) AS count
       FROM Findings
       WHERE Type = "Terraform Resource Use"
-      GROUP BY resource_type;
+      GROUP BY RepoName,resource_type;
   - name: "Azure Resources Detected"
     query: |
       SELECT
+          RepoName,
           json_extract(Properties, '$.resource') AS resource_type,
           COUNT(*) AS count
       FROM Findings
       WHERE Type = "Azure Bicep"
-      GROUP BY resource_type;
+      GROUP BY RepoName,resource_type;
   - name: "Cloud Formation Detected"
     query: |
       SELECT
@@ -96,33 +99,25 @@ queries:
       FROM Findings
       WHERE Type = "CloudFormation Resource"
       GROUP BY RepoName, Name;
-  - name: "Library Version Detection"
-    query: |
-      SELECT
-        Name,
-        Language,
-        GROUP_CONCAT(Version, ', ') AS Versions,
-        COUNT(*) AS Count
-      FROM (
-        SELECT DISTINCT
-          Name,
-          json_extract(Properties, '$.Language') AS Language,
-          json_extract(Properties, '$.Version') AS Version
-        FROM Findings
-        WHERE Type = 'Library'
-      )
-      GROUP BY Name, Language
-      HAVING COUNT(*) > 1;
   - name: "MS Office Files"
     query: |
-      select Type, Category, Count(*) AS Count
+      select RepoName,Type, Category, Count(*) AS Count
       from Findings
       where Type = "MS Office"
-      group by Type, Category;
+      group by RepoName,Type, Category;
   - name: "Language Detection"
     query: |
       select RepoName,Name, Count(*) AS Count
       from Findings
       where Type = "Programming Language"
       group by RepoName,Name;
-
+  - name: "File Count"
+    query: |
+      select RepoName,count(*) as FileCount
+      from Findings
+      where Type = "File";
+  - name: "SAAS Integrations"
+    query: |
+      select RepoName, Name, Count(*) as Count from Findings
+      where Type = "SAAS Integration"
+      Group by RepoName, Name;
