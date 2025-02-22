@@ -4,12 +4,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"gopkg.in/yaml.v3"
-	"strings"
-
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/ssm"
+	"gopkg.in/yaml.v3"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/reaandrew/techdetector/core"
@@ -38,58 +36,58 @@ type LambdaResponse struct {
 
 // Handler is the Lambda function handler
 func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	log.Println("Received request:", request)
-
-	// Step 1: Authenticate the request
-	authHeader := request.Headers["authorization"]
-	if authHeader == "" {
-		log.Println("Missing Authorization header")
-		return toAPIGatewayResponse(401, `{"error": "Missing Authorization header."}`), nil
-	}
-
-	// Expecting format: "Bearer tdt_<userid>_<token>"
-	parts := strings.SplitN(authHeader, " ", 2)
-	if len(parts) != 2 || strings.ToLower(parts[0]) != "bearer" {
-		log.Println("Invalid Authorization header format")
-		return toAPIGatewayResponse(401, `{"error": "Invalid Authorization header format."}`), nil
-	}
-
-	token := parts[1]
-	if !strings.HasPrefix(token, "tdt_") {
-		log.Println("Invalid token prefix")
-		return toAPIGatewayResponse(401, `{"error": "Invalid token format."}`), nil
-	}
-
-	// Split the token to extract userid and token
-	tokenParts := strings.SplitN(token, "_", 3)
-	if len(tokenParts) != 3 {
-		log.Println("Invalid token structure")
-		return toAPIGatewayResponse(401, `{"error": "Invalid token structure."}`), nil
-	}
-
-	userID := strings.TrimSpace(tokenParts[1])
-	providedToken := strings.TrimSpace(tokenParts[2])
-	storedToken, err := getStoredToken(ctx, userID)
-	expectedToken := fmt.Sprintf("tdt_%s_%s", userID, providedToken)
-
-	//log.Printf("Provided Token: '%s'", providedToken)
-	//log.Printf("Stored Token: '%s'", storedToken)
-
-	if err != nil {
-		log.Printf("Error retrieving token for user '%s': %v", userID, err)
-		// To prevent user enumeration, return a generic error message
-		return toAPIGatewayResponse(401, `{"error": "Unauthorized."}`), nil
-	}
-
-	// Step 3: Compare the provided token with the stored token
-	if expectedToken != storedToken {
-		log.Printf("Token mismatch for user '%s'", userID)
-		return toAPIGatewayResponse(401, `{"error": "Unauthorized."}`), nil
-	}
+	//log.Println("Received request:", request)
+	//
+	//// Step 1: Authenticate the request
+	//authHeader := request.Headers["authorization"]
+	//if authHeader == "" {
+	//	log.Println("Missing Authorization header")
+	//	return toAPIGatewayResponse(401, `{"error": "Missing Authorization header."}`), nil
+	//}
+	//
+	//// Expecting format: "Bearer tdt_<userid>_<token>"
+	//parts := strings.SplitN(authHeader, " ", 2)
+	//if len(parts) != 2 || strings.ToLower(parts[0]) != "bearer" {
+	//	log.Println("Invalid Authorization header format")
+	//	return toAPIGatewayResponse(401, `{"error": "Invalid Authorization header format."}`), nil
+	//}
+	//
+	//token := parts[1]
+	//if !strings.HasPrefix(token, "tdt_") {
+	//	log.Println("Invalid token prefix")
+	//	return toAPIGatewayResponse(401, `{"error": "Invalid token format."}`), nil
+	//}
+	//
+	//// Split the token to extract userid and token
+	//tokenParts := strings.SplitN(token, "_", 3)
+	//if len(tokenParts) != 3 {
+	//	log.Println("Invalid token structure")
+	//	return toAPIGatewayResponse(401, `{"error": "Invalid token structure."}`), nil
+	//}
+	//
+	//userID := strings.TrimSpace(tokenParts[1])
+	//providedToken := strings.TrimSpace(tokenParts[2])
+	//storedToken, err := getStoredToken(ctx, userID)
+	//expectedToken := fmt.Sprintf("tdt_%s_%s", userID, providedToken)
+	//
+	////log.Printf("Provided Token: '%s'", providedToken)
+	////log.Printf("Stored Token: '%s'", storedToken)
+	//
+	//if err != nil {
+	//	log.Printf("Error retrieving token for user '%s': %v", userID, err)
+	//	// To prevent user enumeration, return a generic error message
+	//	return toAPIGatewayResponse(401, `{"error": "Unauthorized."}`), nil
+	//}
+	//
+	//// Step 3: Compare the provided token with the stored token
+	//if expectedToken != storedToken {
+	//	log.Printf("Token mismatch for user '%s'", userID)
+	//	return toAPIGatewayResponse(401, `{"error": "Unauthorized."}`), nil
+	//}
 
 	// Step 4: Parse the request body
 	var lambdaReq LambdaRequest
-	err = json.Unmarshal([]byte(request.Body), &lambdaReq)
+	err := json.Unmarshal([]byte(request.Body), &lambdaReq)
 	if err != nil {
 		log.Printf("Error parsing request body: %v", err)
 		return toAPIGatewayResponse(400, `{"error": "Invalid JSON format."}`), nil

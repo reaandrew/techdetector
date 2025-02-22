@@ -17,7 +17,7 @@ DOCKER_IMAGE=go-lambda-builder
 
 .PHONY: build_docker_builder
 build_docker_builder:
-	docker build -t go-lambda-builder -f Dockerfile .
+	docker build -t go-lambda-builder -f aws/lambda_builder/Dockerfile .
 
 .PHONY: build_lambda
 build_lambda: build_docker_builder

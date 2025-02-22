@@ -7,8 +7,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "reaandrew-techdetector-tf"
-    key     = "state/reaandrew_techdetector.tfstate"
+    bucket  = "techdetector-tf"
+    key     = "state/techdetector.tfstate"
     region  = "eu-west-2"
     encrypt = true
   }
@@ -127,35 +127,35 @@ resource "aws_lambda_function" "lambda_techdetector" {
   }
 }
 
-# Create a Lambda URL for Public Access
-resource "aws_lambda_function_url" "lambda_url" {
-  function_name      = aws_lambda_function.lambda_techdetector.function_name
-  authorization_type = "NONE"  # Authentication is handled within the Lambda function
+# # Create a Lambda URL for Public Access
+# resource "aws_lambda_function_url" "lambda_url" {
+#   function_name      = aws_lambda_function.lambda_techdetector.function_name
+#   authorization_type = "NONE"  # Authentication is handled within the Lambda function
+#
+#   cors {
+#     allow_credentials = true
+#     allow_origins     = ["*"]
+#     allow_methods     = ["*"]
+#     allow_headers     = ["Content-Type", "Authorization", "date", "keep-alive"]
+#     expose_headers    = ["keep-alive", "date"]
+#     max_age           = 86400
+#   }
+# }
 
-  cors {
-    allow_credentials = true
-    allow_origins     = ["*"]
-    allow_methods     = ["*"]
-    allow_headers     = ["Content-Type", "Authorization", "date", "keep-alive"]
-    expose_headers    = ["keep-alive", "date"]
-    max_age           = 86400
-  }
-}
+# # Lambda Permissions to Allow Public Access
+# resource "aws_lambda_permission" "public_access" {
+#   statement_id           = "AllowPublicAccess"
+#   action                 = "lambda:InvokeFunctionUrl"
+#   function_name          = aws_lambda_function.lambda_techdetector.arn  # Use ARN instead of name
+#   principal              = "*"  # Allows public access
+#   function_url_auth_type = "NONE"
+# }
 
-# Lambda Permissions to Allow Public Access
-resource "aws_lambda_permission" "public_access" {
-  statement_id           = "AllowPublicAccess"
-  action                 = "lambda:InvokeFunctionUrl"
-  function_name          = aws_lambda_function.lambda_techdetector.arn  # Use ARN instead of name
-  principal              = "*"  # Allows public access
-  function_url_auth_type = "NONE"
-}
-
-# Outputs
-output "lambda_function_url" {
-  description = "The URL to invoke the Lambda function"
-  value       = aws_lambda_function_url.lambda_url.function_url
-}
+# # Outputs
+# output "lambda_function_url" {
+#   description = "The URL to invoke the Lambda function"
+#   value       = aws_lambda_function_url.lambda_url.function_url
+# }
 
 output "lambda_function_name" {
   description = "The name of the Lambda function"
