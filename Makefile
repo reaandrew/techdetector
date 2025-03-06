@@ -5,22 +5,17 @@ TERRAFORM_DIR=./aws/infrastructure
 ZIP_FILE=$(DIST_DIR)/bootstrap.zip
 DOCKER_IMAGE=go-lambda-builder
 
-#.PHONY: build_lambda
-#build_lambda:
-#	@echo "Building Lambda binary with CGO enabled in Docker..."
-#	docker run --rm -v $(PWD):/app -w /app $(DOCKER_IMAGE) sh -c "\
-#		apk add --no-cache build-base musl-dev gcc && \
-#		GOOS=linux GOARCH=amd64 CGO_ENABLED=1 CC=gcc go build \
-#		-tags lambda.norpc -mod=readonly -ldflags='-s -w' -o $(LAMBDA_BINARY) \
-#	"
-#	@echo "Lambda binary built successfully."
+.PHONY: build
+build:
+	go build -a -ldflags '-X "main.Version=$(shell git describe)"' -o ./build/techdetector-linux-amd64
 
-.PHONY: build_docker_builder
-build_docker_builder:
-	docker build -t go-lambda-builder -f Dockerfile .
+
+.PHONY: build_application_for_lambda
+build_application_for_lambda:
+	docker build -t go-lambda-builder -f aws/lambda_builder/Dockerfile . --user $$(id -u):$$(id -g)
 
 .PHONY: build_lambda
-build_lambda: build_docker_builder
+build_lambda: build_application_for_lambda
 	@echo "Building Lambda binary with CGO enabled in Docker..."
 	mkdir -p $(DIST_DIR)
 	docker run --rm -v $(PWD):/app --user $(shell id -u):$(shell id -g) \
