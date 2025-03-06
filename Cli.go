@@ -173,7 +173,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	scanGitlabCmd := &cobra.Command{
 		Use:   "gitlab_group <GROUP_NAME>",
 		Short: "Scan all projects within a GitLab group for technologies.",
-		Args:  cobra.ExactArgs(1),
+		Args:  cobra.NoArgs,
 		Run: func(cmd *cobra.Command, args []string) {
 			err, queries := cli.loadQueries()
 			reporter, err := cli.createReporter(cli.reportFormat, queries)
