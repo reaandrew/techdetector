@@ -2,7 +2,6 @@ package scanners
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
@@ -186,16 +185,17 @@ func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
 
 	for {
 		projects, resp, err := client.Projects.ListProjects(opts, gitlab.WithContext(ctx))
-		data, _ := json.Marshal(resp)
-		fmt.Println(string(data))
+
 		if err != nil {
 			return nil, fmt.Errorf("failed to list projects: %w", err)
 		}
 		allProjects = append(allProjects, projects...)
-		if opts.Page >= resp.TotalPages {
+
+		if resp.NextPage == 0 {
 			break
 		}
-		opts.Page++
+
+		opts.Page = resp.NextPage
 	}
 
 	fmt.Printf("Number of projects found: %v\n", len(allProjects))
