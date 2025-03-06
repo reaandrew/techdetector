@@ -1,7 +1,6 @@
 package reporters
 
 import (
-	"database/sql"
 	"fmt"
 	"os"
 	"testing"

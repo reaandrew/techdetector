@@ -127,6 +127,7 @@ resource "aws_lambda_function" "lambda_techdetector" {
   }
 }
 
+
 # # Create a Lambda URL for Public Access
 # resource "aws_lambda_function_url" "lambda_url" {
 #   function_name      = aws_lambda_function.lambda_techdetector.function_name
@@ -156,6 +157,7 @@ resource "aws_lambda_function" "lambda_techdetector" {
 #   description = "The URL to invoke the Lambda function"
 #   value       = aws_lambda_function_url.lambda_url.function_url
 # }
+
 
 output "lambda_function_name" {
   description = "The name of the Lambda function"
