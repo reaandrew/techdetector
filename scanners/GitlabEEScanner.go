@@ -113,7 +113,7 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 		fmt.Printf("Worker %d: Cloning project %s\n", id, projectName)
 
 		projectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName))
-		err := utils.CloneRepository(project.HTTPURLToRepo, projectPath, false, token)
+		err := utils.CloneRepositoryWithToken(project.HTTPURLToRepo, projectPath, false, token)
 		if err != nil {
 			results <- ProjectResult{
 				Matches:     nil,
@@ -135,7 +135,7 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 
 		// Perform a bare clone to extract metadata
 		bareProjectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName)+"_bare")
-		err = utils.CloneRepository(project.HTTPURLToRepo, bareProjectPath, true, token)
+		err = utils.CloneRepositoryWithToken(project.HTTPURLToRepo, bareProjectPath, true, token)
 		if err != nil {
 			log.Fatalf("Failed to perform bare clone for '%s': %v", projectName, err)
 		}
