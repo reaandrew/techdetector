@@ -195,5 +195,6 @@ func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
 	}
 
 	fmt.Printf("Number of projects found: %v\n", len(allProjects))
+	os.Exit(0)
 	return allProjects, nil
 }
