@@ -1,10 +1,11 @@
 package scanners
 
 import (
+	"context"
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
-	"github.com/xanzy/go-gitlab"
+	gitlab "gitlab.com/gitlab-org/api/client-go"
 	"log"
 	"os"
 	"path/filepath"
@@ -162,13 +163,8 @@ func initializeGitLabClient(token, baseURL string) *gitlab.Client {
 	if token == "" {
 		log.Fatal("GitLab token is required (provide via --gitlab-token flag)")
 	}
-	var client *gitlab.Client
-	var err error
-	if baseURL != "" {
-		client, err = gitlab.NewClient(token, gitlab.WithBaseURL(baseURL))
-	} else {
-		client, err = gitlab.NewClient(token)
-	}
+	// Create the client with context support.
+	client, err := gitlab.NewClient(token, gitlab.WithBaseURL(baseURL))
 	if err != nil {
 		log.Fatalf("Failed to create GitLab client: %v", err)
 	}
@@ -178,17 +174,19 @@ func initializeGitLabClient(token, baseURL string) *gitlab.Client {
 // listAllProjects lists every project accessible to the authenticated user.
 func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
 	var allProjects []*gitlab.Project
+	ctx := context.Background()
 	opts := &gitlab.ListProjectsOptions{
-		// Setting Membership to false will return all projects the admin can access.
-		Membership: gitlab.Bool(false),
+		Membership: gitlab.Ptr(false), // Return all projects the admin can access.
 		ListOptions: gitlab.ListOptions{
-			Page:    1,   // start at page 1
-			PerPage: 100, // adjust as needed
+			Page:    1,
+			PerPage: 100,
 		},
 	}
 
 	for {
-		projects, resp, err := client.Projects.ListProjects(opts)
+		// The new signature expects opts as the first parameter,
+		// and request options (like WithContext) after.
+		projects, resp, err := client.Projects.ListProjects(opts, gitlab.WithContext(ctx))
 		if err != nil {
 			return nil, fmt.Errorf("failed to list projects: %w", err)
 		}
