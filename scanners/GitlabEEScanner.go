@@ -45,7 +45,8 @@ func NewGitlabGroupScanner(reporter core.Reporter,
 }
 
 // Scan fetches every project accessible to the authenticated user,
-// clones them, scans for findings, and generates a report.
+// clones them using the provided token for authentication, scans for findings,
+// and generates a report.
 func (scanner GitlabGroupScanner) Scan(reportFormat, gitlabToken, gitlabBaseURL string) {
 	client := initializeGitLabClient(gitlabToken, gitlabBaseURL)
 
@@ -72,7 +73,7 @@ func (scanner GitlabGroupScanner) Scan(reportFormat, gitlabToken, gitlabBaseURL 
 	var wg sync.WaitGroup
 	for w := 1; w <= MaxWorkers; w++ {
 		wg.Add(1)
-		go scanner.worker(w, jobs, results, &wg)
+		go scanner.worker(w, jobs, results, &wg, gitlabToken)
 	}
 
 	for _, project := range projects {
@@ -103,7 +104,8 @@ func (scanner GitlabGroupScanner) Scan(reportFormat, gitlabToken, gitlabBaseURL 
 }
 
 // worker processes projects from the jobs channel and sends results to the results channel.
-func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results chan<- ProjectResult, wg *sync.WaitGroup) {
+// The token parameter is used to authenticate git clone operations.
+func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results chan<- ProjectResult, wg *sync.WaitGroup, token string) {
 	defer wg.Done()
 	for job := range jobs {
 		project := job.Project
@@ -111,7 +113,7 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 		fmt.Printf("Worker %d: Cloning project %s\n", id, projectName)
 
 		projectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName))
-		err := utils.CloneRepository(project.HTTPURLToRepo, projectPath, false)
+		err := utils.CloneRepository(project.HTTPURLToRepo, projectPath, false, token)
 		if err != nil {
 			results <- ProjectResult{
 				Matches:     nil,
@@ -133,7 +135,7 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 
 		// Perform a bare clone to extract metadata
 		bareProjectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName)+"_bare")
-		err = utils.CloneRepository(project.HTTPURLToRepo, bareProjectPath, true)
+		err = utils.CloneRepository(project.HTTPURLToRepo, bareProjectPath, true, token)
 		if err != nil {
 			log.Fatalf("Failed to perform bare clone for '%s': %v", projectName, err)
 		}

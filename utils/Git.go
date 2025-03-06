@@ -3,6 +3,7 @@ package utils
 import (
 	"fmt"
 	"github.com/go-git/go-git/v5"
+	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	"log"
 	"os"
 	"strings"
@@ -33,6 +34,10 @@ func ExtractRepoName(repoURL string) (string, error) {
 }
 
 func CloneRepository(cloneURL, destination string, bare bool) error {
+	return CloneRepositoryWithToken(cloneURL, destination, bare, "")
+}
+
+func CloneRepositoryWithToken(cloneURL, destination string, bare bool, token string) error {
 	if _, err := os.Stat(destination); err == nil {
 		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
 		return nil
@@ -41,6 +46,14 @@ func CloneRepository(cloneURL, destination string, bare bool) error {
 	cloneOptions := &git.CloneOptions{
 		URL:      cloneURL,
 		Progress: os.Stdout,
+	}
+
+	// If a token is provided, set up basic authentication.
+	if token != "" {
+		cloneOptions.Auth = &http.BasicAuth{
+			Username: "oauth2", // GitLab requires "oauth2" as the username for token auth.
+			Password: token,
+		}
 	}
 
 	if bare {
