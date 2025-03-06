@@ -179,7 +179,12 @@ func initializeGitLabClient(token, baseURL string) *gitlab.Client {
 func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
 	var allProjects []*gitlab.Project
 	opts := &gitlab.ListProjectsOptions{
-		ListOptions: gitlab.ListOptions{PerPage: 100},
+		// Setting Membership to false will return all projects the admin can access.
+		Membership: gitlab.Bool(false),
+		ListOptions: gitlab.ListOptions{
+			Page:    1,   // start at page 1
+			PerPage: 100, // adjust as needed
+		},
 	}
 
 	for {
