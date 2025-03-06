@@ -5,12 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"gopkg.in/yaml.v3"
-	"strings"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/ssm"
-
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/reaandrew/techdetector/core"
