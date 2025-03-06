@@ -17,12 +17,14 @@ const SQLiteDBFilename = "findings.db"
 
 // Cli represents the command-line interface
 type Cli struct {
-	reportFormat string
-	baseUrl      string
-	queriesPath  string
-	dumpSchema   bool
-	prefix       string
-	cutoff       string
+	reportFormat  string
+	baseUrl       string
+	queriesPath   string
+	dumpSchema    bool
+	prefix        string
+	cutoff        string
+	gitlabToken   string // New flag
+	gitlabBaseURL string // New flag
 }
 
 // Execute sets up and runs the root command
@@ -167,9 +169,44 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		},
 	}
 
+	// In your createScanCommand() function, add a new subcommand for GitLab:
+	scanGitlabCmd := &cobra.Command{
+		Use:   "gitlab_group <GROUP_NAME>",
+		Short: "Scan all projects within a GitLab group for technologies.",
+		Args:  cobra.ExactArgs(1),
+		Run: func(cmd *cobra.Command, args []string) {
+			err, queries := cli.loadQueries()
+			reporter, err := cli.createReporter(cli.reportFormat, queries)
+			if err != nil {
+				log.Fatal(err)
+			}
+			repository := repositories.NewFileBasedMatchRepository()
+			defer func(repository core.FindingRepository) {
+				err := repository.Clear()
+				if err != nil {
+					log.Fatalf("Error when clearing down Match repository: %v", err)
+				}
+			}(repository)
+			// Instantiate the GitlabGroupScanner as before.
+			scanner := scanners.NewGitlabGroupScanner(
+				reporter,
+				processors.InitializeProcessors(),
+				repository,
+				cli.cutoff)
+
+			// Pass the gitlabToken and gitlabBaseURL flags into the Scan method.
+			scanner.Scan(cli.reportFormat, cli.gitlabToken, cli.gitlabBaseURL)
+		},
+	}
+
+	// Add the new flags to the gitlab subcommand:
+	scanGitlabCmd.PersistentFlags().StringVar(&cli.gitlabToken, "gitlab-token", "", "GitLab token for authentication")
+	scanGitlabCmd.PersistentFlags().StringVar(&cli.gitlabBaseURL, "gitlab-baseurl", "", "GitLab base URL (for Enterprise Edition)")
+
 	scanCmd.AddCommand(scanRepoCmd)
 	scanCmd.AddCommand(scanOrgCmd)
 	scanCmd.AddCommand(scanDirCmd)
+	scanCmd.AddCommand(scanGitlabCmd)
 	return scanCmd
 }
 
