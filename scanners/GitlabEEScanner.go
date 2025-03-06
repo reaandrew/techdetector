@@ -171,12 +171,12 @@ func initializeGitLabClient(token, baseURL string) *gitlab.Client {
 	return client
 }
 
-// listAllProjects lists every project accessible to the authenticated user.
 func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
 	var allProjects []*gitlab.Project
 	ctx := context.Background()
 	opts := &gitlab.ListProjectsOptions{
-		Membership: gitlab.Ptr(false), // Return all projects the admin can access.
+		// Remove the Membership parameter to get all projects.
+		// Membership: gitlab.Ptr(false),
 		ListOptions: gitlab.ListOptions{
 			Page:    1,
 			PerPage: 100,
@@ -184,17 +184,15 @@ func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
 	}
 
 	for {
-		// The new signature expects opts as the first parameter,
-		// and request options (like WithContext) after.
 		projects, resp, err := client.Projects.ListProjects(opts, gitlab.WithContext(ctx))
 		if err != nil {
 			return nil, fmt.Errorf("failed to list projects: %w", err)
 		}
 		allProjects = append(allProjects, projects...)
-		if resp.CurrentPage >= resp.TotalPages {
+		if opts.Page >= resp.TotalPages {
 			break
 		}
-		opts.Page = resp.NextPage
+		opts.Page++
 	}
 
 	fmt.Printf("Number of projects found: %v\n", len(allProjects))
