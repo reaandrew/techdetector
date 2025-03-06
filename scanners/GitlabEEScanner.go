@@ -175,7 +175,7 @@ func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
 	var allProjects []*gitlab.Project
 	ctx := context.Background()
 	opts := &gitlab.ListProjectsOptions{
-		MinAccessLevel: gitlab.Ptr(gitlab.GuestPermissions),
+		MinAccessLevel: gitlab.Ptr(gitlab.AdminPermissions),
 		ListOptions: gitlab.ListOptions{
 			Page:    1,
 			PerPage: 100,
