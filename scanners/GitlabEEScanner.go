@@ -2,15 +2,31 @@ package scanners
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	gitlab "gitlab.com/gitlab-org/api/client-go"
+	"go.etcd.io/bbolt"
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 	"sync"
 )
+
+const CacheDirName = ".techdetector_cache"
+const BucketName = "Projects"
+
+// sanitizeBaseURL converts a base URL into a filesystem-safe name.
+func sanitizeBaseURL(baseURL string) string {
+	sanitized := strings.ToLower(baseURL)
+	sanitized = strings.ReplaceAll(sanitized, "https://", "")
+	sanitized = strings.ReplaceAll(sanitized, "http://", "")
+	sanitized = strings.ReplaceAll(sanitized, "/", "_")
+	sanitized = strings.ReplaceAll(sanitized, ":", "_")
+	return sanitized
+}
 
 // ProjectJob represents a job for scanning a GitLab project.
 type ProjectJob struct {
@@ -59,7 +75,7 @@ func (scanner GitlabGroupScanner) Scan(reportFormat, gitlabToken, gitlabBaseURL 
 
 	fmt.Println("Fetching all projects")
 
-	projects, err := listAllProjects(client)
+	projects, err := listAllProjects(client, gitlabBaseURL, true)
 	if err != nil {
 		log.Fatalf("Error listing projects: %v", err)
 	}
@@ -171,12 +187,96 @@ func initializeGitLabClient(token, baseURL string) *gitlab.Client {
 	return client
 }
 
-func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
+// getCacheFile returns the full path of the cache file for the GitLab base URL.
+func getCacheFile(baseURL string) (string, error) {
+	homeDir, err := os.UserHomeDir()
+	if err != nil {
+		return "", err
+	}
+	cacheDir := filepath.Join(homeDir, CacheDirName)
+	if err := os.MkdirAll(cacheDir, 0755); err != nil {
+		return "", err
+	}
+
+	cacheFileName := fmt.Sprintf("%s_projects_cache.db", sanitizeBaseURL(baseURL))
+	return filepath.Join(cacheDir, cacheFileName), nil
+}
+
+// saveProjectsToCache saves the list of projects to a BoltDB file in the cache directory.
+func saveProjectsToCache(baseURL string, projects []*gitlab.Project) error {
+	cacheFile, err := getCacheFile(baseURL)
+	if err != nil {
+		return err
+	}
+
+	db, err := bbolt.Open(cacheFile, 0666, nil)
+	if err != nil {
+		return err
+	}
+	defer db.Close()
+
+	return db.Update(func(tx *bbolt.Tx) error {
+		b, err := tx.CreateBucketIfNotExists([]byte(BucketName))
+		if err != nil {
+			return fmt.Errorf("create bucket: %w", err)
+		}
+
+		for _, project := range projects {
+			data, _ := json.Marshal(project)
+			if err := b.Put([]byte(project.PathWithNamespace), data); err != nil {
+				return err
+			}
+		}
+		return nil
+	})
+}
+
+// loadProjectsFromCache loads the projects from the cache file in the cache directory.
+func loadProjectsFromCache(baseURL string) ([]*gitlab.Project, error) {
+	cacheFile, err := getCacheFile(baseURL)
+	if err != nil {
+		return nil, err
+	}
+
+	db, err := bbolt.Open(cacheFile, 0666, nil)
+	if err != nil {
+		return nil, err
+	}
+	defer db.Close()
+
+	var projects []*gitlab.Project
+	err = db.View(func(tx *bbolt.Tx) error {
+		b := tx.Bucket([]byte(BucketName))
+		if b == nil {
+			return fmt.Errorf("bucket not found")
+		}
+
+		return b.ForEach(func(k, v []byte) error {
+			var project gitlab.Project
+			if err := json.Unmarshal(v, &project); err != nil {
+				return err
+			}
+			projects = append(projects, &project)
+			return nil
+		})
+	})
+	return projects, err
+}
+
+// listAllProjects fetches projects from GitLab or uses cache if available.
+func listAllProjects(client *gitlab.Client, baseURL string, useCache bool) ([]*gitlab.Project, error) {
+	if useCache {
+		projects, err := loadProjectsFromCache(baseURL)
+		if err == nil {
+			fmt.Printf("Loaded %d projects from cache.\n", len(projects))
+			return projects, nil
+		}
+		log.Printf("Failed to load from cache, proceeding with API fetch: %v", err)
+	}
+
 	var allProjects []*gitlab.Project
 	ctx := context.Background()
 	opts := &gitlab.ListProjectsOptions{
-		IncludeHidden: gitlab.Ptr(true),
-		Membership:    gitlab.Ptr(false),
 		ListOptions: gitlab.ListOptions{
 			Page:    1,
 			PerPage: 100,
@@ -185,20 +285,24 @@ func listAllProjects(client *gitlab.Client) ([]*gitlab.Project, error) {
 
 	for {
 		projects, resp, err := client.Projects.ListProjects(opts, gitlab.WithContext(ctx))
-
 		if err != nil {
 			return nil, fmt.Errorf("failed to list projects: %w", err)
 		}
+
 		allProjects = append(allProjects, projects...)
+		if err := saveProjectsToCache(baseURL, allProjects); err != nil {
+			log.Printf("Failed to save to cache: %v", err)
+		}
 
 		if resp.NextPage == 0 {
 			break
 		}
 
+		fmt.Fprintf(os.Stderr, "Loaded %d projects \n", len(allProjects))
 		opts.Page = resp.NextPage
+		fmt.Printf("Fetched %d projects, total so far: %d\n", len(projects), len(allProjects))
 	}
 
 	fmt.Printf("Number of projects found: %v\n", len(allProjects))
-	os.Exit(0)
 	return allProjects, nil
 }
