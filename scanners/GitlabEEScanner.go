@@ -129,6 +129,7 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 		projectName := project.PathWithNamespace
 		fmt.Printf("Worker %d: Cloning project %s\n", id, projectName)
 
+		// 1) Clone the normal repo
 		projectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName))
 		err := utils.CloneRepositoryWithToken(project.HTTPURLToRepo, projectPath, false, token)
 		if err != nil {
@@ -139,7 +140,14 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 			}
 			continue
 		}
+		// Defer deletion so it happens no matter what
+		defer func(path string) {
+			if removeErr := os.RemoveAll(path); removeErr != nil {
+				log.Printf("warning: failed to remove cloned directory %q: %v", path, removeErr)
+			}
+		}(projectPath)
 
+		// 2) Scan
 		matches, err := scanner.fileScanner.TraverseAndSearch(projectPath, projectName)
 		if err != nil {
 			results <- ProjectResult{
@@ -150,14 +158,19 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 			continue
 		}
 
-		// Perform a bare clone to extract metadata
+		// 3) Clone bare repo to collect Git metrics
 		bareProjectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName)+"_bare")
 		err = utils.CloneRepositoryWithToken(project.HTTPURLToRepo, bareProjectPath, true, token)
 		if err != nil {
 			log.Fatalf("Failed to perform bare clone for '%s': %v", projectName, err)
 		}
+		// Also ensure bare repo is removed after use
+		defer func(path string) {
+			if removeErr := os.RemoveAll(path); removeErr != nil {
+				log.Printf("warning: failed to remove bare repo directory %q: %v", path, removeErr)
+			}
+		}(bareProjectPath)
 
-		// Collect Git metrics
 		gitFindings, err := utils.CollectGitMetrics(bareProjectPath, projectName, scanner.Cutoff)
 		if err != nil {
 			log.Fatalf("Error collecting Git metrics for '%s': %v", projectName, err)
