@@ -129,60 +129,67 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 		projectName := project.PathWithNamespace
 		fmt.Printf("Worker %d: Cloning project %s\n", id, projectName)
 
-		// 1) Clone the normal repo
+		// Path for the normal clone
 		projectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName))
 		err := utils.CloneRepositoryWithToken(project.HTTPURLToRepo, projectPath, false, token)
 		if err != nil {
 			results <- ProjectResult{
-				Matches:     nil,
 				Error:       fmt.Errorf("failed to clone project '%s': %w", projectName, err),
 				ProjectName: projectName,
 			}
+			// Even if cloning failed, remove any partial clone
+			_ = os.RemoveAll(projectPath)
 			continue
 		}
-		// Defer deletion so it happens no matter what
-		defer func(path string) {
-			if removeErr := os.RemoveAll(path); removeErr != nil {
-				log.Printf("warning: failed to remove cloned directory %q: %v", path, removeErr)
-			}
-		}(projectPath)
 
-		// 2) Scan
 		matches, err := scanner.fileScanner.TraverseAndSearch(projectPath, projectName)
 		if err != nil {
 			results <- ProjectResult{
-				Matches:     nil,
 				Error:       fmt.Errorf("error searching project '%s': %w", projectName, err),
 				ProjectName: projectName,
 			}
+			// Remove normal clone
+			_ = os.RemoveAll(projectPath)
 			continue
 		}
 
-		// 3) Clone bare repo to collect Git metrics
+		// Bare clone
 		bareProjectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName)+"_bare")
 		err = utils.CloneRepositoryWithToken(project.HTTPURLToRepo, bareProjectPath, true, token)
 		if err != nil {
+			// Remove normal clone
+			_ = os.RemoveAll(projectPath)
 			log.Fatalf("Failed to perform bare clone for '%s': %v", projectName, err)
 		}
-		// Also ensure bare repo is removed after use
-		defer func(path string) {
-			if removeErr := os.RemoveAll(path); removeErr != nil {
-				log.Printf("warning: failed to remove bare repo directory %q: %v", path, removeErr)
-			}
-		}(bareProjectPath)
 
 		gitFindings, err := utils.CollectGitMetrics(bareProjectPath, projectName, scanner.Cutoff)
 		if err != nil {
+			// Clean both clones
+			_ = os.RemoveAll(projectPath)
+			_ = os.RemoveAll(bareProjectPath)
 			log.Fatalf("Error collecting Git metrics for '%s': %v", projectName, err)
 		}
 
 		fmt.Printf("Git Metrics for %s: %+v\n", projectName, gitFindings)
 		matches = append(matches, gitFindings...)
 
+		// Send back the results for this project
 		results <- ProjectResult{
 			Matches:     matches,
 			Error:       nil,
 			ProjectName: projectName,
+		}
+
+		// ------------
+		// CLEANUP
+		// ------------
+		// Remove normal clone
+		if removeErr := os.RemoveAll(projectPath); removeErr != nil {
+			log.Printf("warning: failed to remove %q: %v", projectPath, removeErr)
+		}
+		// Remove bare clone
+		if removeErr := os.RemoveAll(bareProjectPath); removeErr != nil {
+			log.Printf("warning: failed to remove %q: %v", bareProjectPath, removeErr)
 		}
 	}
 }
