@@ -3,7 +3,7 @@ package scanners
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"path/filepath"
 )
 
@@ -34,14 +34,14 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 		log.Fatalf("Error scanning directory '%s': %v", directory, err)
 	}
 
-	fmt.Printf("Number of matches in '%s': %d\n", directory, len(matches))
+	log.Printf("Number of matches in '%s': %d\n", directory, len(matches))
 
 	// Store matches
 	err = ds.matchRepository.Store(matches)
 	if err != nil {
 		log.Fatalf("Error storing matches in '%s': %v", directory, err)
 	}
-	
+
 	// Generate main report
 	err = ds.reporter.Report(ds.matchRepository)
 	if err != nil {

@@ -8,6 +8,7 @@ type FindingRepository interface {
 	Store(matches []Finding) error
 	Clear() error
 	NewIterator() FindingIterator
+	Close() error // add this method
 }
 
 type FindingIterator interface {

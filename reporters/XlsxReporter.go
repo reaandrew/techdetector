@@ -2,7 +2,7 @@ package reporters
 
 import (
 	"github.com/reaandrew/techdetector/core"
-	"log"
+	log "github.com/sirupsen/logrus"
 )
 
 type XlsxReporter struct {

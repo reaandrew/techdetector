@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 
 	"github.com/reaandrew/techdetector/core"
@@ -37,7 +37,7 @@ func (j JsonReporter) Report(repository core.FindingRepository) error {
 
 	dbPath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, j.SqliteDBFilename)
 	utils.DeleteDatabaseFileIfExists(dbPath)
-	fmt.Printf("dbPath: %v", dbPath)
+	log.Printf("dbPath: %v", dbPath)
 	// Initialize SQLite database
 	db, err := utils.InitializeSQLiteDB(dbPath)
 	if err != nil {
@@ -107,7 +107,7 @@ func (j JsonReporter) generateDetailedReport(repository core.FindingRepository) 
 		}
 	}
 
-	fmt.Printf("Detailed JSON report generated successfully: %s\n", outputFile.Name())
+	log.Printf("Detailed JSON report generated successfully: %s\n", outputFile.Name())
 	return nil
 }
 

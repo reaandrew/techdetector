@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 	"strings"
 )
@@ -45,7 +45,7 @@ func CloneRepositoryWithToken(cloneURL, destination string, bare bool, token str
 
 	cloneOptions := &git.CloneOptions{
 		URL:      cloneURL,
-		Progress: os.Stdout,
+		Progress: nil,
 	}
 
 	// If a token is provided, set up basic authentication.

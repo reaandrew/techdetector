@@ -76,3 +76,5 @@ terraform.rc
 techdetector_cloud_services_report.json
 techdetector_cloud_services_summary.json
 build
+
+*.log

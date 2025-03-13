@@ -8,7 +8,7 @@ package reporters
 //	"fmt"
 //	"github.com/reaandrew/techdetector/core"
 //	"github.com/reaandrew/techdetector/utils"
-//	"log"
+//	log "github.com/sirupsen/logrus"
 //
 //	//"os"
 //	"strings"
@@ -61,7 +61,7 @@ package reporters
 //	}
 //
 //	for _, query := range xr.Queries.Queries {
-//		//fmt.Printf("Executing query for: %s\n", query.Name)
+//		//log.Printf("Executing query for: %s\n", query.Name)
 //		if err := xr.executeAndWriteQuery(db, excelFile, query.Query, query.Name); err != nil {
 //			return fmt.Errorf("failed to write query result for '%s': %w", query.Name, err)
 //		}
@@ -75,7 +75,7 @@ package reporters
 //		utils.DumpSQLiteSchema(XlsxSQLiteDB)
 //	}
 //
-//	//fmt.Printf("Summary XLSX report generated successfully: %s\n", XlsxSummaryReport)
+//	//log.Printf("Summary XLSX report generated successfully: %s\n", XlsxSummaryReport)
 //	return nil
 //}
 //
@@ -175,7 +175,7 @@ package reporters
 //
 //		createStmt := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s);", sanitizedTypeName, strings.Join(fields, ", "))
 //		//fmt.Println(createStmt)
-//		//fmt.Printf("Creating table for type '%s' with columns: %s\n", typeName, strings.Join(fields, ", "))
+//		//log.Printf("Creating table for type '%s' with columns: %s\n", typeName, strings.Join(fields, ", "))
 //		if _, err := db.Exec(createStmt); err != nil {
 //			return fmt.Errorf("failed to execute CREATE TABLE for type '%s': %w", typeName, err)
 //		}
@@ -285,7 +285,7 @@ package reporters
 //}
 //
 //func (xr DynamicXlsxSummaryReporterForFindingsSqlTable) executeAndWriteQuery(db *sql.DB, excelFile *excelize.File, query, sheetName string) error {
-//	//fmt.Printf("sheetName: %s\n", sheetName)
+//	//log.Printf("sheetName: %s\n", sheetName)
 //
 //	// Try executing the query
 //	rows, err := db.Query(query)

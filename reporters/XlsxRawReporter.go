@@ -3,6 +3,7 @@ package reporters
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
+	log "github.com/sirupsen/logrus"
 	"github.com/xuri/excelize/v2"
 	"sort"
 	"strings"
@@ -134,11 +135,11 @@ func (xlsxReporter XlsxRawReporter) Report(repository core.FindingRepository) er
 
 	// Save the Excel file
 	outputFile := fmt.Sprintf("%s_%s", xlsxReporter.ArtifactPrefix, DefaultReport)
-	
+
 	if err := f.SaveAs(outputFile); err != nil {
 		return fmt.Errorf("failed to save XLSX file '%s': %w", outputFile, err)
 	}
 
-	fmt.Printf("XLSX report generated successfully: %s\n", outputFile)
+	log.Printf("XLSX report generated successfully: %s\n", outputFile)
 	return nil
 }

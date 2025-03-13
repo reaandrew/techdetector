@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 	"path"
 )
@@ -13,6 +13,10 @@ import (
 type FileBasedFindingRepository struct {
 	path  string
 	files []string
+}
+
+func (r *FileBasedFindingRepository) Close() error {
+	return nil
 }
 
 func NewFileBasedMatchRepository() core.FindingRepository {

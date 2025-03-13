@@ -17,7 +17,7 @@ import (
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/scanners"
 
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 )
 
@@ -52,7 +52,7 @@ func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 		return toAPIGatewayResponse(400, fmt.Sprintf(`{"error": "%s"}`, errMsg)), nil
 	}
 
-	fmt.Printf("Cut off: %s", lambdaReq.Cutoff)
+	log.Printf("Cut off: %s", lambdaReq.Cutoff)
 
 	// Step 5: Perform the scan
 	jsonReport, err := ScanRepo(lambdaReq.Repo, "/var/task/queries.yaml", "techdetector", lambdaReq.Cutoff)

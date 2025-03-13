@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
+	log "github.com/sirupsen/logrus"
 	gitlab "gitlab.com/gitlab-org/api/client-go"
 	"go.etcd.io/bbolt"
-	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -28,46 +28,44 @@ func sanitizeBaseURL(baseURL string) string {
 	return sanitized
 }
 
-// ProjectJob represents a job for scanning a GitLab project.
 type ProjectJob struct {
 	Project *gitlab.Project
 }
 
-// ProjectResult represents the result after scanning a project.
 type ProjectResult struct {
 	Matches     []core.Finding
 	Error       error
 	ProjectName string
 }
 
-// GitlabGroupScanner scans projects within a GitLab instance.
 type GitlabGroupScanner struct {
-	reporter        core.Reporter
-	fileScanner     FileScanner
-	matchRepository core.FindingRepository
-	Cutoff          string
+	reporter         core.Reporter
+	fileScanner      FileScanner
+	matchRepository  core.FindingRepository
+	Cutoff           string
+	progressReporter utils.ProgressReporter
 }
 
-// NewGitlabGroupScanner creates a new GitlabGroupScanner.
-func NewGitlabGroupScanner(reporter core.Reporter,
+func NewGitlabGroupScanner(
+	reporter core.Reporter,
 	processors []core.FileProcessor,
 	matchRepository core.FindingRepository,
-	cutoff string) *GitlabGroupScanner {
+	cutoff string,
+	progressReporter utils.ProgressReporter,
+) *GitlabGroupScanner {
 	return &GitlabGroupScanner{
-		reporter:        reporter,
-		fileScanner:     FileScanner{processors: processors},
-		matchRepository: matchRepository,
-		Cutoff:          cutoff,
+		reporter:         reporter,
+		fileScanner:      FileScanner{processors: processors},
+		matchRepository:  matchRepository,
+		Cutoff:           cutoff,
+		progressReporter: progressReporter,
 	}
 }
 
-// Scan fetches every project accessible to the authenticated user,
-// clones them using the provided token for authentication, scans for findings,
-// and generates a report.
 func (scanner GitlabGroupScanner) Scan(reportFormat, gitlabToken, gitlabBaseURL string) {
 	client := initializeGitLabClient(gitlabToken, gitlabBaseURL)
 
-	// Ensure clone base directory exists
+	// Ensure clone base directory exists.
 	err := os.MkdirAll(CloneBaseDir, os.ModePerm)
 	if err != nil {
 		log.Fatalf("Failed to create clone base directory '%s': %v", CloneBaseDir, err)
@@ -83,10 +81,13 @@ func (scanner GitlabGroupScanner) Scan(reportFormat, gitlabToken, gitlabBaseURL 
 		log.Fatalf("No projects found. Exiting.")
 	}
 
-	// Set up job processing with a worker pool.
+	// Set the total count on the progress reporter.
+	if scanner.progressReporter != (utils.ProgressReporter)(nil) {
+		scanner.progressReporter.SetTotal(len(projects))
+	}
+
 	jobs := make(chan ProjectJob, len(projects))
 	results := make(chan ProjectResult, len(projects))
-
 	var wg sync.WaitGroup
 	for w := 1; w <= MaxWorkers; w++ {
 		wg.Add(1)
@@ -101,7 +102,6 @@ func (scanner GitlabGroupScanner) Scan(reportFormat, gitlabToken, gitlabBaseURL 
 	wg.Wait()
 	close(results)
 
-	// Store results
 	for res := range results {
 		if res.Error != nil {
 			log.Printf("Error processing project '%s': %v", res.ProjectName, res.Error)
@@ -113,23 +113,26 @@ func (scanner GitlabGroupScanner) Scan(reportFormat, gitlabToken, gitlabBaseURL 
 		}
 	}
 
-	// Generate report
+	// Generate report.
 	err = scanner.reporter.Report(scanner.matchRepository)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}
 }
 
-// worker processes projects from the jobs channel and sends results to the results channel.
-// The token parameter is used to authenticate git clone operations.
-func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results chan<- ProjectResult, wg *sync.WaitGroup, token string) {
+func (scanner GitlabGroupScanner) worker(
+	id int,
+	jobs <-chan ProjectJob,
+	results chan<- ProjectResult,
+	wg *sync.WaitGroup,
+	token string,
+) {
 	defer wg.Done()
 	for job := range jobs {
 		project := job.Project
 		projectName := project.PathWithNamespace
-		fmt.Printf("Worker %d: Cloning project %s\n", id, projectName)
+		log.Printf("Worker %d: Cloning project %s\n", id, projectName)
 
-		// Path for the normal clone
 		projectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName))
 		err := utils.CloneRepositoryWithToken(project.HTTPURLToRepo, projectPath, false, token)
 		if err != nil {
@@ -137,8 +140,10 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 				Error:       fmt.Errorf("failed to clone project '%s': %w", projectName, err),
 				ProjectName: projectName,
 			}
-			// Even if cloning failed, remove any partial clone
 			_ = os.RemoveAll(projectPath)
+			if scanner.progressReporter != (utils.ProgressReporter)(nil) {
+				scanner.progressReporter.Increment()
+			}
 			continue
 		}
 
@@ -148,58 +153,54 @@ func (scanner GitlabGroupScanner) worker(id int, jobs <-chan ProjectJob, results
 				Error:       fmt.Errorf("error searching project '%s': %w", projectName, err),
 				ProjectName: projectName,
 			}
-			// Remove normal clone
 			_ = os.RemoveAll(projectPath)
+			if scanner.progressReporter != (utils.ProgressReporter)(nil) {
+				scanner.progressReporter.Increment()
+			}
 			continue
 		}
 
-		// Bare clone
 		bareProjectPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(projectName)+"_bare")
 		err = utils.CloneRepositoryWithToken(project.HTTPURLToRepo, bareProjectPath, true, token)
 		if err != nil {
-			// Remove normal clone
 			_ = os.RemoveAll(projectPath)
 			log.Fatalf("Failed to perform bare clone for '%s': %v", projectName, err)
 		}
 
 		gitFindings, err := utils.CollectGitMetrics(bareProjectPath, projectName, scanner.Cutoff)
 		if err != nil {
-			// Clean both clones
 			_ = os.RemoveAll(projectPath)
 			_ = os.RemoveAll(bareProjectPath)
 			log.Fatalf("Error collecting Git metrics for '%s': %v", projectName, err)
 		}
 
-		fmt.Printf("Git Metrics for %s: %+v\n", projectName, gitFindings)
+		log.Printf("Git Metrics for %s: %+v\n", projectName, gitFindings)
 		matches = append(matches, gitFindings...)
 
-		// Send back the results for this project
 		results <- ProjectResult{
 			Matches:     matches,
 			Error:       nil,
 			ProjectName: projectName,
 		}
 
-		// ------------
-		// CLEANUP
-		// ------------
-		// Remove normal clone
+		// CLEANUP: Remove local clones.
 		if removeErr := os.RemoveAll(projectPath); removeErr != nil {
 			log.Printf("warning: failed to remove %q: %v", projectPath, removeErr)
 		}
-		// Remove bare clone
 		if removeErr := os.RemoveAll(bareProjectPath); removeErr != nil {
 			log.Printf("warning: failed to remove %q: %v", bareProjectPath, removeErr)
+		}
+
+		if scanner.progressReporter != (utils.ProgressReporter)(nil) {
+			scanner.progressReporter.Increment()
 		}
 	}
 }
 
-// initializeGitLabClient initializes and returns a GitLab client using the provided token and base URL.
 func initializeGitLabClient(token, baseURL string) *gitlab.Client {
 	if token == "" {
 		log.Fatal("GitLab token is required (provide via --gitlab-token flag)")
 	}
-	// Create the client with context support.
 	client, err := gitlab.NewClient(token, gitlab.WithBaseURL(baseURL))
 	if err != nil {
 		log.Fatalf("Failed to create GitLab client: %v", err)
@@ -207,7 +208,6 @@ func initializeGitLabClient(token, baseURL string) *gitlab.Client {
 	return client
 }
 
-// getCacheFile returns the full path of the cache file for the GitLab base URL.
 func getCacheFile(baseURL string) (string, error) {
 	homeDir, err := os.UserHomeDir()
 	if err != nil {
@@ -222,7 +222,6 @@ func getCacheFile(baseURL string) (string, error) {
 	return filepath.Join(cacheDir, cacheFileName), nil
 }
 
-// saveProjectsToCache saves the list of projects to a BoltDB file in the cache directory.
 func saveProjectsToCache(baseURL string, projects []*gitlab.Project) error {
 	cacheFile, err := getCacheFile(baseURL)
 	if err != nil {
@@ -251,7 +250,6 @@ func saveProjectsToCache(baseURL string, projects []*gitlab.Project) error {
 	})
 }
 
-// loadProjectsFromCache loads the projects from the cache file in the cache directory.
 func loadProjectsFromCache(baseURL string) ([]*gitlab.Project, error) {
 	cacheFile, err := getCacheFile(baseURL)
 	if err != nil {
@@ -283,12 +281,11 @@ func loadProjectsFromCache(baseURL string) ([]*gitlab.Project, error) {
 	return projects, err
 }
 
-// listAllProjects fetches projects from GitLab or uses cache if available.
 func listAllProjects(client *gitlab.Client, baseURL string, useCache bool) ([]*gitlab.Project, error) {
 	if useCache {
 		projects, err := loadProjectsFromCache(baseURL)
 		if err == nil {
-			fmt.Printf("Loaded %d projects from cache.\n", len(projects))
+			log.Printf("Loaded %d projects from cache.\n", len(projects))
 			return projects, nil
 		}
 		log.Printf("Failed to load from cache, proceeding with API fetch: %v", err)
@@ -320,9 +317,9 @@ func listAllProjects(client *gitlab.Client, baseURL string, useCache bool) ([]*g
 
 		fmt.Fprintf(os.Stderr, "Loaded %d projects \n", len(allProjects))
 		opts.Page = resp.NextPage
-		fmt.Printf("Fetched %d projects, total so far: %d\n", len(projects), len(allProjects))
+		log.Printf("Fetched %d projects, total so far: %d\n", len(projects), len(allProjects))
 	}
 
-	fmt.Printf("Number of projects found: %v\n", len(allProjects))
+	log.Printf("Number of projects found: %v\n", len(allProjects))
 	return allProjects, nil
 }

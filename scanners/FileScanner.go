@@ -3,22 +3,32 @@ package scanners
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
+	log "github.com/sirupsen/logrus"
 	"io/fs"
 	"os"
 	"path/filepath"
+	"runtime"
+	"strings"
 	"sync"
 )
 
-const (
-	MaxWorkers     = 10
-	MaxFileWorkers = 10
-	CloneBaseDir   = "/tmp/techdetector" // You can make this configurable if needed
+var (
+	// MaxWorkers sets the number of parallel workers that handle repositories
+	MaxWorkers = runtime.NumCPU()
+	// MaxFileWorkers sets the number of parallel workers that handle files in each repo
+	MaxFileWorkers = runtime.NumCPU()
+	// CloneBaseDir is where all repositories get cloned to
+	CloneBaseDir = "/tmp/techdetector"
 )
 
+// FileScanner is responsible for walking through a directory and passing files
+// to all configured FileProcessors.
 type FileScanner struct {
 	processors []core.FileProcessor
 }
 
+// TraverseAndSearch walks through the specified directory, sends each *actual file*
+// to the provided processors, and returns aggregated matches.
 func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]core.Finding, error) {
 	var Matches []core.Finding
 	var mu sync.Mutex
@@ -37,7 +47,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 
 	var wg sync.WaitGroup
 
-	// File processing workers
+	// Spawn workers to process files
 	for i := 0; i < MaxFileWorkers; i++ {
 		wg.Add(1)
 		go func() {
@@ -50,7 +60,10 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 							errs <- fmt.Errorf("failed to read file %s: %v", path, err)
 							continue
 						}
-						results, _ := processor.Process(path, repoName, string(content))
+						results, procErr := processor.Process(path, repoName, string(content))
+						if procErr != nil {
+							errs <- fmt.Errorf("processing error in file %s: %v", path, procErr)
+						}
 						for _, Match := range results {
 							fileMatches <- Match
 						}
@@ -60,13 +73,21 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 		}()
 	}
 
+	// Walk the directory, enqueue only actual files (regular files) to "files"
 	go func() {
-		_ = filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
-			if err != nil {
-				errs <- err
+		_ = filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, walkErr error) error {
+			if walkErr != nil {
+				errs <- fmt.Errorf("error walking path %s: %v", path, walkErr)
 				return nil
 			}
-			if !d.IsDir() {
+			// Stat the path to detect directories or symlinks
+			info, statErr := os.Stat(path)
+			if statErr != nil {
+				errs <- fmt.Errorf("error stating path %s: %v", path, statErr)
+				return nil
+			}
+			// Only enqueue if it's a regular file (not a directory or symlink to a dir)
+			if info.Mode().IsRegular() {
 				files <- path
 			}
 			return nil
@@ -74,20 +95,31 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 		close(files)
 	}()
 
+	// Once all files are processed, close channels
 	go func() {
 		wg.Wait()
 		close(fileMatches)
 		close(errs)
 	}()
 
+	// Collect processed matches
 	for match := range fileMatches {
 		mu.Lock()
 		Matches = append(Matches, match)
 		mu.Unlock()
 	}
 
-	if len(errs) > 0 {
-		return Matches, fmt.Errorf("some errors occurred during scanning")
+	// Collect all errors
+	var errorMessages []string
+	for err := range errs {
+		log.Errorf("Error encountered: %v", err)
+		errorMessages = append(errorMessages, err.Error())
+	}
+
+	// Return errors if any
+	if len(errorMessages) > 0 {
+		return Matches, fmt.Errorf("errors encountered during scanning:\n%s",
+			strings.Join(errorMessages, "\n"))
 	}
 
 	return Matches, nil

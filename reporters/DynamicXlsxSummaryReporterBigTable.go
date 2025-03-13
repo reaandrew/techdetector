@@ -3,7 +3,7 @@ package reporters
 import (
 	"database/sql"
 	"fmt"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"strings"
 
 	"github.com/reaandrew/techdetector/core"
