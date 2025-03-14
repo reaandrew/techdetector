@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 	"path"
 )

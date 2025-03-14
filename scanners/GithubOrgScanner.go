@@ -6,11 +6,12 @@ import (
 	"github.com/google/go-github/v50/github"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
+	log "github.com/sirupsen/logrus"
 	"golang.org/x/oauth2"
-	"log"
 	"os"
 	"path/filepath"
 	"sync"
+	"time"
 )
 
 type RepoJob struct {
@@ -24,45 +25,46 @@ type RepoResult struct {
 }
 
 type GithubOrgScanner struct {
-	reporter        core.Reporter
-	fileScanner     FileScanner
-	matchRepository core.FindingRepository
-	Cutoff          string
+	reporter         core.Reporter
+	fileScanner      FileScanner
+	matchRepository  core.FindingRepository
+	Cutoff           string
+	progressReporter utils.ProgressReporter
 }
 
 func NewGithubOrgScanner(reporter core.Reporter,
 	processors []core.FileProcessor,
 	matchRepository core.FindingRepository,
-	cutoff string) *GithubOrgScanner {
+	cutoff string,
+	progressReporter utils.ProgressReporter) *GithubOrgScanner {
 	return &GithubOrgScanner{
-		reporter:        reporter,
-		fileScanner:     FileScanner{processors: processors},
-		matchRepository: matchRepository,
-		Cutoff:          cutoff,
+		reporter:         reporter,
+		fileScanner:      FileScanner{processors: processors},
+		matchRepository:  matchRepository,
+		Cutoff:           cutoff,
+		progressReporter: progressReporter,
 	}
 }
 
 func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat string) {
 	client := initializeGitHubClient()
 
-	// Ensure clone base directory exists
-	err := os.MkdirAll(CloneBaseDir, os.ModePerm)
-	if err != nil {
+	if err := os.MkdirAll(CloneBaseDir, os.ModePerm); err != nil {
 		log.Fatalf("Failed to create clone base directory '%s': %v", CloneBaseDir, err)
 	}
 
-	fmt.Printf("Fetching repos for organization: %s\n", orgName)
-
 	repos, err := listRepositories(client, orgName)
-	if err != nil {
-		log.Fatalf("Error listing repos: %v", err)
-	}
-	if len(repos) == 0 {
-		log.Fatalf("No repos found in organization '%s'. Exiting.", orgName)
+	if err != nil || len(repos) == 0 {
+		log.Fatalf("Error listing repos or no repos found: %v", err)
 	}
 
-	jobs := make(chan RepoJob, len(repos))
-	results := make(chan RepoResult, len(repos))
+	totalRepos := len(repos)
+	if githubOrgScanner.progressReporter != nil {
+		githubOrgScanner.progressReporter.SetTotal(totalRepos)
+	}
+
+	jobs := make(chan RepoJob, totalRepos)
+	results := make(chan RepoResult, MaxWorkers) // Small buffer
 
 	var wg sync.WaitGroup
 	for w := 1; w <= MaxWorkers; w++ {
@@ -70,150 +72,129 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 		go githubOrgScanner.worker(w, jobs, results, &wg)
 	}
 
-	for _, repo := range repos {
-		jobs <- RepoJob{Repo: repo}
-	}
-	close(jobs)
+	go func() {
+		for _, repo := range repos {
+			jobs <- RepoJob{Repo: repo}
+		}
+		close(jobs)
+	}()
 
-	wg.Wait()
-	close(results)
+	// Important fix: concurrent result consumption and progress increment
+	go func() {
+		wg.Wait()
+		close(results)
+	}()
 
-	// Errors are now handled and logged in the worker; the main loop just reports them.
+	processed := 0
 	for res := range results {
 		if res.Error != nil {
 			log.Printf("Error processing repository '%s': %v", res.RepoName, res.Error)
 		}
+		if githubOrgScanner.progressReporter != nil {
+			githubOrgScanner.progressReporter.Increment()
+		}
+		processed++
 	}
 
-	log.Println("Finished scanning repositories.")
+	log.Printf("Finished scanning %d repositories.", processed)
 	log.Println("Generating report...")
-	// Generate report using the stored matches.
-	err = githubOrgScanner.reporter.Report(githubOrgScanner.matchRepository)
-	if err != nil {
+	if err := githubOrgScanner.reporter.Report(githubOrgScanner.matchRepository); err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}
 }
 
-// worker processes repositories from the jobs channel, stores matches immediately, and sends results to the results channel.
 func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, results chan<- RepoResult, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for job := range jobs {
 		repo := job.Repo
 		repoName := repo.GetFullName()
-		fmt.Printf("Worker %d: Cloning repository %s\n", id, repoName)
-
 		repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
-		err := utils.CloneRepository(repo.GetCloneURL(), repoPath, false)
+
+		ctx, cancel := context.WithTimeout(context.Background(), 2*time.Minute)
+		err := utils.CloneRepositoryWithContext(ctx, repo.GetCloneURL(), repoPath, false)
+		cancel()
+
 		if err != nil {
-			results <- RepoResult{
-				Matches:  nil,
-				Error:    fmt.Errorf("failed to clone repository '%s': %w", repoName, err),
-				RepoName: repoName,
+			results <- RepoResult{Error: fmt.Errorf("failed to clone '%s': %w", repoName, err), RepoName: repoName}
+			if githubOrgScanner.progressReporter != nil {
+				githubOrgScanner.progressReporter.Increment()
 			}
 			continue
 		}
 
-		Matches, err := githubOrgScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
+		matches, err := githubOrgScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
 		if err != nil {
-			results <- RepoResult{
-				Matches:  nil,
-				Error:    fmt.Errorf("error searching repository '%s': %w", repoName, err),
-				RepoName: repoName,
+			results <- RepoResult{Error: fmt.Errorf("error scanning '%s': %w", repoName, err), RepoName: repoName}
+			if githubOrgScanner.progressReporter != nil {
+				githubOrgScanner.progressReporter.Increment()
 			}
 			continue
 		}
 
-		// Perform bare clone to extract metadata.
 		bareRepoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName)+"_bare")
-		err = utils.CloneRepository(repo.GetCloneURL(), bareRepoPath, true)
+		ctxBare, cancelBare := context.WithTimeout(context.Background(), 1*time.Minute)
+		err = utils.CloneRepositoryWithContext(ctxBare, repo.GetCloneURL(), bareRepoPath, true)
+		cancelBare()
+
 		if err != nil {
-			results <- RepoResult{
-				Matches:  nil,
-				Error:    fmt.Errorf("failed to perform bare clone for '%s': %w", repoName, err),
-				RepoName: repoName,
+			results <- RepoResult{Error: fmt.Errorf("failed bare clone '%s': %w", repoName, err), RepoName: repoName}
+			if githubOrgScanner.progressReporter != nil {
+				githubOrgScanner.progressReporter.Increment()
 			}
 			continue
 		}
 
-		// Collect Git metrics.
 		gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName, githubOrgScanner.Cutoff)
 		if err != nil {
-			results <- RepoResult{
-				Matches:  nil,
-				Error:    fmt.Errorf("error collecting Git metrics for '%s': %w", repoName, err),
-				RepoName: repoName,
+			results <- RepoResult{Error: fmt.Errorf("git metrics '%s': %w", repoName, err), RepoName: repoName}
+			if githubOrgScanner.progressReporter != nil {
+				githubOrgScanner.progressReporter.Increment()
 			}
 			continue
 		}
-		fmt.Printf("Git Metrics for %s: %+v\n", repoName, gitFindings)
-		Matches = append(Matches, gitFindings...)
 
-		// Store matches immediately after scanning the repository.
-		err = githubOrgScanner.matchRepository.Store(Matches)
+		matches = append(matches, gitFindings...)
+
+		err = githubOrgScanner.matchRepository.Store(matches)
 		if err != nil {
-			results <- RepoResult{
-				Matches:  Matches,
-				Error:    fmt.Errorf("error storing matches for '%s': %w", repoName, err),
-				RepoName: repoName,
-			}
+			results <- RepoResult{Error: fmt.Errorf("storing matches '%s': %w", repoName, err), RepoName: repoName}
 			continue
 		}
 
-		results <- RepoResult{
-			Matches:  Matches,
-			Error:    nil,
-			RepoName: repoName,
-		}
+		results <- RepoResult{Matches: matches, RepoName: repoName}
+		_ = os.RemoveAll(repoPath)
+		_ = os.RemoveAll(bareRepoPath)
 
-		if removeErr := os.RemoveAll(repoPath); removeErr != nil {
-			log.Printf("warning: failed to remove %q: %v", repoPath, removeErr)
-		}
-		if removeErr := os.RemoveAll(bareRepoPath); removeErr != nil {
-			log.Printf("warning: failed to remove %q: %v", bareRepoPath, removeErr)
+		if githubOrgScanner.progressReporter != nil {
+			githubOrgScanner.progressReporter.Increment()
 		}
 	}
 }
 
-// initializeGitHubClient initializes and returns a GitHub client.
 func initializeGitHubClient() *github.Client {
 	ctx := context.Background()
-	var client *github.Client
-
 	token := os.Getenv("GITHUB_TOKEN")
 	if token != "" {
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: token},
-		)
+		ts := oauth2.StaticTokenSource(&oauth2.Token{AccessToken: token})
 		tc := oauth2.NewClient(ctx, ts)
-		client = github.NewClient(tc)
-	} else {
-		client = github.NewClient(nil)
+		return github.NewClient(tc)
 	}
-
-	return client
+	return github.NewClient(nil)
 }
 
-// listRepositories lists all repositories within a GitHub organization.
 func listRepositories(client *github.Client, org string) ([]*github.Repository, error) {
 	var allRepos []*github.Repository
-	opt := &github.RepositoryListByOrgOptions{
-		ListOptions: github.ListOptions{PerPage: 100},
-	}
-
+	opt := &github.RepositoryListByOrgOptions{ListOptions: github.ListOptions{PerPage: 100}}
 	for {
 		repos, resp, err := client.Repositories.ListByOrg(context.Background(), org, opt)
 		if err != nil {
-			return nil, fmt.Errorf("failed to list repositories: %w", err)
+			return nil, err
 		}
-
 		allRepos = append(allRepos, repos...)
-
 		if resp.NextPage == 0 {
 			break
 		}
 		opt.Page = resp.NextPage
 	}
-
-	fmt.Printf("Number of repos: %v\n", len(allRepos))
 	return allRepos, nil
 }

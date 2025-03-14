@@ -6,7 +6,7 @@ import (
 	"fmt"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/reaandrew/techdetector/core"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 	"strings"
 )

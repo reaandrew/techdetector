@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
+	log "github.com/sirupsen/logrus"
 	"github.com/xuri/excelize/v2"
-	"log"
 	"strings"
 )
 

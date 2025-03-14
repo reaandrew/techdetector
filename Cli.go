@@ -8,9 +8,9 @@ import (
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/scanners"
 	"github.com/reaandrew/techdetector/utils"
+	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
-	"log"
 	"os"
 	"strings"
 )
@@ -72,7 +72,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	scanCmd.PersistentFlags().StringVar(&cli.cutoff, "date-cutoff", "", "A date cutoff (e.g. 2021-01-01) to process git repos in")
 
 	if err := scanCmd.MarkPersistentFlagRequired("queries-path"); err != nil {
-		fmt.Printf("Error making queries-path flag required: %v\n", err)
+		log.Printf("Error making queries-path flag required: %v\n", err)
 		os.Exit(1)
 	}
 
@@ -91,7 +91,9 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 
 			// 1) Sanitize the repo URL for a DB filename
 			repoURL := args[0]
-			dbFile := sanitizeForDB(repoURL) + "_findings.db"
+			cli.prefix = "td_" + sanitizeForDB(repoURL)
+
+			dbFile := cli.prefix + "_findings.db"
 			utils.InitializeSQLiteDB(dbFile)
 
 			reporter, err := cli.createReporter(cli.reportFormat, queries, dbFile)
@@ -147,8 +149,9 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 				_ = repository.Close()
 			}()
 
+			progressReporter := utils.NewBarProgressReporter(0, "Scanning GitHub org repositories")
 			// 3) Create and run the scanner
-			scanner := scanners.NewGithubOrgScanner(reporter, processors.InitializeProcessors(), repository, cli.cutoff)
+			scanner := scanners.NewGithubOrgScanner(reporter, processors.InitializeProcessors(), repository, cli.cutoff, progressReporter)
 			scanner.Scan(orgName, cli.reportFormat)
 		},
 	}
@@ -171,6 +174,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			} else {
 				directory = args[0]
 			}
+			cli.prefix = "td_" + sanitizeForDB(directory)
 
 			info, err := os.Stat(directory)
 			if err != nil {
@@ -186,7 +190,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			}
 
 			// 1) Sanitize directory name for a DB filename
-			dbFile := sanitizeForDB(directory) + "_findings.db"
+			dbFile := cli.prefix + "_findings.db"
 
 			reporter, err := cli.createReporter(cli.reportFormat, queries, dbFile)
 			if err != nil {

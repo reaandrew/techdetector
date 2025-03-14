@@ -1,9 +1,10 @@
 package utils
 
 import (
+	"context"
 	"fmt"
 	"github.com/go-git/go-git/v5"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 	"strings"
 )
@@ -32,6 +33,35 @@ func ExtractRepoName(repoURL string) (string, error) {
 	return repoName, nil
 }
 
+func CloneRepositoryWithContext(ctx context.Context, cloneURL, destination string, bare bool) error {
+	if _, err := os.Stat(destination); err == nil {
+		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
+		return nil
+	}
+
+	done := make(chan error, 1)
+
+	go func() {
+		_, err := git.PlainCloneContext(ctx, destination, bare, &git.CloneOptions{
+			URL:      cloneURL,
+			Progress: nil,
+		})
+		done <- err
+	}()
+
+	select {
+	case <-ctx.Done():
+		// Timeout or cancellation reached
+		return fmt.Errorf("git clone timed out or cancelled for '%s': %w", cloneURL, ctx.Err())
+	case err := <-done:
+		if err != nil {
+			return fmt.Errorf("git clone failed for '%s': %w", cloneURL, err)
+		}
+	}
+
+	return nil
+}
+
 func CloneRepository(cloneURL, destination string, bare bool) error {
 	if _, err := os.Stat(destination); err == nil {
 		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
@@ -40,7 +70,7 @@ func CloneRepository(cloneURL, destination string, bare bool) error {
 
 	cloneOptions := &git.CloneOptions{
 		URL:      cloneURL,
-		Progress: os.Stdout,
+		Progress: nil,
 	}
 
 	if bare {

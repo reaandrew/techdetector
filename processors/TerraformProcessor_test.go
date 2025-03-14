@@ -166,14 +166,14 @@ func PrintBlock(block *TerraformBlock, indent int) {
 		indentStr += "  "
 	}
 
-	fmt.Printf("%sType: %s\n", indentStr, block.Type)
+	log.Printf("%sType: %s\n", indentStr, block.Type)
 	if len(block.Labels) > 0 {
-		fmt.Printf("%sLabels: %v\n", indentStr, block.Labels)
+		log.Printf("%sLabels: %v\n", indentStr, block.Labels)
 	}
 	if len(block.Attributes) > 0 {
-		fmt.Printf("%sAttributes:\n", indentStr)
+		log.Printf("%sAttributes:\n", indentStr)
 		for k, v := range block.Attributes {
-			fmt.Printf("%s  %s = %v\n", indentStr, k, v)
+			log.Printf("%s  %s = %v\n", indentStr, k, v)
 		}
 	}
 	for _, nestedBlock := range block.Blocks {
