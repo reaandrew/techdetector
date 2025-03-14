@@ -151,7 +151,18 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 
 			progressReporter := utils.NewBarProgressReporter(0, "Scanning GitHub org repositories")
 			// 3) Create and run the scanner
-			scanner := scanners.NewGithubOrgScanner(reporter, processors.InitializeProcessors(), repository, cli.cutoff, progressReporter)
+
+			scanner := scanners.GithubOrgScanner{
+				Reporter:         reporter,
+				FileScanner:      scanners.FsFileScanner{Processors: processors.InitializeProcessors()},
+				MatchRepository:  repository,
+				Cutoff:           cli.cutoff,
+				ProgressReporter: progressReporter,
+				GithubClient:     utils.NewGithubApiClient(),
+				GitClient:        utils.GitApiClient{},
+				GitMetrics:       utils.GitMetricsClient{},
+			}
+
 			scanner.Scan(orgName, cli.reportFormat)
 		},
 	}

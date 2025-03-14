@@ -15,11 +15,15 @@ const (
 	CloneBaseDir   = "/tmp/techdetector" // You can make this configurable if needed
 )
 
-type FileScanner struct {
-	processors []core.FileProcessor
+type FileScanner interface {
+	TraverseAndSearch(repoPath, repoName string) ([]core.Finding, error)
 }
 
-func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName string) ([]core.Finding, error) {
+type FsFileScanner struct {
+	Processors []core.FileProcessor
+}
+
+func (fileScanner FsFileScanner) TraverseAndSearch(targetDir string, repoName string) ([]core.Finding, error) {
 	var Matches []core.Finding
 	var mu sync.Mutex
 
@@ -43,7 +47,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 		go func() {
 			defer wg.Done()
 			for path := range files {
-				for _, processor := range fileScanner.processors {
+				for _, processor := range fileScanner.Processors {
 					if processor.Supports(path) {
 						content, err := os.ReadFile(path)
 						if err != nil {
@@ -60,7 +64,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 		}()
 	}
 
-	// Walk through directory and send files to the worker channel
+	// Walk through directory and send files to the Worker channel
 	go func() {
 		_ = filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
 			if err != nil {

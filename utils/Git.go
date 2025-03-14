@@ -9,31 +9,13 @@ import (
 	"strings"
 )
 
-func SanitizeRepoName(fullName string) string {
-	return strings.ReplaceAll(fullName, "/", "_")
+type GitApi interface {
+	CloneRepositoryWithContext(ctx context.Context, cloneURL, destination string, bare bool) error
 }
 
-func ExtractRepoName(repoURL string) (string, error) {
-	var repoName string
-	if strings.HasPrefix(repoURL, "git@") {
-		parts := strings.Split(repoURL, ":")
-		if len(parts) != 2 {
-			return "", fmt.Errorf("unexpected repository URL format")
-		}
-		repoName = strings.TrimSuffix(parts[1], ".git")
-	} else if strings.HasPrefix(repoURL, "https://") || strings.HasPrefix(repoURL, "http://") {
-		parts := strings.Split(repoURL, "/")
-		if len(parts) < 2 {
-			return "", fmt.Errorf("unexpected repository URL format")
-		}
-		repoName = strings.TrimSuffix(parts[len(parts)-1], ".git")
-	} else {
-		return "", fmt.Errorf("unsupported repository URL format")
-	}
-	return repoName, nil
-}
+type GitApiClient struct{}
 
-func CloneRepositoryWithContext(ctx context.Context, cloneURL, destination string, bare bool) error {
+func (g GitApiClient) CloneRepositoryWithContext(ctx context.Context, cloneURL, destination string, bare bool) error {
 	if _, err := os.Stat(destination); err == nil {
 		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
 		return nil
@@ -60,6 +42,30 @@ func CloneRepositoryWithContext(ctx context.Context, cloneURL, destination strin
 	}
 
 	return nil
+}
+
+func SanitizeRepoName(fullName string) string {
+	return strings.ReplaceAll(fullName, "/", "_")
+}
+
+func ExtractRepoName(repoURL string) (string, error) {
+	var repoName string
+	if strings.HasPrefix(repoURL, "git@") {
+		parts := strings.Split(repoURL, ":")
+		if len(parts) != 2 {
+			return "", fmt.Errorf("unexpected repository URL format")
+		}
+		repoName = strings.TrimSuffix(parts[1], ".git")
+	} else if strings.HasPrefix(repoURL, "https://") || strings.HasPrefix(repoURL, "http://") {
+		parts := strings.Split(repoURL, "/")
+		if len(parts) < 2 {
+			return "", fmt.Errorf("unexpected repository URL format")
+		}
+		repoName = strings.TrimSuffix(parts[len(parts)-1], ".git")
+	} else {
+		return "", fmt.Errorf("unsupported repository URL format")
+	}
+	return repoName, nil
 }
 
 func CloneRepository(cloneURL, destination string, bare bool) error {

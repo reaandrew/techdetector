@@ -12,23 +12,16 @@ import (
 	"github.com/reaandrew/techdetector/core"
 )
 
-// parseCutoffDate parses the cutoff date string into a Unix timestamp.
-// If the dateStr is empty, it returns -1 to indicate no cutoff.
-func parseCutoffDate(dateStr string) (int64, error) {
-	if dateStr == "" {
-		return -1, nil
-	}
-
-	parsedTime, err := dateparser.Parse(nil, dateStr)
-	if err != nil {
-		return 0, fmt.Errorf("could not parse date string '%s': %w", dateStr, err)
-	}
-
-	return parsedTime.Time.Unix(), nil
+// GitMetrics defines the behavior for collecting Git metrics.
+type GitMetrics interface {
+	CollectGitMetrics(repoPath, repoName, cutoffDate string) ([]core.Finding, error)
 }
 
+// GitMetricsClient is the default implementation of GitMetrics.
+type GitMetricsClient struct{}
+
 // CollectGitMetrics collects various Git metrics from the repository.
-func CollectGitMetrics(repoPath, repoName string, cutoffDate string) ([]core.Finding, error) {
+func (g GitMetricsClient) CollectGitMetrics(repoPath, repoName, cutoffDate string) ([]core.Finding, error) {
 	var findings []core.Finding
 
 	repo, err := git.PlainOpen(repoPath)
@@ -60,6 +53,23 @@ func CollectGitMetrics(repoPath, repoName string, cutoffDate string) ([]core.Fin
 	findings = append(findings, commitFindings...)
 
 	return findings, nil
+}
+
+// --- Private Helper Functions ---
+
+// parseCutoffDate parses the cutoff date string into a Unix timestamp.
+// If the dateStr is empty, it returns -1 to indicate no cutoff.
+func parseCutoffDate(dateStr string) (int64, error) {
+	if dateStr == "" {
+		return -1, nil
+	}
+
+	parsedTime, err := dateparser.Parse(nil, dateStr)
+	if err != nil {
+		return 0, fmt.Errorf("could not parse date string '%s': %w", dateStr, err)
+	}
+
+	return parsedTime.Time.Unix(), nil
 }
 
 // getBranchMetrics retrieves metrics related to branches in the repository.
@@ -94,7 +104,6 @@ func getBranchMetrics(repo *git.Repository, repoName string, cutoffTimestamp int
 		}
 		return nil
 	})
-
 	if err != nil {
 		return nil, err
 	}
@@ -173,7 +182,6 @@ func getTagMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64)
 		}
 
 		averageTagTime := totalTime / time.Duration(len(tagDates)-1)
-
 		findings = append(findings, core.Finding{
 			Name:     "Average Time Between Tags",
 			Type:     "git_metric",
@@ -199,7 +207,6 @@ func getTagMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64)
 }
 
 // getCommitMetrics retrieves metrics related to commits in the repository.
-// It ensures that each commit is counted only once, regardless of how many references include it.
 func getCommitMetrics(repo *git.Repository, repoName string, cutoffTimestamp int64) ([]core.Finding, error) {
 	var findings []core.Finding
 
@@ -222,14 +229,12 @@ func getCommitMetrics(repo *git.Repository, repoName string, cutoffTimestamp int
 	err = commitIter.ForEach(func(c *object.Commit) error {
 		commitHash := c.Hash.String()
 		if _, exists := processedCommits[commitHash]; exists {
-			// Commit already processed; skip to avoid duplication
+			// Already processed; skip duplicate commit.
 			return nil
 		}
-		// Mark commit as processed
 		processedCommits[commitHash] = struct{}{}
 
 		commitDate := c.Committer.When
-
 		if cutoffTimestamp != -1 && commitDate.Unix() < cutoffTimestamp {
 			return nil
 		}
@@ -254,7 +259,6 @@ func getCommitMetrics(repo *git.Repository, repoName string, cutoffTimestamp int
 		totalCommits++
 		return nil
 	})
-
 	if err != nil {
 		return nil, fmt.Errorf("error processing commits: %w", err)
 	}
@@ -366,22 +370,19 @@ func getCommitMetrics(repo *git.Repository, repoName string, cutoffTimestamp int
 	return findings, nil
 }
 
-// calculateMaxAndAvg calculates the maximum and average values from a map of counts.
-func calculateMaxAndAvg(commitStats map[string]int) (int, float64) {
-	var maxCommits int
-	var totalCommits int
-
-	for _, count := range commitStats {
-		totalCommits += count
-		if count > maxCommits {
-			maxCommits = count
+// calculateMaxAndAvg calculates the maximum and average counts from a map.
+func calculateMaxAndAvg(counts map[string]int) (int, float64) {
+	var max int
+	var total int
+	for _, count := range counts {
+		total += count
+		if count > max {
+			max = count
 		}
 	}
-
-	avgCommits := 0.0
-	if len(commitStats) > 0 {
-		avgCommits = float64(totalCommits) / float64(len(commitStats))
+	avg := 0.0
+	if len(counts) > 0 {
+		avg = float64(total) / float64(len(counts))
 	}
-
-	return maxCommits, avgCommits
+	return max, avg
 }

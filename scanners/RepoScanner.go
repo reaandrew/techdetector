@@ -10,9 +10,10 @@ import (
 
 type RepoScanner struct {
 	reporter        core.Reporter
-	fileScanner     FileScanner
+	fileScanner     FsFileScanner
 	matchRepository core.FindingRepository
 	Cutoff          string
+	GitMetrics      utils.GitMetrics
 }
 
 func NewRepoScanner(
@@ -22,7 +23,7 @@ func NewRepoScanner(
 	cutoff string) *RepoScanner {
 	return &RepoScanner{
 		reporter:        reporter,
-		fileScanner:     FileScanner{processors: processors},
+		fileScanner:     FsFileScanner{Processors: processors},
 		matchRepository: matchRepository,
 		Cutoff:          cutoff,
 	}
@@ -56,7 +57,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 
 	log.Println("Fetching Git Metrics")
 	// Collect Git metrics
-	gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName, repoScanner.Cutoff)
+	gitFindings, err := repoScanner.GitMetrics.CollectGitMetrics(bareRepoPath, repoName, repoScanner.Cutoff)
 	if err != nil {
 		log.Fatalf("Error collecting Git metrics for '%s': %v", repoName, err)
 	}

@@ -10,7 +10,7 @@ import (
 // DirectoryScanner struct
 type DirectoryScanner struct {
 	reporter        core.Reporter
-	fileScanner     FileScanner
+	fileScanner     FsFileScanner
 	matchRepository core.FindingRepository
 }
 
@@ -21,7 +21,7 @@ func NewDirectoryScanner(
 	matchRepository core.FindingRepository) *DirectoryScanner {
 	return &DirectoryScanner{
 		reporter:        reporter,
-		fileScanner:     FileScanner{processors: processors},
+		fileScanner:     FsFileScanner{Processors: processors},
 		matchRepository: matchRepository,
 	}
 }

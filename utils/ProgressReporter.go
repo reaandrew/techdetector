@@ -11,6 +11,8 @@ type ProgressReporter interface {
 	SetTotal(total int)
 	// Increment increases the progress by one.
 	Increment()
+
+	Finish()
 }
 
 // BarProgressReporter is a concrete implementation using progressbar.
@@ -55,4 +57,8 @@ func (p *BarProgressReporter) SetTotal(total int) {
 // Increment increases the progress bar by one.
 func (p *BarProgressReporter) Increment() {
 	_ = p.bar.Add(1)
+}
+
+func (p *BarProgressReporter) Finish() {
+	_ = p.bar.Finish()
 }

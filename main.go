@@ -19,7 +19,7 @@ var Version string
 
 func setupLogging() {
 	// Create or open the error log file
-	logFile, err := os.OpenFile("techdetector_error.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	logFile, err := os.OpenFile("techdetector.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
 		fmt.Println("Failed to open error log file:", err)
 		return
@@ -29,7 +29,7 @@ func setupLogging() {
 	log.SetOutput(logFile)
 
 	// Set log level to capture errors and above (i.e., error, fatal, panic)
-	log.SetLevel(log.ErrorLevel)
+	log.SetLevel(log.InfoLevel)
 
 	// Format log output (optional)
 	log.SetFormatter(&log.TextFormatter{
