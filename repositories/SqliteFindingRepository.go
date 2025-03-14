@@ -4,212 +4,116 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+	"strings"
+	"sync"
+	"time"
+
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/reaandrew/techdetector/core"
 	log "github.com/sirupsen/logrus"
 	"os"
-	"strings"
 )
 
 // SqliteFindingRepository implements core.FindingRepository using SQLite
 type SqliteFindingRepository struct {
-	db *sql.DB
+	db   *sql.DB
+	mu   sync.Mutex // For thread-safety
+	stmt *sql.Stmt  // Cached prepared statement
 }
 
 // NewSqliteFindingRepository creates a new SQLite-backed repository.
-// dbPath is the filename/path for your SQLite database (e.g. "findings.db").
 func NewSqliteFindingRepository(dbPath string) (core.FindingRepository, error) {
-
+	log.Debugf("Initializing SQLite repository at path: %s", dbPath)
 	db, err := InitializeSQLiteDB(dbPath)
 	if err != nil {
+		log.Errorf("Failed to initialize SQLite DB: %v", err)
 		return nil, err
 	}
 
-	return &SqliteFindingRepository{db: db}, nil
+	log.Debug("Preparing INSERT statement for Findings table")
+	stmt, err := db.Prepare(`
+        INSERT INTO Findings (Name, Type, Category, Path, RepoName, Properties)
+        VALUES (?, ?, ?, ?, ?, ?)
+    `)
+	if err != nil {
+		log.Errorf("Failed to prepare INSERT statement: %v", err)
+		db.Close()
+		return nil, fmt.Errorf("failed to prepare statement: %w", err)
+	}
+
+	log.Info("SQLite repository initialized successfully")
+	return &SqliteFindingRepository{
+		db:   db,
+		stmt: stmt,
+	}, nil
 }
 
-// Store saves one array of core.Finding as a single JSON batch (like writing one JSON file).
+// Store saves findings in a thread-safe manner with bulk insert optimization
 func (r *SqliteFindingRepository) Store(matches []core.Finding) error {
-	return InsertMatches(r.db, matches)
-}
+	r.mu.Lock()
+	defer r.mu.Unlock()
 
-// Clear removes all stored batches of findings (like removing all JSON files).
-func (r *SqliteFindingRepository) Clear() error {
-	return nil
-}
-
-// NewIterator creates an iterator that loads each JSON batch (file) one at a time
-func (r *SqliteFindingRepository) NewIterator() core.FindingIterator {
-	return &SqliteFindingIterator{
-		repo:       r,
-		currentID:  0,
-		currentSet: core.FindingSet{Matches: nil},
-	}
-}
-
-// Close closes the underlying SQLite database.
-// Call this when you’re done with the repository (similar to not needing temp files).
-func (r *SqliteFindingRepository) Close() error {
-	return r.db.Close()
-}
-
-// -------------------------
-//     ITERATOR
-// -------------------------
-
-// SqliteFindingIterator iterates over each row (batch) in finding_batches
-type SqliteFindingIterator struct {
-	repo       *SqliteFindingRepository
-	currentID  int             // ID of the last row loaded
-	currentSet core.FindingSet // The “current file’s” data
-}
-
-// HasNext tries to load the next row from the database.
-// If successful, it returns true; if no more rows, returns false.
-func (it *SqliteFindingIterator) HasNext() bool {
-
-	for {
-		// Attempt to load the next row after currentID
-		err := it.loadNextBatch()
-		if err != nil {
-			if err.Error() != "no more batches" {
-				// If it's a parse/read error, log it and keep going
-				log.Printf("Error loading row with ID > %d: %v", it.currentID, err)
-				it.currentID++ // skip this row and try the next
-				continue
-			}
-			// truly no more
-			return false
+	log.Debugf("Storing %d findings", len(matches))
+	const maxRetries = 5
+	for attempt := 0; attempt < maxRetries; attempt++ {
+		err := r.insertMatches(matches)
+		if err == nil {
+			log.Infof("Successfully stored %d findings on attempt %d", len(matches), attempt+1)
+			return nil
 		}
-		// Successfully loaded a batch
-		return true
+		if !isRetryableError(err) {
+			log.Errorf("Non-retryable error storing findings: %v", err)
+			return err
+		}
+		// Exponential backoff
+		delay := time.Millisecond * 100 * time.Duration(attempt+1)
+		log.Warnf("Retry %d/%d for SQLite insert after %v delay due to: %v", attempt+1, maxRetries, delay, err)
+		time.Sleep(delay)
 	}
+	err := fmt.Errorf("failed to store %d matches after %d retries", len(matches), maxRetries)
+	log.Errorf("%v", err)
+	return err
 }
 
-// Next returns the last successfully loaded core.FindingSet
-func (it *SqliteFindingIterator) Next() (core.FindingSet, error) {
-	if it.currentSet.Matches == nil {
-		return core.FindingSet{}, fmt.Errorf("no more matchSet available")
-	}
-	return it.currentSet, nil
-}
-
-// Reset starts iteration over from the beginning
-func (it *SqliteFindingIterator) Reset() error {
-	it.currentID = 0
-	it.currentSet = core.FindingSet{}
-	return nil
-}
-
-// loadNextBatch finds the row where id > it.currentID, in ascending order, and loads it into it.currentSet
-func (it *SqliteFindingIterator) loadNextBatch() error {
-	// Query the very next row (lowest id bigger than currentID)
-	row := it.repo.db.QueryRow(`
-		SELECT id, json_data 
-		FROM finding_batches 
-		WHERE id > ? 
-		ORDER BY id ASC 
-		LIMIT 1
-	`, it.currentID)
-
-	var id int
-	var jsonData string
-	if err := row.Scan(&id, &jsonData); err != nil {
-		return fmt.Errorf("no more batches")
-	}
-
-	// Try to parse the JSON array into []core.Finding
-	var matches []core.Finding
-	if err := json.Unmarshal([]byte(jsonData), &matches); err != nil {
-		return fmt.Errorf("failed to parse JSON for row %d: %w", id, err)
-	}
-
-	it.currentID = id
-	it.currentSet = core.FindingSet{Matches: matches}
-	return nil
-}
-
-// PredefinedFieldsSlice contains the fields that always go in the findings table
-var PredefinedFieldsSlice = []string{"Name", "Type", "Category", "Path", "RepoName"}
-
-// InitializeSQLiteDB opens (or creates) the SQLite DB, applies a schema for findings,
-// and optionally turns on performance PRAGMAs for faster bulk inserts.
-func InitializeSQLiteDB(dbPath string) (*sql.DB, error) {
-
-	DeleteDatabaseFileIfExists(dbPath)
-
-	db, err := sql.Open("sqlite3", dbPath)
+// insertMatches performs the actual insertion within a transaction
+func (r *SqliteFindingRepository) insertMatches(matches []core.Finding) (err error) {
+	log.Debug("Beginning transaction for inserting matches")
+	tx, err := r.db.Begin()
 	if err != nil {
-		return nil, fmt.Errorf("failed to open SQLite database: %w", err)
-	}
-
-	// ------------------------------------------------------------------
-	// Optional performance tweaks, if you’re loading data one-shot:
-	// WAL mode is typically faster for concurrent writes:
-	_, _ = db.Exec("PRAGMA journal_mode = WAL;")
-	// Reduces fsync calls for better performance, but if the system crashes,
-	// you may lose the last few transactions:
-	_, _ = db.Exec("PRAGMA synchronous = OFF;")
-	// ------------------------------------------------------------------
-
-	createStmt := `CREATE TABLE IF NOT EXISTS Findings (
-		id INTEGER PRIMARY KEY AUTOINCREMENT,
-		Name TEXT,
-		Type TEXT,
-		Category TEXT,
-		Path TEXT,
-		RepoName TEXT,
-		Properties TEXT
-	);`
-
-	if _, err := db.Exec(createStmt); err != nil {
-		return nil, fmt.Errorf("failed to create findings table: %w", err)
-	}
-
-	return db, nil
-}
-
-func InsertMatches(db *sql.DB, matches []core.Finding) (err error) {
-	// Begin a single transaction for all inserts
-	tx, err := db.Begin()
-	if err != nil {
+		log.Errorf("Failed to begin transaction: %v", err)
 		return fmt.Errorf("failed to begin transaction: %w", err)
 	}
-	// Ensure we rollback if anything fails or panics
 	defer func() {
 		if p := recover(); p != nil {
-			_ = tx.Rollback()
+			log.Errorf("Panic during transaction: %v", p)
+			tx.Rollback()
 			panic(p)
 		} else if err != nil {
-			_ = tx.Rollback()
+			log.Warnf("Rolling back transaction due to error: %v", err)
+			tx.Rollback()
 		} else {
-			_ = tx.Commit()
+			err = tx.Commit()
+			if err != nil {
+				log.Errorf("Failed to commit transaction: %v", err)
+			} else {
+				log.Debug("Transaction committed successfully")
+			}
 		}
 	}()
 
-	// Prepare an INSERT statement once, rather than building a string each time
-	stmt, err := tx.Prepare(`
-		INSERT INTO Findings (Name, Type, Category, Path, RepoName, Properties)
-		VALUES (?, ?, ?, ?, ?, ?)
-	`)
-	if err != nil {
-		return fmt.Errorf("failed to prepare insert statement: %w", err)
-	}
+	// Use the cached prepared statement
+	stmt := tx.Stmt(r.stmt)
 	defer stmt.Close()
 
-	// Walk through all findings from the repository
-
-	for _, finding := range matches {
-		flattenedProps := flattenProperties(finding.Properties)
-		finding.Properties = flattenedProps
-
-		jsonProps, jErr := json.Marshal(finding.Properties)
-		if jErr != nil {
-			log.Printf("Failed to marshal properties for finding '%s': %v", finding.Name, jErr)
+	for i, finding := range matches {
+		log.Debugf("Processing finding %d: %s (Repo: %s)", i+1, finding.Name, finding.RepoName)
+		jsonProps, err := json.Marshal(flattenProperties(finding.Properties))
+		if err != nil {
+			log.Warnf("Failed to marshal properties for finding '%s': %v, using empty object", finding.Name, err)
 			jsonProps = []byte("{}")
 		}
 
-		_, execErr := stmt.Exec(
+		_, err = stmt.Exec(
 			finding.Name,
 			finding.Type,
 			finding.Category,
@@ -217,42 +121,195 @@ func InsertMatches(db *sql.DB, matches []core.Finding) (err error) {
 			finding.RepoName,
 			string(jsonProps),
 		)
-		if execErr != nil {
-			return fmt.Errorf("failed to insert finding '%s': %w", finding.Name, execErr)
+		if err != nil {
+			log.Errorf("Failed to insert finding '%s' at index %d: %v", finding.Name, i, err)
+			return fmt.Errorf("failed to insert finding '%s': %w", finding.Name, err)
 		}
 	}
-
+	log.Debugf("Inserted %d findings into transaction", len(matches))
 	return nil
 }
 
-// flattenProperties takes a potentially nested properties map, flattens or JSON-encodes
-// the nested bits, and returns a top-level map of only strings and scalars.
+// Clear removes all findings
+func (r *SqliteFindingRepository) Clear() error {
+	r.mu.Lock()
+	defer r.mu.Unlock()
+
+	log.Info("Clearing all findings from Findings table")
+	result, err := r.db.Exec("DELETE FROM Findings")
+	if err != nil {
+		log.Errorf("Failed to clear findings: %v", err)
+		return err
+	}
+	rows, _ := result.RowsAffected()
+	log.Infof("Cleared %d rows from Findings table", rows)
+	return nil
+}
+
+// NewIterator creates an iterator over findings
+func (r *SqliteFindingRepository) NewIterator() core.FindingIterator {
+	log.Debug("Creating new iterator for findings")
+	return &SqliteFindingIterator{repo: r}
+}
+
+// Close cleans up resources
+func (r *SqliteFindingRepository) Close() error {
+	r.mu.Lock()
+	defer r.mu.Unlock()
+
+	log.Info("Closing SQLite repository")
+	if r.stmt != nil {
+		if err := r.stmt.Close(); err != nil {
+			log.Errorf("Failed to close prepared statement: %v", err)
+		} else {
+			log.Debug("Prepared statement closed")
+		}
+	}
+	if err := r.db.Close(); err != nil {
+		log.Errorf("Failed to close database: %v", err)
+		return err
+	}
+	log.Info("Database closed successfully")
+	return nil
+}
+
+// SqliteFindingIterator iterates over findings
+type SqliteFindingIterator struct {
+	repo    *SqliteFindingRepository
+	rows    *sql.Rows
+	current core.FindingSet
+}
+
+// HasNext checks if there are more findings
+func (it *SqliteFindingIterator) HasNext() bool {
+	if it.rows == nil {
+		log.Debug("Querying findings for iterator")
+		rows, err := it.repo.db.Query("SELECT Name, Type, Category, Path, RepoName, Properties FROM Findings")
+		if err != nil {
+			log.Errorf("Failed to query findings for iterator: %v", err)
+			return false
+		}
+		it.rows = rows
+	}
+
+	if !it.rows.Next() {
+		log.Debug("No more findings to iterate")
+		if err := it.rows.Close(); err != nil {
+			log.Errorf("Failed to close rows: %v", err)
+		}
+		it.rows = nil
+		return false
+	}
+
+	var f core.Finding
+	var props string
+	err := it.rows.Scan(&f.Name, &f.Type, &f.Category, &f.Path, &f.RepoName, &props)
+	if err != nil {
+		log.Errorf("Failed to scan finding: %v", err)
+		return false
+	}
+	log.Debugf("Scanned finding: %s (Repo: %s)", f.Name, f.RepoName)
+	if err := json.Unmarshal([]byte(props), &f.Properties); err != nil {
+		log.Errorf("Failed to unmarshal properties for finding '%s': %v", f.Name, err)
+	}
+	it.current = core.FindingSet{Matches: []core.Finding{f}}
+	return true
+}
+
+// Next returns the current finding set
+func (it *SqliteFindingIterator) Next() (core.FindingSet, error) {
+	if it.current.Matches == nil {
+		log.Warn("No more findings available in iterator")
+		return core.FindingSet{}, fmt.Errorf("no more findings available")
+	}
+	log.Debugf("Returning finding set with %d matches", len(it.current.Matches))
+	return it.current, nil
+}
+
+// Reset restarts the iteration
+func (it *SqliteFindingIterator) Reset() error {
+	log.Debug("Resetting iterator")
+	if it.rows != nil {
+		if err := it.rows.Close(); err != nil {
+			log.Errorf("Failed to close rows during reset: %v", err)
+		}
+	}
+	it.rows = nil
+	it.current = core.FindingSet{}
+	return nil
+}
+
+// PredefinedFieldsSlice contains standard fields
+var PredefinedFieldsSlice = []string{"Name", "Type", "Category", "Path", "RepoName"}
+
+// InitializeSQLiteDB sets up the SQLite database
+func InitializeSQLiteDB(dbPath string) (*sql.DB, error) {
+	log.Infof("Setting up SQLite database at %s", dbPath)
+	if err := DeleteDatabaseFileIfExists(dbPath); err != nil {
+		log.Errorf("Failed to delete existing database file: %v", err)
+		return nil, err
+	}
+
+	log.Debug("Opening SQLite database")
+	db, err := sql.Open("sqlite3", dbPath)
+	if err != nil {
+		log.Errorf("Failed to open SQLite database: %v", err)
+		return nil, fmt.Errorf("failed to open SQLite database: %w", err)
+	}
+
+	log.Debug("Applying performance optimizations")
+	_, _ = db.Exec("PRAGMA journal_mode = WAL;")
+	_, _ = db.Exec("PRAGMA synchronous = NORMAL;")
+	_, _ = db.Exec("PRAGMA cache_size = -20000;")
+
+	createStmt := `
+        CREATE TABLE IF NOT EXISTS Findings (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            Name TEXT,
+            Type TEXT,
+            Category TEXT,
+            Path TEXT,
+            RepoName TEXT,
+            Properties TEXT
+        );
+        CREATE INDEX IF NOT EXISTS idx_repo ON Findings (RepoName);
+    `
+	log.Debug("Creating Findings table and index")
+	if _, err := db.Exec(createStmt); err != nil {
+		log.Errorf("Failed to create findings table: %v", err)
+		db.Close()
+		return nil, fmt.Errorf("failed to create findings table: %w", err)
+	}
+
+	log.Info("SQLite database initialized successfully")
+	return db, nil
+}
+
+// flattenProperties optimizes property flattening
 func flattenProperties(properties map[string]interface{}) map[string]interface{} {
-	flattened := make(map[string]interface{})
+	log.Debugf("Flattening properties with %d keys", len(properties))
+	flattened := make(map[string]interface{}, len(properties))
 	for key, value := range properties {
 		if isPredefinedField(key) {
-			// If the property key is one of the standard columns, skip flattening
-			// because we store it in a top-level column anyway
 			continue
 		}
-		switch v := value.(type) {
-		case map[string]interface{}:
-			// Nested map => store it as a JSON string in flattened
-			jsonBytes, err := json.Marshal(v)
+		if nested, ok := value.(map[string]interface{}); ok {
+			jsonBytes, err := json.Marshal(nested)
 			if err != nil {
-				log.Printf("Failed to marshal nested map for key '%s': %v", key, err)
+				log.Warnf("Failed to marshal nested map for key '%s': %v", key, err)
 				flattened[key] = nil
 			} else {
 				flattened[key] = string(jsonBytes)
 			}
-		default:
+		} else {
 			flattened[key] = value
 		}
 	}
+	log.Debug("Properties flattened successfully")
 	return flattened
 }
 
-// isPredefinedField checks if the key is in the typical top-level columns.
+// isPredefinedField checks standard fields
 func isPredefinedField(key string) bool {
 	for _, field := range PredefinedFieldsSlice {
 		if strings.EqualFold(key, field) {
@@ -262,27 +319,36 @@ func isPredefinedField(key string) bool {
 	return false
 }
 
+// isRetryableError checks if an error is worth retrying
+func isRetryableError(err error) bool {
+	retryable := err != nil && (strings.Contains(err.Error(), "database is locked") || strings.Contains(err.Error(), "SQLITE_BUSY"))
+	if retryable {
+		log.Debugf("Detected retryable error: %v", err)
+	}
+	return retryable
+}
+
+// DeleteDatabaseFileIfExists removes the database file if it exists
 func DeleteDatabaseFileIfExists(path string) error {
-	// Check if the file exists
+	log.Debugf("Checking if database file exists at %s", path)
 	info, err := os.Stat(path)
 	if os.IsNotExist(err) {
-		// File does not exist; nothing to delete
+		log.Debug("Database file does not exist, no deletion needed")
 		return nil
-	} else if err != nil {
-		// An error occurred while trying to stat the file
-		return fmt.Errorf("failed to check if file exists at path %s: %w", path, err)
 	}
-
-	// Ensure that the path is a file and not a directory
+	if err != nil {
+		log.Errorf("Failed to stat file %s: %v", path, err)
+		return fmt.Errorf("failed to stat file %s: %w", path, err)
+	}
 	if info.IsDir() {
+		log.Errorf("Path %s is a directory, not a file", path)
 		return fmt.Errorf("path %s is a directory, not a file", path)
 	}
-
-	// Attempt to delete the file
-	err = os.Remove(path)
-	if err != nil {
-		return fmt.Errorf("failed to delete database file at path %s: %w", path, err)
+	log.Info("Deleting existing database file")
+	if err = os.Remove(path); err != nil {
+		log.Errorf("Failed to delete database file %s: %v", path, err)
+		return fmt.Errorf("failed to delete database file %s: %w", path, err)
 	}
-
+	log.Debug("Database file deleted successfully")
 	return nil
 }

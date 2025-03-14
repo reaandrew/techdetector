@@ -3,6 +3,8 @@ package scanners_test
 import (
 	"context"
 	"fmt"
+	"github.com/reaandrew/techdetector/repositories"
+	"math/rand"
 	"os"
 	"strconv"
 	"strings"
@@ -22,12 +24,42 @@ func (dr DummyReporter) Report(repo core.FindingRepository) error {
 	return nil
 }
 
+func generateRandomFindings(repoPath, repoName string) []core.Finding {
+	var names = []string{"Hardcoded API Key", "Sensitive File Detected", "Deprecated Function", "Misconfigured ACL", "Exposed Secret"}
+	var types = []string{"Secret", "Misconfiguration", "Deprecated Code", "Vulnerability", "Sensitive Data"}
+	var categories = []string{"Security", "Compliance", "Best Practices", "Performance", "Confidentiality"}
+	var paths = []string{"main.go", "config.yaml", "credentials.json", "server.js", "Dockerfile"}
+
+	rand.Seed(time.Now().UnixNano())
+	numFindings := rand.Intn(1000) + 1 // Generate between 1 and 5 findings
+
+	findings := make([]core.Finding, numFindings)
+
+	for i := range findings {
+		findings[i] = core.Finding{
+			Name:     names[rand.Intn(len(names))],
+			Type:     types[rand.Intn(len(types))],
+			Category: categories[rand.Intn(len(categories))],
+			Properties: map[string]interface{}{
+				"severity":     rand.Intn(5) + 1,     // Random severity from 1-5
+				"confidence":   rand.Float64() * 100, // Confidence score 0-100
+				"description":  "Auto-generated finding",
+				"discoveredAt": time.Now().Format(time.RFC3339),
+			},
+			Path:     paths[rand.Intn(len(paths))],
+			RepoName: repoName,
+		}
+	}
+
+	return findings
+}
+
 // DummyFileScanner implements the FileScanner interface.
 type DummyFileScanner struct{}
 
 func (dfs DummyFileScanner) TraverseAndSearch(repoPath, repoName string) ([]core.Finding, error) {
 	// Immediately return an empty slice (simulate a fast, successful scan)
-	return []core.Finding{}, nil
+	return generateRandomFindings(repoPath, repoName), nil
 }
 
 // DummyFindingRepository is a no-op implementation of core.FindingRepository.
@@ -72,7 +104,7 @@ func (d DummyGitMetrics) CollectGitMetrics(repoPath, repoName, cutoffDate string
 }
 
 func TestQuickScanDeadlock_WithRealProgressBar(t *testing.T) {
-	const numRepos = 10000
+	const numRepos = 1000000
 
 	// Create a slice of dummy repositories.
 	dummyRepos := make([]*github.Repository, numRepos)
@@ -87,13 +119,14 @@ func TestQuickScanDeadlock_WithRealProgressBar(t *testing.T) {
 	dummyReporter := DummyReporter{}
 	// Use a real progress bar implementation.
 	progressBar := utils.NewBarProgressReporter(numRepos, "Scanning Repositories")
-	dummyFindingRepo := &DummyFindingRepository{}
+	//dummyFindingRepo := &DummyFindingRepository{}
+	sqliteRepo, _ := repositories.NewSqliteFindingRepository("/tmp/test.db")
 
 	// Instantiate the scanner directly, supplying all dependencies.
 	scanner := &scanners.GithubOrgScanner{
 		Reporter:         dummyReporter,
 		FileScanner:      DummyFileScanner{},
-		MatchRepository:  dummyFindingRepo,
+		MatchRepository:  sqliteRepo,
 		Cutoff:           "",
 		ProgressReporter: progressBar,
 		GithubClient:     DummyGithubClient{repos: dummyRepos},
