@@ -7,10 +7,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/reaandrew/techdetector/core"
-	"github.com/reaandrew/techdetector/utils"
-
 	_ "github.com/mattn/go-sqlite3" // Import the SQLite driver
+	"github.com/reaandrew/techdetector/core"
 )
 
 const (
@@ -35,27 +33,6 @@ func (j *JsonReporter) setDefaultOutputDir() {
 func (j JsonReporter) Report(repository core.FindingRepository) error {
 	j.setDefaultOutputDir()
 
-	dbPath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, j.SqliteDBFilename)
-	utils.DeleteDatabaseFileIfExists(dbPath)
-	fmt.Printf("dbPath: %v", dbPath)
-	// Initialize SQLite database
-	db, err := utils.InitializeSQLiteDB(dbPath)
-	if err != nil {
-		return fmt.Errorf("failed to initialize SQLite database: %w", err)
-	}
-	defer db.Close()
-
-	// Process findings incrementally and store them in SQLite
-	err = utils.ProcessFindingsIncrementally(db, repository)
-	if err != nil {
-		return fmt.Errorf("failed to process findings: %w", err)
-	}
-
-	// Generate the detailed JSON report
-	if err := j.generateDetailedReport(repository); err != nil {
-		return fmt.Errorf("failed to generate detailed JSON report: %w", err)
-	}
-
 	// Check if Queries.Queries is populated
 	if len(j.Queries.Queries) == 0 {
 		log.Println("Warning: No SQL queries defined for summary report.")
@@ -64,50 +41,10 @@ func (j JsonReporter) Report(repository core.FindingRepository) error {
 	}
 
 	// Generate the summary JSON report
-	if err := j.generateSummaryReport(dbPath); err != nil {
+	if err := j.generateSummaryReport(j.SqliteDBFilename); err != nil {
 		return fmt.Errorf("failed to generate summary JSON report: %w", err)
 	}
 
-	return nil
-}
-
-// generateDetailedReport creates a detailed JSON report of all findings
-func (j JsonReporter) generateDetailedReport(repository core.FindingRepository) error {
-	j.setDefaultOutputDir()
-
-	// Create the full path for the output file
-	outputFilePath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, DefaultJsonReport)
-
-	outputFile, err := os.Create(outputFilePath)
-
-	if err != nil {
-		return fmt.Errorf("failed to create detailed output file: %v", err)
-	}
-	defer outputFile.Close()
-
-	iterator := repository.NewIterator()
-	for iterator.HasNext() {
-		match, err := iterator.Next()
-		if err != nil {
-			return fmt.Errorf("failed to retrieve next finding: %w", err)
-		}
-
-		jsonBytes, err := json.Marshal(match)
-		if err != nil {
-			return fmt.Errorf("failed to marshal finding to JSON: %w", err)
-		}
-
-		_, err = outputFile.Write(jsonBytes)
-		if err != nil {
-			return fmt.Errorf("failed to write to detailed output file: %v", err)
-		}
-		_, err = outputFile.WriteString("\n") // Add newline after each JSON object
-		if err != nil {
-			return fmt.Errorf("failed to write newline to detailed output file: %v", err)
-		}
-	}
-
-	fmt.Printf("Detailed JSON report generated successfully: %s\n", outputFile.Name())
 	return nil
 }
 

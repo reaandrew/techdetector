@@ -15,6 +15,10 @@ type FileBasedFindingRepository struct {
 	files []string
 }
 
+func (r *FileBasedFindingRepository) Close() error {
+	return nil
+}
+
 func NewFileBasedMatchRepository() core.FindingRepository {
 	return &FileBasedFindingRepository{
 		path:  os.TempDir(),

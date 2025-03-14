@@ -7,10 +7,12 @@ import (
 	"github.com/reaandrew/techdetector/reporters"
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/scanners"
+	"github.com/reaandrew/techdetector/utils"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 	"log"
 	"os"
+	"strings"
 )
 
 const SQLiteDBFilename = "findings.db"
@@ -41,99 +43,135 @@ func (cli *Cli) Execute() error {
 	return err
 }
 
+func sanitizeForDB(name string) string {
+	s := name
+	// Example: remove protocols
+	s = strings.ReplaceAll(s, "https://", "")
+	s = strings.ReplaceAll(s, "http://", "")
+	// Replace slashes, colons, etc. with underscores
+	s = strings.ReplaceAll(s, "/", "_")
+	s = strings.ReplaceAll(s, ":", "_")
+	// Optionally lower-case everything
+	s = strings.ToLower(s)
+	return s
+}
+
 // createScanCommand creates the 'scan' subcommand with its flags and subcommands
 func (cli *Cli) createScanCommand() *cobra.Command {
-
 	scanCmd := &cobra.Command{
 		Use:     "scan",
 		Short:   "Scan repositories or organizations for technologies.",
 		Version: Version,
 	}
 
-	// Add the --report flag to the scan command
-	scanCmd.PersistentFlags().StringVar(&cli.reportFormat, "report", "xlsx", "Type format (supported: xlsx)")
-	scanCmd.PersistentFlags().StringVar(&cli.baseUrl, "baseurl", "xlsx", "Http report base url")
-	scanCmd.PersistentFlags().StringVar(&cli.queriesPath, "queries-path", "", "Queries path")
+	scanCmd.PersistentFlags().StringVar(&cli.reportFormat, "report", "xlsx", "Type format (supported: xlsx, json, http)")
+	scanCmd.PersistentFlags().StringVar(&cli.baseUrl, "baseurl", "", "Http report base url (used only if --report=http)")
+	scanCmd.PersistentFlags().StringVar(&cli.queriesPath, "queries-path", "", "Queries path (YAML file)")
 	scanCmd.PersistentFlags().BoolVar(&cli.dumpSchema, "dump-schema", false, "Dump SQLite schema to a text file")
-	scanCmd.PersistentFlags().StringVar(&cli.prefix, "prefix", "techdetector", "A prefix for the output artifacts")
-	scanCmd.PersistentFlags().StringVar(&cli.cutoff, "date-cutoff", "", "A date cutoff to process git repos in")
+	//scanCmd.PersistentFlags().StringVar(&cli.prefix, "prefix", "techdetector", "A prefix for the output artifacts")
+	scanCmd.PersistentFlags().StringVar(&cli.cutoff, "date-cutoff", "", "A date cutoff (e.g. 2021-01-01) to process git repos in")
 
 	if err := scanCmd.MarkPersistentFlagRequired("queries-path"); err != nil {
 		fmt.Printf("Error making queries-path flag required: %v\n", err)
 		os.Exit(1)
 	}
 
+	//----------------------------------------------------------------------
+	// Subcommand: repo <REPO_URL>
+	//----------------------------------------------------------------------
 	scanRepoCmd := &cobra.Command{
 		Use:   "repo <REPO_URL>",
 		Short: "Scan a single Git repository for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			err, queries := cli.loadQueries()
-			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
-			repository := repositories.NewFileBasedMatchRepository()
-			defer func(repository core.FindingRepository) {
-				err := repository.Clear()
-				if err != nil {
-					log.Fatalf("Error when clearing down Match repository %v", err)
-				}
-			}(repository)
-			scanner := scanners.NewRepoScanner(
-				reporter,
-				processors.InitializeProcessors(),
-				repository,
-				cli.cutoff)
+
+			// 1) Sanitize the repo URL for a DB filename
 			repoURL := args[0]
+			dbFile := sanitizeForDB(repoURL) + "_findings.db"
+			utils.InitializeSQLiteDB(dbFile)
+
+			reporter, err := cli.createReporter(cli.reportFormat, queries, dbFile)
+			if err != nil {
+				log.Fatal(err)
+			}
+
+			// 2) Create SQLite repository
+			repository, err := repositories.NewSqliteFindingRepository(dbFile)
+			if err != nil {
+				log.Fatalf("Failed to create SQLite repository for %s: %v", repoURL, err)
+			}
+			defer func() {
+				_ = repository.Close()
+			}()
+
+			// 3) Create and run the scanner
+			scanner := scanners.NewRepoScanner(reporter, processors.InitializeProcessors(), repository, cli.cutoff)
 			scanner.Scan(repoURL, cli.reportFormat)
 		},
 	}
+
+	//----------------------------------------------------------------------
+	// Subcommand: github_org <ORG_NAME>
+	//----------------------------------------------------------------------
 	scanOrgCmd := &cobra.Command{
 		Use:   "github_org <ORG_NAME>",
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			err, queries := cli.loadQueries()
-			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
-			repository := repositories.NewFileBasedMatchRepository()
-			defer func(repository core.FindingRepository) {
-				err := repository.Clear()
-				if err != nil {
-					log.Fatalf("Error when clearing down Match repository %v", err)
-				}
-			}(repository)
-			scanner := scanners.NewGithubOrgScanner(
-				reporter,
-				processors.InitializeProcessors(),
-				repository,
-				cli.cutoff)
 			orgName := args[0]
+			cli.prefix = "td_" + sanitizeForDB(orgName)
+
+			// 1) Sanitize the GH org name
+
+			dbFile := cli.prefix + "_findings.db"
+
+			reporter, err := cli.createReporter(cli.reportFormat, queries, dbFile)
+			if err != nil {
+				log.Fatal(err)
+			}
+
+			// 2) Create SQLite repository
+			repository, err := repositories.NewSqliteFindingRepository(dbFile)
+			if err != nil {
+				log.Fatalf("Failed to create SQLite repository for org %s: %v", orgName, err)
+			}
+			defer func() {
+				_ = repository.Close()
+			}()
+
+			// 3) Create and run the scanner
+			scanner := scanners.NewGithubOrgScanner(reporter, processors.InitializeProcessors(), repository, cli.cutoff)
 			scanner.Scan(orgName, cli.reportFormat)
 		},
 	}
+
+	//----------------------------------------------------------------------
+	// Subcommand: dir [DIRECTORY]
+	//----------------------------------------------------------------------
 	scanDirCmd := &cobra.Command{
 		Use:   "dir [DIRECTORY]",
 		Short: "Scan all top-level directories in the specified directory (defaults to CWD) for technologies.",
-		Args:  cobra.MaximumNArgs(1), // Accepts zero or one argument
+		Args:  cobra.MaximumNArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			var directory string
 			if len(args) == 0 {
-				// No directory provided; use current working directory
 				cwd, err := os.Getwd()
 				if err != nil {
 					log.Fatalf("Failed to get current working directory: %v", err)
 				}
 				directory = cwd
 			} else {
-				// Directory provided as argument
 				directory = args[0]
 			}
 
-			// Check if the provided directory exists and is a directory
 			info, err := os.Stat(directory)
 			if err != nil {
 				log.Fatalf("Error accessing directory '%s': %v", directory, err)
@@ -143,26 +181,29 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			}
 
 			err, queries := cli.loadQueries()
-			reporter, err := cli.createReporter(cli.reportFormat, queries)
 			if err != nil {
 				log.Fatal(err)
 			}
 
-			repository := repositories.NewFileBasedMatchRepository()
-			defer func(repository core.FindingRepository) {
-				err := repository.Clear()
-				if err != nil {
-					log.Fatalf("Error when clearing down Match repository %v", err)
-				}
-			}(repository)
+			// 1) Sanitize directory name for a DB filename
+			dbFile := sanitizeForDB(directory) + "_findings.db"
 
-			// Create a new DirectoryScanner with the dynamic reporter
-			directoryScanner := scanners.NewDirectoryScanner(
-				reporter,
-				processors.InitializeProcessors(),
-				repository)
+			reporter, err := cli.createReporter(cli.reportFormat, queries, dbFile)
+			if err != nil {
+				log.Fatal(err)
+			}
 
-			// Execute the scan
+			// 2) Create SQLite repository
+			repository, err := repositories.NewSqliteFindingRepository(dbFile)
+			if err != nil {
+				log.Fatalf("Failed to create SQLite repository for directory %s: %v", directory, err)
+			}
+			defer func() {
+				_ = repository.Close()
+			}()
+
+			// 3) Create and run the scanner
+			directoryScanner := scanners.NewDirectoryScanner(reporter, processors.InitializeProcessors(), repository)
 			directoryScanner.Scan(directory, cli.reportFormat)
 		},
 	}
@@ -203,20 +244,20 @@ func (cli *Cli) loadSqlQueries(filename string) (core.SqlQueries, error) {
 	return sqlQueries, nil
 }
 
-func (cli *Cli) createReporter(reportFormat string, queries core.SqlQueries) (core.Reporter, error) {
+func (cli *Cli) createReporter(reportFormat string, queries core.SqlQueries, dbFilename string) (core.Reporter, error) {
 	if reportFormat == "xlsx" {
 		return reporters.XlsxReporter{
 			Queries:          queries,
 			DumpSchema:       cli.dumpSchema,
 			ArtifactPrefix:   cli.prefix,
-			SqliteDBFilename: SQLiteDBFilename,
+			SqliteDBFilename: dbFilename,
 		}, nil
 	}
 	if reportFormat == "json" {
 		return reporters.JsonReporter{
 			Queries:          queries,
 			ArtifactPrefix:   cli.prefix,
-			SqliteDBFilename: SQLiteDBFilename,
+			SqliteDBFilename: dbFilename,
 		}, nil
 	}
 	if reportFormat == "http" {

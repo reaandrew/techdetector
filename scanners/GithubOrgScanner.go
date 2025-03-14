@@ -78,35 +78,32 @@ func (githubOrgScanner GithubOrgScanner) Scan(orgName string, reportFormat strin
 	wg.Wait()
 	close(results)
 
+	// Errors are now handled and logged in the worker; the main loop just reports them.
 	for res := range results {
 		if res.Error != nil {
 			log.Printf("Error processing repository '%s': %v", res.RepoName, res.Error)
-			continue
-		}
-		err := githubOrgScanner.matchRepository.Store(res.Matches)
-		if err != nil {
-			log.Fatalf("Error storing matches in '%s': %v", res.RepoName, err)
 		}
 	}
 
-	// Generate report
+	log.Println("Finished scanning repositories.")
+	log.Println("Generating report...")
+	// Generate report using the stored matches.
 	err = githubOrgScanner.reporter.Report(githubOrgScanner.matchRepository)
 	if err != nil {
 		log.Fatalf("Error generating report: %v", err)
 	}
 }
 
-// worker processes repositories from the jobs channel and sends results to the results channel.
+// worker processes repositories from the jobs channel, stores matches immediately, and sends results to the results channel.
 func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, results chan<- RepoResult, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for job := range jobs {
 		repo := job.Repo
 		repoName := repo.GetFullName()
-		fmt.Printf("Worker: Cloning repository %s\n", repoName)
+		fmt.Printf("Worker %d: Cloning repository %s\n", id, repoName)
 
 		repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
 		err := utils.CloneRepository(repo.GetCloneURL(), repoPath, false)
-
 		if err != nil {
 			results <- RepoResult{
 				Matches:  nil,
@@ -126,27 +123,53 @@ func (githubOrgScanner GithubOrgScanner) worker(id int, jobs <-chan RepoJob, res
 			continue
 		}
 
-		// Perform bare clone to extract metadata
+		// Perform bare clone to extract metadata.
 		bareRepoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName)+"_bare")
 		err = utils.CloneRepository(repo.GetCloneURL(), bareRepoPath, true)
 		if err != nil {
-			log.Fatalf("Failed to perform bare clone for '%s': %v", repoName, err)
+			results <- RepoResult{
+				Matches:  nil,
+				Error:    fmt.Errorf("failed to perform bare clone for '%s': %w", repoName, err),
+				RepoName: repoName,
+			}
+			continue
 		}
 
-		// Collect Git metrics
+		// Collect Git metrics.
 		gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName, githubOrgScanner.Cutoff)
 		if err != nil {
-			log.Fatalf("Error collecting Git metrics for '%s': %v", repoName, err)
+			results <- RepoResult{
+				Matches:  nil,
+				Error:    fmt.Errorf("error collecting Git metrics for '%s': %w", repoName, err),
+				RepoName: repoName,
+			}
+			continue
 		}
-
-		fmt.Printf("Git Metrics: %+v\n", gitFindings)
-
+		fmt.Printf("Git Metrics for %s: %+v\n", repoName, gitFindings)
 		Matches = append(Matches, gitFindings...)
+
+		// Store matches immediately after scanning the repository.
+		err = githubOrgScanner.matchRepository.Store(Matches)
+		if err != nil {
+			results <- RepoResult{
+				Matches:  Matches,
+				Error:    fmt.Errorf("error storing matches for '%s': %w", repoName, err),
+				RepoName: repoName,
+			}
+			continue
+		}
 
 		results <- RepoResult{
 			Matches:  Matches,
 			Error:    nil,
 			RepoName: repoName,
+		}
+
+		if removeErr := os.RemoveAll(repoPath); removeErr != nil {
+			log.Printf("warning: failed to remove %q: %v", repoPath, removeErr)
+		}
+		if removeErr := os.RemoveAll(bareRepoPath); removeErr != nil {
+			log.Printf("warning: failed to remove %q: %v", bareRepoPath, removeErr)
 		}
 	}
 }

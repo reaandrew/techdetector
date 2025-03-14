@@ -60,6 +60,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 		}()
 	}
 
+	// Walk through directory and send files to the worker channel
 	go func() {
 		_ = filepath.WalkDir(targetDir, func(path string, d fs.DirEntry, err error) error {
 			if err != nil {
@@ -74,6 +75,7 @@ func (fileScanner FileScanner) TraverseAndSearch(targetDir string, repoName stri
 		close(files)
 	}()
 
+	// Collect results
 	go func() {
 		wg.Wait()
 		close(fileMatches)
