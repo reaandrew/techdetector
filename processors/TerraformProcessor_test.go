@@ -141,13 +141,13 @@ resource "aws_security_group_rule" "incoming_dns_udp" {
 	parser := hclparse.NewParser()
 	file, diags := parser.ParseHCL([]byte(data), "config.tf")
 	if diags.HasErrors() {
-		fmt.Println("Failed to parse HCL:", diags)
+		log.Println("Failed to parse HCL:", diags)
 		os.Exit(1)
 	}
 
 	body, ok := file.Body.(*hclsyntax.Body)
 	if !ok {
-		fmt.Println("Failed to cast body to hclsyntax.Body")
+		log.Println("Failed to cast body to hclsyntax.Body")
 		os.Exit(1)
 	}
 
@@ -157,7 +157,7 @@ resource "aws_security_group_rule" "incoming_dns_udp" {
 		PrintBlock(block, 0)
 	}
 
-	fmt.Println("FINISHED")
+	log.Println("FINISHED")
 }
 
 func PrintBlock(block *TerraformBlock, indent int) {

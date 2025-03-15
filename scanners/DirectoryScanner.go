@@ -1,7 +1,6 @@
 package scanners
 
 import (
-	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	log "github.com/sirupsen/logrus"
 	"path/filepath"
@@ -48,5 +47,5 @@ func (ds *DirectoryScanner) Scan(directory string, reportFormat string) {
 		log.Fatalf("Error generating report: %v", err)
 	}
 
-	fmt.Println("Scan completed successfully.")
+	log.Println("Scan completed successfully.")
 }

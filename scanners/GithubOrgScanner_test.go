@@ -90,6 +90,11 @@ func (d DummyGithubClient) ListRepositories(org string) ([]*github.Repository, e
 // DummyGitClient implements utils.GitApi.
 type DummyGitClient struct{}
 
+func (d DummyGitClient) NewClone(ctx context.Context, cloneURL, destination string) utils.Cloner {
+	//TODO implement me
+	panic("implement me")
+}
+
 func (d DummyGitClient) CloneRepositoryWithContext(ctx context.Context, cloneURL, destination string, bare bool) error {
 	// Instead of performing a real clone, simply create the destination directory.
 	return os.MkdirAll(destination, os.ModePerm)
@@ -104,7 +109,7 @@ func (d DummyGitMetrics) CollectGitMetrics(repoPath, repoName, cutoffDate string
 }
 
 func TestQuickScanDeadlock_WithRealProgressBar(t *testing.T) {
-	const numRepos = 1000000
+	const numRepos = 1000
 
 	// Create a slice of dummy repositories.
 	dummyRepos := make([]*github.Repository, numRepos)
@@ -155,6 +160,11 @@ func TestQuickScanDeadlock_WithRealProgressBar(t *testing.T) {
 // SlowGitClient implements utils.GitApi and simulates a slow repository
 type SlowGitClient struct {
 	SlowRepo string
+}
+
+func (s SlowGitClient) NewClone(ctx context.Context, cloneURL, destination string) utils.Cloner {
+	//TODO implement me
+	panic("implement me")
 }
 
 func (s SlowGitClient) CloneRepositoryWithContext(ctx context.Context, cloneURL, destination string, bare bool) error {

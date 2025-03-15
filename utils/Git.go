@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/go-git/go-git/v5"
+	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	log "github.com/sirupsen/logrus"
 	"os"
 	"strings"
@@ -11,9 +12,14 @@ import (
 
 type GitApi interface {
 	CloneRepositoryWithContext(ctx context.Context, cloneURL, destination string, bare bool) error
+	NewClone(ctx context.Context, cloneURL, destination string) Cloner
 }
 
 type GitApiClient struct{}
+
+func (g GitApiClient) NewClone(ctx context.Context, cloneURL, destination string) Cloner {
+	return NewCloneOptionsBuilder(ctx, cloneURL, destination)
+}
 
 func (g GitApiClient) CloneRepositoryWithContext(ctx context.Context, cloneURL, destination string, bare bool) error {
 	if _, err := os.Stat(destination); err == nil {
@@ -93,4 +99,73 @@ func CloneRepository(cloneURL, destination string, bare bool) error {
 	}
 
 	return nil
+}
+
+type CloneOptionsBuilder struct {
+	ctx         context.Context
+	cloneURL    string
+	destination string
+	bare        bool
+	token       string
+}
+
+func NewCloneOptionsBuilder(ctx context.Context, cloneURL, destination string) *CloneOptionsBuilder {
+	return &CloneOptionsBuilder{
+		ctx:         ctx,
+		cloneURL:    cloneURL,
+		destination: destination,
+	}
+}
+
+func (b *CloneOptionsBuilder) WithBare(bare bool) Cloner {
+	b.bare = bare
+	return b
+}
+
+func (b *CloneOptionsBuilder) WithToken(token string) Cloner {
+	b.token = token
+	return b
+}
+
+func (b *CloneOptionsBuilder) Clone() error {
+	if _, err := os.Stat(b.destination); err == nil {
+		log.Printf("Repository already cloned at '%s'. Skipping clone.", b.destination)
+		return nil
+	}
+
+	cloneOptions := &git.CloneOptions{
+		URL:      b.cloneURL,
+		Progress: nil,
+	}
+
+	if b.token != "" {
+		cloneOptions.Auth = &http.BasicAuth{
+			Username: "oauth2",
+			Password: b.token,
+		}
+	}
+
+	done := make(chan error, 1)
+
+	go func() {
+		_, err := git.PlainCloneContext(b.ctx, b.destination, b.bare, cloneOptions)
+		done <- err
+	}()
+
+	select {
+	case <-b.ctx.Done():
+		return fmt.Errorf("git clone timed out or cancelled for '%s': %w", b.cloneURL, b.ctx.Err())
+	case err := <-done:
+		if err != nil {
+			return fmt.Errorf("git clone failed for '%s': %w", b.cloneURL, err)
+		}
+	}
+
+	return nil
+}
+
+type Cloner interface {
+	WithBare(bare bool) Cloner
+	WithToken(token string) Cloner
+	Clone() error
 }
