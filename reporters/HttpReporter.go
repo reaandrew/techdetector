@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"github.com/google/uuid"
 	"github.com/reaandrew/techdetector/core"
+	log "github.com/sirupsen/logrus"
 
 	"net/http"
 )
@@ -32,9 +33,9 @@ func (d DefaultHttpClient) Do(req *http.Request) (*http.Response, error) {
 	fmt.Println("Sending request")
 	response, err := http.DefaultClient.Do(req)
 	if err != nil {
-		fmt.Printf("Error sending request: %v\n", err)
+		log.Printf("Error sending request: %v\n", err)
 	} else {
-		fmt.Printf("Success sending request: %v\n", response)
+		log.Printf("Success sending request: %v\n", response)
 	}
 	return response, err
 }
@@ -108,7 +109,7 @@ func (h HttpReporter) postMatch(match core.FindingSet, reportId string) error {
 
 func (h HttpReporter) signalCompletion(reportId string) error {
 	url := fmt.Sprintf("%s/report/%s", h.BaseURL, reportId)
-	fmt.Printf("URL: %s", url)
+	log.Printf("URL: %s", url)
 	req, err := http.NewRequest("PATCH", url, bytes.NewReader([]byte(`{
     "status": "completed"
 }`)))

@@ -1,19 +1,19 @@
 package scanners
 
 import (
-	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 	"path/filepath"
 )
 
 type RepoScanner struct {
 	reporter        core.Reporter
-	fileScanner     FileScanner
+	fileScanner     FsFileScanner
 	matchRepository core.FindingRepository
 	Cutoff          string
+	GitMetrics      utils.GitMetrics
 }
 
 func NewRepoScanner(
@@ -23,7 +23,7 @@ func NewRepoScanner(
 	cutoff string) *RepoScanner {
 	return &RepoScanner{
 		reporter:        reporter,
-		fileScanner:     FileScanner{processors: processors},
+		fileScanner:     FsFileScanner{Processors: processors},
 		matchRepository: matchRepository,
 		Cutoff:          cutoff,
 	}
@@ -42,7 +42,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 	}
 
 	repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
-	fmt.Printf("Cloning repository: %s\n", repoName)
+	log.Printf("Cloning repository: %s\n", repoName)
 	err = utils.CloneRepository(repoURL, repoPath, false)
 	if err != nil {
 		log.Fatalf("Failed to clone repository '%s': %v", repoName, err)
@@ -57,7 +57,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 
 	log.Println("Fetching Git Metrics")
 	// Collect Git metrics
-	gitFindings, err := utils.CollectGitMetrics(bareRepoPath, repoName, repoScanner.Cutoff)
+	gitFindings, err := repoScanner.GitMetrics.CollectGitMetrics(bareRepoPath, repoName, repoScanner.Cutoff)
 	if err != nil {
 		log.Fatalf("Error collecting Git metrics for '%s': %v", repoName, err)
 	}
@@ -75,7 +75,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 		log.Fatalf("Error searching repository '%s': %v", repoName, err)
 	}
 
-	fmt.Printf("Number of matches: %d\n", len(matches)) // Debug statement
+	log.Printf("Number of matches: %d\n", len(matches)) // Debug statement
 
 	// Generate report
 
