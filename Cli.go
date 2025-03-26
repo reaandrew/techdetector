@@ -3,28 +3,32 @@ package main
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
+	"github.com/reaandrew/techdetector/postscanners"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/scanners"
+	"github.com/reaandrew/techdetector/tools"
 	"github.com/reaandrew/techdetector/utils"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 	"os"
-	"strings"
 )
 
 const SQLiteDBFilename = "findings.db"
 
 // Cli represents the command-line interface
 type Cli struct {
-	reportFormat string
-	baseUrl      string
-	queriesPath  string
-	dumpSchema   bool
-	prefix       string
-	cutoff       string
+	reportFormat  string
+	baseUrl       string
+	queriesPath   string
+	dumpSchema    bool
+	prefix        string
+	cutoff        string
+	gitlabToken   string
+	gitlabBaseURL string
+	noCache       bool
 }
 
 // Execute sets up and runs the root command
@@ -43,19 +47,6 @@ func (cli *Cli) Execute() error {
 	return err
 }
 
-func sanitizeForDB(name string) string {
-	s := name
-	// Example: remove protocols
-	s = strings.ReplaceAll(s, "https://", "")
-	s = strings.ReplaceAll(s, "http://", "")
-	// Replace slashes, colons, etc. with underscores
-	s = strings.ReplaceAll(s, "/", "_")
-	s = strings.ReplaceAll(s, ":", "_")
-	// Optionally lower-case everything
-	s = strings.ToLower(s)
-	return s
-}
-
 // createScanCommand creates the 'scan' subcommand with its flags and subcommands
 func (cli *Cli) createScanCommand() *cobra.Command {
 	scanCmd := &cobra.Command{
@@ -68,6 +59,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 	scanCmd.PersistentFlags().StringVar(&cli.baseUrl, "baseurl", "", "Http report base url (used only if --report=http)")
 	scanCmd.PersistentFlags().StringVar(&cli.queriesPath, "queries-path", "", "Queries path (YAML file)")
 	scanCmd.PersistentFlags().BoolVar(&cli.dumpSchema, "dump-schema", false, "Dump SQLite schema to a text file")
+	scanCmd.PersistentFlags().BoolVar(&cli.noCache, "no-cache", false, "Fetch projects again")
 	//scanCmd.PersistentFlags().StringVar(&cli.prefix, "prefix", "techdetector", "A prefix for the output artifacts")
 	scanCmd.PersistentFlags().StringVar(&cli.cutoff, "date-cutoff", "", "A date cutoff (e.g. 2021-01-01) to process git repos in")
 
@@ -91,7 +83,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 
 			// 1) Sanitize the repo URL for a DB filename
 			repoURL := args[0]
-			cli.prefix = "td_" + sanitizeForDB(repoURL)
+			cli.prefix = "td_" + utils.Sanitize(repoURL)
 
 			dbFile := cli.prefix + "_findings.db"
 			utils.InitializeSQLiteDB(dbFile)
@@ -124,12 +116,14 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
+			tools.IntializeTooling()
+
 			err, queries := cli.loadQueries()
 			if err != nil {
 				log.Fatal(err)
 			}
 			orgName := args[0]
-			cli.prefix = "td_" + sanitizeForDB(orgName)
+			cli.prefix = "td_" + utils.Sanitize(orgName)
 
 			// 1) Sanitize the GH org name
 
@@ -152,15 +146,21 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			progressReporter := utils.NewBarProgressReporter(0, "Scanning GitHub org repositories")
 			// 3) Create and run the scanner
 
+			postScanners := []core.PostScanner{
+				postscanners.GitStatsPostScanner{
+					CutOffDate: cli.cutoff,
+					GitMetrics: utils.GitMetricsClient{},
+				},
+			}
+
 			scanner := scanners.GithubOrgScanner{
 				Reporter:         reporter,
 				FileScanner:      scanners.FsFileScanner{Processors: processors.InitializeProcessors()},
 				MatchRepository:  repository,
-				Cutoff:           cli.cutoff,
 				ProgressReporter: progressReporter,
 				GithubClient:     utils.NewGithubApiClient(),
 				GitClient:        utils.GitApiClient{},
-				GitMetrics:       utils.GitMetricsClient{},
+				PostScanners:     postScanners,
 			}
 
 			scanner.Scan(orgName, cli.reportFormat)
@@ -185,7 +185,7 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			} else {
 				directory = args[0]
 			}
-			cli.prefix = "td_" + sanitizeForDB(directory)
+			cli.prefix = "td_" + utils.Sanitize(directory)
 
 			info, err := os.Stat(directory)
 			if err != nil {
@@ -223,9 +223,51 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		},
 	}
 
+	scanGitlabCmd := &cobra.Command{
+		Use:   "gitlab_group",
+		Short: "Scan all projects within a GitLab group for technologies.",
+		Args:  cobra.NoArgs,
+		Run: func(cmd *cobra.Command, args []string) {
+			sanitizedBase := utils.Sanitize(cli.gitlabBaseURL)
+			cli.prefix = "td_" + sanitizedBase
+			dbFile := cli.prefix + "_findings.db"
+			err, queries := cli.loadQueries()
+			if err != nil {
+				log.Fatal(err)
+			}
+			reporter, err := cli.createReporter(cli.reportFormat, queries, dbFile)
+			if err != nil {
+				log.Fatal(err)
+			}
+
+			repository, err := repositories.NewSqliteFindingRepository(dbFile)
+			if err != nil {
+				log.Fatalf("Failed to create SQLite repository for GitLab base '%s': %v", cli.gitlabBaseURL, err)
+			}
+			defer func() { _ = repository.Close() }()
+			progressReporter := utils.NewBarProgressReporter(0, "Scanning GitLab projects")
+			scanner := scanners.GitlabEEScanner{
+				Reporter:         reporter,
+				FileScanner:      scanners.FsFileScanner{Processors: processors.InitializeProcessors()},
+				MatchRepository:  repository,
+				Cutoff:           cli.cutoff,
+				ProgressReporter: progressReporter,
+				GitlabApi:        utils.NewGitlabApiClient(cli.gitlabToken, cli.gitlabBaseURL, cli.noCache),
+				GitClient:        utils.GitApiClient{},
+				GitMetrics:       utils.GitMetricsClient{},
+			}
+			scanner.Scan()
+		},
+	}
+
+	scanGitlabCmd.PersistentFlags().StringVar(&cli.gitlabToken, "gitlab-token", "", "GitLab token for authentication")
+	scanGitlabCmd.PersistentFlags().StringVar(&cli.gitlabBaseURL, "gitlab-baseurl", "", "GitLab base URL (for Enterprise Edition)")
+
 	scanCmd.AddCommand(scanRepoCmd)
 	scanCmd.AddCommand(scanOrgCmd)
 	scanCmd.AddCommand(scanDirCmd)
+	scanCmd.AddCommand(scanGitlabCmd)
+
 	return scanCmd
 }
 

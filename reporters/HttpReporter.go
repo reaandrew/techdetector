@@ -30,7 +30,7 @@ type DefaultHttpClient struct {
 }
 
 func (d DefaultHttpClient) Do(req *http.Request) (*http.Response, error) {
-	fmt.Println("Sending request")
+	log.Println("Sending request")
 	response, err := http.DefaultClient.Do(req)
 	if err != nil {
 		log.Printf("Error sending request: %v\n", err)
@@ -55,7 +55,7 @@ type HttpReporter struct {
 }
 
 func (h HttpReporter) Report(repository core.FindingRepository) error {
-	fmt.Println("Reporting to HTTP")
+	log.Println("Reporting to HTTP")
 	iterator := repository.NewIterator()
 
 	reportId := h.ReportIdGenerator.Generate()
@@ -65,15 +65,15 @@ func (h HttpReporter) Report(repository core.FindingRepository) error {
 
 		err := h.postMatch(matchSet, reportId)
 		if err != nil {
-			fmt.Println(err)
+			log.Println(err)
 			return fmt.Errorf("failed to report matchSet: %v", err)
 		}
 	}
 
-	fmt.Println("signalling completion")
+	log.Println("signalling completion")
 	err := h.signalCompletion(reportId)
 	if err != nil {
-		fmt.Println(err)
+		log.Println(err)
 		return fmt.Errorf("failed to signal completion: %v", err)
 	}
 
@@ -114,7 +114,7 @@ func (h HttpReporter) signalCompletion(reportId string) error {
     "status": "completed"
 }`)))
 	if err != nil {
-		fmt.Println(err)
+		log.Println(err)
 		return fmt.Errorf("failed to create request: %v", err)
 	}
 

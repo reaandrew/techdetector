@@ -121,3 +121,16 @@ queries:
       select RepoName, Name, Count(*) as Count from Findings
       where Type = "SAAS Integration"
       Group by RepoName, Name;
+  - name: "Vulnerability Scan Findings"
+    query: |
+      SELECT 
+        RepoName,
+        Name,
+        json_extract(Properties, '$.title') AS Title,
+        json_extract(Properties, '$.severity') AS Severity,
+        json_extract(Properties, '$.installed_version') AS InstalledVersion,
+        json_extract(Properties, '$.pkg_name') AS PkgName,
+        json_extract(Properties, '$.target') AS Target,
+        json_extract(Properties, '$.result_type') AS ResultType
+      FROM Findings
+      WHERE Type = 'VULNERABILITY_SCAN';

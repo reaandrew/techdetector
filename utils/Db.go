@@ -3,7 +3,6 @@ package utils
 import (
 	"database/sql"
 	"encoding/json"
-	"fmt"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -42,9 +41,9 @@ func DumpSQLiteSchemaForFindings(db_file string) {
 		}
 	}
 
-	fmt.Println("Available JSON Fields:")
+	log.Println("Available JSON Fields:")
 	for key := range uniqueKeys {
-		fmt.Println(key)
+		log.Println(key)
 	}
 
 	log.Println("Schema dumped to schema.txt")

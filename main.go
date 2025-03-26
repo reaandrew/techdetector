@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/aws/aws-lambda-go/lambda"
 	log "github.com/sirupsen/logrus"
 	"os"
@@ -21,7 +20,7 @@ func setupLogging() {
 	// Create or open the error log file
 	logFile, err := os.OpenFile("techdetector.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
-		fmt.Println("Failed to open error log file:", err)
+		log.Println("Failed to open error log file:", err)
 		return
 	}
 

@@ -30,11 +30,10 @@ type GithubOrgScanner struct {
 	Reporter         core.Reporter
 	FileScanner      FileScanner
 	MatchRepository  core.FindingRepository
-	Cutoff           string
 	ProgressReporter utils.ProgressReporter
 	GithubClient     utils.GithubApi
 	GitClient        utils.GitApi
-	GitMetrics       utils.GitMetrics
+	PostScanners     []core.PostScanner
 	wg               sync.WaitGroup
 }
 
@@ -161,6 +160,7 @@ func (g *GithubOrgScanner) processRepository(repo *github.Repository) error {
 
 	log.Debugf("Scanning files for %s", repoName)
 	scanStart := time.Now()
+
 	matches, err := g.FileScanner.TraverseAndSearch(repoPath, repoName)
 	if err != nil {
 		log.Errorf("File scan failed for %s: %v", repoName, err)
@@ -191,6 +191,15 @@ func (g *GithubOrgScanner) processRepository(repo *github.Repository) error {
 
 	log.Debugf("Storing %d findings for %s", len(matches), repoName)
 	storeStart := time.Now()
+
+	for _, postScanner := range g.PostScanners {
+		postScannerMatches, err := postScanner.Scan(bareRepoPath, repoName)
+		if err != nil {
+			return fmt.Errorf("post scanner error '%s': %w", repoName, err)
+		}
+		matches = append(matches, postScannerMatches...)
+	}
+
 	if err := g.MatchRepository.Store(matches); err != nil {
 		log.Errorf("Store failed for %s: %v", repoName, err)
 		return fmt.Errorf("failed to store findings for %s: %w", repoName, err)
@@ -198,12 +207,4 @@ func (g *GithubOrgScanner) processRepository(repo *github.Repository) error {
 	log.Infof("Stored %d findings for %s in %v", len(matches), repoName, time.Since(storeStart))
 
 	return nil
-}
-
-// min returns the minimum of two integers
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }
