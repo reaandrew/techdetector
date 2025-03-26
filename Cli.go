@@ -3,10 +3,12 @@ package main
 import (
 	"fmt"
 	"github.com/reaandrew/techdetector/core"
+	"github.com/reaandrew/techdetector/postscanners"
 	"github.com/reaandrew/techdetector/processors"
 	"github.com/reaandrew/techdetector/reporters"
 	"github.com/reaandrew/techdetector/repositories"
 	"github.com/reaandrew/techdetector/scanners"
+	"github.com/reaandrew/techdetector/tools"
 	"github.com/reaandrew/techdetector/utils"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -114,6 +116,8 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 		Short: "Scan all repositories within a GitHub organization for technologies.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
+			tools.IntializeTooling()
+
 			err, queries := cli.loadQueries()
 			if err != nil {
 				log.Fatal(err)
@@ -142,15 +146,21 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 			progressReporter := utils.NewBarProgressReporter(0, "Scanning GitHub org repositories")
 			// 3) Create and run the scanner
 
+			postScanners := []core.PostScanner{
+				postscanners.GitStatsPostScanner{
+					CutOffDate: cli.cutoff,
+					GitMetrics: utils.GitMetricsClient{},
+				},
+			}
+
 			scanner := scanners.GithubOrgScanner{
 				Reporter:         reporter,
 				FileScanner:      scanners.FsFileScanner{Processors: processors.InitializeProcessors()},
 				MatchRepository:  repository,
-				Cutoff:           cli.cutoff,
 				ProgressReporter: progressReporter,
 				GithubClient:     utils.NewGithubApiClient(),
 				GitClient:        utils.GitApiClient{},
-				GitMetrics:       utils.GitMetricsClient{},
+				PostScanners:     postScanners,
 			}
 
 			scanner.Scan(orgName, cli.reportFormat)
