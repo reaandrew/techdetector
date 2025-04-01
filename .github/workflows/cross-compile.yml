@@ -72,7 +72,7 @@ jobs:
           if [[ "${{ github.ref }}" =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             echo "TAG_TYPE=${{ github.ref_name }}" >> $GITHUB_ENV
           elif [[ "${{ github.ref }}" == refs/heads/main ]]; then
-            echo "TAG_TYPE=latest" >> $GITHUB_ENV
+            echo "TAG_TYPE=${{ github.sha }}" >> $GITHUB_ENV
           else
             echo "TAG_TYPE=none" >> $GITHUB_ENV
           fi
@@ -87,4 +87,4 @@ jobs:
             ${{ env.ECR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG_TYPE }}
           labels: |
             org.opencontainers.image.source=${{ github.repository }}
-            org.opencontainers.image.version=${{ github.ref_name }}
+            org.opencontainers.image.version=${{ github.sha }}
