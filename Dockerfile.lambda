@@ -7,7 +7,7 @@ FROM amazonlinux:2 as builder
 
 ARG GO_VERSION=1.24.1
 
-# Install required build tools (gcc, etc.) plus your dev libraries if needed
+# Install required build tools and development libraries
 RUN yum update -y && \
     yum install -y gcc git curl tar gzip sqlite-devel && \
     yum clean all
@@ -17,7 +17,7 @@ RUN curl -OL "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz" && \
     tar -C /usr/local -xzf "go${GO_VERSION}.linux-amd64.tar.gz" && \
     rm "go${GO_VERSION}.linux-amd64.tar.gz"
 
-# Set Go environment variables
+# Set up Go environment
 ENV PATH="/usr/local/go/bin:${PATH}"
 ENV CGO_ENABLED=1
 ENV GOOS=linux
@@ -25,31 +25,32 @@ ENV GOARCH=amd64
 
 WORKDIR /app
 
-# Copy in go.mod and go.sum first to cache module downloads
+# Copy dependencies for caching
 COPY go.mod go.sum ./
 RUN go mod download
 
 # Copy the rest of your source code
 COPY . .
 
-# Build your Go binary (CGO-enabled) with the requested Go version
+# Build your Go binary (CGO-enabled)
 RUN go build -ldflags="-s -w" -o techdetector-linux-amd64
 
-###############################################
-# Stage 2: Final image with AWS Lambda base   #
-###############################################
-FROM public.ecr.aws/lambda/provided:al2
+####################################################
+# Stage 2: Final image using AWS Lambda AL2023 base  #
+####################################################
+FROM public.ecr.aws/lambda/provided:al2023
 
-# If you need runtime SQLite .so libraries:
+# Install runtime dependencies (e.g. sqlite) if needed
 RUN yum update -y && \
     yum install -y sqlite && \
     yum clean all
 
-# Copy the compiled binary from the builder stage
-COPY --from=builder /app/techdetector-linux-amd64 /var/runtime/bootstrap
-RUN chmod +x /var/runtime/bootstrap
+# Copy the compiled binary from the builder stage and rename it
+COPY --from=builder /app/techdetector-linux-amd64 ./techdetector
+RUN chmod +x ./techdetector
 
-# If you have queries.yaml or other configs, copy them to /var/task
+# Copy additional configuration files if required
 COPY queries.yaml /var/task/queries.yaml
 
-CMD ["bootstrap", "bootstrap"]
+# Set the entrypoint to your binary; no dummy handler argument is required on AL2023
+ENTRYPOINT [ "./techdetector" ]
