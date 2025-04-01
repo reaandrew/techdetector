@@ -1,31 +1,55 @@
+# syntax=docker/dockerfile:1
+
+############################################
+# Stage 1: Builder on Amazon Linux 2 + Go  #
+############################################
 FROM amazonlinux:2 as builder
 
-# Install dev tools, including Go and SQLite headers
+ARG GO_VERSION=1.24.1
+
+# Install required build tools (gcc, etc.) plus your dev libraries if needed
 RUN yum update -y && \
-    yum install -y git gcc golang sqlite-devel && \
+    yum install -y gcc git curl tar gzip sqlite-devel && \
     yum clean all
+
+# Download and install Go from the official tarball
+RUN curl -OL "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz" && \
+    tar -C /usr/local -xzf "go${GO_VERSION}.linux-amd64.tar.gz" && \
+    rm "go${GO_VERSION}.linux-amd64.tar.gz"
+
+# Set Go environment variables
+ENV PATH="/usr/local/go/bin:${PATH}"
+ENV CGO_ENABLED=1
+ENV GOOS=linux
+ENV GOARCH=amd64
 
 WORKDIR /app
 
-# Copy go.mod and go.sum first
+# Copy in go.mod and go.sum first to cache module downloads
 COPY go.mod go.sum ./
 RUN go mod download
 
-# Now copy the rest of your code
+# Copy the rest of your source code
 COPY . .
 
-# Build with CGO on Amazon Linux 2
-ENV CGO_ENABLED=1 GOOS=linux GOARCH=amd64
-RUN go build -o techdetector-linux-amd64 -ldflags "-s -w"
+# Build your Go binary (CGO-enabled) with the requested Go version
+RUN go build -ldflags="-s -w" -o techdetector-linux-amd64
 
-# Second stage: official AWS Lambda base
+###############################################
+# Stage 2: Final image with AWS Lambda base   #
+###############################################
 FROM public.ecr.aws/lambda/provided:al2
 
+# If you need runtime SQLite .so libraries:
 RUN yum update -y && \
     yum install -y sqlite && \
     yum clean all
 
+# Copy the compiled binary from the builder stage
 COPY --from=builder /app/techdetector-linux-amd64 /var/runtime/bootstrap
 RUN chmod +x /var/runtime/bootstrap
 
+# If you have queries.yaml or other configs, copy them to /var/task
 COPY queries.yaml /var/task/queries.yaml
+
+# The base image sets CMD ["bootstrap"] automatically
