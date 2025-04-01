@@ -105,15 +105,13 @@ resource "aws_lambda_function" "lambda_techdetector" {
   function_name    = "lambda_techdetector"
   description      = "Lambda function for tech detector"
   role             = aws_iam_role.lambda.arn
-  handler          = "bootstrap"
-  runtime          = "provided.al2"
+  package_type     = "Image"  # Specify that this is a container image
+  image_uri        = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com/techdetector-lambda:latest"  # ECR image URI
   ephemeral_storage {
     size = 6144
   }
   timeout          = 900
   memory_size      = 5120
-  filename         = "${path.module}/lambda_dist/bootstrap.zip"
-  source_code_hash = filebase64sha256("${path.module}/lambda_dist/bootstrap.zip")
 
   environment {
     variables = {
@@ -126,7 +124,6 @@ resource "aws_lambda_function" "lambda_techdetector" {
     Project = "reaandrew-techdetector"
   }
 }
-
 
 # # Create a Lambda URL for Public Access
 # resource "aws_lambda_function_url" "lambda_url" {

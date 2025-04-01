@@ -78,3 +78,4 @@ techdetector_cloud_services_summary.json
 build
 *.log
 *.db*
+response.json

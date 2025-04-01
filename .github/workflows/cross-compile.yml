@@ -44,7 +44,7 @@ jobs:
         run: |
           env GOOS=windows GOARCH=amd64 go build -ldflags "-X 'main.Version=${{ github.ref_name }}'" -o ./build/techdetector-windows-amd64.exe
           env GOOS=darwin GOARCH=amd64 go build -ldflags "-X 'main.Version=${{ github.ref_name }}'" -o ./build/techdetector-darwin-amd64
-          env GOOS=linux GOARCH=amd64 CGO_ENABLED=1 go build -a -ldflags '-linkmode external -extldflags "-static" -X "main.Version=${{ github.ref_name }}"' -o ./build/techdetector-linux-amd64
+          env GOOS=linux GOARCH=amd64 CGO_ENABLED=1 go build -a -ldflags '-X "main.Version=${{ github.ref_name }}"' -o ./build/techdetector-linux-amd64
 
       - name: Tar build directory
         run: tar -czvf build.tar.gz -C build .
@@ -108,7 +108,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile
+          file: ./Dockerfile.lambda
           push: true
           tags: |
             ${{ env.ECR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG_TYPE }}
