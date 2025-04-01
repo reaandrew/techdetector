@@ -7,7 +7,7 @@ permissions:
 env:
   AWS_REGION: eu-west-2
   IMAGE_NAME: techdetector-lambda
-  ECR_REGISTRY: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.eu-west-2.amazonaws.com  # Hardcode region here
+  ECR_REGISTRY: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.eu-west-2.amazonaws.com
 
 on:
   push:
@@ -58,7 +58,7 @@ jobs:
   build-and-push:
     name: Build and Push Docker Image to ECR
     runs-on: ubuntu-latest
-    needs: build  # Depends on the build job to get the binary
+    needs: build
     permissions:
       contents: read
       id-token: write
@@ -76,12 +76,12 @@ jobs:
       - name: Extract artifacts
         run: |
           tar -xzvf ./downloaded/build.tar.gz -C .
-          mv build/techdetector-linux-amd64 .
+          mv techdetector-linux-amd64 .  # Updated to move from root directory
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/techdetector-ci  # Update role name
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/techdetector-ci
           role-session-name: GitHub_AWS_ECR
           aws-region: ${{ env.AWS_REGION }}
 
@@ -98,7 +98,7 @@ jobs:
         id: determine-tag
         run: |
           if [[ "${{ github.ref }}" =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "TAG_TYPE=${{ github.ref_name }}" >> $GITHUB_ENV  # e.g., v1.0.0
+            echo "TAG_TYPE=${{ github.ref_name }}" >> $GITHUB_ENV
           elif [[ "${{ github.ref }}" == refs/heads/main ]]; then
             echo "TAG_TYPE=latest" >> $GITHUB_ENV
           else
