@@ -189,7 +189,7 @@ func createJSONReporter(queries core.SqlQueries, prefix string) (core.Reporter, 
 	return reporters.JsonReporter{
 		Queries:          queries,
 		ArtifactPrefix:   prefix,
-		SqliteDBFilename: "findings.db",
+		SqliteDBFilename: "/tmp/findings.db",
 		OutputDir:        "/tmp",
 	}, nil
 }
