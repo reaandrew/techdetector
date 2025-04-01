@@ -107,10 +107,12 @@ resource "aws_lambda_function" "lambda_techdetector" {
   role             = aws_iam_role.lambda.arn
   package_type     = "Image"  # Specify that this is a container image
   image_uri        = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com/techdetector-lambda:latest"  # ECR image URI
+  publish = true
+
   ephemeral_storage {
     size = 6144
   }
-  timeout          = 900
+  timeout          = 10
   memory_size      = 5120
 
   environment {
