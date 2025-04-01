@@ -52,4 +52,4 @@ RUN chmod +x /var/runtime/bootstrap
 # If you have queries.yaml or other configs, copy them to /var/task
 COPY queries.yaml /var/task/queries.yaml
 
-# The base image sets CMD ["bootstrap"] automatically
+CMD ["bootstrap", "bootstrap"]

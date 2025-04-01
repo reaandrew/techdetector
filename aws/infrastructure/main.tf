@@ -105,7 +105,7 @@ resource "aws_lambda_function" "lambda_techdetector" {
   description      = "Lambda function for tech detector"
   role             = aws_iam_role.lambda.arn
   package_type     = "Image"  # This is a container image
-  image_uri        = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com/${var.image_name}:${var.version_tag}"
+  image_uri        = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com/${var.image_name}:${var.image_tag}"
   publish          = true
 
   ephemeral_storage {
