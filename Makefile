@@ -16,15 +16,8 @@ build_lambda:
         go build -tags lambda.norpc -ldflags='-s -w' -o $(DIST_DIR)/$(LAMBDA_BINARY)
 	@echo "Lambda binary built successfully."
 
-.PHONY: prepare_dist
-prepare_dist: build_lambda
-	@echo "Preparing deployment package..."
-	@cp $(QUERY_FILE) $(DIST_DIR)/
-	@cd $(DIST_DIR) && zip -r bootstrap.zip $(LAMBDA_BINARY) $(QUERY_FILE)
-	@echo "Lambda deployment package created: $(ZIP_FILE)"
-
 .PHONY: deploy
-deploy: prepare_dist
+deploy:
 	@echo "Deploying infrastructure with Terraform..."
 	@cd $(TERRAFORM_DIR) && terraform init && terraform apply -auto-approve
 	@echo "Terraform deployment completed."

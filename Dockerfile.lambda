@@ -1,11 +1,39 @@
+# ---------------------------------------------------
+# Stage 1: Build the Go binary on Amazon Linux 2
+# ---------------------------------------------------
+FROM amazonlinux:2 AS builder
+
+# Install dev tools, SQLite dev if needed
+RUN yum update -y && \
+    yum install -y git gcc sqlite-devel && \
+    yum clean all
+
+# Copy in your source
+WORKDIR /app
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+
+# Build with CGO against Amazon Linux 2’s glibc
+ENV GOOS=linux GOARCH=amd64 CGO_ENABLED=1
+RUN go build -o techdetector-linux-amd64 .
+
+# ---------------------------------------------------
+# Stage 2: Create final image from the official Lambda base
+# ---------------------------------------------------
 FROM public.ecr.aws/lambda/provided:al2
 
-# Install 'sqlite' instead of 'sqlite-libs'
-RUN yum update -y \
-    && yum install -y sqlite \
-    && yum clean all
+# Install any runtime libs you need (e.g. 'sqlite' for .so)
+RUN yum update -y && \
+    yum install -y sqlite && \
+    yum clean all
 
-COPY techdetector-linux-amd64 /var/runtime/bootstrap
+# Copy the compiled binary from stage 1
+COPY --from=builder /app/techdetector-linux-amd64 /var/runtime/bootstrap
 RUN chmod +x /var/runtime/bootstrap
 
+# Copy queries.yaml
 COPY queries.yaml /var/task/queries.yaml
+
+# The base image automatically sets CMD ["bootstrap"]
+# so we’re good to go.
