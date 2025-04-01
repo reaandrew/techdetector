@@ -76,7 +76,6 @@ jobs:
       - name: Extract artifacts
         run: |
           tar -xzvf ./downloaded/build.tar.gz -C .
-          mv techdetector-linux-amd64 .  # Updated to move from root directory
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
