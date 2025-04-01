@@ -111,7 +111,7 @@ resource "aws_lambda_function" "lambda_techdetector" {
   ephemeral_storage {
     size = 6144
   }
-  timeout     = 10
+  timeout     = 30
   memory_size = 5120
 
   environment {

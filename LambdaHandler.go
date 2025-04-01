@@ -23,6 +23,8 @@ import (
 	"os"
 )
 
+const LAMBDA_DB_FILE = "/tmp/findings.db"
+
 // LambdaRequest represents the expected JSON structure in the request body
 type LambdaRequest struct {
 	Repo   string `json:"repo"`
@@ -128,20 +130,13 @@ func ScanRepo(repoURL string, queriesPath string, prefix string, cutoff string) 
 		return "", fmt.Errorf("failed to create reporter: %v", err)
 	}
 
-	repository := repositories.NewFileBasedMatchRepository()
-	defer func() {
-		if err := repository.Clear(); err != nil {
-			log.Fatalf("Error clearing repository: %v", err)
-		}
-	}()
-
 	postScanners := []core.PostScanner{
 		postscanners.GitStatsPostScanner{
 			CutOffDate: cutoff,
 			GitMetrics: utils.GitMetricsClient{},
 		},
 	}
-
+	repository, err := repositories.NewSqliteFindingRepository(LAMBDA_DB_FILE)
 	scanner := scanners.RepoScanner{
 		Reporter:        reporter,
 		FileScanner:     scanners.FsFileScanner{Processors: processors.InitializeProcessors()},
@@ -189,7 +184,7 @@ func createJSONReporter(queries core.SqlQueries, prefix string) (core.Reporter, 
 	return reporters.JsonReporter{
 		Queries:          queries,
 		ArtifactPrefix:   prefix,
-		SqliteDBFilename: "/tmp/findings.db",
+		SqliteDBFilename: LAMBDA_DB_FILE,
 		OutputDir:        "/tmp",
 	}, nil
 }
