@@ -36,6 +36,10 @@ type MockMatchRepository struct {
 	matches []core.Finding
 }
 
+func (m MockMatchRepository) Close() error {
+	return nil
+}
+
 func (m MockMatchRepository) Store(matches []core.Finding) error {
 	//TODO implement me
 	panic("implement me")

@@ -132,11 +132,9 @@ func TestQuickScanDeadlock_WithRealProgressBar(t *testing.T) {
 		Reporter:         dummyReporter,
 		FileScanner:      DummyFileScanner{},
 		MatchRepository:  sqliteRepo,
-		Cutoff:           "",
 		ProgressReporter: progressBar,
 		GithubClient:     DummyGithubClient{repos: dummyRepos},
 		GitClient:        DummyGitClient{},
-		GitMetrics:       DummyGitMetrics{},
 	}
 
 	// Run the scan in a separate goroutine so we can detect a deadlock with a timeout.
@@ -204,11 +202,9 @@ func TestScanWithSlowRepository(t *testing.T) {
 		Reporter:         DummyReporter{},
 		FileScanner:      DummyFileScanner{},
 		MatchRepository:  &DummyFindingRepository{},
-		Cutoff:           "",
 		ProgressReporter: utils.NewBarProgressReporter(numRepos, "Scanning Repositories"),
 		GithubClient:     DummyGithubClient{repos: dummyRepos},
 		GitClient:        SlowGitClient{SlowRepo: slowRepoName},
-		GitMetrics:       DummyGitMetrics{},
 	}
 
 	// Run with a timeout to catch hanging

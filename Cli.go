@@ -111,11 +111,12 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 
 			// 3) Create and run the scanner
 			scanner := scanners.RepoScanner{
-				Cutoff:       cli.cutoff,
-				GitClient:    utils.GitApiClient{},
-				PostScanners: postScanners,
+				Reporter:        reporter,
+				FileScanner:     scanners.FsFileScanner{Processors: processors.InitializeProcessors()},
+				GitClient:       utils.GitApiClient{},
+				MatchRepository: repository,
+				PostScanners:    postScanners,
 			}
-			scanner := scanners.NewRepoScanner(reporter, processors.InitializeProcessors(), repository, cli.cutoff)
 			scanner.Scan(repoURL, cli.reportFormat)
 		},
 	}

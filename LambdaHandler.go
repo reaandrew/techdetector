@@ -4,6 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/reaandrew/techdetector/postscanners"
+	"github.com/reaandrew/techdetector/utils"
 	"gopkg.in/yaml.v3"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
@@ -133,12 +135,20 @@ func ScanRepo(repoURL string, queriesPath string, prefix string, cutoff string) 
 		}
 	}()
 
-	scanner := scanners.NewRepoScanner(
-		reporter,
-		processors.InitializeProcessors(),
-		repository,
-		cutoff,
-	)
+	postScanners := []core.PostScanner{
+		postscanners.GitStatsPostScanner{
+			CutOffDate: cutoff,
+			GitMetrics: utils.GitMetricsClient{},
+		},
+	}
+
+	scanner := scanners.RepoScanner{
+		Reporter:        reporter,
+		FileScanner:     scanners.FsFileScanner{Processors: processors.InitializeProcessors()},
+		GitClient:       utils.GitApiClient{},
+		MatchRepository: repository,
+		PostScanners:    postScanners,
+	}
 
 	scanner.Scan(repoURL, "json")
 

@@ -11,6 +11,11 @@ type MockMatchRepository struct {
 	Matches []core.Finding
 }
 
+func (m *MockMatchRepository) Close() error {
+	//TODO implement me
+	panic("implement me")
+}
+
 // Store appends the provided findings to the repository's Matches slice.
 func (m *MockMatchRepository) Store(matches []core.Finding) error {
 	m.Matches = append(m.Matches, matches...)

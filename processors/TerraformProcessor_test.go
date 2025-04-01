@@ -1,9 +1,9 @@
 package processors
 
 import (
-	"fmt"
 	"github.com/hashicorp/hcl/v2/hclparse"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
+	log "github.com/sirupsen/logrus"
 	"os"
 	"reflect"
 	"testing"

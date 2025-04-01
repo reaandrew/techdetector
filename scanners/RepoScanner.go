@@ -12,25 +12,11 @@ import (
 )
 
 type RepoScanner struct {
-	reporter        core.Reporter
-	fileScanner     FsFileScanner
-	matchRepository core.FindingRepository
-	Cutoff          string
+	Reporter        core.Reporter
+	FileScanner     FsFileScanner
+	MatchRepository core.FindingRepository
 	GitClient       utils.GitApi
 	PostScanners    []core.PostScanner
-}
-
-func NewRepoScanner(
-	reporter core.Reporter,
-	processors []core.FileProcessor,
-	matchRepository core.FindingRepository,
-	cutoff string) *RepoScanner {
-	return &RepoScanner{
-		reporter:        reporter,
-		fileScanner:     FsFileScanner{Processors: processors},
-		matchRepository: matchRepository,
-		Cutoff:          cutoff,
-	}
 }
 
 func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
@@ -64,7 +50,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 	}
 
 	// Traverse and search with processors
-	matches, err := repoScanner.fileScanner.TraverseAndSearch(repoPath, repoName)
+	matches, err := repoScanner.FileScanner.TraverseAndSearch(repoPath, repoName)
 	if err != nil {
 		log.Fatalf("Error storing matches in '%s': %v", repoName, err)
 	}
@@ -77,7 +63,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 		matches = append(matches, postScannerMatches...)
 	}
 
-	err = repoScanner.matchRepository.Store(matches)
+	err = repoScanner.MatchRepository.Store(matches)
 	if err != nil {
 		log.Fatalf("Error searching repository '%s': %v", repoName, err)
 	}
@@ -86,7 +72,7 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 
 	// Generate report
 
-	err = repoScanner.reporter.Report(repoScanner.matchRepository)
+	err = repoScanner.Reporter.Report(repoScanner.MatchRepository)
 	if err != nil {
 		log.Println("Dumping Schema!!!")
 		log.Fatalf("Error generating report: %v", err)
