@@ -1,5 +1,3 @@
-dockerfile
-
 # Use Amazon Linux 2 as the base image (matches Lambda runtime)
 FROM public.ecr.aws/lambda/provided:al2
 
