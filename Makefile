@@ -9,22 +9,11 @@ DOCKER_IMAGE=go-lambda-builder
 build:
 	go build -a -ldflags '-X "main.Version=$(shell git describe)"' -o ./build/techdetector-linux-amd64
 
-
-.PHONY: build_application_for_lambda
-build_application_for_lambda:
-	docker build -t go-lambda-builder -f aws/lambda_builder/Dockerfile . --user $$(id -u):$$(id -g)
-
 .PHONY: build_lambda
-build_lambda: build_application_for_lambda
-	@echo "Building Lambda binary with CGO enabled in Docker..."
-	mkdir -p $(DIST_DIR)
-	docker run --rm -v $(PWD):/app --user $(shell id -u):$(shell id -g) \
-		-e GOCACHE=/app/.cache/go-build \
-    	-e GOMODCACHE=/app/.cache/go-mod \
-    	-w /app $(DOCKER_IMAGE) sh -c "\
-		go build -tags lambda.norpc -mod=readonly -ldflags='-s -w' -o $(DIST_DIR)/$(LAMBDA_BINARY) && \
-		chown $(shell id -u):$(shell id -g) $(DIST_DIR)/$(LAMBDA_BINARY) \
-	"
+build_lambda:
+	@mkdir -p $(DIST_DIR)
+	@docker run --rm -v $(PWD):/app -w /app $(DOCKER_IMAGE) \
+        go build -tags lambda.norpc -ldflags='-s -w' -o $(DIST_DIR)/$(LAMBDA_BINARY)
 	@echo "Lambda binary built successfully."
 
 .PHONY: prepare_dist

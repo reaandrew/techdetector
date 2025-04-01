@@ -1,25 +1,25 @@
-name: Cross-Compile and Release
+name: CI - Build Binary and Push Docker Image to AWS ECR
+
+permissions:
+  contents: read
+  id-token: write  # Required for AWS OIDC authentication
+
+env:
+  AWS_REGION: eu-west-2
+  IMAGE_NAME: techdetector-lambda
+  ECR_REGISTRY: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com
 
 on:
   push:
-    tags:
-      - 'v*'
     branches:
       - main
-
-env:
-  AWS_REGION : eu-west-2 #Change to reflect your Region
-  TF_LOG: INFO
-  AWS_SAM_LOCAL : true
-
-permissions:
-  id-token: write   # This is required for requesting the JWT
-  contents: write    # This is required for actions/checkout
+    tags:
+      - 'v*'  # Trigger on version tags (e.g., v1.0.0)
 
 jobs:
   build:
+    name: Build Binary
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -55,16 +55,17 @@ jobs:
           name: compiled-binaries
           path: build.tar.gz
 
-  update_dev_release:
+  build-and-push:
+    name: Build and Push Docker Image to ECR
     runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/main'  # Only run on the main branch
+    needs: build  # Depends on the build job to get the binary
+    permissions:
+      contents: read
+      id-token: write
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Required for 'git describe' to work
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
@@ -72,118 +73,46 @@ jobs:
           name: compiled-binaries
           path: ./downloaded
 
-      - name: Create build directory
-        run: mkdir -p ./build
-
-      - name: Untar build directory
-        run: tar -xzvf ./downloaded/build.tar.gz -C ./build
-
-
-      - name: Get version from git describe
-        id: git_describe
-        run: echo "GIT_DESCRIBE_VERSION=$(git describe --tags)" >> $GITHUB_ENV
-
-      - name: Delete existing 'development' release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true  # Continue if this fails (i.e., the release doesn't exist)
-        run: gh release delete development --yes
-
-      - name: Create new 'development' release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Extract artifacts
         run: |
-          gh release create development ./build/* \
-          --title "Development Release: ${{ env.GIT_DESCRIBE_VERSION }}" \
-          --notes "Auto-generated development release"
-  
+          tar -xzvf ./downloaded/build.tar.gz -C .
+          mv build/techdetector-linux-amd64 .
 
-  release:
-    if: startsWith(github.ref, 'refs/tags/')
-    needs:
-      - build
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v4
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          name: compiled-binaries
-          path: ./downloaded
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/techdetector-ci  # Update role name
+          role-session-name: GitHub_AWS_ECR
+          aws-region: ${{ env.AWS_REGION }}
 
-      - name: Create build directory
-        run: mkdir -p ./build
-
-      - name: Untar build directory
-        run: tar -xzvf ./downloaded/build.tar.gz -C ./build
-
-      - name: Install dh-make-golang
+      - name: Ensure ECR Repository Exists
         run: |
-          sudo apt-get update
-          sudo apt-get install -y dh-make-golang
+          aws ecr describe-repositories --repository-name ${{ env.IMAGE_NAME }} --region ${{ env.AWS_REGION }} || \
+          aws ecr create-repository --repository-name ${{ env.IMAGE_NAME }} --region ${{ env.AWS_REGION }}
 
-      - uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
-        with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
+      - name: Log in to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
 
-      - name: Create Debian Package
+      - name: Determine tag type
+        id: determine-tag
         run: |
-          gem install fpm
-          cp ./build/techdetector-linux-amd64 ./techdetector
-          fpm -s dir \
-              -t deb \
-              -n techdetector \
-              -p ./build/techdetector-amd64-${{  github.ref_name }}.deb \
-              -v ${{  github.ref_name }} \
-              --description "Tool to detect technologies in git repos" \
-              --url "https://github.com/reaandrew/techdetector" \
-              --maintainer "Andy Rea <email@andrewrea.co.uk>" \
-              --prefix=/usr/local/bin \
-              --deb-no-default-config-files \
-              ./techdetector
+          if [[ "${{ github.ref }}" =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "TAG_TYPE=${{ github.ref_name }}" >> $GITHUB_ENV  # e.g., v1.0.0
+          elif [[ "${{ github.ref }}" == refs/heads/main ]]; then
+            echo "TAG_TYPE=latest" >> $GITHUB_ENV
+          else
+            echo "TAG_TYPE=none" >> $GITHUB_ENV
+          fi
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Build and push Docker image to ECR
+        uses: docker/build-push-action@v5
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/techdetector-windows-amd64.exe
-          asset_name: techdetector-windows-amd64.exe
-          asset_content_type: application/octet-stream
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/techdetector-darwin-amd64
-          asset_name: techdetector-darwin-amd64
-          asset_content_type: application/octet-stream
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/techdetector-linux-amd64
-          asset_name: techdetector-linux-amd64
-          asset_content_type: application/octet-stream
-
-      - name: Upload Deb Package Release Asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/techdetector-amd64-${{  github.ref_name }}.deb
-          asset_name: techdetector-amd64-${{  github.ref_name }}.deb
-          asset_content_type: application/octet-stream
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: |
+            ${{ env.ECR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG_TYPE }}
+          labels: |
+            org.opencontainers.image.source=${{ github.repository }}
+            org.opencontainers.image.version=${{ github.ref_name }}

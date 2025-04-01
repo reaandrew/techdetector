@@ -1,11 +1,14 @@
 package scanners
 
 import (
+	"context"
+	"fmt"
 	"github.com/reaandrew/techdetector/core"
 	"github.com/reaandrew/techdetector/utils"
 	log "github.com/sirupsen/logrus"
 	"os"
 	"path/filepath"
+	"time"
 )
 
 type RepoScanner struct {
@@ -13,7 +16,8 @@ type RepoScanner struct {
 	fileScanner     FsFileScanner
 	matchRepository core.FindingRepository
 	Cutoff          string
-	GitMetrics      utils.GitMetrics
+	GitClient       utils.GitApi
+	PostScanners    []core.PostScanner
 }
 
 func NewRepoScanner(
@@ -30,6 +34,10 @@ func NewRepoScanner(
 }
 
 func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
+	var errors []error
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
+	defer cancel()
+
 	// Ensure clone base directory exists
 	err := os.MkdirAll(CloneBaseDir, os.ModePerm)
 	if err != nil {
@@ -43,23 +51,16 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 
 	repoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName))
 	log.Printf("Cloning repository: %s\n", repoName)
-	err = utils.CloneRepository(repoURL, repoPath, false)
+	err = repoScanner.GitClient.CloneRepositoryWithContext(ctx, repoURL, repoPath, false)
 	if err != nil {
 		log.Fatalf("Failed to clone repository '%s': %v", repoName, err)
 	}
 
 	// Perform bare clone to extract metadata
 	bareRepoPath := filepath.Join(CloneBaseDir, utils.SanitizeRepoName(repoName)+"_bare")
-	err = utils.CloneRepository(repoURL, bareRepoPath, true)
+	err = repoScanner.GitClient.CloneRepositoryWithContext(ctx, repoURL, bareRepoPath, true)
 	if err != nil {
 		log.Fatalf("Failed to perform bare clone for '%s': %v", repoName, err)
-	}
-
-	log.Println("Fetching Git Metrics")
-	// Collect Git metrics
-	gitFindings, err := repoScanner.GitMetrics.CollectGitMetrics(bareRepoPath, repoName, repoScanner.Cutoff)
-	if err != nil {
-		log.Fatalf("Error collecting Git metrics for '%s': %v", repoName, err)
 	}
 
 	// Traverse and search with processors
@@ -68,7 +69,13 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 		log.Fatalf("Error storing matches in '%s': %v", repoName, err)
 	}
 
-	matches = append(matches, gitFindings...)
+	for _, postScanner := range repoScanner.PostScanners {
+		postScannerMatches, err := postScanner.Scan(bareRepoPath, repoName)
+		if err != nil {
+			errors = append(errors, fmt.Errorf("post scanner error '%s': %w", repoName, err))
+		}
+		matches = append(matches, postScannerMatches...)
+	}
 
 	err = repoScanner.matchRepository.Store(matches)
 	if err != nil {
@@ -83,5 +90,9 @@ func (repoScanner RepoScanner) Scan(repoURL string, reportFormat string) {
 	if err != nil {
 		log.Println("Dumping Schema!!!")
 		log.Fatalf("Error generating report: %v", err)
+	}
+
+	if len(errors) > 0 {
+		log.Warnf("Encountered %d errors", len(errors))
 	}
 }

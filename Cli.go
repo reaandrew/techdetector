@@ -102,7 +102,19 @@ func (cli *Cli) createScanCommand() *cobra.Command {
 				_ = repository.Close()
 			}()
 
+			postScanners := []core.PostScanner{
+				postscanners.GitStatsPostScanner{
+					CutOffDate: cli.cutoff,
+					GitMetrics: utils.GitMetricsClient{},
+				},
+			}
+
 			// 3) Create and run the scanner
+			scanner := scanners.RepoScanner{
+				Cutoff:       cli.cutoff,
+				GitClient:    utils.GitApiClient{},
+				PostScanners: postScanners,
+			}
 			scanner := scanners.NewRepoScanner(reporter, processors.InitializeProcessors(), repository, cli.cutoff)
 			scanner.Scan(repoURL, cli.reportFormat)
 		},

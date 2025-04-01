@@ -7,7 +7,9 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	log "github.com/sirupsen/logrus"
 	"os"
+	"path/filepath"
 	"strings"
+	"time"
 )
 
 type GitApi interface {
@@ -74,31 +76,36 @@ func ExtractRepoName(repoURL string) (string, error) {
 	return repoName, nil
 }
 
-func CloneRepository(cloneURL, destination string, bare bool) error {
-	if _, err := os.Stat(destination); err == nil {
-		log.Printf("Repository already cloned at '%s'. Skipping clone.", destination)
-		return nil
+type GitCloneInfo struct {
+	RepoPath     string
+	BareRepoPath string
+}
+
+func (g GitApiClient) Clone(cloneBaseDir, repoUrl string) (*GitCloneInfo, error) {
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
+	defer cancel()
+
+	repoName, err := ExtractRepoName(repoUrl)
+	if err != nil {
+		return nil, err
+	}
+	repoPath := filepath.Join(cloneBaseDir, SanitizeRepoName(repoName))
+	log.Infof("Cloning repository: %s\n", repoName)
+	err = g.CloneRepositoryWithContext(ctx, repoUrl, repoPath, false)
+	if err != nil {
+		return nil, fmt.Errorf("failed to clone repository '%s': %v", repoName, err)
 	}
 
-	cloneOptions := &git.CloneOptions{
-		URL:      cloneURL,
-		Progress: nil,
+	bareRepoPath := filepath.Join(cloneBaseDir, SanitizeRepoName(repoName)+"_bare")
+	err = g.CloneRepositoryWithContext(ctx, repoUrl, bareRepoPath, true)
+	if err != nil {
+		return nil, fmt.Errorf("failed to perform bare clone for '%s': %v", repoName, err)
 	}
 
-	if bare {
-		log.Printf("Performing a bare clone to '%s'.", destination)
-		_, err := git.PlainClone(destination, true, cloneOptions) // true = bare clone
-		if err != nil {
-			return fmt.Errorf("git bare clone failed: %w", err)
-		}
-	} else {
-		_, err := git.PlainClone(destination, false, cloneOptions)
-		if err != nil {
-			return fmt.Errorf("git clone failed: %w", err)
-		}
-	}
-
-	return nil
+	return &GitCloneInfo{
+		RepoPath:     repoPath,
+		BareRepoPath: bareRepoPath,
+	}, nil
 }
 
 type CloneOptionsBuilder struct {
