@@ -1,17 +1,11 @@
-# Start from the official AWS Lambda for custom runtimes (Amazon Linux 2)
 FROM public.ecr.aws/lambda/provided:al2
 
-# If needed at runtime, install SQLite .so library
-RUN yum update -y && \
-    yum install -y sqlite-libs && \
-    yum clean all
+# Install 'sqlite' instead of 'sqlite-libs'
+RUN yum update -y \
+    && yum install -y sqlite \
+    && yum clean all
 
-# Copy your CGO-enabled binary into the location where Lambda looks for custom runtimes
 COPY techdetector-linux-amd64 /var/runtime/bootstrap
 RUN chmod +x /var/runtime/bootstrap
 
-# Optionally copy queries.yaml (or any other config) into /var/task
 COPY queries.yaml /var/task/queries.yaml
-
-# The official provided.al2 image already defines an entrypoint and CMD ["bootstrap"]
-# so you do NOT need to override it. This is enough.
