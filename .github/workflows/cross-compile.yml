@@ -1,8 +1,8 @@
-name: CI - Build Binary and Push Docker Image to AWS ECR
+name: CI - Build Binary, Push Docker Image, and Create Release
 
 permissions:
-  contents: read
-  id-token: write  # Required for AWS OIDC authentication
+  contents: write
+  id-token: write
 
 env:
   AWS_REGION: eu-west-2
@@ -14,7 +14,7 @@ on:
     branches:
       - main
     tags:
-      - 'v*'  # e.g., v1.0.0
+      - 'v*'
 
 jobs:
   build:
@@ -30,13 +30,114 @@ jobs:
           go-version: '1.23.0'
 
       - name: Run Go Tests
-        run: |
-          go test -race -covermode=atomic -coverprofile=coverage.out
+        run: go test -race -covermode=atomic -coverprofile=coverage.out
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+  cross-compile:
+    name: Cross-Compile for Release
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    strategy:
+      matrix:
+        include:
+          - goos: linux
+            goarch: amd64
+            ext: ''
+            archive: tar.gz
+
+          - goos: linux
+            goarch: arm64
+            ext: ''
+            archive: tar.gz
+
+          - goos: darwin
+            goarch: amd64
+            ext: ''
+            archive: tar.gz
+
+          - goos: darwin
+            goarch: arm64
+            ext: ''
+            archive: tar.gz
+
+          - goos: windows
+            goarch: amd64
+            ext: .exe
+            archive: zip
+
+          - goos: windows
+            goarch: arm64
+            ext: .exe
+            archive: zip
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Go environment
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23.0'
+
+      - name: Set output names
+        id: vars
+        run: |
+          NAME=techdetector-${{ matrix.goos }}-${{ matrix.goarch }}
+          echo "BIN_NAME=$NAME" >> $GITHUB_ENV
+          echo "ARCHIVE_NAME=$NAME.${{ matrix.archive }}" >> $GITHUB_ENV
+
+      - name: Build binary
+        run: |
+          VERSION=${{ github.ref_name }}
+          OUTPUT=$BIN_NAME${{ matrix.ext }}
+
+          if [[ "${{ matrix.goos }}" == "linux" ]]; then
+            CGO_ENABLED=1 GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} \
+              go build -a -ldflags '-linkmode external -extldflags "-static" -X "main.Version='"$VERSION"'"' \
+              -o $OUTPUT
+          else
+            GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} \
+              go build -ldflags "-X 'main.Version=$VERSION'" \
+              -o $OUTPUT
+          fi
+
+      - name: Compress binary
+        run: |
+          mkdir archive
+          if [[ "${{ matrix.archive }}" == "zip" ]]; then
+            zip archive/$ARCHIVE_NAME $BIN_NAME${{ matrix.ext }}
+          else
+            tar -czvf archive/$ARCHIVE_NAME $BIN_NAME${{ matrix.ext }}
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ARCHIVE_NAME }}
+          path: archive/${{ env.ARCHIVE_NAME }}
+
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    needs: cross-compile
+    if: startsWith(github.ref, 'refs/tags/v')
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./release
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          files: release/**/*.zip,release/**/*.tar.gz
 
   build-and-push:
     name: Build and Push Docker Image to ECR
@@ -63,18 +164,14 @@ jobs:
           aws ecr create-repository --repository-name ${{ env.IMAGE_NAME }} --region ${{ env.AWS_REGION }}
 
       - name: Log in to Amazon ECR
-        id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Determine tag type
-        id: determine-tag
         run: |
-          if [[ "${{ github.ref }}" =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+          if [[ "${{ github.ref }}" =~ ^refs/tags/v ]]; then
             echo "TAG_TYPE=${{ github.ref_name }}" >> $GITHUB_ENV
-          elif [[ "${{ github.ref }}" == refs/heads/main ]]; then
-            echo "TAG_TYPE=${{ github.sha }}" >> $GITHUB_ENV
           else
-            echo "TAG_TYPE=none" >> $GITHUB_ENV
+            echo "TAG_TYPE=${{ github.sha }}" >> $GITHUB_ENV
           fi
 
       - name: Build and push Docker image to ECR
