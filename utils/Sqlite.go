@@ -143,3 +143,60 @@ func isPredefinedField(key string) bool {
 	}
 	return false
 }
+
+// ExecuteQueries takes a *sql.DB and a slice of queries to execute.
+// It returns a map of query-name to slice-of-rows, where each row is
+// a map of column-name to interface{} value.
+func ExecuteQueries(db *sql.DB, queries []core.SqlQuery) (map[string][]map[string]interface{}, error) {
+	resultsMap := make(map[string][]map[string]interface{})
+
+	for _, q := range queries {
+		rows, err := db.Query(q.Query)
+		if err != nil {
+			// Log or return error—but you might want to just skip and continue
+			// if you prefer partial successes:
+			return nil, fmt.Errorf("failed to execute query '%s': %w", q.Name, err)
+		}
+
+		columns, err := rows.Columns()
+		if err != nil {
+			rows.Close()
+			return nil, fmt.Errorf("failed to retrieve columns for query '%s': %w", q.Name, err)
+		}
+
+		var allRows []map[string]interface{}
+		for rows.Next() {
+			columnValues := make([]interface{}, len(columns))
+			columnPointers := make([]interface{}, len(columns))
+			for i := range columnValues {
+				columnPointers[i] = &columnValues[i]
+			}
+
+			if err := rows.Scan(columnPointers...); err != nil {
+				rows.Close()
+				return nil, fmt.Errorf("failed to scan row for query '%s': %w", q.Name, err)
+			}
+
+			rowData := make(map[string]interface{})
+			for i, colName := range columns {
+				val := columnValues[i]
+				// Convert []byte to string for text columns
+				if b, ok := val.([]byte); ok {
+					rowData[colName] = string(b)
+				} else {
+					rowData[colName] = val
+				}
+			}
+			allRows = append(allRows, rowData)
+		}
+		if err := rows.Err(); err != nil {
+			rows.Close()
+			return nil, fmt.Errorf("row iteration error for query '%s': %w", q.Name, err)
+		}
+		rows.Close()
+
+		resultsMap[q.Name] = allRows
+	}
+
+	return resultsMap, nil
+}

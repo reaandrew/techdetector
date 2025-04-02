@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+	"github.com/reaandrew/techdetector/utils"
 	log "github.com/sirupsen/logrus"
 	"os"
 
@@ -29,11 +30,9 @@ func (j *JsonReporter) setDefaultOutputDir() {
 	}
 }
 
-// Report generates both detailed and summary JSON reports
 func (j JsonReporter) Report(repository core.FindingRepository) error {
 	j.setDefaultOutputDir()
 
-	// Check if Queries.Queries is populated
 	if len(j.Queries.Queries) == 0 {
 		log.Println("Warning: No SQL queries defined for summary report.")
 	} else {
@@ -48,7 +47,6 @@ func (j JsonReporter) Report(repository core.FindingRepository) error {
 	return nil
 }
 
-// generateSummaryReport executes SQL queries and creates a summary JSON report
 func (j JsonReporter) generateSummaryReport(dbPath string) error {
 	db, err := sql.Open("sqlite3", dbPath)
 	if err != nil {
@@ -77,105 +75,44 @@ func (j JsonReporter) generateSummaryReport(dbPath string) error {
 
 	// Create the full path for the summary output file
 	outputFilePath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, DefaultJsonSummaryReport)
-
 	outputFile, err := os.Create(outputFilePath)
-
 	if err != nil {
 		return fmt.Errorf("failed to create summary JSON output file: %w", err)
 	}
 	defer outputFile.Close()
 
-	summaryData := make(map[string]interface{})
-
-	for _, query := range j.Queries.Queries {
-		results, err := executeSQLQuery(db, query.Query)
-		if err != nil {
-			log.Printf("Skipping query for '%s': %v", query.Name, err)
-			continue
-		}
-		log.Printf("Query '%s' returned %d results.\n", query.Name, len(results))
-		if len(results) == 0 {
-			log.Printf("Warning: Query '%s' returned no results.\n", query.Name)
-		}
-		summaryData[query.Name] = results
+	// -----------------------------------------------------------------
+	// Use the shared query executor, which returns a map of results
+	// -----------------------------------------------------------------
+	summaryData, err := utils.ExecuteQueries(db, j.Queries.Queries)
+	if err != nil {
+		// You can decide if this is fatal or if you want to log and continue
+		return fmt.Errorf("failed to execute queries: %w", err)
 	}
 
-	cleanedSummaryData := removeNilValues(summaryData)
+	// Optionally filter out queries with empty (nil) results
+	cleanedSummaryData := removeNilOrEmptyResults(summaryData)
+
 	// Write summary data to JSON file
 	summaryBytes, err := json.MarshalIndent(cleanedSummaryData, "", "  ")
-
 	if err != nil {
 		return fmt.Errorf("failed to marshal summary data: %w", err)
 	}
 
-	_, err = outputFile.Write(summaryBytes)
-	if err != nil {
+	if _, err = outputFile.Write(summaryBytes); err != nil {
 		return fmt.Errorf("failed to write to summary output file: %v", err)
 	}
 
 	return nil
 }
 
-// executeSQLQuery runs a SQL query and returns the results as a slice of maps
-func executeSQLQuery(db *sql.DB, query string) ([]map[string]interface{}, error) {
-	rows, err := db.Query(query)
-	if err != nil {
-		return nil, fmt.Errorf("failed to execute query '%s': %w", query, err)
-	}
-	defer rows.Close()
-
-	columns, err := rows.Columns()
-	if err != nil {
-		return nil, fmt.Errorf("failed to retrieve columns for query '%s': %w", query, err)
-	}
-
-	var results []map[string]interface{}
-
-	for rows.Next() {
-		columnValues := make([]interface{}, len(columns))
-		columnPointers := make([]interface{}, len(columns))
-
-		for i := range columnValues {
-			columnPointers[i] = &columnValues[i]
+// removeNilOrEmptyResults filters out empty query results before writing JSON
+func removeNilOrEmptyResults(data map[string][]map[string]interface{}) map[string][]map[string]interface{} {
+	cleaned := make(map[string][]map[string]interface{})
+	for queryName, rows := range data {
+		if rows != nil && len(rows) > 0 {
+			cleaned[queryName] = rows
 		}
-
-		if err := rows.Scan(columnPointers...); err != nil {
-			return nil, fmt.Errorf("failed to scan row for query '%s': %w", query, err)
-		}
-
-		rowData := make(map[string]interface{})
-		for i, colName := range columns {
-			value := columnValues[i]
-
-			// Convert []byte to string for text columns
-			if b, ok := value.([]byte); ok {
-				rowData[colName] = string(b)
-			} else {
-				rowData[colName] = value
-			}
-		}
-
-		results = append(results, rowData)
 	}
-
-	if err := rows.Err(); err != nil {
-		return nil, fmt.Errorf("row iteration error for query '%s': %w", query, err)
-	}
-
-	return results, nil
-}
-
-func removeNilValues(data map[string]interface{}) map[string]interface{} {
-	cleanedData := make(map[string]interface{})
-	for key, value := range data {
-		if value == nil {
-			continue // Skip nil values
-		}
-		// Check for empty slices
-		if slice, ok := value.([]map[string]interface{}); ok && len(slice) == 0 {
-			continue // Skip empty slice results
-		}
-		cleanedData[key] = value
-	}
-	return cleanedData
+	return cleaned
 }
