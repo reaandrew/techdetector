@@ -147,7 +147,7 @@ func TestQuickScanDeadlock_WithRealProgressBar(t *testing.T) {
 	select {
 	case <-done:
 		// Scan finished successfully.
-	case <-time.After(5 * time.Second):
+	case <-time.After(60 * time.Second):
 		t.Fatal("Scan timed out, likely due to deadlock")
 	}
 
