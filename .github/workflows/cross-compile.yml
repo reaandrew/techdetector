@@ -50,28 +50,13 @@ jobs:
             ext: ''
             archive: tar.gz
 
-          - goos: linux
-            goarch: arm64
-            ext: ''
-            archive: tar.gz
-
           - goos: darwin
             goarch: amd64
             ext: ''
             archive: tar.gz
 
-          - goos: darwin
-            goarch: arm64
-            ext: ''
-            archive: tar.gz
-
           - goos: windows
             goarch: amd64
-            ext: .exe
-            archive: zip
-
-          - goos: windows
-            goarch: arm64
             ext: .exe
             archive: zip
 
