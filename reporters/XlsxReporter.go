@@ -15,9 +15,9 @@ const (
 
 type XlsxReporter struct {
 	Queries          core.SqlQueries
-	DumpSchema       bool
 	ArtifactPrefix   string
 	SqliteDBFilename string
+	ReportStorage    core.ReportStorage
 }
 
 func (x XlsxReporter) Report(repository core.FindingRepository) error {

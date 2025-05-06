@@ -37,7 +37,6 @@ func TestDynamicXlsxSummaryReporter_Report(t *testing.T) {
 				},
 			},
 		},
-		DumpSchema:     true,
 		ArtifactPrefix: dbFile.Name(),
 	}
 

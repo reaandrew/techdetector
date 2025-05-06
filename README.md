@@ -370,6 +370,7 @@ Contributions are welcome! Whether it's reporting bugs, suggesting features, or 
 
 This project is licensed under the [MIT License](LICENSE).
 
+
 ## Contact
 
 For any questions, suggestions, or support, feel free to reach out:

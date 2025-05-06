@@ -4,12 +4,10 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
-	"github.com/reaandrew/techdetector/utils"
-	log "github.com/sirupsen/logrus"
-	"os"
-
 	_ "github.com/mattn/go-sqlite3" // Import the SQLite driver
 	"github.com/reaandrew/techdetector/core"
+	"github.com/reaandrew/techdetector/utils"
+	log "github.com/sirupsen/logrus"
 )
 
 const (
@@ -19,20 +17,11 @@ const (
 
 type JsonReporter struct {
 	Queries          core.SqlQueries
-	ArtifactPrefix   string
 	SqliteDBFilename string
-	OutputDir        string
-}
-
-func (j *JsonReporter) setDefaultOutputDir() {
-	if j.OutputDir == "" {
-		j.OutputDir = "."
-	}
+	ReportStorage    core.ReportStorage
 }
 
 func (j JsonReporter) Report(repository core.FindingRepository) error {
-	j.setDefaultOutputDir()
-
 	if len(j.Queries.Queries) == 0 {
 		log.Println("Warning: No SQL queries defined for summary report.")
 	} else {
@@ -71,19 +60,6 @@ func (j JsonReporter) generateSummaryReport(dbPath string) error {
 		return nil
 	}
 
-	j.setDefaultOutputDir()
-
-	// Create the full path for the summary output file
-	outputFilePath := fmt.Sprintf("%s/%s_%s", j.OutputDir, j.ArtifactPrefix, DefaultJsonSummaryReport)
-	outputFile, err := os.Create(outputFilePath)
-	if err != nil {
-		return fmt.Errorf("failed to create summary JSON output file: %w", err)
-	}
-	defer outputFile.Close()
-
-	// -----------------------------------------------------------------
-	// Use the shared query executor, which returns a map of results
-	// -----------------------------------------------------------------
 	summaryData, err := utils.ExecuteQueries(db, j.Queries.Queries)
 	if err != nil {
 		// You can decide if this is fatal or if you want to log and continue
@@ -99,7 +75,7 @@ func (j JsonReporter) generateSummaryReport(dbPath string) error {
 		return fmt.Errorf("failed to marshal summary data: %w", err)
 	}
 
-	if _, err = outputFile.Write(summaryBytes); err != nil {
+	if err = j.ReportStorage.Store(summaryBytes); err != nil {
 		return fmt.Errorf("failed to write to summary output file: %v", err)
 	}
 
